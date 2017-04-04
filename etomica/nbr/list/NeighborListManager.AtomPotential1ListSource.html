@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,6 +137,10 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.AtomPotential1ListSource.html#manager">manager</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.AtomPotential1ListSource.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
@@ -188,6 +192,10 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.AtomPotential1ListSource.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></span>(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt;&nbsp;manager)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -213,10 +221,19 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <a name="potentialMaster">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a> potentialMaster</pre>
+</li>
+</ul>
+<a name="manager">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>manager</h4>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt; manager</pre>
 </li>
 </ul>
 </li>
@@ -244,6 +261,15 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setAgentManager-etomica.atom.AtomLeafAgentManager-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAgentManager</h4>
+<pre>public&nbsp;void&nbsp;setAgentManager(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt;&nbsp;manager)</pre>
+</li>
+</ul>
 <a name="releaseAgent-etomica.nbr.list.AtomPotentialList-etomica.api.IAtom-etomica.api.IBox-">
 <!--   -->
 </a>
