@@ -95,6 +95,7 @@
 <li><a href="etomica/dimer/package-tree.html">etomica.dimer</a>, </li>
 <li><a href="etomica/eigenstuff/package-tree.html">etomica.eigenstuff</a>, </li>
 <li><a href="etomica/exception/package-tree.html">etomica.exception</a>, </li>
+<li><a href="etomica/freeenergy/npath/package-tree.html">etomica.freeenergy.npath</a>, </li>
 <li><a href="etomica/gaussianwork/package-tree.html">etomica.gaussianwork</a>, </li>
 <li><a href="etomica/graph/engine/package-tree.html">etomica.graph.engine</a>, </li>
 <li><a href="etomica/graph/engine/impl/package-tree.html">etomica.graph.engine.impl</a>, </li>
@@ -1387,6 +1388,8 @@
 <li type="circle">etomica.data.<a href="etomica/data/DataSinkConsole.html" title="class in etomica.data"><span class="typeNameLink">DataSinkConsole</span></a> (implements etomica.data.<a href="etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, java.io.Serializable)</li>
 <li type="circle">etomica.data.<a href="etomica/data/DataSinkTable.DataCasterJudgeTable.html" title="class in etomica.data"><span class="typeNameLink">DataSinkTable.DataCasterJudgeTable</span></a> (implements etomica.data.<a href="etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a>, java.io.Serializable)</li>
 <li type="circle">etomica.modules.adsorption.<a href="etomica/modules/adsorption/DataSourceDensityFunction.html" title="class in etomica.modules.adsorption"><span class="typeNameLink">DataSourceDensityFunction</span></a> (implements etomica.data.<a href="etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>)</li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/DataSourceEnergies.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">DataSourceEnergies</span></a> (implements etomica.data.<a href="etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>)</li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">DataSourceEnergies.PotentialCalculationEnergies</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>)</li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/DataSourceFE.html" title="class in etomica.normalmode"><span class="typeNameLink">DataSourceFE</span></a> (implements etomica.data.<a href="etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, etomica.data.<a href="etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>)</li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/DataSourceFEHistogram.html" title="class in etomica.normalmode"><span class="typeNameLink">DataSourceFEHistogram</span></a> (implements etomica.data.<a href="etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, etomica.data.<a href="etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>)</li>
 <li type="circle">etomica.data.<a href="etomica/data/DataSourceFunction.html" title="class in etomica.data"><span class="typeNameLink">DataSourceFunction</span></a> (implements etomica.data.<a href="etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, etomica.data.<a href="etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>, java.io.Serializable)</li>
@@ -2196,6 +2199,7 @@
 <li type="circle">etomica.integrator.mcmove.<a href="etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove"><span class="typeNameLink">MCMoveBox</span></a>
 <ul>
 <li type="circle">etomica.modules.entropylottery.<a href="etomica/modules/entropylottery/MCMoveAtomAdjacent.html" title="class in etomica.modules.entropylottery"><span class="typeNameLink">MCMoveAtomAdjacent</span></a></li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/MCMoveAtomSwap.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">MCMoveAtomSwap</span></a></li>
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveBiasUB.html" title="class in etomica.association"><span class="typeNameLink">MCMoveBiasUB</span></a></li>
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveBiasUBMolecule.html" title="class in etomica.association"><span class="typeNameLink">MCMoveBiasUBMolecule</span></a> (implements etomica.integrator.mcmove.<a href="etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a>)</li>
 <li type="circle">etomica.integrator.mcmove.<a href="etomica/integrator/mcmove/MCMoveBoxStep.html" title="class in etomica.integrator.mcmove"><span class="typeNameLink">MCMoveBoxStep</span></a> (implements etomica.integrator.mcmove.<a href="etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a>)
@@ -2207,6 +2211,7 @@
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveAtomMonomer.html" title="class in etomica.association"><span class="typeNameLink">MCMoveAtomMonomer</span></a></li>
 <li type="circle">etomica.interfacial.<a href="etomica/interfacial/MCMoveAtomNbr.html" title="class in etomica.interfacial"><span class="typeNameLink">MCMoveAtomNbr</span></a></li>
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveAtomNoSmer.html" title="class in etomica.association"><span class="typeNameLink">MCMoveAtomNoSmer</span></a></li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/MCMoveAtomNPath.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">MCMoveAtomNPath</span></a></li>
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveAtomSmer.html" title="class in etomica.association"><span class="typeNameLink">MCMoveAtomSmer</span></a></li>
 <li type="circle">etomica.virial.<a href="etomica/virial/MCMoveClusterAtom.html" title="class in etomica.virial"><span class="typeNameLink">MCMoveClusterAtom</span></a></li>
 <li type="circle">etomica.virial.<a href="etomica/virial/MCMoveClusterAtomChainHSTail.html" title="class in etomica.virial"><span class="typeNameLink">MCMoveClusterAtomChainHSTail</span></a></li>
@@ -2227,6 +2232,7 @@
 <li type="circle">etomica.association.<a href="etomica/association/MCMoveRotateAssociated.html" title="class in etomica.association"><span class="typeNameLink">MCMoveRotateAssociated</span></a></li>
 </ul>
 </li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/MCMoveAtomCoupled.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">MCMoveAtomCoupled</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/MCMoveAtomCoupled.html" title="class in etomica.normalmode"><span class="typeNameLink">MCMoveAtomCoupled</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/MCMoveAtomCoupledBennet.html" title="class in etomica.normalmode"><span class="typeNameLink">MCMoveAtomCoupledBennet</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/MCMoveAtomCoupledUmbrella.html" title="class in etomica.normalmode"><span class="typeNameLink">MCMoveAtomCoupledUmbrella</span></a></li>
@@ -2868,6 +2874,7 @@
 <li type="circle">etomica.models.oneDHardRods.<a href="etomica/models/oneDHardRods/SimExtensiveTest.SimParam.html" title="class in etomica.models.oneDHardRods"><span class="typeNameLink">SimExtensiveTest.SimParam</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimHarmonicUmbrella.SimBennetParam.html" title="class in etomica.normalmode"><span class="typeNameLink">SimHarmonicUmbrella.SimBennetParam</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimHSMDVacancy.HSMDVParams.html" title="class in etomica.normalmode"><span class="typeNameLink">SimHSMDVacancy.HSMDVParams</span></a></li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/SimLJ.LjMC3DParams.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">SimLJ.LjMC3DParams</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJHTTISuper.SimOverlapParam.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJHTTISuper.SimOverlapParam</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJHTTISuperHCP.SimOverlapParam.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJHTTISuperHCP.SimOverlapParam</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJVacancy.LJParams.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJVacancy.LJParams</span></a></li>
@@ -3130,6 +3137,7 @@
 <li type="circle">etomica.modules.osmosis.<a href="etomica/modules/osmosis/P1HardWall.html" title="class in etomica.modules.osmosis"><span class="typeNameLink">P1HardWall</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a>)</li>
 <li type="circle">etomica.potential.<a href="etomica/potential/P1Harmonic.html" title="class in etomica.potential"><span class="typeNameLink">P1Harmonic</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>)</li>
 <li type="circle">etomica.potential.<a href="etomica/potential/P1HarmonicSite.html" title="class in etomica.potential"><span class="typeNameLink">P1HarmonicSite</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>)</li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">P1ImageHarmonic</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>)</li>
 <li type="circle">etomica.dimer.<a href="etomica/dimer/P1LepsHarmonic.html" title="class in etomica.dimer"><span class="typeNameLink">P1LepsHarmonic</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>)</li>
 <li type="circle">etomica.modules.mu.<a href="etomica/modules/mu/P1MagicWall.html" title="class in etomica.modules.mu"><span class="typeNameLink">P1MagicWall</span></a> (implements etomica.potential.<a href="etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a>)</li>
 <li type="circle">etomica.spin.<a href="etomica/spin/P1MagneticField.html" title="class in etomica.spin"><span class="typeNameLink">P1MagneticField</span></a></li>
@@ -3762,6 +3770,7 @@
 <li type="circle">etomica.kmc.<a href="etomica/kmc/SimKMCmaster.html" title="class in etomica.kmc"><span class="typeNameLink">SimKMCmaster</span></a></li>
 <li type="circle">etomica.kmc.<a href="etomica/kmc/SimKMCMEAMadatom.html" title="class in etomica.kmc"><span class="typeNameLink">SimKMCMEAMadatom</span></a></li>
 <li type="circle">etomica.kmc.<a href="etomica/kmc/SimKMCworker.html" title="class in etomica.kmc"><span class="typeNameLink">SimKMCworker</span></a></li>
+<li type="circle">etomica.freeenergy.npath.<a href="etomica/freeenergy/npath/SimLJ.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">SimLJ</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJHTTISuper.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJHTTISuper</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJHTTISuperHCP.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJHTTISuperHCP</span></a></li>
 <li type="circle">etomica.normalmode.<a href="etomica/normalmode/SimLJVacancy.html" title="class in etomica.normalmode"><span class="typeNameLink">SimLJVacancy</span></a></li>
