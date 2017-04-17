@@ -562,7 +562,7 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomList.html#getAtomCount--">getAtomCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of atoms in the list</dd>
+<dd>the number of atoms in the set</dd>
 </dl>
 </li>
 </ul>
@@ -574,15 +574,11 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <h4>getAtom</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom(int&nbsp;index)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomList.html#getAtom-int-">IAtomList</a></code></span></div>
-<div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
+<div class="block">Returns the i-th atom, with numbering beginning from 0. 
+ If i is greater than count-1, throws an IllegalArgumentException.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomList.html#getAtom-int-">getAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - the index of the desired atom in the list
-          if i is greater than count-1, throws an IllegalArgumentException.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the requested atom</dd>
 </dl>
 </li>
 </ul>
