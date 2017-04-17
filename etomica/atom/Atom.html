@@ -202,10 +202,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns this IAtom's index, which is its place in the parent AtomGroup's
- list of child IAtoms.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -215,15 +212,11 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getParentGroup--">getParentGroup</a></span>()</code>
-<div class="block">Returns the parent AtomGruop of this IAtom.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getParentGroup--">getParentGroup</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getPosition--">getPosition</a></span>()</code>
-<div class="block">Returns the position of the IAtom.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getPosition--">getPosition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
@@ -232,7 +225,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#setIndex-int-">setIndex</a></span>(int&nbsp;newIndex)</code>
-<div class="block">Informs the IAtom of its index, which is used to construct the address.</div>
+<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -403,10 +396,13 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <h4>setIndex</h4>
 <pre>public final&nbsp;void&nbsp;setIndex(int&nbsp;newIndex)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#setIndex-int-">IAtom</a></code></span></div>
-<div class="block">Informs the IAtom of its index, which is used to construct the address.</div>
+<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.
+ This should only be called by the parent molecule.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtom.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the new index</dd>
 </dl>
 </li>
 </ul>
@@ -417,12 +413,12 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>public final&nbsp;int&nbsp;getIndex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#getIndex--">IAtom</a></code></span></div>
-<div class="block">Returns this IAtom's index, which is its place in the parent AtomGroup's
- list of child IAtoms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtom.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this IAtom's index, which is its place in the parent AtomGroup's
+ list of child IAtoms.</dd>
 </dl>
 </li>
 </ul>
@@ -438,6 +434,8 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtom.html#setParent-etomica.api.IMolecule-">setParent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newParent</code> - the new parent molecule</dd>
 </dl>
 </li>
 </ul>
@@ -448,11 +446,11 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <li class="blockList">
 <h4>getParentGroup</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;getParentGroup()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#getParentGroup--">IAtom</a></code></span></div>
-<div class="block">Returns the parent AtomGruop of this IAtom.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtom.html#getParentGroup--">getParentGroup</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parent molecule of this IAtom.</dd>
 </dl>
 </li>
 </ul>
@@ -463,12 +461,12 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <li class="blockList">
 <h4>getPosition</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getPosition()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#getPosition--">IAtom</a></code></span></div>
-<div class="block">Returns the position of the IAtom.  Modifying the returned IVector will
- alter the IAtom's position.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtom.html#getPosition--">getPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the position of the IAtom.  Modifying the returned vector will
+ alter the IAtom's position.</dd>
 </dl>
 </li>
 </ul>
@@ -481,7 +479,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <pre>public&nbsp;int&nbsp;getLeafIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#getLeafIndex--">IAtom</a></code></span></div>
 <div class="block">Returns the global index (within the Box) of this Atom.  The global
- index is unique to the IAtom in the Box.  The IAtom's global may
+ index is unique to the IAtom in the Box.  The IAtom's global index may
  change over the course of a simulation due to addition or removal of
  other IAtoms in the Box.  An BoxGlobalAtomIndexEvent is fired by
  the Box's event manager when an Atom's global index changes.</div>

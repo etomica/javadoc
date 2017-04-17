@@ -108,6 +108,10 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IAtom</span></pre>
+<div class="block">IAtom is an interface for atoms in the simulation.  Atoms have a type
+ (IAtomType), a position (IVectorMutable) and a parent molecule (IMolecule).
+ Atoms also have indices (one for the list of atoms in the box, one for the
+ list of atoms in a molecule).</div>
 </li>
 </ul>
 </div>
@@ -128,10 +132,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns this IAtom's index, which is its place in the parent AtomGroup's
- list of child IAtoms.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -141,15 +142,11 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getParentGroup--">getParentGroup</a></span>()</code>
-<div class="block">Returns the parent AtomGruop of this IAtom.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getParentGroup--">getParentGroup</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getPosition--">getPosition</a></span>()</code>
-<div class="block">Returns the position of the IAtom.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#getPosition--">getPosition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
@@ -158,7 +155,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#setIndex-int-">setIndex</a></span>(int&nbsp;index)</code>
-<div class="block">Informs the IAtom of its index, which is used to construct the address.</div>
+<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -170,7 +167,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtom.html#setParent-etomica.api.IMolecule-">setParent</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;newParent)</code>
-<div class="block">Informs the Atom that the given AtomGroup is its parent.</div>
+<div class="block">Informs the Atom that the given IMolecule is its parent.</div>
 </td>
 </tr>
 </table>
@@ -195,8 +192,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>int&nbsp;getIndex()</pre>
-<div class="block">Returns this IAtom's index, which is its place in the parent AtomGroup's
- list of child IAtoms.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this IAtom's index, which is its place in the parent AtomGroup's
+ list of child IAtoms.</dd>
+</dl>
 </li>
 </ul>
 <a name="setIndex-int-">
@@ -206,7 +206,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>setIndex</h4>
 <pre>void&nbsp;setIndex(int&nbsp;index)</pre>
-<div class="block">Informs the IAtom of its index, which is used to construct the address.</div>
+<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.
+ This should only be called by the parent molecule.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - the new index</dd>
+</dl>
 </li>
 </ul>
 <a name="setLeafIndex-int-">
@@ -228,7 +233,7 @@ var activeTableTab = "activeTableTab";
 <h4>getLeafIndex</h4>
 <pre>int&nbsp;getLeafIndex()</pre>
 <div class="block">Returns the global index (within the Box) of this Atom.  The global
- index is unique to the IAtom in the Box.  The IAtom's global may
+ index is unique to the IAtom in the Box.  The IAtom's global index may
  change over the course of a simulation due to addition or removal of
  other IAtoms in the Box.  An BoxGlobalAtomIndexEvent is fired by
  the Box's event manager when an Atom's global index changes.</div>
@@ -241,8 +246,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>setParent</h4>
 <pre>void&nbsp;setParent(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;newParent)</pre>
-<div class="block">Informs the Atom that the given AtomGroup is its parent.
- This method should only be called by the parent.</div>
+<div class="block">Informs the Atom that the given IMolecule is its parent.
+ This method should only be called by the parent molecule.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newParent</code> - the new parent molecule</dd>
+</dl>
 </li>
 </ul>
 <a name="getParentGroup--">
@@ -252,7 +261,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getParentGroup</h4>
 <pre><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;getParentGroup()</pre>
-<div class="block">Returns the parent AtomGruop of this IAtom.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the parent molecule of this IAtom.</dd>
+</dl>
 </li>
 </ul>
 <a name="getType--">
@@ -265,7 +277,7 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the Atom type, holding properties held in common with other 
- atoms made by this atom's factory.</dd>
+ atoms of the same type.</dd>
 </dl>
 </li>
 </ul>
@@ -276,8 +288,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getPosition</h4>
 <pre><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getPosition()</pre>
-<div class="block">Returns the position of the IAtom.  Modifying the returned IVector will
- alter the IAtom's position.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the position of the IAtom.  Modifying the returned vector will
+ alter the IAtom's position.</dd>
+</dl>
 </li>
 </ul>
 </li>
