@@ -104,7 +104,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IAtomList</span></pre>
-<div class="block">Interface for a set of IAtoms.  The IAtomSet might contain 0, 1, 2 or many
+<div class="block">Interface for a list of IAtoms.  The IAtomList might contain 0, 1, 2 or many
  IAtoms.</div>
 </li>
 </ul>
@@ -156,8 +156,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getAtom</h4>
 <pre><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom(int&nbsp;i)</pre>
-<div class="block">Returns the i-th atom, with numbering beginning from 0. 
- If i is greater than count-1, throws an IllegalArgumentException.</div>
+<div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>i</code> - the index of the desired atom in the list
+          if i is greater than count-1, throws an IllegalArgumentException.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the requested atom</dd>
+</dl>
 </li>
 </ul>
 <a name="getAtomCount--">
@@ -169,7 +175,7 @@ var activeTableTab = "activeTableTab";
 <pre>int&nbsp;getAtomCount()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of atoms in the set</dd>
+<dd>the number of atoms in the list</dd>
 </dl>
 </li>
 </ul>
