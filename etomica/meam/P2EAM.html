@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -298,25 +298,33 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#prepForGradient--">prepForGradient</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#makeIntegratorListener-etomica.potential.PotentialMaster-etomica.api.IBox-">makeIntegratorListener</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                      <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<div class="block">Creates and returns an integrator listener that makes the integrator's
+ force sum work properly by running an energy calculation first.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#reset--">reset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#prepForGradient--">prepForGradient</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#reset--">reset</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#setCutoff-double-double-">setCutoff</a></span>(double&nbsp;rc1,
          double&nbsp;rc2)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/meam/P2EAM.html#virial-etomica.api.IAtomList-">virial</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
@@ -660,7 +668,7 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <a name="gradient-etomica.api.IAtomList-etomica.space.Tensor-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>gradient</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;gradient(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
@@ -675,6 +683,25 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeIntegratorListener-etomica.potential.PotentialMaster-etomica.api.IBox-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeIntegratorListener</h4>
+<pre>public&nbsp;<a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a>&nbsp;makeIntegratorListener(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                                    <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<div class="block">Creates and returns an integrator listener that makes the integrator's
+ force sum work properly by running an energy calculation first.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>potentialMaster</code> - </dd>
+<dd><code>box</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the listener</dd>
 </dl>
 </li>
 </ul>
