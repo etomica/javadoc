@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,17 +188,24 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">integratorForcePrecomputed</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<div class="block">Invoked before the integrator computes the forces on all atoms
+ in the system.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the beginning of each integrator step.</div>
@@ -323,6 +330,22 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IIntegratorListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="integratorForcePrecomputed-etomica.api.IIntegratorEvent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>integratorForcePrecomputed</h4>
+<pre>public&nbsp;void&nbsp;integratorForcePrecomputed(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">IIntegratorListenerMD</a></code></span></div>
+<div class="block">Invoked before the integrator computes the forces on all atoms
+ in the system.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">integratorForcePrecomputed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></code></dd>
 </dl>
 </li>
 </ul>
