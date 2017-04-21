@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,10 +175,14 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#gradient">gradient</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#nOffset">nOffset</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#offset">offset</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#w">w</a></span></code>&nbsp;</td>
 </tr>
@@ -230,16 +234,20 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#findNOffset-etomica.api.IBox-">findNOffset</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getRange--">getRange</a></span>()</code>
 <div class="block">Returns zero.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getW--">getW</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#gradient-etomica.api.IAtomList-">gradient</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>
 <div class="block">Returns the gradient of the potential as it applies to each atom in the 
@@ -247,7 +255,7 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
  the first atom is varied.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
         <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</code>
@@ -255,17 +263,17 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
  contribution of the AtomSet to the pressureTensor.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setW-double-">setW</a></span>(double&nbsp;newW)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#virial-etomica.api.IAtomList-">virial</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
@@ -353,10 +361,19 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <a name="gradient">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>gradient</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] gradient</pre>
+</li>
+</ul>
+<a name="nOffset">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>nOffset</h4>
+<pre>protected&nbsp;int nOffset</pre>
 </li>
 </ul>
 </li>
@@ -386,6 +403,15 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="findNOffset-etomica.api.IBox-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNOffset</h4>
+<pre>public&nbsp;void&nbsp;findNOffset(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+</li>
+</ul>
 <a name="setW-double-">
 <!--   -->
 </a>
