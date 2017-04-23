@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -98,12 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">etomica.data.DataSourceScalar</a></li>
-<li>
-<ul class="inheritance">
 <li>etomica.data.meter.MeterStructureFactor</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -112,16 +107,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></dd>
+<dd><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MeterStructureFactor</span>
-extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></pre>
-<div class="block">Meter for calculation of structure factor of a group of atoms based on a
- particular wave vector.  The meter is initially constructed using the smallest 
- reciprocal lattice vector as the wave vector and loops over all atoms in
- the box.  GetData returns the square of the magnitude of the structure factor.</div>
+extends java.lang.Object
+implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></pre>
+<div class="block">Meter for calculation of structure factor of atoms for all wave vectors less
+ than a cutoff.</div>
 </li>
 </ul>
 </div>
@@ -141,37 +135,50 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#atomList">atomList</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#box">box</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#data">data</a></span></code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#lattice">lattice</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#dataInfo">dataInfo</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#moleculeList">moleculeList</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#space">space</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#struct">struct</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#tag">tag</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#waveVec">waveVec</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#xData">xData</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#xDataInfo">xDataInfo</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#xTag">xTag</a></span></code>&nbsp;</td>
+</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.etomica.data.DataSourceScalar">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></h3>
-<code><a href="../../../etomica/data/DataSourceScalar.html#data">data</a>, <a href="../../../etomica/data/DataSourceScalar.html#dataInfo">dataInfo</a>, <a href="../../../etomica/data/DataSourceScalar.html#tag">tag</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -186,11 +193,11 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#MeterStructureFactor-etomica.space.ISpace-etomica.lattice.BravaisLatticeCrystal-etomica.api.IBox-">MeterStructureFactor</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                    <a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;aLattice,
-                    <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox)</code>
-<div class="block">Creates meter with default to compute the structure factor
- for all atoms in the box.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#MeterStructureFactor-etomica.space.ISpace-etomica.api.IBox-double-">MeterStructureFactor</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+                    <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox,
+                    double&nbsp;cutoff)</code>
+<div class="block">Creates meter with default to compute the structure factor for all atoms
+ in the box.</div>
 </td>
 </tr>
 </table>
@@ -209,39 +216,64 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#actionPerformed--">actionPerformed</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getDataAsArray--">getDataAsArray</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getDataAsScalar--">getDataAsScalar</a></span>()</code>
-<div class="block">Returns a single scalar value as the measurement for the given box.</div>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getIndependentArrayDimension--">getIndependentArrayDimension</a></span>()</code>
+<div class="block">Returns the number of independent data dimensions</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#reset--">reset</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getIndependentData-int-">getIndependentData</a></span>(int&nbsp;i)</code>
+<div class="block">Returns the X data for the given dimension</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setAtoms-etomica.api.IMoleculeList-">setAtoms</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;moleculeList)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getIndependentDataInfo-int-">getIndependentDataInfo</a></span>(int&nbsp;i)</code>
+<div class="block">Returns the DataInfo for the given dimension</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getIndependentTag--">getIndependentTag</a></span>()</code>
+<div class="block">Returns the tag associated with this DataSource.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#makeWaveVector-double-">makeWaveVector</a></span>(double&nbsp;cutoff)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#resetData--">resetData</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setWaveVec-etomica.api.IVectorMutable:A-">setWaveVec</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;_waveVec)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setAtoms-etomica.api.IAtomList-">setAtoms</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setCutoff-double-">setCutoff</a></span>(double&nbsp;cutoff)</code>
+<div class="block">Sets the wave vector cutoff.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setWaveVec-etomica.api.IVectorMutable:A-">setWaveVec</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;waveVec)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataSourceScalar">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></h3>
-<code><a href="../../../etomica/data/DataSourceScalar.html#getData--">getData</a>, <a href="../../../etomica/data/DataSourceScalar.html#getDataDouble--">getDataDouble</a>, <a href="../../../etomica/data/DataSourceScalar.html#getDataInfo--">getDataInfo</a>, <a href="../../../etomica/data/DataSourceScalar.html#getTag--">getTag</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -263,15 +295,6 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="lattice">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lattice</h4>
-<pre>protected&nbsp;<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a> lattice</pre>
-</li>
-</ul>
 <a name="space">
 <!--   -->
 </a>
@@ -308,13 +331,67 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] waveVec</pre>
 </li>
 </ul>
-<a name="moleculeList">
+<a name="atomList">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atomList</h4>
+<pre>protected&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a> atomList</pre>
+</li>
+</ul>
+<a name="data">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>data</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> data</pre>
+</li>
+</ul>
+<a name="dataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> dataInfo</pre>
+</li>
+</ul>
+<a name="tag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
+</li>
+</ul>
+<a name="xTag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xTag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> xTag</pre>
+</li>
+</ul>
+<a name="xData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xData</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a> xData</pre>
+</li>
+</ul>
+<a name="xDataInfo">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>moleculeList</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a> moleculeList</pre>
+<h4>xDataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a> xDataInfo</pre>
 </li>
 </ul>
 </li>
@@ -325,17 +402,24 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterStructureFactor-etomica.space.ISpace-etomica.lattice.BravaisLatticeCrystal-etomica.api.IBox-">
+<a name="MeterStructureFactor-etomica.space.ISpace-etomica.api.IBox-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterStructureFactor</h4>
 <pre>public&nbsp;MeterStructureFactor(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                            <a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;aLattice,
-                            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox)</pre>
-<div class="block">Creates meter with default to compute the structure factor
- for all atoms in the box.</div>
+                            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox,
+                            double&nbsp;cutoff)</pre>
+<div class="block">Creates meter with default to compute the structure factor for all atoms
+ in the box.  All wave vectors consistent with the box shape and with
+ magnitude less than cutoff are included.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>space</code> - the space</dd>
+<dd><code>aBox</code> - the box</dd>
+<dd><code>cutoff</code> - the cutoff</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -346,22 +430,37 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="reset--">
+<a name="resetData--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset()</pre>
+<h4>resetData</h4>
+<pre>protected&nbsp;void&nbsp;resetData()</pre>
 </li>
 </ul>
-<a name="actionPerformed--">
+<a name="makeWaveVector-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>actionPerformed</h4>
-<pre>public&nbsp;void&nbsp;actionPerformed()</pre>
+<h4>makeWaveVector</h4>
+<pre>protected&nbsp;int&nbsp;makeWaveVector(double&nbsp;cutoff)</pre>
+</li>
+</ul>
+<a name="setCutoff-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCutoff</h4>
+<pre>public&nbsp;void&nbsp;setCutoff(double&nbsp;cutoff)</pre>
+<div class="block">Sets the wave vector cutoff.  All wave vectors consistent with the box
+ shape that have a magnitude less than the cutoff will be computed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cutoff</code> - the cutoff for the wave vector magnitude</dd>
+</dl>
 </li>
 </ul>
 <a name="setWaveVec-etomica.api.IVectorMutable:A-">
@@ -370,48 +469,124 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>setWaveVec</h4>
-<pre>public&nbsp;void&nbsp;setWaveVec(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;_waveVec)</pre>
+<pre>public&nbsp;void&nbsp;setWaveVec(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;waveVec)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>_waveVec</code> - Sets a custom wave vector array.</dd>
+<dd><code>waveVec</code> - Sets a custom wave vector array.</dd>
 </dl>
 </li>
 </ul>
-<a name="setAtoms-etomica.api.IMoleculeList-">
+<a name="setAtoms-etomica.api.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtoms</h4>
-<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;moleculeList)</pre>
+<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>moleculeList</code> - Sets the list of atoms for factor calculation.</dd>
+<dd><code>atomList</code> - Sets the list of atoms for factor calculation.</dd>
 </dl>
 </li>
 </ul>
-<a name="getDataAsArray--">
+<a name="getData--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDataAsArray</h4>
-<pre>public&nbsp;double[]&nbsp;getDataAsArray()</pre>
+<h4>getData</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/IDataSource.html#getData--">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the data given by this source</dd>
+</dl>
 </li>
 </ul>
-<a name="getDataAsScalar--">
+<a name="getTag--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTag</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/IEtomicaDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDataInfo--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataInfo</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfo()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/IEtomicaDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIndependentData-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndependentData</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a>&nbsp;getIndependentData(int&nbsp;i)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentData-int-">DataSourceIndependent</a></code></span></div>
+<div class="block">Returns the X data for the given dimension</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentData-int-">getIndependentData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIndependentDataInfo-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndependentDataInfo</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a>&nbsp;getIndependentDataInfo(int&nbsp;i)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentDataInfo-int-">DataSourceIndependent</a></code></span></div>
+<div class="block">Returns the DataInfo for the given dimension</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentDataInfo-int-">getIndependentDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIndependentArrayDimension--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndependentArrayDimension</h4>
+<pre>public&nbsp;int&nbsp;getIndependentArrayDimension()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentArrayDimension--">DataSourceIndependent</a></code></span></div>
+<div class="block">Returns the number of independent data dimensions</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentArrayDimension--">getIndependentArrayDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIndependentTag--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getDataAsScalar</h4>
-<pre>public&nbsp;double&nbsp;getDataAsScalar()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/data/DataSourceScalar.html#getDataAsScalar--">DataSourceScalar</a></code></span></div>
-<div class="block">Returns a single scalar value as the measurement for the given box.
- Subclasses define this method to specify the measurement they make.</div>
+<h4>getIndependentTag</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getIndependentTag()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentTag--">DataSourceIndependent</a></code></span></div>
+<div class="block">Returns the tag associated with this DataSource.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/data/DataSourceScalar.html#getDataAsScalar--">getDataAsScalar</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></code></dd>
+<dd><code><a href="../../../etomica/data/DataSourceIndependent.html#getIndependentTag--">getIndependentTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code></dd>
 </dl>
 </li>
 </ul>
