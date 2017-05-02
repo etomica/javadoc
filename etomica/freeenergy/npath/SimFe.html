@@ -169,18 +169,22 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/freeenergy/npath/MCMoveAtomSwap.html" title="class in etomica.freeenergy.npath">MCMoveAtomSwap</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#mcMoveSwap">mcMoveSwap</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#p1ImageHarmonic">p1ImageHarmonic</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/meam/P2EAM.html" title="class in etomica.meam">P2EAM</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#potential">potential</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#species">species</a></span></code>&nbsp;</td>
 </tr>
@@ -206,12 +210,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#SimFe-etomica.freeenergy.npath.SimFe.Crystal-int-double-double-double-int-">SimFe</a></span>(etomica.freeenergy.npath.SimFe.Crystal&nbsp;crystal,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/SimFe.html#SimFe-etomica.freeenergy.npath.SimFe.Crystal-int-double-double-double-int-int-">SimFe</a></span>(etomica.freeenergy.npath.SimFe.Crystal&nbsp;crystal,
      int&nbsp;numAtoms,
      double&nbsp;temperature,
      double&nbsp;density,
      double&nbsp;w,
-     int&nbsp;offsetDim)</code>&nbsp;</td>
+     int&nbsp;offsetDim,
+     int&nbsp;numInnerSteps)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -318,10 +323,19 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <a name="p1ImageHarmonic">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>p1ImageHarmonic</h4>
 <pre>public&nbsp;<a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a> p1ImageHarmonic</pre>
+</li>
+</ul>
+<a name="mcMoveSwap">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>mcMoveSwap</h4>
+<pre>public&nbsp;<a href="../../../etomica/freeenergy/npath/MCMoveAtomSwap.html" title="class in etomica.freeenergy.npath">MCMoveAtomSwap</a> mcMoveSwap</pre>
 </li>
 </ul>
 </li>
@@ -332,7 +346,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimFe-etomica.freeenergy.npath.SimFe.Crystal-int-double-double-double-int-">
+<a name="SimFe-etomica.freeenergy.npath.SimFe.Crystal-int-double-double-double-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -343,7 +357,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
              double&nbsp;temperature,
              double&nbsp;density,
              double&nbsp;w,
-             int&nbsp;offsetDim)</pre>
+             int&nbsp;offsetDim,
+             int&nbsp;numInnerSteps)</pre>
 </li>
 </ul>
 </li>
