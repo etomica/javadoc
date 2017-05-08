@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,33 +124,25 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomAdded-etomica.api.IBoxAtomEvent-">boxAtomAdded</a></span>(<a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomRemoved-etomica.api.IBoxAtomEvent-">boxAtomRemoved</a></span>(<a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
@@ -169,24 +161,6 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="boxAtomAdded-etomica.api.IBoxAtomEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>boxAtomAdded</h4>
-<pre>void&nbsp;boxAtomAdded(<a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="boxAtomRemoved-etomica.api.IBoxAtomEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>boxAtomRemoved</h4>
-<pre>void&nbsp;boxAtomRemoved(<a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
 <a name="boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">
 <!--   -->
 </a>
