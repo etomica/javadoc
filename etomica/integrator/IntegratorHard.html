@@ -332,7 +332,9 @@ implements <a href="../../etomica/nbr/list/INeighborListListener.html" title="in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<div class="block">Called when a molecule is added to the box.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/integrator/IntegratorHard.Agent.html" title="class in etomica.integrator">IntegratorHard.Agent</a></code></td>
@@ -851,11 +853,16 @@ implements <a href="../../etomica/nbr/list/INeighborListListener.html" title="in
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
 <pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<div class="block">Called when a molecule is added to the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the added molecule and the box to
+          which it was added.</dd>
 </dl>
 </li>
 </ul>

@@ -108,6 +108,8 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IAtomType</span></pre>
+<div class="block">IAtomType identifies a set of atoms and defines properties of those atoms.
+ Properties include indices used for tracking, mass and element.</div>
 </li>
 </ul>
 </div>
@@ -136,16 +138,11 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns the index for this IAtomType, within the context of an
- ISimulation.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#getMass--">getMass</a></span>()</code>
-<div class="block">Returns the value of the mass.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#getMass--">getMass</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
@@ -153,23 +150,25 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#rm--">rm</a></span>()</code>
-<div class="block">Returns the reciprocal of the mass, 1.0/mass</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#rm--">rm</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#setChildIndex-int-">setChildIndex</a></span>(int&nbsp;newChildIndex)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#setChildIndex-int-">setChildIndex</a></span>(int&nbsp;newChildIndex)</code>
+<div class="block">Informs the atom type what its child index is.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#setIndex-int-">setIndex</a></span>(int&nbsp;newIndex)</code>
-<div class="block">Informs the ISpecies what its index should be.</div>
+<div class="block">Informs the IAtomType what its index should be.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IAtomType.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</code>
+<div class="block">Informs the atom type what species contains the atom types.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -193,6 +192,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>setSpecies</h4>
 <pre>void&nbsp;setSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</pre>
+<div class="block">Informs the atom type what species contains the atom types.  This should
+ only be called by the species.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newParent</code> - the atom type's new parent</dd>
+</dl>
 </li>
 </ul>
 <a name="setIndex-int-">
@@ -202,8 +207,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>setIndex</h4>
 <pre>void&nbsp;setIndex(int&nbsp;newIndex)</pre>
-<div class="block">Informs the ISpecies what its index should be.  This should only be
- called by the SpeciesManager.</div>
+<div class="block">Informs the IAtomType what its index should be.  This should only be
+ called by the species.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the atom type's new index</dd>
+</dl>
 </li>
 </ul>
 <a name="getIndex--">
@@ -213,9 +222,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>int&nbsp;getIndex()</pre>
-<div class="block">Returns the index for this IAtomType, within the context of an
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index for this IAtomType, within the context of an
  ISimulation.  The index is the IAtomType's position in the list of
- atom types in the simulation.</div>
+ atom types in the simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="setChildIndex-int-">
@@ -225,6 +237,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>setChildIndex</h4>
 <pre>void&nbsp;setChildIndex(int&nbsp;newChildIndex)</pre>
+<div class="block">Informs the atom type what its child index is.  This should only be called
+ by the species.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newChildIndex</code> - the atom type's new child index</dd>
+</dl>
 </li>
 </ul>
 <a name="getChildIndex--">
@@ -234,6 +252,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getChildIndex</h4>
 <pre>int&nbsp;getChildIndex()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the child index.  This is the index of the atom type within the
+ species.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSpecies--">
@@ -243,6 +266,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getSpecies</h4>
 <pre><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the species that contains the atom type</dd>
+</dl>
 </li>
 </ul>
 <a name="getMass--">
@@ -252,7 +279,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getMass</h4>
 <pre>double&nbsp;getMass()</pre>
-<div class="block">Returns the value of the mass.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the mass.</dd>
+</dl>
 </li>
 </ul>
 <a name="rm--">
@@ -262,7 +292,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>rm</h4>
 <pre>double&nbsp;rm()</pre>
-<div class="block">Returns the reciprocal of the mass, 1.0/mass</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the reciprocal of the mass, 1.0/mass</dd>
+</dl>
 </li>
 </ul>
 <a name="getElement--">
@@ -272,6 +305,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getElement</h4>
 <pre><a href="../../etomica/api/IElement.html" title="interface in etomica.api">IElement</a>&nbsp;getElement()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the element for this atom type</dd>
+</dl>
 </li>
 </ul>
 </li>

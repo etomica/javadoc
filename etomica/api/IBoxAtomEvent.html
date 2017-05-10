@@ -113,6 +113,10 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">IBoxAtomEvent</span>
 extends <a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a></pre>
+<div class="block">A box event that is somehow related to an atom.  The atom might have been
+ added or removed, or may have a new index.  Details may be determined from
+ the other interfaces implemented by the event object or obtained from
+ calling methods from those interfaces.</div>
 </li>
 </ul>
 </div>
@@ -164,6 +168,10 @@ extends <a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.a
 <li class="blockList">
 <h4>getAtom</h4>
 <pre><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the atom that is related to this event.</dd>
+</dl>
 </li>
 </ul>
 </li>

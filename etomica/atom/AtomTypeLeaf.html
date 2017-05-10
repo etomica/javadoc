@@ -201,16 +201,11 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns the index for this IAtomType, within the context of an
- ISimulation.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#getMass--">getMass</a></span>()</code>
-<div class="block">Returns the value of the mass.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#getMass--">getMass</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/units/Dimension.html" title="class in etomica.units">Dimension</a></code></td>
@@ -226,23 +221,25 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#rm--">rm</a></span>()</code>
-<div class="block">Returns the reciprocal of the mass, 1.0/mass</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#rm--">rm</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#setChildIndex-int-">setChildIndex</a></span>(int&nbsp;newChildIndex)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#setChildIndex-int-">setChildIndex</a></span>(int&nbsp;newChildIndex)</code>
+<div class="block">Informs the atom type what its child index is.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#setIndex-int-">setIndex</a></span>(int&nbsp;newIndex)</code>
-<div class="block">Informs the ISpecies what its index should be.</div>
+<div class="block">Informs the IAtomType what its index should be.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeLeaf.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</code>
+<div class="block">Informs the atom type what species contains the atom types.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -335,11 +332,13 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <h4>setIndex</h4>
 <pre>public&nbsp;void&nbsp;setIndex(int&nbsp;newIndex)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#setIndex-int-">IAtomType</a></code></span></div>
-<div class="block">Informs the ISpecies what its index should be.  This should only be
- called by the SpeciesManager.</div>
+<div class="block">Informs the IAtomType what its index should be.  This should only be
+ called by the species.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the atom type's new index</dd>
 </dl>
 </li>
 </ul>
@@ -350,13 +349,13 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>public&nbsp;int&nbsp;getIndex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#getIndex--">IAtomType</a></code></span></div>
-<div class="block">Returns the index for this IAtomType, within the context of an
- ISimulation.  The index is the IAtomType's position in the list of
- atom types in the simulation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index for this IAtomType, within the context of an
+ ISimulation.  The index is the IAtomType's position in the list of
+ atom types in the simulation.</dd>
 </dl>
 </li>
 </ul>
@@ -376,9 +375,14 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <li class="blockList">
 <h4>setSpecies</h4>
 <pre>public&nbsp;void&nbsp;setSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newParent)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#setSpecies-etomica.api.ISpecies-">IAtomType</a></code></span></div>
+<div class="block">Informs the atom type what species contains the atom types.  This should
+ only be called by the species.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newParent</code> - the atom type's new parent</dd>
 </dl>
 </li>
 </ul>
@@ -389,9 +393,14 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <li class="blockList">
 <h4>setChildIndex</h4>
 <pre>public&nbsp;void&nbsp;setChildIndex(int&nbsp;newChildIndex)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#setChildIndex-int-">IAtomType</a></code></span></div>
+<div class="block">Informs the atom type what its child index is.  This should only be called
+ by the species.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#setChildIndex-int-">setChildIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newChildIndex</code> - the atom type's new child index</dd>
 </dl>
 </li>
 </ul>
@@ -405,6 +414,9 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#getChildIndex--">getChildIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the child index.  This is the index of the atom type within the
+ species.</dd>
 </dl>
 </li>
 </ul>
@@ -418,6 +430,8 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#getSpecies--">getSpecies</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the species that contains the atom type</dd>
 </dl>
 </li>
 </ul>
@@ -428,11 +442,11 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <li class="blockList">
 <h4>getMass</h4>
 <pre>public final&nbsp;double&nbsp;getMass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#getMass--">IAtomType</a></code></span></div>
-<div class="block">Returns the value of the mass.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#getMass--">getMass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the mass.</dd>
 </dl>
 </li>
 </ul>
@@ -443,11 +457,11 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <li class="blockList">
 <h4>rm</h4>
 <pre>public final&nbsp;double&nbsp;rm()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtomType.html#rm--">IAtomType</a></code></span></div>
-<div class="block">Returns the reciprocal of the mass, 1.0/mass</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#rm--">rm</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the reciprocal of the mass, 1.0/mass</dd>
 </dl>
 </li>
 </ul>
@@ -470,6 +484,8 @@ implements <a href="../../etomica/api/IAtomType.html" title="interface in etomic
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IAtomType.html#getElement--">getElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the element for this atom type</dd>
 </dl>
 </li>
 </ul>

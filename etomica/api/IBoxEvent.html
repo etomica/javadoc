@@ -108,6 +108,10 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IBoxEvent</span></pre>
+<div class="block">A box event fired by the box's event manager.  The box that changed is
+ available via getBox.  Other details can be inferred from the other
+ interfaces implemented by the event object and/or obtained from calling
+ methods on those interfaces.</div>
 </li>
 </ul>
 </div>
@@ -152,6 +156,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getBox</h4>
 <pre><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box that changed and triggered the event</dd>
+</dl>
 </li>
 </ul>
 </li>

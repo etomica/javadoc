@@ -104,6 +104,11 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IBox</span></pre>
+<div class="block">IBox holds a boundary and a list of molecules.  The boundary defines the
+ spatial extent of the box and conditions at the edges of the boundary.  The
+ molecules in the box interact via potentials, but do not interact with
+ molecules in other boxes.  IBox contains methods to add and remove molecules
+ and an event manager that notifies listeners about those events.</div>
 </li>
 </ul>
 </div>
@@ -137,46 +142,33 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getBoundary--">getBoundary</a></span>()</code>
-<div class="block">Returns the box's boundary.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getBoundary--">getBoundary</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IBoxEventManager.html" title="interface in etomica.api">IBoxEventManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getEventManager--">getEventManager</a></span>()</code>
-<div class="block">Returns the event manager for this box.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getEventManager--">getEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns the IBox's index.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getLeafList--">getLeafList</a></span>()</code>
-<div class="block">Returns the list of atoms contained in this box.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getLeafList--">getLeafList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getMoleculeList--">getMoleculeList</a></span>()</code>
-<div class="block">Returns a list of all molecules in this box as an IAtomSet.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getMoleculeList--">getMoleculeList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getMoleculeList-etomica.api.ISpecies-">getMoleculeList</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>
-<div class="block">Returns the list of molecules of the given species as an IAtomSet that
- are in this box.</div>
+<div class="block">Returns the list of molecules of the given species.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getNMolecules-etomica.api.ISpecies-">getNMolecules</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>
-<div class="block">Returns the number of molecules in this box of the given ISpecies.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBox.html#getNMolecules-etomica.api.ISpecies-">getNMolecules</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -233,6 +225,10 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;setIndex(int&nbsp;newIndex)</pre>
 <div class="block">Informs the IBox what its index is.  This should only be called by the
  ISimulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the box's new index</dd>
+</dl>
 </li>
 </ul>
 <a name="getIndex--">
@@ -242,9 +238,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>int&nbsp;getIndex()</pre>
-<div class="block">Returns the IBox's index.  The index corresponds to the box's position
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the IBox's index.  The index corresponds to the box's position
  in the simulation's list of IBoxes.  The index of the first IBox is 0.
- The index of the last IBox is n-1, where n is the number of IBoxes.</div>
+ The index of the last IBox is n-1, where n is the number of IBoxes.</dd>
+</dl>
 </li>
 </ul>
 <a name="addMolecule-etomica.api.IMolecule-">
@@ -258,6 +257,10 @@ var activeTableTab = "activeTableTab";
  already be in this box and should not be in another IBox.  The molecule
  should be a member of an ISpecies which has been added to the
  ISimulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>molecule</code> - the molecule to be added to the box</dd>
+</dl>
 </li>
 </ul>
 <a name="removeMolecule-etomica.api.IMolecule-">
@@ -269,6 +272,10 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;removeMolecule(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Removes the given molecule from this box.  The molecule must be held
  by the box before this method is called.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>molecule</code> - the molecule to be removed from the box</dd>
+</dl>
 </li>
 </ul>
 <a name="setNMolecules-etomica.api.ISpecies-int-">
@@ -282,6 +289,11 @@ var activeTableTab = "activeTableTab";
 <div class="block">Sets the number of molecules in this box of the given ISpecies to n.
  Molecules are added to or removed from the box to achieve the desired
  number.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the species whose number of molecules should be changed</dd>
+<dd><code>n</code> - the desired number of molecules</dd>
+</dl>
 </li>
 </ul>
 <a name="getNMolecules-etomica.api.ISpecies-">
@@ -291,7 +303,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getNMolecules</h4>
 <pre>int&nbsp;getNMolecules(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
-<div class="block">Returns the number of molecules in this box of the given ISpecies.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of molecules in this box of the given ISpecies.</dd>
+</dl>
 </li>
 </ul>
 <a name="getMoleculeList-etomica.api.ISpecies-">
@@ -301,8 +316,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getMoleculeList</h4>
 <pre><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;getMoleculeList(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
-<div class="block">Returns the list of molecules of the given species as an IAtomSet that
- are in this box.</div>
+<div class="block">Returns the list of molecules of the given species.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the species</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the requested list of molecules</dd>
+</dl>
 </li>
 </ul>
 <a name="getMoleculeList--">
@@ -312,7 +332,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getMoleculeList</h4>
 <pre><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;getMoleculeList()</pre>
-<div class="block">Returns a list of all molecules in this box as an IAtomSet.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all molecules in this box.</dd>
+</dl>
 </li>
 </ul>
 <a name="getLeafList--">
@@ -322,7 +345,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getLeafList</h4>
 <pre><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;getLeafList()</pre>
-<div class="block">Returns the list of atoms contained in this box.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of atoms contained in this box.</dd>
+</dl>
 </li>
 </ul>
 <a name="setBoundary-etomica.api.IBoundary-">
@@ -333,6 +359,10 @@ var activeTableTab = "activeTableTab";
 <h4>setBoundary</h4>
 <pre>void&nbsp;setBoundary(<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;newBoundary)</pre>
 <div class="block">Sets the box's boundary to the given IBoundary.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newBoundary</code> - the new boundary</dd>
+</dl>
 </li>
 </ul>
 <a name="getBoundary--">
@@ -342,7 +372,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getBoundary</h4>
 <pre><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;getBoundary()</pre>
-<div class="block">Returns the box's boundary.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box's boundary.</dd>
+</dl>
 </li>
 </ul>
 <a name="getEventManager--">
@@ -352,9 +385,9 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getEventManager</h4>
 <pre><a href="../../etomica/api/IBoxEventManager.html" title="interface in etomica.api">IBoxEventManager</a>&nbsp;getEventManager()</pre>
-<div class="block">Returns the event manager for this box.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the event manager for this box.</dd>
 </dl>
 </li>
 </ul>
@@ -367,6 +400,10 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;addSpeciesNotify(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
 <div class="block">Notifies the IBox that the given species has been added to the
  simulation.  This method should only be called by the simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the added species</dd>
+</dl>
 </li>
 </ul>
 <a name="removeSpeciesNotify-etomica.api.ISpecies-">
@@ -379,6 +416,10 @@ var activeTableTab = "activeTableTab";
 <div class="block">Notifies the IBox that a Species has been removed.  This method should
  only be called by the simulation.  This triggers the removal of all
  molecules of the given species from this box.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the removed species</dd>
+</dl>
 </li>
 </ul>
 </li>

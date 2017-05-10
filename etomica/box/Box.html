@@ -237,46 +237,33 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getBoundary--">getBoundary</a></span>()</code>
-<div class="block">Returns the box's boundary.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getBoundary--">getBoundary</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IBoxEventManager.html" title="interface in etomica.api">IBoxEventManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getEventManager--">getEventManager</a></span>()</code>
-<div class="block">Returns the event manager for this box.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getEventManager--">getEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns the IBox's index.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getLeafList--">getLeafList</a></span>()</code>
-<div class="block">Returns the list of atoms contained in this box.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getLeafList--">getLeafList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getMoleculeList--">getMoleculeList</a></span>()</code>
-<div class="block">Returns a list of all molecules in this box as an IAtomSet.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getMoleculeList--">getMoleculeList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getMoleculeList-etomica.api.ISpecies-">getMoleculeList</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>
-<div class="block">Returns the list of molecules of the given species as an IAtomSet that
- are in this box.</div>
+<div class="block">Returns the list of molecules of the given species.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getNMolecules-etomica.api.ISpecies-">getNMolecules</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>
-<div class="block">Returns the number of molecules in this box of the given ISpecies.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/Box.html#getNMolecules-etomica.api.ISpecies-">getNMolecules</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -426,6 +413,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the box's new index</dd>
 </dl>
 </li>
 </ul>
@@ -436,13 +425,13 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>public&nbsp;int&nbsp;getIndex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getIndex--">IBox</a></code></span></div>
-<div class="block">Returns the IBox's index.  The index corresponds to the box's position
- in the simulation's list of IBoxes.  The index of the first IBox is 0.
- The index of the last IBox is n-1, where n is the number of IBoxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the IBox's index.  The index corresponds to the box's position
+ in the simulation's list of IBoxes.  The index of the first IBox is 0.
+ The index of the last IBox is n-1, where n is the number of IBoxes.</dd>
 </dl>
 </li>
 </ul>
@@ -483,6 +472,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#addMolecule-etomica.api.IMolecule-">addMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>molecule</code> - the molecule to be added to the box</dd>
 </dl>
 </li>
 </ul>
@@ -499,6 +490,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#removeMolecule-etomica.api.IMolecule-">removeMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>molecule</code> - the molecule to be removed from the box</dd>
 </dl>
 </li>
 </ul>
@@ -517,6 +510,9 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#setNMolecules-etomica.api.ISpecies-int-">setNMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the species whose number of molecules should be changed</dd>
+<dd><code>n</code> - the desired number of molecules</dd>
 </dl>
 </li>
 </ul>
@@ -527,11 +523,11 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getNMolecules</h4>
 <pre>public&nbsp;int&nbsp;getNMolecules(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getNMolecules-etomica.api.ISpecies-">IBox</a></code></span></div>
-<div class="block">Returns the number of molecules in this box of the given ISpecies.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getNMolecules-etomica.api.ISpecies-">getNMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of molecules in this box of the given ISpecies.</dd>
 </dl>
 </li>
 </ul>
@@ -543,11 +539,14 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <h4>getMoleculeList</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;getMoleculeList(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getMoleculeList-etomica.api.ISpecies-">IBox</a></code></span></div>
-<div class="block">Returns the list of molecules of the given species as an IAtomSet that
- are in this box.</div>
+<div class="block">Returns the list of molecules of the given species.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getMoleculeList-etomica.api.ISpecies-">getMoleculeList</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the species</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the requested list of molecules</dd>
 </dl>
 </li>
 </ul>
@@ -558,11 +557,11 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getMoleculeList</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;getMoleculeList()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getMoleculeList--">IBox</a></code></span></div>
-<div class="block">Returns a list of all molecules in this box as an IAtomSet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getMoleculeList--">getMoleculeList</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all molecules in this box.</dd>
 </dl>
 </li>
 </ul>
@@ -578,6 +577,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#setBoundary-etomica.api.IBoundary-">setBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>b</code> - the new boundary</dd>
 </dl>
 </li>
 </ul>
@@ -588,11 +589,11 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getBoundary</h4>
 <pre>public final&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;getBoundary()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getBoundary--">IBox</a></code></span></div>
-<div class="block">Returns the box's boundary.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getBoundary--">getBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box's boundary.</dd>
 </dl>
 </li>
 </ul>
@@ -612,12 +613,11 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getEventManager</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IBoxEventManager.html" title="interface in etomica.api">IBoxEventManager</a>&nbsp;getEventManager()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getEventManager--">IBox</a></code></span></div>
-<div class="block">Returns the event manager for this box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getEventManager--">getEventManager</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the event manager for this box.</dd>
 </dl>
 </li>
 </ul>
@@ -634,6 +634,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#addSpeciesNotify-etomica.api.ISpecies-">addSpeciesNotify</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the added species</dd>
 </dl>
 </li>
 </ul>
@@ -651,6 +653,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#removeSpeciesNotify-etomica.api.ISpecies-">removeSpeciesNotify</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the removed species</dd>
 </dl>
 </li>
 </ul>
@@ -661,11 +665,11 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <li class="blockList">
 <h4>getLeafList</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;getLeafList()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBox.html#getLeafList--">IBox</a></code></span></div>
-<div class="block">Returns the list of atoms contained in this box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBox.html#getLeafList--">getLeafList</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of atoms contained in this box.</dd>
 </dl>
 </li>
 </ul>

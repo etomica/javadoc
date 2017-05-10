@@ -372,6 +372,10 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block">Returns a vector with elements equal to the lengths of the edges of
  the boundary.  The returned Vector does not represent the values internally,
  so manipulation of the vector has no effect on this BoundaryRectangular instance.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box size</dd>
+</dl>
 </li>
 </ul>
 <a name="updateDimensions--">
@@ -393,6 +397,10 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block">Sets the size and shape of the rectangular boundary.  Values are 
  copied, so manipulation of the given vector has no subsequent effect
  on this Boundary instance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - the box's new size</dd>
+</dl>
 </li>
 </ul>
 <a name="volume--">
@@ -425,6 +433,12 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block">Returns the vector that defines the edge of this boundary for the given
  dimension.  All vectors returned by this method can be considered to
  originate from one corner.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>d</code> - the dimension of the desired edge vector</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the edge vector</dd>
+</dl>
 </li>
 </ul>
 <a name="imageOrigins-int-">

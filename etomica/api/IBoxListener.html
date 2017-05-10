@@ -104,6 +104,9 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IBoxListener</span></pre>
+<div class="block">A box listener receives notifications for box events.  Each type of event
+ triggers a call to a different method.  A listener receives event
+ notifications once it is added to the box's event manager.</div>
 </li>
 </ul>
 </div>
@@ -124,27 +127,40 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>
+<div class="block">Called when an atom's global (leaf) index has changed.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>
+<div class="block">Called when the maximum leaf index in the box has changed.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<div class="block">Called when a molecule is added to the box.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</code>
+<div class="block">Called when an molecule's index has changed.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<div class="block">Called when a molecule is removed from the box.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/api/IBoxListener.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</code>
+<div class="block">Called when the number of molecules of a particular species has changed
+ in the box.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -168,6 +184,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
 <pre>void&nbsp;boxMoleculeAdded(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block">Called when a molecule is added to the box.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the added molecule and the box to
+          which it was added.</dd>
+</dl>
 </li>
 </ul>
 <a name="boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">
@@ -177,6 +199,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxMoleculeRemoved</h4>
 <pre>void&nbsp;boxMoleculeRemoved(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block">Called when a molecule is removed from the box.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the removed molecule and the box from
+          which it was removed.</dd>
+</dl>
 </li>
 </ul>
 <a name="boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">
@@ -186,6 +214,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxGlobalAtomLeafIndexChanged</h4>
 <pre>void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</pre>
+<div class="block">Called when the maximum leaf index in the box has changed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box and the new maximum global
+          index</dd>
+</dl>
 </li>
 </ul>
 <a name="boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">
@@ -195,6 +229,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxAtomLeafIndexChanged</h4>
 <pre>void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</pre>
+<div class="block">Called when an atom's global (leaf) index has changed.  This typically
+ happens after one molecule is removed and the indices of other atoms are
+ renumbered to fill in the gap left by the removed atoms.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box, the atom whose index changed
+          and the atom's old leaf index.  The atom's new leaf index can
+          be obtained from the atom.</dd>
+</dl>
 </li>
 </ul>
 <a name="boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">
@@ -204,6 +247,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxMoleculeIndexChanged</h4>
 <pre>void&nbsp;boxMoleculeIndexChanged(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</pre>
+<div class="block">Called when an molecule's index has changed.  This typically happens
+ after one molecule is removed and the indices of another molecule is
+ changed to fill in the gap.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box, the molecule whose index
+          changed and the molecule's old index.  The molecule's new index
+          can be obtained from the atom.</dd>
+</dl>
 </li>
 </ul>
 <a name="boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">
@@ -213,6 +265,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>boxNumberMolecules</h4>
 <pre>void&nbsp;boxNumberMolecules(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</pre>
+<div class="block">Called when the number of molecules of a particular species has changed
+ in the box.  This method is called before the new molecules have
+ been added to the box.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box, the species and the new
+          number of molecules of that species.</dd>
+</dl>
 </li>
 </ul>
 </li>

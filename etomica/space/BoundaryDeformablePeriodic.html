@@ -449,6 +449,10 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getBoxSize()</pre>
 <div class="block">Returns the length of the sides of a rectangular box oriented in the lab
  frame and in which the boundary is inscribed.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box size</dd>
+</dl>
 </li>
 </ul>
 <a name="getBoundaryTensor--">
@@ -500,6 +504,10 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
  If the vector passed to this method is the displacement vector between
  two points, the vector will be transformed such that it corresponds to
  the vector between the nearest image of those two points.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dr</code> - the vector to be transformed</dd>
+</dl>
 </li>
 </ul>
 <a name="deform-etomica.space.Tensor-">
@@ -555,6 +563,10 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <pre>public&nbsp;void&nbsp;setBoxSize(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
 <div class="block">Scales each boundary edge so that its length equals the corresponding value
  in the given vector.  Deformation of boundary is otherwise unchanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - the box's new size</dd>
+</dl>
 </li>
 </ul>
 <a name="setEdgeVector-int-etomica.api.IVector-">
@@ -647,6 +659,12 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block">Returns the vector that defines the edge of this boundary for the given
  dimension.  All vectors returned by this method can be considered to
  originate from one corner.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>d</code> - the dimension of the desired edge vector</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the edge vector</dd>
+</dl>
 </li>
 </ul>
 <a name="getPeriodicity-int-">
@@ -659,6 +677,12 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoundary.html#getPeriodicity-int-">IBoundary</a></code></span></div>
 <div class="block">Returns true if the boundary is periodic in the given direction (as
  defined by the getEdgeVector method).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>i</code> - the dimension of the desired periodicity</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the periodicity of dimension d</dd>
+</dl>
 </li>
 </ul>
 <a name="getIndexIterator--">

@@ -244,19 +244,27 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>
+<div class="block">Called when an atom's global (leaf) index has changed.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>
+<div class="block">Called when the maximum leaf index in the box has changed.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<div class="block">Called when a molecule is added to the box.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<div class="block">Called when a molecule is removed from the box.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -507,11 +515,16 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
 <pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<div class="block">Called when a molecule is added to the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the added molecule and the box to
+          which it was added.</dd>
 </dl>
 </li>
 </ul>
@@ -522,11 +535,16 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>boxMoleculeRemoved</h4>
 <pre>public&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<div class="block">Called when a molecule is removed from the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the removed molecule and the box from
+          which it was removed.</dd>
 </dl>
 </li>
 </ul>
@@ -537,11 +555,19 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>boxAtomLeafIndexChanged</h4>
 <pre>public&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">IBoxListener</a></code></span></div>
+<div class="block">Called when an atom's global (leaf) index has changed.  This typically
+ happens after one molecule is removed and the indices of other atoms are
+ renumbered to fill in the gap left by the removed atoms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box, the atom whose index changed
+          and the atom's old leaf index.  The atom's new leaf index can
+          be obtained from the atom.</dd>
 </dl>
 </li>
 </ul>
@@ -552,11 +578,16 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>boxGlobalAtomLeafIndexChanged</h4>
 <pre>public&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">IBoxListener</a></code></span></div>
+<div class="block">Called when the maximum leaf index in the box has changed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event, which contains the box and the new maximum global
+          index</dd>
 </dl>
 </li>
 </ul>

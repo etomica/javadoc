@@ -250,7 +250,9 @@ implements <a href="../../../../etomica/box/BoxCellManager.html" title="interfac
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a></span>(<a href="../../../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a></span>(<a href="../../../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a>&nbsp;e)</code>
+<div class="block">Informs the listener that the boundary shape and/or size has changed.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -585,9 +587,13 @@ implements <a href="../../../../etomica/box/BoxCellManager.html" title="interfac
 <li class="blockList">
 <h4>boundaryInflate</h4>
 <pre>public&nbsp;void&nbsp;boundaryInflate(<a href="../../../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/api/IBoundaryListener.html#boundaryInflate-etomica.api.IBoundaryEvent-">IBoundaryListener</a></code></span></div>
+<div class="block">Informs the listener that the boundary shape and/or size has changed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../etomica/api/IBoundaryListener.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/api/IBoundaryListener.html" title="interface in etomica.api">IBoundaryListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - event, which can be used to determine the boundary that changed.</dd>
 </dl>
 </li>
 </ul>
