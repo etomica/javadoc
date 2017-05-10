@@ -47,11 +47,11 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/models/OPLS/ConformationAceticAcid.html" title="class in etomica.models.OPLS"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html" title="class in etomica.models.OPLS"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../index.html?etomica/models/aceticAcid/DipoleSourceAceticAcid.html" target="_top">Frames</a></li>
+<li><a href="../../../index.html?etomica/models/OPLS/DipoleSourceAceticAcid.html" target="_top">Frames</a></li>
 <li><a href="DipoleSourceAceticAcid.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
@@ -90,7 +90,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">etomica.models.aceticAcid</div>
+<div class="subTitle">etomica.models.OPLS</div>
 <h2 title="Class DipoleSourceAceticAcid" class="title">Class DipoleSourceAceticAcid</h2>
 </div>
 <div class="contentContainer">
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>etomica.models.aceticAcid.DipoleSourceAceticAcid</li>
+<li>etomica.models.OPLS.DipoleSourceAceticAcid</li>
 </ul>
 </li>
 </ul>
@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">DipoleSourceAceticAcid</span>
 extends java.lang.Object
 implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></pre>
-<div class="block">dipole for acetic acid</div>
+<div class="block">calculates dipole for acetic acid</div>
 </li>
 </ul>
 </div>
@@ -135,7 +135,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/aceticAcid/DipoleSourceAceticAcid.html#dipole">dipole</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#dipole">dipole</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -152,7 +152,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/aceticAcid/DipoleSourceAceticAcid.html#DipoleSourceAceticAcid-etomica.space.ISpace-">DipoleSourceAceticAcid</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#DipoleSourceAceticAcid-etomica.space.ISpace-">DipoleSourceAceticAcid</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -171,7 +171,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/aceticAcid/DipoleSourceAceticAcid.html#getDipole-etomica.api.IMolecule-">getDipole</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#getDipole-etomica.api.IMolecule-">getDipole</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the dipole of the given molecule.</div>
 </td>
 </tr>
@@ -221,6 +221,10 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <li class="blockList">
 <h4>DipoleSourceAceticAcid</h4>
 <pre>public&nbsp;DipoleSourceAceticAcid(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>space</code> - dimension of the space</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -245,6 +249,10 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/atom/DipoleSource.html#getDipole-etomica.api.IMolecule-">getDipole</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>molecule</code> - index of the molecule</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns the dipole of the given molecule</dd>
 </dl>
 </li>
 </ul>
@@ -275,11 +283,11 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/models/OPLS/ConformationAceticAcid.html" title="class in etomica.models.OPLS"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html" title="class in etomica.models.OPLS"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../index.html?etomica/models/aceticAcid/DipoleSourceAceticAcid.html" target="_top">Frames</a></li>
+<li><a href="../../../index.html?etomica/models/OPLS/DipoleSourceAceticAcid.html" target="_top">Frames</a></li>
 <li><a href="DipoleSourceAceticAcid.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">

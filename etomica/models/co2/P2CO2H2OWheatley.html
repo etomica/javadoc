@@ -332,7 +332,9 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>
+<div class="block">Randomly moves molcules all over, computing and checking 2nd derivative</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
@@ -341,24 +343,32 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#main2DGrid-java.lang.String:A-">main2DGrid</a></span>(java.lang.String[]&nbsp;args)</code>
-<div class="block">Writes a x-y grid of energies</div>
+<div class="block">Writes x-y grid of energies</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#mainQ-java.lang.String:A-">mainQ</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#mainQ-java.lang.String:A-">mainQ</a></span>(java.lang.String[]&nbsp;args)</code>
+<div class="block">Check charges (all sums should be 0 for neutral molecules)</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#mainTestU-java.lang.String:A-">mainTestU</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#mainTestU-java.lang.String:A-">mainTestU</a></span>(java.lang.String[]&nbsp;args)</code>
+<div class="block">Reads geometry.txt file and computes energy for each configuration</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/models/co2/P2CO2H2OWheatley.P2CO2H2OSC.html" title="class in etomica.models.co2">P2CO2H2OWheatley.P2CO2H2OSC</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#makeSemiclassical-double-">makeSemiclassical</a></span>(double&nbsp;temperature)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#makeSemiclassical-double-">makeSemiclassical</a></span>(double&nbsp;temperature)</code>
+<div class="block">Creates a Feynman-Hibbs implementation of a semi-classical potential based on this model for the given temperature.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/models/co2/P2CO2H2OWheatley.P2CO2H2OSCTI.html" title="class in etomica.models.co2">P2CO2H2OWheatley.P2CO2H2OSCTI</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#makeSemiclassicalTI-double-">makeSemiclassicalTI</a></span>(double&nbsp;temperature)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2H2OWheatley.html#makeSemiclassicalTI-double-">makeSemiclassicalTI</a></span>(double&nbsp;temperature)</code>
+<div class="block">Creates a Takahashi-Imada implementation of a semi-classical potential based on this model for the given temperature.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -771,6 +781,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>makeSemiclassical</h4>
 <pre>public&nbsp;<a href="../../../etomica/models/co2/P2CO2H2OWheatley.P2CO2H2OSC.html" title="class in etomica.models.co2">P2CO2H2OWheatley.P2CO2H2OSC</a>&nbsp;makeSemiclassical(double&nbsp;temperature)</pre>
+<div class="block">Creates a Feynman-Hibbs implementation of a semi-classical potential based on this model for the given temperature.</div>
 </li>
 </ul>
 <a name="makeSemiclassicalTI-double-">
@@ -780,6 +791,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>makeSemiclassicalTI</h4>
 <pre>public&nbsp;<a href="../../../etomica/models/co2/P2CO2H2OWheatley.P2CO2H2OSCTI.html" title="class in etomica.models.co2">P2CO2H2OWheatley.P2CO2H2OSCTI</a>&nbsp;makeSemiclassicalTI(double&nbsp;temperature)</pre>
+<div class="block">Creates a Takahashi-Imada implementation of a semi-classical potential based on this model for the given temperature.</div>
 </li>
 </ul>
 <a name="virial-etomica.api.IAtomList-">
@@ -843,6 +855,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <h4>mainTestU</h4>
 <pre>public static&nbsp;void&nbsp;mainTestU(java.lang.String[]&nbsp;args)
                       throws java.io.IOException</pre>
+<div class="block">Reads geometry.txt file and computes energy for each configuration</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -856,6 +869,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>mainQ</h4>
 <pre>public static&nbsp;void&nbsp;mainQ(java.lang.String[]&nbsp;args)</pre>
+<div class="block">Check charges (all sums should be 0 for neutral molecules)</div>
 </li>
 </ul>
 <a name="main-java.lang.String:A-">
@@ -865,6 +879,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>main</h4>
 <pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
+<div class="block">Randomly moves molcules all over, computing and checking 2nd derivative</div>
 </li>
 </ul>
 <a name="main2-java.lang.String:A-">
@@ -884,7 +899,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <h4>main2DGrid</h4>
 <pre>public static&nbsp;void&nbsp;main2DGrid(java.lang.String[]&nbsp;args)
                        throws java.io.IOException</pre>
-<div class="block">Writes a x-y grid of energies</div>
+<div class="block">Writes x-y grid of energies</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
