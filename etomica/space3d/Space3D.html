@@ -228,13 +228,13 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Space3D.html#sphereArea-double-">sphereArea</a></span>(double&nbsp;r)</code>
-<div class="block">Returns the surface "area" of the "sphere" defined in the D-dimensional space.</div>
+<div class="block">The surface "area" of the "sphere" defined in the D-dimensional space.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Space3D.html#sphereVolume-double-">sphereVolume</a></span>(double&nbsp;r)</code>
-<div class="block">Returns the "volume" of the "sphere" defined in the D-dimensional space.</div>
+<div class="block">The "volume" of the "sphere" defined in the D-dimensional space.</div>
 </td>
 </tr>
 </table>
@@ -293,6 +293,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#D--">D</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#D--">D</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the dimension of this space.</dd>
 </dl>
 </li>
 </ul>
@@ -310,6 +312,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#powerD-int-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
 </dl>
 </li>
 </ul>
@@ -327,6 +331,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#powerD-double-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
 </dl>
 </li>
 </ul>
@@ -343,6 +349,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#rootD-double-">rootD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the power 1/D, where D is the dimension of the space.</dd>
 </dl>
 </li>
 </ul>
@@ -360,6 +368,9 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array of dimension D (as defined for this Space instance),
+ with each element equal to the given value.</dd>
 </dl>
 </li>
 </ul>
@@ -377,6 +388,9 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array of dimension D (as defined for this Space instance),
+ with each element equal to the given value.</dd>
 </dl>
 </li>
 </ul>
@@ -387,9 +401,9 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <li class="blockList">
 <h4>sphereVolume</h4>
 <pre>public&nbsp;double&nbsp;sphereVolume(double&nbsp;r)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#sphereVolume-double-">ISpace</a></code></span></div>
-<div class="block">Returns the "volume" of the "sphere" defined in the D-dimensional space.
- In 1-D, this is twice the radius; in 2-D the area of the circle; 
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Space.html#sphereVolume-double-">Space</a></code></span></div>
+<div class="block">The "volume" of the "sphere" defined in the D-dimensional space.
+ In 1-D, this is twice the radius; in 2-D the area of the circle;
  in 3-D the volume of the sphere.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -410,9 +424,9 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <li class="blockList">
 <h4>sphereArea</h4>
 <pre>public&nbsp;double&nbsp;sphereArea(double&nbsp;r)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#sphereArea-double-">ISpace</a></code></span></div>
-<div class="block">Returns the surface "area" of the "sphere" defined in the D-dimensional space.
- In 1-D this is zero; in 2-D the circumference of the circle; in 3-D 
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Space.html#sphereArea-double-">Space</a></code></span></div>
+<div class="block">The surface "area" of the "sphere" defined in the D-dimensional space.
+ In 1-D this is zero; in 2-D the circumference of the circle; in 3-D
  the surface area of the sphere.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -420,7 +434,7 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#sphereArea-double-">sphereArea</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>r</code> - the radius</dd>
+<dd><code>r</code> - the sphere radius</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the area</dd>
 </dl>
@@ -440,6 +454,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeVector--">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Vector appropriate to the space.</dd>
 </dl>
 </li>
 </ul>
@@ -457,6 +473,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeOrientation--">makeOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Orientation appropriate to the space.</dd>
 </dl>
 </li>
 </ul>
@@ -474,6 +492,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeTensor--">makeTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Tensor appropriate to the space.</dd>
 </dl>
 </li>
 </ul>
@@ -491,6 +511,8 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new RotationTensor appropriate to the space.</dd>
 </dl>
 </li>
 </ul>

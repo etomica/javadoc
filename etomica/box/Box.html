@@ -119,31 +119,37 @@ var activeTableTab = "activeTableTab";
 extends java.lang.Object
 implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></pre>
 <div class="block">A Box collects all atoms that interact with one another; atoms in different
- boxs do not interact. These are the important features of a Box:
+ boxes do not interact. These are the important features of a Box:
  <p>
- <ol>
- <li>It holds a SpeciesMaster instance, which provides the root of a
- hierarchy of atoms that represent the physical objects that interact.
- <li>It holds a Boundary object, obtained from the governing Space, that
+ <ul>
+ <li>It holds lists of the molecules in the box, including a list of all
+ molecules, and an array of lists that can be selected by Species.</li>
+ <li>It holds a list of all atoms in the box.</li>
+ <li>It holds a Boundary object that
  defines the volume of the box and the behavior of atoms as they move into or
- across the boundary of the box.
+ across the boundary of the box.</li>
  <li>It maintains a list of listeners that are informed when significant
- events happen in the box (such as a change in its boundary).
+ events happen in the box (such as when molecules are added or removed).</li>
  <li>Each Box has a unique index assigned when it is constructed.
  The index assignment begins at 0 and is incremented after each Box
  construction. This index is useful when collecting things in reference to the
- box.
- </ol>
+ box.</li>
+ </ul>
+ The box maintains index values for each molecule and each atom. These values
+ are held as integer fields by the corresponding Molecule and Atom instances.
+ The indices are assigned when molecule (and its atoms) are added to the box via
+ the addMolecule method. The indices are assigned to match the index in the list
+ holding the molecule/atom.
+ <br>
  A box is acted upon by an Integrator instance to move its atoms around and
- generate configurations. Properties of a box are measured by MeterAbstract
- instances which are simply DataSource objects that require a box to
- generate their data. <br>
- A simulation may involve more than one box. All Box instances are
- registered with the simulation specified upon their construction, and
- may be accessed via the simulation's getBoxs method.</div>
+ generate configurations. <br>
+ A simulation may involve more than one box. All Box instances should be
+ registered with the simulation via <a href="../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-"><code>Simulation.addBox(IBox)</code></a> and
+ may be accessed via the simulation's getBox method.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../etomica/space/Boundary.html" title="class in etomica.space"><code>Boundary</code></a>, 
+<a href="../../etomica/box/BoxEventManager.html" title="class in etomica.box"><code>BoxEventManager</code></a>, 
 <a href="../../serialized-form.html#etomica.box.Box">Serialized Form</a></dd>
 </dl>
 </li>
@@ -345,22 +351,22 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <div class="block">List of leaf atoms in box</div>
 </li>
 </ul>
-<a name="moleculeLists">
+<a name="allMoleculeList">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>moleculeLists</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[] moleculeLists</pre>
+<h4>allMoleculeList</h4>
+<pre>protected final&nbsp;<a href="../../etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a> allMoleculeList</pre>
 </li>
 </ul>
-<a name="allMoleculeList">
+<a name="moleculeLists">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>allMoleculeList</h4>
-<pre>protected final&nbsp;<a href="../../etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a> allMoleculeList</pre>
+<h4>moleculeLists</h4>
+<pre>protected&nbsp;<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[] moleculeLists</pre>
 </li>
 </ul>
 </li>
@@ -400,6 +406,23 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getIndex--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndex</h4>
+<pre>public&nbsp;int&nbsp;getIndex()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/api/IBox.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the IBox's index.  The index corresponds to the box's position
+ in the simulation's list of IBoxes.  The index of the first IBox is 0.
+ The index of the last IBox is n-1, where n is the number of IBoxes.</dd>
+</dl>
+</li>
+</ul>
 <a name="setIndex-int-">
 <!--   -->
 </a>
@@ -415,23 +438,6 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dd><code><a href="../../etomica/api/IBox.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newIndex</code> - the box's new index</dd>
-</dl>
-</li>
-</ul>
-<a name="getIndex--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getIndex</h4>
-<pre>public&nbsp;int&nbsp;getIndex()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBox.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the IBox's index.  The index corresponds to the box's position
- in the simulation's list of IBoxes.  The index of the first IBox is 0.
- The index of the last IBox is n-1, where n is the number of IBoxes.</dd>
 </dl>
 </li>
 </ul>
@@ -565,6 +571,21 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 </dl>
 </li>
 </ul>
+<a name="getBoundary--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBoundary</h4>
+<pre>public final&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;getBoundary()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/api/IBox.html#getBoundary--">getBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the box's boundary.</dd>
+</dl>
+</li>
+</ul>
 <a name="setBoundary-etomica.api.IBoundary-">
 <!--   -->
 </a>
@@ -579,21 +600,6 @@ implements java.io.Serializable, <a href="../../etomica/api/IBox.html" title="in
 <dd><code><a href="../../etomica/api/IBox.html#setBoundary-etomica.api.IBoundary-">setBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>b</code> - the new boundary</dd>
-</dl>
-</li>
-</ul>
-<a name="getBoundary--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getBoundary</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;getBoundary()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBox.html#getBoundary--">getBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the box's boundary.</dd>
 </dl>
 </li>
 </ul>

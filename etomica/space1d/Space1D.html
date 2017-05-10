@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../etomica/space1d/RotationTensor1D.html" title="class in etomica.space1d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/space1d/Tensor1D.html" title="class in etomica.space1d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -222,19 +222,19 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space1d/Space1D.html#rootD-double-">rootD</a></span>(double&nbsp;a)</code>
-<div class="block">Returns the Dth root of the given value, a^(1/D), where D is the dimension of the space.</div>
+<div class="block">Returns the given value raised to the power 1/D, where D is the dimension of the space.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space1d/Space1D.html#sphereArea-double-">sphereArea</a></span>(double&nbsp;r)</code>
-<div class="block">Returns the surface "area" of the "sphere" defined in the D-dimensional space.</div>
+<div class="block">The surface "area" of the "sphere" defined in the D-dimensional space.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space1d/Space1D.html#sphereVolume-double-">sphereVolume</a></span>(double&nbsp;r)</code>
-<div class="block">Returns the "volume" of the "sphere" defined in the D-dimensional space.</div>
+<div class="block">The "volume" of the "sphere" defined in the D-dimensional space.</div>
 </td>
 </tr>
 </table>
@@ -275,222 +275,7 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <pre>public static&nbsp;<a href="../../etomica/space1d/Space1D.html" title="class in etomica.space1d">Space1D</a>&nbsp;getInstance()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns the instance.</dd>
-</dl>
-</li>
-</ul>
-<a name="D--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>D</h4>
-<pre>public&nbsp;int&nbsp;D()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#D--">ISpace</a></code></span></div>
-<div class="block">The dimension of this space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#D--">D</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#D--">D</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="powerD-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>powerD</h4>
-<pre>public&nbsp;int&nbsp;powerD(int&nbsp;n)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-int-">ISpace</a></code></span></div>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#powerD-int-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="powerD-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>powerD</h4>
-<pre>public&nbsp;double&nbsp;powerD(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-double-">ISpace</a></code></span></div>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#powerD-double-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="rootD-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>rootD</h4>
-<pre>public&nbsp;double&nbsp;rootD(double&nbsp;a)</pre>
-<div class="block">Returns the Dth root of the given value, a^(1/D), where D is the dimension of the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#rootD-double-">rootD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="sphereVolume-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sphereVolume</h4>
-<pre>public&nbsp;double&nbsp;sphereVolume(double&nbsp;r)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#sphereVolume-double-">ISpace</a></code></span></div>
-<div class="block">Returns the "volume" of the "sphere" defined in the D-dimensional space.
- In 1-D, this is twice the radius; in 2-D the area of the circle; 
- in 3-D the volume of the sphere.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#sphereVolume-double-">sphereVolume</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#sphereVolume-double-">sphereVolume</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>r</code> - the radius</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the volume</dd>
-</dl>
-</li>
-</ul>
-<a name="sphereArea-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sphereArea</h4>
-<pre>public&nbsp;double&nbsp;sphereArea(double&nbsp;r)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#sphereArea-double-">ISpace</a></code></span></div>
-<div class="block">Returns the surface "area" of the "sphere" defined in the D-dimensional space.
- In 1-D this is zero; in 2-D the circumference of the circle; in 3-D 
- the surface area of the sphere.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#sphereArea-double-">sphereArea</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#sphereArea-double-">sphereArea</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>r</code> - the radius</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the area</dd>
-</dl>
-</li>
-</ul>
-<a name="makeVector--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeVector</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeVector--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Vector appropriate to the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeVector--">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeOrientation--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeOrientation</h4>
-<pre>public&nbsp;<a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a>&nbsp;makeOrientation()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeOrientation--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Orientation appropriate to the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeOrientation--">makeOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeTensor--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeTensor</h4>
-<pre>public&nbsp;<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;makeTensor()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeTensor--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Tensor appropriate to the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeTensor--">makeTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeRotationTensor--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeRotationTensor</h4>
-<pre>public&nbsp;<a href="../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a>&nbsp;makeRotationTensor()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new RotationTensor appropriate to the space.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeArrayD-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeArrayD</h4>
-<pre>public&nbsp;int[]&nbsp;makeArrayD(int&nbsp;i)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">ISpace</a></code></span></div>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeArrayD-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeArrayD</h4>
-<pre>public&nbsp;double[]&nbsp;makeArrayD(double&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">ISpace</a></code></span></div>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dd>the singleton instance of this class.</dd>
 </dl>
 </li>
 </ul>
@@ -511,7 +296,7 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <a name="r2-etomica.space1d.Vector1D-etomica.space1d.Vector1D-etomica.api.IBoundary-etomica.space1d.Vector1D-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>r2</h4>
 <pre>public static final&nbsp;double&nbsp;r2(<a href="../../etomica/space1d/Vector1D.html" title="class in etomica.space1d">Vector1D</a>&nbsp;u1,
@@ -525,7 +310,247 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 <dd><code>u1</code> - one of the vectors and is unchanged by the calculation</dd>
 <dd><code>u2</code> - the other vector and is unchanged by the calculation</dd>
 <dd><code>b</code> - a nearest image transformation</dd>
-<dd><code>work</code> - a work vector used for the calculation.</dd>
+<dd><code>work</code> - a work vector used for the calculation</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the nearest-image squared distance</dd>
+</dl>
+</li>
+</ul>
+<a name="D--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>D</h4>
+<pre>public&nbsp;int&nbsp;D()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#D--">ISpace</a></code></span></div>
+<div class="block">The dimension of this space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#D--">D</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#D--">D</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the dimension of this space.</dd>
+</dl>
+</li>
+</ul>
+<a name="powerD-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>powerD</h4>
+<pre>public&nbsp;int&nbsp;powerD(int&nbsp;n)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-int-">ISpace</a></code></span></div>
+<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#powerD-int-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="powerD-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>powerD</h4>
+<pre>public&nbsp;double&nbsp;powerD(double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-double-">ISpace</a></code></span></div>
+<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#powerD-double-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="rootD-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rootD</h4>
+<pre>public&nbsp;double&nbsp;rootD(double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#rootD-double-">ISpace</a></code></span></div>
+<div class="block">Returns the given value raised to the power 1/D, where D is the dimension of the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#rootD-double-">rootD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given value raised to the power 1/D, where D is the dimension of the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="sphereVolume-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sphereVolume</h4>
+<pre>public&nbsp;double&nbsp;sphereVolume(double&nbsp;r)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Space.html#sphereVolume-double-">Space</a></code></span></div>
+<div class="block">The "volume" of the "sphere" defined in the D-dimensional space.
+ In 1-D, this is twice the radius; in 2-D the area of the circle;
+ in 3-D the volume of the sphere.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#sphereVolume-double-">sphereVolume</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#sphereVolume-double-">sphereVolume</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>r</code> - the radius</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the volume</dd>
+</dl>
+</li>
+</ul>
+<a name="sphereArea-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sphereArea</h4>
+<pre>public&nbsp;double&nbsp;sphereArea(double&nbsp;r)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Space.html#sphereArea-double-">Space</a></code></span></div>
+<div class="block">The surface "area" of the "sphere" defined in the D-dimensional space.
+ In 1-D this is zero; in 2-D the circumference of the circle; in 3-D
+ the surface area of the sphere.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#sphereArea-double-">sphereArea</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#sphereArea-double-">sphereArea</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>r</code> - the sphere radius</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the area</dd>
+</dl>
+</li>
+</ul>
+<a name="makeVector--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVector</h4>
+<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeVector--">ISpace</a></code></span></div>
+<div class="block">Constructs and returns a new Vector appropriate to the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeVector--">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Vector appropriate to the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeOrientation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeOrientation</h4>
+<pre>public&nbsp;<a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a>&nbsp;makeOrientation()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeOrientation--">ISpace</a></code></span></div>
+<div class="block">Constructs and returns a new Orientation appropriate to the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeOrientation--">makeOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Orientation appropriate to the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeTensor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeTensor</h4>
+<pre>public&nbsp;<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;makeTensor()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeTensor--">ISpace</a></code></span></div>
+<div class="block">Constructs and returns a new Tensor appropriate to the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeTensor--">makeTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new Tensor appropriate to the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeRotationTensor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeRotationTensor</h4>
+<pre>public&nbsp;<a href="../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a>&nbsp;makeRotationTensor()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">ISpace</a></code></span></div>
+<div class="block">Constructs and returns a new RotationTensor appropriate to the space.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new RotationTensor appropriate to the space.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeArrayD-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeArrayD</h4>
+<pre>public&nbsp;int[]&nbsp;makeArrayD(int&nbsp;i)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">ISpace</a></code></span></div>
+<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array of dimension D (as defined for this Space instance),
+ with each element equal to the given value.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeArrayD-double-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeArrayD</h4>
+<pre>public&nbsp;double[]&nbsp;makeArrayD(double&nbsp;d)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">ISpace</a></code></span></div>
+<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array of dimension D (as defined for this Space instance),
+ with each element equal to the given value.</dd>
 </dl>
 </li>
 </ul>
@@ -556,7 +581,7 @@ extends <a href="../../etomica/space/Space.html" title="class in etomica.space">
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../etomica/space1d/RotationTensor1D.html" title="class in etomica.space1d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/space1d/Tensor1D.html" title="class in etomica.space1d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -114,6 +114,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">TensorND</span>
 extends java.lang.Object
 implements <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></pre>
+<div class="block">Implementation of the 2nd-rank tensor class for arbitrary dimension.</div>
 </li>
 </ul>
 </div>
@@ -155,7 +156,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TensorND-int-">TensorND</a></span>(int&nbsp;dim)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TensorND-double:A:A-">TensorND</a></span>(double[][]&nbsp;d)</code>
+<div class="block">Constructs and initializes tensor to the values given in an array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TensorND-int-">TensorND</a></span>(int&nbsp;dim)</code>
+<div class="block">Constructs tensor with specified dimension</div>
+</td>
 </tr>
 </table>
 </li>
@@ -180,7 +188,9 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#assignTo-double:A:A-">assignTo</a></span>(double[][]&nbsp;d)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#assignTo-double:A:A-">assignTo</a></span>(double[][]&nbsp;d)</code>
+<div class="block">Fills the given 2-dimensional array with the elements of this tensor.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -203,122 +213,168 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#DE-etomica.space.Tensor-">DE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#DE-etomica.space.Tensor-">DE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>
+<div class="block">"Divide equals" (/=) operation, element-by-element.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#determinant--">determinant</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#determinant--">determinant</a></span>()</code>
+<div class="block">Computes the determinant of the matrix represented by this tensor</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-double-">E</a></span>(double&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#diagE-etomica.api.IVector-">diagE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<div class="block">Makes this a diagonal tensor with elements set by the given vector.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-double-">E</a></span>(double&nbsp;a)</code>
+<div class="block">"Equals" operation, setting all elements of this tensor to the given value</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-double:A:A-">E</a></span>(double[][]&nbsp;d)</code>
 <div class="block">Sets the tensor elements using the elements of the array.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-etomica.api.IVector:A-">E</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;v)</code>
 <div class="block">Fills the tensor column-wise with the given vectors.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-etomica.space.Tensor-">E</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>&nbsp;</td>
-</tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#Ev1v2-etomica.api.IVector-etomica.api.IVector-">Ev1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-     <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
-<div class="block">Sets this equal to the dyadic or outer product of the given vectors.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#E-etomica.space.Tensor-">E</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>
+<div class="block">"Equals" operation.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#invert--">invert</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#equals-etomica.space.Tensor-">equals</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;t)</code>
+<div class="block">Element-by-element comparison of tensors</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#isNaN--">isNaN</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#Ev1v2-etomica.api.IVector-etomica.api.IVector-">Ev1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
+     <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<div class="block">Sets this tensor equal to the dyadic or outer product of the given vectors.</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#map-etomica.api.IFunction-">map</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#invert--">invert</a></span>()</code>
+<div class="block">Replaces this tensor with its inverse.</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#ME-etomica.space.Tensor-">ME</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#isNaN--">isNaN</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#MEv1v2-etomica.api.IVector-etomica.api.IVector-">MEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#map-etomica.api.IFunction-">map</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</code>
+<div class="block">Applies given function to each element of this tensor.</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-double-">PE</a></span>(double&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#ME-etomica.space.Tensor-">ME</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>
+<div class="block">"Minus equals" (-=) operation, subtracting the elements of the given tensor from the
+ respective elements of this tensor.</div>
+</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-int-int-double-">PE</a></span>(int&nbsp;i,
-  int&nbsp;j,
-  double&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#MEv1v2-etomica.api.IVector-etomica.api.IVector-">MEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
+      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<div class="block">"Minus equals" (-=) operation with a dyad argument.</div>
+</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-etomica.space.Tensor-">PE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-double-">PE</a></span>(double&nbsp;a)</code>
+<div class="block">"Plus equals" (+=) operation, adding the given value to each element of this tensor</div>
+</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PEa1Tt1-double-etomica.space.Tensor-">PEa1Tt1</a></span>(double&nbsp;a1,
-       <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u1)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-int-int-double-">PE</a></span>(int&nbsp;i,
+  int&nbsp;j,
+  double&nbsp;a)</code>
+<div class="block">"Plus equals" (+=) operation, performed on a single element of this tensor.</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PEv1v2-etomica.api.IVector-etomica.api.IVector-">PEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
-<div class="block">Increments this by the dyadic or outer product of the given vectors.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PE-etomica.space.Tensor-">PE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>
+<div class="block">"Plus equals" (+=) operation, adding the elements of the given tensor to the
+ respective elements of this tensor</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PEa1Tt1-double-etomica.space.Tensor-">PEa1Tt1</a></span>(double&nbsp;a1,
+       <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u1)</code>
+<div class="block">"Plus equals" (+=) operation based on a scalar and tensor.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#PEv1v2-etomica.api.IVector-etomica.api.IVector-">PEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
+      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<div class="block">"Plus equals" (+=) operation with a dyad argument.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#setComponent-int-int-double-">setComponent</a></span>(int&nbsp;i,
             int&nbsp;j,
             double&nbsp;d)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TE-double-">TE</a></span>(double&nbsp;a)</code>&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TE-etomica.space.Tensor-">TE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>&nbsp;</td>
-</tr>
 <tr id="i26" class="altColor">
-<td class="colFirst"><code>double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#toArray--">toArray</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TE-double-">TE</a></span>(double&nbsp;a)</code>
+<div class="block">"Times equals" (*=) operation, replaces each element of this tensor by its current value times the given scalar</div>
+</td>
 </tr>
 <tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#TE-etomica.space.Tensor-">TE</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</code>
+<div class="block">"Times equals" (*=) operation, as matrix multiplication.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>double[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#toArray--">toArray</a></span>()</code>
+<div class="block">Returns tensor in a new array, writing elements row-wise.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#trace--">trace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#transform-etomica.api.IVectorMutable-">transform</a></span>(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;A)</code>
-<div class="block">Applies the given tensor transformation to this vector, replaced its
+<div class="block">Applies the given tensor transformation to this vector, replacing its
  elements with the transformed values.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#transpose--">transpose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/TensorND.html#transpose--">transpose</a></span>()</code>
+<div class="block">Performs a transpose operation on this tensor, replacing each element ab by its counterpart element ba</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -371,10 +427,32 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <a name="TensorND-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>TensorND</h4>
 <pre>public&nbsp;TensorND(int&nbsp;dim)</pre>
+<div class="block">Constructs tensor with specified dimension</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dim</code> - the specified dimension. For example, if dim is equal to 3 then this class is operationally equivalent to Tensor3D.</dd>
+</dl>
+</li>
+</ul>
+<a name="TensorND-double:A:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TensorND</h4>
+<pre>public&nbsp;TensorND(double[][]&nbsp;d)</pre>
+<div class="block">Constructs and initializes tensor to the values given in an array.  Dimension of tensor is
+ determined by dimensions of initializing array.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>d</code> - array specifying initial values</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if d is not a square array</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -397,6 +475,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dd><code><a href="../../etomica/space/Tensor.html#clone--">clone</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>clone</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new tensor that is a copy of this one</dd>
 </dl>
 </li>
 </ul>
@@ -410,6 +490,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#D--">D</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the dimension of the space in which this tensor is defined</dd>
 </dl>
 </li>
 </ul>
@@ -424,6 +506,11 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#component-int-int-">component</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>i</code> - "row" index of the requested component</dd>
+<dd><code>j</code> - "column" index of the requested component</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the component a<sub>i,j</sub> of this tensor</dd>
 </dl>
 </li>
 </ul>
@@ -439,6 +526,10 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#setComponent-int-int-double-">setComponent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>i</code> - "row" index of the component being set</dd>
+<dd><code>j</code> - "column" index of the component being set</dd>
+<dd><code>d</code> - value to which the component a<sub>i,j</sub> of this tensor is set</dd>
 </dl>
 </li>
 </ul>
@@ -449,9 +540,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>E</h4>
 <pre>public&nbsp;void&nbsp;E(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#E-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Equals" operation. Sets all components of this tensor equal to those of the given tensor.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#E-etomica.space.Tensor-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>u</code> - the given tensor used to set this tensor's values</dd>
 </dl>
 </li>
 </ul>
@@ -465,10 +560,65 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#E-etomica.api.IVector:A-">Tensor</a></code></span></div>
 <div class="block">Fills the tensor column-wise with the given vectors.  The number
  of vectors must equal the dimension of the tensor, and the vector
- dimensions must equal the tensor dimension.</div>
+ dimensions must equal the tensor dimension. Each vector forms a column of the tensor, so
+ for D = 3, xx = v[0].x, xy = v[1].x, xz = v[2].x,...,yx = v[0].y, etc.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#E-etomica.api.IVector:A-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - the given vectors used to set this tensor's values</dd>
+</dl>
+</li>
+</ul>
+<a name="E-double:A:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>E</h4>
+<pre>public&nbsp;void&nbsp;E(double[][]&nbsp;d)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#E-double:A:A-">Tensor</a></code></span></div>
+<div class="block">Sets the tensor elements using the elements of the array.
+ Tensor values are filled row-wise, so array values [0][0], [0][1], [0][2],...[1][0]... are
+ assigned to xx, xy, xz, yx, etc. respectively.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Tensor.html#E-double:A:A-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="E-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>E</h4>
+<pre>public&nbsp;void&nbsp;E(double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#E-double-">Tensor</a></code></span></div>
+<div class="block">"Equals" operation, setting all elements of this tensor to the given value</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Tensor.html#E-double-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>a</code> - the given value used to set this tensor's elements</dd>
+</dl>
+</li>
+</ul>
+<a name="diagE-etomica.api.IVector-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>diagE</h4>
+<pre>public&nbsp;void&nbsp;diagE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#diagE-etomica.api.IVector-">Tensor</a></code></span></div>
+<div class="block">Makes this a diagonal tensor with elements set by the given vector. All
+ other elements of this tensor are set to zero.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Tensor.html#diagE-etomica.api.IVector-">diagE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v</code> - the given vector</dd>
 </dl>
 </li>
 </ul>
@@ -498,24 +648,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <pre>public&nbsp;void&nbsp;Ev1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#Ev1v2-etomica.api.IVector-etomica.api.IVector-">Tensor</a></code></span></div>
-<div class="block">Sets this equal to the dyadic or outer product of the given vectors.
+<div class="block">Sets this tensor equal to the dyadic or outer product of the given vectors.
  Element ab is given by v1.a * v2.b</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#Ev1v2-etomica.api.IVector-etomica.api.IVector-">Ev1v2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="E-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>E</h4>
-<pre>public&nbsp;void&nbsp;E(double&nbsp;a)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Tensor.html#E-double-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>v1</code> - first vector of the dyad</dd>
+<dd><code>v2</code> - second vector of the dyad</dd>
 </dl>
 </li>
 </ul>
@@ -526,9 +666,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>PE</h4>
 <pre>public&nbsp;void&nbsp;PE(double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#PE-double-">Tensor</a></code></span></div>
+<div class="block">"Plus equals" (+=) operation, adding the given value to each element of this tensor</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#PE-double-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>a</code> - the value added to each element</dd>
 </dl>
 </li>
 </ul>
@@ -539,9 +683,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>PE</h4>
 <pre>public&nbsp;void&nbsp;PE(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#PE-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Plus equals" (+=) operation, adding the elements of the given tensor to the
+ respective elements of this tensor</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#PE-etomica.space.Tensor-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>u</code> - the given tensor added to this tensor</dd>
 </dl>
 </li>
 </ul>
@@ -554,9 +703,15 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <pre>public&nbsp;void&nbsp;PE(int&nbsp;i,
                int&nbsp;j,
                double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#PE-int-int-double-">Tensor</a></code></span></div>
+<div class="block">"Plus equals" (+=) operation, performed on a single element of this tensor.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#PE-int-int-double-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>i</code> - "row" index of the modified element</dd>
+<dd><code>j</code> - "column" index of the modified element</dd>
+<dd><code>a</code> - value to be added to the element a<sub>i,j</sub></dd>
 </dl>
 </li>
 </ul>
@@ -569,7 +724,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <pre>public&nbsp;void&nbsp;PEv1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
                    <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#PEv1v2-etomica.api.IVector-etomica.api.IVector-">Tensor</a></code></span></div>
-<div class="block">Increments this by the dyadic or outer product of the given vectors.</div>
+<div class="block">"Plus equals" (+=) operation with a dyad argument. Increments this tensor by the dyadic or outer product of the given vectors.
+ Element ab of this tensor is replaced by (ab + v1.a * v2.b)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#PEv1v2-etomica.api.IVector-etomica.api.IVector-">PEv1v2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
@@ -584,6 +740,9 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <h4>MEv1v2</h4>
 <pre>public&nbsp;void&nbsp;MEv1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
                    <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#MEv1v2-etomica.api.IVector-etomica.api.IVector-">Tensor</a></code></span></div>
+<div class="block">"Minus equals" (-=) operation with a dyad argument. Decrements this tensor by the dyadic or outer product of the given vectors.
+ Element ab of this tensor is replaced by (ab - v1.a * v2.b)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#MEv1v2-etomica.api.IVector-etomica.api.IVector-">MEv1v2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
@@ -597,9 +756,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>ME</h4>
 <pre>public&nbsp;void&nbsp;ME(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#ME-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Minus equals" (-=) operation, subtracting the elements of the given tensor from the
+ respective elements of this tensor. This tensor's values are replaced by the so-computed difference.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#ME-etomica.space.Tensor-">ME</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>u</code> - the given tensor subtracted from this tensor</dd>
 </dl>
 </li>
 </ul>
@@ -611,9 +775,15 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <h4>PEa1Tt1</h4>
 <pre>public&nbsp;void&nbsp;PEa1Tt1(double&nbsp;a1,
                     <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u1)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#PEa1Tt1-double-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Plus equals" (+=) operation based on a scalar and tensor. Each element ab of this tensor is
+ replaced by a1 * t1.ab.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#PEa1Tt1-double-etomica.space.Tensor-">PEa1Tt1</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>a1</code> - the scalar multiplier</dd>
+<dd><code>u1</code> - the given tensor</dd>
 </dl>
 </li>
 </ul>
@@ -627,6 +797,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#trace--">trace</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the sum of the diagonal elements of this tensor</dd>
 </dl>
 </li>
 </ul>
@@ -637,6 +809,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>transpose</h4>
 <pre>public&nbsp;void&nbsp;transpose()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#transpose--">Tensor</a></code></span></div>
+<div class="block">Performs a transpose operation on this tensor, replacing each element ab by its counterpart element ba</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#transpose--">transpose</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
@@ -650,9 +824,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>determinant</h4>
 <pre>public&nbsp;double&nbsp;determinant()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#determinant--">Tensor</a></code></span></div>
+<div class="block">Computes the determinant of the matrix represented by this tensor</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#determinant--">determinant</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the determinant of this tensor</dd>
 </dl>
 </li>
 </ul>
@@ -663,6 +841,9 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>invert</h4>
 <pre>public&nbsp;void&nbsp;invert()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#invert--">Tensor</a></code></span></div>
+<div class="block">Replaces this tensor with its inverse. The inverse is defined such that the tensor multiplied by its inverse
+ gives the identity tensor.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#invert--">invert</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
@@ -676,9 +857,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>TE</h4>
 <pre>public&nbsp;void&nbsp;TE(double&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#TE-double-">Tensor</a></code></span></div>
+<div class="block">"Times equals" (*=) operation, replaces each element of this tensor by its current value times the given scalar</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#TE-double-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>a</code> - the given scalar multiplier</dd>
 </dl>
 </li>
 </ul>
@@ -689,9 +874,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>TE</h4>
 <pre>public&nbsp;void&nbsp;TE(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#TE-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Times equals" (*=) operation, as matrix multiplication. Replaces each element of this tensor by the
+ value given by result of (this)*t, where multiplication is treated as if multiplying matrices.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#TE-etomica.space.Tensor-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>u</code> - the tensor this is multiplying</dd>
 </dl>
 </li>
 </ul>
@@ -702,9 +892,14 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>DE</h4>
 <pre>public&nbsp;void&nbsp;DE(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#DE-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">"Divide equals" (/=) operation, element-by-element. Replaces each element of this tensor by its current value divided by the
+ corresponding element in the given tensor. Element ab is replated by ab / t.ab.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#DE-etomica.space.Tensor-">DE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>u</code> - the given tensor</dd>
 </dl>
 </li>
 </ul>
@@ -715,9 +910,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>toArray</h4>
 <pre>public&nbsp;double[]&nbsp;toArray()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#toArray--">Tensor</a></code></span></div>
+<div class="block">Returns tensor in a new array, writing elements row-wise. For example, in 2D: xx, xy, yx, yy.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#toArray--">toArray</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new array containing the tensor elements</dd>
 </dl>
 </li>
 </ul>
@@ -744,6 +943,8 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#isNaN--">isNaN</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if any element of this tensor is NaN (not a number)</dd>
 </dl>
 </li>
 </ul>
@@ -754,26 +955,13 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <li class="blockList">
 <h4>map</h4>
 <pre>public&nbsp;void&nbsp;map(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#map-etomica.api.IFunction-">Tensor</a></code></span></div>
+<div class="block">Applies given function to each element of this tensor. Replaces element with the resulting value.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#map-etomica.api.IFunction-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="E-double:A:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>E</h4>
-<pre>public&nbsp;void&nbsp;E(double[][]&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#E-double:A:A-">Tensor</a></code></span></div>
-<div class="block">Sets the tensor elements using the elements of the array.
- Tensor values are filled row-wise, so array values 0, 1, 2,... are 
- assigned to xx, xy, xz, yx, etc. respectively.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Tensor.html#E-double:A:A-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>f</code> - the function applied to each element</dd>
 </dl>
 </li>
 </ul>
@@ -785,8 +973,9 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <h4>transform</h4>
 <pre>public&nbsp;void&nbsp;transform(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;A)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#transform-etomica.api.IVectorMutable-">Tensor</a></code></span></div>
-<div class="block">Applies the given tensor transformation to this vector, replaced its
- elements with the transformed values.</div>
+<div class="block">Applies the given tensor transformation to this vector, replacing its
+ elements with the transformed values. This operation is equivalent to a matrix
+ multiplication.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#transform-etomica.api.IVectorMutable-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
@@ -807,19 +996,46 @@ implements <a href="../../etomica/space/Tensor.html" title="interface in etomica
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#assignTo-double:A-">assignTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>d</code> - an array of length D<sup>2</sup>, containing the tensor elements upon return</dd>
 </dl>
 </li>
 </ul>
 <a name="assignTo-double:A:A-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>assignTo</h4>
 <pre>public&nbsp;void&nbsp;assignTo(double[][]&nbsp;d)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#assignTo-double:A:A-">Tensor</a></code></span></div>
+<div class="block">Fills the given 2-dimensional array with the elements of this tensor.
+ Array values [0][0], [0][1] are assigned from xx, xy, xz, yx, etc. respectively,
+ such that d[i] contains the i<sup>th</sup> row of the tensor.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/Tensor.html#assignTo-double:A:A-">assignTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>d</code> - a D-by-D array, containing the tensor elements upon return</dd>
+</dl>
+</li>
+</ul>
+<a name="equals-etomica.space.Tensor-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;t)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Tensor.html#equals-etomica.space.Tensor-">Tensor</a></code></span></div>
+<div class="block">Element-by-element comparison of tensors</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Tensor.html#equals-etomica.space.Tensor-">equals</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>t</code> - the given tensor</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if every element of given tensor equals the corresponding element of this tensor</dd>
 </dl>
 </li>
 </ul>

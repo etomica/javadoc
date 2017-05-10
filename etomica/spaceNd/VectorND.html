@@ -156,7 +156,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/VectorND.html#VectorND-double:A-">VectorND</a></span>(double[]&nbsp;a)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/VectorND.html#VectorND-double:A-">VectorND</a></span>(double[]&nbsp;d)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/VectorND.html#VectorND-int-">VectorND</a></span>(int&nbsp;D)</code>&nbsp;</td>
@@ -328,7 +328,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spaceNd/VectorND.html#setRandomInSphere-etomica.api.IRandom-">setRandomInSphere</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns this vector to equal a point chosen randomly in the volume
- of a unit spheres.</div>
+ of a unit sphere.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
@@ -430,7 +430,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>VectorND</h4>
-<pre>public&nbsp;VectorND(double[]&nbsp;a)</pre>
+<pre>public&nbsp;VectorND(double[]&nbsp;d)</pre>
 </li>
 </ul>
 </li>
@@ -833,6 +833,8 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomCube-etomica.api.IRandom-">setRandomCube</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>
@@ -845,10 +847,12 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <pre>public&nbsp;void&nbsp;setRandomInSphere(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/IVectorRandom.html#setRandomInSphere-etomica.api.IRandom-">IVectorRandom</a></code></span></div>
 <div class="block">Assigns this vector to equal a point chosen randomly in the volume
- of a unit spheres.</div>
+ of a unit sphere.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomInSphere-etomica.api.IRandom-">setRandomInSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>
@@ -866,6 +870,8 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomSphere-etomica.api.IRandom-">setRandomSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>

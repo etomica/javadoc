@@ -195,9 +195,7 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space2d/Orientation2D.html#getDirection--">getDirection</a></span>()</code>
-<div class="block">Returns a unit vector pointing in the orientation's direction.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space2d/Orientation2D.html#getDirection--">getDirection</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -311,6 +309,8 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IOrientation.html#E-etomica.space.IOrientation-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>o</code> - the new orientation</dd>
 </dl>
 </li>
 </ul>
@@ -321,9 +321,6 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 <li class="blockList">
 <h4>getDirection</h4>
 <pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getDirection()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/IOrientation.html#getDirection--">IOrientation</a></code></span></div>
-<div class="block">Returns a unit vector pointing in the orientation's direction.  This
- vector should not be modified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IOrientation.html#getDirection--">getDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></dd>
@@ -337,12 +334,13 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 <li class="blockList">
 <h4>setDirection</h4>
 <pre>public&nbsp;void&nbsp;setDirection(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newDirection)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/IOrientation.html#setDirection-etomica.api.IVector-">IOrientation</a></code></span></div>
 <div class="block">Sets this orientation to point in the given direction.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IOrientation.html#setDirection-etomica.api.IVector-">setDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - if vector has 0 length</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newDirection</code> - the new direction for this orientation</dd>
 </dl>
 </li>
 </ul>
@@ -357,8 +355,6 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space2d/IOrientation2D.html#rotateBy-double-">rotateBy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space2d/IOrientation2D.html" title="interface in etomica.space2d">IOrientation2D</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if index is not zer0.</dd>
 </dl>
 </li>
 </ul>
@@ -375,6 +371,9 @@ implements <a href="../../etomica/space2d/IOrientation2D.html" title="interface 
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/space/IOrientation.html#randomRotation-etomica.api.IRandom-double-">randomRotation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>random</code> - random number generator used to select the angle</dd>
+<dd><code>tStep</code> - the maximum angle (in radians) for random rotation</dd>
 </dl>
 </li>
 </ul>

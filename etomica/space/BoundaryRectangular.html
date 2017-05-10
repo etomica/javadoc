@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">BoundaryRectangular</span>
 extends <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></pre>
-<div class="block">Boundary that is in the shape of a rectangular parallelepiped.  
+<div class="block">Boundary that is in the shape of a rectangular parallelepiped.
  Periodicity in each direction is specified by subclass.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -378,15 +378,6 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 </dl>
 </li>
 </ul>
-<a name="updateDimensions--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>updateDimensions</h4>
-<pre>protected&nbsp;void&nbsp;updateDimensions()</pre>
-</li>
-</ul>
 <a name="setBoxSize-etomica.api.IVector-">
 <!--   -->
 </a>
@@ -394,13 +385,22 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <li class="blockList">
 <h4>setBoxSize</h4>
 <pre>public&nbsp;void&nbsp;setBoxSize(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
-<div class="block">Sets the size and shape of the rectangular boundary.  Values are 
+<div class="block">Sets the size and shape of the rectangular boundary.  Values are
  copied, so manipulation of the given vector has no subsequent effect
  on this Boundary instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>v</code> - the box's new size</dd>
 </dl>
+</li>
+</ul>
+<a name="updateDimensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateDimensions</h4>
+<pre>protected&nbsp;void&nbsp;updateDimensions()</pre>
 </li>
 </ul>
 <a name="volume--">
@@ -448,7 +448,7 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <li class="blockList">
 <h4>imageOrigins</h4>
 <pre>public&nbsp;double[][]&nbsp;imageOrigins(int&nbsp;nShells)</pre>
-<div class="block">Returns a set of image origins for a set of periodic image shells.  
+<div class="block">Returns a set of image origins for a set of periodic image shells.
  The returned array is of dimension [(2*nShells+1)^D][D], where D
  is the dimension of the space.</div>
 <dl>
