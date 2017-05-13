@@ -167,26 +167,30 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#boundary">boundary</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#do21">do21</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#gradient">gradient</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#nOffset">nOffset</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#offset">offset</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#w">w</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#zeroF">zeroF</a></span></code>&nbsp;</td>
 </tr>
@@ -212,9 +216,10 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#P1ImageHarmonic-etomica.space.ISpace-etomica.api.IVector-double-">P1ImageHarmonic</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#P1ImageHarmonic-etomica.space.ISpace-etomica.api.IVector-double-boolean-">P1ImageHarmonic</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
                <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;offset,
-               double&nbsp;w)</code>&nbsp;</td>
+               double&nbsp;w,
+               boolean&nbsp;do21)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -399,10 +404,19 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <a name="zeroF">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>zeroF</h4>
 <pre>protected&nbsp;boolean zeroF</pre>
+</li>
+</ul>
+<a name="do21">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>do21</h4>
+<pre>protected&nbsp;boolean do21</pre>
 </li>
 </ul>
 </li>
@@ -413,7 +427,7 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P1ImageHarmonic-etomica.space.ISpace-etomica.api.IVector-double-">
+<a name="P1ImageHarmonic-etomica.space.ISpace-etomica.api.IVector-double-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -421,7 +435,8 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <h4>P1ImageHarmonic</h4>
 <pre>public&nbsp;P1ImageHarmonic(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
                        <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;offset,
-                       double&nbsp;w)</pre>
+                       double&nbsp;w,
+                       boolean&nbsp;do21)</pre>
 </li>
 </ul>
 </li>
