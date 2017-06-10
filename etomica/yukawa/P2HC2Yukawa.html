@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Soft.html" title="interface in etomica.potential">Potential2Soft</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Soft.html" title="interface in etomica.potential">Potential2Soft</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
 </dl>
 <hr>
 <br>
@@ -182,10 +182,10 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#P2HC2Yukawa-etomica.space.ISpace-">P2HC2Yukawa</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#P2HC2Yukawa-etomica.space.Space-">P2HC2Yukawa</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#P2HC2Yukawa-etomica.space.ISpace-double-double-">P2HC2Yukawa</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#P2HC2Yukawa-etomica.space.Space-double-double-">P2HC2Yukawa</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
            double&nbsp;sigma,
            double&nbsp;epsilon)</code>&nbsp;</td>
 </tr>
@@ -219,7 +219,7 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#energy-etomica.api.IAtomList-">energy</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#energy-etomica.atom.IAtomList-">energy</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>
 <div class="block">Energy of the pair as given by the u(double) method</div>
 </td>
 </tr>
@@ -241,7 +241,7 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/yukawa/P2HC2Yukawa.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts.</div>
 </td>
 </tr>
@@ -279,7 +279,7 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></h3>
-<code><a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.api.IAtomList-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#hyperVirial-etomica.api.IAtomList-">hyperVirial</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#integral-double-">integral</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#virial-etomica.api.IAtomList-">virial</a></code></li>
+<code><a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.atom.IAtomList-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#hyperVirial-etomica.atom.IAtomList-">hyperVirial</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#integral-double-">integral</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#virial-etomica.atom.IAtomList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential">
@@ -296,11 +296,11 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#nBody--">nBody</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#nBody--">nBody</a></code></li>
 </ul>
 </li>
 </ul>
@@ -316,22 +316,22 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2HC2Yukawa-etomica.space.ISpace-">
+<a name="P2HC2Yukawa-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>P2HC2Yukawa</h4>
-<pre>public&nbsp;P2HC2Yukawa(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;P2HC2Yukawa(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="P2HC2Yukawa-etomica.space.ISpace-double-double-">
+<a name="P2HC2Yukawa-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2HC2Yukawa</h4>
-<pre>public&nbsp;P2HC2Yukawa(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;P2HC2Yukawa(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                    double&nbsp;sigma,
                    double&nbsp;epsilon)</pre>
 </li>
@@ -388,29 +388,29 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 <div class="block">Returns infinity.  May be overridden to define a finite-ranged potential.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/potential/Potential2SoftSpherical.html#getRange--">getRange</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/potential/Potential.html#setBox-etomica.api.IBox-">Potential</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/potential/Potential.html#setBox-etomica.box.Box-">Potential</a></code></span></div>
 <div class="block">Informs the potential of the box on which it acts. Typically this
  requires at least that it update the nearestImageTransformer of its
  coordinatePair (if it uses one), e.g.:
  cPair.setNearestImageTransformer(box.boundary());</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/potential/Potential2SoftSpherical.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></dd>
+<dd><code><a href="../../etomica/potential/Potential2SoftSpherical.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -428,19 +428,19 @@ extends <a href="../../etomica/potential/Potential2SoftSpherical.html" title="cl
 </dl>
 </li>
 </ul>
-<a name="energy-etomica.api.IAtomList-">
+<a name="energy-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
 <div class="block">Energy of the pair as given by the u(double) method</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></code></dd>
+<dd><code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/potential/Potential2SoftSpherical.html#energy-etomica.api.IAtomList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></dd>
+<dd><code><a href="../../etomica/potential/Potential2SoftSpherical.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></dd>
 </dl>
 </li>
 </ul>

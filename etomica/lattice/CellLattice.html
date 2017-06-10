@@ -186,8 +186,8 @@ extends <a href="../../etomica/lattice/RectangularLattice.html" title="class in 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#CellLattice-etomica.space.ISpace-etomica.api.IVector-etomica.lattice.SiteFactory-">CellLattice</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-           <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;dimVector,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#CellLattice-etomica.space.Space-etomica.space.Vector-etomica.lattice.SiteFactory-">CellLattice</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+           <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dimVector,
            <a href="../../etomica/lattice/SiteFactory.html" title="interface in etomica.lattice">SiteFactory</a>&nbsp;siteFactory)</code>&nbsp;</td>
 </tr>
 </table>
@@ -214,18 +214,18 @@ extends <a href="../../etomica/lattice/RectangularLattice.html" title="class in 
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#getDimensions--">getDimensions</a></span>()</code>
 <div class="block">Returns the array that specifies the spatial dimensions of the lattice of cells.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#setDimensions-etomica.api.IVector-">setDimensions</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;d)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#setDimensions-etomica.space.Vector-">setDimensions</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;d)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#site-etomica.api.IVector-">site</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/CellLattice.html#site-etomica.space.Vector-">site</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Returns the cell in which the given point lies.</div>
 </td>
 </tr>
@@ -258,14 +258,14 @@ extends <a href="../../etomica/lattice/RectangularLattice.html" title="class in 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CellLattice-etomica.space.ISpace-etomica.api.IVector-etomica.lattice.SiteFactory-">
+<a name="CellLattice-etomica.space.Space-etomica.space.Vector-etomica.lattice.SiteFactory-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CellLattice</h4>
-<pre>public&nbsp;CellLattice(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;dimVector,
+<pre>public&nbsp;CellLattice(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                   <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dimVector,
                    <a href="../../etomica/lattice/SiteFactory.html" title="interface in etomica.lattice">SiteFactory</a>&nbsp;siteFactory)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -291,13 +291,13 @@ extends <a href="../../etomica/lattice/RectangularLattice.html" title="class in 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="site-etomica.api.IVector-">
+<a name="site-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>site</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;site(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
+<pre>public&nbsp;java.lang.Object&nbsp;site(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
 <div class="block">Returns the cell in which the given point lies. An ArrayIndexOutOfBounds
  exception is thrown if the point lies outside the bounds of the lattice
  (less than zero or greater than dimensions). The dimension of the vector
@@ -311,17 +311,17 @@ extends <a href="../../etomica/lattice/RectangularLattice.html" title="class in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getDimensions</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getDimensions()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getDimensions()</pre>
 <div class="block">Returns the array that specifies the spatial dimensions of the lattice of cells.</div>
 </li>
 </ul>
-<a name="setDimensions-etomica.api.IVector-">
+<a name="setDimensions-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDimensions</h4>
-<pre>public&nbsp;void&nbsp;setDimensions(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;d)</pre>
+<pre>public&nbsp;void&nbsp;setDimensions(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;d)</pre>
 </li>
 </ul>
 <a name="getCellSize--">

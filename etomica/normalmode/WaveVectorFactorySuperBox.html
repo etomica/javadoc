@@ -155,8 +155,8 @@ extends <a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/WaveVectorFactorySuperBox.html#WaveVectorFactorySuperBox-etomica.lattice.crystal.Primitive-etomica.space.ISpace-">WaveVectorFactorySuperBox</a></span>(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
-                         <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/WaveVectorFactorySuperBox.html#WaveVectorFactorySuperBox-etomica.lattice.crystal.Primitive-etomica.space.Space-">WaveVectorFactorySuperBox</a></span>(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
+                         <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -175,7 +175,7 @@ extends <a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="c
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/WaveVectorFactorySuperBox.html#makeWaveVectors-etomica.api.IBox-">makeWaveVectors</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/WaveVectorFactorySuperBox.html#makeWaveVectors-etomica.box.Box-">makeWaveVectors</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Tells the instance to make wave vectors appropriate for the given box.</div>
 </td>
 </tr>
@@ -208,14 +208,14 @@ extends <a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WaveVectorFactorySuperBox-etomica.lattice.crystal.Primitive-etomica.space.ISpace-">
+<a name="WaveVectorFactorySuperBox-etomica.lattice.crystal.Primitive-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WaveVectorFactorySuperBox</h4>
 <pre>public&nbsp;WaveVectorFactorySuperBox(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
-                                 <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                 <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -226,22 +226,22 @@ extends <a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="c
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeWaveVectors-etomica.api.IBox-">
+<a name="makeWaveVectors-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeWaveVectors</h4>
-<pre>public&nbsp;void&nbsp;makeWaveVectors(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactory.html#makeWaveVectors-etomica.api.IBox-">WaveVectorFactory</a></code></span></div>
+<pre>public&nbsp;void&nbsp;makeWaveVectors(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactory.html#makeWaveVectors-etomica.box.Box-">WaveVectorFactory</a></code></span></div>
 <div class="block">Tells the instance to make wave vectors appropriate for the given box. 
  The wave vectors will not include the 0 vector, any two  vectors which 
  are opposites or any wave vector that is redundant with another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/normalmode/WaveVectorFactory.html#makeWaveVectors-etomica.api.IBox-">makeWaveVectors</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactory.html" title="interface in etomica.normalmode">WaveVectorFactory</a></code></dd>
+<dd><code><a href="../../etomica/normalmode/WaveVectorFactory.html#makeWaveVectors-etomica.box.Box-">makeWaveVectors</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactory.html" title="interface in etomica.normalmode">WaveVectorFactory</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/normalmode/WaveVectorFactorySimple.html#makeWaveVectors-etomica.api.IBox-">makeWaveVectors</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="class in etomica.normalmode">WaveVectorFactorySimple</a></code></dd>
+<dd><code><a href="../../etomica/normalmode/WaveVectorFactorySimple.html#makeWaveVectors-etomica.box.Box-">makeWaveVectors</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/normalmode/WaveVectorFactorySimple.html" title="class in etomica.normalmode">WaveVectorFactorySimple</a></code></dd>
 </dl>
 </li>
 </ul>

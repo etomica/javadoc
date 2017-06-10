@@ -144,7 +144,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -168,7 +168,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#rData">rData</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -176,11 +176,11 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#tag">tag</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#type1">type1</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#type2">type2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -206,7 +206,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#MeterRDF-etomica.space.ISpace-">MeterRDF</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#MeterRDF-etomica.space.Space-">MeterRDF</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Creates meter with default to compute pair correlation for all
  leaf atoms in a box.</div>
 </td>
@@ -233,7 +233,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -291,16 +291,16 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setAtomType-etomica.api.IAtomType-">setAtomType</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setAtomType-etomica.atom.AtomType-">setAtomType</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setAtomTypes-etomica.api.IAtomType-etomica.api.IAtomType-">setAtomTypes</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type1,
-            <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setAtomTypes-etomica.atom.AtomType-etomica.atom.AtomType-">setAtomTypes</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type1,
+            <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type2)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -328,22 +328,40 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="box">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
-</li>
-</ul>
 <a name="space">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
+</li>
+</ul>
+<a name="xDataSource">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xDataSource</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a> xDataSource</pre>
+</li>
+</ul>
+<a name="tag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
+</li>
+</ul>
+<a name="box">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>box</h4>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="gSum">
@@ -382,15 +400,6 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <pre>protected&nbsp;<a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a> iterator</pre>
 </li>
 </ul>
-<a name="xDataSource">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>xDataSource</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a> xDataSource</pre>
-</li>
-</ul>
 <a name="xMax">
 <!--   -->
 </a>
@@ -398,15 +407,6 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <li class="blockList">
 <h4>xMax</h4>
 <pre>protected&nbsp;double xMax</pre>
-</li>
-</ul>
-<a name="tag">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>tag</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
 </li>
 </ul>
 <a name="callCount">
@@ -424,7 +424,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>type1</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a> type1</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type1</pre>
 </li>
 </ul>
 <a name="type2">
@@ -433,7 +433,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>type2</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a> type2</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type2</pre>
 </li>
 </ul>
 </li>
@@ -444,13 +444,13 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterRDF-etomica.space.ISpace-">
+<a name="MeterRDF-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterRDF</h4>
-<pre>public&nbsp;MeterRDF(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;MeterRDF(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Creates meter with default to compute pair correlation for all
  leaf atoms in a box.</div>
 <dl>
@@ -493,23 +493,23 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </dl>
 </li>
 </ul>
-<a name="setAtomType-etomica.api.IAtomType-">
+<a name="setAtomType-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtomType</h4>
-<pre>public&nbsp;void&nbsp;setAtomType(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
+<pre>public&nbsp;void&nbsp;setAtomType(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a name="setAtomTypes-etomica.api.IAtomType-etomica.api.IAtomType-">
+<a name="setAtomTypes-etomica.atom.AtomType-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtomTypes</h4>
-<pre>public&nbsp;void&nbsp;setAtomTypes(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type1,
-                         <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type2)</pre>
+<pre>public&nbsp;void&nbsp;setAtomTypes(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type1,
+                         <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type2)</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -628,20 +628,20 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>box</code> - The box to set.</dd>

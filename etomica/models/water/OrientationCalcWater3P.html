@@ -112,13 +112,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/atom/OrientationCalc.html" title="interface in etomica.atom">OrientationCalc</a>, <a href="../../../etomica/atom/OrientationCalcQuaternion.html" title="interface in etomica.atom">OrientationCalcQuaternion</a>, <a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a>, java.io.Serializable</dd>
+<dd><a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a>, <a href="../../../etomica/molecule/OrientationCalc.html" title="interface in etomica.molecule">OrientationCalc</a>, <a href="../../../etomica/molecule/OrientationCalcQuaternion.html" title="interface in etomica.molecule">OrientationCalcQuaternion</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">OrientationCalcWater3P</span>
 extends <a href="../../../etomica/models/water/ConformationWater3P.html" title="class in etomica.models.water">ConformationWater3P</a>
-implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface in etomica.atom">OrientationCalc</a>, <a href="../../../etomica/atom/OrientationCalcQuaternion.html" title="interface in etomica.atom">OrientationCalcQuaternion</a>, java.io.Serializable</pre>
+implements <a href="../../../etomica/molecule/OrientationCalc.html" title="interface in etomica.molecule">OrientationCalc</a>, <a href="../../../etomica/molecule/OrientationCalcQuaternion.html" title="interface in etomica.molecule">OrientationCalcQuaternion</a>, java.io.Serializable</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../serialized-form.html#etomica.models.water.OrientationCalcWater3P">Serialized Form</a></dd>
@@ -142,11 +142,11 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomPositionCOM.html" title="class in etomica.atom">AtomPositionCOM</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculePositionCOM.html" title="class in etomica.molecule">MoleculePositionCOM</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#atomPositionCOM">atomPositionCOM</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#com0">com0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -166,15 +166,15 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#workTensor">workTensor</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#xWork">xWork</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#yWork">yWork</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#zWork">zWork</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -199,7 +199,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#OrientationCalcWater3P-etomica.space.ISpace-">OrientationCalcWater3P</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#OrientationCalcWater3P-etomica.space.Space-">OrientationCalcWater3P</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -218,12 +218,12 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#calcOrientation-etomica.api.IMolecule-double:A-">calcOrientation</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#calcOrientation-etomica.molecule.IMolecule-double:A-">calcOrientation</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                double[]&nbsp;quat)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#calcOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">calcOrientation</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#calcOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">calcOrientation</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                <a href="../../../etomica/space3d/IOrientationFull3D.html" title="interface in etomica.space3d">IOrientationFull3D</a>&nbsp;orientation)</code>
 <div class="block">Calculates the orientation of the given molecule and stores that
  in the given orientation.</div>
@@ -231,24 +231,24 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#doTransform-etomica.api.IMolecule-etomica.api.IVector-etomica.space.RotationTensor-">doTransform</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-           <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r0,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#doTransform-etomica.molecule.IMolecule-etomica.space.Vector-etomica.space.RotationTensor-">doTransform</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+           <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r0,
            <a href="../../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a>&nbsp;rotationTensor)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;childList)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;childList)</code>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#setOrientation-etomica.api.IMolecule-double:A-">setOrientation</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#setOrientation-etomica.molecule.IMolecule-double:A-">setOrientation</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
               double[]&nbsp;quaternions)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#setOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">setOrientation</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/OrientationCalcWater3P.html#setOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">setOrientation</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
               <a href="../../../etomica/space3d/IOrientationFull3D.html" title="interface in etomica.space3d">IOrientationFull3D</a>&nbsp;orientation)</code>
 <div class="block">Sets the orientation of the given molecule to be equal to the given
  orientation.</div>
@@ -282,7 +282,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>xWork</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> xWork</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> xWork</pre>
 </li>
 </ul>
 <a name="yWork">
@@ -291,7 +291,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>yWork</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> yWork</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> yWork</pre>
 </li>
 </ul>
 <a name="zWork">
@@ -300,7 +300,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>zWork</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> zWork</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> zWork</pre>
 </li>
 </ul>
 <a name="com0">
@@ -309,7 +309,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>com0</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> com0</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> com0</pre>
 </li>
 </ul>
 <a name="rotationTensor">
@@ -327,7 +327,7 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>atomPositionCOM</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomPositionCOM.html" title="class in etomica.atom">AtomPositionCOM</a> atomPositionCOM</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/molecule/MoleculePositionCOM.html" title="class in etomica.molecule">MoleculePositionCOM</a> atomPositionCOM</pre>
 </li>
 </ul>
 <a name="initialized">
@@ -365,13 +365,13 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="OrientationCalcWater3P-etomica.space.ISpace-">
+<a name="OrientationCalcWater3P-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>OrientationCalcWater3P</h4>
-<pre>public&nbsp;OrientationCalcWater3P(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;OrientationCalcWater3P(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -382,94 +382,94 @@ implements <a href="../../../etomica/atom/OrientationCalc.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="calcOrientation-etomica.api.IMolecule-double:A-">
+<a name="calcOrientation-etomica.molecule.IMolecule-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcOrientation</h4>
-<pre>public&nbsp;void&nbsp;calcOrientation(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>public&nbsp;void&nbsp;calcOrientation(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                             double[]&nbsp;quat)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/OrientationCalcQuaternion.html#calcOrientation-etomica.api.IMolecule-double:A-">calcOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/OrientationCalcQuaternion.html" title="interface in etomica.atom">OrientationCalcQuaternion</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/OrientationCalcQuaternion.html#calcOrientation-etomica.molecule.IMolecule-double:A-">calcOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/OrientationCalcQuaternion.html" title="interface in etomica.molecule">OrientationCalcQuaternion</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setOrientation-etomica.api.IMolecule-double:A-">
+<a name="setOrientation-etomica.molecule.IMolecule-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setOrientation</h4>
-<pre>public&nbsp;void&nbsp;setOrientation(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>public&nbsp;void&nbsp;setOrientation(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                            double[]&nbsp;quaternions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/OrientationCalcQuaternion.html#setOrientation-etomica.api.IMolecule-double:A-">setOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/OrientationCalcQuaternion.html" title="interface in etomica.atom">OrientationCalcQuaternion</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/OrientationCalcQuaternion.html#setOrientation-etomica.molecule.IMolecule-double:A-">setOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/OrientationCalcQuaternion.html" title="interface in etomica.molecule">OrientationCalcQuaternion</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="initializePositions-etomica.api.IAtomList-">
+<a name="initializePositions-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializePositions</h4>
-<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;childList)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">IConformation</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;childList)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">IConformation</a></code></span></div>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
+<dd><code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/models/water/ConformationWater3P.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/water/ConformationWater3P.html" title="class in etomica.models.water">ConformationWater3P</a></code></dd>
+<dd><code><a href="../../../etomica/models/water/ConformationWater3P.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/water/ConformationWater3P.html" title="class in etomica.models.water">ConformationWater3P</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="doTransform-etomica.api.IMolecule-etomica.api.IVector-etomica.space.RotationTensor-">
+<a name="doTransform-etomica.molecule.IMolecule-etomica.space.Vector-etomica.space.RotationTensor-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doTransform</h4>
-<pre>protected static&nbsp;void&nbsp;doTransform(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-                                  <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r0,
+<pre>protected static&nbsp;void&nbsp;doTransform(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+                                  <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r0,
                                   <a href="../../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a>&nbsp;rotationTensor)</pre>
 </li>
 </ul>
-<a name="calcOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">
+<a name="calcOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcOrientation</h4>
-<pre>public&nbsp;void&nbsp;calcOrientation(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>public&nbsp;void&nbsp;calcOrientation(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                             <a href="../../../etomica/space3d/IOrientationFull3D.html" title="interface in etomica.space3d">IOrientationFull3D</a>&nbsp;orientation)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/OrientationCalc.html#calcOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">OrientationCalc</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/OrientationCalc.html#calcOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">OrientationCalc</a></code></span></div>
 <div class="block">Calculates the orientation of the given molecule and stores that
  in the given orientation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/OrientationCalc.html#calcOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">calcOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/OrientationCalc.html" title="interface in etomica.atom">OrientationCalc</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/OrientationCalc.html#calcOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">calcOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/OrientationCalc.html" title="interface in etomica.molecule">OrientationCalc</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">
+<a name="setOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setOrientation</h4>
-<pre>public&nbsp;void&nbsp;setOrientation(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>public&nbsp;void&nbsp;setOrientation(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                            <a href="../../../etomica/space3d/IOrientationFull3D.html" title="interface in etomica.space3d">IOrientationFull3D</a>&nbsp;orientation)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/OrientationCalc.html#setOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">OrientationCalc</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/OrientationCalc.html#setOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">OrientationCalc</a></code></span></div>
 <div class="block">Sets the orientation of the given molecule to be equal to the given
  orientation.  This typically involves changing the position of the atoms
  without changing the molecules position.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/OrientationCalc.html#setOrientation-etomica.api.IMolecule-etomica.space3d.IOrientationFull3D-">setOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/OrientationCalc.html" title="interface in etomica.atom">OrientationCalc</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/OrientationCalc.html#setOrientation-etomica.molecule.IMolecule-etomica.space3d.IOrientationFull3D-">setOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/OrientationCalc.html" title="interface in etomica.molecule">OrientationCalc</a></code></dd>
 </dl>
 </li>
 </ul>

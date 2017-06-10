@@ -182,11 +182,11 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#pCenter">pCenter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#pretendBox">pretendBox</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -194,7 +194,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#pSpan">pSpan</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -206,17 +206,17 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#temperature">temperature</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code>static <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#uLat0">uLat0</a></span></code>
 <div class="block">Nominal function for lattice energy</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#uLatFunction">uLatFunction</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#work">work</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -234,10 +234,10 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#MeterDDP-etomica.api.IPotentialMaster-etomica.api.ISpecies-etomica.space.ISpace-etomica.api.ISimulation-">MeterDDP</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-        <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-        <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-        <a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#MeterDDP-etomica.potential.PotentialMaster-etomica.species.ISpecies-etomica.space.Space-etomica.simulation.Simulation-">MeterDDP</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+        <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+        <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+        <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -256,7 +256,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#constraintEnergy-etomica.api.IBox-">constraintEnergy</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#constraintEnergy-etomica.box.Box-">constraintEnergy</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns true if all atoms in the given box satisfy p1's constraint</div>
 </td>
 </tr>
@@ -293,7 +293,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#getTemperature--">getTemperature</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#getULatFunction--">getULatFunction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -334,7 +334,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#setULatFunction-etomica.util.Function-">setULatFunction</a></span>(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatFunction)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterDDP.html#setULatFunction-etomica.math.function.Function-">setULatFunction</a></span>(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatFunction)</code>
 <div class="block">Sets a function that returns the lattice energy for a given density.</div>
 </td>
 </tr>
@@ -375,7 +375,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -429,7 +429,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>pretendBox</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> pretendBox</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> pretendBox</pre>
 </li>
 </ul>
 <a name="coordinateDefinition">
@@ -447,7 +447,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> species</pre>
+<pre>protected final&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
 </li>
 </ul>
 <a name="p">
@@ -510,7 +510,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>work</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> work</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> work</pre>
 </li>
 </ul>
 <a name="uLatFunction">
@@ -519,7 +519,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>uLatFunction</h4>
-<pre>protected&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a> uLatFunction</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a> uLatFunction</pre>
 </li>
 </ul>
 <a name="fw">
@@ -537,7 +537,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>uLat0</h4>
-<pre>public static final&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a> uLat0</pre>
+<pre>public static final&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a> uLat0</pre>
 <div class="block">Nominal function for lattice energy</div>
 </li>
 </ul>
@@ -549,16 +549,16 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterDDP-etomica.api.IPotentialMaster-etomica.api.ISpecies-etomica.space.ISpace-etomica.api.ISimulation-">
+<a name="MeterDDP-etomica.potential.PotentialMaster-etomica.species.ISpecies-etomica.space.Space-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterDDP</h4>
-<pre>public&nbsp;MeterDDP(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                <a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</pre>
+<pre>public&nbsp;MeterDDP(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 </li>
 </ul>
 </li>
@@ -595,13 +595,13 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </dl>
 </li>
 </ul>
-<a name="setULatFunction-etomica.util.Function-">
+<a name="setULatFunction-etomica.math.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setULatFunction</h4>
-<pre>public&nbsp;void&nbsp;setULatFunction(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatFunction)</pre>
+<pre>public&nbsp;void&nbsp;setULatFunction(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatFunction)</pre>
 <div class="block">Sets a function that returns the lattice energy for a given density.
  If not set, the default lattice energy is taken to be 0 for all densities.</div>
 </li>
@@ -612,7 +612,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getULatFunction</h4>
-<pre>public&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;getULatFunction()</pre>
+<pre>public&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;getULatFunction()</pre>
 </li>
 </ul>
 <a name="getData--">
@@ -630,13 +630,13 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </dl>
 </li>
 </ul>
-<a name="constraintEnergy-etomica.api.IBox-">
+<a name="constraintEnergy-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>constraintEnergy</h4>
-<pre>protected&nbsp;double&nbsp;constraintEnergy(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>protected&nbsp;double&nbsp;constraintEnergy(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Returns true if all atoms in the given box satisfy p1's constraint</div>
 </li>
 </ul>

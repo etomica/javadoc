@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../etomica/atom/iterator/AtomsetIterator.html" title="interface in etomica.atom.iterator">AtomsetIterator</a>, <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" title="interface in etomica.atom.iterator">MoleculeIterator</a>, <a href="../../../../etomica/atom/iterator/MoleculesetIterator.html" title="interface in etomica.atom.iterator">MoleculesetIterator</a>, java.io.Serializable</dd>
+<dd><a href="../../../../etomica/atom/iterator/AtomsetIterator.html" title="interface in etomica.atom.iterator">AtomsetIterator</a>, <a href="../../../../etomica/molecule/iterator/MoleculeIterator.html" title="interface in etomica.molecule.iterator">MoleculeIterator</a>, <a href="../../../../etomica/molecule/iterator/MoleculesetIterator.html" title="interface in etomica.molecule.iterator">MoleculesetIterator</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MoleculeIteratorCell</span>
 extends java.lang.Object
-implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" title="interface in etomica.atom.iterator">MoleculeIterator</a>, java.io.Serializable</pre>
+implements <a href="../../../../etomica/molecule/iterator/MoleculeIterator.html" title="interface in etomica.molecule.iterator">MoleculeIterator</a>, java.io.Serializable</pre>
 <div class="block">Returns occupants of all cells as iterates.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -138,7 +138,7 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/MoleculeIteratorCell.html#moleculeSetSinglet">moleculeSetSinglet</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -188,13 +188,13 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></td>
+<td class="colFirst"><code><a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/MoleculeIteratorCell.html#next--">next</a></span>()</code>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/MoleculeIteratorCell.html#nextMolecule--">nextMolecule</a></span>()</code>
 <div class="block">Returns the next atom in the iteration sequence, or
  null if hasNext() is false.</div>
@@ -208,7 +208,7 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/MoleculeIteratorCell.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/MoleculeIteratorCell.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -251,7 +251,7 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>moleculeSetSinglet</h4>
-<pre>protected final&nbsp;<a href="../../../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a> moleculeSetSinglet</pre>
+<pre>protected final&nbsp;<a href="../../../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a> moleculeSetSinglet</pre>
 </li>
 </ul>
 </li>
@@ -287,13 +287,13 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 <a name="size--">
@@ -326,12 +326,12 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public final&nbsp;<a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;next()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/atom/iterator/MoleculesetIterator.html#next--">MoleculesetIterator</a></code></span></div>
+<pre>public final&nbsp;<a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;next()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/molecule/iterator/MoleculesetIterator.html#next--">MoleculesetIterator</a></code></span></div>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/atom/iterator/MoleculesetIterator.html#next--">next</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/atom/iterator/MoleculesetIterator.html" title="interface in etomica.atom.iterator">MoleculesetIterator</a></code></dd>
+<dd><code><a href="../../../../etomica/molecule/iterator/MoleculesetIterator.html#next--">next</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/molecule/iterator/MoleculesetIterator.html" title="interface in etomica.molecule.iterator">MoleculesetIterator</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -341,13 +341,13 @@ implements <a href="../../../../etomica/atom/iterator/MoleculeIterator.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>nextMolecule</h4>
-<pre>public&nbsp;<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;nextMolecule()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/atom/iterator/MoleculeIterator.html#nextMolecule--">MoleculeIterator</a></code></span></div>
+<pre>public&nbsp;<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;nextMolecule()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/molecule/iterator/MoleculeIterator.html#nextMolecule--">MoleculeIterator</a></code></span></div>
 <div class="block">Returns the next atom in the iteration sequence, or
  null if hasNext() is false.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/atom/iterator/MoleculeIterator.html#nextMolecule--">nextMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/atom/iterator/MoleculeIterator.html" title="interface in etomica.atom.iterator">MoleculeIterator</a></code></dd>
+<dd><code><a href="../../../../etomica/molecule/iterator/MoleculeIterator.html#nextMolecule--">nextMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/molecule/iterator/MoleculeIterator.html" title="interface in etomica.molecule.iterator">MoleculeIterator</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -147,7 +147,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#atomSource">atomSource</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -159,7 +159,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#fixOverlap">fixOverlap</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -206,17 +206,17 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#MCMoveReptate-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-boolean-etomica.space.ISpace-">MCMoveReptate</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-             <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#MCMoveReptate-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-boolean-etomica.space.Space-">MCMoveReptate</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+             <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
              double&nbsp;stepSize,
              double&nbsp;stepSizeMax,
              boolean&nbsp;fixOverlap,
-             <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+             <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#MCMoveReptate-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">MCMoveReptate</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-             <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-             <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#MCMoveReptate-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">MCMoveReptate</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+             <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+             <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -261,7 +261,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#getAtomSource--">getAtomSource</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -279,11 +279,11 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#setAtomSource-etomica.atom.MoleculeSource-">setAtomSource</a></span>(<a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a>&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#setAtomSource-etomica.molecule.MoleculeSource-">setAtomSource</a></span>(<a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/MCMoveReptate.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
@@ -300,7 +300,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -363,7 +363,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>atomSource</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a> atomSource</pre>
+<pre>protected&nbsp;<a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a> atomSource</pre>
 </li>
 </ul>
 <a name="fixOverlap">
@@ -381,7 +381,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 </li>
@@ -392,29 +392,29 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveReptate-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">
+<a name="MCMoveReptate-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MCMoveReptate</h4>
-<pre>public&nbsp;MCMoveReptate(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                     <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                     <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;MCMoveReptate(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                     <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                     <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="MCMoveReptate-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-boolean-etomica.space.ISpace-">
+<a name="MCMoveReptate-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-boolean-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveReptate</h4>
-<pre>public&nbsp;MCMoveReptate(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                     <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;MCMoveReptate(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                     <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                      double&nbsp;stepSize,
                      double&nbsp;stepSizeMax,
                      boolean&nbsp;fixOverlap,
-                     <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                     <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -532,19 +532,19 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">MCMoveBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
 <div class="block">Sets the box on which this move acts.  The box itself can be changed
  via this method, if desired.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -554,20 +554,20 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>getAtomSource</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a>&nbsp;getAtomSource()</pre>
+<pre>public&nbsp;<a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a>&nbsp;getAtomSource()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the atomSource.</dd>
 </dl>
 </li>
 </ul>
-<a name="setAtomSource-etomica.atom.MoleculeSource-">
+<a name="setAtomSource-etomica.molecule.MoleculeSource-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setAtomSource</h4>
-<pre>public&nbsp;void&nbsp;setAtomSource(<a href="../../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a>&nbsp;source)</pre>
+<pre>public&nbsp;void&nbsp;setAtomSource(<a href="../../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a>&nbsp;source)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - The atomSource to set.</dd>

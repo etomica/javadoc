@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Atom</span>
 extends java.lang.Object
-implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>, java.io.Serializable</pre>
 <div class="block">Atom that represents a physical atom with a position.
  <p></div>
 <dl>
@@ -151,15 +151,15 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#leafIndex">leafIndex</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#parent">parent</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#position">position</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#type">type</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -177,13 +177,13 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#Atom-etomica.space.ISpace-">Atom</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#Atom-etomica.space.Space-">Atom</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Makes a simple atom for the given space.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#Atom-etomica.space.ISpace-etomica.api.IAtomType-">Atom</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-    <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#Atom-etomica.space.Space-etomica.atom.AtomType-">Atom</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+    <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -211,15 +211,15 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getParentGroup--">getParentGroup</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getPosition--">getPosition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -236,7 +236,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#setParent-etomica.api.IMolecule-">setParent</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;newParent)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#setParent-etomica.molecule.IMolecule-">setParent</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;newParent)</code>
 <div class="block">Informs the Atom that the given AtomGroup is its parent.</div>
 </td>
 </tr>
@@ -250,7 +250,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/Atom.html#toString--">toString</a></span>()</code>
 <div class="block">Returns a string formed by concatenating the signature of this atom
- to a string that identifies it as a species master, species agent, 
+ to a string that identifies it as a species master, species agent,
  molecule, group, or (leaf) atom.</div>
 </td>
 </tr>
@@ -282,7 +282,16 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>type</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a> type</pre>
+<pre>protected final&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type</pre>
+</li>
+</ul>
+<a name="position">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>position</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> position</pre>
 </li>
 </ul>
 <a name="index">
@@ -294,22 +303,13 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <pre>protected&nbsp;int index</pre>
 </li>
 </ul>
-<a name="position">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>position</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> position</pre>
-</li>
-</ul>
 <a name="parent">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>parent</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a> parent</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a> parent</pre>
 </li>
 </ul>
 <a name="leafIndex">
@@ -329,25 +329,25 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Atom-etomica.space.ISpace-etomica.api.IAtomType-">
+<a name="Atom-etomica.space.Space-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Atom</h4>
-<pre>public&nbsp;Atom(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-            <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
+<pre>public&nbsp;Atom(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+            <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a name="Atom-etomica.space.ISpace-">
+<a name="Atom-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Atom</h4>
-<pre>public&nbsp;Atom(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;Atom(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Makes a simple atom for the given space.  Coordinate is non-kinetic sphere;
- node is for a leaf atom; type is a sphere with unit mass and unit size, 
+ node is for a leaf atom; type is a sphere with unit mass and unit size,
  unique to the new atom; depth is 0.</div>
 </li>
 </ul>
@@ -380,29 +380,11 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <h4>toString</h4>
 <pre>public final&nbsp;java.lang.String&nbsp;toString()</pre>
 <div class="block">Returns a string formed by concatenating the signature of this atom
- to a string that identifies it as a species master, species agent, 
+ to a string that identifies it as a species master, species agent,
  molecule, group, or (leaf) atom.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
-</dl>
-</li>
-</ul>
-<a name="setIndex-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setIndex</h4>
-<pre>public final&nbsp;void&nbsp;setIndex(int&nbsp;newIndex)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#setIndex-int-">IAtom</a></code></span></div>
-<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.
- This should only be called by the parent molecule.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newIndex</code> - the new index</dd>
 </dl>
 </li>
 </ul>
@@ -415,25 +397,43 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <pre>public final&nbsp;int&nbsp;getIndex()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this IAtom's index, which is its place in the parent AtomGroup's
  list of child IAtoms.</dd>
 </dl>
 </li>
 </ul>
-<a name="setParent-etomica.api.IMolecule-">
+<a name="setIndex-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setIndex</h4>
+<pre>public final&nbsp;void&nbsp;setIndex(int&nbsp;newIndex)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/IAtom.html#setIndex-int-">IAtom</a></code></span></div>
+<div class="block">Informs the IAtom of its index within the atoms of its parent molecule.
+ This should only be called by the parent molecule.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/atom/IAtom.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newIndex</code> - the new index</dd>
+</dl>
+</li>
+</ul>
+<a name="setParent-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setParent</h4>
-<pre>public&nbsp;void&nbsp;setParent(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;newParent)</pre>
+<pre>public&nbsp;void&nbsp;setParent(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;newParent)</pre>
 <div class="block">Informs the Atom that the given AtomGroup is its parent.
  This method should only be called by the parent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#setParent-etomica.api.IMolecule-">setParent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#setParent-etomica.molecule.IMolecule-">setParent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newParent</code> - the new parent molecule</dd>
 </dl>
@@ -445,10 +445,10 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>getParentGroup</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;getParentGroup()</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;getParentGroup()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#getParentGroup--">getParentGroup</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#getParentGroup--">getParentGroup</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the parent molecule of this IAtom.</dd>
 </dl>
@@ -460,10 +460,10 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>getPosition</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getPosition()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getPosition()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#getPosition--">getPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#getPosition--">getPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the position of the IAtom.  Modifying the returned vector will
  alter the IAtom's position.</dd>
@@ -477,7 +477,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <li class="blockList">
 <h4>getLeafIndex</h4>
 <pre>public&nbsp;int&nbsp;getLeafIndex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#getLeafIndex--">IAtom</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/IAtom.html#getLeafIndex--">IAtom</a></code></span></div>
 <div class="block">Returns the global index (within the Box) of this Atom.  The global
  index is unique to the IAtom in the Box.  The IAtom's global index may
  change over the course of a simulation due to addition or removal of
@@ -485,7 +485,7 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
  the Box's event manager when an Atom's global index changes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#getLeafIndex--">getLeafIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#getLeafIndex--">getLeafIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -496,12 +496,12 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <li class="blockList">
 <h4>setLeafIndex</h4>
 <pre>public&nbsp;void&nbsp;setLeafIndex(int&nbsp;newLeafIndex)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IAtom.html#setLeafIndex-int-">IAtom</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/IAtom.html#setLeafIndex-int-">IAtom</a></code></span></div>
 <div class="block">Sets the atom's global index to the give value.  This method should only
- be called by the IBox.</div>
+ be called by the Box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#setLeafIndex-int-">setLeafIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#setLeafIndex-int-">setLeafIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -511,12 +511,12 @@ implements <a href="../../etomica/api/IAtom.html" title="interface in etomica.ap
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;getType()</pre>
+<pre>public final&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getType()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtom.html#getType--">getType</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtom.html#getType--">getType</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the Atom type, holding properties held in common with other 
+<dd>the Atom type, holding properties held in common with other
  atoms made by this atom's factory.</dd>
 </dl>
 </li>

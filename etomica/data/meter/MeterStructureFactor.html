@@ -135,11 +135,11 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#atomList">atomList</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -151,7 +151,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#dataInfo">dataInfo</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -163,7 +163,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#tag">tag</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#waveVec">waveVec</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -193,8 +193,8 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#MeterStructureFactor-etomica.space.ISpace-etomica.api.IBox-double-">MeterStructureFactor</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                    <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#MeterStructureFactor-etomica.space.Space-etomica.box.Box-double-">MeterStructureFactor</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                    <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;aBox,
                     double&nbsp;cutoff)</code>
 <div class="block">Creates meter with default to compute the structure factor for all atoms
  in the box.</div>
@@ -261,7 +261,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setAtoms-etomica.api.IAtomList-">setAtoms</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setAtoms-etomica.atom.IAtomList-">setAtoms</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -271,7 +271,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setWaveVec-etomica.api.IVectorMutable:A-">setWaveVec</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;waveVec)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterStructureFactor.html#setWaveVec-etomica.space.Vector:A-">setWaveVec</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;waveVec)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -301,7 +301,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="box">
@@ -310,7 +310,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="struct">
@@ -328,7 +328,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>waveVec</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] waveVec</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] waveVec</pre>
 </li>
 </ul>
 <a name="atomList">
@@ -337,7 +337,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>atomList</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a> atomList</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> atomList</pre>
 </li>
 </ul>
 <a name="data">
@@ -402,14 +402,14 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterStructureFactor-etomica.space.ISpace-etomica.api.IBox-double-">
+<a name="MeterStructureFactor-etomica.space.Space-etomica.box.Box-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterStructureFactor</h4>
-<pre>public&nbsp;MeterStructureFactor(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox,
+<pre>public&nbsp;MeterStructureFactor(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;aBox,
                             double&nbsp;cutoff)</pre>
 <div class="block">Creates meter with default to compute the structure factor for all atoms
  in the box.  All wave vectors consistent with the box shape and with
@@ -457,26 +457,26 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="setWaveVec-etomica.api.IVectorMutable:A-">
+<a name="setWaveVec-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setWaveVec</h4>
-<pre>public&nbsp;void&nbsp;setWaveVec(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;waveVec)</pre>
+<pre>public&nbsp;void&nbsp;setWaveVec(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;waveVec)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>waveVec</code> - Sets a custom wave vector array.</dd>
 </dl>
 </li>
 </ul>
-<a name="setAtoms-etomica.api.IAtomList-">
+<a name="setAtoms-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtoms</h4>
-<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</pre>
+<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atomList</code> - Sets the list of atoms for factor calculation.</dd>

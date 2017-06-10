@@ -167,7 +167,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorLeafAtoms.html#AtomIteratorLeafAtoms-etomica.api.IBox-">AtomIteratorLeafAtoms</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorLeafAtoms.html#AtomIteratorLeafAtoms-etomica.box.Box-">AtomIteratorLeafAtoms</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Creates iterator conditioned to give all leaf atoms of the specified
  box.</div>
 </td>
@@ -189,7 +189,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorLeafAtoms.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorLeafAtoms.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Configures iterator to form its iterates from the leaf atoms of the given
  box.</div>
 </td>
@@ -200,7 +200,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.atom.iterator.<a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html" title="class in etomica.atom.iterator">AtomIteratorArrayListSimple</a></h3>
-<code><a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#getList--">getList</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#nBody--">nBody</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#next--">next</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#nextAtom--">nextAtom</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#reset--">reset</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#setList-etomica.api.IAtomList-">setList</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#size--">size</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#unset--">unset</a></code></li>
+<code><a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#getList--">getList</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#nBody--">nBody</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#next--">next</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#nextAtom--">nextAtom</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#reset--">reset</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#setList-etomica.atom.IAtomList-">setList</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#size--">size</a>, <a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html#unset--">unset</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -255,13 +255,13 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html
  until a call to setBox is performed.</div>
 </li>
 </ul>
-<a name="AtomIteratorLeafAtoms-etomica.api.IBox-">
+<a name="AtomIteratorLeafAtoms-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomIteratorLeafAtoms</h4>
-<pre>public&nbsp;AtomIteratorLeafAtoms(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;AtomIteratorLeafAtoms(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Creates iterator conditioned to give all leaf atoms of the specified
  box. Call to reset() is required before beginning iteration.</div>
 </li>
@@ -274,19 +274,19 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Configures iterator to form its iterates from the leaf atoms of the given
  box. If a species was previously (or subsequently) set, iterates will
  be the leaf atoms of under the species in the specified box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if the Box is null</dd>
 </dl>

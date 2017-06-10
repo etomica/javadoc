@@ -146,7 +146,7 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#orientationX">orientationX</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -164,7 +164,7 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#ConformationHSDimer-etomica.space.ISpace-double-">ConformationHSDimer</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#ConformationHSDimer-etomica.space.Space-double-">ConformationHSDimer</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                    double&nbsp;L)</code>&nbsp;</td>
 </tr>
 </table>
@@ -184,13 +184,13 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</code>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#initializePositions-etomica.api.IAtomList-etomica.space.IOrientation-">initializePositions</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/ConformationHSDimer.html#initializePositions-etomica.atom.IAtomList-etomica.space.IOrientation-">initializePositions</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList,
                    <a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a>&nbsp;orientation)</code>
 <div class="block">Assign coordinates to the atoms in the given list using the
  given orientation for the molecule.</div>
@@ -224,7 +224,7 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="L">
@@ -253,13 +253,13 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConformationHSDimer-etomica.space.ISpace-double-">
+<a name="ConformationHSDimer-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConformationHSDimer</h4>
-<pre>public&nbsp;ConformationHSDimer(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;ConformationHSDimer(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            double&nbsp;L)</pre>
 </li>
 </ul>
@@ -271,35 +271,35 @@ implements <a href="../../etomica/config/IConformationOriented.html" title="inte
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initializePositions-etomica.api.IAtomList-etomica.space.IOrientation-">
+<a name="initializePositions-etomica.atom.IAtomList-etomica.space.IOrientation-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializePositions</h4>
-<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList,
+<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList,
                                 <a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a>&nbsp;orientation)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/IConformationOriented.html#initializePositions-etomica.api.IAtomList-etomica.space.IOrientation-">IConformationOriented</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/IConformationOriented.html#initializePositions-etomica.atom.IAtomList-etomica.space.IOrientation-">IConformationOriented</a></code></span></div>
 <div class="block">Assign coordinates to the atoms in the given list using the
  given orientation for the molecule.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/config/IConformationOriented.html#initializePositions-etomica.api.IAtomList-etomica.space.IOrientation-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/IConformationOriented.html" title="interface in etomica.config">IConformationOriented</a></code></dd>
+<dd><code><a href="../../etomica/config/IConformationOriented.html#initializePositions-etomica.atom.IAtomList-etomica.space.IOrientation-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/IConformationOriented.html" title="interface in etomica.config">IConformationOriented</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="initializePositions-etomica.api.IAtomList-">
+<a name="initializePositions-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializePositions</h4>
-<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">IConformation</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">IConformation</a></code></span></div>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
+<dd><code><a href="../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
 </dl>
 </li>
 </ul>

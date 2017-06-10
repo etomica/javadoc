@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/potential/P1ExternalField.html" title="class in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/potential/IPotentialTorque.html" target="_top">Frames</a></li>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -128,8 +128,8 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[][]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotentialTorque.html#gradientAndTorque-etomica.api.IAtomList-">gradientAndTorque</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotentialTorque.html#gradientAndTorque-etomica.atom.IAtomList-">gradientAndTorque</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -137,21 +137,21 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></h3>
-<code><a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#virial-etomica.api.IAtomList-">virial</a></code></li>
+<code><a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#virial-etomica.atom.IAtomList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialAtomic">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialAtomic">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></h3>
-<code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></h3>
+<code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -167,13 +167,13 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="gradientAndTorque-etomica.api.IAtomList-">
+<a name="gradientAndTorque-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>gradientAndTorque</h4>
-<pre><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[][]&nbsp;gradientAndTorque(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]&nbsp;gradientAndTorque(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
 </li>
 </ul>
 </li>
@@ -204,7 +204,7 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/potential/P1ExternalField.html" title="class in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/potential/IPotentialTorque.html" target="_top">Frames</a></li>

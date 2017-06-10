@@ -143,7 +143,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/PDBWriter.html#PDBWriter--">PDBWriter</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/PDBWriter.html#PDBWriter-etomica.api.IBox-">PDBWriter</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/PDBWriter.html#PDBWriter-etomica.box.Box-">PDBWriter</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;aBox)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -168,7 +168,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/PDBWriter.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/PDBWriter.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -219,13 +219,13 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <pre>public&nbsp;PDBWriter()</pre>
 </li>
 </ul>
-<a name="PDBWriter-etomica.api.IBox-">
+<a name="PDBWriter-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PDBWriter</h4>
-<pre>public&nbsp;PDBWriter(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;aBox)</pre>
+<pre>public&nbsp;PDBWriter(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;aBox)</pre>
 </li>
 </ul>
 </li>
@@ -236,13 +236,13 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 </li>
 </ul>
 <a name="setFile-java.io.File-">
@@ -253,7 +253,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <h4>setFile</h4>
 <pre>public&nbsp;void&nbsp;setFile(java.io.File&nbsp;newFile)</pre>
 <div class="block">Sets the file to write to.  This method (or setFileName) must be called
- before calling actionPerformed and again before calling 
+ before calling actionPerformed and again before calling
  writeRasmolScript.</div>
 </li>
 </ul>
@@ -265,7 +265,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <h4>setFileName</h4>
 <pre>public&nbsp;void&nbsp;setFileName(java.lang.String&nbsp;fileName)</pre>
 <div class="block">Sets the file name to write to.  This method (or setFile) must be called
- before calling actionPerformed and again before calling 
+ before calling actionPerformed and again before calling
  writeRasmolScript.</div>
 </li>
 </ul>

@@ -115,19 +115,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a>, <a href="../../etomica/api/ISimulationSpeciesEvent.html" title="interface in etomica.api">ISimulationSpeciesEvent</a>, <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="interface in etomica.api">ISimulationSpeciesIndexEvent</a>, java.io.Serializable</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SimulationSpeciesIndexEvent</span>
-extends <a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>
-implements <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="interface in etomica.api">ISimulationSpeciesIndexEvent</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.simulation.SimulationSpeciesIndexEvent">Serialized Form</a></dd>
-</dl>
+extends <a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a></pre>
 </li>
 </ul>
 </div>
@@ -146,8 +137,8 @@ implements <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html#SimulationSpeciesIndexEvent-etomica.api.ISimulation-etomica.api.ISpecies-int-">SimulationSpeciesIndexEvent</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                           <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html#SimulationSpeciesIndexEvent-etomica.simulation.Simulation-etomica.species.ISpecies-int-">SimulationSpeciesIndexEvent</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                           <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                            int&nbsp;index)</code>&nbsp;</td>
 </tr>
 </table>
@@ -191,20 +182,6 @@ implements <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.ISimulationSpeciesEvent">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/ISimulationSpeciesEvent.html" title="interface in etomica.api">ISimulationSpeciesEvent</a></h3>
-<code><a href="../../etomica/api/ISimulationSpeciesEvent.html#getSpecies--">getSpecies</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.ISimulationEvent">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a></h3>
-<code><a href="../../etomica/api/ISimulationEvent.html#getSimulation--">getSimulation</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -219,14 +196,14 @@ implements <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimulationSpeciesIndexEvent-etomica.api.ISimulation-etomica.api.ISpecies-int-">
+<a name="SimulationSpeciesIndexEvent-etomica.simulation.Simulation-etomica.species.ISpecies-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationSpeciesIndexEvent</h4>
-<pre>public&nbsp;SimulationSpeciesIndexEvent(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                   <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationSpeciesIndexEvent(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                   <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                                    int&nbsp;index)</pre>
 </li>
 </ul>
@@ -245,10 +222,6 @@ implements <a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>public&nbsp;int&nbsp;getIndex()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/ISimulationSpeciesIndexEvent.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/ISimulationSpeciesIndexEvent.html" title="interface in etomica.api">ISimulationSpeciesIndexEvent</a></code></dd>
-</dl>
 </li>
 </ul>
 </li>

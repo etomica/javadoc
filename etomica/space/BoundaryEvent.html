@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="class in etomica.space"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/space/BoundaryEventManager.html" title="class in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/space/BoundaryEvent.html" target="_top">Frames</a></li>
@@ -105,15 +105,11 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BoundaryEvent</span>
-extends java.lang.Object
-implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a></pre>
+extends java.lang.Object</pre>
+<div class="block">Event that informs a listener about some change to a boundary.</div>
 </li>
 </ul>
 </div>
@@ -133,7 +129,7 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryEvent.html#boundary">boundary</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -151,7 +147,7 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryEvent.html#BoundaryEvent-etomica.api.IBoundary-">BoundaryEvent</a></span>(<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;_boundary)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryEvent.html#BoundaryEvent-etomica.space.Boundary-">BoundaryEvent</a></span>(<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a>&nbsp;boundary)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -169,7 +165,7 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryEvent.html#getBoundary--">getBoundary</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -200,7 +196,7 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <ul class="blockListLast">
 <li class="blockList">
 <h4>boundary</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a> boundary</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
 </li>
 </ul>
 </li>
@@ -211,13 +207,13 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoundaryEvent-etomica.api.IBoundary-">
+<a name="BoundaryEvent-etomica.space.Boundary-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoundaryEvent</h4>
-<pre>public&nbsp;BoundaryEvent(<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;_boundary)</pre>
+<pre>public&nbsp;BoundaryEvent(<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a>&nbsp;boundary)</pre>
 </li>
 </ul>
 </li>
@@ -234,10 +230,8 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getBoundary</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>&nbsp;getBoundary()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a>&nbsp;getBoundary()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoundaryEvent.html#getBoundary--">getBoundary</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the boundary which has changed.</dd>
 </dl>
@@ -271,7 +265,7 @@ implements <a href="../../etomica/api/IBoundaryEvent.html" title="interface in e
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="class in etomica.space"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/space/BoundaryEventManager.html" title="class in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/space/BoundaryEvent.html" target="_top">Frames</a></li>

@@ -188,12 +188,12 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#CBMCGrowSolidHexane-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorMC-etomica.api.IBox-etomica.api.ISpecies-int-">CBMCGrowSolidHexane</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;p,
-                   <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                   <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#CBMCGrowSolidHexane-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorMC-etomica.box.Box-etomica.species.ISpecies-int-">CBMCGrowSolidHexane</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;p,
+                   <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                    <a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integrator,
-                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;phs,
-                   <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;phs,
+                   <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                    int&nbsp;NTrials)</code>&nbsp;</td>
 </tr>
 </table>
@@ -224,26 +224,26 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcBondTorsionalEnergy-etomica.api.IVectorMutable-">calcBondTorsionalEnergy</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;v)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcBondTorsionalEnergy-etomica.space.Vector-">calcBondTorsionalEnergy</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcExternalEnergy-etomica.api.IAtom-">calcExternalEnergy</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcExternalEnergy-etomica.atom.IAtom-">calcExternalEnergy</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcRandomBondWithAngle-etomica.api.IAtom-etomica.api.IAtom-">calcRandomBondWithAngle</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                       <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;b)</code>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcRandomBondWithAngle-etomica.atom.IAtom-etomica.atom.IAtom-">calcRandomBondWithAngle</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                       <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;b)</code>
 <div class="block">XXX METHOD NOT TESTED! USE AT OWN PERIL! Generates a random bond that
  accounts for bond angle in the calculation This method will change its
  parameter.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcRandomBondWithAngleAndTorsion-etomica.api.IAtom-etomica.api.IAtom-etomica.api.IAtom-">calcRandomBondWithAngleAndTorsion</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                 <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;b,
-                                 <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;c)</code>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#calcRandomBondWithAngleAndTorsion-etomica.atom.IAtom-etomica.atom.IAtom-etomica.atom.IAtom-">calcRandomBondWithAngleAndTorsion</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                 <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;b,
+                                 <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;c)</code>
 <div class="block">XXX METHOD NOT TESTED! USE AT OWN PERIL!l dy Generates a random bond that
  accounts for bond angle and torsion in the calculation.</div>
 </td>
@@ -261,8 +261,8 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#getBondlength--">getBondlength</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#getNormal-etomica.api.IVectorMutable-">getNormal</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;vect)</code>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CBMCGrowSolidHexane.html#getNormal-etomica.space.Vector-">getNormal</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;vect)</code>
 <div class="block">Returns a unit normal to the argument vector</div>
 </td>
 </tr>
@@ -276,21 +276,21 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.models.hexane.<a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></h3>
-<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBond--">calcRandomBond</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRosenbluthFactors--">calcRosenbluthFactors</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
+<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBond--">calcRandomBond</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRosenbluthFactors--">calcRosenbluthFactors</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.models.hexane.MCMoveCBMC">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.models.hexane.<a href="../../../etomica/models/hexane/MCMoveCBMC.html" title="class in etomica.models.hexane">MCMoveCBMC</a></h3>
-<code><a href="../../../etomica/models/hexane/MCMoveCBMC.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#doTrial--">doTrial</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#doTrial-etomica.api.IMolecule-">doTrial</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getA--">getA</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getB--">getB</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getChainlength--">getChainlength</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getMoleculeSource--">getMoleculeSource</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getNumberOfTrials--">getNumberOfTrials</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setChainlength-int-">setChainlength</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setMoleculeSource-etomica.atom.MoleculeSource-">setMoleculeSource</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setNumberOfTrials-int-">setNumberOfTrials</a></code></li>
+<code><a href="../../../etomica/models/hexane/MCMoveCBMC.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#doTrial--">doTrial</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#doTrial-etomica.molecule.IMolecule-">doTrial</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getA--">getA</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getB--">getB</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getChainlength--">getChainlength</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getMoleculeSource--">getMoleculeSource</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#getNumberOfTrials--">getNumberOfTrials</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setChainlength-int-">setChainlength</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a>, <a href="../../../etomica/models/hexane/MCMoveCBMC.html#setNumberOfTrials-int-">setNumberOfTrials</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBox">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -320,18 +320,18 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CBMCGrowSolidHexane-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorMC-etomica.api.IBox-etomica.api.ISpecies-int-">
+<a name="CBMCGrowSolidHexane-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorMC-etomica.box.Box-etomica.species.ISpecies-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CBMCGrowSolidHexane</h4>
-<pre>public&nbsp;CBMCGrowSolidHexane(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;p,
-                           <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                           <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;CBMCGrowSolidHexane(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;p,
+                           <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                            <a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integrator,
-                           <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;phs,
-                           <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;phs,
+                           <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                            int&nbsp;NTrials)</pre>
 </li>
 </ul>
@@ -356,21 +356,21 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 </dl>
 </li>
 </ul>
-<a name="calcRandomBondWithAngle-etomica.api.IAtom-etomica.api.IAtom-">
+<a name="calcRandomBondWithAngle-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcRandomBondWithAngle</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;calcRandomBondWithAngle(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                                 <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;b)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngle-etomica.api.IAtom-etomica.api.IAtom-">CBMCGrowStraightAlkane</a></code></span></div>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;calcRandomBondWithAngle(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                         <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;b)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngle-etomica.atom.IAtom-etomica.atom.IAtom-">CBMCGrowStraightAlkane</a></code></span></div>
 <div class="block">XXX METHOD NOT TESTED! USE AT OWN PERIL! Generates a random bond that
  accounts for bond angle in the calculation This method will change its
  parameter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngle-etomica.api.IAtom-etomica.api.IAtom-">calcRandomBondWithAngle</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
+<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngle-etomica.atom.IAtom-etomica.atom.IAtom-">calcRandomBondWithAngle</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>a</code> - the atom nearer to the new atom</dd>
 <dd><code>b</code> - the atom farther from the new atom</dd>
@@ -379,22 +379,22 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 </dl>
 </li>
 </ul>
-<a name="calcRandomBondWithAngleAndTorsion-etomica.api.IAtom-etomica.api.IAtom-etomica.api.IAtom-">
+<a name="calcRandomBondWithAngleAndTorsion-etomica.atom.IAtom-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcRandomBondWithAngleAndTorsion</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;calcRandomBondWithAngleAndTorsion(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                                           <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;b,
-                                                           <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;c)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngleAndTorsion-etomica.api.IAtom-etomica.api.IAtom-etomica.api.IAtom-">CBMCGrowStraightAlkane</a></code></span></div>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;calcRandomBondWithAngleAndTorsion(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                                   <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;b,
+                                                   <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;c)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngleAndTorsion-etomica.atom.IAtom-etomica.atom.IAtom-etomica.atom.IAtom-">CBMCGrowStraightAlkane</a></code></span></div>
 <div class="block">XXX METHOD NOT TESTED! USE AT OWN PERIL!l dy Generates a random bond that
  accounts for bond angle and torsion in the calculation. This method will
  change its parameters.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngleAndTorsion-etomica.api.IAtom-etomica.api.IAtom-etomica.api.IAtom-">calcRandomBondWithAngleAndTorsion</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
+<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcRandomBondWithAngleAndTorsion-etomica.atom.IAtom-etomica.atom.IAtom-etomica.atom.IAtom-">calcRandomBondWithAngleAndTorsion</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>a</code> - the atom nearest to the new atom</dd>
 <dd><code>b</code> - the atom nearer to the new atom</dd>
@@ -417,29 +417,29 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 </dl>
 </li>
 </ul>
-<a name="calcBondTorsionalEnergy-etomica.api.IVectorMutable-">
+<a name="calcBondTorsionalEnergy-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcBondTorsionalEnergy</h4>
-<pre>protected&nbsp;double&nbsp;calcBondTorsionalEnergy(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;v)</pre>
+<pre>protected&nbsp;double&nbsp;calcBondTorsionalEnergy(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcBondTorsionalEnergy-etomica.api.IVectorMutable-">calcBondTorsionalEnergy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
+<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcBondTorsionalEnergy-etomica.space.Vector-">calcBondTorsionalEnergy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="calcExternalEnergy-etomica.api.IAtom-">
+<a name="calcExternalEnergy-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcExternalEnergy</h4>
-<pre>protected&nbsp;double&nbsp;calcExternalEnergy(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>protected&nbsp;double&nbsp;calcExternalEnergy(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcExternalEnergy-etomica.api.IAtom-">calcExternalEnergy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
+<dd><code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html#calcExternalEnergy-etomica.atom.IAtom-">calcExternalEnergy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" title="class in etomica.models.hexane">CBMCGrowStraightAlkane</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -461,13 +461,13 @@ extends <a href="../../../etomica/models/hexane/CBMCGrowStraightAlkane.html" tit
 </dl>
 </li>
 </ul>
-<a name="getNormal-etomica.api.IVectorMutable-">
+<a name="getNormal-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getNormal</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getNormal(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;vect)</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getNormal(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;vect)</pre>
 <div class="block">Returns a unit normal to the argument vector</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

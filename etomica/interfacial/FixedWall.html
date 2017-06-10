@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>, <a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></dd>
+<dd><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>, <a href="../../etomica/integrator/IntegratorListenerMD.html" title="interface in etomica.integrator">IntegratorListenerMD</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">FixedWall</span>
 extends java.lang.Object
-implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></pre>
+implements <a href="../../etomica/integrator/IntegratorListenerMD.html" title="interface in etomica.integrator">IntegratorListenerMD</a></pre>
 </li>
 </ul>
 </div>
@@ -137,11 +137,11 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -159,10 +159,10 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#FixedWall-etomica.space.ISpace-etomica.api.IBox-etomica.atom.AtomLeafAgentManager-etomica.api.ISpecies-">FixedWall</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#FixedWall-etomica.space.Space-etomica.box.Box-etomica.atom.AtomLeafAgentManager-etomica.species.ISpecies-">FixedWall</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
          <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;&nbsp;agentManager,
-         <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
+         <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -181,33 +181,33 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorForceComputed-etomica.api.IIntegratorEvent-">integratorForceComputed</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorForceComputed-etomica.integrator.IntegratorEvent-">integratorForceComputed</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked after the integrator has computed the forces on all atoms
  in the system.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">integratorForcePrecomputed</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorForcePrecomputed-etomica.integrator.IntegratorEvent-">integratorForcePrecomputed</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked before the integrator computes the forces on all atoms
  in the system.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a></span>(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/interfacial/FixedWall.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
@@ -248,7 +248,7 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="species">
@@ -257,7 +257,7 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <ul class="blockListLast">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> species</pre>
+<pre>protected final&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
 </li>
 </ul>
 </li>
@@ -268,16 +268,16 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="FixedWall-etomica.space.ISpace-etomica.api.IBox-etomica.atom.AtomLeafAgentManager-etomica.api.ISpecies-">
+<a name="FixedWall-etomica.space.Space-etomica.box.Box-etomica.atom.AtomLeafAgentManager-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FixedWall</h4>
-<pre>public&nbsp;FixedWall(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                 <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;FixedWall(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                 <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                  <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;&nbsp;agentManager,
-                 <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
+                 <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
 </li>
 </ul>
 </li>
@@ -288,80 +288,80 @@ implements <a href="../../etomica/api/IIntegratorListenerMD.html" title="interfa
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="integratorInitialized-etomica.api.IIntegratorEvent-">
+<a name="integratorInitialized-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorInitialized</h4>
-<pre>public&nbsp;void&nbsp;integratorInitialized(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html#integratorInitialized-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorInitialized(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html#integratorInitialized-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked when integration begins.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegratorListener.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorListener.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorStepStarted-etomica.api.IIntegratorEvent-">
+<a name="integratorStepStarted-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorStepStarted</h4>
-<pre>public&nbsp;void&nbsp;integratorStepStarted(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html#integratorStepStarted-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorStepStarted(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked at the beginning of each integrator step.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegratorListener.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorStepFinished-etomica.api.IIntegratorEvent-">
+<a name="integratorStepFinished-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorStepFinished</h4>
-<pre>public&nbsp;void&nbsp;integratorStepFinished(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorStepFinished(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked at the end of each integrator step.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegratorListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorListener.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorForcePrecomputed-etomica.api.IIntegratorEvent-">
+<a name="integratorForcePrecomputed-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorForcePrecomputed</h4>
-<pre>public&nbsp;void&nbsp;integratorForcePrecomputed(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">IIntegratorListenerMD</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorForcePrecomputed(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/integrator/IntegratorListenerMD.html#integratorForcePrecomputed-etomica.integrator.IntegratorEvent-">IntegratorListenerMD</a></code></span></div>
 <div class="block">Invoked before the integrator computes the forces on all atoms
  in the system.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForcePrecomputed-etomica.api.IIntegratorEvent-">integratorForcePrecomputed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorListenerMD.html#integratorForcePrecomputed-etomica.integrator.IntegratorEvent-">integratorForcePrecomputed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorListenerMD.html" title="interface in etomica.integrator">IntegratorListenerMD</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorForceComputed-etomica.api.IIntegratorEvent-">
+<a name="integratorForceComputed-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>integratorForceComputed</h4>
-<pre>public&nbsp;void&nbsp;integratorForceComputed(<a href="../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForceComputed-etomica.api.IIntegratorEvent-">IIntegratorListenerMD</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorForceComputed(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/integrator/IntegratorListenerMD.html#integratorForceComputed-etomica.integrator.IntegratorEvent-">IntegratorListenerMD</a></code></span></div>
 <div class="block">Invoked after the integrator has computed the forces on all atoms
  in the system.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegratorListenerMD.html#integratorForceComputed-etomica.api.IIntegratorEvent-">integratorForceComputed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegratorListenerMD.html" title="interface in etomica.api">IIntegratorListenerMD</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorListenerMD.html#integratorForceComputed-etomica.integrator.IntegratorEvent-">integratorForceComputed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorListenerMD.html" title="interface in etomica.integrator">IntegratorListenerMD</a></code></dd>
 </dl>
 </li>
 </ul>

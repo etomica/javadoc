@@ -137,8 +137,8 @@ extends <a href="../../etomica/space/IOrientation.html" title="interface in etom
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/IOrientation3D.html#rotateBy-double-etomica.api.IVector-">rotateBy</a></span>(double&nbsp;dt,
-        <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;axis)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/IOrientation3D.html#rotateBy-double-etomica.space.Vector-">rotateBy</a></span>(double&nbsp;dt,
+        <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;axis)</code>
 <div class="block">Rotate the orientation by the amount dt (radians) about the given axis.</div>
 </td>
 </tr>
@@ -148,7 +148,7 @@ extends <a href="../../etomica/space/IOrientation.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.space.<a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></h3>
-<code><a href="../../etomica/space/IOrientation.html#E-etomica.space.IOrientation-">E</a>, <a href="../../etomica/space/IOrientation.html#getDirection--">getDirection</a>, <a href="../../etomica/space/IOrientation.html#randomRotation-etomica.api.IRandom-double-">randomRotation</a>, <a href="../../etomica/space/IOrientation.html#setDirection-etomica.api.IVector-">setDirection</a></code></li>
+<code><a href="../../etomica/space/IOrientation.html#E-etomica.space.IOrientation-">E</a>, <a href="../../etomica/space/IOrientation.html#getDirection--">getDirection</a>, <a href="../../etomica/space/IOrientation.html#randomRotation-etomica.util.random.IRandom-double-">randomRotation</a>, <a href="../../etomica/space/IOrientation.html#setDirection-etomica.space.Vector-">setDirection</a></code></li>
 </ul>
 </li>
 </ul>
@@ -164,14 +164,14 @@ extends <a href="../../etomica/space/IOrientation.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="rotateBy-double-etomica.api.IVector-">
+<a name="rotateBy-double-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>rotateBy</h4>
 <pre>void&nbsp;rotateBy(double&nbsp;dt,
-              <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;axis)</pre>
+              <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;axis)</pre>
 <div class="block">Rotate the orientation by the amount dt (radians) about the given axis.
  If the given axis is considered "up" (out of the plane and toward the
  viewer), then positive rotation is in the counter-clockwise direction.</div>

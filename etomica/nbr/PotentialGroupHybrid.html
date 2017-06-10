@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></dd>
 </dl>
 <hr>
 <br>
@@ -226,7 +226,7 @@ extends <a href="../../etomica/nbr/PotentialGroupNbr.html" title="class in etomi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialGroupHybrid.html#setPotentialMaster-etomica.api.IPotentialMaster-">setPotentialMaster</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;newPotentialMaster)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialGroupHybrid.html#setPotentialMaster-etomica.potential.PotentialMaster-">setPotentialMaster</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;newPotentialMaster)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -234,14 +234,14 @@ extends <a href="../../etomica/nbr/PotentialGroupNbr.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.nbr.<a href="../../etomica/nbr/PotentialGroupNbr.html" title="class in etomica.nbr">PotentialGroupNbr</a></h3>
-<code><a href="../../etomica/nbr/PotentialGroupNbr.html#addPotential-etomica.api.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-etomica.api.IAtomType:A-">addPotential</a>, <a href="../../etomica/nbr/PotentialGroupNbr.html#calculateRangeIndependent-etomica.api.IMolecule-etomica.atom.iterator.IteratorDirective.Direction-etomica.api.IAtom-etomica.potential.PotentialCalculation-">calculateRangeIndependent</a>, <a href="../../etomica/nbr/PotentialGroupNbr.html#removePotential-etomica.api.IPotentialAtomic-">removePotential</a></code></li>
+<code><a href="../../etomica/nbr/PotentialGroupNbr.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../etomica/nbr/PotentialGroupNbr.html#calculateRangeIndependent-etomica.molecule.IMolecule-etomica.potential.IteratorDirective.Direction-etomica.atom.IAtom-etomica.potential.PotentialCalculation-">calculateRangeIndependent</a>, <a href="../../etomica/nbr/PotentialGroupNbr.html#removePotential-etomica.potential.IPotentialAtomic-">removePotential</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialGroup">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></h3>
-<code><a href="../../etomica/potential/PotentialGroup.html#addPotential-etomica.api.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-">addPotential</a>, <a href="../../etomica/potential/PotentialGroup.html#addPotential-etomica.api.IPotentialAtomic-etomica.api.IAtomType:A-">addPotential</a>, <a href="../../etomica/potential/PotentialGroup.html#calculate-etomica.atom.iterator.MoleculesetIterator-etomica.atom.iterator.IteratorDirective.Direction-etomica.api.IAtom-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../etomica/potential/PotentialGroup.html#contains-etomica.api.IPotentialAtomic-">contains</a>, <a href="../../etomica/potential/PotentialGroup.html#energy-etomica.api.IMoleculeList-">energy</a>, <a href="../../etomica/potential/PotentialGroup.html#getAtomTypes-etomica.api.IPotential-">getAtomTypes</a>, <a href="../../etomica/potential/PotentialGroup.html#getPotentials--">getPotentials</a>, <a href="../../etomica/potential/PotentialGroup.html#getRange--">getRange</a>, <a href="../../etomica/potential/PotentialGroup.html#isEnabled-etomica.api.IPotentialAtomic-">isEnabled</a>, <a href="../../etomica/potential/PotentialGroup.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../etomica/potential/PotentialGroup.html#setEnabled-etomica.api.IPotentialAtomic-boolean-">setEnabled</a></code></li>
+<code><a href="../../etomica/potential/PotentialGroup.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-">addPotential</a>, <a href="../../etomica/potential/PotentialGroup.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../etomica/potential/PotentialGroup.html#calculate-etomica.molecule.iterator.MoleculesetIterator-etomica.potential.IteratorDirective.Direction-etomica.atom.IAtom-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../etomica/potential/PotentialGroup.html#contains-etomica.potential.IPotentialAtomic-">contains</a>, <a href="../../etomica/potential/PotentialGroup.html#energy-etomica.molecule.IMoleculeList-">energy</a>, <a href="../../etomica/potential/PotentialGroup.html#getAtomTypes-etomica.potential.IPotential-">getAtomTypes</a>, <a href="../../etomica/potential/PotentialGroup.html#getPotentials--">getPotentials</a>, <a href="../../etomica/potential/PotentialGroup.html#getRange--">getRange</a>, <a href="../../etomica/potential/PotentialGroup.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a>, <a href="../../etomica/potential/PotentialGroup.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/potential/PotentialGroup.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialMolecular">
@@ -314,16 +314,16 @@ extends <a href="../../etomica/nbr/PotentialGroupNbr.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setPotentialMaster-etomica.api.IPotentialMaster-">
+<a name="setPotentialMaster-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setPotentialMaster</h4>
-<pre>public&nbsp;void&nbsp;setPotentialMaster(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;newPotentialMaster)</pre>
+<pre>public&nbsp;void&nbsp;setPotentialMaster(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;newPotentialMaster)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/potential/PotentialGroup.html#setPotentialMaster-etomica.api.IPotentialMaster-">setPotentialMaster</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
+<dd><code><a href="../../etomica/potential/PotentialGroup.html#setPotentialMaster-etomica.potential.PotentialMaster-">setPotentialMaster</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
 </dl>
 </li>
 </ul>

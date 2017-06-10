@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a>, <a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;</dd>
+<dd><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;, <a href="../../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></dd>
 </dl>
 <hr>
 <br>
@@ -186,11 +186,11 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#allAtoms">allAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -249,16 +249,16 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#IntegratorDroplet-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-etomica.space.ISpace-">IntegratorDroplet</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                 <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#IntegratorDroplet-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-etomica.space.Space-">IntegratorDroplet</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                 <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                  double&nbsp;timeStep,
                  double&nbsp;temperature,
-                 <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#IntegratorDroplet-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">IntegratorDroplet</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                 <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                 <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#IntegratorDroplet-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">IntegratorDroplet</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                 <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -300,16 +300,16 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#releaseAgent-etomica.modules.droplet.IntegratorDroplet.MyAgent-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&nbsp;agent,
-            <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#releaseAgent-etomica.modules.droplet.IntegratorDroplet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&nbsp;agent,
+            <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -322,7 +322,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Performs activities needed to set up integrator to work on given box.</div>
 </td>
 </tr>
@@ -336,7 +336,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></h3>
-<code><a href="../../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.api.IAtomKinetic-">randomizeMomentum</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.api.IVector-">scaleMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
+<code><a href="../../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a>, <a href="../../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.IntegratorBox">
@@ -388,7 +388,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>allAtoms</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a> allAtoms</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> allAtoms</pre>
 </li>
 </ul>
 <a name="pressureTensor">
@@ -433,7 +433,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="agentManager">
@@ -453,28 +453,28 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorDroplet-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">
+<a name="IntegratorDroplet-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>IntegratorDroplet</h4>
-<pre>public&nbsp;IntegratorDroplet(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                         <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                         <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;IntegratorDroplet(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                         <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="IntegratorDroplet-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-etomica.space.ISpace-">
+<a name="IntegratorDroplet-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorDroplet</h4>
-<pre>public&nbsp;IntegratorDroplet(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                         <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;IntegratorDroplet(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                         <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                          double&nbsp;timeStep,
                          double&nbsp;temperature,
-                         <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -485,18 +485,18 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/IntegratorBox.html#setBox-etomica.api.IBox-">IntegratorBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">IntegratorBox</a></code></span></div>
 <div class="block">Performs activities needed to set up integrator to work on given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/IntegratorMD.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/IntegratorMD.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -565,49 +565,47 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/IntegratorMD.html#reset--">IntegratorMD</a></code></span></div>
 <div class="block">reset the integrator's kinetic energy tracker</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/integrator/IntegratorMD.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public final&nbsp;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&nbsp;makeAgent(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                                 <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public final&nbsp;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&nbsp;makeAgent(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                                 <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.modules.droplet.IntegratorDroplet.MyAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.modules.droplet.IntegratorDroplet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&nbsp;agent,
-                         <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html" title="class in etomica.modules.droplet">IntegratorDroplet.MyAgent</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

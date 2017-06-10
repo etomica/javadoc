@@ -152,8 +152,8 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#MeterLocalMoleFraction-etomica.space.ISpace-etomica.api.IBox-">MeterLocalMoleFraction</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                      <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;_box)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#MeterLocalMoleFraction-etomica.space.Space-etomica.box.Box-">MeterLocalMoleFraction</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                      <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;_box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -171,7 +171,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -191,13 +191,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#getShapeOrigin--">getShapeOrigin</a></span>()</code>
 <div class="block">Returns the origin of the subvolume.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#getSpecies--">getSpecies</a></span>()</code>
 <div class="block">Accessor method to get the current value of the species index</div>
 </td>
@@ -214,14 +214,14 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#setShapeOrigin-etomica.api.IVector-">setShapeOrigin</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newShapeOrigin)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#setShapeOrigin-etomica.space.Vector-">setShapeOrigin</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newShapeOrigin)</code>
 <div class="block">Sets the origin of the subvolume (Polytopes typically have their center
  at 0).</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;s)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterLocalMoleFraction.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</code>
 <div class="block">Accessor method to set which species mole-fraction or molar-density is averaged
  To set to total number density, invoke with static ALL_SPECIES field as argument</div>
 </td>
@@ -255,14 +255,14 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterLocalMoleFraction-etomica.space.ISpace-etomica.api.IBox-">
+<a name="MeterLocalMoleFraction-etomica.space.Space-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterLocalMoleFraction</h4>
-<pre>public&nbsp;MeterLocalMoleFraction(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                              <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;_box)</pre>
+<pre>public&nbsp;MeterLocalMoleFraction(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                              <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;_box)</pre>
 </li>
 </ul>
 </li>
@@ -293,13 +293,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <div class="block">Returns the subvolume shape for the mole fraction calculation.</div>
 </li>
 </ul>
-<a name="setShapeOrigin-etomica.api.IVector-">
+<a name="setShapeOrigin-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setShapeOrigin</h4>
-<pre>public&nbsp;void&nbsp;setShapeOrigin(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newShapeOrigin)</pre>
+<pre>public&nbsp;void&nbsp;setShapeOrigin(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newShapeOrigin)</pre>
 <div class="block">Sets the origin of the subvolume (Polytopes typically have their center
  at 0).  The shape origin is 0 by default.</div>
 </li>
@@ -310,17 +310,17 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getShapeOrigin</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getShapeOrigin()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getShapeOrigin()</pre>
 <div class="block">Returns the origin of the subvolume.</div>
 </li>
 </ul>
-<a name="setSpecies-etomica.api.ISpecies-">
+<a name="setSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public final&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;s)</pre>
+<pre>public final&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</pre>
 <div class="block">Accessor method to set which species mole-fraction or molar-density is averaged
  To set to total number density, invoke with static ALL_SPECIES field as argument</div>
 </li>
@@ -331,7 +331,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public final&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<pre>public final&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies()</pre>
 <div class="block">Accessor method to get the current value of the species index</div>
 </li>
 </ul>
@@ -359,7 +359,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>

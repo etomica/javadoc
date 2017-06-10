@@ -188,17 +188,17 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.lattice.IndexIteratorSizable-etomica.space.ISpace-">ConfigurationLatticeTube</a></span>(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.lattice.IndexIteratorSizable-etomica.space.Space-">ConfigurationLatticeTube</a></span>(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
                         double&nbsp;length,
                         <a href="../../../etomica/lattice/IndexIteratorSizable.html" title="interface in etomica.lattice">IndexIteratorSizable</a>&nbsp;indexIterator,
-                        <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>
+                        <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
 <div class="block">Constructor for ConfigurationLatticeTube.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.space.ISpace-">ConfigurationLatticeTube</a></span>(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.space.Space-">ConfigurationLatticeTube</a></span>(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
                         double&nbsp;length,
-                        <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                        <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -217,7 +217,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.</div>
 </td>
@@ -236,7 +236,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.config.<a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></h3>
-<code><a href="../../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.api.IVector-">calculateLatticeDimensions</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-etomica.api.ISpecies-">initializeCoordinates</a>, <a href="../../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
+<code><a href="../../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.space.Vector-">calculateLatticeDimensions</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-etomica.species.ISpecies-">initializeCoordinates</a>, <a href="../../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -285,7 +285,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.space.ISpace-">
+<a name="ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -293,10 +293,10 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <h4>ConfigurationLatticeTube</h4>
 <pre>public&nbsp;ConfigurationLatticeTube(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
                                 double&nbsp;length,
-                                <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.lattice.IndexIteratorSizable-etomica.space.ISpace-">
+<a name="ConfigurationLatticeTube-etomica.lattice.BravaisLatticeCrystal-double-etomica.lattice.IndexIteratorSizable-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -305,7 +305,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <pre>public&nbsp;ConfigurationLatticeTube(<a href="../../../etomica/lattice/BravaisLatticeCrystal.html" title="class in etomica.lattice">BravaisLatticeCrystal</a>&nbsp;lattice,
                                 double&nbsp;length,
                                 <a href="../../../etomica/lattice/IndexIteratorSizable.html" title="interface in etomica.lattice">IndexIteratorSizable</a>&nbsp;indexIterator,
-                                <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Constructor for ConfigurationLatticeTube.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -339,21 +339,21 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <pre>public&nbsp;void&nbsp;setSpeciesTube(<a href="../../../etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">SpeciesTube</a>&nbsp;speciesTube)</pre>
 </li>
 </ul>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-">ConfigurationLattice</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-">ConfigurationLattice</a></code></span></div>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
+<dd><code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
 </dl>
 </li>
 </ul>

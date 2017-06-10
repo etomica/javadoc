@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/atom/DiameterHashByElementType.html" title="class in etomica.atom"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/atom/DipoleSource.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/atom/DiameterHashByType.html" target="_top">Frames</a></li>
@@ -156,7 +156,7 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#DiameterHashByType-etomica.api.ISimulation-">DiameterHashByType</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#DiameterHashByType-etomica.simulation.Simulation-">DiameterHashByType</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -175,13 +175,13 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.api.IAtom-">getDiameter</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
-<div class="block">Returns an appropriate diameter for the given atom.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.atom.AtomType-">getDiameter</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.api.IAtomType-">getDiameter</a></span>(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.atom.IAtom-">getDiameter</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
+<div class="block">Returns an appropriate diameter for the given atom.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Class</code></td>
@@ -191,21 +191,21 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#makeAgent-etomica.api.IAtomType-">makeAgent</a></span>(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#makeAgent-etomica.atom.AtomType-">makeAgent</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#setDiameter-etomica.api.IAtomType-double-">setDiameter</a></span>(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByType.html#setDiameter-etomica.atom.AtomType-double-">setDiameter</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
            double&nbsp;newDiameter)</code>&nbsp;</td>
 </tr>
 </table>
@@ -247,13 +247,13 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DiameterHashByType-etomica.api.ISimulation-">
+<a name="DiameterHashByType-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DiameterHashByType</h4>
-<pre>public&nbsp;DiameterHashByType(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</pre>
+<pre>public&nbsp;DiameterHashByType(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 </li>
 </ul>
 </li>
@@ -264,38 +264,38 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDiameter-etomica.api.IAtom-">
+<a name="getDiameter-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDiameter</h4>
-<pre>public&nbsp;double&nbsp;getDiameter(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/DiameterHash.html#getDiameter-etomica.api.IAtom-">DiameterHash</a></code></span></div>
+<pre>public&nbsp;double&nbsp;getDiameter(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/DiameterHash.html#getDiameter-etomica.atom.IAtom-">DiameterHash</a></code></span></div>
 <div class="block">Returns an appropriate diameter for the given atom.  If no diameter is
  known for the atom, -1 is returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/DiameterHash.html#getDiameter-etomica.api.IAtom-">getDiameter</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/DiameterHash.html" title="interface in etomica.atom">DiameterHash</a></code></dd>
+<dd><code><a href="../../etomica/atom/DiameterHash.html#getDiameter-etomica.atom.IAtom-">getDiameter</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/DiameterHash.html" title="interface in etomica.atom">DiameterHash</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getDiameter-etomica.api.IAtomType-">
+<a name="getDiameter-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDiameter</h4>
-<pre>public&nbsp;double&nbsp;getDiameter(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</pre>
+<pre>public&nbsp;double&nbsp;getDiameter(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</pre>
 </li>
 </ul>
-<a name="setDiameter-etomica.api.IAtomType-double-">
+<a name="setDiameter-etomica.atom.AtomType-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDiameter</h4>
-<pre>public&nbsp;void&nbsp;setDiameter(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<pre>public&nbsp;void&nbsp;setDiameter(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                         double&nbsp;newDiameter)</pre>
 </li>
 </ul>
@@ -307,7 +307,7 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 <h4>getSpeciesAgentClass</h4>
 <pre>public&nbsp;java.lang.Class&nbsp;getSpeciesAgentClass()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#getSpeciesAgentClass--">AtomTypeAgentManager.AgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -315,35 +315,35 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtomType-">
+<a name="makeAgent-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.api.IAtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.atom.AtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given AtomType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.api.IAtomType-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.atom.AtomType-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.IAtomType-">
+<a name="releaseAgent-java.lang.Object-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                         <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+                         <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -375,7 +375,7 @@ implements <a href="../../etomica/atom/DiameterHash.html" title="interface in et
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/atom/DiameterHashByElementType.html" title="class in etomica.atom"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/atom/DipoleSource.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/atom/DiameterHashByType.html" target="_top">Frames</a></li>

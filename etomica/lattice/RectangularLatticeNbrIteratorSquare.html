@@ -234,7 +234,7 @@ extends <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html" title
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.lattice.<a href="../../etomica/lattice/RectangularLatticeNbrIterator.html" title="class in etomica.lattice">RectangularLatticeNbrIterator</a></h3>
-<code><a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#D--">D</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#getDirection--">getDirection</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#getLattice--">getLattice</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#hasNext--">hasNext</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#next--">next</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#nextIndex--">nextIndex</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#peek--">peek</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#reset--">reset</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setDirection-etomica.atom.iterator.IteratorDirective.Direction-">setDirection</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setPeriodicity-boolean:A-">setPeriodicity</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setSite-int:A-">setSite</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#size--">size</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#unset--">unset</a></code></li>
+<code><a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#D--">D</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#getDirection--">getDirection</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#getLattice--">getLattice</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#hasNext--">hasNext</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#next--">next</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#nextIndex--">nextIndex</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#peek--">peek</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#reset--">reset</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setPeriodicity-boolean:A-">setPeriodicity</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#setSite-int:A-">setSite</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#size--">size</a>, <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html#unset--">unset</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -313,6 +313,26 @@ extends <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html" title
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="main-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>main</h4>
+<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
+<div class="block">Method to test the neighbor iterator.  Constructs a lattice
+ with sites defined to hold a color.  Configures iterator,
+ loops over neighbor sites and defines up/down neighbors to
+ have colors yellow and blue, respectively.  Then puts up a window
+ with the lattice drawn as an array of squares, with central site colored
+ red and with neighbor sites identified by their colors.  3-D lattice is shown
+ with a set of slices through the planes in the 3rd dimension.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>args</code> - </dd>
+</dl>
+</li>
+</ul>
 <a name="updateNeighborList--">
 <!--   -->
 </a>
@@ -347,25 +367,6 @@ extends <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html" title
 </dl>
 </li>
 </ul>
-<a name="setRange-int:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setRange</h4>
-<pre>public&nbsp;void&nbsp;setRange(int[]&nbsp;newRange)</pre>
-<div class="block">Sets the range used to define the neighboring sites.  Each of the values
- in newRange is used to determine the size of the neighbor box in the 
- corresponding dimension: (edge length) = 2*value + 1, as the value describes
- the neighbor distance in each direction (e.g., left and right) from the 
- Non-negative values (including zero) are acceptable, to a maximum of
- (lattice dimension - 1)/2, beyond which the neighbor distances extend beyond
- the size of the lattice.  An IllegalArgumentException is thrown if any index
- is outside its acceptable range.  
- A copy of the newRange array is made, so it may be re-used elsewhere after
- calling this method.</div>
-</li>
-</ul>
 <a name="getRange--">
 <!--   -->
 </a>
@@ -376,24 +377,23 @@ extends <a href="../../etomica/lattice/RectangularLatticeNbrIterator.html" title
 <div class="block">Returns (a copy of) the array specifying the neighbor range.</div>
 </li>
 </ul>
-<a name="main-java.lang.String:A-">
+<a name="setRange-int:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>main</h4>
-<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
-<div class="block">Method to test the neighbor iterator.  Constructs a lattice 
- with sites defined to hold a color.  Configures iterator, 
- loops over neighbor sites and defines up/down neighbors to
- have colors yellow and blue, respectively.  Then puts up a window
- with the lattice drawn as an array of squares, with central site colored
- red and with neighbor sites identified by their colors.  3-D lattice is shown
- with a set of slices through the planes in the 3rd dimension.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>args</code> - </dd>
-</dl>
+<h4>setRange</h4>
+<pre>public&nbsp;void&nbsp;setRange(int[]&nbsp;newRange)</pre>
+<div class="block">Sets the range used to define the neighboring sites.  Each of the values
+ in newRange is used to determine the size of the neighbor box in the
+ corresponding dimension: (edge length) = 2*value + 1, as the value describes
+ the neighbor distance in each direction (e.g., left and right) from the
+ Non-negative values (including zero) are acceptable, to a maximum of
+ (lattice dimension - 1)/2, beyond which the neighbor distances extend beyond
+ the size of the lattice.  An IllegalArgumentException is thrown if any index
+ is outside its acceptable range.
+ A copy of the newRange array is made, so it may be re-used elsewhere after
+ calling this method.</div>
 </li>
 </ul>
 </li>

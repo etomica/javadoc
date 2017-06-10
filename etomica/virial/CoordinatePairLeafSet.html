@@ -133,7 +133,7 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CoordinatePairLeafSet.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -145,7 +145,7 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CoordinatePairLeafSet.html#numAtoms">numAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CoordinatePairLeafSet.html#positions">positions</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -167,8 +167,8 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/CoordinatePairLeafSet.html#CoordinatePairLeafSet-etomica.api.IAtomList-etomica.space.ISpace-">CoordinatePairLeafSet</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;list,
-                     <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/CoordinatePairLeafSet.html#CoordinatePairLeafSet-etomica.atom.IAtomList-etomica.space.Space-">CoordinatePairLeafSet</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list,
+                     <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Constructor for CoordinatePairLeafSet.</div>
 </td>
 </tr>
@@ -246,7 +246,7 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>positions</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] positions</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] positions</pre>
 </li>
 </ul>
 <a name="numAtoms">
@@ -264,7 +264,7 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="ID">
@@ -284,14 +284,14 @@ implements <a href="../../etomica/virial/CoordinatePairSet.html" title="interfac
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CoordinatePairLeafSet-etomica.api.IAtomList-etomica.space.ISpace-">
+<a name="CoordinatePairLeafSet-etomica.atom.IAtomList-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CoordinatePairLeafSet</h4>
-<pre>public&nbsp;CoordinatePairLeafSet(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;list,
-                             <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;CoordinatePairLeafSet(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list,
+                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Constructor for CoordinatePairLeafSet.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

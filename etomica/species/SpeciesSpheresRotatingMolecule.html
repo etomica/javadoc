@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>, <a href="../../etomica/species/ISpeciesOriented.html" title="interface in etomica.species">ISpeciesOriented</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, <a href="../../etomica/species/ISpeciesOriented.html" title="interface in etomica.species">ISpeciesOriented</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
@@ -149,7 +149,7 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#moment">moment</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -181,18 +181,18 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.space.ISpace-etomica.api.IAtomType-etomica.api.IVector-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                              <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType,
-                              <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;moment)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.Space-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.ISpace-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                              <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.Space-etomica.space.Vector-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                              <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;moment)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.ISpace-etomica.api.IVector-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                              <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                              <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;moment)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#SpeciesSpheresRotatingMolecule-etomica.space.Space-etomica.atom.AtomType-etomica.space.Vector-">SpeciesSpheresRotatingMolecule</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                              <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType,
+                              <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;moment)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -214,29 +214,29 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#getMass--">getMass</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#getMomentOfInertia--">getMomentOfInertia</a></span>()</code>
 <div class="block">Returns the principle components of the moment of inertia of the
  molecule within the body-fixed frame.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#makeLeafAtom--">makeLeafAtom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#makeMolecule--">makeMolecule</a></span>()</code>
 <div class="block">Constructs a new group.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected static <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#makeNominalMoment-etomica.space.ISpace-">makeNominalMoment</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colFirst"><code>protected static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#makeNominalMoment-etomica.space.Space-">makeNominalMoment</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#setMomentOfInertia-etomica.api.IVector-">setMomentOfInertia</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newMoment)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresRotatingMolecule.html#setMomentOfInertia-etomica.space.Vector-">setMomentOfInertia</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newMoment)</code>
 <div class="block">Sets the species' moment of inertia to the given moment.</div>
 </td>
 </tr>
@@ -253,7 +253,7 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#addChildType-etomica.api.IAtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#getSpecies--">getSpecies</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.api.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.api.IAtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
+<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -263,11 +263,11 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.ISpecies">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.species.ISpecies">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></h3>
-<code><a href="../../etomica/api/ISpecies.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/api/ISpecies.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/api/ISpecies.html#getIndex--">getIndex</a>, <a href="../../etomica/api/ISpecies.html#initializeConformation-etomica.api.IMolecule-">initializeConformation</a>, <a href="../../etomica/api/ISpecies.html#setIndex-int-">setIndex</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.species.<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></h3>
+<code><a href="../../etomica/species/ISpecies.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/ISpecies.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/ISpecies.html#getIndex--">getIndex</a>, <a href="../../etomica/species/ISpecies.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/ISpecies.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 </li>
 </ul>
@@ -289,7 +289,7 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <ul class="blockListLast">
 <li class="blockList">
 <h4>moment</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> moment</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> moment</pre>
 </li>
 </ul>
 </li>
@@ -300,36 +300,36 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.ISpace-">
+<a name="SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SpeciesSpheresRotatingMolecule</h4>
 <pre>public&nbsp;SpeciesSpheresRotatingMolecule(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                                      <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                      <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.ISpace-etomica.api.IVector-">
+<a name="SpeciesSpheresRotatingMolecule-etomica.simulation.Simulation-etomica.space.Space-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SpeciesSpheresRotatingMolecule</h4>
 <pre>public&nbsp;SpeciesSpheresRotatingMolecule(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                                      <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;moment)</pre>
+                                      <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;moment)</pre>
 </li>
 </ul>
-<a name="SpeciesSpheresRotatingMolecule-etomica.space.ISpace-etomica.api.IAtomType-etomica.api.IVector-">
+<a name="SpeciesSpheresRotatingMolecule-etomica.space.Space-etomica.atom.AtomType-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpeciesSpheresRotatingMolecule</h4>
-<pre>public&nbsp;SpeciesSpheresRotatingMolecule(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType,
-                                      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;moment)</pre>
+<pre>public&nbsp;SpeciesSpheresRotatingMolecule(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType,
+                                      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;moment)</pre>
 </li>
 </ul>
 </li>
@@ -340,13 +340,13 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeNominalMoment-etomica.space.ISpace-">
+<a name="makeNominalMoment-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeNominalMoment</h4>
-<pre>protected static final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeNominalMoment(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>protected static final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeNominalMoment(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 <a name="makeMolecule--">
@@ -355,11 +355,11 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>makeMolecule</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;makeMolecule()</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;makeMolecule()</pre>
 <div class="block">Constructs a new group.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/ISpecies.html#makeMolecule--">makeMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></dd>
+<dd><code><a href="../../etomica/species/ISpecies.html#makeMolecule--">makeMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/species/SpeciesSpheresMono.html#makeMolecule--">makeMolecule</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></dd>
 </dl>
@@ -371,7 +371,7 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>makeLeafAtom</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;makeLeafAtom()</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;makeLeafAtom()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/species/SpeciesSpheresMono.html#makeLeafAtom--">makeLeafAtom</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></dd>
@@ -397,7 +397,7 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>getMomentOfInertia</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getMomentOfInertia()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getMomentOfInertia()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpeciesOriented.html#getMomentOfInertia--">ISpeciesOriented</a></code></span></div>
 <div class="block">Returns the principle components of the moment of inertia of the
  molecule within the body-fixed frame.  Do NOT modify the returned moment
@@ -408,13 +408,13 @@ implements <a href="../../etomica/species/ISpeciesOriented.html" title="interfac
 </dl>
 </li>
 </ul>
-<a name="setMomentOfInertia-etomica.api.IVector-">
+<a name="setMomentOfInertia-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setMomentOfInertia</h4>
-<pre>public&nbsp;void&nbsp;setMomentOfInertia(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newMoment)</pre>
+<pre>public&nbsp;void&nbsp;setMomentOfInertia(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newMoment)</pre>
 <div class="block">Sets the species' moment of inertia to the given moment.</div>
 </li>
 </ul>

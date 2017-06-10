@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></dd>
+<dd><a href="../../../etomica/molecule/DipoleSource.html" title="interface in etomica.molecule">DipoleSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DipoleSourceAceticAcid</span>
 extends java.lang.Object
-implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></pre>
+implements <a href="../../../etomica/molecule/DipoleSource.html" title="interface in etomica.molecule">DipoleSource</a></pre>
 <div class="block">calculates dipole for acetic acid</div>
 </li>
 </ul>
@@ -134,7 +134,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#dipole">dipole</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -152,7 +152,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#DipoleSourceAceticAcid-etomica.space.ISpace-">DipoleSourceAceticAcid</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#DipoleSourceAceticAcid-etomica.space.Space-">DipoleSourceAceticAcid</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -170,8 +170,8 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#getDipole-etomica.api.IMolecule-">getDipole</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/DipoleSourceAceticAcid.html#getDipole-etomica.molecule.IMolecule-">getDipole</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the dipole of the given molecule.</div>
 </td>
 </tr>
@@ -203,7 +203,7 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>dipole</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dipole</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dipole</pre>
 </li>
 </ul>
 </li>
@@ -214,13 +214,13 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DipoleSourceAceticAcid-etomica.space.ISpace-">
+<a name="DipoleSourceAceticAcid-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DipoleSourceAceticAcid</h4>
-<pre>public&nbsp;DipoleSourceAceticAcid(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;DipoleSourceAceticAcid(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>space</code> - dimension of the space</dd>
@@ -235,20 +235,20 @@ implements <a href="../../../etomica/atom/DipoleSource.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDipole-etomica.api.IMolecule-">
+<a name="getDipole-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getDipole</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getDipole(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/DipoleSource.html#getDipole-etomica.api.IMolecule-">DipoleSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getDipole(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/DipoleSource.html#getDipole-etomica.molecule.IMolecule-">DipoleSource</a></code></span></div>
 <div class="block">Returns the dipole of the given molecule.
  The method is likely to through an exception if a molecule of the wrong
  type is passed in.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/DipoleSource.html#getDipole-etomica.api.IMolecule-">getDipole</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/DipoleSource.html#getDipole-etomica.molecule.IMolecule-">getDipole</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/DipoleSource.html" title="interface in etomica.molecule">DipoleSource</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>molecule</code> - index of the molecule</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

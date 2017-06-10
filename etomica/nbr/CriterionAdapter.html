@@ -186,7 +186,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.api.IAtomList-">accept</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtomList-">accept</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code>
 <div class="block">Implementation of this method should introduce new criterion and return
  true if pair meets this criterion and that of the wrapped
  NeighborCriterion.</div>
@@ -200,14 +200,14 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#needUpdate-etomica.api.IAtom-">needUpdate</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates whether the neighbor list for the given atom should be updated,
  according to the wrapped criterion.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#reset-etomica.api.IAtom-">reset</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#reset-etomica.atom.IAtom-">reset</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates to wrapped criterion that given atom's neighbor list has just
  been updated, and that properties (e.g., record of atom's position) used
  by needUpdate and unsafe() methods should be reset.</div>
@@ -215,7 +215,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionAdapter.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Specifies to the wrapped criterion the box where the criterion is being
  applied.</div>
 </td>
@@ -297,52 +297,52 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <div class="block">Returns the criterion wrapped by this adapter</div>
 </li>
 </ul>
-<a name="accept-etomica.api.IAtomList-">
+<a name="accept-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public abstract&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</pre>
+<pre>public abstract&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
 <div class="block">Implementation of this method should introduce new criterion and return
  true if pair meets this criterion and that of the wrapped
  NeighborCriterion.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.api.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="needUpdate-etomica.api.IAtom-">
+<a name="needUpdate-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>needUpdate</h4>
-<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Indicates whether the neighbor list for the given atom should be updated,
  according to the wrapped criterion.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.api.IAtom-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the atom's list should be updated.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Specifies to the wrapped criterion the box where the criterion is being
  applied. Sometimes needed if the criterion depends on features of the
  box, such as the volume.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -363,19 +363,19 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </dl>
 </li>
 </ul>
-<a name="reset-etomica.api.IAtom-">
+<a name="reset-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;reset(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Indicates to wrapped criterion that given atom's neighbor list has just
  been updated, and that properties (e.g., record of atom's position) used
  by needUpdate and unsafe() methods should be reset.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.api.IAtom-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.atom.IAtom-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></dd>
+<dd><a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MoleculeSourceRandomDimer</span>
 extends java.lang.Object
-implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></pre>
+implements <a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></pre>
 </li>
 </ul>
 </div>
@@ -137,7 +137,7 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#associationManager">associationManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -173,13 +173,13 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#getMolecule--">getMolecule</a></span>()</code>
 <div class="block">Returns an atom.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#getRandomNumberGenerator--">getRandomNumberGenerator</a></span>()</code>
 <div class="block">Returns the random number generator used to pick atoms</div>
 </td>
@@ -190,13 +190,13 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">sets the Box the source should pull Atoms from.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#setRandomNumberGenerator-etomica.api.IRandom-">setRandomNumberGenerator</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;newRandom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MoleculeSourceRandomDimer.html#setRandomNumberGenerator-etomica.util.random.IRandom-">setRandomNumberGenerator</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;newRandom)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -226,7 +226,7 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="associationManager">
@@ -263,13 +263,13 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setRandomNumberGenerator-etomica.api.IRandom-">
+<a name="setRandomNumberGenerator-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRandomNumberGenerator</h4>
-<pre>public&nbsp;void&nbsp;setRandomNumberGenerator(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;newRandom)</pre>
+<pre>public&nbsp;void&nbsp;setRandomNumberGenerator(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;newRandom)</pre>
 </li>
 </ul>
 <a name="getRandomNumberGenerator--">
@@ -278,7 +278,7 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getRandomNumberGenerator</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;getRandomNumberGenerator()</pre>
+<pre>public&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;getRandomNumberGenerator()</pre>
 <div class="block">Returns the random number generator used to pick atoms</div>
 </li>
 </ul>
@@ -297,29 +297,29 @@ implements <a href="../../etomica/atom/MoleculeSource.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getMolecule</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;getMolecule()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/MoleculeSource.html#getMolecule--">MoleculeSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;getMolecule()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeSource.html#getMolecule--">MoleculeSource</a></code></span></div>
 <div class="block">Returns an atom.  Will return null if there are no appropriate atoms in 
  the given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/MoleculeSource.html#getMolecule--">getMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></code></dd>
+<dd><code><a href="../../etomica/molecule/MoleculeSource.html#getMolecule--">getMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/MoleculeSource.html#setBox-etomica.api.IBox-">MoleculeSource</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeSource.html#setBox-etomica.box.Box-">MoleculeSource</a></code></span></div>
 <div class="block">sets the Box the source should pull Atoms from.
  Box should not be null</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/MoleculeSource.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></code></dd>
+<dd><code><a href="../../etomica/molecule/MoleculeSource.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></code></dd>
 </dl>
 </li>
 </ul>

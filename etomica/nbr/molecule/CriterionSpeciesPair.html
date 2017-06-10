@@ -156,9 +156,9 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSpeciesPair.html#CriterionSpeciesPair-etomica.nbr.molecule.NeighborCriterionMolecular-etomica.api.ISpecies-etomica.api.ISpecies-">CriterionSpeciesPair</a></span>(<a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a>&nbsp;criterion,
-                    <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species0,
-                    <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species1)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSpeciesPair.html#CriterionSpeciesPair-etomica.nbr.molecule.NeighborCriterionMolecular-etomica.species.ISpecies-etomica.species.ISpecies-">CriterionSpeciesPair</a></span>(<a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a>&nbsp;criterion,
+                    <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species0,
+                    <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species1)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -177,14 +177,14 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSpeciesPair.html#accept-etomica.api.IMoleculeList-">accept</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSpeciesPair.html#accept-etomica.molecule.IMoleculeList-">accept</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</code>
 <div class="block">Returns true if the Species for the pair of molecules match the Species 
  given at construction (without regard to the order of the pair), and if 
  the wrapped criterion also accepts the pair.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSpeciesPair.html#getSpecies--">getSpecies</a></span>()</code>
 <div class="block">Returns the Species accepted by this NeighborCriterionMolecular</div>
 </td>
@@ -195,7 +195,7 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.nbr.molecule.<a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" title="class in etomica.nbr.molecule">CriterionAdapterMolecular</a></h3>
-<code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#getWrappedCriterion--">getWrappedCriterion</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#needUpdate-etomica.api.IMolecule-">needUpdate</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#reset-etomica.api.IMolecule-">reset</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#unsafe--">unsafe</a></code></li>
+<code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#getWrappedCriterion--">getWrappedCriterion</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#needUpdate-etomica.molecule.IMolecule-">needUpdate</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#reset-etomica.molecule.IMolecule-">reset</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#unsafe--">unsafe</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -218,15 +218,15 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CriterionSpeciesPair-etomica.nbr.molecule.NeighborCriterionMolecular-etomica.api.ISpecies-etomica.api.ISpecies-">
+<a name="CriterionSpeciesPair-etomica.nbr.molecule.NeighborCriterionMolecular-etomica.species.ISpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CriterionSpeciesPair</h4>
 <pre>public&nbsp;CriterionSpeciesPair(<a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a>&nbsp;criterion,
-                            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species0,
-                            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species1)</pre>
+                            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species0,
+                            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species1)</pre>
 </li>
 </ul>
 </li>
@@ -237,21 +237,21 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IMoleculeList-">
+<a name="accept-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</pre>
 <div class="block">Returns true if the Species for the pair of molecules match the Species 
  given at construction (without regard to the order of the pair), and if 
  the wrapped criterion also accepts the pair.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.api.IMoleculeList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.molecule.IMoleculeList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#accept-etomica.api.IMoleculeList-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" title="class in etomica.nbr.molecule">CriterionAdapterMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html#accept-etomica.molecule.IMoleculeList-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" title="class in etomica.nbr.molecule">CriterionAdapterMolecular</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -261,7 +261,7 @@ extends <a href="../../../etomica/nbr/molecule/CriterionAdapterMolecular.html" t
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;getSpecies()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;getSpecies()</pre>
 <div class="block">Returns the Species accepted by this NeighborCriterionMolecular</div>
 </li>
 </ul>

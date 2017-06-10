@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">BoxRandomizeMomenta</span>
 extends java.lang.Object
 implements <a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></pre>
-<div class="block">Randomizes the velocities of all the leaf atoms in an IBox based on the
+<div class="block">Randomizes the velocities of all the leaf atoms in a Box based on the
  Maxwell-Boltzmann distribution.</div>
 </li>
 </ul>
@@ -139,7 +139,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxRandomizeMomenta.html#atomActionRandomizeVelocity">atomActionRandomizeVelocity</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxRandomizeMomenta.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -161,8 +161,8 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxRandomizeMomenta.html#BoxRandomizeMomenta-etomica.api.IBox-etomica.api.IRandom-">BoxRandomizeMomenta</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                   <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxRandomizeMomenta.html#BoxRandomizeMomenta-etomica.box.Box-etomica.util.random.IRandom-">BoxRandomizeMomenta</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                   <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -186,7 +186,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxRandomizeMomenta.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -234,7 +234,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -254,14 +254,14 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxRandomizeMomenta-etomica.api.IBox-etomica.api.IRandom-">
+<a name="BoxRandomizeMomenta-etomica.box.Box-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxRandomizeMomenta</h4>
-<pre>public&nbsp;BoxRandomizeMomenta(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                           <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;BoxRandomizeMomenta(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                           <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -296,7 +296,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
 <a name="actionPerformed--">

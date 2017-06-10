@@ -137,7 +137,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -181,11 +181,11 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#latticePressureDADv2">latticePressureDADv2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#potentialMasterDADv2">potentialMasterDADv2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -211,8 +211,8 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#MeterSolidDACut-etomica.space.ISpace-etomica.api.IPotentialMaster-etomica.normalmode.CoordinateDefinition-double:A-">MeterSolidDACut</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-               <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#MeterSolidDACut-etomica.space.Space-etomica.potential.PotentialMaster-etomica.normalmode.CoordinateDefinition-double:A-">MeterSolidDACut</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+               <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordinateDefinition,
                double[]&nbsp;cutoffs)</code>&nbsp;</td>
 </tr>
@@ -252,7 +252,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#setPotentialMasterDADv2-etomica.api.IPotentialMaster-double:A-">setPotentialMasterDADv2</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMasterDADv2,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterSolidDACut.html#setPotentialMasterDADv2-etomica.potential.PotentialMaster-double:A-">setPotentialMasterDADv2</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMasterDADv2,
                        double[]&nbsp;bpResDADv2)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -323,7 +323,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="potentialMasterDADv2">
@@ -332,7 +332,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMasterDADv2</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMasterDADv2</pre>
+<pre>protected&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMasterDADv2</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -386,7 +386,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="bpRes">
@@ -424,14 +424,14 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterSolidDACut-etomica.space.ISpace-etomica.api.IPotentialMaster-etomica.normalmode.CoordinateDefinition-double:A-">
+<a name="MeterSolidDACut-etomica.space.Space-etomica.potential.PotentialMaster-etomica.normalmode.CoordinateDefinition-double:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterSolidDACut</h4>
-<pre>public&nbsp;MeterSolidDACut(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                       <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<pre>public&nbsp;MeterSolidDACut(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                       <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                        <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordinateDefinition,
                        double[]&nbsp;cutoffs)</pre>
 </li>
@@ -444,13 +444,13 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setPotentialMasterDADv2-etomica.api.IPotentialMaster-double:A-">
+<a name="setPotentialMasterDADv2-etomica.potential.PotentialMaster-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPotentialMasterDADv2</h4>
-<pre>public&nbsp;void&nbsp;setPotentialMasterDADv2(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMasterDADv2,
+<pre>public&nbsp;void&nbsp;setPotentialMasterDADv2(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMasterDADv2,
                                     double[]&nbsp;bpResDADv2)</pre>
 </li>
 </ul>

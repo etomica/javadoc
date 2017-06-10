@@ -151,19 +151,19 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#atomAgentManager">atomAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#atomPosDef">atomPosDef</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#com0">com0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#com1">com1</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -171,11 +171,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#kFactory">kFactory</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -201,9 +201,9 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#LatticeSumMolecularCrystal-etomica.api.IPotentialMaster-etomica.api.IBox-etomica.space.ISpace-int-etomica.lattice.crystal.Primitive-">LatticeSumMolecularCrystal</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                          <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                          <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#LatticeSumMolecularCrystal-etomica.potential.PotentialMaster-etomica.box.Box-etomica.space.Space-int-etomica.lattice.crystal.Primitive-">LatticeSumMolecularCrystal</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                           int&nbsp;basisDim,
                           <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive)</code>&nbsp;</td>
 </tr>
@@ -224,9 +224,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#atomicToMolecularD-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.api.IMolecule-etomica.api.IMolecule-">atomicToMolecularD</a></span>(<a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;aTensor,
-                  <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol0,
-                  <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol1)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/LatticeSumMolecularCrystal.html#atomicToMolecularD-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.molecule.IMolecule-etomica.molecule.IMolecule-">atomicToMolecularD</a></span>(<a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;aTensor,
+                  <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol0,
+                  <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol1)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[][][][]</code></td>
@@ -264,7 +264,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="space">
@@ -273,7 +273,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="atomPosDef">
@@ -282,7 +282,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>atomPosDef</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a> atomPosDef</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> atomPosDef</pre>
 </li>
 </ul>
 <a name="com0">
@@ -291,7 +291,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>com0</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> com0</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> com0</pre>
 </li>
 </ul>
 <a name="com1">
@@ -300,7 +300,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>com1</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> com1</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> com1</pre>
 </li>
 </ul>
 <a name="kFactory">
@@ -327,7 +327,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="atomAgentManager">
@@ -356,15 +356,15 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LatticeSumMolecularCrystal-etomica.api.IPotentialMaster-etomica.api.IBox-etomica.space.ISpace-int-etomica.lattice.crystal.Primitive-">
+<a name="LatticeSumMolecularCrystal-etomica.potential.PotentialMaster-etomica.box.Box-etomica.space.Space-int-etomica.lattice.crystal.Primitive-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LatticeSumMolecularCrystal</h4>
-<pre>public&nbsp;LatticeSumMolecularCrystal(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                  <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                                  <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;LatticeSumMolecularCrystal(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                   int&nbsp;basisDim,
                                   <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive)</pre>
 </li>
@@ -386,15 +386,15 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[][][][]&nbsp;calculateSum(<a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;atomicTensorAtomicPair)</pre>
 </li>
 </ul>
-<a name="atomicToMolecularD-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.api.IMolecule-etomica.api.IMolecule-">
+<a name="atomicToMolecularD-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.molecule.IMolecule-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>atomicToMolecularD</h4>
 <pre>protected&nbsp;<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;atomicToMolecularD(<a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;aTensor,
-                                    <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol0,
-                                    <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol1)</pre>
+                                    <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol0,
+                                    <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol1)</pre>
 </li>
 </ul>
 <a name="getWaveVectorFactory--">

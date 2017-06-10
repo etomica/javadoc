@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</dd>
+<dd><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>protected static class <span class="typeNameLabel">CoordinateDefinitionNitrogen.OrientationAgentSource</span>
 extends java.lang.Object
-implements <a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</pre>
+implements <a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../serialized-form.html#etomica.models.nitrogen.CoordinateDefinitionNitrogen.OrientationAgentSource">Serialized Form</a></dd>
@@ -165,15 +165,15 @@ implements <a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSour
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.OrientationAgentSource.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.OrientationAgentSource.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.OrientationAgentSource.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;atom)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.OrientationAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
@@ -223,44 +223,44 @@ implements <a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSour
 <li class="blockList">
 <h4>getMoleculeAgentClass</h4>
 <pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IMolecule-">
+<a name="makeAgent-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.api.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.IMolecule-">
+<a name="releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                         <a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+                         <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>

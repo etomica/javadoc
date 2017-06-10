@@ -152,7 +152,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#axis0">axis0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -278,8 +278,8 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#MCMoveClusterAtomHSRing-etomica.api.IRandom-etomica.space.ISpace-double-">MCMoveClusterAtomHSRing</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                       <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#MCMoveClusterAtomHSRing-etomica.util.random.IRandom-etomica.space.Space-double-">MCMoveClusterAtomHSRing</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                       <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                        double&nbsp;sigma)</code>&nbsp;</td>
 </tr>
 </table>
@@ -338,10 +338,10 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#randomLensPoint-etomica.api.IVector-etomica.api.IVector-etomica.space3d.Vector3D-etomica.api.IVectorMutable-double-">randomLensPoint</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r1,
-               <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r2,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#randomLensPoint-etomica.space.Vector-etomica.space.Vector-etomica.space3d.Vector3D-etomica.space.Vector-double-">randomLensPoint</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r1,
+               <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r2,
                <a href="../../etomica/space3d/Vector3D.html" title="class in etomica.space3d">Vector3D</a>&nbsp;point,
-               <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;r12,
+               <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r12,
                double&nbsp;rSquared)</code>
 <div class="block">Sets a given vector to a point chosen uniformly at random in the lens-shaped region
  formed by the overlap of two spheres of unit radius located at the given positions r1 and r2.</div>
@@ -349,9 +349,9 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#randomLensPointInBox-etomica.api.IVector-etomica.api.IVector-etomica.space.IVectorRandom-">randomLensPointInBox</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r0,
-                    <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r1,
-                    <a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a>&nbsp;point)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#randomLensPointInBox-etomica.space.Vector-etomica.space.Vector-etomica.space.Vector-">randomLensPointInBox</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r0,
+                    <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r1,
+                    <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -370,7 +370,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
@@ -394,7 +394,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -493,7 +493,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>axis0</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> axis0</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> axis0</pre>
 </li>
 </ul>
 <a name="normalWidth">
@@ -629,14 +629,14 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveClusterAtomHSRing-etomica.api.IRandom-etomica.space.ISpace-double-">
+<a name="MCMoveClusterAtomHSRing-etomica.util.random.IRandom-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveClusterAtomHSRing</h4>
-<pre>public&nbsp;MCMoveClusterAtomHSRing(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                               <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;MCMoveClusterAtomHSRing(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                               <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                                double&nbsp;sigma)</pre>
 </li>
 </ul>
@@ -648,19 +648,19 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">MCMoveBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
 <div class="block">Sets the box on which this move acts.  The box itself can be changed
  via this method, if desired.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -679,16 +679,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </dl>
 </li>
 </ul>
-<a name="randomLensPoint-etomica.api.IVector-etomica.api.IVector-etomica.space3d.Vector3D-etomica.api.IVectorMutable-double-">
+<a name="randomLensPoint-etomica.space.Vector-etomica.space.Vector-etomica.space3d.Vector3D-etomica.space.Vector-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>randomLensPoint</h4>
-<pre>protected&nbsp;void&nbsp;randomLensPoint(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r1,
-                               <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r2,
+<pre>protected&nbsp;void&nbsp;randomLensPoint(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r1,
+                               <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r2,
                                <a href="../../etomica/space3d/Vector3D.html" title="class in etomica.space3d">Vector3D</a>&nbsp;point,
-                               <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;r12,
+                               <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r12,
                                double&nbsp;rSquared)</pre>
 <div class="block">Sets a given vector to a point chosen uniformly at random in the lens-shaped region
  formed by the overlap of two spheres of unit radius located at the given positions r1 and r2.</div>
@@ -702,15 +702,15 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </dl>
 </li>
 </ul>
-<a name="randomLensPointInBox-etomica.api.IVector-etomica.api.IVector-etomica.space.IVectorRandom-">
+<a name="randomLensPointInBox-etomica.space.Vector-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>randomLensPointInBox</h4>
-<pre>protected&nbsp;void&nbsp;randomLensPointInBox(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r0,
-                                    <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r1,
-                                    <a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a>&nbsp;point)</pre>
+<pre>protected&nbsp;void&nbsp;randomLensPointInBox(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r0,
+                                    <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r1,
+                                    <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</pre>
 </li>
 </ul>
 <a name="randomLensPoint-double-etomica.space3d.Vector3D-">

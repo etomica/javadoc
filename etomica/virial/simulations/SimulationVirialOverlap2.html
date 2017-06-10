@@ -110,10 +110,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SimulationVirialOverlap2</span>
@@ -250,15 +246,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#sampleClusters">sampleClusters</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/util/HistogramSimple.html" title="class in etomica.util">HistogramSimple</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/data/histogram/HistogramSimple.html" title="class in etomica.data.histogram">HistogramSimple</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#targHist">targHist</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/util/HistogramNotSoSimple.html" title="class in etomica.util">HistogramNotSoSimple</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#targPiHist">targPiHist</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -291,8 +287,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                         int[]&nbsp;nMolecules,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
@@ -301,8 +297,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                         boolean&nbsp;doWiggle)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                         int[]&nbsp;nMolecules,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
@@ -310,8 +306,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                         boolean&nbsp;doWiggle)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                         int[]&nbsp;nMolecules,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -321,31 +317,31 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>[]&nbsp;aSampleClusters,
                         boolean&nbsp;doWiggle)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;targetCluster)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-boolean-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;targetCluster,
                         boolean&nbsp;doWiggle)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-int-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-int-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">SimulationVirialOverlap2</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         int&nbsp;nMolecules,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -370,14 +366,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#addProgressListener-double-">addProgressListener</a></span>(double&nbsp;HSB)</code>
 <div class="block">Causes a progress report (coefficient value and uncertainty) 10 times
  during the course of the simulation.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirialOverlap2.html#addProgressListener-double-boolean-">addProgressListener</a></span>(double&nbsp;HSB,
                    boolean&nbsp;full)</code>
 <div class="block">Causes a progress report (coefficient value and uncertainty) 10 times
@@ -490,7 +486,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.api.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.api.IAtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.api.IAtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.api.IBox-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.api.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -519,7 +515,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[] species</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[] species</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -753,7 +749,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>targHist</h4>
-<pre>protected&nbsp;<a href="../../../etomica/util/HistogramSimple.html" title="class in etomica.util">HistogramSimple</a> targHist</pre>
+<pre>protected&nbsp;<a href="../../../etomica/data/histogram/HistogramSimple.html" title="class in etomica.data.histogram">HistogramSimple</a> targHist</pre>
 </li>
 </ul>
 <a name="targPiHist">
@@ -762,7 +758,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>targPiHist</h4>
-<pre>protected&nbsp;<a href="../../../etomica/util/HistogramNotSoSimple.html" title="class in etomica.util">HistogramNotSoSimple</a> targPiHist</pre>
+<pre>protected&nbsp;<a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a> targPiHist</pre>
 </li>
 </ul>
 </li>
@@ -773,14 +769,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-int-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-int-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                                 int&nbsp;nMolecules,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -790,14 +786,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
  you must call init() before using it.</div>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                                 int[]&nbsp;nMolecules,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -807,55 +803,55 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
  you must call init() before using it.</div>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;targetCluster)</pre>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-boolean-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;targetCluster,
                                 boolean&nbsp;doWiggle)</pre>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
                                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>[]&nbsp;aSampleClusters,
                                 boolean&nbsp;doWiggle)</pre>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                                 int[]&nbsp;nMolecules,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
@@ -863,14 +859,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                                 boolean&nbsp;doWiggle)</pre>
 </li>
 </ul>
-<a name="SimulationVirialOverlap2-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
+<a name="SimulationVirialOverlap2-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterAbstract:A-etomica.virial.ClusterWeight:A-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationVirialOverlap2</h4>
-<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;aSpace,
-                                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<pre>public&nbsp;SimulationVirialOverlap2(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;aSpace,
+                                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                                 int[]&nbsp;nMolecules,
                                 double&nbsp;temperature,
                                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;aValueClusters,
@@ -1033,7 +1029,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>addProgressListener</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>&nbsp;addProgressListener(double&nbsp;HSB)</pre>
+<pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>&nbsp;addProgressListener(double&nbsp;HSB)</pre>
 <div class="block">Causes a progress report (coefficient value and uncertainty) 10 times
  during the course of the simulation.
  
@@ -1046,8 +1042,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>addProgressListener</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>&nbsp;addProgressListener(double&nbsp;HSB,
-                                               boolean&nbsp;full)</pre>
+<pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>&nbsp;addProgressListener(double&nbsp;HSB,
+                                              boolean&nbsp;full)</pre>
 <div class="block">Causes a progress report (coefficient value and uncertainty) 10 times
  during the course of the simulation.  With full=true, the full output
  (as would be printed at the end of the simulation) is printed.

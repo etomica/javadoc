@@ -156,11 +156,11 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#Point-etomica.space.ISpace-">Point</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#Point-etomica.space.Space-">Point</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#Point-etomica.space.ISpace-etomica.api.IVectorMutable-">Point</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
-     <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;vectorRandom)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#Point-etomica.space.Space-etomica.space.Vector-">Point</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
+     <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;vectorRandom)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,7 +179,7 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#contains-etomica.api.IVector-">contains</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Point.html#contains-etomica.space.Vector-">contains</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns true if this point is at exactly the same location as the point
  defined by the given vector.</div>
 </td>
@@ -210,7 +210,7 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.math.geometry.<a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></h3>
-<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a></code></li>
+<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -233,23 +233,23 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Point-etomica.space.ISpace-">
+<a name="Point-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Point</h4>
-<pre>public&nbsp;Point(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</pre>
+<pre>public&nbsp;Point(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</pre>
 </li>
 </ul>
-<a name="Point-etomica.space.ISpace-etomica.api.IVectorMutable-">
+<a name="Point-etomica.space.Space-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Point</h4>
-<pre>public&nbsp;Point(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
-             <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;vectorRandom)</pre>
+<pre>public&nbsp;Point(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
+             <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;vectorRandom)</pre>
 </li>
 </ul>
 </li>
@@ -303,20 +303,20 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 </dl>
 </li>
 </ul>
-<a name="contains-etomica.api.IVector-">
+<a name="contains-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Returns true if this point is at exactly the same location as the point
  defined by the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
 </dl>
 </li>
 </ul>

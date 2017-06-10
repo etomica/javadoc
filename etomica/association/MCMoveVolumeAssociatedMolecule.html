@@ -122,13 +122,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a>, <a href="../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a></dd>
+<dd><a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a>, <a href="../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a>, <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MCMoveVolumeAssociatedMolecule</span>
 extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="class in etomica.integrator.mcmove">MCMoveBoxStep</a>
-implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a></pre>
+implements <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a></pre>
 <div class="block">Monte Carlo volume-change move for associating fluids simulations in the NPT ensemble.</div>
 </li>
 </ul>
@@ -184,11 +184,11 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#dodebug">dodebug</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#dr2">dr2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,15 +196,15 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#fileWriter">fileWriter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#groupTranslationVector">groupTranslationVector</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#moleculeAgentManager">moleculeAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/iterator/MoleculeIteratorAllMolecules.html" title="class in etomica.atom.iterator">MoleculeIteratorAllMolecules</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/iterator/MoleculeIteratorAllMolecules.html" title="class in etomica.molecule.iterator">MoleculeIteratorAllMolecules</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#moleculeIterator">moleculeIterator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -224,15 +224,15 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#pressure">pressure</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#r">r</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#sim">sim</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#smerList">smerList</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -271,16 +271,16 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#MCMoveVolumeAssociatedMolecule-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-double-">MCMoveVolumeAssociatedMolecule</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                              <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                              <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                              <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#MCMoveVolumeAssociatedMolecule-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-double-">MCMoveVolumeAssociatedMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                              <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                              <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                               double&nbsp;pressure)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#MCMoveVolumeAssociatedMolecule-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">MCMoveVolumeAssociatedMolecule</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                              <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                              <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#MCMoveVolumeAssociatedMolecule-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">MCMoveVolumeAssociatedMolecule</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                              <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -309,8 +309,8 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#affectedAtoms--">affectedAtoms</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/atom/iterator/MoleculeIterator.html" title="interface in etomica.atom.iterator">MoleculeIterator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#affectedMolecules-etomica.api.IBox-">affectedMolecules</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/molecule/iterator/MoleculeIterator.html" title="interface in etomica.molecule.iterator">MoleculeIterator</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -350,13 +350,13 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#positionDefinition-etomica.api.IMolecule-">positionDefinition</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#positionDefinition-etomica.molecule.IMolecule-">positionDefinition</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -367,9 +367,9 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
@@ -384,7 +384,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveVolumeAssociatedMolecule.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
@@ -409,7 +409,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -463,7 +463,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>moleculeIterator</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/iterator/MoleculeIteratorAllMolecules.html" title="class in etomica.atom.iterator">MoleculeIteratorAllMolecules</a> moleculeIterator</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/iterator/MoleculeIteratorAllMolecules.html" title="class in etomica.molecule.iterator">MoleculeIteratorAllMolecules</a> moleculeIterator</pre>
 </li>
 </ul>
 <a name="r">
@@ -472,7 +472,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>r</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> r</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> r</pre>
 </li>
 </ul>
 <a name="dr">
@@ -481,7 +481,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="dr2">
@@ -490,7 +490,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>dr2</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr2</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr2</pre>
 </li>
 </ul>
 <a name="associationManager">
@@ -526,7 +526,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>moleculeAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a> moleculeAgentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> moleculeAgentManager</pre>
 </li>
 </ul>
 <a name="smerList">
@@ -535,7 +535,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>smerList</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a> smerList</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a> smerList</pre>
 </li>
 </ul>
 <a name="dodebug">
@@ -571,7 +571,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockList">
 <li class="blockList">
 <h4>groupTranslationVector</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> groupTranslationVector</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> groupTranslationVector</pre>
 </li>
 </ul>
 <a name="moveMoleculeAction">
@@ -589,7 +589,7 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> sim</pre>
+<pre>protected final&nbsp;<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
 </li>
 </ul>
 </li>
@@ -600,27 +600,27 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveVolumeAssociatedMolecule-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.space.ISpace-">
+<a name="MCMoveVolumeAssociatedMolecule-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MCMoveVolumeAssociatedMolecule</h4>
-<pre>public&nbsp;MCMoveVolumeAssociatedMolecule(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                      <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                      <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;MCMoveVolumeAssociatedMolecule(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                      <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                      <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="MCMoveVolumeAssociatedMolecule-etomica.api.ISimulation-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-double-">
+<a name="MCMoveVolumeAssociatedMolecule-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveVolumeAssociatedMolecule</h4>
-<pre>public&nbsp;MCMoveVolumeAssociatedMolecule(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                      <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                      <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                                      <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;MCMoveVolumeAssociatedMolecule(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                      <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                      <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                                      <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                                       double&nbsp;pressure)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -637,19 +637,19 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">MCMoveBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
 <div class="block">Sets the box on which this move acts.  The box itself can be changed
  via this method, if desired.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -791,13 +791,13 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 </dl>
 </li>
 </ul>
-<a name="positionDefinition-etomica.api.IMolecule-">
+<a name="positionDefinition-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>positionDefinition</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;positionDefinition(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;positionDefinition(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 </li>
 </ul>
 <a name="setPressure-double-">
@@ -827,35 +827,35 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <pre>public&nbsp;<a href="../../etomica/units/Dimension.html" title="class in etomica.units">Dimension</a>&nbsp;getPressureDimension()</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IMolecule-">
+<a name="makeAgent-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.api.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.IMolecule-">
+<a name="releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                         <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+                         <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -866,25 +866,25 @@ implements <a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.
 <li class="blockList">
 <h4>getMoleculeAgentClass</h4>
 <pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="affectedMolecules-etomica.api.IBox-">
+<a name="affectedMolecules-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>affectedMolecules</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/iterator/MoleculeIterator.html" title="interface in etomica.atom.iterator">MoleculeIterator</a>&nbsp;affectedMolecules(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/iterator/MoleculeIterator.html" title="interface in etomica.molecule.iterator">MoleculeIterator</a>&nbsp;affectedMolecules(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecular.html#affectedMolecules-etomica.api.IBox-">affectedMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecular.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecular.html" title="interface in etomica.integrator.mcmove">MCMoveMolecular</a></code></dd>
 </dl>
 </li>
 </ul>

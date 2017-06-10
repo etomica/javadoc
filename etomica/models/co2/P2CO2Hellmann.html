@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../../etomica/potential/IPotentialTorque.html" title="interface in etomica.potential">IPotentialTorque</a>, <a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
+<dd><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../../etomica/potential/IPotentialTorque.html" title="interface in etomica.potential">IPotentialTorque</a>, <a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
 </dl>
 <hr>
 <br>
@@ -223,11 +223,11 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#debug">debug</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#drij">drij</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[][]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradientAndTorque">gradientAndTorque</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -263,11 +263,11 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#qB">qB</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#ri">ri</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#rj">rj</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -275,11 +275,11 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#siteID">siteID</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#torque">torque</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -297,7 +297,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#P2CO2Hellmann-etomica.space.ISpace-etomica.models.co2.P2CO2Hellmann.Parameters-">P2CO2Hellmann</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#P2CO2Hellmann-etomica.space.Space-etomica.models.co2.P2CO2Hellmann.Parameters-">P2CO2Hellmann</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
              <a href="../../../etomica/models/co2/P2CO2Hellmann.Parameters.html" title="enum in etomica.models.co2">P2CO2Hellmann.Parameters</a>&nbsp;param)</code>&nbsp;</td>
 </tr>
 </table>
@@ -317,7 +317,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#energy-etomica.api.IAtomList-">energy</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#energy-etomica.atom.IAtomList-">energy</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>
 <div class="block">Returns the interaction energy between the given atoms.</div>
 </td>
 </tr>
@@ -336,24 +336,24 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradient-etomica.api.IAtomList-">gradient</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradient-etomica.atom.IAtomList-">gradient</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>
 <div class="block">Returns the gradient of the potential as it applies to each atom in the 
  given AtomSet, indicating how the energy would change as the position of 
  the first atom is varied.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
         <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</code>
 <div class="block">Returns the same gradient as gradient(AtomSet) and also adds in the
  contribution of the AtomSet to the pressureTensor.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[][]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradientAndTorque-etomica.api.IAtomList-">gradientAndTorque</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#gradientAndTorque-etomica.atom.IAtomList-">gradientAndTorque</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -381,14 +381,14 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts so that it can
  properly consider the boundaries.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#virial-etomica.api.IAtomList-">virial</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/P2CO2Hellmann.html#virial-etomica.atom.IAtomList-">virial</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -566,7 +566,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>ri</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> ri</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> ri</pre>
 </li>
 </ul>
 <a name="rj">
@@ -575,7 +575,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>rj</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> rj</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> rj</pre>
 </li>
 </ul>
 <a name="drij">
@@ -584,7 +584,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>drij</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> drij</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> drij</pre>
 </li>
 </ul>
 <a name="torque">
@@ -593,7 +593,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>torque</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> torque</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> torque</pre>
 </li>
 </ul>
 <a name="pos">
@@ -665,7 +665,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="gradientAndTorque">
@@ -674,7 +674,7 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>gradientAndTorque</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[][] gradientAndTorque</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][] gradientAndTorque</pre>
 </li>
 </ul>
 <a name="mass">
@@ -703,13 +703,13 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2CO2Hellmann-etomica.space.ISpace-etomica.models.co2.P2CO2Hellmann.Parameters-">
+<a name="P2CO2Hellmann-etomica.space.Space-etomica.models.co2.P2CO2Hellmann.Parameters-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2CO2Hellmann</h4>
-<pre>public&nbsp;P2CO2Hellmann(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;P2CO2Hellmann(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                      <a href="../../../etomica/models/co2/P2CO2Hellmann.Parameters.html" title="enum in etomica.models.co2">P2CO2Hellmann.Parameters</a>&nbsp;param)</pre>
 </li>
 </ul>
@@ -750,47 +750,47 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
                       <a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;unit)</pre>
 </li>
 </ul>
-<a name="virial-etomica.api.IAtomList-">
+<a name="virial-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>virial</h4>
-<pre>public&nbsp;double&nbsp;virial(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
+<pre>public&nbsp;double&nbsp;virial(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialSoft.html#virial-etomica.api.IAtomList-">virial</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialSoft.html#virial-etomica.atom.IAtomList-">virial</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="gradient-etomica.api.IAtomList-">
+<a name="gradient-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>gradient</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;gradient(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-">PotentialSoft</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;gradient(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-">PotentialSoft</a></code></span></div>
 <div class="block">Returns the gradient of the potential as it applies to each atom in the 
  given AtomSet, indicating how the energy would change as the position of 
  the first atom is varied.  The method is allowed to return an array of
  Vectors with fewer elements than the number of atoms in the AtomSet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-">gradient</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-">gradient</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
-<a name="gradient-etomica.api.IAtomList-etomica.space.Tensor-">
+<a name="gradient-etomica.atom.IAtomList-etomica.space.Tensor-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>gradient</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;gradient(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-                          <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">PotentialSoft</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;gradient(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+                         <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">PotentialSoft</a></code></span></div>
 <div class="block">Returns the same gradient as gradient(AtomSet) and also adds in the
  contribution of the AtomSet to the pressureTensor.  Their
  contribution is added to the given Tensor.  This combined method exists
@@ -799,36 +799,36 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
  intermediate information.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="gradientAndTorque-etomica.api.IAtomList-">
+<a name="gradientAndTorque-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>gradientAndTorque</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[][]&nbsp;gradientAndTorque(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]&nbsp;gradientAndTorque(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/potential/IPotentialTorque.html#gradientAndTorque-etomica.api.IAtomList-">gradientAndTorque</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotentialTorque.html" title="interface in etomica.potential">IPotentialTorque</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotentialTorque.html#gradientAndTorque-etomica.atom.IAtomList-">gradientAndTorque</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotentialTorque.html" title="interface in etomica.potential">IPotentialTorque</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="energy-etomica.api.IAtomList-">
+<a name="energy-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">IPotentialAtomic</a></code></span></div>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">IPotentialAtomic</a></code></span></div>
 <div class="block">Returns the interaction energy between the given atoms.  There might be
  0, 1, 2 or more atoms in the AtomSet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -839,28 +839,28 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>getRange</h4>
 <pre>public&nbsp;double&nbsp;getRange()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotential.html#getRange--">IPotential</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/IPotential.html#getRange--">IPotential</a></code></span></div>
 <div class="block">Returns the range over which the potential applies.  IAtoms with a
  greater separation do not interact.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">IPotential</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">IPotential</a></code></span></div>
 <div class="block">Informs the potential of the box on which it acts so that it can
  properly consider the boundaries.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -871,11 +871,11 @@ implements <a href="../../../etomica/potential/IPotentialTorque.html" title="int
 <li class="blockList">
 <h4>nBody</h4>
 <pre>public&nbsp;int&nbsp;nBody()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotential.html#nBody--">IPotential</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/potential/IPotential.html#nBody--">IPotential</a></code></span></div>
 <div class="block">The number of atoms on which the potential depends.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotential.html#nBody--">nBody</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotential.html#nBody--">nBody</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 </dl>
 </li>
 </ul>

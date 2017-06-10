@@ -133,7 +133,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#pNA">pNA</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -151,7 +151,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#MayerFunctionNonAdditiveFull-etomica.api.IPotentialMolecular-">MayerFunctionNonAdditiveFull</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;pNA)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#MayerFunctionNonAdditiveFull-etomica.potential.IPotentialMolecular-">MayerFunctionNonAdditiveFull</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;pNA)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -170,7 +170,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#f-etomica.api.IMoleculeList-double:A-double-">f</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#f-etomica.molecule.IMoleculeList-double:A-double-">f</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
  double[]&nbsp;r2,
  double&nbsp;beta)</code>
 <div class="block">returns exp(-beta*(U - Upair))
@@ -181,7 +181,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#f-etomica.api.IMoleculeList-int-int:A-double:A-double-">f</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#f-etomica.molecule.IMoleculeList-int-int:A-double:A-double-">f</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
  int&nbsp;nMolecules,
  int[]&nbsp;moleculeIndices,
  double[]&nbsp;r2,
@@ -194,7 +194,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerFunctionNonAdditiveFull.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -224,7 +224,7 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 <ul class="blockListLast">
 <li class="blockList">
 <h4>pNA</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a> pNA</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a> pNA</pre>
 </li>
 </ul>
 </li>
@@ -235,13 +235,13 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MayerFunctionNonAdditiveFull-etomica.api.IPotentialMolecular-">
+<a name="MayerFunctionNonAdditiveFull-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MayerFunctionNonAdditiveFull</h4>
-<pre>public&nbsp;MayerFunctionNonAdditiveFull(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;pNA)</pre>
+<pre>public&nbsp;MayerFunctionNonAdditiveFull(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;pNA)</pre>
 </li>
 </ul>
 </li>
@@ -252,13 +252,13 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="f-etomica.api.IMoleculeList-double:A-double-">
+<a name="f-etomica.molecule.IMoleculeList-double:A-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>f</h4>
-<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
                 double[]&nbsp;r2,
                 double&nbsp;beta)</pre>
 <div class="block">returns exp(-beta*(U - Upair))
@@ -267,17 +267,17 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
    (0,1),(0,2)...(0,n-1),(1,2),(1,3)...(1,n-1)...(n-2,n-1)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#f-etomica.api.IMoleculeList-double:A-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
+<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#f-etomica.molecule.IMoleculeList-double:A-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="f-etomica.api.IMoleculeList-int-int:A-double:A-double-">
+<a name="f-etomica.molecule.IMoleculeList-int-int:A-double:A-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>f</h4>
-<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
                 int&nbsp;nMolecules,
                 int[]&nbsp;moleculeIndices,
                 double[]&nbsp;r2,
@@ -289,20 +289,20 @@ implements <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="i
  nMolecules (extra elements will be ignored).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#f-etomica.api.IMoleculeList-int-int:A-double:A-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
+<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#f-etomica.molecule.IMoleculeList-int-int:A-double:A-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
+<dd><code><a href="../../etomica/virial/MayerFunctionNonAdditive.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></dd>
 </dl>
 </li>
 </ul>

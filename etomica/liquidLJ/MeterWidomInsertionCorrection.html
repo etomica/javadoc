@@ -149,7 +149,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -200,7 +200,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#v0">v0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#vBias">vBias</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -218,8 +218,8 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#MeterWidomInsertionCorrection-etomica.space.ISpace-etomica.api.IRandom-">MeterWidomInsertionCorrection</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                             <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#MeterWidomInsertionCorrection-etomica.space.Space-etomica.util.random.IRandom-">MeterWidomInsertionCorrection</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                             <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -262,7 +262,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#getSpecies--">getSpecies</a></span>()</code>
 <div class="block">Accessor for the species for which chemical potential is evaluated</div>
 </td>
@@ -273,7 +273,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -298,9 +298,9 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setPressure-double-double-etomica.api.IFunction-">setPressure</a></span>(double&nbsp;newPressureFast,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setPressure-double-double-etomica.math.function.IFunction-">setPressure</a></span>(double&nbsp;newPressureFast,
            double&nbsp;newPressureFull,
-           <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;vBias)</code>&nbsp;</td>
+           <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;vBias)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -308,7 +308,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;s)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/MeterWidomInsertionCorrection.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</code>
 <div class="block">Sets the species, takes a prototype molecule, and gets handle to
  appropriate species agent in box</div>
 </td>
@@ -383,7 +383,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -455,7 +455,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>vBias</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a> vBias</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> vBias</pre>
 </li>
 </ul>
 </li>
@@ -466,14 +466,14 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterWidomInsertionCorrection-etomica.space.ISpace-etomica.api.IRandom-">
+<a name="MeterWidomInsertionCorrection-etomica.space.Space-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterWidomInsertionCorrection</h4>
-<pre>public&nbsp;MeterWidomInsertionCorrection(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                     <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;MeterWidomInsertionCorrection(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                     <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -484,13 +484,13 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSpecies-etomica.api.ISpecies-">
+<a name="setSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;s)</pre>
+<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</pre>
 <div class="block">Sets the species, takes a prototype molecule, and gets handle to
  appropriate species agent in box</div>
 </li>
@@ -501,7 +501,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<pre>public&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies()</pre>
 <div class="block">Accessor for the species for which chemical potential is evaluated</div>
 </li>
 </ul>
@@ -544,7 +544,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <pre>public&nbsp;void&nbsp;setResidual(boolean&nbsp;newResidual)</pre>
 </li>
 </ul>
-<a name="setPressure-double-double-etomica.api.IFunction-">
+<a name="setPressure-double-double-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -552,7 +552,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <h4>setPressure</h4>
 <pre>public&nbsp;void&nbsp;setPressure(double&nbsp;newPressureFast,
                         double&nbsp;newPressureFull,
-                        <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;vBias)</pre>
+                        <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;vBias)</pre>
 </li>
 </ul>
 <a name="getData--">
@@ -609,13 +609,13 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
                            <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a>&nbsp;newEnergyMeterFull)</pre>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 </li>
 </ul>
 <a name="setTemperature-double-">

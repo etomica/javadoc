@@ -162,22 +162,22 @@ implements java.io.Serializable</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.space.ISpace-">Plane</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
-<div class="block">Default constructor returns the y-z plane.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.math.geometry.Plane-">Plane</a></span>(<a href="../../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a>&nbsp;original)</code>
+<div class="block">Constructs a new Plane as a copy of the given one.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.space.ISpace-double-double-double-double-">Plane</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.space.Space-">Plane</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
+<div class="block">Default constructor returns the y-z plane.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.space.Space-double-double-double-double-">Plane</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
      double&nbsp;a,
      double&nbsp;b,
      double&nbsp;c,
      double&nbsp;d)</code>
 <div class="block">Constructs a Plane satisfying the equation a x + b y + c z + d = 0</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#Plane-etomica.math.geometry.Plane-">Plane</a></span>(<a href="../../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a>&nbsp;original)</code>
-<div class="block">Constructs a new Plane as a copy of the given one.</div>
 </td>
 </tr>
 </table>
@@ -203,7 +203,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#distanceTo-etomica.api.IVector-">distanceTo</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#distanceTo-etomica.space.Vector-">distanceTo</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0)</code>
 <div class="block">Perpendicular distance from the plane to the given point.</div>
 </td>
 </tr>
@@ -237,7 +237,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#inPlane-etomica.api.IVector-">inPlane</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#inPlane-etomica.space.Vector-">inPlane</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is within a distance epsilon of this plane.</div>
 </td>
 </tr>
@@ -250,7 +250,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#isPositiveSide-etomica.api.IVector-">isPositiveSide</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#isPositiveSide-etomica.space.Vector-">isPositiveSide</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is on the side of the 
  plane or over the side of the plane by epsilon or less
  toward which the normal vector points.</div>
@@ -262,7 +262,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#moveTo-etomica.api.IVector-">moveTo</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#moveTo-etomica.space.Vector-">moveTo</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Shifts the plane at fixed orientation so that it contains the given point.</div>
 </td>
 </tr>
@@ -283,63 +283,63 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setNormalPoint-etomica.api.IVector-etomica.api.IVector-">setNormalPoint</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;normal,
-              <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;point)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setNormalPoint-etomica.space.Vector-etomica.space.Vector-">setNormalPoint</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;normal,
+              <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</code>
 <div class="block">Defines the plane via a normal vector (1st argument) and
  a point (2nd argument).</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setNormalVector-etomica.api.IVector-">setNormalVector</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;n)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setNormalVector-etomica.space.Vector-">setNormalVector</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;n)</code>
 <div class="block">Sets the orientation of the plane to be normal to the given vector.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setThreePoints-etomica.api.IVector-etomica.api.IVector-etomica.api.IVector-">setThreePoints</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p1,
-              <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p2,
-              <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p3)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setThreePoints-etomica.space.Vector-etomica.space.Vector-etomica.space.Vector-">setThreePoints</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p1,
+              <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p2,
+              <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p3)</code>
 <div class="block">Defines the plane by specifying three points that lie in it.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToCenter-etomica.api.IVectorMutable-">setToCenter</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToCenter-etomica.space.Vector-">setToCenter</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Sets the given vector to be the point in the plane closest to the origin.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneSquare-double-etomica.api.IVectorMutable:A-">setToInPlaneSquare</a></span>(double&nbsp;size,
-                  <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;s)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneSquare-double-etomica.space.Vector:A-">setToInPlaneSquare</a></span>(double&nbsp;size,
+                  <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;s)</code>
 <div class="block">inPlaneSquare with square centered on point in plane closest to origin.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneSquare-etomica.api.IVector-double-etomica.api.IVectorMutable:A-">setToInPlaneSquare</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneSquare-etomica.space.Vector-double-etomica.space.Vector:A-">setToInPlaneSquare</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0,
                   double&nbsp;size,
-                  <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;s)</code>
+                  <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;s)</code>
 <div class="block">Returns four points as the vertices of a square of size d centered on x0.</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneVectors-etomica.api.IVectorMutable:A-">setToInPlaneVectors</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToInPlaneVectors-etomica.space.Vector:A-">setToInPlaneVectors</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;p)</code>
 <div class="block">Computes and returns two unit vectors perpendicular to each other and in the plane.</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToNearestPoint-etomica.api.IVector-etomica.api.IVectorMutable-">setToNearestPoint</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0,
-                 <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;point)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToNearestPoint-etomica.space.Vector-etomica.space.Vector-">setToNearestPoint</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0,
+                 <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</code>
 <div class="block">Determines the point in the plane closest to the point x0 (first argument).</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToNormalVector-etomica.api.IVectorMutable-">setToNormalVector</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;normal)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Plane.html#setToNormalVector-etomica.space.Vector-">setToNormalVector</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;normal)</code>
 <div class="block">Sets the given vector to be a unit normal vector to the plane and returns it.</div>
 </td>
 </tr>
@@ -403,13 +403,13 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Plane-etomica.space.ISpace-">
+<a name="Plane-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Plane</h4>
-<pre>public&nbsp;Plane(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;Plane(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Default constructor returns the y-z plane.</div>
 </li>
 </ul>
@@ -423,13 +423,13 @@ implements java.io.Serializable</pre>
 <div class="block">Constructs a new Plane as a copy of the given one.</div>
 </li>
 </ul>
-<a name="Plane-etomica.space.ISpace-double-double-double-double-">
+<a name="Plane-etomica.space.Space-double-double-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Plane</h4>
-<pre>public&nbsp;Plane(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;Plane(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
              double&nbsp;a,
              double&nbsp;b,
              double&nbsp;c,
@@ -481,48 +481,48 @@ implements java.io.Serializable</pre>
 <pre>public&nbsp;double&nbsp;getD()</pre>
 </li>
 </ul>
-<a name="setNormalPoint-etomica.api.IVector-etomica.api.IVector-">
+<a name="setNormalPoint-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setNormalPoint</h4>
-<pre>public&nbsp;void&nbsp;setNormalPoint(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;normal,
-                           <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;point)</pre>
+<pre>public&nbsp;void&nbsp;setNormalPoint(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;normal,
+                           <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</pre>
 <div class="block">Defines the plane via a normal vector (1st argument) and
  a point (2nd argument).</div>
 </li>
 </ul>
-<a name="setThreePoints-etomica.api.IVector-etomica.api.IVector-etomica.api.IVector-">
+<a name="setThreePoints-etomica.space.Vector-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setThreePoints</h4>
-<pre>public&nbsp;void&nbsp;setThreePoints(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p1,
-                           <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p2,
-                           <a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p3)</pre>
+<pre>public&nbsp;void&nbsp;setThreePoints(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p1,
+                           <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p2,
+                           <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p3)</pre>
 <div class="block">Defines the plane by specifying three points that lie in it.</div>
 </li>
 </ul>
-<a name="setToNormalVector-etomica.api.IVectorMutable-">
+<a name="setToNormalVector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToNormalVector</h4>
-<pre>public&nbsp;void&nbsp;setToNormalVector(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;normal)</pre>
+<pre>public&nbsp;void&nbsp;setToNormalVector(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;normal)</pre>
 <div class="block">Sets the given vector to be a unit normal vector to the plane and returns it.  
  If argument is null, creates a new 3D Vector to return.</div>
 </li>
 </ul>
-<a name="setToInPlaneVectors-etomica.api.IVectorMutable:A-">
+<a name="setToInPlaneVectors-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToInPlaneVectors</h4>
-<pre>public&nbsp;void&nbsp;setToInPlaneVectors(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;p)</pre>
+<pre>public&nbsp;void&nbsp;setToInPlaneVectors(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;p)</pre>
 <div class="block">Computes and returns two unit vectors perpendicular to each other and in the plane.
  Sets vector in given array to the vectors if it is not null and is of length 2;
  otherwise creates new array of in-plane vectors and returns it.  If plane is
@@ -533,13 +533,13 @@ implements java.io.Serializable</pre>
  in-plane vector.</div>
 </li>
 </ul>
-<a name="setNormalVector-etomica.api.IVector-">
+<a name="setNormalVector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setNormalVector</h4>
-<pre>public&nbsp;void&nbsp;setNormalVector(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;n)</pre>
+<pre>public&nbsp;void&nbsp;setNormalVector(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;n)</pre>
 <div class="block">Sets the orientation of the plane to be normal to the given vector.</div>
 </li>
 </ul>
@@ -606,47 +606,47 @@ implements java.io.Serializable</pre>
 <div class="block">Returns the intercept of the plane with the z-axis.</div>
 </li>
 </ul>
-<a name="setToCenter-etomica.api.IVectorMutable-">
+<a name="setToCenter-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToCenter</h4>
-<pre>public&nbsp;void&nbsp;setToCenter(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;v)</pre>
+<pre>public&nbsp;void&nbsp;setToCenter(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Sets the given vector to be the point in the plane closest to the origin.
  If vector is null, makes a new Vector and returns it.</div>
 </li>
 </ul>
-<a name="setToNearestPoint-etomica.api.IVector-etomica.api.IVectorMutable-">
+<a name="setToNearestPoint-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToNearestPoint</h4>
-<pre>public&nbsp;void&nbsp;setToNearestPoint(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0,
-                              <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;point)</pre>
+<pre>public&nbsp;void&nbsp;setToNearestPoint(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0,
+                              <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;point)</pre>
 <div class="block">Determines the point in the plane closest to the point x0 (first argument).
  Uses second vector to hold result that is returned; if second vector is 
  null, creates a new Vector instance.</div>
 </li>
 </ul>
-<a name="distanceTo-etomica.api.IVector-">
+<a name="distanceTo-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>distanceTo</h4>
-<pre>public&nbsp;double&nbsp;distanceTo(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0)</pre>
+<pre>public&nbsp;double&nbsp;distanceTo(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0)</pre>
 <div class="block">Perpendicular distance from the plane to the given point.</div>
 </li>
 </ul>
-<a name="moveTo-etomica.api.IVector-">
+<a name="moveTo-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>moveTo</h4>
-<pre>public&nbsp;void&nbsp;moveTo(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
+<pre>public&nbsp;void&nbsp;moveTo(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
 <div class="block">Shifts the plane at fixed orientation so that it contains the given point.</div>
 </li>
 </ul>
@@ -670,13 +670,13 @@ implements java.io.Serializable</pre>
 <div class="block">Sets the parameters of this plane to make it equivalent to the given one.</div>
 </li>
 </ul>
-<a name="isPositiveSide-etomica.api.IVector-">
+<a name="isPositiveSide-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isPositiveSide</h4>
-<pre>public&nbsp;boolean&nbsp;isPositiveSide(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</pre>
+<pre>public&nbsp;boolean&nbsp;isPositiveSide(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</pre>
 <div class="block">Returns true if the given point is on the side of the 
  plane or over the side of the plane by epsilon or less
  toward which the normal vector points.  The direction
@@ -684,13 +684,13 @@ implements java.io.Serializable</pre>
  method.</div>
 </li>
 </ul>
-<a name="inPlane-etomica.api.IVector-">
+<a name="inPlane-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>inPlane</h4>
-<pre>public&nbsp;boolean&nbsp;inPlane(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</pre>
+<pre>public&nbsp;boolean&nbsp;inPlane(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</pre>
 <div class="block">Returns true if the given point is within a distance epsilon of this plane.</div>
 </li>
 </ul>
@@ -706,28 +706,28 @@ implements java.io.Serializable</pre>
  Does not affect the location or absolute orientation of the plane.</div>
 </li>
 </ul>
-<a name="setToInPlaneSquare-etomica.api.IVector-double-etomica.api.IVectorMutable:A-">
+<a name="setToInPlaneSquare-etomica.space.Vector-double-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToInPlaneSquare</h4>
-<pre>public&nbsp;void&nbsp;setToInPlaneSquare(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;x0,
+<pre>public&nbsp;void&nbsp;setToInPlaneSquare(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x0,
                                double&nbsp;size,
-                               <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;s)</pre>
+                               <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;s)</pre>
 <div class="block">Returns four points as the vertices of a square of size d centered on x0.  Uses 
  the given array of vectors.  Square is aligned so that its vertices
  fall on the lines defined by the inPlaneVectors result.</div>
 </li>
 </ul>
-<a name="setToInPlaneSquare-double-etomica.api.IVectorMutable:A-">
+<a name="setToInPlaneSquare-double-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToInPlaneSquare</h4>
 <pre>public&nbsp;void&nbsp;setToInPlaneSquare(double&nbsp;size,
-                               <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;s)</pre>
+                               <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;s)</pre>
 <div class="block">inPlaneSquare with square centered on point in plane closest to origin.</div>
 </li>
 </ul>

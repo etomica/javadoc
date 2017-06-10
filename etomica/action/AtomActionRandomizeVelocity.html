@@ -139,7 +139,7 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionRandomizeVelocity.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -157,8 +157,8 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionRandomizeVelocity.html#AtomActionRandomizeVelocity-double-etomica.api.IRandom-">AtomActionRandomizeVelocity</a></span>(double&nbsp;temperature,
-                           <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionRandomizeVelocity.html#AtomActionRandomizeVelocity-double-etomica.util.random.IRandom-">AtomActionRandomizeVelocity</a></span>(double&nbsp;temperature,
+                           <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Constructs class to assign velocities according to the given temperature.</div>
 </td>
 </tr>
@@ -179,7 +179,7 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionRandomizeVelocity.html#actionPerformed-etomica.api.IAtom-">actionPerformed</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionRandomizeVelocity.html#actionPerformed-etomica.atom.IAtom-">actionPerformed</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Assigns velocity to atom with components selected from a Maxwell-Boltzmann
  distribution with temperature most recently set for the action.</div>
 </td>
@@ -220,7 +220,7 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 </li>
@@ -231,14 +231,14 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomActionRandomizeVelocity-double-etomica.api.IRandom-">
+<a name="AtomActionRandomizeVelocity-double-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomActionRandomizeVelocity</h4>
 <pre>public&nbsp;AtomActionRandomizeVelocity(double&nbsp;temperature,
-                                   <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+                                   <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 <div class="block">Constructs class to assign velocities according to the given temperature.
  May be subsequently changed with setTemperature method.</div>
 </li>
@@ -251,19 +251,19 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="actionPerformed-etomica.api.IAtom-">
+<a name="actionPerformed-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>actionPerformed</h4>
-<pre>public&nbsp;void&nbsp;actionPerformed(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;void&nbsp;actionPerformed(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <div class="block">Assigns velocity to atom with components selected from a Maxwell-Boltzmann
  distribution with temperature most recently set for the action.  If atom 
  mass is infinite, assigns a zero velocity.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/action/AtomAction.html#actionPerformed-etomica.api.IAtom-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/AtomAction.html" title="interface in etomica.action">AtomAction</a></code></dd>
+<dd><code><a href="../../etomica/action/AtomAction.html#actionPerformed-etomica.atom.IAtom-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/AtomAction.html" title="interface in etomica.action">AtomAction</a></code></dd>
 </dl>
 </li>
 </ul>

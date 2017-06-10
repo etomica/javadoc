@@ -140,7 +140,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -164,7 +164,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#rMax">rMax</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -194,7 +194,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#MeterDihedralAngle-etomica.space.ISpace-">MeterDihedralAngle</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#MeterDihedralAngle-etomica.space.Space-">MeterDihedralAngle</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Creates meter with default to compute dihedral angle for all
  leaf atoms in a box.</div>
 </td>
@@ -221,7 +221,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -279,7 +279,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -317,7 +317,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="space">
@@ -326,7 +326,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="gSum">
@@ -409,13 +409,13 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterDihedralAngle-etomica.space.ISpace-">
+<a name="MeterDihedralAngle-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterDihedralAngle</h4>
-<pre>public&nbsp;MeterDihedralAngle(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;MeterDihedralAngle(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Creates meter with default to compute dihedral angle for all
  leaf atoms in a box.</div>
 <dl>
@@ -583,20 +583,20 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>box</code> - The box to set.</dd>

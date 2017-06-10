@@ -110,10 +110,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">RenderMD</span>
@@ -174,7 +170,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#activityIntegrate">activityIntegrate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#box">box</a></span></code>
 <div class="block">The Box holding the atoms.</div>
 </td>
@@ -229,12 +225,12 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#RenderMD-etomica.space.ISpace-">RenderMD</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#RenderMD-etomica.space.Space-">RenderMD</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
 <div class="block">Sole public constructor, makes a simulation using a 3D space.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#RenderMD-etomica.space.ISpace-etomica.modules.render.RenderMD.RenderMDParam-">RenderMD</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/render/RenderMD.html#RenderMD-etomica.space.Space-etomica.modules.render.RenderMD.RenderMDParam-">RenderMD</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
         <a href="../../../etomica/modules/render/RenderMD.RenderMDParam.html" title="class in etomica.modules.render">RenderMD.RenderMDParam</a>&nbsp;params)</code>&nbsp;</td>
 </tr>
 </table>
@@ -262,7 +258,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.api.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.api.IAtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.api.IAtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.api.IBox-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.api.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -291,7 +287,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>public final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>public final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 <div class="block">The Box holding the atoms.</div>
 </li>
 </ul>
@@ -368,23 +364,23 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="RenderMD-etomica.space.ISpace-">
+<a name="RenderMD-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>RenderMD</h4>
-<pre>public&nbsp;RenderMD(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;RenderMD(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Sole public constructor, makes a simulation using a 3D space.</div>
 </li>
 </ul>
-<a name="RenderMD-etomica.space.ISpace-etomica.modules.render.RenderMD.RenderMDParam-">
+<a name="RenderMD-etomica.space.Space-etomica.modules.render.RenderMD.RenderMDParam-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RenderMD</h4>
-<pre>public&nbsp;RenderMD(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;RenderMD(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                 <a href="../../../etomica/modules/render/RenderMD.RenderMDParam.html" title="class in etomica.modules.render">RenderMD.RenderMDParam</a>&nbsp;params)</pre>
 </li>
 </ul>

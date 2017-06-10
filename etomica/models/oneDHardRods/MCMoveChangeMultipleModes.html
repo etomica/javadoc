@@ -171,7 +171,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#energyOld">energyOld</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -214,8 +214,8 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#MCMoveChangeMultipleModes-etomica.api.IPotentialMaster-etomica.api.IRandom-">MCMoveChangeMultipleModes</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                         <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#MCMoveChangeMultipleModes-etomica.potential.PotentialMaster-etomica.util.random.IRandom-">MCMoveChangeMultipleModes</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                         <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -278,7 +278,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
@@ -314,7 +314,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#setWaveVectors-etomica.api.IVectorMutable:A-">setWaveVectors</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;wv)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MCMoveChangeMultipleModes.html#setWaveVectors-etomica.space.Vector:A-">setWaveVectors</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;wv)</code>
 <div class="block">Set the wave vectors used by the move.</div>
 </td>
 </tr>
@@ -331,7 +331,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -394,7 +394,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="energyOld">
@@ -432,14 +432,14 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveChangeMultipleModes-etomica.api.IPotentialMaster-etomica.api.IRandom-">
+<a name="MCMoveChangeMultipleModes-etomica.potential.PotentialMaster-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveChangeMultipleModes</h4>
-<pre>public&nbsp;MCMoveChangeMultipleModes(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                 <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;MCMoveChangeMultipleModes(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                 <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -504,13 +504,13 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <pre>public&nbsp;void&nbsp;setOmegaSquared(double[][]&nbsp;o2)</pre>
 </li>
 </ul>
-<a name="setWaveVectors-etomica.api.IVectorMutable:A-">
+<a name="setWaveVectors-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setWaveVectors</h4>
-<pre>public&nbsp;void&nbsp;setWaveVectors(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;wv)</pre>
+<pre>public&nbsp;void&nbsp;setWaveVectors(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;wv)</pre>
 <div class="block">Set the wave vectors used by the move.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -538,19 +538,19 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
  actual eigenvectors used will be those specified via setModes</div>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">MCMoveBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
 <div class="block">Sets the box on which this move acts.  The box itself can be changed
  via this method, if desired.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -149,7 +149,7 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#range">range</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -167,8 +167,8 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#NeighborListAgentSourceMolecular-double-etomica.space.ISpace-">NeighborListAgentSourceMolecular</a></span>(double&nbsp;range,
-                                <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#NeighborListAgentSourceMolecular-double-etomica.space.Space-">NeighborListAgentSourceMolecular</a></span>(double&nbsp;range,
+                                <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -187,7 +187,7 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#makeAgent-etomica.api.IBox-">makeAgent</a></span>(<a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.NeighborListAgentSourceMolecular.html#makeAgent-etomica.box.Box-">makeAgent</a></span>(<a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -247,7 +247,7 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 <ul class="blockListLast">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>
@@ -258,14 +258,14 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborListAgentSourceMolecular-double-etomica.space.ISpace-">
+<a name="NeighborListAgentSourceMolecular-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborListAgentSourceMolecular</h4>
 <pre>public&nbsp;NeighborListAgentSourceMolecular(double&nbsp;range,
-                                        <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                        <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -294,16 +294,16 @@ implements <a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html"
 <pre>public&nbsp;void&nbsp;setPotentialMaster(<a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.html" title="class in etomica.nbr.list.molecule">PotentialMasterListMolecular</a>&nbsp;p)</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IBox-">
+<a name="makeAgent-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a>&nbsp;makeAgent(<a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;<a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a>&nbsp;makeAgent(<a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html#makeAgent-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a>&gt;</code></dd>
+<dd><code><a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html#makeAgent-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

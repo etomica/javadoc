@@ -152,11 +152,11 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>[]&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -182,7 +182,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#AtomFilterChainLength-etomica.atom.AtomLeafAgentManager-">AtomFilterChainLength</a></span>(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>[]&gt;&nbsp;aam)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#AtomFilterChainLength-etomica.atom.AtomLeafAgentManager-">AtomFilterChainLength</a></span>(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&gt;&nbsp;aam)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -201,35 +201,35 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#accept-etomica.api.IAtom-">accept</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Returns true if atom is passes test of filter.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#accept-etomica.api.IMolecule-">accept</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#recursiveTag-etomica.api.IAtom-int-">recursiveTag</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#recursiveTag-etomica.atom.IAtom-int-">recursiveTag</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
             int&nbsp;chainLength)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#releaseAgent-etomica.modules.chainequilibrium.AtomFilterChainLength.LengthAgent-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&nbsp;agent,
-            <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#releaseAgent-etomica.modules.chainequilibrium.AtomFilterChainLength.LengthAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&nbsp;agent,
+            <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -244,7 +244,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -274,7 +274,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="chainLengthManager">
@@ -292,7 +292,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>agentManager</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>[]&gt; agentManager</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&gt; agentManager</pre>
 </li>
 </ul>
 <a name="maxChainLength">
@@ -318,7 +318,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomFilterChainLength</h4>
-<pre>public&nbsp;AtomFilterChainLength(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>[]&gt;&nbsp;aam)</pre>
+<pre>public&nbsp;AtomFilterChainLength(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&gt;&nbsp;aam)</pre>
 </li>
 </ul>
 </li>
@@ -329,42 +329,42 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&nbsp;makeAgent(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&nbsp;makeAgent(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.modules.chainequilibrium.AtomFilterChainLength.LengthAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.modules.chainequilibrium.AtomFilterChainLength.LengthAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&nbsp;agent,
-                         <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/modules/chainequilibrium/AtomFilterChainLength.LengthAgent.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength.LengthAgent</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -385,13 +385,13 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 </dl>
 </li>
 </ul>
-<a name="recursiveTag-etomica.api.IAtom-int-">
+<a name="recursiveTag-etomica.atom.IAtom-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>recursiveTag</h4>
-<pre>protected&nbsp;int&nbsp;recursiveTag(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<pre>protected&nbsp;int&nbsp;recursiveTag(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
                            int&nbsp;chainLength)</pre>
 </li>
 </ul>
@@ -401,43 +401,43 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a name="accept-etomica.api.IAtom-">
+<a name="accept-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">AtomFilter</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
 <div class="block">Returns true if atom is passes test of filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IMolecule-">
+<a name="accept-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>

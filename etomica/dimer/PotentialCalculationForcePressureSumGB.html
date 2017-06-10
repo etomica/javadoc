@@ -141,11 +141,11 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#fixed">fixed</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -174,8 +174,8 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#PotentialCalculationForcePressureSumGB-etomica.space.ISpace-etomica.api.IBox-">PotentialCalculationForcePressureSumGB</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#PotentialCalculationForcePressureSumGB-etomica.space.Space-etomica.box.Box-">PotentialCalculationForcePressureSumGB</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -194,8 +194,8 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotential-">doCalculation</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-             <a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotential-">doCalculation</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+             <a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>&nbsp;potential)</code>
 <div class="block">Adds forces due to given potential acting on the atoms produced by the iterator.</div>
 </td>
 </tr>
@@ -218,7 +218,7 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/PotentialCalculationForceSum.html" title="class in etomica.potential">PotentialCalculationForceSum</a></h3>
-<code><a href="../../etomica/potential/PotentialCalculationForceSum.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">doCalculation</a>, <a href="../../etomica/potential/PotentialCalculationForceSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></code></li>
+<code><a href="../../etomica/potential/PotentialCalculationForceSum.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a>, <a href="../../etomica/potential/PotentialCalculationForceSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -256,7 +256,7 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>fixed</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> fixed</pre>
+<pre>protected&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> fixed</pre>
 </li>
 </ul>
 <a name="box">
@@ -265,7 +265,7 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 </li>
@@ -276,14 +276,14 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PotentialCalculationForcePressureSumGB-etomica.space.ISpace-etomica.api.IBox-">
+<a name="PotentialCalculationForcePressureSumGB-etomica.space.Space-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PotentialCalculationForcePressureSumGB</h4>
-<pre>public&nbsp;PotentialCalculationForcePressureSumGB(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                              <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;PotentialCalculationForcePressureSumGB(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                              <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -310,14 +310,14 @@ extends <a href="../../etomica/potential/PotentialCalculationForceSum.html" titl
 </dl>
 </li>
 </ul>
-<a name="doCalculation-etomica.api.IAtomList-etomica.api.IPotential-">
+<a name="doCalculation-etomica.atom.IAtomList-etomica.potential.IPotential-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doCalculation</h4>
-<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-                          <a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>&nbsp;potential)</pre>
+<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+                          <a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>&nbsp;potential)</pre>
 <div class="block">Adds forces due to given potential acting on the atoms produced by the iterator.
  Implemented for only 1- and 2-body potentials.</div>
 </li>

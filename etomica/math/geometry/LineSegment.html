@@ -157,7 +157,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#LineSegment-etomica.space.ISpace-">LineSegment</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#LineSegment-etomica.space.Space-">LineSegment</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,13 +176,13 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#contains-etomica.api.IVector-">contains</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#contains-etomica.space.Vector-">contains</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns true if the given vector lies between the ends of the segment, on
  the line joining them.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#getEdgeLengths--">getEdgeLengths</a></span>()</code>
 <div class="block">Returns the length of the line segment as the element of a 1D vector.</div>
 </td>
@@ -207,7 +207,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setEdgeLengths-etomica.api.IVector-">setEdgeLengths</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setEdgeLengths-etomica.space.Vector-">setEdgeLengths</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Sets the length equal to the element of the (presumably 1D) vector.</div>
 </td>
 </tr>
@@ -220,11 +220,11 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setVertex1-etomica.api.IVector-">setVertex1</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newVertex1)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setVertex1-etomica.space.Vector-">setVertex1</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newVertex1)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setVertex2-etomica.api.IVector-">setVertex2</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newVertex2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/LineSegment.html#setVertex2-etomica.space.Vector-">setVertex2</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newVertex2)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -239,7 +239,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.math.geometry.<a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></h3>
-<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -262,13 +262,13 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LineSegment-etomica.space.ISpace-">
+<a name="LineSegment-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LineSegment</h4>
-<pre>public&nbsp;LineSegment(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</pre>
+<pre>public&nbsp;LineSegment(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</pre>
 </li>
 </ul>
 </li>
@@ -304,22 +304,22 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </dl>
 </li>
 </ul>
-<a name="contains-etomica.api.IVector-">
+<a name="contains-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Returns true if the given vector lies between the ends of the segment, on
  the line joining them. Point must lie exactly on the line to return true,
  so rounding error will in most cases lead to return of false unless
  embedded in a 1D space.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -342,22 +342,22 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </dl>
 </li>
 </ul>
-<a name="setVertex1-etomica.api.IVector-">
+<a name="setVertex1-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setVertex1</h4>
-<pre>public&nbsp;void&nbsp;setVertex1(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newVertex1)</pre>
+<pre>public&nbsp;void&nbsp;setVertex1(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newVertex1)</pre>
 </li>
 </ul>
-<a name="setVertex2-etomica.api.IVector-">
+<a name="setVertex2-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setVertex2</h4>
-<pre>public&nbsp;void&nbsp;setVertex2(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newVertex2)</pre>
+<pre>public&nbsp;void&nbsp;setVertex2(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newVertex2)</pre>
 </li>
 </ul>
 <a name="getLength--">
@@ -380,18 +380,18 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
  its orientation and the position of its midpoint fixed.</div>
 </li>
 </ul>
-<a name="setEdgeLengths-etomica.api.IVector-">
+<a name="setEdgeLengths-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setEdgeLengths</h4>
-<pre>public&nbsp;void&nbsp;setEdgeLengths(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;void&nbsp;setEdgeLengths(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Sets the length equal to the element of the (presumably 1D) vector.
  Implementation of Rectangular interface.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Rectangular.html#setEdgeLengths-etomica.api.IVector-">setEdgeLengths</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Rectangular.html" title="interface in etomica.math.geometry">Rectangular</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Rectangular.html#setEdgeLengths-etomica.space.Vector-">setEdgeLengths</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Rectangular.html" title="interface in etomica.math.geometry">Rectangular</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -401,7 +401,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdgeLengths</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getEdgeLengths()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getEdgeLengths()</pre>
 <div class="block">Returns the length of the line segment as the element of a 1D vector.
  Implmentation of the Rectangular interface.</div>
 <dl>

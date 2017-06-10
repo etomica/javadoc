@@ -141,7 +141,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#all">all</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -171,7 +171,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#AtomIteratorBruteForce-etomica.api.IBox-">AtomIteratorBruteForce</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#AtomIteratorBruteForce-etomica.box.Box-">AtomIteratorBruteForce</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -196,13 +196,13 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#next--">next</a></span>()</code>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#nextAtom--">nextAtom</a></span>()</code>
 <div class="block">Returns the next atom in the iteration sequence, or
  null if hasNext() is false.</div>
@@ -216,11 +216,11 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#setAtom-etomica.api.IAtom-">setAtom</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#setAtom-etomica.atom.IAtom-">setAtom</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#setDirection-etomica.atom.iterator.IteratorDirective.Direction-">setDirection</a></span>(<a href="../../../etomica/atom/iterator/IteratorDirective.Direction.html" title="class in etomica.atom.iterator">IteratorDirective.Direction</a>&nbsp;direction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.AtomIteratorBruteForce.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a></span>(<a href="../../../etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -289,7 +289,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="all">
@@ -309,13 +309,13 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomIteratorBruteForce-etomica.api.IBox-">
+<a name="AtomIteratorBruteForce-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomIteratorBruteForce</h4>
-<pre>public&nbsp;AtomIteratorBruteForce(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;AtomIteratorBruteForce(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -394,7 +394,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;next()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html#next--">AtomLeafsetIterator</a></code></span></div>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 <dl>
@@ -409,7 +409,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>nextAtom</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;nextAtom()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;nextAtom()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomIterator.html#nextAtom--">AtomIterator</a></code></span></div>
 <div class="block">Returns the next atom in the iteration sequence, or
  null if hasNext() is false.</div>
@@ -419,29 +419,29 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </dl>
 </li>
 </ul>
-<a name="setAtom-etomica.api.IAtom-">
+<a name="setAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtom</h4>
-<pre>public&nbsp;void&nbsp;setAtom(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;setAtom(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html#setAtom-etomica.api.IAtom-">setAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html" title="interface in etomica.atom.iterator">AtomIteratorAtomDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html#setAtom-etomica.atom.IAtom-">setAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html" title="interface in etomica.atom.iterator">AtomIteratorAtomDependent</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setDirection-etomica.atom.iterator.IteratorDirective.Direction-">
+<a name="setDirection-etomica.potential.IteratorDirective.Direction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setDirection</h4>
-<pre>public&nbsp;void&nbsp;setDirection(<a href="../../../etomica/atom/iterator/IteratorDirective.Direction.html" title="class in etomica.atom.iterator">IteratorDirective.Direction</a>&nbsp;direction)</pre>
+<pre>public&nbsp;void&nbsp;setDirection(<a href="../../../etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html#setDirection-etomica.atom.iterator.IteratorDirective.Direction-">setDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code></dd>
 </dl>
 </li>
 </ul>

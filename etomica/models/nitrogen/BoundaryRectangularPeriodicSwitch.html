@@ -120,18 +120,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>, java.io.Serializable</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BoundaryRectangularPeriodicSwitch</span>
 extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.models.nitrogen.BoundaryRectangularPeriodicSwitch">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -190,7 +182,7 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#BoundaryRectangularPeriodicSwitch-etomica.space.ISpace-">BoundaryRectangularPeriodicSwitch</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#BoundaryRectangularPeriodicSwitch-etomica.space.Space-">BoundaryRectangularPeriodicSwitch</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -208,8 +200,8 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#centralImage-etomica.api.IVector-">centralImage</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#centralImage-etomica.space.Vector-">centralImage</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Determines the translation vector needed to apply a periodic-image
  transformation that moves the given point to an image point within the
  boundary (if it lies outside, in a direction subject to periodic
@@ -229,7 +221,7 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#nearestImage-etomica.api.IVectorMutable-">nearestImage</a></span>(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;dr)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/BoundaryRectangularPeriodicSwitch.html#nearestImage-etomica.space.Vector-">nearestImage</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dr)</code>
 <div class="block">The nearest image is the pair of atom images that are closest when all
  periodic-boundary images are considered.</div>
 </td>
@@ -251,14 +243,14 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.space.<a href="../../../etomica/space/BoundaryRectangular.html" title="class in etomica.space">BoundaryRectangular</a></h3>
-<code><a href="../../../etomica/space/BoundaryRectangular.html#getBoxSize--">getBoxSize</a>, <a href="../../../etomica/space/BoundaryRectangular.html#getEdgeVector-int-">getEdgeVector</a>, <a href="../../../etomica/space/BoundaryRectangular.html#imageOrigins-int-">imageOrigins</a>, <a href="../../../etomica/space/BoundaryRectangular.html#setBoxSize-etomica.api.IVector-">setBoxSize</a>, <a href="../../../etomica/space/BoundaryRectangular.html#volume--">volume</a></code></li>
+<code><a href="../../../etomica/space/BoundaryRectangular.html#getBoxSize--">getBoxSize</a>, <a href="../../../etomica/space/BoundaryRectangular.html#getEdgeVector-int-">getEdgeVector</a>, <a href="../../../etomica/space/BoundaryRectangular.html#imageOrigins-int-">imageOrigins</a>, <a href="../../../etomica/space/BoundaryRectangular.html#setBoxSize-etomica.space.Vector-">setBoxSize</a>, <a href="../../../etomica/space/BoundaryRectangular.html#volume--">volume</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.space.Boundary">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.space.<a href="../../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></h3>
-<code><a href="../../../etomica/space/Boundary.html#getBox--">getBox</a>, <a href="../../../etomica/space/Boundary.html#getCenter--">getCenter</a>, <a href="../../../etomica/space/Boundary.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/space/Boundary.html#getShape--">getShape</a>, <a href="../../../etomica/space/Boundary.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../../etomica/space/Boundary.html#getBox--">getBox</a>, <a href="../../../etomica/space/Boundary.html#getCenter--">getCenter</a>, <a href="../../../etomica/space/Boundary.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/space/Boundary.html#getShape--">getShape</a>, <a href="../../../etomica/space/Boundary.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -298,13 +290,13 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoundaryRectangularPeriodicSwitch-etomica.space.ISpace-">
+<a name="BoundaryRectangularPeriodicSwitch-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoundaryRectangularPeriodicSwitch</h4>
-<pre>public&nbsp;BoundaryRectangularPeriodicSwitch(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;BoundaryRectangularPeriodicSwitch(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -315,53 +307,49 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="nearestImage-etomica.api.IVectorMutable-">
+<a name="nearestImage-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>nearestImage</h4>
-<pre>public&nbsp;void&nbsp;nearestImage(<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;dr)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IBoundary.html#nearestImage-etomica.api.IVectorMutable-">IBoundary</a></code></span></div>
+<pre>public&nbsp;void&nbsp;nearestImage(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dr)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">Boundary</a></code></span></div>
 <div class="block">The nearest image is the pair of atom images that are closest when all
  periodic-boundary images are considered.
-
+ <p>
  If the vector passed to this method is the displacement vector between
  two points, the vector will be transformed such that it corresponds to
  the vector between the nearest image of those two points.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IBoundary.html#nearestImage-etomica.api.IVectorMutable-">nearestImage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html#nearestImage-etomica.api.IVectorMutable-">nearestImage</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></code></dd>
+<dd><code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html#nearestImage-etomica.space.Vector-">nearestImage</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dr</code> - the vector to be transformed</dd>
 </dl>
 </li>
 </ul>
-<a name="centralImage-etomica.api.IVector-">
+<a name="centralImage-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>centralImage</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;centralImage(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IBoundary.html#centralImage-etomica.api.IVector-">IBoundary</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;centralImage(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/space/Boundary.html#centralImage-etomica.space.Vector-">Boundary</a></code></span></div>
 <div class="block">Determines the translation vector needed to apply a periodic-image
  transformation that moves the given point to an image point within the
  boundary (if it lies outside, in a direction subject to periodic
  imaging).</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IBoundary.html#centralImage-etomica.api.IVector-">centralImage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html#centralImage-etomica.api.IVector-">centralImage</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></code></dd>
+<dd><code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html#centralImage-etomica.space.Vector-">centralImage</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>r</code> - vector position of untransformed point; r is not changed by
-            this method</dd>
+          this method</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the displacement that must be applied to r to move it to its
-         central-image location</dd>
+ central-image location</dd>
 </dl>
 </li>
 </ul>
@@ -372,12 +360,10 @@ extends <a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title=
 <li class="blockList">
 <h4>getPeriodicity</h4>
 <pre>public&nbsp;boolean&nbsp;getPeriodicity(int&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IBoundary.html#getPeriodicity-int-">IBoundary</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/space/Boundary.html#getPeriodicity-int-">Boundary</a></code></span></div>
 <div class="block">Returns true if the boundary is periodic in the given direction (as
  defined by the getEdgeVector method).</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IBoundary.html#getPeriodicity-int-">getPeriodicity</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html#getPeriodicity-int-">getPeriodicity</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>

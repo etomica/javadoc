@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
@@ -166,8 +166,8 @@ extends <a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Ato
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomOrientedQuaternion.html#AtomOrientedQuaternion-etomica.space.ISpace-etomica.api.IAtomType-">AtomOrientedQuaternion</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                      <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomOrientedQuaternion.html#AtomOrientedQuaternion-etomica.space.Space-etomica.atom.AtomType-">AtomOrientedQuaternion</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                      <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -185,7 +185,7 @@ extends <a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Ato
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomOrientedQuaternion.html#getQuaternion--">getQuaternion</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -194,7 +194,7 @@ extends <a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Ato
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.atom.<a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Atom</a></h3>
-<code><a href="../../etomica/atom/Atom.html#getIndex--">getIndex</a>, <a href="../../etomica/atom/Atom.html#getLeafIndex--">getLeafIndex</a>, <a href="../../etomica/atom/Atom.html#getParentGroup--">getParentGroup</a>, <a href="../../etomica/atom/Atom.html#getPosition--">getPosition</a>, <a href="../../etomica/atom/Atom.html#getType--">getType</a>, <a href="../../etomica/atom/Atom.html#setIndex-int-">setIndex</a>, <a href="../../etomica/atom/Atom.html#setLeafIndex-int-">setLeafIndex</a>, <a href="../../etomica/atom/Atom.html#setParent-etomica.api.IMolecule-">setParent</a>, <a href="../../etomica/atom/Atom.html#signature--">signature</a>, <a href="../../etomica/atom/Atom.html#toString--">toString</a></code></li>
+<code><a href="../../etomica/atom/Atom.html#getIndex--">getIndex</a>, <a href="../../etomica/atom/Atom.html#getLeafIndex--">getLeafIndex</a>, <a href="../../etomica/atom/Atom.html#getParentGroup--">getParentGroup</a>, <a href="../../etomica/atom/Atom.html#getPosition--">getPosition</a>, <a href="../../etomica/atom/Atom.html#getType--">getType</a>, <a href="../../etomica/atom/Atom.html#setIndex-int-">setIndex</a>, <a href="../../etomica/atom/Atom.html#setLeafIndex-int-">setLeafIndex</a>, <a href="../../etomica/atom/Atom.html#setParent-etomica.molecule.IMolecule-">setParent</a>, <a href="../../etomica/atom/Atom.html#signature--">signature</a>, <a href="../../etomica/atom/Atom.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -234,14 +234,14 @@ extends <a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Ato
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomOrientedQuaternion-etomica.space.ISpace-etomica.api.IAtomType-">
+<a name="AtomOrientedQuaternion-etomica.space.Space-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomOrientedQuaternion</h4>
-<pre>public&nbsp;AtomOrientedQuaternion(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                              <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
+<pre>public&nbsp;AtomOrientedQuaternion(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                              <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
 </li>
 </ul>
 </li>
@@ -258,7 +258,7 @@ extends <a href="../../etomica/atom/Atom.html" title="class in etomica.atom">Ato
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getQuaternion</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getQuaternion()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getQuaternion()</pre>
 </li>
 </ul>
 </li>

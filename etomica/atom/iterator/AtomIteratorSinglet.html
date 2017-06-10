@@ -164,7 +164,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#AtomIteratorSinglet-etomica.api.IAtom-">AtomIteratorSinglet</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#AtomIteratorSinglet-etomica.atom.IAtom-">AtomIteratorSinglet</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Constructs iterator specifying that it return the given atom.</div>
 </td>
 </tr>
@@ -184,7 +184,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#getAtom--">getAtom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -195,13 +195,13 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#next--">next</a></span>()</code>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#nextAtom--">nextAtom</a></span>()</code>
 <div class="block">Returns the iterator's atom and unsets iterator.</div>
 </td>
@@ -214,7 +214,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#setAtom-etomica.api.IAtom-">setAtom</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/AtomIteratorSinglet.html#setAtom-etomica.atom.IAtom-">setAtom</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Defines atom returned by iterator and leaves iterator unset.</div>
 </td>
 </tr>
@@ -280,13 +280,13 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
  be given by this iterator until a call to setAtom is performed.</div>
 </li>
 </ul>
-<a name="AtomIteratorSinglet-etomica.api.IAtom-">
+<a name="AtomIteratorSinglet-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomIteratorSinglet</h4>
-<pre>public&nbsp;AtomIteratorSinglet(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;AtomIteratorSinglet(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <div class="block">Constructs iterator specifying that it return the given atom.  Call
  to reset() must be performed before beginning iteration.</div>
 <dl>
@@ -303,19 +303,19 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setAtom-etomica.api.IAtom-">
+<a name="setAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtom</h4>
-<pre>public&nbsp;void&nbsp;setAtom(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;void&nbsp;setAtom(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <div class="block">Defines atom returned by iterator and leaves iterator unset.
  Call to reset() must be performed before beginning iteration.
  If atom is null, hasNext will remain false on reset.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html#setAtom-etomica.api.IAtom-">setAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html" title="interface in etomica.atom.iterator">AtomIteratorAtomDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html#setAtom-etomica.atom.IAtom-">setAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.html" title="interface in etomica.atom.iterator">AtomIteratorAtomDependent</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -325,7 +325,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>getAtom</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;getAtom()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the atom given by this iterator as its single iterate</dd>
@@ -380,7 +380,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>nextAtom</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;nextAtom()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;nextAtom()</pre>
 <div class="block">Returns the iterator's atom and unsets iterator.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -394,7 +394,7 @@ implements <a href="../../../etomica/atom/iterator/AtomIteratorAtomDependent.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;next()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html#next--">AtomLeafsetIterator</a></code></span></div>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 <dl>

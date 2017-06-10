@@ -173,7 +173,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#deleteCandidateTimes">deleteCandidateTimes</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#dest">dest</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -181,7 +181,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#dirty">dirty</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -193,7 +193,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#insertCandidates">insertCandidates</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -241,7 +241,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#oldLnA">oldLnA</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#oldPosition">oldPosition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -295,10 +295,10 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#MCMoveInsertDeleteVacancy-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.api.IIntegrator-double-int-int-">MCMoveInsertDeleteVacancy</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                         <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                         <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                         <a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;integrator,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteVacancy.html#MCMoveInsertDeleteVacancy-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.Integrator-double-int-int-">MCMoveInsertDeleteVacancy</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                         <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                         <a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
                          double&nbsp;nbrDistance,
                          int&nbsp;maxN,
                          int&nbsp;maxVacancy)</code>&nbsp;</td>
@@ -375,21 +375,21 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setLnBias-int-double-">setLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setLnBias-int-double-">setLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveInsertDelete">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBox">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -425,7 +425,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>dest</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a> dest</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dest</pre>
 </li>
 </ul>
 <a name="dr">
@@ -434,7 +434,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="integrator">
@@ -443,7 +443,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>integrator</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a> integrator</pre>
+<pre>protected&nbsp;<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a> integrator</pre>
 </li>
 </ul>
 <a name="lastStepCount">
@@ -623,7 +623,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>oldPosition</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> oldPosition</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> oldPosition</pre>
 </li>
 </ul>
 </li>
@@ -634,16 +634,16 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveInsertDeleteVacancy-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.api.IIntegrator-double-int-int-">
+<a name="MCMoveInsertDeleteVacancy-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.Integrator-double-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveInsertDeleteVacancy</h4>
-<pre>public&nbsp;MCMoveInsertDeleteVacancy(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                 <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                                 <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                 <a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;integrator,
+<pre>public&nbsp;MCMoveInsertDeleteVacancy(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                 <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                 <a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
                                  double&nbsp;nbrDistance,
                                  int&nbsp;maxN,
                                  int&nbsp;maxVacancy)</pre>

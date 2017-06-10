@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></dd>
 </dl>
 <hr>
 <br>
@@ -180,7 +180,7 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#P1MagneticField-etomica.space.ISpace-">P1MagneticField</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#P1MagneticField-etomica.space.Space-">P1MagneticField</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -199,12 +199,12 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#energy-etomica.api.IAtomList-">energy</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#energy-etomica.atom.IAtomList-">energy</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>
 <div class="block">Returns the interaction energy between the given atoms.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#getDirection--">getDirection</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -213,7 +213,7 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#setDirection-etomica.api.IVectorMutable-">setDirection</a></span>(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;direction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/spin/P1MagneticField.html#setDirection-etomica.space.Vector-">setDirection</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -225,7 +225,7 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/Potential1.html" title="class in etomica.potential">Potential1</a></h3>
-<code><a href="../../etomica/potential/Potential1.html#getRange--">getRange</a>, <a href="../../etomica/potential/Potential1.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/potential/Potential1.html#getRange--">getRange</a>, <a href="../../etomica/potential/Potential1.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential">
@@ -255,13 +255,13 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P1MagneticField-etomica.space.ISpace-">
+<a name="P1MagneticField-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P1MagneticField</h4>
-<pre>public&nbsp;P1MagneticField(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;P1MagneticField(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>space</code> - </dd>
@@ -276,21 +276,21 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="energy-etomica.api.IAtomList-">
+<a name="energy-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/potential/Potential.html#energy-etomica.api.IAtomList-">Potential</a></code></span></div>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/potential/Potential.html#energy-etomica.atom.IAtomList-">Potential</a></code></span></div>
 <div class="block">Returns the interaction energy between the given atoms.  There might be
  0, 1, 2 or more atoms in the AtomSet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></code></dd>
+<dd><code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/Potential.html#energy-etomica.api.IAtomList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential.html" title="class in etomica.potential">Potential</a></code></dd>
+<dd><code><a href="../../etomica/potential/Potential.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential.html" title="class in etomica.potential">Potential</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -300,20 +300,20 @@ extends <a href="../../etomica/potential/Potential1.html" title="class in etomic
 <ul class="blockList">
 <li class="blockList">
 <h4>getDirection</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getDirection()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getDirection()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the direction.</dd>
 </dl>
 </li>
 </ul>
-<a name="setDirection-etomica.api.IVectorMutable-">
+<a name="setDirection-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDirection</h4>
-<pre>public&nbsp;void&nbsp;setDirection(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;direction)</pre>
+<pre>public&nbsp;void&nbsp;setDirection(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;direction)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>direction</code> - The direction to set.</dd>

@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">BoxScaleMomenta</span>
 extends java.lang.Object
 implements <a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></pre>
-<div class="block">Scales the momenta of all the leaf atoms in an IBox such that the kinetic
+<div class="block">Scales the momenta of all the leaf atoms in a Box such that the kinetic
  temperature matches some value.  The net momentum is also subtracted off so
  that there is no net momentum.</div>
 </li>
@@ -136,11 +136,11 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxScaleMomenta.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxScaleMomenta.html#momentum">momentum</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -162,8 +162,8 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxScaleMomenta.html#BoxScaleMomenta-etomica.api.IBox-etomica.space.ISpace-">BoxScaleMomenta</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-               <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxScaleMomenta.html#BoxScaleMomenta-etomica.box.Box-etomica.space.Space-">BoxScaleMomenta</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+               <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -187,7 +187,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxScaleMomenta.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -226,7 +226,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="momentum">
@@ -235,7 +235,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>momentum</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> momentum</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> momentum</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -255,14 +255,14 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxScaleMomenta-etomica.api.IBox-etomica.space.ISpace-">
+<a name="BoxScaleMomenta-etomica.box.Box-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxScaleMomenta</h4>
-<pre>public&nbsp;BoxScaleMomenta(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                       <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;BoxScaleMomenta(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                       <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -297,7 +297,7 @@ implements <a href="../../etomica/action/IAction.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
 <a name="actionPerformed--">

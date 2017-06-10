@@ -137,7 +137,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#cm">cm</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -153,7 +153,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#momentj">momentj</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#rj">rj</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -161,7 +161,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#rjrj">rjrj</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#rv">rv</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -179,7 +179,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#MoleculeInfoBrute-etomica.space.ISpace-">MoleculeInfoBrute</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#MoleculeInfoBrute-etomica.space.Space-">MoleculeInfoBrute</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -198,13 +198,13 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#getMass-etomica.api.IMolecule-">getMass</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#getMass-etomica.molecule.IMolecule-">getMass</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the mass of the molecule.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#getMomentAndAxes-etomica.api.IMolecule-">getMomentAndAxes</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfoBrute.html#getMomentAndAxes-etomica.molecule.IMolecule-">getMomentAndAxes</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the moment of inertia as a vector containing Ix, Iy, Iz
  and also the principle axes.</div>
 </td>
@@ -237,7 +237,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <ul class="blockList">
 <li class="blockList">
 <h4>cm</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> cm</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> cm</pre>
 </li>
 </ul>
 <a name="rj">
@@ -246,7 +246,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <ul class="blockList">
 <li class="blockList">
 <h4>rj</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> rj</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> rj</pre>
 </li>
 </ul>
 <a name="id">
@@ -291,7 +291,7 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <ul class="blockListLast">
 <li class="blockList">
 <h4>rv</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] rv</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] rv</pre>
 </li>
 </ul>
 </li>
@@ -302,13 +302,13 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MoleculeInfoBrute-etomica.space.ISpace-">
+<a name="MoleculeInfoBrute-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MoleculeInfoBrute</h4>
-<pre>public&nbsp;MoleculeInfoBrute(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;MoleculeInfoBrute(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -319,35 +319,35 @@ implements <a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getMass-etomica.api.IMolecule-">
+<a name="getMass-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMass</h4>
-<pre>public&nbsp;double&nbsp;getMass(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMass-etomica.api.IMolecule-">P2SemiclassicalMolecular.MoleculeInfo</a></code></span></div>
+<pre>public&nbsp;double&nbsp;getMass(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMass-etomica.molecule.IMolecule-">P2SemiclassicalMolecular.MoleculeInfo</a></code></span></div>
 <div class="block">Returns the mass of the molecule.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMass-etomica.api.IMolecule-">getMass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html" title="interface in etomica.potential">P2SemiclassicalMolecular.MoleculeInfo</a></code></dd>
+<dd><code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMass-etomica.molecule.IMolecule-">getMass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html" title="interface in etomica.potential">P2SemiclassicalMolecular.MoleculeInfo</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getMomentAndAxes-etomica.api.IMolecule-">
+<a name="getMomentAndAxes-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getMomentAndAxes</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;getMomentAndAxes(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMomentAndAxes-etomica.api.IMolecule-">P2SemiclassicalMolecular.MoleculeInfo</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getMomentAndAxes(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMomentAndAxes-etomica.molecule.IMolecule-">P2SemiclassicalMolecular.MoleculeInfo</a></code></span></div>
 <div class="block">Returns the moment of inertia as a vector containing Ix, Iy, Iz
  and also the principle axes.  The 0 element is the moment of inertia
  vector while elements 1, 2 and 3 are the principle axes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMomentAndAxes-etomica.api.IMolecule-">getMomentAndAxes</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html" title="interface in etomica.potential">P2SemiclassicalMolecular.MoleculeInfo</a></code></dd>
+<dd><code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html#getMomentAndAxes-etomica.molecule.IMolecule-">getMomentAndAxes</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/P2SemiclassicalMolecular.MoleculeInfo.html" title="interface in etomica.potential">P2SemiclassicalMolecular.MoleculeInfo</a></code></dd>
 </dl>
 </li>
 </ul>

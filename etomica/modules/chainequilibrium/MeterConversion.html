@@ -142,7 +142,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -150,7 +150,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#nReacted">nReacted</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -179,7 +179,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#MeterConversion-etomica.api.IBox-etomica.atom.AtomLeafAgentManager-">MeterConversion</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#MeterConversion-etomica.box.Box-etomica.atom.AtomLeafAgentManager-">MeterConversion</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</code>&nbsp;</td>
 </tr>
 </table>
@@ -199,7 +199,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#calcConversion-etomica.api.IMoleculeList-">calcConversion</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;monomerList)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#calcConversion-etomica.molecule.IMoleculeList-">calcConversion</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;monomerList)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -209,7 +209,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#setSpecies-etomica.api.ISpecies:A-">setSpecies</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;newSpecies)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/MeterConversion.html#setSpecies-etomica.species.ISpecies:A-">setSpecies</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -255,7 +255,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[] species</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[] species</pre>
 </li>
 </ul>
 <a name="box">
@@ -264,7 +264,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="total">
@@ -293,13 +293,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterConversion-etomica.api.IBox-etomica.atom.AtomLeafAgentManager-">
+<a name="MeterConversion-etomica.box.Box-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterConversion</h4>
-<pre>public&nbsp;MeterConversion(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;MeterConversion(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                        <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</pre>
 </li>
 </ul>
@@ -311,13 +311,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSpecies-etomica.api.ISpecies:A-">
+<a name="setSpecies-etomica.species.ISpecies:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;newSpecies)</pre>
+<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;newSpecies)</pre>
 </li>
 </ul>
 <a name="getDataAsScalar--">
@@ -336,13 +336,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 </dl>
 </li>
 </ul>
-<a name="calcConversion-etomica.api.IMoleculeList-">
+<a name="calcConversion-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>calcConversion</h4>
-<pre>protected&nbsp;void&nbsp;calcConversion(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;monomerList)</pre>
+<pre>protected&nbsp;void&nbsp;calcConversion(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;monomerList)</pre>
 </li>
 </ul>
 </li>

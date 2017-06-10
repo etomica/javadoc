@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a>, <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></dd>
+<dd><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a>, <a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DerivativeEnergyFunction</span>
 extends java.lang.Object
-implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></pre>
+implements <a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></pre>
 </li>
 </ul>
 </div>
@@ -164,11 +164,11 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#allAtoms">allAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -176,7 +176,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#coordinateDefinition">coordinateDefinition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#fFunction">fFunction</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -192,7 +192,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#meterEnergy">meterEnergy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#moleculeForce">moleculeForce</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -214,9 +214,9 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#DerivativeEnergyFunction-etomica.api.IBox-etomica.potential.PotentialMaster-etomica.space.ISpace-">DerivativeEnergyFunction</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/conjugategradient/DerivativeEnergyFunction.html#DerivativeEnergyFunction-etomica.box.Box-etomica.potential.PotentialMaster-etomica.space.Space-">DerivativeEnergyFunction</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                         <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
-                        <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+                        <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -290,7 +290,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="meterEnergy">
@@ -317,7 +317,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>allAtoms</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a> allAtoms</pre>
+<pre>protected&nbsp;<a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> allAtoms</pre>
 </li>
 </ul>
 <a name="forceSum">
@@ -371,7 +371,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>moleculeForce</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> moleculeForce</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> moleculeForce</pre>
 </li>
 </ul>
 <a name="fFunction">
@@ -380,7 +380,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <ul class="blockListLast">
 <li class="blockList">
 <h4>fFunction</h4>
-<pre>protected&nbsp;<a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a> fFunction</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a> fFunction</pre>
 </li>
 </ul>
 </li>
@@ -391,15 +391,15 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DerivativeEnergyFunction-etomica.api.IBox-etomica.potential.PotentialMaster-etomica.space.ISpace-">
+<a name="DerivativeEnergyFunction-etomica.box.Box-etomica.potential.PotentialMaster-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DerivativeEnergyFunction</h4>
-<pre>public&nbsp;DerivativeEnergyFunction(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;DerivativeEnergyFunction(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                 <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
-                                <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -437,7 +437,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <pre>public&nbsp;double&nbsp;f(double[]&nbsp;newU)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensional.html#f-double:A-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensional.html#f-double:A-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -449,7 +449,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <h4>df</h4>
 <pre>public&nbsp;double&nbsp;df(int[]&nbsp;d,
                  double[]&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">FunctionMultiDimensionalDifferentiable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">FunctionMultiDimensionalDifferentiable</a></code></span></div>
 <div class="block">Returns the derivative indicated by the array d evaluated at the given point x.  The array d
  should be the same length as x. Each entry of d specifies the order of the derivative
  taken with respect to the corresponding variable in x.  For example, for a function
@@ -457,7 +457,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
  d2f/dx[0]dx[1]; d = {2,1} indicates d3f/dx[0]^2dx[1]; etc.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">df</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">df</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -468,12 +468,12 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <li class="blockList">
 <h4>getDimension</h4>
 <pre>public&nbsp;int&nbsp;getDimension()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html#getDimension--">FunctionMultiDimensional</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html#getDimension--">FunctionMultiDimensional</a></code></span></div>
 <div class="block">The dimension of the space of independent variables.  The length of the
  array passed to the f should be equal to this quantity.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensional.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensional.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a></code></dd>
 </dl>
 </li>
 </ul>

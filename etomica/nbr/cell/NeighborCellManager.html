@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IBoundaryListener.html" title="interface in etomica.api">IBoundaryListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;, <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a></dd>
+<dd><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;, <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, <a href="../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">NeighborCellManager</span>
 extends java.lang.Object
-implements <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, <a href="../../../etomica/api/IBoundaryListener.html" title="interface in etomica.api">IBoundaryListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</pre>
+implements <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, <a href="../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</pre>
 <div class="block">Class that defines and manages construction and use of lattice of cells 
  for cell-based neighbor listing.</div>
 </li>
@@ -143,7 +143,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -163,7 +163,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#numCells">numCells</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#positionDefinition">positionDefinition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -171,11 +171,15 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#range">range</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#sim">sim</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#suppressBoxLengthWarning">suppressBoxLengthWarning</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#v">v</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -193,19 +197,19 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.api.ISimulation-etomica.api.IBox-double-etomica.atom.IAtomPositionDefinition-etomica.space.ISpace-">NeighborCellManager</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">NeighborCellManager</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                    double&nbsp;potentialRange,
-                   <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition,
-                   <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+                   <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Construct manager for neighbor cells in the given box.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.api.ISimulation-etomica.api.IBox-double-etomica.space.ISpace-">NeighborCellManager</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">NeighborCellManager</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                    double&nbsp;potentialRange,
-                   <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>
+                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
 <div class="block">Constructs manager for neighbor cells in the given box.</div>
 </td>
 </tr>
@@ -226,7 +230,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#assignCell-etomica.api.IAtom-">assignCell</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#assignCell-etomica.atom.IAtom-">assignCell</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Assigns the cell for the given atom.</div>
 </td>
 </tr>
@@ -238,7 +242,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a></span>(<a href="../../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#boundaryInflate-etomica.space.BoundaryEvent-">boundaryInflate</a></span>(<a href="../../../etomica/space/BoundaryEvent.html" title="class in etomica.space">BoundaryEvent</a>&nbsp;e)</code>
 <div class="block">Informs the listener that the boundary shape and/or size has changed.</div>
 </td>
 </tr>
@@ -251,7 +255,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#getCell-etomica.api.IAtom-">getCell</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#getCell-etomica.atom.IAtom-">getCell</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -277,8 +281,8 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns the cell containing the given atom.</div>
 </td>
 </tr>
@@ -288,9 +292,9 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#releaseAgent-etomica.nbr.cell.Cell-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;cell,
-            <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#releaseAgent-etomica.nbr.cell.Cell-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;cell,
+            <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Removes the given atom from the cell.</div>
 </td>
 </tr>
@@ -309,6 +313,10 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#setPotentialRange-double-">setPotentialRange</a></span>(double&nbsp;newRange)</code>
 <div class="block">Sets the potential range to the given value.</div>
 </td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#setSuppressBoxLengthWarning-boolean-">setSuppressBoxLengthWarning</a></span>(boolean&nbsp;doSuppress)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -338,7 +346,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> sim</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
 </li>
 </ul>
 <a name="lattice">
@@ -356,7 +364,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>positionDefinition</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a> positionDefinition</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
 </li>
 </ul>
 <a name="box">
@@ -365,7 +373,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="cellRange">
@@ -410,16 +418,25 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>v</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> v</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> v</pre>
 </li>
 </ul>
 <a name="numCells">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>numCells</h4>
 <pre>protected final&nbsp;int[] numCells</pre>
+</li>
+</ul>
+<a name="suppressBoxLengthWarning">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>suppressBoxLengthWarning</h4>
+<pre>protected&nbsp;boolean suppressBoxLengthWarning</pre>
 </li>
 </ul>
 </li>
@@ -430,32 +447,32 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborCellManager-etomica.api.ISimulation-etomica.api.IBox-double-etomica.space.ISpace-">
+<a name="NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>NeighborCellManager</h4>
-<pre>public&nbsp;NeighborCellManager(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                           <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;NeighborCellManager(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                            double&nbsp;potentialRange,
-                           <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Constructs manager for neighbor cells in the given box.  The number of
  cells in each dimension is given by nCells. Position definition for each
  atom is that given by its type (it is set to null in this class).</div>
 </li>
 </ul>
-<a name="NeighborCellManager-etomica.api.ISimulation-etomica.api.IBox-double-etomica.atom.IAtomPositionDefinition-etomica.space.ISpace-">
+<a name="NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborCellManager</h4>
-<pre>public&nbsp;NeighborCellManager(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                           <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;NeighborCellManager(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                            double&nbsp;potentialRange,
-                           <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition,
-                           <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                           <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Construct manager for neighbor cells in the given box.  The number
  of cells in each dimension is given by nCells.  Position definition is
  used to determine the cell a given atom is in; if null, the position
@@ -471,6 +488,21 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setSuppressBoxLengthWarning-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSuppressBoxLengthWarning</h4>
+<pre>public&nbsp;void&nbsp;setSuppressBoxLengthWarning(boolean&nbsp;doSuppress)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>doSuppress</code> - warnings about box length being too small.  This is
+                   useful if the potential range is short enough, but the
+                   neighbor listing padding does not fit in the box.</dd>
+</dl>
+</li>
+</ul>
 <a name="setDoApplyPBC-boolean-">
 <!--   -->
 </a>
@@ -546,18 +578,18 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
  enough so that cellRange*cellSize > potentialRange</div>
 </li>
 </ul>
-<a name="boundaryInflate-etomica.api.IBoundaryEvent-">
+<a name="boundaryInflate-etomica.space.BoundaryEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boundaryInflate</h4>
-<pre>public&nbsp;void&nbsp;boundaryInflate(<a href="../../../etomica/api/IBoundaryEvent.html" title="interface in etomica.api">IBoundaryEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IBoundaryListener.html#boundaryInflate-etomica.api.IBoundaryEvent-">IBoundaryListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boundaryInflate(<a href="../../../etomica/space/BoundaryEvent.html" title="class in etomica.space">BoundaryEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/space/BoundaryEventListener.html#boundaryInflate-etomica.space.BoundaryEvent-">BoundaryEventListener</a></code></span></div>
 <div class="block">Informs the listener that the boundary shape and/or size has changed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IBoundaryListener.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IBoundaryListener.html" title="interface in etomica.api">IBoundaryListener</a></code></dd>
+<dd><code><a href="../../../etomica/space/BoundaryEventListener.html#boundaryInflate-etomica.space.BoundaryEvent-">boundaryInflate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - event, which can be used to determine the boundary that changed.</dd>
 </dl>
@@ -589,22 +621,22 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 </dl>
 </li>
 </ul>
-<a name="getCell-etomica.api.IAtom-">
+<a name="getCell-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCell</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;getCell(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;getCell(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
-<a name="assignCell-etomica.api.IAtom-">
+<a name="assignCell-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>assignCell</h4>
-<pre>public&nbsp;void&nbsp;assignCell(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;assignCell(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Assigns the cell for the given atom.  The atom will be listed in the
  cell's atom list and the cell with be associated with the atom via
  agentManager.</div>
@@ -619,36 +651,36 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <pre>public&nbsp;<a href="../../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;makeMCMoveListener()</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;makeAgent(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                      <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
+<pre>public&nbsp;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;makeAgent(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                      <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block">Returns the cell containing the given atom.  The atom is added to the
  cell's atom list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.nbr.cell.Cell-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.nbr.cell.Cell-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&nbsp;cell,
-                         <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
+                         <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block">Removes the given atom from the cell.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

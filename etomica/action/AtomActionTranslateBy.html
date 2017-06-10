@@ -139,7 +139,7 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#AtomActionTranslateBy-etomica.space.ISpace-">AtomActionTranslateBy</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#AtomActionTranslateBy-etomica.space.Space-">AtomActionTranslateBy</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -158,10 +158,10 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#actionPerformed-etomica.api.IAtom-">actionPerformed</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#actionPerformed-etomica.atom.IAtom-">actionPerformed</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#getTranslationVector--">getTranslationVector</a></span>()</code>
 <div class="block">Returns the translation vector, the distance that the
  atom will be moved by this action.</div>
@@ -169,7 +169,7 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#setTranslationVector-etomica.api.IVector-">setTranslationVector</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;translationVector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/AtomActionTranslateBy.html#setTranslationVector-etomica.space.Vector-">setTranslationVector</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;translationVector)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -193,13 +193,13 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomActionTranslateBy-etomica.space.ISpace-">
+<a name="AtomActionTranslateBy-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomActionTranslateBy</h4>
-<pre>public&nbsp;AtomActionTranslateBy(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;AtomActionTranslateBy(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -210,16 +210,16 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="actionPerformed-etomica.api.IAtom-">
+<a name="actionPerformed-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>actionPerformed</h4>
-<pre>public&nbsp;void&nbsp;actionPerformed(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;actionPerformed(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/action/AtomAction.html#actionPerformed-etomica.api.IAtom-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/AtomAction.html" title="interface in etomica.action">AtomAction</a></code></dd>
+<dd><code><a href="../../etomica/action/AtomAction.html#actionPerformed-etomica.atom.IAtom-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/AtomAction.html" title="interface in etomica.action">AtomAction</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -229,20 +229,20 @@ implements <a href="../../etomica/action/AtomAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getTranslationVector</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getTranslationVector()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getTranslationVector()</pre>
 <div class="block">Returns the translation vector, the distance that the
  atom will be moved by this action. Returns the vector used by this
  instance, not a copy, so any manipulation of the returned vector will
  affect the action of this instance.</div>
 </li>
 </ul>
-<a name="setTranslationVector-etomica.api.IVector-">
+<a name="setTranslationVector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setTranslationVector</h4>
-<pre>public&nbsp;void&nbsp;setTranslationVector(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;translationVector)</pre>
+<pre>public&nbsp;void&nbsp;setTranslationVector(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;translationVector)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>translationVector</code> - The translation vector to set.  A local copy

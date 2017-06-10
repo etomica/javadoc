@@ -94,6 +94,12 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></td>
+<td class="colLast">
+<div class="block">A box listener receives notifications for box events.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/box/RandomPositionSource.html" title="interface in etomica.box">RandomPositionSource</a></td>
 <td class="colLast">
 <div class="block">Interface for an object which returns random positions within a box's
@@ -125,7 +131,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;E&gt;</td>
 <td class="colLast">
-<div class="block">BoxAgentManager acts on behalf of client classes (a BoxAgentSource) to manage 
+<div class="block">BoxAgentManager acts on behalf of client classes (a BoxAgentSource) to manage
  agents for each Box in a simulation.</div>
 </td>
 </tr>
@@ -146,30 +152,28 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAtomEvent.html" title="class in etomica.box">BoxAtomEvent</a></td>
 <td class="colLast">
-<div class="block">Event that conveys some happening with respect to an Atom in a Box.</div>
+<div class="block">A box event that is somehow related to an atom.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a></td>
 <td class="colLast">
-<div class="block">Event that conveys that the maximum global index in a Box has changed.</div>
+<div class="block">Box event that indicates that an atom's index has changed.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxEvent.html" title="class in etomica.box">BoxEvent</a></td>
 <td class="colLast">
-<div class="block">Event that conveys some happening with respect to a box or the things it contains.</div>
+<div class="block">A box event fired by the box's event manager.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/box/BoxEventManager.html" title="class in etomica.box">BoxEventManager</a></td>
+<td class="colFirst"><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../etomica/box/BoxGlobalAtomIndexEvent.html" title="class in etomica.box">BoxGlobalAtomIndexEvent</a></td>
-<td class="colLast">
-<div class="block">Event that conveys that the maximum global index in a Box has changed.</div>
-</td>
+<td class="colFirst"><a href="../../etomica/box/BoxEventManager.html" title="class in etomica.box">BoxEventManager</a></td>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a></td>
@@ -179,43 +183,32 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/box/BoxMoleculeAddedEvent.html" title="class in etomica.box">BoxMoleculeAddedEvent</a></td>
-<td class="colLast">
-<div class="block">Event that conveys that an Atom has been added to a Box.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Box event that indicates the number of molecules of a particular species has
+ changed.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">A box event that is somehow related to a molecule.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a></td>
 <td class="colLast">
-<div class="block">Event that conveys that an Atom's global index in a box has changed.</div>
+<div class="block">Box event that indicates that a molecule's index has changed.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/box/BoxMoleculeRemovedEvent.html" title="class in etomica.box">BoxMoleculeRemovedEvent</a></td>
-<td class="colLast">
-<div class="block">Event that conveys that an Atom has been removed from a Box.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/RandomPositionSourceDeformable.html" title="class in etomica.box">RandomPositionSourceDeformable</a></td>
 <td class="colLast">
 <div class="block">Implementation of RandomPositionSource that can handle
  BoundaryDeformablePeriodic.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/RandomPositionSourceRectangular.html" title="class in etomica.box">RandomPositionSourceRectangular</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>

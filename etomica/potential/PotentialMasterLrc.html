@@ -136,7 +136,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.ArrayList&lt;<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&gt;</code></td>
+<td class="colFirst"><code>protected java.util.ArrayList&lt;<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#atomicPotentials">atomicPotentials</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -144,7 +144,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#enabled">enabled</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#list0">list0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -152,7 +152,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#listLeaf0">listLeaf0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.ArrayList&lt;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&gt;</code></td>
+<td class="colFirst"><code>protected java.util.ArrayList&lt;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#molecularPotentials">molecularPotentials</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -191,16 +191,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#addPotential-etomica.api.IPotentialAtomic-">addPotential</a></span>(<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#addPotential-etomica.potential.IPotentialAtomic-">addPotential</a></span>(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#addPotential-etomica.api.IPotentialMolecular-">addPotential</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#addPotential-etomica.potential.IPotentialMolecular-">addPotential</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#calculate-etomica.api.IBox-etomica.atom.iterator.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-         <a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a>&nbsp;id,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMasterLrc.html#calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+         <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a>&nbsp;id,
          <a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>&nbsp;pc)</code>
 <div class="block">Performs given PotentialCalculation on all LRC potentials added to this group.</div>
 </td>
@@ -241,7 +241,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>molecularPotentials</h4>
-<pre>protected final&nbsp;java.util.ArrayList&lt;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&gt; molecularPotentials</pre>
+<pre>protected final&nbsp;java.util.ArrayList&lt;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&gt; molecularPotentials</pre>
 </li>
 </ul>
 <a name="atomicPotentials">
@@ -250,7 +250,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>atomicPotentials</h4>
-<pre>protected final&nbsp;java.util.ArrayList&lt;<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&gt; atomicPotentials</pre>
+<pre>protected final&nbsp;java.util.ArrayList&lt;<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&gt; atomicPotentials</pre>
 </li>
 </ul>
 <a name="enabled">
@@ -268,7 +268,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>list0</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a> list0</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a> list0</pre>
 </li>
 </ul>
 <a name="listLeaf0">
@@ -305,14 +305,14 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="calculate-etomica.api.IBox-etomica.atom.iterator.IteratorDirective-etomica.potential.PotentialCalculation-">
+<a name="calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calculate</h4>
-<pre>public&nbsp;void&nbsp;calculate(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                      <a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a>&nbsp;id,
+<pre>public&nbsp;void&nbsp;calculate(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                      <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a>&nbsp;id,
                       <a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>&nbsp;pc)</pre>
 <div class="block">Performs given PotentialCalculation on all LRC potentials added to this group.
  Checks that group is enabled, box is not null, that it has lrcEnabled,
@@ -338,22 +338,22 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;void&nbsp;setEnabled(boolean&nbsp;enabled)</pre>
 </li>
 </ul>
-<a name="addPotential-etomica.api.IPotentialMolecular-">
+<a name="addPotential-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addPotential</h4>
-<pre>public&nbsp;void&nbsp;addPotential(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</pre>
+<pre>public&nbsp;void&nbsp;addPotential(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</pre>
 </li>
 </ul>
-<a name="addPotential-etomica.api.IPotentialAtomic-">
+<a name="addPotential-etomica.potential.IPotentialAtomic-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addPotential</h4>
-<pre>public&nbsp;void&nbsp;addPotential(<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</pre>
+<pre>public&nbsp;void&nbsp;addPotential(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</pre>
 </li>
 </ul>
 </li>

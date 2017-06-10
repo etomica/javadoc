@@ -144,11 +144,11 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#bdry">bdry</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,7 +196,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#oneOverSqrtOmega2">oneOverSqrtOmega2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -224,7 +224,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#simRealT">simRealT</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#simWaveVectors">simWaveVectors</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -248,7 +248,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#temperature">temperature</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#waveVectors">waveVectors</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -277,8 +277,8 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#MeterDifferentImageAdd-etomica.api.ISimulation-etomica.space.ISpace-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-">MeterDifferentImageAdd</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                      <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#MeterDifferentImageAdd-etomica.simulation.Simulation-etomica.space.Space-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-">MeterDifferentImageAdd</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                      <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                       double&nbsp;temp,
                       <a href="../../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;simCD,
                       <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;simNM,
@@ -288,8 +288,8 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
                       <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;otherNM)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#MeterDifferentImageAdd-etomica.api.ISimulation-etomica.space.ISpace-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-java.lang.String-">MeterDifferentImageAdd</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                      <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#MeterDifferentImageAdd-etomica.simulation.Simulation-etomica.space.Space-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-java.lang.String-">MeterDifferentImageAdd</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                      <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                       double&nbsp;temp,
                       <a href="../../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;simCD,
                       <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;simNM,
@@ -315,7 +315,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/oneDHardRods/MeterDifferentImageAdd.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -430,7 +430,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>waveVectors</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] waveVectors</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] waveVectors</pre>
 </li>
 </ul>
 <a name="simWaveVectors">
@@ -439,7 +439,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>simWaveVectors</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] simWaveVectors</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] simWaveVectors</pre>
 </li>
 </ul>
 <a name="simRealT">
@@ -547,7 +547,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="box">
@@ -556,7 +556,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="numAtoms">
@@ -574,7 +574,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>bdry</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a> bdry</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> bdry</pre>
 </li>
 </ul>
 <a name="nm">
@@ -621,14 +621,14 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterDifferentImageAdd-etomica.api.ISimulation-etomica.space.ISpace-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-">
+<a name="MeterDifferentImageAdd-etomica.simulation.Simulation-etomica.space.Space-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MeterDifferentImageAdd</h4>
-<pre>public&nbsp;MeterDifferentImageAdd(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                              <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MeterDifferentImageAdd(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                               double&nbsp;temp,
                               <a href="../../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;simCD,
                               <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;simNM,
@@ -638,14 +638,14 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
                               <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;otherNM)</pre>
 </li>
 </ul>
-<a name="MeterDifferentImageAdd-etomica.api.ISimulation-etomica.space.ISpace-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-java.lang.String-">
+<a name="MeterDifferentImageAdd-etomica.simulation.Simulation-etomica.space.Space-double-etomica.normalmode.CoordinateDefinition-etomica.normalmode.NormalModes-etomica.normalmode.CoordinateDefinition-etomica.nbr.list.PotentialMasterList-int:A-etomica.normalmode.NormalModes-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterDifferentImageAdd</h4>
-<pre>public&nbsp;MeterDifferentImageAdd(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                              <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MeterDifferentImageAdd(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                              <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                               double&nbsp;temp,
                               <a href="../../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;simCD,
                               <a href="../../../etomica/normalmode/NormalModes.html" title="interface in etomica.normalmode">NormalModes</a>&nbsp;simNM,
@@ -695,7 +695,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
 <a name="getScaling--">

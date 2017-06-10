@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">PotentialMolecularSoft</span>
-extends <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></pre>
+extends <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></pre>
 <div class="block">Methods for properties obtained for a soft, differentiable pair potential.</div>
 </li>
 </ul>
@@ -133,16 +133,16 @@ extends <a href="../../etomica/api/IPotentialMolecular.html" title="interface in
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.api.IMoleculeList-">gradient</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.molecule.IMoleculeList-">gradient</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Returns the gradient of the potential as it applies to each atom in the 
  given AtomSet, indicating how the energy would change as the position of 
  the first atom is varied.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.api.IMoleculeList-etomica.space.Tensor-">gradient</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.molecule.IMoleculeList-etomica.space.Tensor-">gradient</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
         <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</code>
 <div class="block">Returns the same gradient as gradient(IMoleculeList) and also adds in
  the contribution of the molecules to the pressureTensor.</div>
@@ -150,22 +150,22 @@ extends <a href="../../etomica/api/IPotentialMolecular.html" title="interface in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#virial-etomica.api.IMoleculeList-">virial</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMolecularSoft.html#virial-etomica.molecule.IMoleculeList-">virial</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialMolecular">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialMolecular">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></h3>
-<code><a href="../../etomica/api/IPotentialMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></h3>
+<code><a href="../../etomica/potential/IPotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -181,22 +181,22 @@ extends <a href="../../etomica/api/IPotentialMolecular.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="virial-etomica.api.IMoleculeList-">
+<a name="virial-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>virial</h4>
-<pre>double&nbsp;virial(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms)</pre>
+<pre>double&nbsp;virial(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</pre>
 </li>
 </ul>
-<a name="gradient-etomica.api.IMoleculeList-">
+<a name="gradient-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>gradient</h4>
-<pre><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;gradient(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;gradient(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 <div class="block">Returns the gradient of the potential as it applies to each atom in the 
  given AtomSet, indicating how the energy would change as the position of 
  the first atom is varied.  The method is allowed to return an array of
@@ -204,14 +204,14 @@ extends <a href="../../etomica/api/IPotentialMolecular.html" title="interface in
  IMoleculeList.</div>
 </li>
 </ul>
-<a name="gradient-etomica.api.IMoleculeList-etomica.space.Tensor-">
+<a name="gradient-etomica.molecule.IMoleculeList-etomica.space.Tensor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>gradient</h4>
-<pre><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;gradient(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
-                   <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</pre>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;gradient(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
+                  <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;pressureTensor)</pre>
 <div class="block">Returns the same gradient as gradient(IMoleculeList) and also adds in
  the contribution of the molecules to the pressureTensor.  Their
  contribution is added to the given Tensor.  This combined method exists

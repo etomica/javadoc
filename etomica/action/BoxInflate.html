@@ -149,7 +149,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#dimVector">dimVector</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -157,11 +157,11 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#groupScaler">groupScaler</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomPositionGeometricCenter.html" title="class in etomica.atom">AtomPositionGeometricCenter</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculePositionGeometricCenter.html" title="class in etomica.molecule">MoleculePositionGeometricCenter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#moleculeCenter">moleculeCenter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#scaleVector">scaleVector</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -190,13 +190,13 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.api.IBox-etomica.space.ISpace-">BoxInflate</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-          <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.box.Box-etomica.space.Space-">BoxInflate</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Constructs action ready to be performed on the given box.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.space.ISpace-">BoxInflate</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.space.Space-">BoxInflate</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Constructs action with a default scale of 1.0.</div>
 </td>
 </tr>
@@ -232,7 +232,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#getVectorScale--">getVectorScale</a></span>()</code>
 <div class="block">Returns the current value of the inflation scale in each dimension.</div>
 </td>
@@ -252,7 +252,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#setVectorScale-etomica.api.IVector-">setVectorScale</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;scale)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#setVectorScale-etomica.space.Vector-">setVectorScale</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;scale)</code>
 <div class="block">Sets the scale defining the amount of inflation for each dimension.</div>
 </td>
 </tr>
@@ -270,7 +270,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.action.<a href="../../etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a></h3>
-<code><a href="../../etomica/action/BoxActionAdapter.html#getBox--">getBox</a>, <a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/action/BoxActionAdapter.html#getBox--">getBox</a>, <a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -317,7 +317,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>scaleVector</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> scaleVector</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> scaleVector</pre>
 </li>
 </ul>
 <a name="dimVector">
@@ -326,7 +326,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>dimVector</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dimVector</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dimVector</pre>
 </li>
 </ul>
 <a name="moleculeCenter">
@@ -335,7 +335,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <ul class="blockListLast">
 <li class="blockList">
 <h4>moleculeCenter</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/AtomPositionGeometricCenter.html" title="class in etomica.atom">AtomPositionGeometricCenter</a> moleculeCenter</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/MoleculePositionGeometricCenter.html" title="class in etomica.molecule">MoleculePositionGeometricCenter</a> moleculeCenter</pre>
 </li>
 </ul>
 </li>
@@ -346,25 +346,25 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxInflate-etomica.space.ISpace-">
+<a name="BoxInflate-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>BoxInflate</h4>
-<pre>public&nbsp;BoxInflate(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;BoxInflate(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Constructs action with a default scale of 1.0.  Requires call
  to setBox before action can have any effect.</div>
 </li>
 </ul>
-<a name="BoxInflate-etomica.api.IBox-etomica.space.ISpace-">
+<a name="BoxInflate-etomica.box.Box-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxInflate</h4>
-<pre>public&nbsp;BoxInflate(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                  <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;BoxInflate(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Constructs action ready to be performed on the given box.</div>
 </li>
 </ul>
@@ -404,13 +404,13 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 </dl>
 </li>
 </ul>
-<a name="setVectorScale-etomica.api.IVector-">
+<a name="setVectorScale-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setVectorScale</h4>
-<pre>public&nbsp;void&nbsp;setVectorScale(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;scale)</pre>
+<pre>public&nbsp;void&nbsp;setVectorScale(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;scale)</pre>
 <div class="block">Sets the scale defining the amount of inflation for each dimension. 
  A value of 1.0 causes no change, while a value greater than 1.0 expands 
  the box, and a value less than 1.0 contracts the box. Coordinates 
@@ -424,7 +424,7 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>getVectorScale</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getVectorScale()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getVectorScale()</pre>
 <div class="block">Returns the current value of the inflation scale in each dimension.</div>
 </li>
 </ul>

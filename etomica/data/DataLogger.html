@@ -511,6 +511,15 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 </dl>
 </li>
 </ul>
+<a name="getWriteInterval--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWriteInterval</h4>
+<pre>public&nbsp;int&nbsp;getWriteInterval()</pre>
+</li>
+</ul>
 <a name="setWriteInterval-int-">
 <!--   -->
 </a>
@@ -520,15 +529,6 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <pre>public&nbsp;void&nbsp;setWriteInterval(int&nbsp;newWriteInterval)</pre>
 <div class="block">Define how many number of interval events received between writings to
  file.</div>
-</li>
-</ul>
-<a name="getWriteInterval--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getWriteInterval</h4>
-<pre>public&nbsp;int&nbsp;getWriteInterval()</pre>
 </li>
 </ul>
 <a name="defaultFileName--">
@@ -549,6 +549,15 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <pre>public&nbsp;void&nbsp;closeFile()</pre>
 </li>
 </ul>
+<a name="getFileName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileName</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getFileName()</pre>
+</li>
+</ul>
 <a name="setFileName-java.lang.String-">
 <!--   -->
 </a>
@@ -559,13 +568,13 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <div class="block">Define the name of the output file.</div>
 </li>
 </ul>
-<a name="getFileName--">
+<a name="isAppending--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getFileName</h4>
-<pre>public&nbsp;java.lang.String&nbsp;getFileName()</pre>
+<h4>isAppending</h4>
+<pre>public&nbsp;boolean&nbsp;isAppending()</pre>
 </li>
 </ul>
 <a name="setAppending-boolean-">
@@ -579,13 +588,13 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
  overwrite.</div>
 </li>
 </ul>
-<a name="isAppending--">
+<a name="isSameFileEachTime--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isAppending</h4>
-<pre>public&nbsp;boolean&nbsp;isAppending()</pre>
+<h4>isSameFileEachTime</h4>
+<pre>public&nbsp;boolean&nbsp;isSameFileEachTime()</pre>
 </li>
 </ul>
 <a name="setSameFileEachTime-boolean-">
@@ -599,13 +608,13 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
  end of the simulation. Default is true.</div>
 </li>
 </ul>
-<a name="isSameFileEachTime--">
+<a name="isCloseFileEachTime--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isSameFileEachTime</h4>
-<pre>public&nbsp;boolean&nbsp;isSameFileEachTime()</pre>
+<h4>isCloseFileEachTime</h4>
+<pre>public&nbsp;boolean&nbsp;isCloseFileEachTime()</pre>
 </li>
 </ul>
 <a name="setCloseFileEachTime-boolean-">
@@ -616,15 +625,6 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <h4>setCloseFileEachTime</h4>
 <pre>public&nbsp;void&nbsp;setCloseFileEachTime(boolean&nbsp;closeFileEachTime)</pre>
 <div class="block">Close the file and open a new one at each time INTERVAL. The new file will be named by defaultFileName().</div>
-</li>
-</ul>
-<a name="isCloseFileEachTime--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isCloseFileEachTime</h4>
-<pre>public&nbsp;boolean&nbsp;isCloseFileEachTime()</pre>
 </li>
 </ul>
 <a name="getWriteOnFinishDataSource--">

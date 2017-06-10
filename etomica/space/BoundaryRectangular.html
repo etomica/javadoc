@@ -111,10 +111,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a>, java.io.Serializable</dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/space/BoundaryRectangularNonperiodic.html" title="class in etomica.space">BoundaryRectangularNonperiodic</a>, <a href="../../etomica/space/BoundaryRectangularPeriodic.html" title="class in etomica.space">BoundaryRectangularPeriodic</a>, <a href="../../etomica/space/BoundaryRectangularPore.html" title="class in etomica.space">BoundaryRectangularPore</a>, <a href="../../etomica/space/BoundaryRectangularSlit.html" title="class in etomica.space">BoundaryRectangularSlit</a></dd>
 </dl>
@@ -124,10 +120,6 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></pre>
 <div class="block">Boundary that is in the shape of a rectangular parallelepiped.
  Periodicity in each direction is specified by subclass.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.space.BoundaryRectangular">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -147,11 +139,11 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#dimensions">dimensions</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#edgeVectors">edgeVectors</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -180,19 +172,19 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.ISpace-">BoundaryRectangular</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.Space-">BoundaryRectangular</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
 <div class="block">Constructs cubic boundary of the given periodicity, using the space and default box-size
  given by the Simulation.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.ISpace-double-">BoundaryRectangular</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.Space-double-">BoundaryRectangular</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                    double&nbsp;boxSize)</code>
 <div class="block">Constructs cubic boundary of the given periodicity with each edge of length boxSize</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.ISpace-double:A-">BoundaryRectangular</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#BoundaryRectangular-etomica.space.Space-double:A-">BoundaryRectangular</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                    double[]&nbsp;boxSize)</code>
 <div class="block">Constructs rectangular boundary of the given periodicity with edges given by the
  values in the array boxSize.</div>
@@ -214,14 +206,14 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#getBoxSize--">getBoxSize</a></span>()</code>
 <div class="block">Returns a vector with elements equal to the lengths of the edges of
  the boundary.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#getEdgeVector-int-">getEdgeVector</a></span>(int&nbsp;d)</code>
 <div class="block">Returns the vector that defines the edge of this boundary for the given
  dimension.</div>
@@ -235,7 +227,7 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#setBoxSize-etomica.api.IVector-">setBoxSize</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangular.html#setBoxSize-etomica.space.Vector-">setBoxSize</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Sets the size and shape of the rectangular boundary.</div>
 </td>
 </tr>
@@ -255,7 +247,7 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.space.<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></h3>
-<code><a href="../../etomica/space/Boundary.html#getBox--">getBox</a>, <a href="../../etomica/space/Boundary.html#getCenter--">getCenter</a>, <a href="../../etomica/space/Boundary.html#getEventManager--">getEventManager</a>, <a href="../../etomica/space/Boundary.html#getIndexIterator--">getIndexIterator</a>, <a href="../../etomica/space/Boundary.html#getShape--">getShape</a>, <a href="../../etomica/space/Boundary.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/space/Boundary.html#centralImage-etomica.space.Vector-">centralImage</a>, <a href="../../etomica/space/Boundary.html#getBox--">getBox</a>, <a href="../../etomica/space/Boundary.html#getCenter--">getCenter</a>, <a href="../../etomica/space/Boundary.html#getEventManager--">getEventManager</a>, <a href="../../etomica/space/Boundary.html#getIndexIterator--">getIndexIterator</a>, <a href="../../etomica/space/Boundary.html#getPeriodicity-int-">getPeriodicity</a>, <a href="../../etomica/space/Boundary.html#getShape--">getShape</a>, <a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">nearestImage</a>, <a href="../../etomica/space/Boundary.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -263,13 +255,6 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IBoundary">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></h3>
-<code><a href="../../etomica/api/IBoundary.html#centralImage-etomica.api.IVector-">centralImage</a>, <a href="../../etomica/api/IBoundary.html#getPeriodicity-int-">getPeriodicity</a>, <a href="../../etomica/api/IBoundary.html#nearestImage-etomica.api.IVectorMutable-">nearestImage</a></code></li>
 </ul>
 </li>
 </ul>
@@ -291,7 +276,7 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <ul class="blockList">
 <li class="blockList">
 <h4>dimensions</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dimensions</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dimensions</pre>
 </li>
 </ul>
 <a name="shift0">
@@ -309,7 +294,7 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <ul class="blockListLast">
 <li class="blockList">
 <h4>edgeVectors</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] edgeVectors</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] edgeVectors</pre>
 </li>
 </ul>
 </li>
@@ -320,35 +305,35 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoundaryRectangular-etomica.space.ISpace-">
+<a name="BoundaryRectangular-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>BoundaryRectangular</h4>
-<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Constructs cubic boundary of the given periodicity, using the space and default box-size
  given by the Simulation.</div>
 </li>
 </ul>
-<a name="BoundaryRectangular-etomica.space.ISpace-double-">
+<a name="BoundaryRectangular-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>BoundaryRectangular</h4>
-<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            double&nbsp;boxSize)</pre>
 <div class="block">Constructs cubic boundary of the given periodicity with each edge of length boxSize</div>
 </li>
 </ul>
-<a name="BoundaryRectangular-etomica.space.ISpace-double:A-">
+<a name="BoundaryRectangular-etomica.space.Space-double:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoundaryRectangular</h4>
-<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;BoundaryRectangular(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            double[]&nbsp;boxSize)</pre>
 <div class="block">Constructs rectangular boundary of the given periodicity with edges given by the
  values in the array boxSize.  Length of arrays must equal dimension of space.</div>
@@ -368,27 +353,31 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <ul class="blockList">
 <li class="blockList">
 <h4>getBoxSize</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getBoxSize()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getBoxSize()</pre>
 <div class="block">Returns a vector with elements equal to the lengths of the edges of
  the boundary.  The returned Vector does not represent the values internally,
  so manipulation of the vector has no effect on this BoundaryRectangular instance.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Boundary.html#getBoxSize--">getBoxSize</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the box size</dd>
 </dl>
 </li>
 </ul>
-<a name="setBoxSize-etomica.api.IVector-">
+<a name="setBoxSize-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBoxSize</h4>
-<pre>public&nbsp;void&nbsp;setBoxSize(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;void&nbsp;setBoxSize(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Sets the size and shape of the rectangular boundary.  Values are
  copied, so manipulation of the given vector has no subsequent effect
  on this Boundary instance.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Boundary.html#setBoxSize-etomica.space.Vector-">setBoxSize</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>v</code> - the box's new size</dd>
 </dl>
@@ -413,8 +402,6 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <div class="block">Returns the "volume" of the rectangular region defined by this Boundary.
  For a 2D and 1D spaces, this volume is actually an area and length, respectively.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoundary.html#volume--">volume</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/space/Boundary.html#volume--">volume</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -428,12 +415,14 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdgeVector</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getEdgeVector(int&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoundary.html#getEdgeVector-int-">IBoundary</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getEdgeVector(int&nbsp;d)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Boundary.html#getEdgeVector-int-">Boundary</a></code></span></div>
 <div class="block">Returns the vector that defines the edge of this boundary for the given
  dimension.  All vectors returned by this method can be considered to
  originate from one corner.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/space/Boundary.html#getEdgeVector-int-">getEdgeVector</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>d</code> - the dimension of the desired edge vector</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

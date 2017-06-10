@@ -140,11 +140,11 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#allAtoms">allAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -168,11 +168,11 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#pcForce">pcForce</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -197,10 +197,10 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#SurfaceTensionMapped-etomica.space.ISpace-etomica.api.IBox-etomica.api.ISpecies-etomica.api.IPotentialMaster-">SurfaceTensionMapped</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                    <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                    <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                    <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#SurfaceTensionMapped-etomica.space.Space-etomica.box.Box-etomica.species.ISpecies-etomica.potential.PotentialMaster-">SurfaceTensionMapped</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                    <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                    <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                    <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -226,8 +226,8 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
@@ -247,9 +247,9 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#releaseAgent-etomica.integrator.Integrator.Forcible-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&nbsp;agent,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/surfacetension/SurfaceTensionMapped.html#releaseAgent-etomica.integrator.Integrator.Forcible-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&nbsp;agent,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -316,7 +316,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="pcForce">
@@ -343,7 +343,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="box">
@@ -352,7 +352,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="allAtoms">
@@ -361,7 +361,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>allAtoms</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a> allAtoms</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> allAtoms</pre>
 </li>
 </ul>
 </li>
@@ -372,16 +372,16 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SurfaceTensionMapped-etomica.space.ISpace-etomica.api.IBox-etomica.api.ISpecies-etomica.api.IPotentialMaster-">
+<a name="SurfaceTensionMapped-etomica.space.Space-etomica.box.Box-etomica.species.ISpecies-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SurfaceTensionMapped</h4>
-<pre>public&nbsp;SurfaceTensionMapped(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                            <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                            <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</pre>
+<pre>public&nbsp;SurfaceTensionMapped(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                            <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                            <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
 </li>
 </ul>
 </li>
@@ -457,42 +457,42 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&nbsp;makeAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                                     <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&nbsp;makeAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                     <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.integrator.Integrator.Forcible-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.integrator.Integrator.Forcible-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&nbsp;agent,
-                         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>, <a href="../../../etomica/potential/PotentialPolarizable.html" title="interface in etomica.potential">PotentialPolarizable</a></dd>
+<dd><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>, <a href="../../../etomica/potential/PotentialPolarizable.html" title="interface in etomica.potential">PotentialPolarizable</a></dd>
 </dl>
 <hr>
 <br>
@@ -210,12 +210,12 @@ extends <a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#PNWaterGCPMThreeSite-etomica.space.ISpace-double-boolean-">PNWaterGCPMThreeSite</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#PNWaterGCPMThreeSite-etomica.space.Space-double-boolean-">PNWaterGCPMThreeSite</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                     double&nbsp;minE,
                     boolean&nbsp;isAssociation)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#PNWaterGCPMThreeSite-etomica.space.ISpace-double-boolean-boolean-">PNWaterGCPMThreeSite</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#PNWaterGCPMThreeSite-etomica.space.Space-double-boolean-boolean-">PNWaterGCPMThreeSite</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                     double&nbsp;minE,
                     boolean&nbsp;isAssociation,
                     boolean&nbsp;bondingAngleRestriction)</code>&nbsp;</td>
@@ -237,7 +237,7 @@ extends <a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#energy-etomica.api.IMoleculeList-">energy</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/water/PNWaterGCPMThreeSite.html#energy-etomica.molecule.IMoleculeList-">energy</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</code>
 <div class="block">Returns the interaction energy between the given molecules.</div>
 </td>
 </tr>
@@ -261,7 +261,7 @@ extends <a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.models.water.<a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in etomica.models.water">PNWaterGCPM</a></h3>
-<code><a href="../../../etomica/models/water/PNWaterGCPM.html#getLastPolarizationEnergy--">getLastPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getNonPolarizationEnergy-etomica.api.IMoleculeList-">getNonPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getPolarizationEnergy-etomica.api.IMoleculeList-">getPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getRange--">getRange</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#makeCachedPairPolarization--">makeCachedPairPolarization</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#setComponent-etomica.models.water.PNWaterGCPM.Component-">setComponent</a></code></li>
+<code><a href="../../../etomica/models/water/PNWaterGCPM.html#getLastPolarizationEnergy--">getLastPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getNonPolarizationEnergy-etomica.molecule.IMoleculeList-">getNonPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getPolarizationEnergy-etomica.molecule.IMoleculeList-">getPolarizationEnergy</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#getRange--">getRange</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#makeCachedPairPolarization--">makeCachedPairPolarization</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/models/water/PNWaterGCPM.html#setComponent-etomica.models.water.PNWaterGCPM.Component-">setComponent</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialMolecular">
@@ -369,25 +369,25 @@ extends <a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PNWaterGCPMThreeSite-etomica.space.ISpace-double-boolean-boolean-">
+<a name="PNWaterGCPMThreeSite-etomica.space.Space-double-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PNWaterGCPMThreeSite</h4>
-<pre>public&nbsp;PNWaterGCPMThreeSite(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;PNWaterGCPMThreeSite(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                             double&nbsp;minE,
                             boolean&nbsp;isAssociation,
                             boolean&nbsp;bondingAngleRestriction)</pre>
 </li>
 </ul>
-<a name="PNWaterGCPMThreeSite-etomica.space.ISpace-double-boolean-">
+<a name="PNWaterGCPMThreeSite-etomica.space.Space-double-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PNWaterGCPMThreeSite</h4>
-<pre>public&nbsp;PNWaterGCPMThreeSite(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;PNWaterGCPMThreeSite(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                             double&nbsp;minE,
                             boolean&nbsp;isAssociation)</pre>
 </li>
@@ -400,21 +400,21 @@ extends <a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="energy-etomica.api.IMoleculeList-">
+<a name="energy-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#energy-etomica.api.IMoleculeList-">PotentialMolecular</a></code></span></div>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">PotentialMolecular</a></code></span></div>
 <div class="block">Returns the interaction energy between the given molecules.  There might
  be 0, 1, 2 or more atoms in the IMoleculeList.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/models/water/PNWaterGCPM.html#energy-etomica.api.IMoleculeList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in etomica.models.water">PNWaterGCPM</a></code></dd>
+<dd><code><a href="../../../etomica/models/water/PNWaterGCPM.html#energy-etomica.molecule.IMoleculeList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/models/water/PNWaterGCPM.html" title="class in etomica.models.water">PNWaterGCPM</a></code></dd>
 </dl>
 </li>
 </ul>

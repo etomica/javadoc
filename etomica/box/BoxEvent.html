@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/box/BoxEventManager.html" title="class in etomica.box"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/box/BoxEvent.html" target="_top">Frames</a></li>
@@ -106,24 +106,17 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a>, java.io.Serializable</dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../etomica/box/BoxAtomEvent.html" title="class in etomica.box">BoxAtomEvent</a>, <a href="../../etomica/box/BoxGlobalAtomIndexEvent.html" title="class in etomica.box">BoxGlobalAtomIndexEvent</a>, <a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>, <a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>, <a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a></dd>
+<dd><a href="../../etomica/box/BoxAtomEvent.html" title="class in etomica.box">BoxAtomEvent</a>, <a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>, <a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>, <a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">BoxEvent</span>
-extends java.lang.Object
-implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a></pre>
-<div class="block">Event that conveys some happening with respect to a box or the things it contains.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box"><code>BoxListenerAdapter</code></a>, 
-<a href="../../serialized-form.html#etomica.box.BoxEvent">Serialized Form</a></dd>
-</dl>
+<pre>public abstract class <span class="typeNameLabel">BoxEvent</span>
+extends java.lang.Object</pre>
+<div class="block">A box event fired by the box's event manager.  The box that changed is
+ available via getBox.  Other details can be inferred from the other
+ interfaces implemented by the event object and/or obtained from calling
+ methods on those interfaces.</div>
 </li>
 </ul>
 </div>
@@ -143,7 +136,7 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEvent.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -161,7 +154,7 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEvent.html#BoxEvent-etomica.api.IBox-">BoxEvent</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEvent.html#BoxEvent-etomica.box.Box-">BoxEvent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,7 +172,7 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEvent.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -210,7 +203,7 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 </li>
@@ -221,13 +214,13 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxEvent-etomica.api.IBox-">
+<a name="BoxEvent-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxEvent</h4>
-<pre>public&nbsp;BoxEvent(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;BoxEvent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -244,10 +237,8 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxEvent.html#getBox--">getBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the box that changed and triggered the event</dd>
 </dl>
@@ -281,7 +272,7 @@ implements java.io.Serializable, <a href="../../etomica/api/IBoxEvent.html" titl
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/box/BoxEventManager.html" title="class in etomica.box"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/box/BoxEvent.html" target="_top">Frames</a></li>

@@ -194,11 +194,11 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#CoordinateDefinitionHexane-etomica.api.ISimulation-etomica.api.IBox-etomica.lattice.crystal.Primitive-etomica.models.hexane.SpeciesHexane-etomica.space.ISpace-">CoordinateDefinitionHexane</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                          <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#CoordinateDefinitionHexane-etomica.simulation.Simulation-etomica.box.Box-etomica.lattice.crystal.Primitive-etomica.models.hexane.SpeciesHexane-etomica.space.Space-">CoordinateDefinitionHexane</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                          <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                           <a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                           <a href="../../../etomica/models/hexane/SpeciesHexane.html" title="class in etomica.models.hexane">SpeciesHexane</a>&nbsp;species,
-                          <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+                          <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -217,14 +217,14 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#calcU-etomica.api.IMoleculeList-">calcU</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#calcU-etomica.molecule.IMoleculeList-">calcU</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Calculates the generalized coordinates for the given molecules in their
  current position and orientation.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#initNominalU-etomica.api.IMoleculeList-">initNominalU</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#initNominalU-etomica.molecule.IMoleculeList-">initNominalU</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Override if nominal U is more than the lattice position of the molecule</div>
 </td>
 </tr>
@@ -238,7 +238,7 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#setToU-etomica.api.IMoleculeList-double:A-">setToU</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/hexane/CoordinateDefinitionHexane.html#setToU-etomica.molecule.IMoleculeList-double:A-">setToU</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms,
       double[]&nbsp;u)</code>
 <div class="block">Set all the molecules in a cell to a position and orientation that corresponds to the
  given generalized coordinate.</div>
@@ -250,14 +250,14 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.normalmode.<a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></h3>
-<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#getLatticePosition-etomica.api.IMolecule-">getLatticePosition</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#getPositionDefinition--">getPositionDefinition</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initializeCoordinates-int:A-">initializeCoordinates</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setInitVolume-etomica.api.IVector-">setInitVolume</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setPositionDefinition-etomica.atom.IAtomPositionDefinition-">setPositionDefinition</a></code></li>
+<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#getLatticePosition-etomica.molecule.IMolecule-">getLatticePosition</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#getPositionDefinition--">getPositionDefinition</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initializeCoordinates-int:A-">initializeCoordinates</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setInitVolume-etomica.space.Vector-">setInitVolume</a>, <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setPositionDefinition</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.normalmode.CoordinateDefinition">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.normalmode.<a href="../../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a></h3>
-<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#calcT-etomica.api.IVector-double:A-double:A-">calcT</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBasis--">getBasis</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBasisCells--">getBasisCells</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBox--">getBox</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getCoordinateDim--">getCoordinateDim</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getLatticePosition-etomica.api.IAtom-">getLatticePosition</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getPrimitive--">getPrimitive</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getSiteManager--">getSiteManager</a></code></li>
+<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#calcT-etomica.space.Vector-double:A-double:A-">calcT</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBasis--">getBasis</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBasisCells--">getBasisCells</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getBox--">getBox</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getCoordinateDim--">getCoordinateDim</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getLatticePosition-etomica.atom.IAtom-">getLatticePosition</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getPrimitive--">getPrimitive</a>, <a href="../../../etomica/normalmode/CoordinateDefinition.html#getSiteManager--">getSiteManager</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -280,17 +280,17 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CoordinateDefinitionHexane-etomica.api.ISimulation-etomica.api.IBox-etomica.lattice.crystal.Primitive-etomica.models.hexane.SpeciesHexane-etomica.space.ISpace-">
+<a name="CoordinateDefinitionHexane-etomica.simulation.Simulation-etomica.box.Box-etomica.lattice.crystal.Primitive-etomica.models.hexane.SpeciesHexane-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CoordinateDefinitionHexane</h4>
-<pre>public&nbsp;CoordinateDefinitionHexane(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                  <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;CoordinateDefinitionHexane(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                  <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                   <a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                                   <a href="../../../etomica/models/hexane/SpeciesHexane.html" title="class in etomica.models.hexane">SpeciesHexane</a>&nbsp;species,
-                                  <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                  <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -301,53 +301,53 @@ extends <a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="calcU-etomica.api.IMoleculeList-">
+<a name="calcU-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcU</h4>
-<pre>public&nbsp;double[]&nbsp;calcU(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#calcU-etomica.api.IMoleculeList-">CoordinateDefinition</a></code></span></div>
+<pre>public&nbsp;double[]&nbsp;calcU(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#calcU-etomica.molecule.IMoleculeList-">CoordinateDefinition</a></code></span></div>
 <div class="block">Calculates the generalized coordinates for the given molecules in their
  current position and orientation.  The result is stored in the |u| field.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#calcU-etomica.api.IMoleculeList-">calcU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
+<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#calcU-etomica.molecule.IMoleculeList-">calcU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>molecules</code> - The molecules of interest, which should be those forming a unit cell of the lattice</dd>
 </dl>
 </li>
 </ul>
-<a name="initNominalU-etomica.api.IMoleculeList-">
+<a name="initNominalU-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initNominalU</h4>
-<pre>public&nbsp;void&nbsp;initNominalU(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initNominalU-etomica.api.IMoleculeList-">CoordinateDefinitionMolecule</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initNominalU(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initNominalU-etomica.molecule.IMoleculeList-">CoordinateDefinitionMolecule</a></code></span></div>
 <div class="block">Override if nominal U is more than the lattice position of the molecule</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initNominalU-etomica.api.IMoleculeList-">initNominalU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
+<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#initNominalU-etomica.molecule.IMoleculeList-">initNominalU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setToU-etomica.api.IMoleculeList-double:A-">
+<a name="setToU-etomica.molecule.IMoleculeList-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToU</h4>
-<pre>public&nbsp;void&nbsp;setToU(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms,
+<pre>public&nbsp;void&nbsp;setToU(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms,
                    double[]&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#setToU-etomica.api.IMoleculeList-double:A-">CoordinateDefinition</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinition.html#setToU-etomica.molecule.IMoleculeList-double:A-">CoordinateDefinition</a></code></span></div>
 <div class="block">Set all the molecules in a cell to a position and orientation that corresponds to the
  given generalized coordinate. |u| must be of length getCoordinateDim()</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setToU-etomica.api.IMoleculeList-double:A-">setToU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
+<dd><code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html#setToU-etomica.molecule.IMoleculeList-double:A-">setToU</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/normalmode/CoordinateDefinitionMolecule.html" title="class in etomica.normalmode">CoordinateDefinitionMolecule</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atoms</code> - The molecules of interest</dd>
 <dd><code>u</code> - The generalized coordinate that defines the position and

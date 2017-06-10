@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/potential/IPotentialAtomicMultibody.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>, <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential">IPotentialMolecularTorque</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html" title="interface in etomica.potential">PotentialMolecularSoft</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>, <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential">IPotentialMolecularTorque</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html" title="interface in etomica.potential">PotentialMolecularSoft</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -129,7 +129,7 @@ extends <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotentialMolecularSecondDerivative.html#secondDerivative-etomica.api.IMoleculeList-">secondDerivative</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotentialMolecularSecondDerivative.html#secondDerivative-etomica.molecule.IMoleculeList-">secondDerivative</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -137,28 +137,28 @@ extends <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential">IPotentialMolecularTorque</a></h3>
-<code><a href="../../etomica/potential/IPotentialMolecularTorque.html#gradientAndTorque-etomica.api.IMoleculeList-">gradientAndTorque</a></code></li>
+<code><a href="../../etomica/potential/IPotentialMolecularTorque.html#gradientAndTorque-etomica.molecule.IMoleculeList-">gradientAndTorque</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialMolecularSoft">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/PotentialMolecularSoft.html" title="interface in etomica.potential">PotentialMolecularSoft</a></h3>
-<code><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.api.IMoleculeList-">gradient</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.api.IMoleculeList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html#virial-etomica.api.IMoleculeList-">virial</a></code></li>
+<code><a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.molecule.IMoleculeList-">gradient</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html#gradient-etomica.molecule.IMoleculeList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialMolecularSoft.html#virial-etomica.molecule.IMoleculeList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialMolecular">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialMolecular">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></h3>
-<code><a href="../../etomica/api/IPotentialMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></h3>
+<code><a href="../../etomica/potential/IPotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -174,13 +174,13 @@ extends <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="secondDerivative-etomica.api.IMoleculeList-">
+<a name="secondDerivative-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>secondDerivative</h4>
-<pre><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[]&nbsp;secondDerivative(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
+<pre><a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[]&nbsp;secondDerivative(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 </li>
 </ul>
 </li>
@@ -210,7 +210,7 @@ extends <a href="../../etomica/potential/IPotentialMolecularTorque.html" title="
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/potential/IPotentialAtomicMultibody.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

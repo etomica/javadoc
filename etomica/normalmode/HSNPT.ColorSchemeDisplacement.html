@@ -184,11 +184,11 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#summer">summer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#v">v</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#v2">v2</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -213,8 +213,8 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#ColorSchemeDisplacement-etomica.normalmode.CoordinateDefinition-etomica.space.ISpace-etomica.normalmode.HSNPT.ActionSummer-">ColorSchemeDisplacement</a></span>(<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;cDef,
-                       <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#ColorSchemeDisplacement-etomica.normalmode.CoordinateDefinition-etomica.space.Space-etomica.normalmode.HSNPT.ActionSummer-">ColorSchemeDisplacement</a></span>(<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;cDef,
+                       <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                        <a href="../../etomica/normalmode/HSNPT.ActionSummer.html" title="class in etomica.normalmode">HSNPT.ActionSummer</a>&nbsp;summer)</code>&nbsp;</td>
 </tr>
 </table>
@@ -234,7 +234,7 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.awt.Color</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/HSNPT.ColorSchemeDisplacement.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -297,6 +297,33 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="v">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>v</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> v</pre>
+</li>
+</ul>
+<a name="v2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>v2</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> v2</pre>
+</li>
+</ul>
+<a name="summer">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>summer</h4>
+<pre>protected final&nbsp;<a href="../../etomica/normalmode/HSNPT.ActionSummer.html" title="class in etomica.normalmode">HSNPT.ActionSummer</a> summer</pre>
+</li>
+</ul>
 <a name="coordinateDefinition">
 <!--   -->
 </a>
@@ -351,33 +378,6 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <pre>protected&nbsp;boolean fluctuationFromAvg</pre>
 </li>
 </ul>
-<a name="v">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>v</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> v</pre>
-</li>
-</ul>
-<a name="v2">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>v2</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> v2</pre>
-</li>
-</ul>
-<a name="summer">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>summer</h4>
-<pre>protected final&nbsp;<a href="../../etomica/normalmode/HSNPT.ActionSummer.html" title="class in etomica.normalmode">HSNPT.ActionSummer</a> summer</pre>
-</li>
-</ul>
 <a name="mysum">
 <!--   -->
 </a>
@@ -395,14 +395,14 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeDisplacement-etomica.normalmode.CoordinateDefinition-etomica.space.ISpace-etomica.normalmode.HSNPT.ActionSummer-">
+<a name="ColorSchemeDisplacement-etomica.normalmode.CoordinateDefinition-etomica.space.Space-etomica.normalmode.HSNPT.ActionSummer-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeDisplacement</h4>
 <pre>public&nbsp;ColorSchemeDisplacement(<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;cDef,
-                               <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+                               <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                <a href="../../etomica/normalmode/HSNPT.ActionSummer.html" title="class in etomica.normalmode">HSNPT.ActionSummer</a>&nbsp;summer)</pre>
 </li>
 </ul>
@@ -486,16 +486,16 @@ extends <a href="../../etomica/graphics/ColorScheme.html" title="class in etomic
 <pre>public&nbsp;void&nbsp;setNominalFluctuation(double&nbsp;newNominalFlucutation)</pre>
 </li>
 </ul>
-<a name="getAtomColor-etomica.api.IAtom-">
+<a name="getAtomColor-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAtomColor</h4>
-<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/graphics/ColorScheme.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/graphics/ColorScheme.html" title="class in etomica.graphics">ColorScheme</a></code></dd>
+<dd><code><a href="../../etomica/graphics/ColorScheme.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/graphics/ColorScheme.html" title="class in etomica.graphics">ColorScheme</a></code></dd>
 </dl>
 </li>
 </ul>

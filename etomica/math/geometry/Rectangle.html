@@ -169,12 +169,12 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#Rectangle-etomica.space.ISpace-">Rectangle</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#Rectangle-etomica.space.Space-">Rectangle</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</code>
 <div class="block">Constructs a square rectangle of unit size.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#Rectangle-etomica.space.ISpace-double-double-">Rectangle</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#Rectangle-etomica.space.Space-double-double-">Rectangle</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
          double&nbsp;xLength,
          double&nbsp;yLength)</code>
 <div class="block">Constructs a rectangle with edge lengths having the given values.</div>
@@ -197,7 +197,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#contains-etomica.api.IVector-">contains</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#contains-etomica.space.Vector-">contains</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns <code>true</code> if the given vector lies inside (or on the surface of)
  this cell, <code>false</code> otherwise.</div>
 </td>
@@ -209,7 +209,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#getEdgeLengths--">getEdgeLengths</a></span>()</code>
 <div class="block">Returns a vector with elements equal to the
  edge lengths of the rectangle.</div>
@@ -228,7 +228,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#setEdgeLengths-etomica.api.IVector-">setEdgeLengths</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Rectangle.html#setEdgeLengths-etomica.space.Vector-">setEdgeLengths</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;e)</code>
 <div class="block">Sets the two edge lengths of the rectangle, taking
  each element of the given vector for the length of
  the corresponding rectangle edge.</div>
@@ -254,7 +254,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.math.geometry.<a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></h3>
-<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -277,23 +277,23 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Rectangle-etomica.space.ISpace-">
+<a name="Rectangle-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Rectangle</h4>
-<pre>public&nbsp;Rectangle(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace)</pre>
+<pre>public&nbsp;Rectangle(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace)</pre>
 <div class="block">Constructs a square rectangle of unit size.</div>
 </li>
 </ul>
-<a name="Rectangle-etomica.space.ISpace-double-double-">
+<a name="Rectangle-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Rectangle</h4>
-<pre>public&nbsp;Rectangle(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
+<pre>public&nbsp;Rectangle(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
                  double&nbsp;xLength,
                  double&nbsp;yLength)</pre>
 <div class="block">Constructs a rectangle with edge lengths having the given values.</div>
@@ -335,36 +335,36 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 </dl>
 </li>
 </ul>
-<a name="contains-etomica.api.IVector-">
+<a name="contains-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Returns <code>true</code> if the given vector lies inside (or on the surface of)
  this cell, <code>false</code> otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setEdgeLengths-etomica.api.IVector-">
+<a name="setEdgeLengths-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setEdgeLengths</h4>
-<pre>public&nbsp;void&nbsp;setEdgeLengths(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;e)</pre>
+<pre>public&nbsp;void&nbsp;setEdgeLengths(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;e)</pre>
 <div class="block">Sets the two edge lengths of the rectangle, taking
  each element of the given vector for the length of
  the corresponding rectangle edge.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Rectangular.html#setEdgeLengths-etomica.api.IVector-">setEdgeLengths</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Rectangular.html" title="interface in etomica.math.geometry">Rectangular</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Rectangular.html#setEdgeLengths-etomica.space.Vector-">setEdgeLengths</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Rectangular.html" title="interface in etomica.math.geometry">Rectangular</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -374,7 +374,7 @@ implements <a href="../../../etomica/math/geometry/Rectangular.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdgeLengths</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getEdgeLengths()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getEdgeLengths()</pre>
 <div class="block">Returns a vector with elements equal to the
  edge lengths of the rectangle.  The returned vector is not
  used to represent the rectangle internally, so changing its

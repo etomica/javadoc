@@ -129,18 +129,18 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.api.IMoleculeList-">accept</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.molecule.IMoleculeList-">accept</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#needUpdate-etomica.api.IMolecule-">needUpdate</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#needUpdate-etomica.molecule.IMolecule-">needUpdate</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Indicates whether the neighbor list for the given molecule should
  be updated, according to this criterion.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#reset-etomica.api.IMolecule-">reset</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#reset-etomica.molecule.IMolecule-">reset</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Indicates to criterion that given molecule's neighbor list has just been 
  updated, and that properties (e.g., record of molecule's position) 
  used by needUpdate and unsafe() methods should be reset.</div>
@@ -148,7 +148,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Specifies the box where the criterion is being applied.</div>
 </td>
 </tr>
@@ -173,22 +173,22 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IMoleculeList-">
+<a name="accept-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>boolean&nbsp;accept(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</pre>
+<pre>boolean&nbsp;accept(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</pre>
 </li>
 </ul>
-<a name="needUpdate-etomica.api.IMolecule-">
+<a name="needUpdate-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>needUpdate</h4>
-<pre>boolean&nbsp;needUpdate(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>boolean&nbsp;needUpdate(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Indicates whether the neighbor list for the given molecule should
  be updated, according to this criterion.</div>
 <dl>
@@ -197,13 +197,13 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Specifies the box where the criterion is being applied.  Sometimes
  needed if the criterion depends on features of the box, such as the
  boundary.</div>
@@ -222,13 +222,13 @@ var activeTableTab = "activeTableTab";
  errors in the calculation.</div>
 </li>
 </ul>
-<a name="reset-etomica.api.IMolecule-">
+<a name="reset-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reset</h4>
-<pre>void&nbsp;reset(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>void&nbsp;reset(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Indicates to criterion that given molecule's neighbor list has just been 
  updated, and that properties (e.g., record of molecule's position) 
  used by needUpdate and unsafe() methods should be reset.</div>

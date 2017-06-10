@@ -163,7 +163,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#doCorti">doCorti</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -171,7 +171,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#inflate">inflate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#nominalBoxSize">nominalBoxSize</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -183,17 +183,17 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#temperature">temperature</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code>static <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#uLat0">uLat0</a></span></code>
 <div class="block">Nominal function for lattice energy</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#uLatFunction">uLatFunction</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#uLatTruncFunction">uLatTruncFunction</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -232,10 +232,10 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#MCMoveVolumeSolid-etomica.api.IPotentialMaster-etomica.normalmode.CoordinateDefinition-etomica.api.IRandom-etomica.space.ISpace-double-">MCMoveVolumeSolid</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#MCMoveVolumeSolid-etomica.potential.PotentialMaster-etomica.normalmode.CoordinateDefinition-etomica.util.random.IRandom-etomica.space.Space-double-">MCMoveVolumeSolid</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                  <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordinateDefinition,
-                 <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                 <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+                 <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                 <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                  double&nbsp;pressure)</code>&nbsp;</td>
 </tr>
 </table>
@@ -295,11 +295,11 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#getPressureDimension--">getPressureDimension</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#getULatFunction--">getULatFunction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#getULatTruncFunction--">getULatTruncFunction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -311,7 +311,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
@@ -327,13 +327,13 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setULatFunction-etomica.util.Function-">setULatFunction</a></span>(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatFunction)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setULatFunction-etomica.math.function.Function-">setULatFunction</a></span>(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatFunction)</code>
 <div class="block">Sets a function that returns the lattice energy for a given density.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setULatTruncFunction-etomica.util.Function-">setULatTruncFunction</a></span>(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatTruncFunction)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolid.html#setULatTruncFunction-etomica.math.function.Function-">setULatTruncFunction</a></span>(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatTruncFunction)</code>
 <div class="block">Sets a function that returns the lattice energy for a given density
  using the same truncation as the potentials in the system.</div>
 </td>
@@ -351,7 +351,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -432,7 +432,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="nominalBoxSize">
@@ -441,7 +441,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>nominalBoxSize</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> nominalBoxSize</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> nominalBoxSize</pre>
 </li>
 </ul>
 <a name="uLatFunction">
@@ -450,7 +450,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>uLatFunction</h4>
-<pre>protected&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a> uLatFunction</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a> uLatFunction</pre>
 </li>
 </ul>
 <a name="uLatTruncFunction">
@@ -459,7 +459,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>uLatTruncFunction</h4>
-<pre>protected&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a> uLatTruncFunction</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a> uLatTruncFunction</pre>
 </li>
 </ul>
 <a name="doCorti">
@@ -481,7 +481,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockListLast">
 <li class="blockList">
 <h4>uLat0</h4>
-<pre>public static final&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a> uLat0</pre>
+<pre>public static final&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a> uLat0</pre>
 <div class="block">Nominal function for lattice energy</div>
 </li>
 </ul>
@@ -493,16 +493,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveVolumeSolid-etomica.api.IPotentialMaster-etomica.normalmode.CoordinateDefinition-etomica.api.IRandom-etomica.space.ISpace-double-">
+<a name="MCMoveVolumeSolid-etomica.potential.PotentialMaster-etomica.normalmode.CoordinateDefinition-etomica.util.random.IRandom-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveVolumeSolid</h4>
-<pre>public&nbsp;MCMoveVolumeSolid(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<pre>public&nbsp;MCMoveVolumeSolid(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                          <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordinateDefinition,
-                         <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                         <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+                         <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                         <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                          double&nbsp;pressure)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -519,19 +519,19 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">MCMoveBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
 <div class="block">Sets the box on which this move acts.  The box itself can be changed
  via this method, if desired.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -549,13 +549,13 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
  separate.</div>
 </li>
 </ul>
-<a name="setULatFunction-etomica.util.Function-">
+<a name="setULatFunction-etomica.math.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setULatFunction</h4>
-<pre>public&nbsp;void&nbsp;setULatFunction(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatFunction)</pre>
+<pre>public&nbsp;void&nbsp;setULatFunction(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatFunction)</pre>
 <div class="block">Sets a function that returns the lattice energy for a given density.
  If not set, the default lattice energy is taken to be 0 for all densities.</div>
 </li>
@@ -566,16 +566,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getULatFunction</h4>
-<pre>public&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;getULatFunction()</pre>
+<pre>public&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;getULatFunction()</pre>
 </li>
 </ul>
-<a name="setULatTruncFunction-etomica.util.Function-">
+<a name="setULatTruncFunction-etomica.math.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setULatTruncFunction</h4>
-<pre>public&nbsp;void&nbsp;setULatTruncFunction(<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;newULatTruncFunction)</pre>
+<pre>public&nbsp;void&nbsp;setULatTruncFunction(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatTruncFunction)</pre>
 <div class="block">Sets a function that returns the lattice energy for a given density
  using the same truncation as the potentials in the system.  If not set,
  the default lattice energy is taken to be 0 for all densities.</div>
@@ -587,7 +587,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getULatTruncFunction</h4>
-<pre>public&nbsp;<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>&nbsp;getULatTruncFunction()</pre>
+<pre>public&nbsp;<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;getULatTruncFunction()</pre>
 </li>
 </ul>
 <a name="doTrial--">

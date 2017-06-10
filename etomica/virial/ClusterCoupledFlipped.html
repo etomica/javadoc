@@ -157,11 +157,11 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#minFlipDistance">minFlipDistance</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#positionDefinition">positionDefinition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -187,14 +187,14 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.ISpace-">ClusterCoupledFlipped</a></span>(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
-                     <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.Space-">ClusterCoupledFlipped</a></span>(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
+                     <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">cluster must have caching disabled</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.ISpace-double-">ClusterCoupledFlipped</a></span>(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
-                     <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.Space-double-">ClusterCoupledFlipped</a></span>(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
+                     <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                      double&nbsp;minFlipDistance)</code>
 <div class="block">cluster must have caching disabled
  configurations will be flipped when the minimum distance between any two molecules
@@ -218,7 +218,7 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#flip-etomica.api.IMolecule-">flip</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;flippedMolecule)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlipped.html#flip-etomica.molecule.IMolecule-">flip</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;flippedMolecule)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a></code></td>
@@ -284,7 +284,7 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="cPairID">
@@ -338,7 +338,7 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>positionDefinition</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a> positionDefinition</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
 </li>
 </ul>
 <a name="minFlipDistance">
@@ -358,25 +358,25 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.ISpace-">
+<a name="ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ClusterCoupledFlipped</h4>
 <pre>public&nbsp;ClusterCoupledFlipped(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
-                             <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">cluster must have caching disabled</div>
 </li>
 </ul>
-<a name="ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.ISpace-double-">
+<a name="ClusterCoupledFlipped-etomica.virial.ClusterAbstract-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ClusterCoupledFlipped</h4>
 <pre>public&nbsp;ClusterCoupledFlipped(<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;cluster,
-                             <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                              double&nbsp;minFlipDistance)</pre>
 <div class="block">cluster must have caching disabled
  configurations will be flipped when the minimum distance between any two molecules
@@ -448,13 +448,13 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="flip-etomica.api.IMolecule-">
+<a name="flip-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>flip</h4>
-<pre>protected&nbsp;void&nbsp;flip(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;flippedMolecule)</pre>
+<pre>protected&nbsp;void&nbsp;flip(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;flippedMolecule)</pre>
 </li>
 </ul>
 <a name="setTemperature-double-">

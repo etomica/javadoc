@@ -203,9 +203,9 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="clas
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomNPath.html#MCMoveAtomNPath-etomica.api.IRandom-etomica.potential.PotentialMaster-etomica.space.ISpace-etomica.freeenergy.npath.P1ImageHarmonic-">MCMoveAtomNPath</a></span>(<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomNPath.html#MCMoveAtomNPath-etomica.util.random.IRandom-etomica.potential.PotentialMaster-etomica.space.Space-etomica.freeenergy.npath.P1ImageHarmonic-">MCMoveAtomNPath</a></span>(<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
-               <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+               <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                <a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a>&nbsp;p1)</code>&nbsp;</td>
 </tr>
 </table>
@@ -243,7 +243,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -257,7 +257,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -313,15 +313,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="clas
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveAtomNPath-etomica.api.IRandom-etomica.potential.PotentialMaster-etomica.space.ISpace-etomica.freeenergy.npath.P1ImageHarmonic-">
+<a name="MCMoveAtomNPath-etomica.util.random.IRandom-etomica.potential.PotentialMaster-etomica.space.Space-etomica.freeenergy.npath.P1ImageHarmonic-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveAtomNPath</h4>
-<pre>public&nbsp;MCMoveAtomNPath(<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;MCMoveAtomNPath(<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                        <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
-                       <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+                       <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                        <a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a>&nbsp;p1)</pre>
 </li>
 </ul>

@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -155,11 +155,11 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#isDynamic">isDynamic</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#leafAtomType">leafAtomType</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -184,18 +184,18 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.space.ISpace-etomica.api.IAtomType-">SpeciesSpheresMono</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                  <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;leafAtomType)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.space.ISpace-etomica.api.IElement-">SpeciesSpheresMono</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                  <a href="../../etomica/api/IElement.html" title="interface in etomica.api">IElement</a>&nbsp;element)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.simulation.Simulation-etomica.space.ISpace-">SpeciesSpheresMono</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                  <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.simulation.Simulation-etomica.space.Space-">SpeciesSpheresMono</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
 <div class="block">Constructs instance with a default element</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.space.Space-etomica.atom.AtomType-">SpeciesSpheresMono</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                  <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;leafAtomType)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#SpeciesSpheresMono-etomica.space.Space-etomica.chem.elements.IElement-">SpeciesSpheresMono</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                  <a href="../../etomica/chem/elements/IElement.html" title="interface in etomica.chem.elements">IElement</a>&nbsp;element)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -213,7 +213,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#getLeafType--">getLeafType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -225,11 +225,11 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#isDynamic--">isDynamic</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#makeLeafAtom--">makeLeafAtom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresMono.html#makeMolecule--">makeMolecule</a></span>()</code>
 <div class="block">Constructs a new group.</div>
 </td>
@@ -244,7 +244,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#addChildType-etomica.api.IAtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#getSpecies--">getSpecies</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.api.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.api.IAtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
+<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -273,25 +273,25 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
-</li>
-</ul>
-<a name="isDynamic">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>protected&nbsp;boolean isDynamic</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="leafAtomType">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>leafAtomType</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a> leafAtomType</pre>
+<pre>protected final&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> leafAtomType</pre>
+</li>
+</ul>
+<a name="isDynamic">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isDynamic</h4>
+<pre>protected&nbsp;boolean isDynamic</pre>
 </li>
 </ul>
 </li>
@@ -302,35 +302,35 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpeciesSpheresMono-etomica.simulation.Simulation-etomica.space.ISpace-">
+<a name="SpeciesSpheresMono-etomica.simulation.Simulation-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SpeciesSpheresMono</h4>
 <pre>public&nbsp;SpeciesSpheresMono(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                          <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Constructs instance with a default element</div>
 </li>
 </ul>
-<a name="SpeciesSpheresMono-etomica.space.ISpace-etomica.api.IElement-">
+<a name="SpeciesSpheresMono-etomica.space.Space-etomica.chem.elements.IElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SpeciesSpheresMono</h4>
-<pre>public&nbsp;SpeciesSpheresMono(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                          <a href="../../etomica/api/IElement.html" title="interface in etomica.api">IElement</a>&nbsp;element)</pre>
+<pre>public&nbsp;SpeciesSpheresMono(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                          <a href="../../etomica/chem/elements/IElement.html" title="interface in etomica.chem.elements">IElement</a>&nbsp;element)</pre>
 </li>
 </ul>
-<a name="SpeciesSpheresMono-etomica.space.ISpace-etomica.api.IAtomType-">
+<a name="SpeciesSpheresMono-etomica.space.Space-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpeciesSpheresMono</h4>
-<pre>public&nbsp;SpeciesSpheresMono(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                          <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;leafAtomType)</pre>
+<pre>public&nbsp;SpeciesSpheresMono(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                          <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;leafAtomType)</pre>
 </li>
 </ul>
 </li>
@@ -365,7 +365,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <ul class="blockList">
 <li class="blockList">
 <h4>getLeafType</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;getLeafType()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getLeafType()</pre>
 </li>
 </ul>
 <a name="makeMolecule--">
@@ -374,7 +374,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <ul class="blockList">
 <li class="blockList">
 <h4>makeMolecule</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;makeMolecule()</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;makeMolecule()</pre>
 <div class="block">Constructs a new group.</div>
 </li>
 </ul>
@@ -384,7 +384,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <ul class="blockList">
 <li class="blockList">
 <h4>makeLeafAtom</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;makeLeafAtom()</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;makeLeafAtom()</pre>
 </li>
 </ul>
 <a name="getNumLeafAtoms--">

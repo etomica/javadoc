@@ -171,7 +171,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#basis">basis</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -191,11 +191,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#primitive">primitive</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#siteManager">siteManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -213,17 +213,17 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#CoordinateDefinition-etomica.api.IBox-int-etomica.lattice.crystal.Primitive-etomica.lattice.crystal.Basis-etomica.space.ISpace-">CoordinateDefinition</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#CoordinateDefinition-etomica.box.Box-int-etomica.lattice.crystal.Primitive-etomica.lattice.crystal.Basis-etomica.space.Space-">CoordinateDefinition</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                     int&nbsp;coordinateDim,
                     <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                     <a href="../../etomica/lattice/crystal/Basis.html" title="class in etomica.lattice.crystal">Basis</a>&nbsp;basis,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#CoordinateDefinition-etomica.api.IBox-int-etomica.lattice.crystal.Primitive-etomica.space.ISpace-">CoordinateDefinition</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#CoordinateDefinition-etomica.box.Box-int-etomica.lattice.crystal.Primitive-etomica.space.Space-">CoordinateDefinition</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                     int&nbsp;coordinateDim,
                     <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -242,7 +242,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#calcT-etomica.api.IVector-double:A-double:A-">calcT</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;k,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#calcT-etomica.space.Vector-double:A-double:A-">calcT</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;k,
      double[]&nbsp;realT,
      double[]&nbsp;imaginaryT)</code>
 <div class="block">Calculates the complex "T vector", which is collective coordinate given
@@ -251,7 +251,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#calcU-etomica.api.IMoleculeList-">calcU</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#calcU-etomica.molecule.IMoleculeList-">calcU</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Calculates the generalized coordinates for the given molecules in their
  current position and orientation.</div>
 </td>
@@ -265,7 +265,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getBasisCells--">getBasisCells</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -276,15 +276,15 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getLatticePosition-etomica.api.IAtom-">getLatticePosition</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getLatticePosition-etomica.atom.IAtom-">getLatticePosition</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getPrimitive--">getPrimitive</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#getSiteManager--">getSiteManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -293,14 +293,14 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#initNominalU-etomica.api.IMoleculeList-">initNominalU</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#initNominalU-etomica.molecule.IMoleculeList-">initNominalU</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Initializes the CoordinateDefinition for the given molecule and
  associates the molecule with the given index.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#setToU-etomica.api.IMoleculeList-double:A-">setToU</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/CoordinateDefinition.html#setToU-etomica.molecule.IMoleculeList-double:A-">setToU</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
       double[]&nbsp;newU)</code>
 <div class="block">Set all the molecules in a cell to a position and orientation that corresponds to the
  given generalized coordinate.</div>
@@ -343,7 +343,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="siteManager">
@@ -352,7 +352,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>siteManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt; siteManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; siteManager</pre>
 </li>
 </ul>
 <a name="lattice">
@@ -406,7 +406,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>
@@ -417,29 +417,29 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CoordinateDefinition-etomica.api.IBox-int-etomica.lattice.crystal.Primitive-etomica.space.ISpace-">
+<a name="CoordinateDefinition-etomica.box.Box-int-etomica.lattice.crystal.Primitive-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>CoordinateDefinition</h4>
-<pre>public&nbsp;CoordinateDefinition(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;CoordinateDefinition(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                             int&nbsp;coordinateDim,
                             <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
-                            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="CoordinateDefinition-etomica.api.IBox-int-etomica.lattice.crystal.Primitive-etomica.lattice.crystal.Basis-etomica.space.ISpace-">
+<a name="CoordinateDefinition-etomica.box.Box-int-etomica.lattice.crystal.Primitive-etomica.lattice.crystal.Basis-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CoordinateDefinition</h4>
-<pre>public&nbsp;CoordinateDefinition(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;CoordinateDefinition(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                             int&nbsp;coordinateDim,
                             <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                             <a href="../../etomica/lattice/crystal/Basis.html" title="class in etomica.lattice.crystal">Basis</a>&nbsp;basis,
-                            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -471,13 +471,13 @@ extends java.lang.Object</pre>
  typically equal to the space dimension.</div>
 </li>
 </ul>
-<a name="calcU-etomica.api.IMoleculeList-">
+<a name="calcU-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcU</h4>
-<pre>public abstract&nbsp;double[]&nbsp;calcU(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
+<pre>public abstract&nbsp;double[]&nbsp;calcU(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 <div class="block">Calculates the generalized coordinates for the given molecules in their
  current position and orientation.  The result is stored in the |u| field.</div>
 <dl>
@@ -486,13 +486,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="initNominalU-etomica.api.IMoleculeList-">
+<a name="initNominalU-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initNominalU</h4>
-<pre>protected abstract&nbsp;void&nbsp;initNominalU(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
+<pre>protected abstract&nbsp;void&nbsp;initNominalU(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 <div class="block">Initializes the CoordinateDefinition for the given molecule and
  associates the molecule with the given index. Typically this will be
  called when the molecule is in a nominal position and orientation, and
@@ -500,13 +500,13 @@ extends java.lang.Object</pre>
  to this nominal case.</div>
 </li>
 </ul>
-<a name="setToU-etomica.api.IMoleculeList-double:A-">
+<a name="setToU-etomica.molecule.IMoleculeList-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setToU</h4>
-<pre>public abstract&nbsp;void&nbsp;setToU(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules,
+<pre>public abstract&nbsp;void&nbsp;setToU(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules,
                             double[]&nbsp;newU)</pre>
 <div class="block">Set all the molecules in a cell to a position and orientation that corresponds to the
  given generalized coordinate. |u| must be of length getCoordinateDim()</div>
@@ -518,13 +518,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="calcT-etomica.api.IVector-double:A-double:A-">
+<a name="calcT-etomica.space.Vector-double:A-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calcT</h4>
-<pre>public&nbsp;void&nbsp;calcT(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;k,
+<pre>public&nbsp;void&nbsp;calcT(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;k,
                   double[]&nbsp;realT,
                   double[]&nbsp;imaginaryT)</pre>
 <div class="block">Calculates the complex "T vector", which is collective coordinate given
@@ -543,16 +543,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
-<a name="getLatticePosition-etomica.api.IAtom-">
+<a name="getLatticePosition-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getLatticePosition</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getLatticePosition(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getLatticePosition(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
 <a name="getBasisCells--">
@@ -588,7 +588,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSiteManager</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;&nbsp;getSiteManager()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&nbsp;getSiteManager()</pre>
 </li>
 </ul>
 </li>

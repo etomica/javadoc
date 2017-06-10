@@ -143,11 +143,11 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#order">order</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#potentialAtt">potentialAtt</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#potentialRef">potentialRef</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -165,8 +165,8 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#MayerPTAtt-etomica.api.IPotentialMolecular-etomica.api.IPotentialMolecular-int-">MayerPTAtt</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potentialRef,
-          <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potentialAtt,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#MayerPTAtt-etomica.potential.IPotentialMolecular-etomica.potential.IPotentialMolecular-int-">MayerPTAtt</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potentialRef,
+          <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potentialAtt,
           int&nbsp;order)</code>
 <div class="block">Constructor takes reference potential, attractive component and order in temperature.</div>
 </td>
@@ -188,7 +188,7 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#f-etomica.api.IMoleculeList-double-double-">f</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#f-etomica.molecule.IMoleculeList-double-double-">f</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair,
  double&nbsp;r2,
  double&nbsp;beta)</code>
 <div class="block">returns Mayer function between atoms in the pair at temperature
@@ -196,12 +196,12 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#getPotential--">getPotential</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MayerPTAtt.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -231,7 +231,7 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialRef</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a> potentialRef</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a> potentialRef</pre>
 </li>
 </ul>
 <a name="potentialAtt">
@@ -240,7 +240,7 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialAtt</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a> potentialAtt</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a> potentialAtt</pre>
 </li>
 </ul>
 <a name="order">
@@ -269,14 +269,14 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MayerPTAtt-etomica.api.IPotentialMolecular-etomica.api.IPotentialMolecular-int-">
+<a name="MayerPTAtt-etomica.potential.IPotentialMolecular-etomica.potential.IPotentialMolecular-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MayerPTAtt</h4>
-<pre>public&nbsp;MayerPTAtt(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potentialRef,
-                  <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potentialAtt,
+<pre>public&nbsp;MayerPTAtt(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potentialRef,
+                  <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potentialAtt,
                   int&nbsp;order)</pre>
 <div class="block">Constructor takes reference potential, attractive component and order in temperature.</div>
 </li>
@@ -289,35 +289,35 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="f-etomica.api.IMoleculeList-double-double-">
+<a name="f-etomica.molecule.IMoleculeList-double-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>f</h4>
-<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair,
+<pre>public&nbsp;double&nbsp;f(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair,
                 double&nbsp;r2,
                 double&nbsp;beta)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/virial/MayerFunction.html#f-etomica.api.IMoleculeList-double-double-">MayerFunction</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/virial/MayerFunction.html#f-etomica.molecule.IMoleculeList-double-double-">MayerFunction</a></code></span></div>
 <div class="block">returns Mayer function between atoms in the pair at temperature
  1/beta</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/MayerFunction.html#f-etomica.api.IMoleculeList-double-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a></code></dd>
+<dd><code><a href="../../etomica/virial/MayerFunction.html#f-etomica.molecule.IMoleculeList-double-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a></code></dd>
 <dd><code>r2</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/MayerFunction.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a></code></dd>
+<dd><code><a href="../../etomica/virial/MayerFunction.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -327,7 +327,7 @@ implements <a href="../../etomica/virial/MayerFunction.html" title="interface in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPotential</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>&nbsp;getPotential()</pre>
+<pre>public&nbsp;<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>&nbsp;getPotential()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/virial/MayerFunction.html#getPotential--">getPotential</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a></code></dd>

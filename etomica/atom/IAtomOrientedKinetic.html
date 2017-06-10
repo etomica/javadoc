@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/atom/SpeciesAgentManager.html" title="class in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/atom/IAtomOrientedKinetic.html" target="_top">Frames</a></li>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>, <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomica.api">IAtomKinetic</a>, <a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom">IAtomOriented</a></dd>
+<dd><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>, <a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>, <a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom">IAtomOriented</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IAtomOrientedKinetic</span>
-extends <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomica.api">IAtomKinetic</a>, <a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom">IAtomOriented</a></pre>
+extends <a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>, <a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom">IAtomOriented</a></pre>
 <div class="block">Interface for an Atom that has a position, orientation, velocity and angular
  velocity.</div>
 </li>
@@ -130,16 +130,16 @@ extends <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomic
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/IAtomOrientedKinetic.html#getAngularVelocity--">getAngularVelocity</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IAtomKinetic">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.atom.IAtomKinetic">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IAtomKinetic.html" title="interface in etomica.api">IAtomKinetic</a></h3>
-<code><a href="../../etomica/api/IAtomKinetic.html#getVelocity--">getVelocity</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.atom.<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a></h3>
+<code><a href="../../etomica/atom/IAtomKinetic.html#getVelocity--">getVelocity</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.atom.IAtomOriented">
@@ -149,11 +149,11 @@ extends <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomic
 <code><a href="../../etomica/atom/IAtomOriented.html#getOrientation--">getOrientation</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IAtom">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.atom.IAtom">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></h3>
-<code><a href="../../etomica/api/IAtom.html#getIndex--">getIndex</a>, <a href="../../etomica/api/IAtom.html#getLeafIndex--">getLeafIndex</a>, <a href="../../etomica/api/IAtom.html#getParentGroup--">getParentGroup</a>, <a href="../../etomica/api/IAtom.html#getPosition--">getPosition</a>, <a href="../../etomica/api/IAtom.html#getType--">getType</a>, <a href="../../etomica/api/IAtom.html#setIndex-int-">setIndex</a>, <a href="../../etomica/api/IAtom.html#setLeafIndex-int-">setLeafIndex</a>, <a href="../../etomica/api/IAtom.html#setParent-etomica.api.IMolecule-">setParent</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.atom.<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></h3>
+<code><a href="../../etomica/atom/IAtom.html#getIndex--">getIndex</a>, <a href="../../etomica/atom/IAtom.html#getLeafIndex--">getLeafIndex</a>, <a href="../../etomica/atom/IAtom.html#getParentGroup--">getParentGroup</a>, <a href="../../etomica/atom/IAtom.html#getPosition--">getPosition</a>, <a href="../../etomica/atom/IAtom.html#getType--">getType</a>, <a href="../../etomica/atom/IAtom.html#setIndex-int-">setIndex</a>, <a href="../../etomica/atom/IAtom.html#setLeafIndex-int-">setLeafIndex</a>, <a href="../../etomica/atom/IAtom.html#setParent-etomica.molecule.IMolecule-">setParent</a></code></li>
 </ul>
 </li>
 </ul>
@@ -175,7 +175,7 @@ extends <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomic
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAngularVelocity</h4>
-<pre><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getAngularVelocity()</pre>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getAngularVelocity()</pre>
 </li>
 </ul>
 </li>
@@ -206,7 +206,7 @@ extends <a href="../../etomica/api/IAtomKinetic.html" title="interface in etomic
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/atom/IAtomOriented.html" title="interface in etomica.atom"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/atom/SpeciesAgentManager.html" title="class in etomica.atom"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/atom/IAtomOrientedKinetic.html" target="_top">Frames</a></li>

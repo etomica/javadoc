@@ -127,7 +127,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></td>
 <td class="colLast">
-<div class="block">Interface for an object that wants an agent associated with each 
+<div class="block">Interface for an object that wants an agent associated with each
  AtomType in a Simulation.</div>
 </td>
 </tr>
@@ -139,9 +139,21 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/DipoleSource.html" title="interface in etomica.atom">DipoleSource</a></td>
+<td class="colFirst"><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></td>
 <td class="colLast">
-<div class="block">Interface for something that can calculate the dipole of a molecule.</div>
+<div class="block">IAtom is an interface for atoms in the simulation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a></td>
+<td class="colLast">
+<div class="block">Interface for an atom that holds vectors for velocity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></td>
+<td class="colLast">
+<div class="block">Interface for a list of IAtoms.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -159,84 +171,9 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></td>
-<td class="colLast">
-<div class="block">Returns a vector given an atom, thereby defining the position
- of the atom or atom group.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/IAtomTypeOriented.html" title="interface in etomica.atom">IAtomTypeOriented</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/IMoleculeKinetic.html" title="interface in etomica.atom">IMoleculeKinetic</a></td>
-<td class="colLast">
-<div class="block">Interface for an molecule that holds vectors for velocity.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/IMoleculeOriented.html" title="interface in etomica.atom">IMoleculeOriented</a></td>
-<td class="colLast">
-<div class="block">Interface for a IAtom that includes an IVector that defines the atom's
- position.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/IMoleculeOrientedKinetic.html" title="interface in etomica.atom">IMoleculeOrientedKinetic</a></td>
-<td class="colLast">
-<div class="block">Interface for an Atom that has a position, orientation, velocity and angular
- velocity.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/IMoleculePositioned.html" title="interface in etomica.atom">IMoleculePositioned</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></td>
-<td class="colLast">
-<div class="block">Interface for an object that wants an agent associated with each
- IMolecule an IBox.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeSource.html" title="interface in etomica.atom">MoleculeSource</a></td>
-<td class="colLast">
-<div class="block">Interface for objects when return atoms (meeting some specification)
- from a box.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeToIndex.html" title="interface in etomica.atom">MoleculeToIndex</a></td>
-<td class="colLast">
-<div class="block">Interface for class that associates an integer with an atom.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeToMoleculeList.html" title="interface in etomica.atom">MoleculeToMoleculeList</a></td>
-<td class="colLast">
-<div class="block">Interface for class that determines an AtomArrayList given an atom.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/OrientationCalc.html" title="interface in etomica.atom">OrientationCalc</a></td>
-<td class="colLast">
-<div class="block">Interface for a class that can calculate the orientation of a molecule or
- to set the orientation of a molecule.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/OrientationCalcQuaternion.html" title="interface in etomica.atom">OrientationCalcQuaternion</a></td>
-<td class="colLast">
-<div class="block">OrientationCalc interface that handles quaternions (as a a double array)
- instead of an Orientation object.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></td>
 <td class="colLast">
-<div class="block">Interface for an object that wants an agent associated with each 
+<div class="block">Interface for an object that wants an agent associated with each
  AtomType in a Simulation.</div>
 </td>
 </tr>
@@ -323,72 +260,48 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomPositionCOM.html" title="class in etomica.atom">AtomPositionCOM</a></td>
-<td class="colLast">
-<div class="block">Calculates the center of mass (COM) over a set of atoms.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomPositionFirstAtom.html" title="class in etomica.atom">AtomPositionFirstAtom</a></td>
-<td class="colLast">
-<div class="block">Returns the position of the first child leaf atom.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomPositionGeometricCenter.html" title="class in etomica.atom">AtomPositionGeometricCenter</a></td>
-<td class="colLast">
-<div class="block">Calculates the geometric center over a set of atoms.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomPositionGeometricCenterAlkaneEH.html" title="class in etomica.atom">AtomPositionGeometricCenterAlkaneEH</a></td>
-<td class="colLast">
-<div class="block">Calculates the geometric center over a set of atoms.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomPositionGeometricCenterPBC.html" title="class in etomica.atom">AtomPositionGeometricCenterPBC</a></td>
-<td class="colLast">
-<div class="block">Calculates the geometric center over a set of atoms.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomsetArray.html" title="class in etomica.atom">AtomsetArray</a></td>
 <td class="colLast">
 <div class="block">AtomSet formed by wrapping an Atom array.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomSetSinglet.html" title="class in etomica.atom">AtomSetSinglet</a></td>
 <td class="colLast">
 <div class="block">Data structure that contains a single mutable atom instance.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomSourceRandomLeaf.html" title="class in etomica.atom">AtomSourceRandomLeaf</a></td>
 <td class="colLast">
 <div class="block">AtomSource that returns a completely random leaf atom.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomSourceRandomSpecies.html" title="class in etomica.atom">AtomSourceRandomSpecies</a></td>
 <td class="colLast">
 <div class="block">AtomSource that returns a completely random leaf atom.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomToAtomSetFixed.html" title="class in etomica.atom">AtomToAtomSetFixed</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomToIndexChild.html" title="class in etomica.atom">AtomToIndexChild</a></td>
 <td class="colLast">
 <div class="block">Defines the index as the Atom's node's index.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomToParentChildList.html" title="class in etomica.atom">AtomToParentChildList</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></td>
+<td class="colLast">
+<div class="block">Identifies a set of atoms and defines properties of those atoms.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></td>
@@ -404,124 +317,41 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomTypeLeaf.html" title="class in etomica.atom">AtomTypeLeaf</a></td>
-<td class="colLast">
-<div class="block">Type for an atom that is a leaf in the species hierarchy.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/AtomTypeOrientedSphere.html" title="class in etomica.atom">AtomTypeOrientedSphere</a></td>
+<td class="colFirst"><a href="../../etomica/atom/AtomTypeOriented.html" title="class in etomica.atom">AtomTypeOriented</a></td>
 <td class="colLast">
 <div class="block">Atom type for a sphere that has some feature depending upon an orientation coordinate.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/AtomTypeSpheroPolyhedron.html" title="class in etomica.atom">AtomTypeSpheroPolyhedron</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/DiameterHashByElement.html" title="class in etomica.atom">DiameterHashByElement</a></td>
 <td class="colLast">
 <div class="block">This class hashes atomic diameters based on the element.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/atom/DiameterHashByElementType.html" title="class in etomica.atom">DiameterHashByElementType</a></td>
 <td class="colLast">
 <div class="block">This class hashes atomic diameters based on both element and atom type.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/DiameterHashByType.html" title="class in etomica.atom">DiameterHashByType</a></td>
 <td class="colLast">
 <div class="block">This class hashes atomic diameters based on the atom type.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/Molecule.html" title="class in etomica.atom">Molecule</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a></td>
-<td class="colLast">
-<div class="block">MoleculeAgentManager acts on behalf of client classes (an AgentSource) to
- manage agents in every IMolecule in a box.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeAgentManager.AgentIterator.html" title="class in etomica.atom">MoleculeAgentManager.AgentIterator</a></td>
-<td class="colLast">
-<div class="block">Iterator that loops over the agents, skipping null elements</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeListWrapper.html" title="class in etomica.atom">MoleculeListWrapper</a></td>
-<td class="colLast">
-<div class="block">AtomSet formed by wrapping an AtomArrayList.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeOriented.html" title="class in etomica.atom">MoleculeOriented</a></td>
-<td class="colLast">
-<div class="block">Molecule class appropriate for a rigid molecule.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeOrientedDynamic.html" title="class in etomica.atom">MoleculeOrientedDynamic</a></td>
-<td class="colLast">
-<div class="block">Molecule class appropriate for a rigid molecule in a dynamic context.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculePair.html" title="class in etomica.atom">MoleculePair</a></td>
-<td class="colLast">
-<div class="block">Data structure that contains two mutable atom instances.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculesetArray.html" title="class in etomica.atom">MoleculesetArray</a></td>
-<td class="colLast">
-<div class="block">AtomSet formed by wrapping an Atom array.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a></td>
-<td class="colLast">
-<div class="block">Data structure that contains a single mutable atom instance.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeSourceRandomMolecule.html" title="class in etomica.atom">MoleculeSourceRandomMolecule</a></td>
-<td class="colLast">
-<div class="block">MoleculeSource that returns a completely random molecule.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeToMoleculeListSpecies.html" title="class in etomica.atom">MoleculeToMoleculeListSpecies</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../etomica/atom/MoleculeToMoleculeSetFixed.html" title="class in etomica.atom">MoleculeToMoleculeSetFixed</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/atom/OrientationCalcAtom.html" title="class in etomica.atom">OrientationCalcAtom</a></td>
-<td class="colLast">
-<div class="block">OrientationCalc implementation that handles a monotomic oriented molecule.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/SpeciesAgentManager.html" title="class in etomica.atom">SpeciesAgentManager</a></td>
 <td class="colLast">
 <div class="block">AtomTypeAgentManager acts on behalf of client classes (an AgentSource) to 
  manage agents in every AtomType in a box.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../etomica/atom/SpeciesAgentManager.AgentIterator.html" title="class in etomica.atom">SpeciesAgentManager.AgentIterator</a></td>
 <td class="colLast">
 <div class="block">Iterator that loops over the agents, skipping null elements</div>
@@ -573,7 +403,7 @@ is held by a Coordinate field (defined in <code>etomica.space</code>) which is m
 and which is provided to the Atom at construction. The conduct of the simulation primarily entails the manipulation 
 of the fields of the Atom Coordinates.
 <p>
-The <code>AtomType</code> class is used to hold information that is common to many Atom instances.
+The <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom"><code>AtomType</code></a> class is used to hold information that is common to many Atom instances.
 Each Atom has a final AtomType field that is specifed at construction. Atoms that that are group atoms (having 
 AtomTreeNodeGroup as their node field) have types that are (or extend) AtomTypeGroup. Leaf atoms have types that 
 extend AtomTypeLeaf. Instances of AtomType are arranged in a hierarchy that parallels that Atom hierarchy.  

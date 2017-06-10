@@ -153,15 +153,15 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#lastTime">lastTime</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#speciesC">speciesC</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#speciesO">speciesO</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -195,9 +195,9 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#DataSourceWallPressureCatalysis-etomica.space.ISpace-etomica.api.ISpecies-etomica.api.ISpecies-etomica.atom.AtomLeafAgentManager-">DataSourceWallPressureCatalysis</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                               <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesC,
-                               <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesO,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/DataSourceWallPressureCatalysis.html#DataSourceWallPressureCatalysis-etomica.space.Space-etomica.species.ISpecies-etomica.species.ISpecies-etomica.atom.AtomLeafAgentManager-">DataSourceWallPressureCatalysis</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                               <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesC,
+                               <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesO,
                                <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;interactionAgentManager)</code>&nbsp;</td>
 </tr>
 </table>
@@ -273,7 +273,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="speciesC">
@@ -282,7 +282,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesC</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesC</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesC</pre>
 </li>
 </ul>
 <a name="speciesO">
@@ -291,7 +291,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesO</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesO</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesO</pre>
 </li>
 </ul>
 <a name="interactionAgentManager">
@@ -383,15 +383,15 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataSourceWallPressureCatalysis-etomica.space.ISpace-etomica.api.ISpecies-etomica.api.ISpecies-etomica.atom.AtomLeafAgentManager-">
+<a name="DataSourceWallPressureCatalysis-etomica.space.Space-etomica.species.ISpecies-etomica.species.ISpecies-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataSourceWallPressureCatalysis</h4>
-<pre>public&nbsp;DataSourceWallPressureCatalysis(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                       <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesC,
-                                       <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesO,
+<pre>public&nbsp;DataSourceWallPressureCatalysis(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                       <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesC,
+                                       <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesO,
                                        <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;interactionAgentManager)</pre>
 </li>
 </ul>

@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>, <a href="../../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</dd>
+<dd><a href="../../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>, <a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
@@ -174,7 +174,7 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../etomica/atom/MoleculePair.html" title="class in etomica.atom">MoleculePair</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerSlantyMolecular.html#pair">pair</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -199,10 +199,10 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerSlantyMolecular.html#NeighborListManagerSlantyMolecular-etomica.nbr.list.molecule.PotentialMasterListMolecular-double-etomica.api.IBox-etomica.space.ISpace-">NeighborListManagerSlantyMolecular</a></span>(<a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.html" title="class in etomica.nbr.list.molecule">PotentialMasterListMolecular</a>&nbsp;potentialMasterList,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerSlantyMolecular.html#NeighborListManagerSlantyMolecular-etomica.nbr.list.molecule.PotentialMasterListMolecular-double-etomica.box.Box-etomica.space.Space-">NeighborListManagerSlantyMolecular</a></span>(<a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.html" title="class in etomica.nbr.list.molecule">PotentialMasterListMolecular</a>&nbsp;potentialMasterList,
                                   double&nbsp;range,
-                                  <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                                  <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+                                  <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                                  <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Configures instance for use by the given PotentialMaster.</div>
 </td>
 </tr>
@@ -223,7 +223,7 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerSlantyMolecular.html#addMoleculeNotify-etomica.api.IMolecule-">addMoleculeNotify</a></span>(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerSlantyMolecular.html#addMoleculeNotify-etomica.molecule.IMolecule-">addMoleculeNotify</a></span>(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Constructs neighbor lists for the given molecule</div>
 </td>
 </tr>
@@ -241,7 +241,7 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.nbr.list.molecule.<a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a></h3>
-<code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#dispose--">dispose</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getCriterion-etomica.api.ISpecies-">getCriterion</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getDownList-etomica.api.IMolecule-">getDownList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getEventManager--">getEventManager</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getPbcEnforcer--">getPbcEnforcer</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getPotential1BodyList-etomica.api.IMolecule-">getPotential1BodyList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getRange--">getRange</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getUpdateInterval--">getUpdateInterval</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getUpList-etomica.api.IMolecule-">getUpList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#isQuiet--">isQuiet</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#makeAgent-etomica.api.IMolecule-">makeAgent</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#reset--">reset</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setPbcEnforcer-etomica.action.BoxImposePbc-">setPbcEnforcer</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setQuiet-boolean-">setQuiet</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setRange-double-">setRange</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setUpdateInterval-int-">setUpdateInterval</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#updateLists--">updateLists</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#updateNbrsIfNeeded--">updateNbrsIfNeeded</a></code></li>
+<code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#dispose--">dispose</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getCriterion-etomica.species.ISpecies-">getCriterion</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getDownList-etomica.molecule.IMolecule-">getDownList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getEventManager--">getEventManager</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getPbcEnforcer--">getPbcEnforcer</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getPotential1BodyList-etomica.molecule.IMolecule-">getPotential1BodyList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getRange--">getRange</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getUpdateInterval--">getUpdateInterval</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#getUpList-etomica.molecule.IMolecule-">getUpList</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#isQuiet--">isQuiet</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#reset--">reset</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setPbcEnforcer-etomica.action.BoxImposePbc-">setPbcEnforcer</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setQuiet-boolean-">setQuiet</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setRange-double-">setRange</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#setUpdateInterval-int-">setUpdateInterval</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#updateLists--">updateLists</a>, <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#updateNbrsIfNeeded--">updateNbrsIfNeeded</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -270,7 +270,7 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <ul class="blockListLast">
 <li class="blockList">
 <h4>pair</h4>
-<pre>protected final&nbsp;<a href="../../../../etomica/atom/MoleculePair.html" title="class in etomica.atom">MoleculePair</a> pair</pre>
+<pre>protected final&nbsp;<a href="../../../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a> pair</pre>
 </li>
 </ul>
 </li>
@@ -281,7 +281,7 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborListManagerSlantyMolecular-etomica.nbr.list.molecule.PotentialMasterListMolecular-double-etomica.api.IBox-etomica.space.ISpace-">
+<a name="NeighborListManagerSlantyMolecular-etomica.nbr.list.molecule.PotentialMasterListMolecular-double-etomica.box.Box-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -289,8 +289,8 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 <h4>NeighborListManagerSlantyMolecular</h4>
 <pre>public&nbsp;NeighborListManagerSlantyMolecular(<a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.html" title="class in etomica.nbr.list.molecule">PotentialMasterListMolecular</a>&nbsp;potentialMasterList,
                                           double&nbsp;range,
-                                          <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                                          <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                          <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                                          <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Configures instance for use by the given PotentialMaster.</div>
 </li>
 </ul>
@@ -319,17 +319,17 @@ extends <a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecu
 </dl>
 </li>
 </ul>
-<a name="addMoleculeNotify-etomica.api.IMolecule-">
+<a name="addMoleculeNotify-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addMoleculeNotify</h4>
-<pre>public&nbsp;void&nbsp;addMoleculeNotify(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>public&nbsp;void&nbsp;addMoleculeNotify(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Constructs neighbor lists for the given molecule</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#addMoleculeNotify-etomica.api.IMolecule-">addMoleculeNotify</a></code>&nbsp;in class&nbsp;<code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a></code></dd>
+<dd><code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html#addMoleculeNotify-etomica.molecule.IMolecule-">addMoleculeNotify</a></code>&nbsp;in class&nbsp;<code><a href="../../../../etomica/nbr/list/molecule/NeighborListManagerMolecular.html" title="class in etomica.nbr.list.molecule">NeighborListManagerMolecular</a></code></dd>
 </dl>
 </li>
 </ul>

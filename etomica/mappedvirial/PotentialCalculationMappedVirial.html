@@ -135,7 +135,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#allAtoms">allAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -143,7 +143,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#beta">beta</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -155,7 +155,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#cumint">cumint</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -179,7 +179,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#qu">qu</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -217,8 +217,8 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#PotentialCalculationMappedVirial-etomica.space.ISpace-etomica.api.IBox-int-etomica.atom.AtomLeafAgentManager-">PotentialCalculationMappedVirial</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#PotentialCalculationMappedVirial-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">PotentialCalculationMappedVirial</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                 int&nbsp;nbins,
                                 <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;&nbsp;forceManager)</code>&nbsp;</td>
 </tr>
@@ -248,8 +248,8 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">doCalculation</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-             <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/mappedvirial/PotentialCalculationMappedVirial.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+             <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code>
 <div class="block">Method giving the specific calculation performed by this class.</div>
 </td>
 </tr>
@@ -320,7 +320,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="allAtoms">
@@ -329,7 +329,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>allAtoms</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a> allAtoms</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> allAtoms</pre>
 </li>
 </ul>
 <a name="forceManager">
@@ -347,7 +347,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="beta">
@@ -365,7 +365,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="c1">
@@ -475,14 +475,14 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PotentialCalculationMappedVirial-etomica.space.ISpace-etomica.api.IBox-int-etomica.atom.AtomLeafAgentManager-">
+<a name="PotentialCalculationMappedVirial-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PotentialCalculationMappedVirial</h4>
-<pre>public&nbsp;PotentialCalculationMappedVirial(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                        <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;PotentialCalculationMappedVirial(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                        <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                         int&nbsp;nbins,
                                         <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;&nbsp;forceManager)</pre>
 </li>
@@ -589,19 +589,19 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <pre>public&nbsp;void&nbsp;reset()</pre>
 </li>
 </ul>
-<a name="doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">
+<a name="doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doCalculation</h4>
-<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-                          <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">PotentialCalculation</a></code></span></div>
+<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+                          <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">PotentialCalculation</a></code></span></div>
 <div class="block">Method giving the specific calculation performed by this class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></code></dd>
+<dd><code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atoms</code> - IAtomSet the atom sets for which the calculation is performed.</dd>
 <dd><code>potential</code> - The potential used to apply the action defined by this class.</dd>

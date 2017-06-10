@@ -110,10 +110,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MinimizationBetaNitrogenModelLS</span>
@@ -155,7 +151,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#boxVec">boxVec</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -175,7 +171,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#initialLatticeEnergy">initialLatticeEnergy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#lsPosition">lsPosition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -195,7 +191,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#rC">rC</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -244,7 +240,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#MinimizationBetaNitrogenModelLS-etomica.space.ISpace-double-double-">MinimizationBetaNitrogenModelLS</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#MinimizationBetaNitrogenModelLS-etomica.space.Space-double-double-">MinimizationBetaNitrogenModelLS</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                double&nbsp;density,
                                double&nbsp;rC)</code>&nbsp;</td>
 </tr>
@@ -265,8 +261,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#doTransform-etomica.api.IMolecule-etomica.atom.IAtomPositionDefinition-etomica.space.Tensor-">doTransform</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-           <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;posDef,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MinimizationBetaNitrogenModelLS.html#doTransform-etomica.molecule.IMolecule-etomica.molecule.IMoleculePositionDefinition-etomica.space.Tensor-">doTransform</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+           <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;posDef,
            <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;rotationTensor)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -283,7 +279,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.api.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.api.IAtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.api.IAtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.api.IBox-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.api.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -330,7 +326,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="potential">
@@ -411,7 +407,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>lsPosition</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> lsPosition</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> lsPosition</pre>
 </li>
 </ul>
 <a name="xVecBox">
@@ -465,7 +461,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>boxVec</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] boxVec</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] boxVec</pre>
 </li>
 </ul>
 <a name="nLayer">
@@ -503,13 +499,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MinimizationBetaNitrogenModelLS-etomica.space.ISpace-double-double-">
+<a name="MinimizationBetaNitrogenModelLS-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MinimizationBetaNitrogenModelLS</h4>
-<pre>public&nbsp;MinimizationBetaNitrogenModelLS(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MinimizationBetaNitrogenModelLS(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                        double&nbsp;density,
                                        double&nbsp;rC)</pre>
 </li>
@@ -540,14 +536,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
 </li>
 </ul>
-<a name="doTransform-etomica.api.IMolecule-etomica.atom.IAtomPositionDefinition-etomica.space.Tensor-">
+<a name="doTransform-etomica.molecule.IMolecule-etomica.molecule.IMoleculePositionDefinition-etomica.space.Tensor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>doTransform</h4>
-<pre>protected static&nbsp;void&nbsp;doTransform(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-                                  <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;posDef,
+<pre>protected static&nbsp;void&nbsp;doTransform(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+                                  <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;posDef,
                                   <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;rotationTensor)</pre>
 </li>
 </ul>

@@ -149,7 +149,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -171,7 +171,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#nAtoms">nAtoms</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#position">position</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -181,7 +181,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -211,7 +211,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#MeterProfileByAtoms-etomica.space.ISpace-">MeterProfileByAtoms</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#MeterProfileByAtoms-etomica.space.Space-">MeterProfileByAtoms</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Default constructor sets profile along the y-axis, with 100 histogram points.</div>
 </td>
 </tr>
@@ -231,7 +231,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -275,7 +275,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#getPositionDefinition--">getPositionDefinition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -285,7 +285,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#getSpecies--">getSpecies</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -298,7 +298,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -308,7 +308,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setPositionDefinition-etomica.atom.IAtomPositionDefinition-">setPositionDefinition</a></span>(<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setPositionDefinition</a></span>(<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -318,7 +318,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterProfileByAtoms.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -348,7 +348,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="xDataSource">
@@ -413,7 +413,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>position</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> position</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> position</pre>
 </li>
 </ul>
 <a name="meter">
@@ -441,7 +441,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockListLast">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> species</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
 </li>
 </ul>
 </li>
@@ -452,13 +452,13 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterProfileByAtoms-etomica.space.ISpace-">
+<a name="MeterProfileByAtoms-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterProfileByAtoms</h4>
-<pre>public&nbsp;MeterProfileByAtoms(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;MeterProfileByAtoms(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Default constructor sets profile along the y-axis, with 100 histogram points.</div>
 </li>
 </ul>
@@ -621,20 +621,20 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>box</code> - The box to set.</dd>
@@ -647,16 +647,16 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies()</pre>
 </li>
 </ul>
-<a name="setSpecies-etomica.api.ISpecies-">
+<a name="setSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</pre>
+<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -668,13 +668,13 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <pre>public&nbsp;void&nbsp;reset()</pre>
 </li>
 </ul>
-<a name="setPositionDefinition-etomica.atom.IAtomPositionDefinition-">
+<a name="setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPositionDefinition</h4>
-<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</pre>
+<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</pre>
 </li>
 </ul>
 <a name="getPositionDefinition--">
@@ -683,7 +683,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPositionDefinition</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;getPositionDefinition()</pre>
+<pre>public&nbsp;<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;getPositionDefinition()</pre>
 </li>
 </ul>
 </li>

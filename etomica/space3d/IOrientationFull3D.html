@@ -131,15 +131,15 @@ extends <a href="../../etomica/space3d/IOrientation3D.html" title="interface in 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/IOrientationFull3D.html#getSecondaryDirection--">getSecondaryDirection</a></span>()</code>
 <div class="block">Returns a unit vector pointing in the orientation's secondary direction.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/IOrientationFull3D.html#setDirections-etomica.api.IVector-etomica.api.IVector-">setDirections</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newPrimaryDirection,
-             <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newSecondaryDirection)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/IOrientationFull3D.html#setDirections-etomica.space.Vector-etomica.space.Vector-">setDirections</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newPrimaryDirection,
+             <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newSecondaryDirection)</code>
 <div class="block">Sets the orientation's primary and secondary direction to be the given
  directions.</div>
 </td>
@@ -150,14 +150,14 @@ extends <a href="../../etomica/space3d/IOrientation3D.html" title="interface in 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.space3d.<a href="../../etomica/space3d/IOrientation3D.html" title="interface in etomica.space3d">IOrientation3D</a></h3>
-<code><a href="../../etomica/space3d/IOrientation3D.html#rotateBy-double-etomica.api.IVector-">rotateBy</a></code></li>
+<code><a href="../../etomica/space3d/IOrientation3D.html#rotateBy-double-etomica.space.Vector-">rotateBy</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.space.IOrientation">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.space.<a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></h3>
-<code><a href="../../etomica/space/IOrientation.html#E-etomica.space.IOrientation-">E</a>, <a href="../../etomica/space/IOrientation.html#getDirection--">getDirection</a>, <a href="../../etomica/space/IOrientation.html#randomRotation-etomica.api.IRandom-double-">randomRotation</a>, <a href="../../etomica/space/IOrientation.html#setDirection-etomica.api.IVector-">setDirection</a></code></li>
+<code><a href="../../etomica/space/IOrientation.html#E-etomica.space.IOrientation-">E</a>, <a href="../../etomica/space/IOrientation.html#getDirection--">getDirection</a>, <a href="../../etomica/space/IOrientation.html#randomRotation-etomica.util.random.IRandom-double-">randomRotation</a>, <a href="../../etomica/space/IOrientation.html#setDirection-etomica.space.Vector-">setDirection</a></code></li>
 </ul>
 </li>
 </ul>
@@ -179,19 +179,19 @@ extends <a href="../../etomica/space3d/IOrientation3D.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getSecondaryDirection</h4>
-<pre><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getSecondaryDirection()</pre>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getSecondaryDirection()</pre>
 <div class="block">Returns a unit vector pointing in the orientation's secondary direction.
  This vector should not be modified.</div>
 </li>
 </ul>
-<a name="setDirections-etomica.api.IVector-etomica.api.IVector-">
+<a name="setDirections-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setDirections</h4>
-<pre>void&nbsp;setDirections(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newPrimaryDirection,
-                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;newSecondaryDirection)</pre>
+<pre>void&nbsp;setDirections(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newPrimaryDirection,
+                   <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;newSecondaryDirection)</pre>
 <div class="block">Sets the orientation's primary and secondary direction to be the given
  directions.  The two vectors should be orthogonal.</div>
 </li>

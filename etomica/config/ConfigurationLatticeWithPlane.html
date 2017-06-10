@@ -188,9 +188,9 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#ConfigurationLatticeWithPlane-etomica.lattice.SpaceLattice-etomica.math.geometry.Plane-etomica.space.ISpace-">ConfigurationLatticeWithPlane</a></span>(<a href="../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#ConfigurationLatticeWithPlane-etomica.lattice.SpaceLattice-etomica.math.geometry.Plane-etomica.space.Space-">ConfigurationLatticeWithPlane</a></span>(<a href="../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
                              <a href="../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a>&nbsp;plane,
-                             <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Constructs class using instance of IndexIteratorRectangular as the default
  index iterator.</div>
 </td>
@@ -212,29 +212,29 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#addSpecies-etomica.api.ISpecies-">addSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#addSpecies-etomica.species.ISpecies-">addSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#getSpeciesAllocation-etomica.api.ISpecies-">getSpeciesAllocation</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;sp)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#getSpeciesAllocation-etomica.species.ISpecies-">getSpeciesAllocation</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;sp)</code>
 <div class="block">Sets the initial allocation of the species on the left side
  of the plane.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;remSpecies)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;remSpecies)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#setSpeciesAllocation-etomica.api.ISpecies-float-">setSpeciesAllocation</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;sp,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationLatticeWithPlane.html#setSpeciesAllocation-etomica.species.ISpecies-float-">setSpeciesAllocation</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;sp,
                     float&nbsp;pct)</code>
 <div class="block">Sets the initial allocation of the species on the left side
  of the plane.</div>
@@ -246,7 +246,7 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.config.<a href="../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></h3>
-<code><a href="../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.api.IVector-">calculateLatticeDimensions</a>, <a href="../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-etomica.api.ISpecies-">initializeCoordinates</a>, <a href="../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
+<code><a href="../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.space.Vector-">calculateLatticeDimensions</a>, <a href="../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-etomica.species.ISpecies-">initializeCoordinates</a>, <a href="../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -269,7 +269,7 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationLatticeWithPlane-etomica.lattice.SpaceLattice-etomica.math.geometry.Plane-etomica.space.ISpace-">
+<a name="ConfigurationLatticeWithPlane-etomica.lattice.SpaceLattice-etomica.math.geometry.Plane-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -277,7 +277,7 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 <h4>ConfigurationLatticeWithPlane</h4>
 <pre>public&nbsp;ConfigurationLatticeWithPlane(<a href="../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
                                      <a href="../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a>&nbsp;plane,
-                                     <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                     <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Constructs class using instance of IndexIteratorRectangular as the default
  index iterator.</div>
 </li>
@@ -290,39 +290,39 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="addSpecies-etomica.api.ISpecies-">
+<a name="addSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addSpecies</h4>
-<pre>public&nbsp;void&nbsp;addSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</pre>
+<pre>public&nbsp;void&nbsp;addSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newSpecies</code> - : species that will need to be configured</dd>
 </dl>
 </li>
 </ul>
-<a name="removeSpecies-etomica.api.ISpecies-">
+<a name="removeSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeSpecies</h4>
-<pre>public&nbsp;void&nbsp;removeSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;remSpecies)</pre>
+<pre>public&nbsp;void&nbsp;removeSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;remSpecies)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>remSpecies</code> - : species that should be removed from configuration</dd>
 </dl>
 </li>
 </ul>
-<a name="setSpeciesAllocation-etomica.api.ISpecies-float-">
+<a name="setSpeciesAllocation-etomica.species.ISpecies-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpeciesAllocation</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesAllocation(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;sp,
+<pre>public&nbsp;void&nbsp;setSpeciesAllocation(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;sp,
                                  float&nbsp;pct)</pre>
 <div class="block">Sets the initial allocation of the species on the left side
  of the plane.  The remaining molecules in the species will
@@ -335,13 +335,13 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 </dl>
 </li>
 </ul>
-<a name="getSpeciesAllocation-etomica.api.ISpecies-">
+<a name="getSpeciesAllocation-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpeciesAllocation</h4>
-<pre>public&nbsp;float&nbsp;getSpeciesAllocation(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;sp)</pre>
+<pre>public&nbsp;float&nbsp;getSpeciesAllocation(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;sp)</pre>
 <div class="block">Sets the initial allocation of the species on the left side
  of the plane.  The remaining molecules in the species will
  be initially allocated to the right side of the plane.</div>
@@ -351,21 +351,21 @@ extends <a href="../../etomica/config/ConfigurationLattice.html" title="class in
 </dl>
 </li>
 </ul>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.  The molecules must be of a species added with addSpecies()
  or they will not be displayed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
+<dd><code><a href="../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
 </dl>
 </li>
 </ul>

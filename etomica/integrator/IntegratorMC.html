@@ -116,10 +116,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/tmmc/IntegratorTMMC.html" title="class in etomica.tmmc">IntegratorTMMC</a></dd>
 </dl>
@@ -182,7 +178,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#moveManager">moveManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -214,16 +210,16 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.api.IPotentialMaster-etomica.api.IRandom-double-">IntegratorMC</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-            <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">IntegratorMC</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+            <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
             double&nbsp;temperature)</code>
 <div class="block">Constructs integrator and establishes PotentialMaster instance that
  will be used by moves to calculate the energy.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.api.ISimulation-etomica.api.IPotentialMaster-">IntegratorMC</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-            <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-">IntegratorMC</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+            <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -270,7 +266,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Invokes superclass method and informs all MCMoves about the new box.</div>
 </td>
 </tr>
@@ -320,7 +316,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="moveManager">
@@ -358,24 +354,24 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorMC-etomica.api.ISimulation-etomica.api.IPotentialMaster-">
+<a name="IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>IntegratorMC</h4>
-<pre>public&nbsp;IntegratorMC(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                    <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</pre>
+<pre>public&nbsp;IntegratorMC(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                    <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
 </li>
 </ul>
-<a name="IntegratorMC-etomica.api.IPotentialMaster-etomica.api.IRandom-double-">
+<a name="IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorMC</h4>
-<pre>public&nbsp;IntegratorMC(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                    <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;IntegratorMC(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                    <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                     double&nbsp;temperature)</pre>
 <div class="block">Constructs integrator and establishes PotentialMaster instance that
  will be used by moves to calculate the energy.</div>
@@ -415,19 +411,19 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
 <div class="block">Invokes superclass method and informs all MCMoves about the new box.
  Moves are not notified if they have a number of boxs different from
  the number of boxs handled by the integrator.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -469,8 +465,6 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
 </dl>

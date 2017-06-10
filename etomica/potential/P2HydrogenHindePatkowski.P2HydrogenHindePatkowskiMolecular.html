@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public static class <span class="typeNameLabel">P2HydrogenHindePatkowski.P2HydrogenHindePatkowskiMolecular</span>
 extends <a href="../../etomica/potential/P2HydrogenHindePatkowski.html" title="class in etomica.potential">P2HydrogenHindePatkowski</a>
-implements <a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></pre>
+implements <a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></pre>
 </li>
 </ul>
 </div>
@@ -171,7 +171,7 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2HydrogenHindePatkowski.P2HydrogenHindePatkowskiMolecular.html#P2HydrogenHindePatkowskiMolecular-etomica.space.ISpace-">P2HydrogenHindePatkowskiMolecular</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2HydrogenHindePatkowski.P2HydrogenHindePatkowskiMolecular.html#P2HydrogenHindePatkowskiMolecular-etomica.space.Space-">P2HydrogenHindePatkowskiMolecular</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,7 +190,7 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2HydrogenHindePatkowski.P2HydrogenHindePatkowskiMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2HydrogenHindePatkowski.P2HydrogenHindePatkowskiMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -198,7 +198,7 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/P2HydrogenHindePatkowski.html" title="class in etomica.potential">P2HydrogenHindePatkowski</a></h3>
-<code><a href="../../etomica/potential/P2HydrogenHindePatkowski.html#getRange--">getRange</a>, <a href="../../etomica/potential/P2HydrogenHindePatkowski.html#nBody--">nBody</a>, <a href="../../etomica/potential/P2HydrogenHindePatkowski.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/potential/P2HydrogenHindePatkowski.html#getRange--">getRange</a>, <a href="../../etomica/potential/P2HydrogenHindePatkowski.html#nBody--">nBody</a>, <a href="../../etomica/potential/P2HydrogenHindePatkowski.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -208,11 +208,11 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -228,13 +228,13 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2HydrogenHindePatkowskiMolecular-etomica.space.ISpace-">
+<a name="P2HydrogenHindePatkowskiMolecular-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2HydrogenHindePatkowskiMolecular</h4>
-<pre>public&nbsp;P2HydrogenHindePatkowskiMolecular(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;P2HydrogenHindePatkowskiMolecular(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -245,13 +245,13 @@ implements <a href="../../etomica/api/IPotential.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="energy-etomica.api.IMoleculeList-">
+<a name="energy-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 </li>
 </ul>
 </li>

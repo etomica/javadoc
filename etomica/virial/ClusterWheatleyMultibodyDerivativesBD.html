@@ -187,7 +187,7 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#moleculeIndices">moleculeIndices</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#molecules">molecules</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -368,7 +368,7 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>molecules</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a> molecules</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a> molecules</pre>
 </li>
 </ul>
 <a name="doMulti">
@@ -475,10 +475,7 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
           4-body Mayer function, etc.  fMulti null entries will be
           ignored and the array need to not be of size equal to nPoints.
           If only 3-body Mayer function is available, then fMulti can be
-          of length 4 (0,1,2,3).</dd>
-<dd><code>tol</code> - if the magnitude of the computed cluster value is less than
-          the value will be recomputed using BigDecimal.  Use tol=0 to
-          prevent BigDecimal computations.</dd>
+          of length 4 (0,1,2,3)</dd>
 </dl>
 </li>
 </ul>

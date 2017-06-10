@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;, <a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></dd>
+<dd><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;, <a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">CriterionSimple</span>
 extends java.lang.Object
-implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>, <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</pre>
+implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>, <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</pre>
 <div class="block">Simple neighbor criterion based on distance moved by a leaf atom since
  the last update.</div>
 </li>
@@ -135,15 +135,15 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#agentManager">agentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#boundary">boundary</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#boxAgentManager">boxAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -151,7 +151,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#displacementLimit2">displacementLimit2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -175,7 +175,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#safetyFactor">safetyFactor</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -193,8 +193,8 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#CriterionSimple-etomica.api.ISimulation-etomica.space.ISpace-double-double-">CriterionSimple</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-               <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#CriterionSimple-etomica.simulation.Simulation-etomica.space.Space-double-double-">CriterionSimple</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+               <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                double&nbsp;interactionRange,
                double&nbsp;neighborRadius)</code>&nbsp;</td>
 </tr>
@@ -215,7 +215,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#accept-etomica.api.IAtomList-">accept</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#accept-etomica.atom.IAtomList-">accept</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -238,31 +238,31 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#getSafetyFactor--">getSafetyFactor</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#needUpdate-etomica.api.IAtom-">needUpdate</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates whether the neighbor list for the given atom should
  be updated, according to this criterion.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#releaseAgent-etomica.api.IVectorMutable-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;agent,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#releaseAgent-etomica.space.Vector-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;agent,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#reset-etomica.api.IAtom-">reset</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#reset-etomica.atom.IAtom-">reset</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates to criterion that given atom's neighbor list has just been 
  updated, and that properties (e.g., record of atom's position) 
  used by needUpdate and unsafe() methods should be reset.</div>
@@ -270,7 +270,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionSimple.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Specifies the box where the criterion is being applied.</div>
 </td>
 </tr>
@@ -320,7 +320,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="interactionRange">
@@ -356,7 +356,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="boundary">
@@ -365,7 +365,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>boundary</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a> boundary</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
 </li>
 </ul>
 <a name="safetyFactor">
@@ -401,7 +401,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>agentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt; agentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; agentManager</pre>
 </li>
 </ul>
 <a name="boxAgentManager">
@@ -410,7 +410,7 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <ul class="blockListLast">
 <li class="blockList">
 <h4>boxAgentManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;&gt; boxAgentManager</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&gt; boxAgentManager</pre>
 </li>
 </ul>
 </li>
@@ -421,14 +421,14 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CriterionSimple-etomica.api.ISimulation-etomica.space.ISpace-double-double-">
+<a name="CriterionSimple-etomica.simulation.Simulation-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CriterionSimple</h4>
-<pre>public&nbsp;CriterionSimple(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                       <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;CriterionSimple(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                       <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                        double&nbsp;interactionRange,
                        double&nbsp;neighborRadius)</pre>
 </li>
@@ -513,38 +513,38 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 <pre>public&nbsp;<a href="../../etomica/units/Dimension.html" title="class in etomica.units">Dimension</a>&nbsp;getInteractionRangeDimension()</pre>
 </li>
 </ul>
-<a name="needUpdate-etomica.api.IAtom-">
+<a name="needUpdate-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>needUpdate</h4>
-<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.api.IAtom-">NeighborCriterion</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.atom.IAtom-">NeighborCriterion</a></code></span></div>
 <div class="block">Indicates whether the neighbor list for the given atom should
  be updated, according to this criterion.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.api.IAtom-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the atom's list should be updated.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.api.IBox-">NeighborCriterion</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.box.Box-">NeighborCriterion</a></code></span></div>
 <div class="block">Specifies the box where the criterion is being applied.  Sometimes
  needed if the criterion depends on features of the box, such as the
  boundary.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -566,72 +566,72 @@ implements <a href="../../etomica/nbr/NeighborCriterion.html" title="interface i
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IAtomList-">
+<a name="accept-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.api.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="reset-etomica.api.IAtom-">
+<a name="reset-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.api.IAtom-">NeighborCriterion</a></code></span></div>
+<pre>public&nbsp;void&nbsp;reset(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.atom.IAtom-">NeighborCriterion</a></code></span></div>
 <div class="block">Indicates to criterion that given atom's neighbor list has just been 
  updated, and that properties (e.g., record of atom's position) 
  used by needUpdate and unsafe() methods should be reset.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.api.IAtom-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.atom.IAtom-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                                <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                        <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.api.IVectorMutable-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.space.Vector-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
-<pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;agent,
-                         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;agent,
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

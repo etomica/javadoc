@@ -129,18 +129,18 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.api.IAtomList-">accept</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.api.IAtom-">needUpdate</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates whether the neighbor list for the given atom should
  be updated, according to this criterion.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.api.IAtom-">reset</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#reset-etomica.atom.IAtom-">reset</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates to criterion that given atom's neighbor list has just been 
  updated, and that properties (e.g., record of atom's position) 
  used by needUpdate and unsafe() methods should be reset.</div>
@@ -148,7 +148,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Specifies the box where the criterion is being applied.</div>
 </td>
 </tr>
@@ -173,22 +173,22 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IAtomList-">
+<a name="accept-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>boolean&nbsp;accept(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</pre>
+<pre>boolean&nbsp;accept(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
 </li>
 </ul>
-<a name="needUpdate-etomica.api.IAtom-">
+<a name="needUpdate-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>needUpdate</h4>
-<pre>boolean&nbsp;needUpdate(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>boolean&nbsp;needUpdate(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Indicates whether the neighbor list for the given atom should
  be updated, according to this criterion.</div>
 <dl>
@@ -197,13 +197,13 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Specifies the box where the criterion is being applied.  Sometimes
  needed if the criterion depends on features of the box, such as the
  boundary.</div>
@@ -222,13 +222,13 @@ var activeTableTab = "activeTableTab";
  errors in the calculation.</div>
 </li>
 </ul>
-<a name="reset-etomica.api.IAtom-">
+<a name="reset-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reset</h4>
-<pre>void&nbsp;reset(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>void&nbsp;reset(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Indicates to criterion that given atom's neighbor list has just been 
  updated, and that properties (e.g., record of atom's position) 
  used by needUpdate and unsafe() methods should be reset.</div>

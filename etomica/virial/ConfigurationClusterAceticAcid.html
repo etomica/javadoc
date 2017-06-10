@@ -153,7 +153,7 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#f3">f3</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -178,19 +178,19 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                              <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                              <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                              <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                              <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f2)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                              <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">ConfigurationClusterAceticAcid</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                              <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f2,
                               <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f3)</code>&nbsp;</td>
@@ -212,25 +212,25 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#association-etomica.virial.MayerFunction-etomica.atom.MoleculePair-etomica.api.IBox-">association</a></span>(<a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
-           <a href="../../etomica/atom/MoleculePair.html" title="class in etomica.atom">MoleculePair</a>&nbsp;pair,
-           <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#association-etomica.virial.MayerFunction-etomica.molecule.MoleculePair-etomica.box.Box-">association</a></span>(<a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
+           <a href="../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a>&nbsp;pair,
+           <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates-etomica.api.IBox-boolean-boolean-">initializeCoordinates</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates-etomica.box.Box-boolean-boolean-">initializeCoordinates</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                      boolean&nbsp;a,
                      boolean&nbsp;b)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates2-etomica.api.IBox-boolean-boolean-">initializeCoordinates2</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates2-etomica.box.Box-boolean-boolean-">initializeCoordinates2</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                       boolean&nbsp;a,
                       boolean&nbsp;b)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates4Mol-etomica.api.IBox-char-char-char-char-char-int-int-">initializeCoordinates4Mol</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#initializeCoordinates4Mol-etomica.box.Box-char-char-char-char-char-int-int-">initializeCoordinates4Mol</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                          char&nbsp;a,
                          char&nbsp;b,
                          char&nbsp;c,
@@ -241,20 +241,20 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translation2Mol-int-double:A-etomica.api.IBox-">translation2Mol</a></span>(int&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translation2Mol-int-double:A-etomica.box.Box-">translation2Mol</a></span>(int&nbsp;a,
                double[]&nbsp;e,
-               <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+               <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translation3Mol-double:A-double:A-etomica.api.IBox-">translation3Mol</a></span>(double[]&nbsp;e,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translation3Mol-double:A-double:A-etomica.box.Box-">translation3Mol</a></span>(double[]&nbsp;e,
                double[]&nbsp;f,
-               <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+               <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translationRandom-etomica.api.IMolecule-etomica.api.IBox-">translationRandom</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol,
-                 <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/ConfigurationClusterAceticAcid.html#translationRandom-etomica.molecule.IMolecule-etomica.box.Box-">translationRandom</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol,
+                 <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -262,7 +262,7 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.virial.<a href="../../etomica/virial/ConfigurationCluster.html" title="class in etomica.virial">ConfigurationCluster</a></h3>
-<code><a href="../../etomica/virial/ConfigurationCluster.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code></li>
+<code><a href="../../etomica/virial/ConfigurationCluster.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -291,7 +291,7 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="f">
@@ -329,37 +329,37 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-">
+<a name="ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigurationClusterAceticAcid</h4>
-<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f)</pre>
 </li>
 </ul>
-<a name="ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">
+<a name="ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigurationClusterAceticAcid</h4>
-<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f2)</pre>
 </li>
 </ul>
-<a name="ConfigurationClusterAceticAcid-etomica.space.ISpace-etomica.api.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">
+<a name="ConfigurationClusterAceticAcid-etomica.space.Space-etomica.util.random.IRandom-etomica.virial.MayerFunction-etomica.virial.MayerFunction-etomica.virial.MayerFunction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationClusterAceticAcid</h4>
-<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                      <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;ConfigurationClusterAceticAcid(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                      <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f2,
                                       <a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f3)</pre>
@@ -373,24 +373,24 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initializeCoordinates-etomica.api.IBox-boolean-boolean-">
+<a name="initializeCoordinates-etomica.box.Box-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                   boolean&nbsp;a,
                                   boolean&nbsp;b)</pre>
 </li>
 </ul>
-<a name="initializeCoordinates4Mol-etomica.api.IBox-char-char-char-char-char-int-int-">
+<a name="initializeCoordinates4Mol-etomica.box.Box-char-char-char-char-char-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializeCoordinates4Mol</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates4Mol(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;void&nbsp;initializeCoordinates4Mol(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                       char&nbsp;a,
                                       char&nbsp;b,
                                       char&nbsp;c,
@@ -400,18 +400,18 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
                                       int&nbsp;molNumber2)</pre>
 </li>
 </ul>
-<a name="initializeCoordinates2-etomica.api.IBox-boolean-boolean-">
+<a name="initializeCoordinates2-etomica.box.Box-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializeCoordinates2</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates2(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;void&nbsp;initializeCoordinates2(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                    boolean&nbsp;a,
                                    boolean&nbsp;b)</pre>
 </li>
 </ul>
-<a name="translation2Mol-int-double:A-etomica.api.IBox-">
+<a name="translation2Mol-int-double:A-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -419,10 +419,10 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <h4>translation2Mol</h4>
 <pre>public&nbsp;void&nbsp;translation2Mol(int&nbsp;a,
                             double[]&nbsp;e,
-                            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+                            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a name="translation3Mol-double:A-double:A-etomica.api.IBox-">
+<a name="translation3Mol-double:A-double:A-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -430,28 +430,28 @@ extends <a href="../../etomica/virial/ConfigurationCluster.html" title="class in
 <h4>translation3Mol</h4>
 <pre>public&nbsp;void&nbsp;translation3Mol(double[]&nbsp;e,
                             double[]&nbsp;f,
-                            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+                            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a name="translationRandom-etomica.api.IMolecule-etomica.api.IBox-">
+<a name="translationRandom-etomica.molecule.IMolecule-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>translationRandom</h4>
-<pre>public&nbsp;void&nbsp;translationRandom(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mol,
-                              <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;translationRandom(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mol,
+                              <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a name="association-etomica.virial.MayerFunction-etomica.atom.MoleculePair-etomica.api.IBox-">
+<a name="association-etomica.virial.MayerFunction-etomica.molecule.MoleculePair-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>association</h4>
 <pre>public&nbsp;void&nbsp;association(<a href="../../etomica/virial/MayerFunction.html" title="interface in etomica.virial">MayerFunction</a>&nbsp;f,
-                        <a href="../../etomica/atom/MoleculePair.html" title="class in etomica.atom">MoleculePair</a>&nbsp;pair,
-                        <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+                        <a href="../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a>&nbsp;pair,
+                        <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>

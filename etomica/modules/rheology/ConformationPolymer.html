@@ -134,11 +134,11 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#r">r</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -156,8 +156,8 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#ConformationPolymer-etomica.space.ISpace-etomica.api.IRandom-">ConformationPolymer</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                   <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#ConformationPolymer-etomica.space.Space-etomica.util.random.IRandom-">ConformationPolymer</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                   <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,7 +176,7 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rheology/ConformationPolymer.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</code>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 </td>
 </tr>
@@ -208,7 +208,7 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 <a name="r">
@@ -217,7 +217,7 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>r</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> r</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> r</pre>
 </li>
 </ul>
 </li>
@@ -228,14 +228,14 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConformationPolymer-etomica.space.ISpace-etomica.api.IRandom-">
+<a name="ConformationPolymer-etomica.space.Space-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConformationPolymer</h4>
-<pre>public&nbsp;ConformationPolymer(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                           <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;ConformationPolymer(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                           <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -246,18 +246,18 @@ implements <a href="../../../etomica/config/IConformation.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initializePositions-etomica.api.IAtomList-">
+<a name="initializePositions-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializePositions</h4>
-<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomList)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">IConformation</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializePositions(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomList)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">IConformation</a></code></span></div>
 <div class="block">Defined by subclass to assign coordinates to the atoms in the given list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.api.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
+<dd><code><a href="../../../etomica/config/IConformation.html#initializePositions-etomica.atom.IAtomList-">initializePositions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></dd>
 </dl>
 </li>
 </ul>

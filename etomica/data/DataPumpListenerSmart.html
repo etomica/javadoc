@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>, <a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></dd>
+<dd><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></dd>
 </dl>
 <hr>
 <br>
@@ -149,7 +149,7 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataPumpListenerSmart.html#history">history</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -192,15 +192,15 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataPumpListenerSmart.html#DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-etomica.util.HistoryCollapsingDiscard-">DataPumpListenerSmart</a></span>(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataPumpListenerSmart.html#DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-etomica.data.history.HistoryCollapsingDiscard-">DataPumpListenerSmart</a></span>(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
                      <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink,
-                     <a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a>&nbsp;historySink)</code>&nbsp;</td>
+                     <a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a>&nbsp;historySink)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataPumpListenerSmart.html#DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-int-etomica.util.HistoryCollapsingDiscard-">DataPumpListenerSmart</a></span>(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataPumpListenerSmart.html#DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-int-etomica.data.history.HistoryCollapsingDiscard-">DataPumpListenerSmart</a></span>(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
                      <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink,
                      int&nbsp;interval,
-                     <a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a>&nbsp;historySink)</code>&nbsp;</td>
+                     <a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a>&nbsp;historySink)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -229,7 +229,7 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a></h3>
-<code><a href="../../etomica/data/DataPumpListener.html#getInterval--">getInterval</a>, <a href="../../etomica/data/DataPumpListener.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a>, <a href="../../etomica/data/DataPumpListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a>, <a href="../../etomica/data/DataPumpListener.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a>, <a href="../../etomica/data/DataPumpListener.html#setInterval-long-">setInterval</a></code></li>
+<code><a href="../../etomica/data/DataPumpListener.html#getInterval--">getInterval</a>, <a href="../../etomica/data/DataPumpListener.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a>, <a href="../../etomica/data/DataPumpListener.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a>, <a href="../../etomica/data/DataPumpListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a>, <a href="../../etomica/data/DataPumpListener.html#setInterval-long-">setInterval</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataPump">
@@ -272,7 +272,7 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>history</h4>
-<pre>protected final&nbsp;<a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a> history</pre>
+<pre>protected final&nbsp;<a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a> history</pre>
 </li>
 </ul>
 <a name="lastData">
@@ -292,7 +292,7 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-etomica.util.HistoryCollapsingDiscard-">
+<a name="DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-etomica.data.history.HistoryCollapsingDiscard-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -300,10 +300,10 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <h4>DataPumpListenerSmart</h4>
 <pre>public&nbsp;DataPumpListenerSmart(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
                              <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink,
-                             <a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a>&nbsp;historySink)</pre>
+                             <a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a>&nbsp;historySink)</pre>
 </li>
 </ul>
-<a name="DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-int-etomica.util.HistoryCollapsingDiscard-">
+<a name="DataPumpListenerSmart-etomica.data.IEtomicaDataSource-etomica.data.IDataSink-int-etomica.data.history.HistoryCollapsingDiscard-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -312,7 +312,7 @@ extends <a href="../../etomica/data/DataPumpListener.html" title="class in etomi
 <pre>public&nbsp;DataPumpListenerSmart(<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>&nbsp;dataSource,
                              <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink,
                              int&nbsp;interval,
-                             <a href="../../etomica/util/HistoryCollapsingDiscard.html" title="class in etomica.util">HistoryCollapsingDiscard</a>&nbsp;historySink)</pre>
+                             <a href="../../etomica/data/history/HistoryCollapsingDiscard.html" title="class in etomica.data.history">HistoryCollapsingDiscard</a>&nbsp;historySink)</pre>
 </li>
 </ul>
 </li>

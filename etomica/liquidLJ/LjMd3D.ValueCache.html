@@ -136,7 +136,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html#dss">dss</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -162,8 +162,8 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html#ValueCache-etomica.data.DataSourceScalar-etomica.api.IIntegrator-">ValueCache</a></span>(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;dss,
-          <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;integrator)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html#ValueCache-etomica.data.DataSourceScalar-etomica.integrator.Integrator-">ValueCache</a></span>(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;dss,
+          <a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -206,24 +206,6 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="lastStep">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lastStep</h4>
-<pre>protected&nbsp;long lastStep</pre>
-</li>
-</ul>
-<a name="lastValue">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lastValue</h4>
-<pre>protected&nbsp;double lastValue</pre>
-</li>
-</ul>
 <a name="dss">
 <!--   -->
 </a>
@@ -236,10 +218,28 @@ extends java.lang.Object</pre>
 <a name="integrator">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>integrator</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a> integrator</pre>
+<pre>protected final&nbsp;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a> integrator</pre>
+</li>
+</ul>
+<a name="lastStep">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastStep</h4>
+<pre>protected&nbsp;long lastStep</pre>
+</li>
+</ul>
+<a name="lastValue">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>lastValue</h4>
+<pre>protected&nbsp;double lastValue</pre>
 </li>
 </ul>
 </li>
@@ -250,14 +250,14 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ValueCache-etomica.data.DataSourceScalar-etomica.api.IIntegrator-">
+<a name="ValueCache-etomica.data.DataSourceScalar-etomica.integrator.Integrator-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ValueCache</h4>
 <pre>public&nbsp;ValueCache(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;dss,
-                  <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;integrator)</pre>
+                  <a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</pre>
 </li>
 </ul>
 </li>

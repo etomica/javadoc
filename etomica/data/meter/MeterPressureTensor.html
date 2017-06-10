@@ -136,7 +136,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -148,7 +148,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#dataInfo">dataInfo</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#iteratorDirective">iteratorDirective</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -156,7 +156,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#pc">pc</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -182,8 +182,8 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#MeterPressureTensor-etomica.api.IPotentialMaster-etomica.space.ISpace-">MeterPressureTensor</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                   <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#MeterPressureTensor-etomica.potential.PotentialMaster-etomica.space.Space-">MeterPressureTensor</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -201,7 +201,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#getBox--">getBox</a></span>()</code>
 <div class="block">Returns the integrator associated with this instance.</div>
 </td>
@@ -230,7 +230,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterPressureTensor.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>
 <div class="block">Sets the integrator associated with this instance.</div>
 </td>
 </tr>
@@ -300,7 +300,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="box">
@@ -309,7 +309,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="iteratorDirective">
@@ -318,7 +318,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>iteratorDirective</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/iterator/IteratorDirective.html" title="class in etomica.atom.iterator">IteratorDirective</a> iteratorDirective</pre>
+<pre>protected&nbsp;<a href="../../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> iteratorDirective</pre>
 </li>
 </ul>
 <a name="pc">
@@ -347,14 +347,14 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterPressureTensor-etomica.api.IPotentialMaster-etomica.space.ISpace-">
+<a name="MeterPressureTensor-etomica.potential.PotentialMaster-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterPressureTensor</h4>
-<pre>public&nbsp;MeterPressureTensor(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                           <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;MeterPressureTensor(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -391,13 +391,13 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 <div class="block">Sets the integrator associated with this instance.  The pressure is 
  calculated for the box the integrator acts on and integrator's 
  temperature is used for the ideal gas contribution.</div>
@@ -409,7 +409,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <div class="block">Returns the integrator associated with this instance.  The pressure is 
  calculated for the box the integrator acts on and integrator's 
  temperature is used for the ideal gas contribution.</div>

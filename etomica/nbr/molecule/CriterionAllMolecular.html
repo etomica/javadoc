@@ -157,25 +157,25 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#accept-etomica.api.IMoleculeList-">accept</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#accept-etomica.molecule.IMoleculeList-">accept</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</code>
 <div class="block">Always returns true, indicating that all atoms pairs are neighbors.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#needUpdate-etomica.api.IMolecule-">needUpdate</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#needUpdate-etomica.molecule.IMolecule-">needUpdate</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Always returns false, indicating that neighbor list never needs updating.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#reset-etomica.api.IMolecule-">reset</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#reset-etomica.molecule.IMolecule-">reset</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Performs no action.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionAllMolecular.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Performs no action.</div>
 </td>
 </tr>
@@ -224,35 +224,35 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="needUpdate-etomica.api.IMolecule-">
+<a name="needUpdate-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>needUpdate</h4>
-<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>public&nbsp;boolean&nbsp;needUpdate(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Always returns false, indicating that neighbor list never needs updating.
  This is appropriate if atoms are never added to or removed from box,
  because all atoms are always on neighbor list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#needUpdate-etomica.api.IMolecule-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#needUpdate-etomica.molecule.IMolecule-">needUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the molecule's list should be updated.</dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Performs no action.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -272,31 +272,31 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
 </dl>
 </li>
 </ul>
-<a name="reset-etomica.api.IMolecule-">
+<a name="reset-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
+<pre>public&nbsp;void&nbsp;reset(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Performs no action.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#reset-etomica.api.IMolecule-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#reset-etomica.molecule.IMolecule-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IMoleculeList-">
+<a name="accept-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;pair)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;pair)</pre>
 <div class="block">Always returns true, indicating that all atoms pairs are neighbors.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.api.IMoleculeList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#accept-etomica.molecule.IMoleculeList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
 </dl>
 </li>
 </ul>

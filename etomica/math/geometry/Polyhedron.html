@@ -203,7 +203,7 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polyhedron.html#distanceTo-etomica.api.IVector-">distanceTo</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polyhedron.html#distanceTo-etomica.space.Vector-">distanceTo</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Returns the perpendicular distance to the nearest face of the 
  polyhedron.</div>
 </td>
@@ -238,7 +238,7 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.math.geometry.<a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></h3>
-<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVolume--">getVolume</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a>, <a href="../../../etomica/math/geometry/Polytope.html#updateVertices--">updateVertices</a></code></li>
+<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVolume--">getVolume</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a>, <a href="../../../etomica/math/geometry/Polytope.html#updateVertices--">updateVertices</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -352,13 +352,13 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <div class="block">Returns the sum the area of the faces of the polyhedron</div>
 </li>
 </ul>
-<a name="distanceTo-etomica.api.IVector-">
+<a name="distanceTo-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>distanceTo</h4>
-<pre>public&nbsp;double&nbsp;distanceTo(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
+<pre>public&nbsp;double&nbsp;distanceTo(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
 <div class="block">Returns the perpendicular distance to the nearest face of the 
  polyhedron.  Assumes that given point is contained in polyhedron;
  if not, returns NaN.</div>

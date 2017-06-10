@@ -137,19 +137,19 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#atom1">atom1</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#atom2">atom2</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#vector">vector</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -174,7 +174,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#DataSourceAtomDistance-etomica.space.ISpace-">DataSourceAtomDistance</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#DataSourceAtomDistance-etomica.space.Space-">DataSourceAtomDistance</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -199,8 +199,8 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#setAtoms-etomica.api.IAtom-etomica.api.IAtom-">setAtoms</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom1,
-        <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceAtomDistance.html#setAtoms-etomica.atom.IAtom-etomica.atom.IAtom-">setAtoms</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+        <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -237,7 +237,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="vector">
@@ -246,7 +246,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>vector</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> vector</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> vector</pre>
 </li>
 </ul>
 <a name="atom1">
@@ -255,7 +255,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>atom1</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> atom1</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> atom1</pre>
 </li>
 </ul>
 <a name="atom2">
@@ -264,7 +264,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>atom2</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> atom2</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> atom2</pre>
 </li>
 </ul>
 </li>
@@ -275,13 +275,13 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataSourceAtomDistance-etomica.space.ISpace-">
+<a name="DataSourceAtomDistance-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataSourceAtomDistance</h4>
-<pre>public&nbsp;DataSourceAtomDistance(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;DataSourceAtomDistance(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -308,14 +308,14 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 </dl>
 </li>
 </ul>
-<a name="setAtoms-etomica.api.IAtom-etomica.api.IAtom-">
+<a name="setAtoms-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setAtoms</h4>
-<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom1,
-                     <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom2)</pre>
+<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+                     <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</pre>
 </li>
 </ul>
 </li>

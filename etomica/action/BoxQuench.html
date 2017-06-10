@@ -176,15 +176,15 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#BoxQuench-double-int-">BoxQuench</a></span>(double&nbsp;temperature,
-         int&nbsp;dim)</code>
-<div class="block">Constructs class without specifying box and using Default temperature.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#BoxQuench-etomica.box.Box-double-">BoxQuench</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p,
+         double&nbsp;temperature)</code>
+<div class="block">Constructs class ready to perform quench on given box to given temperature.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#BoxQuench-etomica.api.IBox-double-">BoxQuench</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p,
-         double&nbsp;temperature)</code>
-<div class="block">Constructs class ready to perform quench on given box to given temperature.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#BoxQuench-double-int-">BoxQuench</a></span>(double&nbsp;temperature,
+         int&nbsp;dim)</code>
+<div class="block">Constructs class without specifying box and using Default temperature.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -219,7 +219,7 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxQuench.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -312,13 +312,13 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
  Requires call to setBox before action will have any effect.</div>
 </li>
 </ul>
-<a name="BoxQuench-etomica.api.IBox-double-">
+<a name="BoxQuench-etomica.box.Box-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxQuench</h4>
-<pre>public&nbsp;BoxQuench(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p,
+<pre>public&nbsp;BoxQuench(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p,
                  double&nbsp;temperature)</pre>
 <div class="block">Constructs class ready to perform quench on given box to given temperature.</div>
 </li>
@@ -331,18 +331,18 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/action/BoxAction.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/BoxAction.html" title="interface in etomica.action">BoxAction</a></code></dd>
+<dd><code><a href="../../etomica/action/BoxAction.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/BoxAction.html" title="interface in etomica.action">BoxAction</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a></code></dd>
+<dd><code><a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>p</code> - The box on which this action will be performed.</dd>
 </dl>

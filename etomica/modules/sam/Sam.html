@@ -110,10 +110,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Sam</span>
@@ -150,7 +146,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/Sam.html#bondTheta">bondTheta</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/Sam.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -278,7 +274,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/Sam.html#p4BondCCCS">p4BondCCCS</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/Sam.html#positionDefinition">positionDefinition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -419,7 +415,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.api.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.api.IAtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.api.IAtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.api.IBox-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.api.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -442,6 +438,42 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="p1SurfaceBond">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>p1SurfaceBond</h4>
+<pre>public final&nbsp;<a href="../../../etomica/modules/sam/P1Sinusoidal.html" title="class in etomica.modules.sam">P1Sinusoidal</a> p1SurfaceBond</pre>
+</li>
+</ul>
+<a name="sinusoidalB">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sinusoidalB</h4>
+<pre>public final&nbsp;double sinusoidalB</pre>
+</li>
+</ul>
+<a name="p2SurfaceBond">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>p2SurfaceBond</h4>
+<pre>public final&nbsp;<a href="../../../etomica/potential/P2Harmonic.html" title="class in etomica.potential">P2Harmonic</a> p2SurfaceBond</pre>
+</li>
+</ul>
+<a name="harmonicStrength">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>harmonicStrength</h4>
+<pre>public final&nbsp;double harmonicStrength</pre>
+</li>
+</ul>
 <a name="species">
 <!--   -->
 </a>
@@ -466,7 +498,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="integrator">
@@ -493,7 +525,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>positionDefinition</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a> positionDefinition</pre>
+<pre>public&nbsp;<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
 </li>
 </ul>
 <a name="wallPotential">
@@ -512,24 +544,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>config</h4>
 <pre>public&nbsp;<a href="../../../etomica/modules/sam/ConfigurationSAM.html" title="class in etomica.modules.sam">ConfigurationSAM</a> config</pre>
-</li>
-</ul>
-<a name="p1SurfaceBond">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>p1SurfaceBond</h4>
-<pre>public final&nbsp;<a href="../../../etomica/modules/sam/P1Sinusoidal.html" title="class in etomica.modules.sam">P1Sinusoidal</a> p1SurfaceBond</pre>
-</li>
-</ul>
-<a name="sinusoidalB">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sinusoidalB</h4>
-<pre>public final&nbsp;double sinusoidalB</pre>
 </li>
 </ul>
 <a name="p2CH2">
@@ -694,24 +708,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;<a href="../../../etomica/potential/P2SoftSphericalTruncatedSwitched.html" title="class in etomica.potential">P2SoftSphericalTruncatedSwitched</a> p2CH2Surface</pre>
 </li>
 </ul>
-<a name="p2SurfaceBond">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>p2SurfaceBond</h4>
-<pre>public final&nbsp;<a href="../../../etomica/potential/P2Harmonic.html" title="class in etomica.potential">P2Harmonic</a> p2SurfaceBond</pre>
-</li>
-</ul>
-<a name="harmonicStrength">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>harmonicStrength</h4>
-<pre>public final&nbsp;double harmonicStrength</pre>
-</li>
-</ul>
 <a name="criterion3">
 <!--   -->
 </a>
@@ -863,6 +859,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="main-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>main</h4>
+<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
+</li>
+</ul>
 <a name="updateConformation-int-">
 <!--   -->
 </a>
@@ -870,15 +875,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>updateConformation</h4>
 <pre>protected&nbsp;void&nbsp;updateConformation(int&nbsp;iChain)</pre>
-</li>
-</ul>
-<a name="setChainTheta-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setChainTheta</h4>
-<pre>public&nbsp;void&nbsp;setChainTheta(double&nbsp;newTheta)</pre>
 </li>
 </ul>
 <a name="getChainTheta--">
@@ -890,13 +886,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;double&nbsp;getChainTheta()</pre>
 </li>
 </ul>
-<a name="setChainPsi-double-">
+<a name="setChainTheta-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setChainPsi</h4>
-<pre>public&nbsp;void&nbsp;setChainPsi(double&nbsp;newPsi)</pre>
+<h4>setChainTheta</h4>
+<pre>public&nbsp;void&nbsp;setChainTheta(double&nbsp;newTheta)</pre>
 </li>
 </ul>
 <a name="getChainPsi--">
@@ -906,6 +902,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>getChainPsi</h4>
 <pre>public&nbsp;double&nbsp;getChainPsi()</pre>
+</li>
+</ul>
+<a name="setChainPsi-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChainPsi</h4>
+<pre>public&nbsp;void&nbsp;setChainPsi(double&nbsp;newPsi)</pre>
 </li>
 </ul>
 <a name="setChainPhi-int-double-">
@@ -936,15 +941,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;void&nbsp;findTetherBonds()</pre>
 </li>
 </ul>
-<a name="setNumZCells-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setNumZCells</h4>
-<pre>public&nbsp;void&nbsp;setNumZCells(int&nbsp;newNumZCells)</pre>
-</li>
-</ul>
 <a name="getNumZCells--">
 <!--   -->
 </a>
@@ -954,13 +950,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;int&nbsp;getNumZCells()</pre>
 </li>
 </ul>
-<a name="setNumXCells-int-">
+<a name="setNumZCells-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setNumXCells</h4>
-<pre>public&nbsp;void&nbsp;setNumXCells(int&nbsp;newNumXCells)</pre>
+<h4>setNumZCells</h4>
+<pre>public&nbsp;void&nbsp;setNumZCells(int&nbsp;newNumZCells)</pre>
 </li>
 </ul>
 <a name="getNumXCells--">
@@ -970,6 +966,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>getNumXCells</h4>
 <pre>public&nbsp;int&nbsp;getNumXCells()</pre>
+</li>
+</ul>
+<a name="setNumXCells-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNumXCells</h4>
+<pre>public&nbsp;void&nbsp;setNumXCells(int&nbsp;newNumXCells)</pre>
 </li>
 </ul>
 <a name="updateRCut--">
@@ -984,19 +989,10 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <a name="setChainLength-int-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setChainLength</h4>
 <pre>public&nbsp;void&nbsp;setChainLength(int&nbsp;newChainLength)</pre>
-</li>
-</ul>
-<a name="main-java.lang.String:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>main</h4>
-<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
 </li>
 </ul>
 </li>

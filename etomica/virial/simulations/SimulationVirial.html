@@ -111,10 +111,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../../etomica/virial/simulations/SimulationVirialDiagram.html" title="class in etomica.virial.simulations">SimulationVirialDiagram</a>, <a href="../../../etomica/virial/simulations/SimulationVirialUmbrella.html" title="class in etomica.virial.simulations">SimulationVirialUmbrella</a></dd>
 </dl>
@@ -206,7 +202,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#sampleCluster">sampleCluster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -235,8 +231,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                 int[]&nbsp;nMolecules,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -244,16 +240,16 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;targetClusters)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;targetClusters)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -261,8 +257,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                 boolean&nbsp;doWiggle)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-int:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-int:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                 <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -271,7 +267,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                 int[]&nbsp;seeds)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                 <a href="../../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a>&nbsp;speciesFactory,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -281,7 +277,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.ISpace-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">SimulationVirial</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/simulations/SimulationVirial.html#SimulationVirial-etomica.space.Space-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">SimulationVirial</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                 <a href="../../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a>&nbsp;speciesFactory,
                 double&nbsp;temperature,
                 <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -342,7 +338,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.api.IBox-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.api.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.api.IAtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.api.IAtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.api.IBox-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.api.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.api.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -407,7 +403,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>species</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[] species</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[] species</pre>
 </li>
 </ul>
 <a name="ai">
@@ -535,14 +531,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies:A-int:A-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
+<a name="SimulationVirial-etomica.space.Space-etomica.species.ISpecies:A-int:A-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species,
                         int[]&nbsp;nMolecules,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -550,13 +546,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;targetClusters)</pre>
 </li>
 </ul>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
+<a name="SimulationVirial-etomica.space.Space-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                         <a href="../../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a>&nbsp;speciesFactory,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -565,27 +561,27 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <div class="block">Constructor for simulation to determine the ratio between reference and target Clusters</div>
 </li>
 </ul>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
+<a name="SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>[]&nbsp;targetClusters)</pre>
 </li>
 </ul>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">
+<a name="SimulationVirial-etomica.space.Space-etomica.virial.SpeciesFactory-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                         <a href="../../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a>&nbsp;speciesFactory,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
@@ -594,14 +590,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                         boolean&nbsp;doWiggle)</pre>
 </li>
 </ul>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">
+<a name="SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,
@@ -609,14 +605,14 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                         boolean&nbsp;doWiggle)</pre>
 </li>
 </ul>
-<a name="SimulationVirial-etomica.space.ISpace-etomica.api.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-int:A-">
+<a name="SimulationVirial-etomica.space.Space-etomica.species.ISpecies-double-etomica.virial.ClusterWeight-etomica.virial.ClusterAbstract-etomica.virial.ClusterAbstract:A-boolean-int:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationVirial</h4>
-<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                        <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
+<pre>public&nbsp;SimulationVirial(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                        <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                         double&nbsp;temperature,
                         <a href="../../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a>&nbsp;aSampleCluster,
                         <a href="../../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a>&nbsp;refCluster,

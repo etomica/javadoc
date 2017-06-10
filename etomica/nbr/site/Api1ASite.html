@@ -185,7 +185,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#next--">next</a></span>()</code>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 </td>
@@ -198,20 +198,20 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Sets the Box to pull iterates from</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setDirection-etomica.atom.iterator.IteratorDirective.Direction-">setDirection</a></span>(<a href="../../../etomica/atom/iterator/IteratorDirective.Direction.html" title="class in etomica.atom.iterator">IteratorDirective.Direction</a>&nbsp;direction)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a></span>(<a href="../../../etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</code>
 <div class="block">Indicates allowed direction for iteration, relative to specified target
  atom.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setTarget-etomica.api.IAtom-">setTarget</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newTargetAtom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/Api1ASite.html#setTarget-etomica.atom.IAtom-">setTarget</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</code>
 <div class="block">Sets the target molecule with which all pairs are formed.</div>
 </td>
 </tr>
@@ -291,18 +291,18 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.api.IBox-">AtomsetIteratorBoxDependent</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.box.Box-">AtomsetIteratorBoxDependent</a></code></span></div>
 <div class="block">Sets the Box to pull iterates from</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -327,7 +327,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;next()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html#next--">AtomLeafsetIterator</a></code></span></div>
 <div class="block">Returns the next AtomSet iterate, or null if hasNext() is false.</div>
 <dl>
@@ -381,37 +381,37 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 </dl>
 </li>
 </ul>
-<a name="setDirection-etomica.atom.iterator.IteratorDirective.Direction-">
+<a name="setDirection-etomica.potential.IteratorDirective.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDirection</h4>
-<pre>public&nbsp;void&nbsp;setDirection(<a href="../../../etomica/atom/iterator/IteratorDirective.Direction.html" title="class in etomica.atom.iterator">IteratorDirective.Direction</a>&nbsp;direction)</pre>
+<pre>public&nbsp;void&nbsp;setDirection(<a href="../../../etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</pre>
 <div class="block">Indicates allowed direction for iteration, relative to specified target
  atom. Specification of a null direction indicates iteration in both directions
  relative to the target. Direction is determined by ordering within occupant
  list of cell of target atom, and then by the cell ordering of neighboring cells.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html#setDirection-etomica.atom.iterator.IteratorDirective.Direction-">setDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setTarget-etomica.api.IAtom-">
+<a name="setTarget-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setTarget</h4>
-<pre>public&nbsp;void&nbsp;setTarget(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newTargetAtom)</pre>
+<pre>public&nbsp;void&nbsp;setTarget(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</pre>
 <div class="block">Sets the target molecule with which all pairs are formed.  Molecule
  is determined from the first atom of the array, which may be the molecule
  itself or an atom that is part of it.  If the atom is null or is not 
  in one of the species given at construction, no iterates will be returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html#setTarget-etomica.api.IAtom-">setTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html#setTarget-etomica.atom.IAtom-">setTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code></dd>
 </dl>
 </li>
 </ul>

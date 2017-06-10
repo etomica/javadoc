@@ -201,7 +201,7 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvas2D.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -247,8 +247,8 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvas2D.html#DisplayBoxCanvas2D-etomica.graphics.DisplayBox-etomica.space.ISpace-etomica.action.activity.Controller-">DisplayBoxCanvas2D</a></span>(<a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
-                  <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvas2D.html#DisplayBoxCanvas2D-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">DisplayBoxCanvas2D</a></span>(<a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                   <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code>&nbsp;</td>
 </tr>
 </table>
@@ -274,9 +274,9 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvas2D.html#drawAtom-java.awt.Graphics-int:A-etomica.api.IAtom-">drawAtom</a></span>(java.awt.Graphics&nbsp;g,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvas2D.html#drawAtom-java.awt.Graphics-int:A-etomica.atom.IAtom-">drawAtom</a></span>(java.awt.Graphics&nbsp;g,
         int[]&nbsp;origin,
-        <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+        <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -360,7 +360,7 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 <ul class="blockListLast">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>
@@ -371,14 +371,14 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DisplayBoxCanvas2D-etomica.graphics.DisplayBox-etomica.space.ISpace-etomica.action.activity.Controller-">
+<a name="DisplayBoxCanvas2D-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DisplayBoxCanvas2D</h4>
 <pre>public&nbsp;DisplayBoxCanvas2D(<a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
-                          <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+                          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                           <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
 </li>
 </ul>
@@ -427,7 +427,7 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 </dl>
 </li>
 </ul>
-<a name="drawAtom-java.awt.Graphics-int:A-etomica.api.IAtom-">
+<a name="drawAtom-java.awt.Graphics-int:A-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -435,7 +435,7 @@ extends <a href="../../etomica/graphics/DisplayCanvas.html" title="class in etom
 <h4>drawAtom</h4>
 <pre>protected&nbsp;void&nbsp;drawAtom(java.awt.Graphics&nbsp;g,
                         int[]&nbsp;origin,
-                        <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+                        <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 </li>
 </ul>
 <a name="doPaint-java.awt.Graphics-">

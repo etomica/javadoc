@@ -179,9 +179,9 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeNeighborCell.html#ColorSchemeNeighborCell-etomica.api.ISimulation-etomica.nbr.PotentialMasterNbr-etomica.api.IBox-int-">ColorSchemeNeighborCell</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeNeighborCell.html#ColorSchemeNeighborCell-etomica.simulation.Simulation-etomica.nbr.PotentialMasterNbr-etomica.box.Box-int-">ColorSchemeNeighborCell</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                        <a href="../../etomica/nbr/PotentialMasterNbr.html" title="class in etomica.nbr">PotentialMasterNbr</a>&nbsp;potentialMaster,
-                       <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+                       <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                        int&nbsp;dim)</code>&nbsp;</td>
 </tr>
 </table>
@@ -206,12 +206,12 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeNeighborCell.html#getAtom--">getAtom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeNeighborCell.html#setAtom-etomica.api.IAtom-">setAtom</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeNeighborCell.html#setAtom-etomica.atom.IAtom-">setAtom</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -219,7 +219,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="class in etomica.graphics">ColorSchemeCollectiveAgent</a></h3>
-<code><a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAgentClass--">getAgentClass</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#releaseAgent-java.awt.Color-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code></li>
+<code><a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAgentClass--">getAgentClass</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#releaseAgent-java.awt.Color-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.ColorScheme">
@@ -249,15 +249,15 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeNeighborCell-etomica.api.ISimulation-etomica.nbr.PotentialMasterNbr-etomica.api.IBox-int-">
+<a name="ColorSchemeNeighborCell-etomica.simulation.Simulation-etomica.nbr.PotentialMasterNbr-etomica.box.Box-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeNeighborCell</h4>
-<pre>public&nbsp;ColorSchemeNeighborCell(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<pre>public&nbsp;ColorSchemeNeighborCell(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                                <a href="../../etomica/nbr/PotentialMasterNbr.html" title="class in etomica.nbr">PotentialMasterNbr</a>&nbsp;potentialMaster,
-                               <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+                               <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                int&nbsp;dim)</pre>
 </li>
 </ul>
@@ -287,13 +287,13 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 </dl>
 </li>
 </ul>
-<a name="setAtom-etomica.api.IAtom-">
+<a name="setAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtom</h4>
-<pre>public&nbsp;void&nbsp;setAtom(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;void&nbsp;setAtom(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 </li>
 </ul>
 <a name="getAtom--">
@@ -302,7 +302,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAtom</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;getAtom()</pre>
 </li>
 </ul>
 </li>

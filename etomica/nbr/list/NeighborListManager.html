@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</dd>
+<dd><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;, <a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">NeighborListManager</span>
 extends java.lang.Object
-implements <a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</pre>
+implements <a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</pre>
 <div class="block">Initiates the process of updating the neighbor lists. Instance is constructed
  by PotentialMasterNbr constructor. Acts as a listener of the integrator(s),
  and performs the update at regular intervals upon receiving interval events.
@@ -178,7 +178,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#atomSetSinglet">atomSetSinglet</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -216,10 +216,10 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.api.IBox-etomica.space.ISpace-">NeighborListManager</a></span>(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.box.Box-etomica.space.Space-">NeighborListManager</a></span>(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
                    double&nbsp;range,
-                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                   <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Configures instance for use by the given PotentialMaster.</div>
 </td>
 </tr>
@@ -240,7 +240,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#addAtomNotify-etomica.api.IAtom-">addAtomNotify</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#addAtomNotify-etomica.atom.IAtom-">addAtomNotify</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Constructs neighbor lists for the given atom</div>
 </td>
 </tr>
@@ -250,15 +250,15 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getCriterion-etomica.api.IAtomType-">getCriterion</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getCriterion-etomica.atom.AtomType-">getCriterion</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getDoApplyPBC--">getDoApplyPBC</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getDownList-etomica.api.IAtom-">getDownList</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getDownList-etomica.atom.IAtom-">getDownList</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/NeighborListEventManager.html" title="class in etomica.nbr.list">NeighborListEventManager</a></code></td>
@@ -276,7 +276,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getPotential1BodyList-etomica.api.IAtom-">getPotential1BodyList</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getPotential1BodyList-etomica.atom.IAtom-">getPotential1BodyList</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -289,24 +289,24 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getUpList-etomica.api.IAtom-">getUpList</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getUpList-etomica.atom.IAtom-">getUpList</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a></span>(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></span>(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a></span>(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
@@ -316,8 +316,8 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
@@ -331,9 +331,9 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;agent,
-            <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;agent,
+            <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -341,7 +341,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#reset--">reset</a></span>()</code>
-<div class="block">For each box in the array, applies central image, 
+<div class="block">For each box in the array, applies central image,
  resets neighbors of all atoms, and sets up all neighbor
  lists.</div>
 </td>
@@ -383,7 +383,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#updateNbrsIfNeeded--">updateNbrsIfNeeded</a></span>()</code>
 <div class="block">Checks whether any atom needs neighbor list updating, and if
- one is found, performs neighbor list updates of all atom 
+ one is found, performs neighbor list updates of all atom
  neighbor lists.</div>
 </td>
 </tr>
@@ -427,15 +427,6 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <pre>protected final&nbsp;<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a> potentialMaster</pre>
 </li>
 </ul>
-<a name="numUnsafe">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numUnsafe</h4>
-<pre>protected&nbsp;long numUnsafe</pre>
-</li>
-</ul>
 <a name="agentManager2Body">
 <!--   -->
 </a>
@@ -454,13 +445,22 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <pre>protected final&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt; agentManager1Body</pre>
 </li>
 </ul>
+<a name="numUnsafe">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numUnsafe</h4>
+<pre>protected&nbsp;long numUnsafe</pre>
+</li>
+</ul>
 <a name="box">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="initialized">
@@ -498,7 +498,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.api.IBox-etomica.space.ISpace-">
+<a name="NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.box.Box-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -506,8 +506,8 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <h4>NeighborListManager</h4>
 <pre>public&nbsp;NeighborListManager(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
                            double&nbsp;range,
-                           <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                           <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Configures instance for use by the given PotentialMaster.</div>
 </li>
 </ul>
@@ -519,15 +519,6 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setDoApplyPBC-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setDoApplyPBC</h4>
-<pre>public&nbsp;void&nbsp;setDoApplyPBC(boolean&nbsp;newDoApplyPBC)</pre>
-</li>
-</ul>
 <a name="getDoApplyPBC--">
 <!--   -->
 </a>
@@ -535,6 +526,15 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <li class="blockList">
 <h4>getDoApplyPBC</h4>
 <pre>public&nbsp;boolean&nbsp;getDoApplyPBC()</pre>
+</li>
+</ul>
+<a name="setDoApplyPBC-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoApplyPBC</h4>
+<pre>public&nbsp;void&nbsp;setDoApplyPBC(boolean&nbsp;newDoApplyPBC)</pre>
 </li>
 </ul>
 <a name="updateLists--">
@@ -546,48 +546,48 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <pre>public&nbsp;void&nbsp;updateLists()</pre>
 </li>
 </ul>
-<a name="integratorInitialized-etomica.api.IIntegratorEvent-">
+<a name="integratorInitialized-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorInitialized</h4>
-<pre>public&nbsp;void&nbsp;integratorInitialized(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html#integratorInitialized-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorInitialized(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html#integratorInitialized-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked when integration begins.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IIntegratorListener.html#integratorInitialized-etomica.api.IIntegratorEvent-">integratorInitialized</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/IntegratorListener.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorStepFinished-etomica.api.IIntegratorEvent-">
+<a name="integratorStepFinished-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorStepFinished</h4>
-<pre>public&nbsp;void&nbsp;integratorStepFinished(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorStepFinished(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked at the end of each integrator step.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IIntegratorListener.html#integratorStepFinished-etomica.api.IIntegratorEvent-">integratorStepFinished</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/IntegratorListener.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="integratorStepStarted-etomica.api.IIntegratorEvent-">
+<a name="integratorStepStarted-etomica.integrator.IntegratorEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>integratorStepStarted</h4>
-<pre>public&nbsp;void&nbsp;integratorStepStarted(<a href="../../../etomica/api/IIntegratorEvent.html" title="interface in etomica.api">IIntegratorEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html#integratorStepStarted-etomica.api.IIntegratorEvent-">IIntegratorListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;integratorStepStarted(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">IntegratorListener</a></code></span></div>
 <div class="block">Invoked at the beginning of each integrator step.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IIntegratorListener.html#integratorStepStarted-etomica.api.IIntegratorEvent-">integratorStepStarted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IIntegratorListener.html" title="interface in etomica.api">IIntegratorListener</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/IntegratorListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -598,7 +598,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
-<div class="block">For each box in the array, applies central image, 
+<div class="block">For each box in the array, applies central image,
  resets neighbors of all atoms, and sets up all neighbor
  lists.</div>
 </li>
@@ -611,7 +611,7 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <h4>updateNbrsIfNeeded</h4>
 <pre>public&nbsp;void&nbsp;updateNbrsIfNeeded()</pre>
 <div class="block">Checks whether any atom needs neighbor list updating, and if
- one is found, performs neighbor list updates of all atom 
+ one is found, performs neighbor list updates of all atom
  neighbor lists.  Performs this action on all boxs acted on
  by given integrator.</div>
 </li>
@@ -648,13 +648,13 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <div class="block">Returns the number of times the neighbor lists have been updated.</div>
 </li>
 </ul>
-<a name="getCriterion-etomica.api.IAtomType-">
+<a name="getCriterion-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCriterion</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[]&nbsp;getCriterion(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</pre>
+<pre>public&nbsp;<a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[]&nbsp;getCriterion(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</pre>
 </li>
 </ul>
 <a name="getPbcEnforcer--">
@@ -696,14 +696,23 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
  Called by updateNbrsIfNeeded, and by reset.</div>
 </li>
 </ul>
-<a name="addAtomNotify-etomica.api.IAtom-">
+<a name="addAtomNotify-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAtomNotify</h4>
-<pre>public&nbsp;void&nbsp;addAtomNotify(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;addAtomNotify(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Constructs neighbor lists for the given atom</div>
+</li>
+</ul>
+<a name="getRange--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRange</h4>
+<pre>public&nbsp;double&nbsp;getRange()</pre>
 </li>
 </ul>
 <a name="setRange-double-">
@@ -715,15 +724,6 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <pre>public&nbsp;void&nbsp;setRange(double&nbsp;d)</pre>
 <div class="block">Sets the interaction range, which affects the cell-list neighbor iteration
  used to generate candidate neighbors for neighbor listing.</div>
-</li>
-</ul>
-<a name="getRange--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRange</h4>
-<pre>public&nbsp;double&nbsp;getRange()</pre>
 </li>
 </ul>
 <a name="isQuiet--">
@@ -757,31 +757,31 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="getUpList-etomica.api.IAtom-">
+<a name="getUpList-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getUpList</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>[]&nbsp;getUpList(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>[]&nbsp;getUpList(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
-<a name="getDownList-etomica.api.IAtom-">
+<a name="getDownList-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDownList</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>[]&nbsp;getDownList(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>[]&nbsp;getDownList(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
-<a name="getPotential1BodyList-etomica.api.IAtom-">
+<a name="getPotential1BodyList-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getPotential1BodyList</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&nbsp;getPotential1BodyList(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&nbsp;getPotential1BodyList(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
 <a name="dispose--">
@@ -802,42 +802,42 @@ implements <a href="../../../etomica/api/IIntegratorListener.html" title="interf
 <pre>public&nbsp;<a href="../../../etomica/nbr/list/NeighborListEventManager.html" title="class in etomica.nbr.list">NeighborListEventManager</a>&nbsp;getEventManager()</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;makeAgent(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                                   <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;makeAgent(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;agent,
-                         <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

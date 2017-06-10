@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">PotentialTruncated</span>
-extends <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></pre>
+extends <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></pre>
 <div class="block">Interface for a potential that is artificially truncated, and thus which can
  provide a zero-body potential that (approximately) corrects for the
  truncation. The PotentialMaster gets a LRC potential from a potential
@@ -141,25 +141,25 @@ extends <a href="../../etomica/api/IPotentialAtomic.html" title="interface in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialTruncated.html#makeLrcPotential-etomica.api.IAtomType:A-">makeLrcPotential</a></span>(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>[]&nbsp;types)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialTruncated.html#makeLrcPotential-etomica.atom.AtomType:A-">makeLrcPotential</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;types)</code>
 <div class="block">Returns a class that calculates the long-range contribution to the potential
  that becomes neglected by the truncation.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialAtomic">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialAtomic">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></h3>
-<code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></h3>
+<code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -175,13 +175,13 @@ extends <a href="../../etomica/api/IPotentialAtomic.html" title="interface in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeLrcPotential-etomica.api.IAtomType:A-">
+<a name="makeLrcPotential-etomica.atom.AtomType:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeLrcPotential</h4>
-<pre><a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a>&nbsp;makeLrcPotential(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>[]&nbsp;types)</pre>
+<pre><a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a>&nbsp;makeLrcPotential(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;types)</pre>
 <div class="block">Returns a class that calculates the long-range contribution to the potential
  that becomes neglected by the truncation.  May return null.</div>
 </li>

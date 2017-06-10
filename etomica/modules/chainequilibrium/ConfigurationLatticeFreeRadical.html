@@ -158,15 +158,15 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#speciesInitiator">speciesInitiator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#speciesMonomer">speciesMonomer</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -191,9 +191,9 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#ConfigurationLatticeFreeRadical-etomica.lattice.SpaceLattice-etomica.space.ISpace-etomica.api.IRandom-">ConfigurationLatticeFreeRadical</a></span>(<a href="../../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
-                               <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                               <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#ConfigurationLatticeFreeRadical-etomica.lattice.SpaceLattice-etomica.space.Space-etomica.util.random.IRandom-">ConfigurationLatticeFreeRadical</a></span>(<a href="../../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
+                               <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                               <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -212,15 +212,15 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#setSpecies-etomica.api.ISpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesInitiator,
-          <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesMonomer)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ConfigurationLatticeFreeRadical.html#setSpecies-etomica.species.ISpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesInitiator,
+          <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesMonomer)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -228,7 +228,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.config.<a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></h3>
-<code><a href="../../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.api.IVector-">calculateLatticeDimensions</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-etomica.api.ISpecies-">initializeCoordinates</a>, <a href="../../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
+<code><a href="../../../etomica/config/ConfigurationLattice.html#calculateLatticeDimensions-int-etomica.space.Vector-">calculateLatticeDimensions</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getBoundaryPadding--">getBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#getLatticeMemento--">getLatticeMemento</a>, <a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-etomica.species.ISpecies-">initializeCoordinates</a>, <a href="../../../etomica/config/ConfigurationLattice.html#isRescalingToFitVolume--">isRescalingToFitVolume</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setBoundaryPadding-double-">setBoundaryPadding</a>, <a href="../../../etomica/config/ConfigurationLattice.html#setRescalingToFitVolume-boolean-">setRescalingToFitVolume</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -257,7 +257,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesInitiator</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesInitiator</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesInitiator</pre>
 </li>
 </ul>
 <a name="speciesMonomer">
@@ -266,7 +266,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesMonomer</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesMonomer</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesMonomer</pre>
 </li>
 </ul>
 <a name="random">
@@ -275,7 +275,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <ul class="blockListLast">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 </li>
@@ -286,15 +286,15 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationLatticeFreeRadical-etomica.lattice.SpaceLattice-etomica.space.ISpace-etomica.api.IRandom-">
+<a name="ConfigurationLatticeFreeRadical-etomica.lattice.SpaceLattice-etomica.space.Space-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationLatticeFreeRadical</h4>
 <pre>public&nbsp;ConfigurationLatticeFreeRadical(<a href="../../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a>&nbsp;lattice,
-                                       <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                       <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+                                       <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                       <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -305,30 +305,30 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSpecies-etomica.api.ISpecies-etomica.api.ISpecies-">
+<a name="setSpecies-etomica.species.ISpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesInitiator,
-                       <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesMonomer)</pre>
+<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesInitiator,
+                       <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesMonomer)</pre>
 </li>
 </ul>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Places the molecules in the given box on the positions of the
  lattice.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
+<dd><code><a href="../../../etomica/config/ConfigurationLattice.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/config/ConfigurationLattice.html" title="class in etomica.config">ConfigurationLattice</a></code></dd>
 </dl>
 </li>
 </ul>

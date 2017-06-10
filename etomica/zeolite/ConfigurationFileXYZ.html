@@ -136,8 +136,8 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#ConfigurationFileXYZ-java.lang.String-etomica.space.ISpace-">ConfigurationFileXYZ</a></span>(java.lang.String&nbsp;aConfName,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#ConfigurationFileXYZ-java.lang.String-etomica.space.Space-">ConfigurationFileXYZ</a></span>(java.lang.String&nbsp;aConfName,
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -159,12 +159,12 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#getNumAtoms--">getNumAtoms</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#getUpdatedDimensions--">getUpdatedDimensions</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/zeolite/ConfigurationFileXYZ.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Defines the placement of the molecules.</div>
 </td>
 </tr>
@@ -190,14 +190,14 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationFileXYZ-java.lang.String-etomica.space.ISpace-">
+<a name="ConfigurationFileXYZ-java.lang.String-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationFileXYZ</h4>
 <pre>public&nbsp;ConfigurationFileXYZ(java.lang.String&nbsp;aConfName,
-                            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -208,14 +208,14 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">Configuration</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">Configuration</a></code></span></div>
 <div class="block">Defines the placement of the molecules. Atoms in all lists are 
  considered for placement.  Subclasses define the specific algorithm
  for placement, and for interpretation of the different lists.  
@@ -225,7 +225,7 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
  (i.e., a solid-box mixture).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -244,7 +244,7 @@ implements <a href="../../etomica/config/Configuration.html" title="interface in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getUpdatedDimensions</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;getUpdatedDimensions()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getUpdatedDimensions()</pre>
 </li>
 </ul>
 </li>

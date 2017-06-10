@@ -237,11 +237,11 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#lines">lines</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#rMax">rMax</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#rMin">rMin</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -287,9 +287,9 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#DisplayBoxCanvasG3DSys-etomica.api.ISimulation-etomica.graphics.DisplayBox-etomica.space.ISpace-etomica.action.activity.Controller-">DisplayBoxCanvasG3DSys</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#DisplayBoxCanvasG3DSys-etomica.simulation.Simulation-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">DisplayBoxCanvasG3DSys</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                       <a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
-                      <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+                      <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                       <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code>&nbsp;</td>
 </tr>
 </table>
@@ -355,14 +355,14 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">AgentSource methods</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#makeBond-etomica.api.IAtomList-java.lang.Object-">makeBond</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#makeBond-etomica.atom.IAtomList-java.lang.Object-">makeBond</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
         java.lang.Object&nbsp;bondType)</code>
 <div class="block">Add a bond to the graphical display between the given pairs.</div>
 </td>
@@ -384,9 +384,9 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#releaseAgent-g3dsys.images.Figure-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;agent,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#releaseAgent-g3dsys.images.Figure-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;agent,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -403,7 +403,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#removeObjectByBox-etomica.api.IBox-">removeObjectByBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#removeObjectByBox-etomica.box.Box-">removeObjectByBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -431,8 +431,8 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#setBoundingBox-etomica.api.IVector-etomica.api.IVector-">setBoundingBox</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;rMin,
-              <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;rMax)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#setBoundingBox-etomica.space.Vector-etomica.space.Vector-">setBoundingBox</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;rMin,
+              <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;rMax)</code>
 <div class="block">Sets the display bounding box.</div>
 </td>
 </tr>
@@ -451,7 +451,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#setOrientationSites-etomica.atom.IAtomTypeOriented-etomica.graphics.DisplayBoxCanvasG3DSys.OrientedSite:A-">setOrientationSites</a></span>(<a href="../../etomica/atom/IAtomTypeOriented.html" title="interface in etomica.atom">IAtomTypeOriented</a>&nbsp;atomType,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#setOrientationSites-etomica.atom.AtomTypeOriented-etomica.graphics.DisplayBoxCanvasG3DSys.OrientedSite:A-">setOrientationSites</a></span>(<a href="../../etomica/atom/AtomTypeOriented.html" title="class in etomica.atom">AtomTypeOriented</a>&nbsp;atomType,
                    <a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.OrientedSite.html" title="class in etomica.graphics">DisplayBoxCanvasG3DSys.OrientedSite</a>[]&nbsp;sites)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -535,6 +535,15 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="atomTypeOrientedManager">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atomTypeOrientedManager</h4>
+<pre>protected final&nbsp;<a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> atomTypeOrientedManager</pre>
+</li>
+</ul>
 <a name="aam">
 <!--   -->
 </a>
@@ -571,22 +580,13 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../g3dsys/images/Ball.html" title="class in g3dsys.images">Ball</a>[]&gt; aamOriented</pre>
 </li>
 </ul>
-<a name="atomTypeOrientedManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>atomTypeOrientedManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> atomTypeOrientedManager</pre>
-</li>
-</ul>
 <a name="rMin">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>rMin</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a> rMin</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> rMin</pre>
 </li>
 </ul>
 <a name="rMax">
@@ -595,7 +595,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>rMax</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a> rMax</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> rMax</pre>
 </li>
 </ul>
 </li>
@@ -606,15 +606,15 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DisplayBoxCanvasG3DSys-etomica.api.ISimulation-etomica.graphics.DisplayBox-etomica.space.ISpace-etomica.action.activity.Controller-">
+<a name="DisplayBoxCanvasG3DSys-etomica.simulation.Simulation-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DisplayBoxCanvasG3DSys</h4>
-<pre>public&nbsp;DisplayBoxCanvasG3DSys(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<pre>public&nbsp;DisplayBoxCanvasG3DSys(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                               <a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
-                              <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+                              <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                               <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
 </li>
 </ul>
@@ -635,14 +635,14 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <pre>public&nbsp;<a href="../../g3dsys/control/G3DSys.html" title="class in g3dsys.control">G3DSys</a>&nbsp;getG3DSys()</pre>
 </li>
 </ul>
-<a name="setBoundingBox-etomica.api.IVector-etomica.api.IVector-">
+<a name="setBoundingBox-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBoundingBox</h4>
-<pre>public&nbsp;void&nbsp;setBoundingBox(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;rMin,
-                           <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;rMax)</pre>
+<pre>public&nbsp;void&nbsp;setBoundingBox(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;rMin,
+                           <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;rMax)</pre>
 <div class="block">Sets the display bounding box.  Atoms outside the box are not draw.  The
  boundary lines are snapped inside the bounding box if they are outside.</div>
 </li>
@@ -675,20 +675,6 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="setBackgroundColor-java.awt.Color-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setBackgroundColor</h4>
-<pre>public&nbsp;void&nbsp;setBackgroundColor(java.awt.Color&nbsp;color)</pre>
-<div class="block">Sets the background color of the display box canvas.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - : color to set background to</dd>
-</dl>
-</li>
-</ul>
 <a name="getBackgroundColor--">
 <!--   -->
 </a>
@@ -703,17 +689,17 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="setBoundaryFrameColor-java.awt.Color-">
+<a name="setBackgroundColor-java.awt.Color-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setBoundaryFrameColor</h4>
-<pre>public&nbsp;void&nbsp;setBoundaryFrameColor(java.awt.Color&nbsp;color)</pre>
-<div class="block">Sets the color of the box boundary.</div>
+<h4>setBackgroundColor</h4>
+<pre>public&nbsp;void&nbsp;setBackgroundColor(java.awt.Color&nbsp;color)</pre>
+<div class="block">Sets the background color of the display box canvas.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - : color to set box boundary</dd>
+<dd><code>color</code> - : color to set background to</dd>
 </dl>
 </li>
 </ul>
@@ -731,17 +717,17 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="setPlaneColor-java.awt.Color-">
+<a name="setBoundaryFrameColor-java.awt.Color-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setPlaneColor</h4>
-<pre>public&nbsp;void&nbsp;setPlaneColor(java.awt.Color&nbsp;color)</pre>
-<div class="block">Sets the color of the plane.</div>
+<h4>setBoundaryFrameColor</h4>
+<pre>public&nbsp;void&nbsp;setBoundaryFrameColor(java.awt.Color&nbsp;color)</pre>
+<div class="block">Sets the color of the box boundary.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - : color to set plane</dd>
+<dd><code>color</code> - : color to set box boundary</dd>
 </dl>
 </li>
 </ul>
@@ -759,13 +745,27 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="removeObjectByBox-etomica.api.IBox-">
+<a name="setPlaneColor-java.awt.Color-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPlaneColor</h4>
+<pre>public&nbsp;void&nbsp;setPlaneColor(java.awt.Color&nbsp;color)</pre>
+<div class="block">Sets the color of the plane.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - : color to set plane</dd>
+</dl>
+</li>
+</ul>
+<a name="removeObjectByBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeObjectByBox</h4>
-<pre>public&nbsp;void&nbsp;removeObjectByBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
+<pre>public&nbsp;void&nbsp;removeObjectByBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
 </li>
 </ul>
 <a name="refreshAtomAgentMgr--">
@@ -859,29 +859,29 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <pre>protected&nbsp;void&nbsp;updatePlane(int&nbsp;iPlane)</pre>
 </li>
 </ul>
-<a name="makeBond-etomica.api.IAtomList-java.lang.Object-">
+<a name="makeBond-etomica.atom.IAtomList-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeBond</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeBond(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<pre>public&nbsp;java.lang.Object&nbsp;makeBond(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
                                  java.lang.Object&nbsp;bondType)</pre>
 <div class="block">Add a bond to the graphical display between the given pairs. The given
  bondType is used to decide how the bond should be drawn.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/graphics/BondManager.html#makeBond-etomica.api.IAtomList-java.lang.Object-">makeBond</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/graphics/BondManager.html" title="interface in etomica.graphics">BondManager</a></code></dd>
+<dd><code><a href="../../etomica/graphics/BondManager.html#makeBond-etomica.atom.IAtomList-java.lang.Object-">makeBond</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/graphics/BondManager.html" title="interface in etomica.graphics">BondManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setOrientationSites-etomica.atom.IAtomTypeOriented-etomica.graphics.DisplayBoxCanvasG3DSys.OrientedSite:A-">
+<a name="setOrientationSites-etomica.atom.AtomTypeOriented-etomica.graphics.DisplayBoxCanvasG3DSys.OrientedSite:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setOrientationSites</h4>
-<pre>public&nbsp;void&nbsp;setOrientationSites(<a href="../../etomica/atom/IAtomTypeOriented.html" title="interface in etomica.atom">IAtomTypeOriented</a>&nbsp;atomType,
+<pre>public&nbsp;void&nbsp;setOrientationSites(<a href="../../etomica/atom/AtomTypeOriented.html" title="class in etomica.atom">AtomTypeOriented</a>&nbsp;atomType,
                                 <a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.OrientedSite.html" title="class in etomica.graphics">DisplayBoxCanvasG3DSys.OrientedSite</a>[]&nbsp;sites)</pre>
 </li>
 </ul>
@@ -900,39 +900,53 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;makeAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
-                        <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
+<pre>public&nbsp;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;makeAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                        <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block">AgentSource methods</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-g3dsys.images.Figure-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-g3dsys.images.Figure-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;agent,
-                         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSlab--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSlab</h4>
+<pre>public&nbsp;double&nbsp;getSlab()</pre>
+<div class="block">Get depth percentage</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>returns current depth percentage</dd>
 </dl>
 </li>
 </ul>
@@ -950,13 +964,13 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </dl>
 </li>
 </ul>
-<a name="getSlab--">
+<a name="getDepth--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSlab</h4>
-<pre>public&nbsp;double&nbsp;getSlab()</pre>
+<h4>getDepth</h4>
+<pre>public&nbsp;double&nbsp;getDepth()</pre>
 <div class="block">Get depth percentage</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -975,20 +989,6 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>depth</code> - the depth percentage to set</dd>
-</dl>
-</li>
-</ul>
-<a name="getDepth--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDepth</h4>
-<pre>public&nbsp;double&nbsp;getDepth()</pre>
-<div class="block">Get depth percentage</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>returns current depth percentage</dd>
 </dl>
 </li>
 </ul>

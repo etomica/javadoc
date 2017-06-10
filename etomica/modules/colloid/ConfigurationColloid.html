@@ -141,7 +141,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#colloidMonomerBondManager">colloidMonomerBondManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#graftVectors">graftVectors</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -153,7 +153,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#nGraft">nGraft</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -165,15 +165,15 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#sigmaMonomer">sigmaMonomer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#speciesColloid">speciesColloid</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -191,10 +191,10 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#ConfigurationColloid-etomica.space.ISpace-etomica.api.ISpecies-etomica.api.ISpecies-etomica.api.IRandom-">ConfigurationColloid</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                    <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                    <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesColloid,
-                    <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#ConfigurationColloid-etomica.space.Space-etomica.species.ISpecies-etomica.species.ISpecies-etomica.util.random.IRandom-">ConfigurationColloid</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                    <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                    <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesColloid,
+                    <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -229,7 +229,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/colloid/ConfigurationColloid.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Defines the placement of the molecules.</div>
 </td>
 </tr>
@@ -285,7 +285,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="species">
@@ -294,7 +294,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>species</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> species</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
 </li>
 </ul>
 <a name="speciesColloid">
@@ -303,7 +303,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesColloid</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesColloid</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesColloid</pre>
 </li>
 </ul>
 <a name="chainLength">
@@ -330,7 +330,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>graftVectors</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] graftVectors</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] graftVectors</pre>
 </li>
 </ul>
 <a name="sigmaColloid">
@@ -375,7 +375,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 </li>
@@ -386,16 +386,16 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationColloid-etomica.space.ISpace-etomica.api.ISpecies-etomica.api.ISpecies-etomica.api.IRandom-">
+<a name="ConfigurationColloid-etomica.space.Space-etomica.species.ISpecies-etomica.species.ISpecies-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationColloid</h4>
-<pre>public&nbsp;ConfigurationColloid(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;speciesColloid,
-                            <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;ConfigurationColloid(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;speciesColloid,
+                            <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 </li>
 </ul>
 </li>
@@ -496,14 +496,14 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <pre>public&nbsp;void&nbsp;setColloidMonomerBondManager(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;newColloidMonomerBondManager)</pre>
 </li>
 </ul>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">Configuration</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">Configuration</a></code></span></div>
 <div class="block">Defines the placement of the molecules. Atoms in all lists are 
  considered for placement.  Subclasses define the specific algorithm
  for placement, and for interpretation of the different lists.  
@@ -513,7 +513,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
  (i.e., a solid-box mixture).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 </dl>
 </li>
 </ul>

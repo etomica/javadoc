@@ -111,10 +111,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/thermointegration/IntegratorThermodynamicPEvsT.html" title="class in etomica.thermointegration">IntegratorThermodynamicPEvsT</a></dd>
 </dl>
@@ -176,7 +172,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/thermointegration/IntegratorThermodynamic.html#numSubsteps">numSubsteps</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/thermointegration/IntegratorThermodynamic.html#subIntegrator">subIntegrator</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -201,7 +197,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/thermointegration/IntegratorThermodynamic.html#IntegratorThermodynamic-etomica.api.IIntegrator-">IntegratorThermodynamic</a></span>(<a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;subIntegrator)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/thermointegration/IntegratorThermodynamic.html#IntegratorThermodynamic-etomica.integrator.Integrator-">IntegratorThermodynamic</a></span>(<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;subIntegrator)</code>
 <div class="block">Constructs a thermodynamic integrator that operates with the given
  sub integrator, which is responsible for exploring configruations at any
  given state point.</div>
@@ -253,7 +249,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/thermointegration/IntegratorThermodynamic.html#getSubIntegrator--">getSubIntegrator</a></span>()</code>
 <div class="block">Returns the subIntegrator, responsible for actually walking through
  configurational space.</div>
@@ -313,7 +309,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>subIntegrator</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a> subIntegrator</pre>
+<pre>protected&nbsp;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a> subIntegrator</pre>
 </li>
 </ul>
 <a name="numSubsteps">
@@ -360,13 +356,13 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorThermodynamic-etomica.api.IIntegrator-">
+<a name="IntegratorThermodynamic-etomica.integrator.Integrator-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorThermodynamic</h4>
-<pre>public&nbsp;IntegratorThermodynamic(<a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;subIntegrator)</pre>
+<pre>public&nbsp;IntegratorThermodynamic(<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;subIntegrator)</pre>
 <div class="block">Constructs a thermodynamic integrator that operates with the given
  sub integrator, which is responsible for exploring configruations at any
  given state point.</div>
@@ -392,8 +388,6 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
  Thermodynamic integration will start back at the initial parameter(s).
  An data collected will be reset</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/Integrator.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -407,7 +401,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>getSubIntegrator</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>&nbsp;getSubIntegrator()</pre>
+<pre>public&nbsp;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;getSubIntegrator()</pre>
 <div class="block">Returns the subIntegrator, responsible for actually walking through
  configurational space.</div>
 </li>

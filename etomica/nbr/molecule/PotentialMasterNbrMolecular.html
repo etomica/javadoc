@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>, <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></dd>
+<dd><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -157,7 +157,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#allPotentials">allPotentials</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -177,7 +177,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#rangedPotentialIterator">rangedPotentialIterator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#simulation">simulation</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -212,7 +212,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#PotentialMasterNbrMolecular-etomica.api.ISimulation-etomica.box.BoxAgentManager.BoxAgentSource-etomica.box.BoxAgentManager-">PotentialMasterNbrMolecular</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#PotentialMasterNbrMolecular-etomica.simulation.Simulation-etomica.box.BoxAgentManager.BoxAgentSource-etomica.box.BoxAgentManager-">PotentialMasterNbrMolecular</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                            <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;? extends <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentSource,
                            <a href="../../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentManager)</code>&nbsp;</td>
 </tr>
@@ -233,21 +233,21 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">addPotential</a></span>(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
-            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species)</code>
-<div class="block">Indicates to the PotentialMaster that the given potential should apply to 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">addPotential</a></span>(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
+            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species)</code>
+<div class="block">Indicates to the PotentialMaster that the given potential should apply to
  the specified species.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addRangedPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies-">addRangedPotential</a></span>(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
-                  <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addRangedPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies-">addRangedPotential</a></span>(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
+                  <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addRangedPotentialForSpecies-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">addRangedPotentialForSpecies</a></span>(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;subPotential,
-                            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#addRangedPotentialForSpecies-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">addRangedPotentialForSpecies</a></span>(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;subPotential,
+                            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;</code></td>
@@ -255,14 +255,14 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#getIntraPotentials-etomica.api.ISpecies-">getIntraPotentials</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;atomType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#getIntraPotentials-etomica.species.ISpecies-">getIntraPotentials</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;atomType)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#getRangedPotentials-etomica.api.ISpecies-">getRangedPotentials</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#getRangedPotentials-etomica.species.ISpecies-">getRangedPotentials</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#getSimulation--">getSimulation</a></span>()</code>
 <div class="block">Returns the simulation associated with this PotentialMaster</div>
 </td>
@@ -275,28 +275,28 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#makeAgent-etomica.api.ISpecies-">makeAgent</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#makeAgent-etomica.species.ISpecies-">makeAgent</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code>
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#makePotentialGroup-int-">makePotentialGroup</a></span>(int&nbsp;nBody)</code>
-<div class="block">Returns an nBody PotentialGroup appropriate for this type of 
+<div class="block">Returns an nBody PotentialGroup appropriate for this type of
  PotentialMaster.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#releaseAgent-java.lang.Object-etomica.api.ISpecies-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#removePotential-etomica.api.IPotentialMolecular-">removePotential</a></span>(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/PotentialMasterNbrMolecular.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a></span>(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code>
 <div class="block">Removes given potential from the group.</div>
 </td>
 </tr>
@@ -306,7 +306,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></h3>
-<code><a href="../../../etomica/potential/PotentialMaster.html#addModel-etomica.chem.models.Model-">addModel</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.api.IPotentialAtomic-etomica.api.IAtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.api.IPotentialMolecular-etomica.atom.iterator.MoleculesetIteratorPDT-etomica.api.ISpecies:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#calculate-etomica.api.IBox-etomica.atom.iterator.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotential-etomica.api.ISpecies:A-">getPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialMaster.html#getSpecies-etomica.api.IPotentialMolecular-">getSpecies</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled--">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.api.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.api.IPotentialMolecular-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster--">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#potentialAddedNotify-etomica.api.IPotentialAtomic-etomica.potential.PotentialGroup-">potentialAddedNotify</a>, <a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.api.IPotentialAtomic-">removePotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.api.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.api.IPotentialMolecular-boolean-">setEnabled</a></code></li>
+<code><a href="../../../etomica/potential/PotentialMaster.html#addModel-etomica.chem.models.Model-">addModel</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.molecule.iterator.MoleculesetIteratorPDT-etomica.species.ISpecies:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotential-etomica.species.ISpecies:A-">getPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialMaster.html#getSpecies-etomica.potential.IPotentialMolecular-">getSpecies</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled--">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialMolecular-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster--">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#potentialAddedNotify-etomica.potential.IPotentialAtomic-etomica.potential.PotentialGroup-">potentialAddedNotify</a>, <a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialAtomic-">removePotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialMolecular-boolean-">setEnabled</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -371,7 +371,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>allPotentials</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>[] allPotentials</pre>
+<pre>protected&nbsp;<a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>[] allPotentials</pre>
 </li>
 </ul>
 <a name="boxAgentSource">
@@ -389,7 +389,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>simulation</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> simulation</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> simulation</pre>
 </li>
 </ul>
 <a name="boxAgentManager">
@@ -409,13 +409,13 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PotentialMasterNbrMolecular-etomica.api.ISimulation-etomica.box.BoxAgentManager.BoxAgentSource-etomica.box.BoxAgentManager-">
+<a name="PotentialMasterNbrMolecular-etomica.simulation.Simulation-etomica.box.BoxAgentManager.BoxAgentSource-etomica.box.BoxAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PotentialMasterNbrMolecular</h4>
-<pre>protected&nbsp;PotentialMasterNbrMolecular(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<pre>protected&nbsp;PotentialMasterNbrMolecular(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                                       <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;? extends <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentSource,
                                       <a href="../../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentManager)</pre>
 </li>
@@ -435,95 +435,89 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <li class="blockList">
 <h4>makePotentialGroup</h4>
 <pre>public&nbsp;<a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a>&nbsp;makePotentialGroup(int&nbsp;nBody)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html#makePotentialGroup-int-">IPotentialMaster</a></code></span></div>
-<div class="block">Returns an nBody PotentialGroup appropriate for this type of 
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html#makePotentialGroup-int-">PotentialMaster</a></code></span></div>
+<div class="block">Returns an nBody PotentialGroup appropriate for this type of
  PotentialMaster.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialMaster.html#makePotentialGroup-int-">makePotentialGroup</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/potential/PotentialMaster.html#makePotentialGroup-int-">makePotentialGroup</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="addPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">
+<a name="addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addPotential</h4>
-<pre>public&nbsp;void&nbsp;addPotential(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
-                         <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html#addPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">IPotentialMaster</a></code></span></div>
-<div class="block">Indicates to the PotentialMaster that the given potential should apply to 
+<pre>public&nbsp;void&nbsp;addPotential(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
+                         <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">PotentialMaster</a></code></span></div>
+<div class="block">Indicates to the PotentialMaster that the given potential should apply to
  the specified species.  Exception is thrown if the potential.nBody() value
  is different from the length of the species array.  Thus, for example, if
  giving a 2-body potential, then the array should contain exactly
- two species; the species may refer to the same instance (appropriate for an 
+ two species; the species may refer to the same instance (appropriate for an
  intra-species potential, defining the interactions between molecules of the
  same species).</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialMaster.html#addPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">addPotential</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">addPotential</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">addPotential</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="addRangedPotentialForSpecies-etomica.api.IPotentialMolecular-etomica.api.ISpecies:A-">
+<a name="addRangedPotentialForSpecies-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addRangedPotentialForSpecies</h4>
-<pre>protected abstract&nbsp;void&nbsp;addRangedPotentialForSpecies(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;subPotential,
-                                                     <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>[]&nbsp;species)</pre>
+<pre>protected abstract&nbsp;void&nbsp;addRangedPotentialForSpecies(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;subPotential,
+                                                     <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species)</pre>
 </li>
 </ul>
-<a name="addRangedPotential-etomica.api.IPotentialMolecular-etomica.api.ISpecies-">
+<a name="addRangedPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addRangedPotential</h4>
-<pre>protected&nbsp;void&nbsp;addRangedPotential(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
-                                  <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
+<pre>protected&nbsp;void&nbsp;addRangedPotential(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
+                                  <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
 </li>
 </ul>
-<a name="removePotential-etomica.api.IPotentialMolecular-">
+<a name="removePotential-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removePotential</h4>
-<pre>public&nbsp;void&nbsp;removePotential(<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html#removePotential-etomica.api.IPotentialMolecular-">IPotentialMaster</a></code></span></div>
+<pre>public&nbsp;void&nbsp;removePotential(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialMolecular-">PotentialMaster</a></code></span></div>
 <div class="block">Removes given potential from the group.  No error is generated if
  potential is not in group.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialMaster.html#removePotential-etomica.api.IPotentialMolecular-">removePotential</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.api.IPotentialMolecular-">removePotential</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getRangedPotentials-etomica.api.ISpecies-">
+<a name="getRangedPotentials-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getRangedPotentials</h4>
-<pre>public&nbsp;<a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a>&nbsp;getRangedPotentials(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
+<pre>public&nbsp;<a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a>&nbsp;getRangedPotentials(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
 </li>
 </ul>
-<a name="getIntraPotentials-etomica.api.ISpecies-">
+<a name="getIntraPotentials-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntraPotentials</h4>
-<pre>public&nbsp;<a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a>&nbsp;getIntraPotentials(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;atomType)</pre>
+<pre>public&nbsp;<a href="../../../etomica/potential/PotentialArrayMolecular.html" title="class in etomica.potential">PotentialArrayMolecular</a>&nbsp;getIntraPotentials(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;atomType)</pre>
 </li>
 </ul>
 <a name="getCellAgentManager--">
@@ -543,7 +537,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <h4>getSpeciesAgentClass</h4>
 <pre>public&nbsp;java.lang.Class&nbsp;getSpeciesAgentClass()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#getSpeciesAgentClass--">SpeciesAgentManager.AgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -551,35 +545,35 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.ISpecies-">
+<a name="makeAgent-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.api.ISpecies-">SpeciesAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.species.ISpecies-">SpeciesAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given AtomType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.api.ISpecies-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.species.ISpecies-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.ISpecies-">
+<a name="releaseAgent-java.lang.Object-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                         <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.ISpecies-">SpeciesAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+                         <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">SpeciesAgentManager.AgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.ISpecies-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -589,7 +583,7 @@ implements <a href="../../../etomica/atom/SpeciesAgentManager.AgentSource.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSimulation</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;getSimulation()</pre>
+<pre>public&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;getSimulation()</pre>
 <div class="block">Returns the simulation associated with this PotentialMaster</div>
 </li>
 </ul>

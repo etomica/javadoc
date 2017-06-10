@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></dd>
+<dd><a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">AtomSetAllMolecules</span>
 extends java.lang.Object
-implements <a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></pre>
+implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></pre>
 </li>
 </ul>
 </div>
@@ -133,7 +133,7 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/AtomSetAllMolecules.html#moleculeLists">moleculeLists</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -173,7 +173,7 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/AtomSetAllMolecules.html#getMolecule-int-">getMolecule</a></span>(int&nbsp;i)</code>
 <div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
 </td>
@@ -184,7 +184,7 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/AtomSetAllMolecules.html#setMoleculeLists-etomica.api.IMoleculeList:A-">setMoleculeLists</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]&nbsp;newMoleculeLists)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/AtomSetAllMolecules.html#setMoleculeLists-etomica.molecule.IMoleculeList:A-">setMoleculeLists</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]&nbsp;newMoleculeLists)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -214,7 +214,7 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>moleculeLists</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[] moleculeLists</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[] moleculeLists</pre>
 </li>
 </ul>
 <a name="moleculeTotals">
@@ -257,13 +257,13 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getMolecule</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;getMolecule(int&nbsp;i)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IMoleculeList.html#getMolecule-int-">IMoleculeList</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;getMolecule(int&nbsp;i)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/IMoleculeList.html#getMolecule-int-">IMoleculeList</a></code></span></div>
 <div class="block">Returns the i-th atom, with numbering beginning from 0. 
  If i is greater than count-1, throws an IllegalArgumentException.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IMoleculeList.html#getMolecule-int-">getMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></dd>
+<dd><code><a href="../../etomica/molecule/IMoleculeList.html#getMolecule-int-">getMolecule</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -276,19 +276,19 @@ implements <a href="../../etomica/api/IMoleculeList.html" title="interface in et
 <pre>public&nbsp;int&nbsp;getMoleculeCount()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IMoleculeList.html#getMoleculeCount--">getMoleculeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a></code></dd>
+<dd><code><a href="../../etomica/molecule/IMoleculeList.html#getMoleculeCount--">getMoleculeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of atoms in the set</dd>
 </dl>
 </li>
 </ul>
-<a name="setMoleculeLists-etomica.api.IMoleculeList:A-">
+<a name="setMoleculeLists-etomica.molecule.IMoleculeList:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setMoleculeLists</h4>
-<pre>public&nbsp;void&nbsp;setMoleculeLists(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]&nbsp;newMoleculeLists)</pre>
+<pre>public&nbsp;void&nbsp;setMoleculeLists(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]&nbsp;newMoleculeLists)</pre>
 </li>
 </ul>
 </li>

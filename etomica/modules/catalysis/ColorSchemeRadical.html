@@ -197,7 +197,7 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#ColorSchemeRadical-etomica.api.ISimulation-etomica.atom.AtomLeafAgentManager-">ColorSchemeRadical</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#ColorSchemeRadical-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">ColorSchemeRadical</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                   <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</code>&nbsp;</td>
 </tr>
 </table>
@@ -217,16 +217,16 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.awt.Color</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#setFullBondColor-etomica.api.IAtomType-java.awt.Color-">setFullBondColor</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#setFullBondColor-etomica.atom.AtomType-java.awt.Color-">setFullBondColor</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                 java.awt.Color&nbsp;color)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#setRadicalColor-etomica.api.IAtomType-java.awt.Color-">setRadicalColor</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#setRadicalColor-etomica.atom.AtomType-java.awt.Color-">setRadicalColor</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                java.awt.Color&nbsp;color)</code>&nbsp;</td>
 </tr>
 </table>
@@ -235,7 +235,7 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../../etomica/graphics/ColorSchemeByType.html" title="class in etomica.graphics">ColorSchemeByType</a></h3>
-<code><a href="../../../etomica/graphics/ColorSchemeByType.html#getColor-etomica.api.IAtomType-">getColor</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#getSpeciesAgentClass--">getSpeciesAgentClass</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#makeAgent-etomica.api.IAtomType-">makeAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">releaseAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#setColor-etomica.api.IAtomType-java.awt.Color-">setColor</a></code></li>
+<code><a href="../../../etomica/graphics/ColorSchemeByType.html#getColor-etomica.atom.AtomType-">getColor</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#getSpeciesAgentClass--">getSpeciesAgentClass</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#makeAgent-etomica.atom.AtomType-">makeAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#setColor-etomica.atom.AtomType-java.awt.Color-">setColor</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.ColorScheme">
@@ -300,13 +300,13 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeRadical-etomica.api.ISimulation-etomica.atom.AtomLeafAgentManager-">
+<a name="ColorSchemeRadical-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeRadical</h4>
-<pre>public&nbsp;ColorSchemeRadical(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<pre>public&nbsp;ColorSchemeRadical(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                           <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</pre>
 </li>
 </ul>
@@ -318,36 +318,36 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getAtomColor-etomica.api.IAtom-">
+<a name="getAtomColor-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAtomColor</h4>
-<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/graphics/ColorSchemeByType.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/graphics/ColorSchemeByType.html" title="class in etomica.graphics">ColorSchemeByType</a></code></dd>
+<dd><code><a href="../../../etomica/graphics/ColorSchemeByType.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/graphics/ColorSchemeByType.html" title="class in etomica.graphics">ColorSchemeByType</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setRadicalColor-etomica.api.IAtomType-java.awt.Color-">
+<a name="setRadicalColor-etomica.atom.AtomType-java.awt.Color-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRadicalColor</h4>
-<pre>public&nbsp;void&nbsp;setRadicalColor(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<pre>public&nbsp;void&nbsp;setRadicalColor(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                             java.awt.Color&nbsp;color)</pre>
 </li>
 </ul>
-<a name="setFullBondColor-etomica.api.IAtomType-java.awt.Color-">
+<a name="setFullBondColor-etomica.atom.AtomType-java.awt.Color-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setFullBondColor</h4>
-<pre>public&nbsp;void&nbsp;setFullBondColor(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<pre>public&nbsp;void&nbsp;setFullBondColor(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                              java.awt.Color&nbsp;color)</pre>
 </li>
 </ul>

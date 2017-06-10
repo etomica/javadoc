@@ -149,11 +149,11 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#numMembraneLayers">numMembraneLayers</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#positionDefinition">positionDefinition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#sim">sim</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -169,15 +169,15 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#solventChamberDensity">solventChamberDensity</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#speciesMembrane">speciesMembrane</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#speciesSolute">speciesSolute</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#speciesSolvent">speciesSolvent</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -195,8 +195,8 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#ConfigurationMembrane-etomica.api.ISimulation-etomica.space.ISpace-">ConfigurationMembrane</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                     <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#ConfigurationMembrane-etomica.simulation.Simulation-etomica.space.Space-">ConfigurationMembrane</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                     <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -242,20 +242,20 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#getSolventChamberDensity--">getSolventChamberDensity</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#getSpeciesMembrane--">getSpeciesMembrane</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#getSpeciesSolute--">getSpeciesSolute</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#getSpeciesSolvent--">getSpeciesSolvent</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Defines the placement of the molecules.</div>
 </td>
 </tr>
@@ -289,15 +289,15 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesMembrane-etomica.api.ISpecies-">setSpeciesMembrane</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesMembrane)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesMembrane-etomica.species.ISpecies-">setSpeciesMembrane</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesMembrane)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesSolute-etomica.api.ISpecies-">setSpeciesSolute</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesSolute)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesSolute-etomica.species.ISpecies-">setSpeciesSolute</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesSolute)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesSolvent-etomica.api.ISpecies-">setSpeciesSolvent</a></span>(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesSolvent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/ConfigurationMembrane.html#setSpeciesSolvent-etomica.species.ISpecies-">setSpeciesSolvent</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesSolvent)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -327,7 +327,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesSolute</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesSolute</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesSolute</pre>
 </li>
 </ul>
 <a name="speciesSolvent">
@@ -336,7 +336,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesSolvent</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesSolvent</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesSolvent</pre>
 </li>
 </ul>
 <a name="speciesMembrane">
@@ -345,7 +345,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesMembrane</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a> speciesMembrane</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> speciesMembrane</pre>
 </li>
 </ul>
 <a name="membraneThicknessPerLayer">
@@ -417,7 +417,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> sim</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
 </li>
 </ul>
 <a name="positionDefinition">
@@ -426,7 +426,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>positionDefinition</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a> positionDefinition</pre>
+<pre>protected&nbsp;<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
 </li>
 </ul>
 </li>
@@ -437,14 +437,14 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationMembrane-etomica.api.ISimulation-etomica.space.ISpace-">
+<a name="ConfigurationMembrane-etomica.simulation.Simulation-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationMembrane</h4>
-<pre>public&nbsp;ConfigurationMembrane(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                             <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;ConfigurationMembrane(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                             <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -455,14 +455,14 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initializeCoordinates-etomica.api.IBox-">
+<a name="initializeCoordinates-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initializeCoordinates</h4>
-<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">Configuration</a></code></span></div>
+<pre>public&nbsp;void&nbsp;initializeCoordinates(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">Configuration</a></code></span></div>
 <div class="block">Defines the placement of the molecules. Atoms in all lists are 
  considered for placement.  Subclasses define the specific algorithm
  for placement, and for interpretation of the different lists.  
@@ -472,7 +472,7 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
  (i.e., a solid-box mixture).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
+<dd><code><a href="../../../etomica/config/Configuration.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -608,16 +608,16 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpeciesSolute</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpeciesSolute()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpeciesSolute()</pre>
 </li>
 </ul>
-<a name="setSpeciesSolute-etomica.api.ISpecies-">
+<a name="setSpeciesSolute-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpeciesSolute</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesSolute(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesSolute)</pre>
+<pre>public&nbsp;void&nbsp;setSpeciesSolute(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesSolute)</pre>
 </li>
 </ul>
 <a name="getSpeciesSolvent--">
@@ -626,16 +626,16 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpeciesSolvent</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpeciesSolvent()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpeciesSolvent()</pre>
 </li>
 </ul>
-<a name="setSpeciesSolvent-etomica.api.ISpecies-">
+<a name="setSpeciesSolvent-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpeciesSolvent</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesSolvent(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesSolvent)</pre>
+<pre>public&nbsp;void&nbsp;setSpeciesSolvent(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesSolvent)</pre>
 </li>
 </ul>
 <a name="getSpeciesMembrane--">
@@ -644,16 +644,16 @@ implements <a href="../../../etomica/config/Configuration.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpeciesMembrane</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpeciesMembrane()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpeciesMembrane()</pre>
 </li>
 </ul>
-<a name="setSpeciesMembrane-etomica.api.ISpecies-">
+<a name="setSpeciesMembrane-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setSpeciesMembrane</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesMembrane(<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpeciesMembrane)</pre>
+<pre>public&nbsp;void&nbsp;setSpeciesMembrane(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpeciesMembrane)</pre>
 </li>
 </ul>
 </li>

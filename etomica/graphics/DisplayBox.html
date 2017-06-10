@@ -204,7 +204,7 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#sim">sim</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -233,9 +233,9 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#DisplayBox-etomica.api.ISimulation-etomica.api.IBox-etomica.space.ISpace-etomica.action.activity.Controller-">DisplayBox</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-          <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-          <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#DisplayBox-etomica.simulation.Simulation-etomica.box.Box-etomica.space.Space-etomica.action.activity.Controller-">DisplayBox</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
           <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code>
 <div class="block">Warning: after instantiation, clients using G3DSys may need to toggle
  display.canvas.setVisible false and then true to fix the 'sometimes
@@ -286,7 +286,7 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -398,7 +398,7 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBox.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Specifies the box for this display.</div>
 </td>
 </tr>
@@ -606,7 +606,7 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 <ul class="blockList">
 <li class="blockList">
 <h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> sim</pre>
+<pre>protected final&nbsp;<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
 </li>
 </ul>
 <a name="canvas">
@@ -681,15 +681,15 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DisplayBox-etomica.api.ISimulation-etomica.api.IBox-etomica.space.ISpace-etomica.action.activity.Controller-">
+<a name="DisplayBox-etomica.simulation.Simulation-etomica.box.Box-etomica.space.Space-etomica.action.activity.Controller-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DisplayBox</h4>
-<pre>public&nbsp;DisplayBox(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                  <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                  <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;DisplayBox(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                   <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
 <div class="block">Warning: after instantiation, clients using G3DSys may need to toggle
  display.canvas.setVisible false and then true to fix the 'sometimes
@@ -894,7 +894,7 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Box : the box associated with this display</dd>
@@ -929,13 +929,13 @@ extends <a href="../../etomica/graphics/Display.html" title="class in etomica.gr
  this.</div>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
 <div class="block">Specifies the box for this display.  Updates atomIterator appropriately.</div>
 </li>
 </ul>

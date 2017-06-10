@@ -147,11 +147,11 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#leafAgentManager">leafAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeAgentManager.AgentIterator.html" title="class in etomica.atom">MoleculeAgentManager.AgentIterator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.AgentIterator.html" title="class in etomica.molecule">MoleculeAgentManager.AgentIterator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#moleculeAgentIterator">moleculeAgentIterator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#moleculeAgentManager">moleculeAgentManager</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -188,15 +188,15 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">doCalculation</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-             <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+             <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code>
 <div class="block">Adds forces and torques due to given potential acting on the atoms produced by the iterator.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#doCalculation-etomica.api.IMoleculeList-etomica.api.IPotentialMolecular-">doCalculation</a></span>(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms,
-             <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#doCalculation-etomica.molecule.IMoleculeList-etomica.potential.IPotentialMolecular-">doCalculation</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms,
+             <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code>
 <div class="block">Adds forces and torques due to given potential acting on the atoms produced by the iterator.</div>
 </td>
 </tr>
@@ -212,7 +212,7 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#setMoleculeAgentManager-etomica.atom.MoleculeAgentManager-">setMoleculeAgentManager</a></span>(<a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a>&nbsp;newMoleculeAgentManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#setMoleculeAgentManager-etomica.molecule.MoleculeAgentManager-">setMoleculeAgentManager</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&nbsp;newMoleculeAgentManager)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -260,7 +260,7 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>moleculeAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a> moleculeAgentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> moleculeAgentManager</pre>
 </li>
 </ul>
 <a name="moleculeAgentIterator">
@@ -269,7 +269,7 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>moleculeAgentIterator</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/MoleculeAgentManager.AgentIterator.html" title="class in etomica.atom">MoleculeAgentManager.AgentIterator</a> moleculeAgentIterator</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.AgentIterator.html" title="class in etomica.molecule">MoleculeAgentManager.AgentIterator</a> moleculeAgentIterator</pre>
 </li>
 </ul>
 </li>
@@ -306,13 +306,13 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <pre>public&nbsp;void&nbsp;setAgentManager(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</pre>
 </li>
 </ul>
-<a name="setMoleculeAgentManager-etomica.atom.MoleculeAgentManager-">
+<a name="setMoleculeAgentManager-etomica.molecule.MoleculeAgentManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setMoleculeAgentManager</h4>
-<pre>public&nbsp;void&nbsp;setMoleculeAgentManager(<a href="../../etomica/atom/MoleculeAgentManager.html" title="class in etomica.atom">MoleculeAgentManager</a>&nbsp;newMoleculeAgentManager)</pre>
+<pre>public&nbsp;void&nbsp;setMoleculeAgentManager(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&nbsp;newMoleculeAgentManager)</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -325,38 +325,38 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <div class="block">Re-zeros the force vectors.</div>
 </li>
 </ul>
-<a name="doCalculation-etomica.api.IMoleculeList-etomica.api.IPotentialMolecular-">
+<a name="doCalculation-etomica.molecule.IMoleculeList-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doCalculation</h4>
-<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;atoms,
-                          <a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</pre>
+<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms,
+                          <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</pre>
 <div class="block">Adds forces and torques due to given potential acting on the atoms produced by the iterator.
  Implemented for 1-, 2- and N-body potentials.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/PotentialCalculationMolecular.html#doCalculation-etomica.api.IMoleculeList-etomica.api.IPotentialMolecular-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculationMolecular.html" title="interface in etomica.potential">PotentialCalculationMolecular</a></code></dd>
+<dd><code><a href="../../etomica/potential/PotentialCalculationMolecular.html#doCalculation-etomica.molecule.IMoleculeList-etomica.potential.IPotentialMolecular-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculationMolecular.html" title="interface in etomica.potential">PotentialCalculationMolecular</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atoms</code> - IAtomSet the atom sets for which the calculation is performed.</dd>
 <dd><code>potential</code> - The potential used to apply the action defined by this class.</dd>
 </dl>
 </li>
 </ul>
-<a name="doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">
+<a name="doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>doCalculation</h4>
-<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atoms,
-                          <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>&nbsp;potential)</pre>
+<pre>public&nbsp;void&nbsp;doCalculation(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
+                          <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</pre>
 <div class="block">Adds forces and torques due to given potential acting on the atoms produced by the iterator.
  Implemented for 1-, 2- and N-body potentials.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.api.IAtomList-etomica.api.IPotentialAtomic-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></code></dd>
+<dd><code><a href="../../etomica/potential/PotentialCalculation.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atoms</code> - IAtomSet the atom sets for which the calculation is performed.</dd>
 <dd><code>potential</code> - The potential used to apply the action defined by this class.</dd>

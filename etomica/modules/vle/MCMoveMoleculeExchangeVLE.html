@@ -174,9 +174,9 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/vle/MCMoveMoleculeExchangeVLE.html#MCMoveMoleculeExchangeVLE-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">MCMoveMoleculeExchangeVLE</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                         <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                         <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/vle/MCMoveMoleculeExchangeVLE.html#MCMoveMoleculeExchangeVLE-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">MCMoveMoleculeExchangeVLE</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                         <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                          <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator1,
                          <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator2)</code>&nbsp;</td>
 </tr>
@@ -207,7 +207,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html" title="class in etomica.integrator.mcmove">MCMoveMoleculeExchange</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getAtomPositionDefinition--">getAtomPositionDefinition</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getB--">getB</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getMoleculeSource--">getMoleculeSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setAtomPositionDefinition-etomica.atom.IAtomPositionDefinition-">setAtomPositionDefinition</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setMoleculeSource-etomica.atom.MoleculeSource-">setMoleculeSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getAtomPositionDefinition--">getAtomPositionDefinition</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getB--">getB</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getMoleculeSource--">getMoleculeSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setAtomPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setAtomPositionDefinition</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -263,15 +263,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMoleculeExchange.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveMoleculeExchangeVLE-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">
+<a name="MCMoveMoleculeExchangeVLE-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveMoleculeExchangeVLE</h4>
-<pre>public&nbsp;MCMoveMoleculeExchangeVLE(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                 <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                                 <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MCMoveMoleculeExchangeVLE(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                 <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                  <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator1,
                                  <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator2)</pre>
 </li>

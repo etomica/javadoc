@@ -152,7 +152,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -206,8 +206,8 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#MCMoveClusterAtomHSChain-etomica.api.IRandom-etomica.space.ISpace-double-">MCMoveClusterAtomHSChain</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                        <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#MCMoveClusterAtomHSChain-etomica.util.random.IRandom-etomica.space.Space-double-">MCMoveClusterAtomHSChain</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                        <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                         double&nbsp;sigma)</code>&nbsp;</td>
 </tr>
 </table>
@@ -265,7 +265,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -279,7 +279,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in etomica.integrator.mcmove">MCMoveBox</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#isNominallyPerParticleFrequency--">isNominallyPerParticleFrequency</a>, <a href="../../etomica/integrator/mcmove/MCMoveBox.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -324,7 +324,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="seq">
@@ -344,14 +344,14 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveClusterAtomHSChain-etomica.api.IRandom-etomica.space.ISpace-double-">
+<a name="MCMoveClusterAtomHSChain-etomica.util.random.IRandom-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveClusterAtomHSChain</h4>
-<pre>public&nbsp;MCMoveClusterAtomHSChain(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                                <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;MCMoveClusterAtomHSChain(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                                <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                                 double&nbsp;sigma)</pre>
 </li>
 </ul>

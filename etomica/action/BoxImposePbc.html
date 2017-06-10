@@ -158,13 +158,13 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#BoxImposePbc-etomica.api.IBox-etomica.space.ISpace-">BoxImposePbc</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#BoxImposePbc-etomica.box.Box-etomica.space.Space-">BoxImposePbc</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Creates the action ready to perform on the given box.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#BoxImposePbc-etomica.space.ISpace-">BoxImposePbc</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#BoxImposePbc-etomica.space.Space-">BoxImposePbc</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Creates the action without specifying a box.</div>
 </td>
 </tr>
@@ -190,7 +190,7 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#getPositionDefinition--">getPositionDefinition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -212,7 +212,7 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#setPositionDefinition-etomica.atom.IAtomPositionDefinition-">setPositionDefinition</a></span>(<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxImposePbc.html#setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setPositionDefinition</a></span>(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -220,7 +220,7 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.action.<a href="../../etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a></h3>
-<code><a href="../../etomica/action/BoxActionAdapter.html#getBox--">getBox</a>, <a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/action/BoxActionAdapter.html#getBox--">getBox</a>, <a href="../../etomica/action/BoxActionAdapter.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -243,26 +243,26 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxImposePbc-etomica.space.ISpace-">
+<a name="BoxImposePbc-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>BoxImposePbc</h4>
-<pre>public&nbsp;BoxImposePbc(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;BoxImposePbc(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Creates the action without specifying a box. Requires call to setBox
  before action can have any effect. Default is to apply central-imaging at
  the atom rather than molecule level.</div>
 </li>
 </ul>
-<a name="BoxImposePbc-etomica.api.IBox-etomica.space.ISpace-">
+<a name="BoxImposePbc-etomica.box.Box-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxImposePbc</h4>
-<pre>public&nbsp;BoxImposePbc(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;BoxImposePbc(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Creates the action ready to perform on the given box.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -332,13 +332,13 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 </dl>
 </li>
 </ul>
-<a name="setPositionDefinition-etomica.atom.IAtomPositionDefinition-">
+<a name="setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPositionDefinition</h4>
-<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</pre>
+<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</pre>
 </li>
 </ul>
 <a name="getPositionDefinition--">
@@ -347,7 +347,7 @@ extends <a href="../../etomica/action/BoxActionAdapter.html" title="class in eto
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPositionDefinition</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;getPositionDefinition()</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;getPositionDefinition()</pre>
 </li>
 </ul>
 </li>

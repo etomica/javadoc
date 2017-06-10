@@ -123,8 +123,8 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
  the kinetic energy, but any DataSourceScalar can be used for this purpose by
  calling setKineticEnergyMeter.
  
- If the ISimulation is not given, the class will assume that all atoms have
- only translational degrees of freedom.  If the ISimulation is given, this
+ If the Simulation is not given, the class will assume that all atoms have
+ only translational degrees of freedom.  If the Simulation is given, this
  class will examine the ISpecies and calculate the actual number of degrees
  of freedom (more for oriented atoms or molecules).</div>
 </li>
@@ -146,7 +146,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -154,7 +154,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#meterKE">meterKE</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#sim">sim</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -179,12 +179,12 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#MeterTemperature-etomica.api.IBox-int-">MeterTemperature</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#MeterTemperature-etomica.box.Box-int-">MeterTemperature</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                 int&nbsp;D)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#MeterTemperature-etomica.api.ISimulation-etomica.api.IBox-int-">MeterTemperature</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterTemperature.html#MeterTemperature-etomica.simulation.Simulation-etomica.box.Box-int-">MeterTemperature</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                 int&nbsp;D)</code>&nbsp;</td>
 </tr>
 </table>
@@ -245,31 +245,31 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="sim">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sim</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
+</li>
+</ul>
 <a name="box">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="meterKE">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>meterKE</h4>
 <pre>protected&nbsp;<a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a> meterKE</pre>
-</li>
-</ul>
-<a name="sim">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> sim</pre>
 </li>
 </ul>
 </li>
@@ -280,24 +280,24 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterTemperature-etomica.api.IBox-int-">
+<a name="MeterTemperature-etomica.box.Box-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MeterTemperature</h4>
-<pre>public&nbsp;MeterTemperature(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;MeterTemperature(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                         int&nbsp;D)</pre>
 </li>
 </ul>
-<a name="MeterTemperature-etomica.api.ISimulation-etomica.api.IBox-int-">
+<a name="MeterTemperature-etomica.simulation.Simulation-etomica.box.Box-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterTemperature</h4>
-<pre>public&nbsp;MeterTemperature(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                        <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;MeterTemperature(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                        <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                         int&nbsp;D)</pre>
 </li>
 </ul>

@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -136,7 +136,7 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/Potential2Soft.html#hyperVirial-etomica.api.IAtomList-">hyperVirial</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/Potential2Soft.html#hyperVirial-etomica.atom.IAtomList-">hyperVirial</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code>
 <div class="block">Hypervirial of the pair as given by the du(double) and d2u(double) methods</div>
 </td>
 </tr>
@@ -152,7 +152,7 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></h3>
-<code><a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#virial-etomica.api.IAtomList-">virial</a></code></li>
+<code><a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/PotentialSoft.html#virial-etomica.atom.IAtomList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential2Spherical">
@@ -162,18 +162,18 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <code><a href="../../etomica/potential/Potential2Spherical.html#u-double-">u</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialAtomic">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialAtomic">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></h3>
-<code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></h3>
+<code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -189,13 +189,13 @@ extends <a href="../../etomica/potential/PotentialSoft.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="hyperVirial-etomica.api.IAtomList-">
+<a name="hyperVirial-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>hyperVirial</h4>
-<pre>double&nbsp;hyperVirial(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair)</pre>
+<pre>double&nbsp;hyperVirial(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
 <div class="block">Hypervirial of the pair as given by the du(double) and d2u(double) methods</div>
 </li>
 </ul>

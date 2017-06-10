@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../etomica/api/IBoundaryListener.html" title="interface in etomica.api">IBoundaryListener</a>, <a href="../../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, java.io.Serializable</dd>
+<dd><a href="../../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, <a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
@@ -168,17 +168,17 @@ extends <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecu
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#NeighborCellManagerListMolecular-etomica.api.ISimulation-etomica.api.IBox-double-etomica.atom.IAtomPositionDefinition-etomica.space.ISpace-">NeighborCellManagerListMolecular</a></span>(<a href="../../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#NeighborCellManagerListMolecular-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">NeighborCellManagerListMolecular</a></span>(<a href="../../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                 double&nbsp;potentialRange,
-                                <a href="../../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition,
-                                <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                                <a href="../../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                                <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#NeighborCellManagerListMolecular-etomica.api.ISimulation-etomica.api.IBox-double-etomica.space.ISpace-">NeighborCellManagerListMolecular</a></span>(<a href="../../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#NeighborCellManagerListMolecular-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">NeighborCellManagerListMolecular</a></span>(<a href="../../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                 double&nbsp;potentialRange,
-                                <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+                                <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,7 +197,7 @@ extends <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecu
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></span>(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/NeighborCellManagerListMolecular.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the cell containing the given atom.</div>
 </td>
 </tr>
@@ -211,7 +211,7 @@ extends <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecu
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.nbr.cell.molecule.<a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html" title="class in etomica.nbr.cell.molecule">NeighborCellManagerMolecular</a></h3>
-<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#assignCell-etomica.api.IMolecule-">assignCell</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#assignCellAll--">assignCellAll</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#boundaryInflate-etomica.api.IBoundaryEvent-">boundaryInflate</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#checkDimensions--">checkDimensions</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getCell-etomica.api.IMolecule-">getCell</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getCellRange--">getCellRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getLattice--">getLattice</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getPotentialRange--">getPotentialRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeMCMoveListener--">makeMCMoveListener</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#releaseAgent-java.lang.Object-etomica.api.IMolecule-">releaseAgent</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setCellRange-int-">setCellRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setPotentialRange-double-">setPotentialRange</a></code></li>
+<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#assignCell-etomica.molecule.IMolecule-">assignCell</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#assignCellAll--">assignCellAll</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#boundaryInflate-etomica.space.BoundaryEvent-">boundaryInflate</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#checkDimensions--">checkDimensions</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getCell-etomica.molecule.IMolecule-">getCell</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getCellRange--">getCellRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getLattice--">getLattice</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getPotentialRange--">getPotentialRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeMCMoveListener--">makeMCMoveListener</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setCellRange-int-">setCellRange</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setPotentialRange-double-">setPotentialRange</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -251,29 +251,29 @@ extends <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecu
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborCellManagerListMolecular-etomica.api.ISimulation-etomica.api.IBox-double-etomica.space.ISpace-">
+<a name="NeighborCellManagerListMolecular-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>NeighborCellManagerListMolecular</h4>
-<pre>public&nbsp;NeighborCellManagerListMolecular(<a href="../../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                        <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;NeighborCellManagerListMolecular(<a href="../../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                        <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                         double&nbsp;potentialRange,
-                                        <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                        <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
-<a name="NeighborCellManagerListMolecular-etomica.api.ISimulation-etomica.api.IBox-double-etomica.atom.IAtomPositionDefinition-etomica.space.ISpace-">
+<a name="NeighborCellManagerListMolecular-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborCellManagerListMolecular</h4>
-<pre>public&nbsp;NeighborCellManagerListMolecular(<a href="../../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                                        <a href="../../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;NeighborCellManagerListMolecular(<a href="../../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                                        <a href="../../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                         double&nbsp;potentialRange,
-                                        <a href="../../../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition,
-                                        <a href="../../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                        <a href="../../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                                        <a href="../../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -293,21 +293,21 @@ extends <a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecu
 <pre>public&nbsp;void&nbsp;setPotentialMaster(<a href="../../../../etomica/nbr/list/molecule/PotentialMasterListMolecular.html" title="class in etomica.nbr.list.molecule">PotentialMasterListMolecular</a>&nbsp;newPotentialMaster)</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IMolecule-">
+<a name="makeAgent-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeAgent-etomica.api.IMolecule-">NeighborCellManagerMolecular</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeAgent-etomica.molecule.IMolecule-">NeighborCellManagerMolecular</a></code></span></div>
 <div class="block">Returns the cell containing the given atom.  The atom is added to the
  cell's atom list.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/atom/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.atom">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
+<dd><code><a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeAgent-etomica.api.IMolecule-">makeAgent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html" title="class in etomica.nbr.cell.molecule">NeighborCellManagerMolecular</a></code></dd>
+<dd><code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html" title="class in etomica.nbr.cell.molecule">NeighborCellManagerMolecular</a></code></dd>
 </dl>
 </li>
 </ul>

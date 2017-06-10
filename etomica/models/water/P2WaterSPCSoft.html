@@ -116,7 +116,7 @@
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>, <a href="../../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential">IPotentialMolecularTorque</a>, <a href="../../../etomica/potential/PotentialMolecularSoft.html" title="interface in etomica.potential">PotentialMolecularSoft</a></dd>
+<dd><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>, <a href="../../../etomica/potential/IPotentialMolecularTorque.html" title="interface in etomica.potential">IPotentialMolecularTorque</a>, <a href="../../../etomica/potential/PotentialMolecularSoft.html" title="interface in etomica.potential">PotentialMolecularSoft</a></dd>
 </dl>
 <hr>
 <br>
@@ -170,7 +170,7 @@ extends <a href="../../../etomica/models/water/P2Water3PSoft.html" title="class 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/P2WaterSPCSoft.html#P2WaterSPCSoft-etomica.space.ISpace-">P2WaterSPCSoft</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/water/P2WaterSPCSoft.html#P2WaterSPCSoft-etomica.space.Space-">P2WaterSPCSoft</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -186,14 +186,14 @@ extends <a href="../../../etomica/models/water/P2Water3PSoft.html" title="class 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.models.water.<a href="../../../etomica/models/water/P2Water3PSoft.html" title="class in etomica.models.water">P2Water3PSoft</a></h3>
-<code><a href="../../../etomica/models/water/P2Water3PSoft.html#getEpsilon--">getEpsilon</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#getRange--">getRange</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#getSigma--">getSigma</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradient-etomica.api.IMoleculeList-">gradient</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradient-etomica.api.IMoleculeList-etomica.space.Tensor-">gradient</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradientAndTorque-etomica.api.IMoleculeList-">gradientAndTorque</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#virial-etomica.api.IMoleculeList-">virial</a></code></li>
+<code><a href="../../../etomica/models/water/P2Water3PSoft.html#getEpsilon--">getEpsilon</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#getRange--">getRange</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#getSigma--">getSigma</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradient-etomica.molecule.IMoleculeList-">gradient</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradient-etomica.molecule.IMoleculeList-etomica.space.Tensor-">gradient</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#gradientAndTorque-etomica.molecule.IMoleculeList-">gradientAndTorque</a>, <a href="../../../etomica/models/water/P2Water3PSoft.html#virial-etomica.molecule.IMoleculeList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.models.water.P2Water3P">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.models.water.<a href="../../../etomica/models/water/P2Water3P.html" title="class in etomica.models.water">P2Water3P</a></h3>
-<code><a href="../../../etomica/models/water/P2Water3P.html#energy-etomica.api.IMoleculeList-">energy</a>, <a href="../../../etomica/models/water/P2Water3P.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../../etomica/models/water/P2Water3P.html#energy-etomica.molecule.IMoleculeList-">energy</a>, <a href="../../../etomica/models/water/P2Water3P.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialMolecular">
@@ -210,18 +210,18 @@ extends <a href="../../../etomica/models/water/P2Water3PSoft.html" title="class 
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialMolecular">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialMolecular">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></h3>
-<code><a href="../../../etomica/api/IPotentialMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></h3>
+<code><a href="../../../etomica/potential/IPotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -237,13 +237,13 @@ extends <a href="../../../etomica/models/water/P2Water3PSoft.html" title="class 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2WaterSPCSoft-etomica.space.ISpace-">
+<a name="P2WaterSPCSoft-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2WaterSPCSoft</h4>
-<pre>public&nbsp;P2WaterSPCSoft(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;P2WaterSPCSoft(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>

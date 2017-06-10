@@ -110,19 +110,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/ISimulationBoxEvent.html" title="interface in etomica.api">ISimulationBoxEvent</a>, <a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a>, java.io.Serializable</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SimulationBoxEvent</span>
-extends <a href="../../etomica/simulation/SimulationEvent.html" title="class in etomica.simulation">SimulationEvent</a>
-implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface in etomica.api">ISimulationBoxEvent</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.simulation.SimulationBoxEvent">Serialized Form</a></dd>
-</dl>
+extends <a href="../../etomica/simulation/SimulationEvent.html" title="class in etomica.simulation">SimulationEvent</a></pre>
 </li>
 </ul>
 </div>
@@ -141,8 +132,8 @@ implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationBoxEvent.html#SimulationBoxEvent-etomica.api.ISimulation-etomica.api.IBox-">SimulationBoxEvent</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                  <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationBoxEvent.html#SimulationBoxEvent-etomica.simulation.Simulation-etomica.box.Box-">SimulationBoxEvent</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -160,7 +151,7 @@ implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationBoxEvent.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -178,13 +169,6 @@ implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.ISimulationEvent">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a></h3>
-<code><a href="../../etomica/api/ISimulationEvent.html#getSimulation--">getSimulation</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -199,14 +183,14 @@ implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimulationBoxEvent-etomica.api.ISimulation-etomica.api.IBox-">
+<a name="SimulationBoxEvent-etomica.simulation.Simulation-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationBoxEvent</h4>
-<pre>public&nbsp;SimulationBoxEvent(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                          <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public&nbsp;SimulationBoxEvent(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -223,11 +207,7 @@ implements <a href="../../etomica/api/ISimulationBoxEvent.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/ISimulationBoxEvent.html#getBox--">getBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/ISimulationBoxEvent.html" title="interface in etomica.api">ISimulationBoxEvent</a></code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
 </li>

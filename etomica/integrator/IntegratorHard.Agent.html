@@ -138,7 +138,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#atom">atom</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -146,7 +146,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#atomSetSinglet">atomSetSinglet</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#collisionPartner">collisionPartner</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -184,7 +184,7 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#Agent-etomica.api.IAtom-etomica.integrator.IntegratorHard-">Agent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#Agent-etomica.atom.IAtom-etomica.integrator.IntegratorHard-">Agent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
      <a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</code>&nbsp;</td>
 </tr>
 </table>
@@ -203,11 +203,11 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#atom--">atom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#collisionPartner--">collisionPartner</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -237,8 +237,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#setCollision-double-etomica.api.IAtom-etomica.potential.PotentialHard-">setCollision</a></span>(double&nbsp;time,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;partner,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorHard.Agent.html#setCollision-double-etomica.atom.IAtom-etomica.potential.PotentialHard-">setCollision</a></span>(double&nbsp;time,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;partner,
             <a href="../../etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a>&nbsp;p)</code>
 <div class="block">Sets parameters associated with next two-body collision of this atom with another atom.</div>
 </td>
@@ -273,13 +273,22 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="integrator">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>integrator</h4>
+<pre>protected final&nbsp;<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a> integrator</pre>
+</li>
+</ul>
 <a name="atom">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>atom</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> atom</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> atom</pre>
 </li>
 </ul>
 <a name="collisionPartner">
@@ -288,7 +297,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>collisionPartner</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> collisionPartner</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> collisionPartner</pre>
 </li>
 </ul>
 <a name="collisionPotential">
@@ -330,19 +339,10 @@ extends java.lang.Object</pre>
 <a name="nullCollisionTime">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>nullCollisionTime</h4>
 <pre>protected&nbsp;double nullCollisionTime</pre>
-</li>
-</ul>
-<a name="integrator">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>integrator</h4>
-<pre>protected final&nbsp;<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a> integrator</pre>
 </li>
 </ul>
 </li>
@@ -353,13 +353,13 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Agent-etomica.api.IAtom-etomica.integrator.IntegratorHard-">
+<a name="Agent-etomica.atom.IAtom-etomica.integrator.IntegratorHard-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Agent</h4>
-<pre>public&nbsp;Agent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<pre>public&nbsp;Agent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
              <a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</pre>
 </li>
 </ul>
@@ -399,7 +399,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>atom</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom()</pre>
+<pre>public final&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom()</pre>
 </li>
 </ul>
 <a name="collisionPartner--">
@@ -408,7 +408,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>collisionPartner</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;collisionPartner()</pre>
+<pre>public final&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;collisionPartner()</pre>
 </li>
 </ul>
 <a name="resetCollision--">
@@ -431,18 +431,18 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>resetCollisionFull</h4>
 <pre>public&nbsp;void&nbsp;resetCollisionFull()</pre>
-<div class="block">resets time, potential and partner.  caller should remove 
+<div class="block">resets time, potential and partner.  caller should remove
  eventLinker from the tree if needed before calling this method.</div>
 </li>
 </ul>
-<a name="setCollision-double-etomica.api.IAtom-etomica.potential.PotentialHard-">
+<a name="setCollision-double-etomica.atom.IAtom-etomica.potential.PotentialHard-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setCollision</h4>
 <pre>public final&nbsp;void&nbsp;setCollision(double&nbsp;time,
-                               <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;partner,
+                               <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;partner,
                                <a href="../../etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a>&nbsp;p)</pre>
 <div class="block">Sets parameters associated with next two-body collision of this atom with another atom.</div>
 <dl>

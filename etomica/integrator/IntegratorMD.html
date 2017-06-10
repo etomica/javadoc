@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a>, <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></dd>
+<dd><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -127,7 +127,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">IntegratorMD</span>
 extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>
-implements <a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></pre>
+implements <a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></pre>
 <div class="block">Superclass of all molecular-dynamics integrators.
  Extends the Integrator class by adding methods that 
  set the time step.</div>
@@ -208,7 +208,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#meterTemperature">meterTemperature</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#momentum">momentum</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -224,7 +224,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#oldEnergy">oldEnergy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#oldPositionAgentManager">oldPositionAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -232,17 +232,17 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#oldPotentialEnergy">oldPotentialEnergy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#random">random</a></span></code>
 <div class="block">Elementary time step for the MD simulation</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#temperatureVec">temperatureVec</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -298,11 +298,11 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#IntegratorMD-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-etomica.space.ISpace-">IntegratorMD</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-            <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#IntegratorMD-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-etomica.space.Space-">IntegratorMD</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+            <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
             double&nbsp;timeStep,
             double&nbsp;temperature,
-            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -321,37 +321,37 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when an atom's global (leaf) index has changed.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is added to the box.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when an molecule's index has changed.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is removed from the box.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>&nbsp;e)</code>
 <div class="block">Called when the number of molecules of a particular species has changed
  in the box.</div>
 </td>
@@ -423,7 +423,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.api.IAtomKinetic-">randomizeMomentum</a></span>(<a href="../../etomica/api/IAtomKinetic.html" title="interface in etomica.api">IAtomKinetic</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a></span>(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</code>
 <div class="block">randomizes the velocity of an atom in the given box using velocities
  chosen form a Maxwell-Boltzmann distribution as in the Andersen 
  thermostat.</div>
@@ -455,11 +455,11 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.api.IVector-">scaleMomenta</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;t)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;t)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Performs activities needed to set up integrator to work on given box.</div>
 </td>
 </tr>
@@ -566,7 +566,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a> random</pre>
+<pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 <div class="block">Elementary time step for the MD simulation</div>
 </li>
 </ul>
@@ -648,7 +648,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <ul class="blockList">
 <li class="blockList">
 <h4>momentum</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> momentum</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> momentum</pre>
 </li>
 </ul>
 <a name="currentTime">
@@ -666,7 +666,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="thermostatting">
@@ -729,7 +729,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <ul class="blockList">
 <li class="blockList">
 <h4>oldPositionAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&gt; oldPositionAgentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; oldPositionAgentManager</pre>
 </li>
 </ul>
 <a name="integratorMC">
@@ -756,7 +756,7 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <ul class="blockListLast">
 <li class="blockList">
 <h4>temperatureVec</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> temperatureVec</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> temperatureVec</pre>
 </li>
 </ul>
 </li>
@@ -767,17 +767,17 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorMD-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-etomica.space.ISpace-">
+<a name="IntegratorMD-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorMD</h4>
-<pre>public&nbsp;IntegratorMD(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                    <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;IntegratorMD(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                    <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                     double&nbsp;timeStep,
                     double&nbsp;temperature,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>
@@ -817,18 +817,18 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <pre>public&nbsp;<a href="../../etomica/units/Dimension.html" title="class in etomica.units">Dimension</a>&nbsp;getTimeStepDimension()</pre>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;p)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.api.IBox-">IntegratorBox</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">IntegratorBox</a></code></span></div>
 <div class="block">Performs activities needed to set up integrator to work on given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -855,11 +855,9 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <li class="blockList">
 <h4>resetStepCount</h4>
 <pre>public&nbsp;void&nbsp;resetStepCount()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegrator.html#resetStepCount--">IIntegrator</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/Integrator.html#resetStepCount--">Integrator</a></code></span></div>
 <div class="block">This method resets the step counter.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#resetStepCount--">resetStepCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/Integrator.html#resetStepCount--">resetStepCount</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></dd>
 </dl>
@@ -874,8 +872,6 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 <pre>public&nbsp;void&nbsp;reset()</pre>
 <div class="block">reset the integrator's kinetic energy tracker</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
 </dl>
@@ -1077,13 +1073,13 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
  after calling this method.</div>
 </li>
 </ul>
-<a name="randomizeMomentum-etomica.api.IAtomKinetic-">
+<a name="randomizeMomentum-etomica.atom.IAtomKinetic-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>randomizeMomentum</h4>
-<pre>protected&nbsp;void&nbsp;randomizeMomentum(<a href="../../etomica/api/IAtomKinetic.html" title="interface in etomica.api">IAtomKinetic</a>&nbsp;atom)</pre>
+<pre>protected&nbsp;void&nbsp;randomizeMomentum(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</pre>
 <div class="block">randomizes the velocity of an atom in the given box using velocities
  chosen form a Maxwell-Boltzmann distribution as in the Andersen 
  thermostat.  The state of the integrator needs to be updated 
@@ -1119,13 +1115,13 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
  integrator may need to be updated after calling this method.</div>
 </li>
 </ul>
-<a name="scaleMomenta-etomica.api.IVector-">
+<a name="scaleMomenta-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>scaleMomenta</h4>
-<pre>protected&nbsp;void&nbsp;scaleMomenta(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;t)</pre>
+<pre>protected&nbsp;void&nbsp;scaleMomenta(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;t)</pre>
 </li>
 </ul>
 <a name="getMeterTemperature--">
@@ -1150,74 +1146,74 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
  the standard MeterTemperature won't work.</div>
 </li>
 </ul>
-<a name="boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">
+<a name="boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
-<pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when a molecule is added to the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the added molecule and the box to
           which it was added.</dd>
 </dl>
 </li>
 </ul>
-<a name="boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">
+<a name="boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeRemoved</h4>
-<pre>public&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when a molecule is removed from the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the removed molecule and the box from
           which it was removed.</dd>
 </dl>
 </li>
 </ul>
-<a name="boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">
+<a name="boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxGlobalAtomLeafIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box and the new maximum global
           index</dd>
 </dl>
 </li>
 </ul>
-<a name="boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">
+<a name="boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxAtomLeafIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when an atom's global (leaf) index has changed.  This typically
  happens after one molecule is removed and the indices of other atoms are
  renumbered to fill in the gap left by the removed atoms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box, the atom whose index changed
           and the atom's old leaf index.  The atom's new leaf index can
@@ -1225,20 +1221,20 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 </dl>
 </li>
 </ul>
-<a name="boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">
+<a name="boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;boxMoleculeIndexChanged(<a href="../../etomica/api/IBoxMoleculeIndexEvent.html" title="interface in etomica.api">IBoxMoleculeIndexEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxMoleculeIndexChanged(<a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when an molecule's index has changed.  This typically happens
  after one molecule is removed and the indices of another molecule is
  changed to fill in the gap.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box, the molecule whose index
           changed and the molecule's old index.  The molecule's new index
@@ -1246,20 +1242,20 @@ implements <a href="../../etomica/api/IBoxListener.html" title="interface in eto
 </dl>
 </li>
 </ul>
-<a name="boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">
+<a name="boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>boxNumberMolecules</h4>
-<pre>public&nbsp;void&nbsp;boxNumberMolecules(<a href="../../etomica/api/IBoxMoleculeCountEvent.html" title="interface in etomica.api">IBoxMoleculeCountEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxNumberMolecules(<a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when the number of molecules of a particular species has changed
  in the box.  This method is called before the new molecules have
  been added to the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box, the species and the new
           number of molecules of that species.</dd>

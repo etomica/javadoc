@@ -144,11 +144,11 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#direction">direction</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#secondaryDirection">secondaryDirection</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -173,8 +173,8 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#ConfigurationOrientedFile-java.lang.String-etomica.space.ISpace-">ConfigurationOrientedFile</a></span>(java.lang.String&nbsp;aConfName,
-                         <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#ConfigurationOrientedFile-java.lang.String-etomica.space.Space-">ConfigurationOrientedFile</a></span>(java.lang.String&nbsp;aConfName,
+                         <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -193,7 +193,7 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#setPosition-etomica.api.IAtom-java.lang.String-">setPosition</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/config/ConfigurationOrientedFile.html#setPosition-etomica.atom.IAtom-java.lang.String-">setPosition</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
            java.lang.String&nbsp;string)</code>&nbsp;</td>
 </tr>
 </table>
@@ -202,7 +202,7 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.config.<a href="../../etomica/config/ConfigurationFile.html" title="class in etomica.config">ConfigurationFile</a></h3>
-<code><a href="../../etomica/config/ConfigurationFile.html#initializeCoordinates-etomica.api.IBox-">initializeCoordinates</a></code></li>
+<code><a href="../../etomica/config/ConfigurationFile.html#initializeCoordinates-etomica.box.Box-">initializeCoordinates</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -231,7 +231,7 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>direction</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> direction</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> direction</pre>
 </li>
 </ul>
 <a name="secondaryDirection">
@@ -240,7 +240,7 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>secondaryDirection</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> secondaryDirection</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> secondaryDirection</pre>
 </li>
 </ul>
 </li>
@@ -251,14 +251,14 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationOrientedFile-java.lang.String-etomica.space.ISpace-">
+<a name="ConfigurationOrientedFile-java.lang.String-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationOrientedFile</h4>
 <pre>public&nbsp;ConfigurationOrientedFile(java.lang.String&nbsp;aConfName,
-                                 <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                                 <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -269,17 +269,17 @@ extends <a href="../../etomica/config/ConfigurationFile.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setPosition-etomica.api.IAtom-java.lang.String-">
+<a name="setPosition-etomica.atom.IAtom-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setPosition</h4>
-<pre>protected&nbsp;void&nbsp;setPosition(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
+<pre>protected&nbsp;void&nbsp;setPosition(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
                            java.lang.String&nbsp;string)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/config/ConfigurationFile.html#setPosition-etomica.api.IAtom-java.lang.String-">setPosition</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/config/ConfigurationFile.html" title="class in etomica.config">ConfigurationFile</a></code></dd>
+<dd><code><a href="../../etomica/config/ConfigurationFile.html#setPosition-etomica.atom.IAtom-java.lang.String-">setPosition</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/config/ConfigurationFile.html" title="class in etomica.config">ConfigurationFile</a></code></dd>
 </dl>
 </li>
 </ul>

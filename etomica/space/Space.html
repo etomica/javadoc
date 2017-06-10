@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>, java.io.Serializable</dd>
+<dd>java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">Space</span>
 extends java.lang.Object
-implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></pre>
+implements java.io.Serializable</pre>
 <div class="block">Superclass for all Space instances. Space classes are factories for vectors, tensors, etc.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -162,9 +162,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#D--">D</a></span>()</code>
-<div class="block">The dimension of this space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#D--">D</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
@@ -172,81 +170,63 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></span>(double&nbsp;d)</code>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></span>(double&nbsp;d)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></span>(int&nbsp;i)</code>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></span>(int&nbsp;i)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></span>()</code>
-<div class="block">Constructs and returns a new Orientation appropriate to the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></span>()</code>
-<div class="block">Constructs and returns a new RotationTensor appropriate to the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></span>()</code>
-<div class="block">Constructs and returns a new Tensor appropriate to the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></span>()</code>
-<div class="block">Constructs and returns a new Vector appropriate to the space.</div>
-</td>
+<td class="colFirst"><code>abstract <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-double:A-">makeVector</a></span>(double[]&nbsp;a)</code>
 <div class="block">Returns a Vector initialized to the given set of values in the array.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-int-">makeVector</a></span>(int&nbsp;D)</code>
 <div class="block">Returns a Vector from the space of the given dimension.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-int:A-">makeVector</a></span>(int[]&nbsp;k)</code>
 <div class="block">Returns a Vector initialized to the given set of values in the array (cast to double).</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVectorArray-int-">makeVectorArray</a></span>(int&nbsp;n)</code>
 <div class="block">Makes an array of Vectors.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></span>(double&nbsp;a)</code>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></span>(double&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></span>(int&nbsp;a)</code>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></span>(int&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></span>(double&nbsp;a)</code>
-<div class="block">Returns the given value raised to the power 1/D, where D is the dimension of the space.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></span>(double&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
@@ -323,11 +303,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>D</h4>
 <pre>public abstract&nbsp;int&nbsp;D()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#D--">ISpace</a></code></span></div>
-<div class="block">The dimension of this space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#D--">D</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the dimension of this space.</dd>
 </dl>
@@ -340,11 +316,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>rootD</h4>
 <pre>public abstract&nbsp;double&nbsp;rootD(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#rootD-double-">ISpace</a></code></span></div>
-<div class="block">Returns the given value raised to the power 1/D, where D is the dimension of the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#rootD-double-">rootD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the given value raised to the power 1/D, where D is the dimension of the space.</dd>
 </dl>
@@ -357,11 +329,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>powerD</h4>
 <pre>public abstract&nbsp;int&nbsp;powerD(int&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-int-">ISpace</a></code></span></div>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#powerD-int-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
 </dl>
@@ -374,11 +342,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>powerD</h4>
 <pre>public abstract&nbsp;double&nbsp;powerD(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#powerD-double-">ISpace</a></code></span></div>
-<div class="block">Returns the given value raised to the Dth power, where D is the dimension of the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#powerD-double-">powerD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the given value raised to the Dth power, where D is the dimension of the space.</dd>
 </dl>
@@ -390,12 +354,8 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVector</h4>
-<pre>public abstract&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeVector--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Vector appropriate to the space.</div>
+<pre>public abstract&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeVector()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeVector--">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new Vector appropriate to the space.</dd>
 </dl>
@@ -408,11 +368,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>makeOrientation</h4>
 <pre>public abstract&nbsp;<a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a>&nbsp;makeOrientation()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeOrientation--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Orientation appropriate to the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeOrientation--">makeOrientation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new Orientation appropriate to the space.</dd>
 </dl>
@@ -425,11 +381,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>makeTensor</h4>
 <pre>public abstract&nbsp;<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;makeTensor()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeTensor--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new Tensor appropriate to the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeTensor--">makeTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new Tensor appropriate to the space.</dd>
 </dl>
@@ -442,11 +394,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>makeRotationTensor</h4>
 <pre>public abstract&nbsp;<a href="../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a>&nbsp;makeRotationTensor()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">ISpace</a></code></span></div>
-<div class="block">Constructs and returns a new RotationTensor appropriate to the space.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeRotationTensor--">makeRotationTensor</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new RotationTensor appropriate to the space.</dd>
 </dl>
@@ -459,11 +407,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>makeArrayD</h4>
 <pre>public abstract&nbsp;int[]&nbsp;makeArrayD(int&nbsp;i)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">ISpace</a></code></span></div>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-int-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an array of dimension D (as defined for this Space instance),
  with each element equal to the given value.</dd>
@@ -477,11 +421,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <li class="blockList">
 <h4>makeArrayD</h4>
 <pre>public abstract&nbsp;double[]&nbsp;makeArrayD(double&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">ISpace</a></code></span></div>
-<div class="block">Returns an array of dimension D, with each element equal to the given value.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeArrayD-double-">makeArrayD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an array of dimension D (as defined for this Space instance),
  with each element equal to the given value.</dd>
@@ -499,8 +439,6 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
  In 1-D, this is twice the radius; in 2-D the area of the circle;
  in 3-D the volume of the sphere.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#sphereVolume-double-">sphereVolume</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>r</code> - the radius</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -519,8 +457,6 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
  In 1-D this is zero; in 2-D the circumference of the circle; in 3-D
  the surface area of the sphere.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#sphereArea-double-">sphereArea</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>r</code> - the sphere radius</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -534,7 +470,7 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVector</h4>
-<pre>public static&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector(int&nbsp;D)</pre>
+<pre>public static&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeVector(int&nbsp;D)</pre>
 <div class="block">Returns a Vector from the space of the given dimension.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -548,12 +484,10 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVector</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector(double[]&nbsp;a)</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeVector(double[]&nbsp;a)</pre>
 <div class="block">Returns a Vector initialized to the given set of values in the array.
  Spatial dimension of the Vector is determined by the length of a.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeVector-double:A-">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if a.length is not 1, 2, or 3.</dd>
 </dl>
@@ -565,13 +499,9 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVector</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;makeVector(int[]&nbsp;k)</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;makeVector(int[]&nbsp;k)</pre>
 <div class="block">Returns a Vector initialized to the given set of values in the array (cast to double).
  Spatial dimension of the Vector is determined by the length of a.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeVector-int:A-">makeVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="makeVectorArray-int-">
@@ -580,11 +510,9 @@ implements java.io.Serializable, <a href="../../etomica/space/ISpace.html" title
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeVectorArray</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;makeVectorArray(int&nbsp;n)</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;makeVectorArray(int&nbsp;n)</pre>
 <div class="block">Makes an array of Vectors.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/ISpace.html#makeVectorArray-int-">makeVectorArray</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>n</code> - number of vectors in the returned array</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

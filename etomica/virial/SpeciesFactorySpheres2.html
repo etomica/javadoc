@@ -153,7 +153,7 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#nominalBondTheta">nominalBondTheta</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -171,13 +171,13 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#SpeciesFactorySpheres2-etomica.space.ISpace-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-">SpeciesFactorySpheres2</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#SpeciesFactorySpheres2-etomica.space.Space-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-">SpeciesFactorySpheres2</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                       int&nbsp;nA,
                       <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH3element,
                       <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH2element)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#SpeciesFactorySpheres2-etomica.space.ISpace-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-double-double-">SpeciesFactorySpheres2</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#SpeciesFactorySpheres2-etomica.space.Space-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-double-double-">SpeciesFactorySpheres2</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                       int&nbsp;nA,
                       <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH3element,
                       <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH2element,
@@ -212,8 +212,8 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#init--">init</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#makeSpecies-etomica.space.ISpace-">makeSpecies</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/SpeciesFactorySpheres2.html#makeSpecies-etomica.space.Space-">makeSpecies</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -277,7 +277,7 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="bondL">
@@ -306,25 +306,25 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpeciesFactorySpheres2-etomica.space.ISpace-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-">
+<a name="SpeciesFactorySpheres2-etomica.space.Space-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SpeciesFactorySpheres2</h4>
-<pre>public&nbsp;SpeciesFactorySpheres2(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;SpeciesFactorySpheres2(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                               int&nbsp;nA,
                               <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH3element,
                               <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH2element)</pre>
 </li>
 </ul>
-<a name="SpeciesFactorySpheres2-etomica.space.ISpace-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-double-double-">
+<a name="SpeciesFactorySpheres2-etomica.space.Space-int-etomica.chem.elements.ElementSimple-etomica.chem.elements.ElementSimple-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpeciesFactorySpheres2</h4>
-<pre>public&nbsp;SpeciesFactorySpheres2(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;SpeciesFactorySpheres2(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                               int&nbsp;nA,
                               <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH3element,
                               <a href="../../etomica/chem/elements/ElementSimple.html" title="class in etomica.chem.elements">ElementSimple</a>&nbsp;CH2element,
@@ -385,16 +385,16 @@ implements <a href="../../etomica/virial/SpeciesFactory.html" title="interface i
 <pre>public&nbsp;void&nbsp;init()</pre>
 </li>
 </ul>
-<a name="makeSpecies-etomica.space.ISpace-">
+<a name="makeSpecies-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeSpecies</h4>
-<pre>public&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;makeSpecies(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+<pre>public&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;makeSpecies(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/virial/SpeciesFactory.html#makeSpecies-etomica.space.ISpace-">makeSpecies</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a></code></dd>
+<dd><code><a href="../../etomica/virial/SpeciesFactory.html#makeSpecies-etomica.space.Space-">makeSpecies</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/SpeciesFactory.html" title="interface in etomica.virial">SpeciesFactory</a></code></dd>
 </dl>
 </li>
 </ul>

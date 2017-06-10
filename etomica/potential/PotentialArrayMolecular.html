@@ -158,7 +158,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#addPotential-etomica.api.IPotentialMolecular-">addPotential</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;newPotential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#addPotential-etomica.potential.IPotentialMolecular-">addPotential</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;newPotential)</code>
 <div class="block">Identifies the given potential to this type instance and returns
  the index assigned to it.</div>
 </td>
@@ -169,18 +169,18 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#getPotentialIndex-etomica.api.IPotentialMolecular-">getPotentialIndex</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#getPotentialIndex-etomica.potential.IPotentialMolecular-">getPotentialIndex</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code>
 <div class="block">Returns the index that this type has assigned to the given
  potential.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>[]</code></td>
+<td class="colFirst"><code><a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#getPotentials--">getPotentials</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#removePotential-etomica.api.IPotentialMolecular-">removePotential</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code>
 <div class="block">Removes the given potential and the associated criterion from the list 
  held by this type instance, and returns the index that was assigned to 
  it.</div>
@@ -188,7 +188,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#setCriterion-etomica.api.IPotentialMolecular-etomica.nbr.molecule.NeighborCriterionMolecular-">setCriterion</a></span>(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialArrayMolecular.html#setCriterion-etomica.potential.IPotentialMolecular-etomica.nbr.molecule.NeighborCriterionMolecular-">setCriterion</a></span>(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
             <a href="../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a>&nbsp;criterion)</code>
 <div class="block">Sets the criterion associated with the given potential</div>
 </td>
@@ -232,13 +232,13 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getPotentialIndex-etomica.api.IPotentialMolecular-">
+<a name="getPotentialIndex-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getPotentialIndex</h4>
-<pre>public&nbsp;int&nbsp;getPotentialIndex(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</pre>
+<pre>public&nbsp;int&nbsp;getPotentialIndex(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</pre>
 <div class="block">Returns the index that this type has assigned to the given
  potential.  If potential has not been previously identified
  to this instance, a new index will be returned.</div>
@@ -250,13 +250,13 @@ implements java.io.Serializable</pre>
 </dl>
 </li>
 </ul>
-<a name="addPotential-etomica.api.IPotentialMolecular-">
+<a name="addPotential-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addPotential</h4>
-<pre>public&nbsp;int&nbsp;addPotential(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;newPotential)</pre>
+<pre>public&nbsp;int&nbsp;addPotential(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;newPotential)</pre>
 <div class="block">Identifies the given potential to this type instance and returns
  the index assigned to it.  If potential was previously added,
  no action is taken other than to return the previously assigned
@@ -270,24 +270,24 @@ implements java.io.Serializable</pre>
 </dl>
 </li>
 </ul>
-<a name="setCriterion-etomica.api.IPotentialMolecular-etomica.nbr.molecule.NeighborCriterionMolecular-">
+<a name="setCriterion-etomica.potential.IPotentialMolecular-etomica.nbr.molecule.NeighborCriterionMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setCriterion</h4>
-<pre>public&nbsp;void&nbsp;setCriterion(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential,
+<pre>public&nbsp;void&nbsp;setCriterion(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
                          <a href="../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a>&nbsp;criterion)</pre>
 <div class="block">Sets the criterion associated with the given potential</div>
 </li>
 </ul>
-<a name="removePotential-etomica.api.IPotentialMolecular-">
+<a name="removePotential-etomica.potential.IPotentialMolecular-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removePotential</h4>
-<pre>public&nbsp;int&nbsp;removePotential(<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>&nbsp;potential)</pre>
+<pre>public&nbsp;int&nbsp;removePotential(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</pre>
 <div class="block">Removes the given potential and the associated criterion from the list 
  held by this type instance, and returns the index that was assigned to 
  it.  If the potential was not previously added to this instance, returns
@@ -300,7 +300,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getPotentials</h4>
-<pre>public final&nbsp;<a href="../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a>[]&nbsp;getPotentials()</pre>
+<pre>public final&nbsp;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>[]&nbsp;getPotentials()</pre>
 </li>
 </ul>
 <a name="getCriteria--">

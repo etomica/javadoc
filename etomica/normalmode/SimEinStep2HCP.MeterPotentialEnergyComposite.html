@@ -200,8 +200,8 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#MeterPotentialEnergyComposite-etomica.api.IPotentialMaster-etomica.api.IPotentialMaster-double-int-">MeterPotentialEnergyComposite</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster1,
-                             <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster2,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#MeterPotentialEnergyComposite-etomica.potential.PotentialMaster-etomica.potential.PotentialMaster-double-int-">MeterPotentialEnergyComposite</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster1,
+                             <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster2,
                              double&nbsp;latticeEnergy,
                              int&nbsp;nMolecules)</code>&nbsp;</td>
 </tr>
@@ -221,7 +221,7 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#getBox--">getBox</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -243,7 +243,7 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -258,11 +258,11 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setTarget-etomica.api.IAtom-">setTarget</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setTarget-etomica.atom.IAtom-">setTarget</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setTarget-etomica.api.IMolecule-">setTarget</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimEinStep2HCP.MeterPotentialEnergyComposite.html#setTarget-etomica.molecule.IMolecule-">setTarget</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -318,6 +318,15 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <pre>protected final&nbsp;<a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a> meterPE2</pre>
 </li>
 </ul>
+<a name="nMolecules">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nMolecules</h4>
+<pre>protected final&nbsp;int nMolecules</pre>
+</li>
+</ul>
 <a name="lambda">
 <!--   -->
 </a>
@@ -339,19 +348,10 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <a name="hasTarget">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hasTarget</h4>
 <pre>protected&nbsp;boolean hasTarget</pre>
-</li>
-</ul>
-<a name="nMolecules">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>nMolecules</h4>
-<pre>protected final&nbsp;int nMolecules</pre>
 </li>
 </ul>
 </li>
@@ -362,14 +362,14 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterPotentialEnergyComposite-etomica.api.IPotentialMaster-etomica.api.IPotentialMaster-double-int-">
+<a name="MeterPotentialEnergyComposite-etomica.potential.PotentialMaster-etomica.potential.PotentialMaster-double-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterPotentialEnergyComposite</h4>
-<pre>protected&nbsp;MeterPotentialEnergyComposite(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster1,
-                                        <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster2,
+<pre>protected&nbsp;MeterPotentialEnergyComposite(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster1,
+                                        <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster2,
                                         double&nbsp;latticeEnergy,
                                         int&nbsp;nMolecules)</pre>
 </li>
@@ -382,15 +382,6 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setLambda-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLambda</h4>
-<pre>public&nbsp;void&nbsp;setLambda(double&nbsp;newFrac)</pre>
-</li>
-</ul>
 <a name="getLambda--">
 <!--   -->
 </a>
@@ -400,18 +391,42 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 <pre>public&nbsp;double&nbsp;getLambda()</pre>
 </li>
 </ul>
+<a name="setLambda-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLambda</h4>
+<pre>public&nbsp;void&nbsp;setLambda(double&nbsp;newFrac)</pre>
+</li>
+</ul>
 <a name="getBox--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#getBox--">getBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>
+</dl>
+</li>
+</ul>
+<a name="setBox-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBox</h4>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - The box to set.</dd>
 </dl>
 </li>
 </ul>
@@ -431,21 +446,6 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>box</code> - The box to set.</dd>
-</dl>
-</li>
-</ul>
 <a name="setIncludeLrc-boolean-">
 <!--   -->
 </a>
@@ -462,29 +462,29 @@ extends <a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="clas
 </dl>
 </li>
 </ul>
-<a name="setTarget-etomica.api.IAtom-">
+<a name="setTarget-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTarget</h4>
-<pre>public&nbsp;void&nbsp;setTarget(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;void&nbsp;setTarget(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setTarget-etomica.api.IAtom-">setTarget</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
+<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setTarget-etomica.atom.IAtom-">setTarget</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setTarget-etomica.api.IMolecule-">
+<a name="setTarget-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTarget</h4>
-<pre>public&nbsp;void&nbsp;setTarget(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</pre>
+<pre>public&nbsp;void&nbsp;setTarget(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setTarget-etomica.api.IMolecule-">setTarget</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
+<dd><code><a href="../../etomica/data/meter/MeterPotentialEnergy.html#setTarget-etomica.molecule.IMolecule-">setTarget</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a></code></dd>
 </dl>
 </li>
 </ul>

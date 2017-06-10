@@ -178,15 +178,15 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polygon.html#Polygon-etomica.space.ISpace-int-">Polygon</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
-       int&nbsp;nSides)</code>
-<div class="block">Constructs a polygon with the given number of sides arranged in a closed loop.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polygon.html#Polygon-etomica.math.geometry.LineSegment:A-">Polygon</a></span>(<a href="../../../etomica/math/geometry/LineSegment.html" title="class in etomica.math.geometry">LineSegment</a>[]&nbsp;edges)</code>
+<div class="block">Constructs a polygon using the given edges for its sides.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polygon.html#Polygon-etomica.math.geometry.LineSegment:A-">Polygon</a></span>(<a href="../../../etomica/math/geometry/LineSegment.html" title="class in etomica.math.geometry">LineSegment</a>[]&nbsp;edges)</code>
-<div class="block">Constructs a polygon using the given edges for its sides.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polygon.html#Polygon-etomica.space.Space-int-">Polygon</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
+       int&nbsp;nSides)</code>
+<div class="block">Constructs a polygon with the given number of sides arranged in a closed loop.</div>
 </td>
 </tr>
 </table>
@@ -232,7 +232,7 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.math.geometry.<a href="../../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></h3>
-<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a>, <a href="../../../etomica/math/geometry/Polytope.html#updateVertices--">updateVertices</a></code></li>
+<code><a href="../../../etomica/math/geometry/Polytope.html#applyTranslationRotation--">applyTranslationRotation</a>, <a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a>, <a href="../../../etomica/math/geometry/Polytope.html#D--">D</a>, <a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a>, <a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertexCount--">getVertexCount</a>, <a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a>, <a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a>, <a href="../../../etomica/math/geometry/Polytope.html#toString--">toString</a>, <a href="../../../etomica/math/geometry/Polytope.html#updateVertices--">updateVertices</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -272,13 +272,13 @@ extends <a href="../../../etomica/math/geometry/Polytope.html" title="class in e
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Polygon-etomica.space.ISpace-int-">
+<a name="Polygon-etomica.space.Space-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Polygon</h4>
-<pre>protected&nbsp;Polygon(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;embeddedSpace,
+<pre>protected&nbsp;Polygon(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;embeddedSpace,
                   int&nbsp;nSides)</pre>
 <div class="block">Constructs a polygon with the given number of sides arranged in a closed loop.</div>
 </li>

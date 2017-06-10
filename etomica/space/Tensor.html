@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/space/Space.html" title="class in etomica.space"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../etomica/space/Vector.html" title="interface in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/space/Tensor.html" target="_top">Frames</a></li>
@@ -147,7 +147,7 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#assignTo-etomica.api.IVectorMutable:A-">assignTo</a></span>(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#assignTo-etomica.space.Vector:A-">assignTo</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;v)</code>
 <div class="block">Assigns the tensor elements column-wise to the given vectors.</div>
 </td>
 </tr>
@@ -178,7 +178,7 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#diagE-etomica.api.IVector-">diagE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#diagE-etomica.space.Vector-">diagE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Makes this a diagonal tensor with elements set by the given vector.</div>
 </td>
 </tr>
@@ -196,14 +196,14 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#E-etomica.api.IVector:A-">E</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;v)</code>
-<div class="block">Fills the tensor column-wise with the given vectors.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#E-etomica.space.Tensor-">E</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;t)</code>
+<div class="block">"Equals" operation.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#E-etomica.space.Tensor-">E</a></span>(<a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>&nbsp;t)</code>
-<div class="block">"Equals" operation.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#E-etomica.space.Vector:A-">E</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;v)</code>
+<div class="block">Fills the tensor column-wise with the given vectors.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -214,8 +214,8 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#Ev1v2-etomica.api.IVector-etomica.api.IVector-">Ev1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-     <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#Ev1v2-etomica.space.Vector-etomica.space.Vector-">Ev1v2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+     <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</code>
 <div class="block">Sets this tensor equal to the dyadic or outer product of the given vectors.</div>
 </td>
 </tr>
@@ -231,7 +231,7 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#map-etomica.api.IFunction-">map</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#map-etomica.math.function.IFunction-">map</a></span>(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f)</code>
 <div class="block">Applies given function to each element of this tensor.</div>
 </td>
 </tr>
@@ -244,8 +244,8 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#MEv1v2-etomica.api.IVector-etomica.api.IVector-">MEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#MEv1v2-etomica.space.Vector-etomica.space.Vector-">MEv1v2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</code>
 <div class="block">"Minus equals" (-=) operation with a dyad argument.</div>
 </td>
 </tr>
@@ -279,8 +279,8 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#PEv1v2-etomica.api.IVector-etomica.api.IVector-">PEv1v2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#PEv1v2-etomica.space.Vector-etomica.space.Vector-">PEv1v2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</code>
 <div class="block">"Plus equals" (+=) operation with a dyad argument.</div>
 </td>
 </tr>
@@ -314,7 +314,7 @@ extends java.lang.Cloneable</pre>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#transform-etomica.api.IVectorMutable-">transform</a></span>(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;x)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Tensor.html#transform-etomica.space.Vector-">transform</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x)</code>
 <div class="block">Applies the given tensor transformation to this vector, replacing its
  elements with the transformed values.</div>
 </td>
@@ -414,13 +414,13 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="E-etomica.api.IVector:A-">
+<a name="E-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>E</h4>
-<pre>void&nbsp;E(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;v)</pre>
+<pre>void&nbsp;E(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;v)</pre>
 <div class="block">Fills the tensor column-wise with the given vectors.  The number
  of vectors must equal the dimension of the tensor, and the vector
  dimensions must equal the tensor dimension. Each vector forms a column of the tensor, so
@@ -457,13 +457,13 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="diagE-etomica.api.IVector-">
+<a name="diagE-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>diagE</h4>
-<pre>void&nbsp;diagE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>void&nbsp;diagE(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Makes this a diagonal tensor with elements set by the given vector. All
  other elements of this tensor are set to zero.</div>
 <dl>
@@ -472,26 +472,26 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="assignTo-etomica.api.IVectorMutable:A-">
+<a name="assignTo-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>assignTo</h4>
-<pre>void&nbsp;assignTo(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]&nbsp;v)</pre>
+<pre>void&nbsp;assignTo(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;v)</pre>
 <div class="block">Assigns the tensor elements column-wise to the given vectors. The number
  of vectors must equal the dimension of the tensor, and the vector
  dimensions must equal the tensor dimension.</div>
 </li>
 </ul>
-<a name="Ev1v2-etomica.api.IVector-etomica.api.IVector-">
+<a name="Ev1v2-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Ev1v2</h4>
-<pre>void&nbsp;Ev1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-           <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
+<pre>void&nbsp;Ev1v2(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+           <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</pre>
 <div class="block">Sets this tensor equal to the dyadic or outer product of the given vectors.
  Element ab is given by v1.a * v2.b</div>
 <dl>
@@ -548,26 +548,26 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="PEv1v2-etomica.api.IVector-etomica.api.IVector-">
+<a name="PEv1v2-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PEv1v2</h4>
-<pre>void&nbsp;PEv1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-            <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
+<pre>void&nbsp;PEv1v2(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+            <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</pre>
 <div class="block">"Plus equals" (+=) operation with a dyad argument. Increments this tensor by the dyadic or outer product of the given vectors.
  Element ab of this tensor is replaced by (ab + v1.a * v2.b)</div>
 </li>
 </ul>
-<a name="MEv1v2-etomica.api.IVector-etomica.api.IVector-">
+<a name="MEv1v2-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MEv1v2</h4>
-<pre>void&nbsp;MEv1v2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v1,
-            <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v2)</pre>
+<pre>void&nbsp;MEv1v2(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
+            <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</pre>
 <div class="block">"Minus equals" (-=) operation with a dyad argument. Decrements this tensor by the dyadic or outer product of the given vectors.
  Element ab of this tensor is replaced by (ab - v1.a * v2.b)</div>
 </li>
@@ -723,13 +723,13 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="map-etomica.api.IFunction-">
+<a name="map-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>map</h4>
-<pre>void&nbsp;map(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</pre>
+<pre>void&nbsp;map(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f)</pre>
 <div class="block">Applies given function to each element of this tensor. Replaces element with the resulting value.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -737,13 +737,13 @@ extends java.lang.Cloneable</pre>
 </dl>
 </li>
 </ul>
-<a name="transform-etomica.api.IVectorMutable-">
+<a name="transform-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
-<pre>void&nbsp;transform(<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>&nbsp;x)</pre>
+<pre>void&nbsp;transform(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;x)</pre>
 <div class="block">Applies the given tensor transformation to this vector, replacing its
  elements with the transformed values. This operation is equivalent to a matrix
  multiplication.</div>
@@ -825,7 +825,7 @@ extends java.lang.Cloneable</pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/space/Space.html" title="class in etomica.space"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../etomica/space/Vector.html" title="interface in etomica.space"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/space/Tensor.html" target="_top">Frames</a></li>

@@ -153,7 +153,7 @@ extends <a href="../../etomica/action/WriteConfiguration.html" title="class in e
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/WriteConfigurationOriented.html#WriteConfigurationOriented-etomica.space.ISpace-">WriteConfigurationOriented</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/WriteConfigurationOriented.html#WriteConfigurationOriented-etomica.space.Space-">WriteConfigurationOriented</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -172,8 +172,8 @@ extends <a href="../../etomica/action/WriteConfiguration.html" title="class in e
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/WriteConfigurationOriented.html#writeAtom-java.io.FileWriter-etomica.api.IAtom-">writeAtom</a></span>(java.io.FileWriter&nbsp;fileWriter,
-         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/WriteConfigurationOriented.html#writeAtom-java.io.FileWriter-etomica.atom.IAtom-">writeAtom</a></span>(java.io.FileWriter&nbsp;fileWriter,
+         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -181,7 +181,7 @@ extends <a href="../../etomica/action/WriteConfiguration.html" title="class in e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.action.<a href="../../etomica/action/WriteConfiguration.html" title="class in etomica.action">WriteConfiguration</a></h3>
-<code><a href="../../etomica/action/WriteConfiguration.html#actionPerformed--">actionPerformed</a>, <a href="../../etomica/action/WriteConfiguration.html#getBox--">getBox</a>, <a href="../../etomica/action/WriteConfiguration.html#getConfName--">getConfName</a>, <a href="../../etomica/action/WriteConfiguration.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../etomica/action/WriteConfiguration.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../etomica/action/WriteConfiguration.html#setConfName-java.lang.String-">setConfName</a>, <a href="../../etomica/action/WriteConfiguration.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../etomica/action/WriteConfiguration.html#setFileName-java.lang.String-">setFileName</a></code></li>
+<code><a href="../../etomica/action/WriteConfiguration.html#actionPerformed--">actionPerformed</a>, <a href="../../etomica/action/WriteConfiguration.html#getBox--">getBox</a>, <a href="../../etomica/action/WriteConfiguration.html#getConfName--">getConfName</a>, <a href="../../etomica/action/WriteConfiguration.html#getDoApplyPBC--">getDoApplyPBC</a>, <a href="../../etomica/action/WriteConfiguration.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/action/WriteConfiguration.html#setConfName-java.lang.String-">setConfName</a>, <a href="../../etomica/action/WriteConfiguration.html#setDoApplyPBC-boolean-">setDoApplyPBC</a>, <a href="../../etomica/action/WriteConfiguration.html#setFileName-java.lang.String-">setFileName</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -204,13 +204,13 @@ extends <a href="../../etomica/action/WriteConfiguration.html" title="class in e
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WriteConfigurationOriented-etomica.space.ISpace-">
+<a name="WriteConfigurationOriented-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WriteConfigurationOriented</h4>
-<pre>public&nbsp;WriteConfigurationOriented(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;WriteConfigurationOriented(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -221,18 +221,18 @@ extends <a href="../../etomica/action/WriteConfiguration.html" title="class in e
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="writeAtom-java.io.FileWriter-etomica.api.IAtom-">
+<a name="writeAtom-java.io.FileWriter-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>writeAtom</h4>
 <pre>protected&nbsp;void&nbsp;writeAtom(java.io.FileWriter&nbsp;fileWriter,
-                         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)
                   throws java.io.IOException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/action/WriteConfiguration.html#writeAtom-java.io.FileWriter-etomica.api.IAtom-">writeAtom</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/action/WriteConfiguration.html" title="class in etomica.action">WriteConfiguration</a></code></dd>
+<dd><code><a href="../../etomica/action/WriteConfiguration.html#writeAtom-java.io.FileWriter-etomica.atom.IAtom-">writeAtom</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/action/WriteConfiguration.html" title="class in etomica.action">WriteConfiguration</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>

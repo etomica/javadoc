@@ -121,7 +121,7 @@
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a>, <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>, <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</dd>
+<dd><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;, <a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></dd>
 </dl>
 <hr>
 <br>
@@ -210,18 +210,18 @@ extends <a href="../../etomica/integrator/IntegratorVelocityVerlet.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/threaded/IntegratorVelocityVerletThreaded.html#IntegratorVelocityVerletThreaded-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-int-etomica.space.ISpace-">IntegratorVelocityVerletThreaded</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/threaded/IntegratorVelocityVerletThreaded.html#IntegratorVelocityVerletThreaded-etomica.util.random.IRandom-etomica.space.Space-etomica.potential.PotentialMaster-int-">IntegratorVelocityVerletThreaded</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;_random,
+                                <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                int&nbsp;numThreads)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/threaded/IntegratorVelocityVerletThreaded.html#IntegratorVelocityVerletThreaded-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-int-etomica.space.Space-">IntegratorVelocityVerletThreaded</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                 double&nbsp;timeStep,
                                 double&nbsp;temperature,
                                 int&nbsp;numThreads,
-                                <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/threaded/IntegratorVelocityVerletThreaded.html#IntegratorVelocityVerletThreaded-etomica.api.IRandom-etomica.space.ISpace-etomica.api.IPotentialMaster-int-">IntegratorVelocityVerletThreaded</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;_random,
-                                <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                int&nbsp;numThreads)</code>&nbsp;</td>
+                                <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -237,14 +237,14 @@ extends <a href="../../etomica/integrator/IntegratorVelocityVerlet.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorVelocityVerlet.html" title="class in etomica.integrator">IntegratorVelocityVerlet</a></h3>
-<code><a href="../../etomica/integrator/IntegratorVelocityVerlet.html#doStepInternal--">doStepInternal</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getAgentManager--">getAgentManager</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getForceSum--">getForceSum</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getPressureTensor--">getPressureTensor</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#releaseAgent-etomica.integrator.IntegratorVelocityVerlet.MyAgent-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#reset--">reset</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#setForceSum-etomica.potential.PotentialCalculationForceSum-">setForceSum</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorVelocityVerlet.html#doStepInternal--">doStepInternal</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getAgentManager--">getAgentManager</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getForceSum--">getForceSum</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#getPressureTensor--">getPressureTensor</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#releaseAgent-etomica.integrator.IntegratorVelocityVerlet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#reset--">reset</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/integrator/IntegratorVelocityVerlet.html#setForceSum-etomica.potential.PotentialCalculationForceSum-">setForceSum</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.IntegratorMD">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></h3>
-<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.api.IAtomKinetic-">randomizeMomentum</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.api.IVector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.IntegratorBox">
@@ -281,30 +281,30 @@ extends <a href="../../etomica/integrator/IntegratorVelocityVerlet.html" title="
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorVelocityVerletThreaded-etomica.api.IRandom-etomica.space.ISpace-etomica.api.IPotentialMaster-int-">
+<a name="IntegratorVelocityVerletThreaded-etomica.util.random.IRandom-etomica.space.Space-etomica.potential.PotentialMaster-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>IntegratorVelocityVerletThreaded</h4>
-<pre>public&nbsp;IntegratorVelocityVerletThreaded(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;_random,
-                                        <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
-                                        <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<pre>public&nbsp;IntegratorVelocityVerletThreaded(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;_random,
+                                        <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                                        <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                                         int&nbsp;numThreads)</pre>
 </li>
 </ul>
-<a name="IntegratorVelocityVerletThreaded-etomica.api.IPotentialMaster-etomica.api.IRandom-double-double-int-etomica.space.ISpace-">
+<a name="IntegratorVelocityVerletThreaded-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-double-int-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorVelocityVerletThreaded</h4>
-<pre>public&nbsp;IntegratorVelocityVerletThreaded(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                                        <a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
+<pre>public&nbsp;IntegratorVelocityVerletThreaded(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                                        <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                         double&nbsp;timeStep,
                                         double&nbsp;temperature,
                                         int&nbsp;numThreads,
-                                        <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space)</pre>
+                                        <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 </li>
 </ul>
 </li>

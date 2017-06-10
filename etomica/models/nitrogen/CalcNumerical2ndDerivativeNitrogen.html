@@ -150,7 +150,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#atomGroupActionTranslate">atomGroupActionTranslate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -162,7 +162,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#deltaU">deltaU</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#destination">destination</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -182,11 +182,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#generalizedCoord">generalizedCoord</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#lsPosition">lsPosition</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomPositionGeometricCenter.html" title="class in etomica.atom">AtomPositionGeometricCenter</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculePositionGeometricCenter.html" title="class in etomica.molecule">MoleculePositionGeometricCenter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#pos">pos</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -232,12 +232,12 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#CalcNumerical2ndDerivativeNitrogen-etomica.api.IBox-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">CalcNumerical2ndDerivativeNitrogen</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#CalcNumerical2ndDerivativeNitrogen-etomica.box.Box-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">CalcNumerical2ndDerivativeNitrogen</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                   <a href="../../../etomica/models/nitrogen/P2Nitrogen.html" title="class in etomica.models.nitrogen">P2Nitrogen</a>&nbsp;potential,
                                   <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDefinition)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#CalcNumerical2ndDerivativeNitrogen-etomica.api.IBox-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-boolean-double-">CalcNumerical2ndDerivativeNitrogen</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CalcNumerical2ndDerivativeNitrogen.html#CalcNumerical2ndDerivativeNitrogen-etomica.box.Box-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-boolean-double-">CalcNumerical2ndDerivativeNitrogen</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                   <a href="../../../etomica/models/nitrogen/P2Nitrogen.html" title="class in etomica.models.nitrogen">P2Nitrogen</a>&nbsp;potential,
                                   <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDefinition,
                                   boolean&nbsp;doLatticeSum,
@@ -314,7 +314,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="pos">
@@ -323,7 +323,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>pos</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/AtomPositionGeometricCenter.html" title="class in etomica.atom">AtomPositionGeometricCenter</a> pos</pre>
+<pre>protected&nbsp;<a href="../../../etomica/molecule/MoleculePositionGeometricCenter.html" title="class in etomica.molecule">MoleculePositionGeometricCenter</a> pos</pre>
 </li>
 </ul>
 <a name="translator">
@@ -377,7 +377,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>lsPosition</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> lsPosition</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> lsPosition</pre>
 </li>
 </ul>
 <a name="destination">
@@ -386,7 +386,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>destination</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> destination</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> destination</pre>
 </li>
 </ul>
 <a name="errt">
@@ -487,24 +487,24 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CalcNumerical2ndDerivativeNitrogen-etomica.api.IBox-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">
+<a name="CalcNumerical2ndDerivativeNitrogen-etomica.box.Box-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>CalcNumerical2ndDerivativeNitrogen</h4>
-<pre>public&nbsp;CalcNumerical2ndDerivativeNitrogen(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;CalcNumerical2ndDerivativeNitrogen(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                           <a href="../../../etomica/models/nitrogen/P2Nitrogen.html" title="class in etomica.models.nitrogen">P2Nitrogen</a>&nbsp;potential,
                                           <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDefinition)</pre>
 </li>
 </ul>
-<a name="CalcNumerical2ndDerivativeNitrogen-etomica.api.IBox-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-boolean-double-">
+<a name="CalcNumerical2ndDerivativeNitrogen-etomica.box.Box-etomica.models.nitrogen.P2Nitrogen-etomica.models.nitrogen.CoordinateDefinitionNitrogen-boolean-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CalcNumerical2ndDerivativeNitrogen</h4>
-<pre>public&nbsp;CalcNumerical2ndDerivativeNitrogen(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;CalcNumerical2ndDerivativeNitrogen(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                           <a href="../../../etomica/models/nitrogen/P2Nitrogen.html" title="class in etomica.models.nitrogen">P2Nitrogen</a>&nbsp;potential,
                                           <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDefinition,
                                           boolean&nbsp;doLatticeSum,

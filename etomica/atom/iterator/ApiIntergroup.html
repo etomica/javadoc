@@ -147,7 +147,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#aiOuter">aiOuter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#atomSetSinglet">atomSetSinglet</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -159,7 +159,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#pair">pair</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#targetAtom">targetAtom</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -226,7 +226,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#haveTarget-etomica.api.IAtom-">haveTarget</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;target)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#haveTarget-etomica.atom.IAtom-">haveTarget</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;target)</code>
 <div class="block">Returns true if the iterator with its current basis 
  would return an iterate for the given target.</div>
 </td>
@@ -239,7 +239,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#next--">next</a></span>()</code>
 <div class="block">Returns the next pair of atoms.</div>
 </td>
@@ -252,13 +252,13 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#setBasis-etomica.api.IMoleculeList-">setBasis</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;basisAtoms)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#setBasis-etomica.molecule.IMoleculeList-">setBasis</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;basisAtoms)</code>
 <div class="block">Specifies the basis, which identifies the atoms subject to iteration.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#setTarget-etomica.api.IAtom-">setTarget</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newTargetAtom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntergroup.html#setTarget-etomica.atom.IAtom-">setTarget</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</code>
 <div class="block">Specifies a target atom, which should appear in all iterates.</div>
 </td>
 </tr>
@@ -333,7 +333,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <ul class="blockList">
 <li class="blockList">
 <h4>targetAtom</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> targetAtom</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> targetAtom</pre>
 </li>
 </ul>
 <a name="needSetupIterators">
@@ -351,7 +351,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <ul class="blockListLast">
 <li class="blockList">
 <h4>atomSetSinglet</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a> atomSetSinglet</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a> atomSetSinglet</pre>
 </li>
 </ul>
 </li>
@@ -474,7 +474,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;next()</pre>
 <div class="block">Returns the next pair of atoms. The same AtomPair instance is returned
  every time, but the Atoms it holds are (of course) different for each
  iterate.</div>
@@ -484,34 +484,34 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 </dl>
 </li>
 </ul>
-<a name="setTarget-etomica.api.IAtom-">
+<a name="setTarget-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTarget</h4>
-<pre>public&nbsp;void&nbsp;setTarget(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newTargetAtom)</pre>
+<pre>public&nbsp;void&nbsp;setTarget(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</pre>
 <div class="block">Specifies a target atom, which should appear in all iterates. A
  null value removes any restriction on the iterates.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html#setTarget-etomica.api.IAtom-">setTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html#setTarget-etomica.atom.IAtom-">setTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="haveTarget-etomica.api.IAtom-">
+<a name="haveTarget-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>haveTarget</h4>
-<pre>public&nbsp;boolean&nbsp;haveTarget(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;target)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#haveTarget-etomica.api.IAtom-">AtomsetIteratorBasisDependent</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;haveTarget(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;target)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#haveTarget-etomica.atom.IAtom-">AtomsetIteratorBasisDependent</a></code></span></div>
 <div class="block">Returns true if the iterator with its current basis 
  would return an iterate for the given target.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#haveTarget-etomica.api.IAtom-">haveTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBasisDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#haveTarget-etomica.atom.IAtom-">haveTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBasisDependent</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -524,13 +524,13 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
 <pre>protected&nbsp;void&nbsp;setupIterators()</pre>
 </li>
 </ul>
-<a name="setBasis-etomica.api.IMoleculeList-">
+<a name="setBasis-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBasis</h4>
-<pre>public&nbsp;void&nbsp;setBasis(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;basisAtoms)</pre>
+<pre>public&nbsp;void&nbsp;setBasis(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;basisAtoms)</pre>
 <div class="block">Specifies the basis, which identifies the atoms subject to iteration. The
  given atomSet must be of length 2. The first atom in the set specifies
  the basis for the outer-loop iteration, and second atom specifies the
@@ -541,7 +541,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent
  via another call to this method.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#setBasis-etomica.api.IMoleculeList-">setBasis</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBasisDependent</a></code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html#setBasis-etomica.molecule.IMoleculeList-">setBasis</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBasisDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBasisDependent</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>basisAtoms</code> - The basis atoms; a null basis will
  condition the iterator to give no iterates until a valid basis

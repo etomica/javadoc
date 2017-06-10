@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -170,7 +170,7 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#coreDiameterSquared">coreDiameterSquared</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#dv">dv</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -238,10 +238,10 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#P2SquareWell-etomica.space.ISpace-">P2SquareWell</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#P2SquareWell-etomica.space.Space-">P2SquareWell</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#P2SquareWell-etomica.space.ISpace-double-double-double-boolean-">P2SquareWell</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#P2SquareWell-etomica.space.Space-double-double-double-boolean-">P2SquareWell</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
             double&nbsp;coreDiameter,
             double&nbsp;lambda,
             double&nbsp;epsilon,
@@ -264,14 +264,14 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#bump-etomica.api.IAtomList-double-">bump</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#bump-etomica.atom.IAtomList-double-">bump</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
     double&nbsp;falseTime)</code>
 <div class="block">Implements collision dynamics between two square-well atoms.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#collisionTime-etomica.api.IAtomList-double-">collisionTime</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SquareWell.html#collisionTime-etomica.atom.IAtomList-double-">collisionTime</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
              double&nbsp;falseTime)</code>
 <div class="block">Computes next time of collision of two square-well atoms, assuming free-flight kinematics.</div>
 </td>
@@ -361,7 +361,7 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/Potential2HardSpherical.html" title="class in etomica.potential">Potential2HardSpherical</a></h3>
-<code><a href="../../etomica/potential/Potential2HardSpherical.html#energy-etomica.api.IAtomList-">energy</a>, <a href="../../etomica/potential/Potential2HardSpherical.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<code><a href="../../etomica/potential/Potential2HardSpherical.html#energy-etomica.atom.IAtomList-">energy</a>, <a href="../../etomica/potential/Potential2HardSpherical.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential">
@@ -378,11 +378,11 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#nBody--">nBody</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#nBody--">nBody</a></code></li>
 </ul>
 </li>
 </ul>
@@ -494,7 +494,7 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>dv</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dv</pre>
+<pre>protected&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dv</pre>
 </li>
 </ul>
 <a name="ignoreOverlap">
@@ -514,22 +514,22 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2SquareWell-etomica.space.ISpace-">
+<a name="P2SquareWell-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>P2SquareWell</h4>
-<pre>public&nbsp;P2SquareWell(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;P2SquareWell(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
-<a name="P2SquareWell-etomica.space.ISpace-double-double-double-boolean-">
+<a name="P2SquareWell-etomica.space.Space-double-double-double-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2SquareWell</h4>
-<pre>public&nbsp;P2SquareWell(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;P2SquareWell(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                     double&nbsp;coreDiameter,
                     double&nbsp;lambda,
                     double&nbsp;epsilon,
@@ -551,24 +551,24 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 <li class="blockList">
 <h4>getRange</h4>
 <pre>public&nbsp;double&nbsp;getRange()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IPotential.html#getRange--">IPotential</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/potential/IPotential.html#getRange--">IPotential</a></code></span></div>
 <div class="block">Returns the range over which the potential applies.  IAtoms with a
  greater separation do not interact.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/potential/Potential.html#getRange--">getRange</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential.html" title="class in etomica.potential">Potential</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="bump-etomica.api.IAtomList-double-">
+<a name="bump-etomica.atom.IAtomList-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>bump</h4>
-<pre>public&nbsp;void&nbsp;bump(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<pre>public&nbsp;void&nbsp;bump(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
                  double&nbsp;falseTime)</pre>
 <div class="block">Implements collision dynamics between two square-well atoms.
  Includes all possibilities involving collision of hard cores, and collision of wells
@@ -606,13 +606,13 @@ extends <a href="../../etomica/potential/Potential2HardSpherical.html" title="cl
 </dl>
 </li>
 </ul>
-<a name="collisionTime-etomica.api.IAtomList-double-">
+<a name="collisionTime-etomica.atom.IAtomList-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>collisionTime</h4>
-<pre>public&nbsp;double&nbsp;collisionTime(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;pair,
+<pre>public&nbsp;double&nbsp;collisionTime(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
                             double&nbsp;falseTime)</pre>
 <div class="block">Computes next time of collision of two square-well atoms, assuming free-flight kinematics.
  Collision may occur when cores collides, or when wells first encounter each other on

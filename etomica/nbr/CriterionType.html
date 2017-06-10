@@ -156,8 +156,8 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionType.html#CriterionType-etomica.nbr.NeighborCriterion-etomica.api.IAtomType-">CriterionType</a></span>(<a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>&nbsp;criterion,
-             <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionType.html#CriterionType-etomica.nbr.NeighborCriterion-etomica.atom.AtomType-">CriterionType</a></span>(<a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>&nbsp;criterion,
+             <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,13 +176,13 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionType.html#accept-etomica.api.IAtomList-">accept</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atom)</code>
-<div class="block">Returns true if the AtomType of the atom matches the AtomType given at 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionType.html#accept-etomica.atom.IAtomList-">accept</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atom)</code>
+<div class="block">Returns true if the AtomType of the atom matches the AtomType given at
  construction and if the wrapped criterion accept also returns true.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionType.html#getType--">getType</a></span>()</code>
 <div class="block">Returns the AtomType accepted by this criterion.</div>
 </td>
@@ -193,7 +193,7 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.nbr.<a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></h3>
-<code><a href="../../etomica/nbr/CriterionAdapter.html#getWrappedCriterion--">getWrappedCriterion</a>, <a href="../../etomica/nbr/CriterionAdapter.html#needUpdate-etomica.api.IAtom-">needUpdate</a>, <a href="../../etomica/nbr/CriterionAdapter.html#reset-etomica.api.IAtom-">reset</a>, <a href="../../etomica/nbr/CriterionAdapter.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../etomica/nbr/CriterionAdapter.html#unsafe--">unsafe</a></code></li>
+<code><a href="../../etomica/nbr/CriterionAdapter.html#getWrappedCriterion--">getWrappedCriterion</a>, <a href="../../etomica/nbr/CriterionAdapter.html#needUpdate-etomica.atom.IAtom-">needUpdate</a>, <a href="../../etomica/nbr/CriterionAdapter.html#reset-etomica.atom.IAtom-">reset</a>, <a href="../../etomica/nbr/CriterionAdapter.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/nbr/CriterionAdapter.html#unsafe--">unsafe</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -216,14 +216,14 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CriterionType-etomica.nbr.NeighborCriterion-etomica.api.IAtomType-">
+<a name="CriterionType-etomica.nbr.NeighborCriterion-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CriterionType</h4>
 <pre>public&nbsp;CriterionType(<a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>&nbsp;criterion,
-                     <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
+                     <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
 </li>
 </ul>
 </li>
@@ -234,20 +234,20 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IAtomList-">
+<a name="accept-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atom)</pre>
-<div class="block">Returns true if the AtomType of the atom matches the AtomType given at 
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atom)</pre>
+<div class="block">Returns true if the AtomType of the atom matches the AtomType given at
  construction and if the wrapped criterion accept also returns true.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.api.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.api.IAtomList-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code></dd>
+<dd><code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -257,7 +257,7 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;getType()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getType()</pre>
 <div class="block">Returns the AtomType accepted by this criterion.</div>
 </li>
 </ul>

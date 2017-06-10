@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">AtomListWrapper</span>
 extends java.lang.Object
-implements <a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>, java.io.Serializable</pre>
 <div class="block">AtomSet formed by wrapping an AtomArrayList.  ArrayList can be</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -147,7 +147,7 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#AtomListWrapper-etomica.api.IAtomList-">AtomListWrapper</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomSet)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#AtomListWrapper-etomica.atom.IAtomList-">AtomListWrapper</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomSet)</code>
 <div class="block">Makes a new instance holding the atoms in the given atom set.</div>
 </td>
 </tr>
@@ -171,7 +171,7 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#getArrayList--">getArrayList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#getAtom-int-">getAtom</a></span>(int&nbsp;i)</code>
 <div class="block">Part of implementation of AtomSet interface.</div>
 </td>
@@ -184,7 +184,7 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#setAtoms-etomica.api.IAtomList-">setAtoms</a></span>(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomSet)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomListWrapper.html#setAtoms-etomica.atom.IAtomList-">setAtoms</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomSet)</code>
 <div class="block">Copies the atoms in the given atom set to the wrapped array of atoms.</div>
 </td>
 </tr>
@@ -220,13 +220,13 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <div class="block">Wraps a new atom array of the given length.</div>
 </li>
 </ul>
-<a name="AtomListWrapper-etomica.api.IAtomList-">
+<a name="AtomListWrapper-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>AtomListWrapper</h4>
-<pre>public&nbsp;AtomListWrapper(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomSet)</pre>
+<pre>public&nbsp;AtomListWrapper(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomSet)</pre>
 <div class="block">Makes a new instance holding the atoms in the given atom set. Makes
  zero-body AtomSet if argument is null.</div>
 </li>
@@ -256,11 +256,11 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <ul class="blockList">
 <li class="blockList">
 <h4>getAtom</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom(int&nbsp;i)</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;getAtom(int&nbsp;i)</pre>
 <div class="block">Part of implementation of AtomSet interface.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtomList.html#getAtom-int-">getAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtomList.html#getAtom-int-">getAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>i</code> - the index of the desired atom in the list
           if i is greater than count-1, throws an IllegalArgumentException.</dd>
@@ -282,13 +282,13 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 </dl>
 </li>
 </ul>
-<a name="setAtoms-etomica.api.IAtomList-">
+<a name="setAtoms-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAtoms</h4>
-<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;atomSet)</pre>
+<pre>public&nbsp;void&nbsp;setAtoms(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atomSet)</pre>
 <div class="block">Copies the atoms in the given atom set to the wrapped array of atoms.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -308,7 +308,7 @@ implements <a href="../../etomica/api/IAtomList.html" title="interface in etomic
 <div class="block">Returns the length of the wrapped array.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IAtomList.html#getAtomCount--">getAtomCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtomList.html#getAtomCount--">getAtomCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of atoms in the list</dd>
 </dl>

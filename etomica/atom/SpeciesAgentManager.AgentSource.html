@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public static interface <span class="typeNameLabel">SpeciesAgentManager.AgentSource</span></pre>
-<div class="block">Interface for an object that wants an agent associated with each 
+<div class="block">Interface for an object that wants an agent associated with each
  AtomType in a Simulation.</div>
 </li>
 </ul>
@@ -136,15 +136,15 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.api.ISpecies-">makeAgent</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/SpeciesAgentManager.AgentSource.html#makeAgent-etomica.species.ISpecies-">makeAgent</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code>
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.ISpecies-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/SpeciesAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
@@ -170,29 +170,29 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getSpeciesAgentClass</h4>
 <pre>java.lang.Class&nbsp;getSpeciesAgentClass()</pre>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.ISpecies-">
+<a name="makeAgent-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>java.lang.Object&nbsp;makeAgent(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</pre>
+<pre>java.lang.Object&nbsp;makeAgent(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</pre>
 <div class="block">Returns an agent for the given AtomType.</div>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.ISpecies-">
+<a name="releaseAgent-java.lang.Object-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                  <a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;type)</pre>
-<div class="block">This informs the agent source that the agent is going away and that 
+                  <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</pre>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </li>
 </ul>

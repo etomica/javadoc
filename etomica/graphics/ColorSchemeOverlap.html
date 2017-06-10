@@ -158,7 +158,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#boundary">boundary</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -166,11 +166,11 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#colors">colors</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#leafList">leafList</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -214,9 +214,9 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#ColorSchemeOverlap-etomica.space.ISpace-etomica.nbr.list.PotentialMasterList-etomica.api.IBox-">ColorSchemeOverlap</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/ColorSchemeOverlap.html#ColorSchemeOverlap-etomica.space.Space-etomica.nbr.list.PotentialMasterList-etomica.box.Box-">ColorSchemeOverlap</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                   <a href="../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMaster,
-                  <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>&nbsp;</td>
+                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -249,7 +249,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="class in etomica.graphics">ColorSchemeCollectiveAgent</a></h3>
-<code><a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAgentClass--">getAgentClass</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#releaseAgent-java.awt.Color-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code></li>
+<code><a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAgentClass--">getAgentClass</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a>, <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html#releaseAgent-java.awt.Color-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.ColorScheme">
@@ -294,7 +294,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>boundary</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a> boundary</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
 </li>
 </ul>
 <a name="leafList">
@@ -303,7 +303,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>leafList</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a> leafList</pre>
+<pre>protected final&nbsp;<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> leafList</pre>
 </li>
 </ul>
 <a name="dr">
@@ -312,7 +312,7 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 <a name="sig2">
@@ -350,15 +350,15 @@ extends <a href="../../etomica/graphics/ColorSchemeCollectiveAgent.html" title="
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeOverlap-etomica.space.ISpace-etomica.nbr.list.PotentialMasterList-etomica.api.IBox-">
+<a name="ColorSchemeOverlap-etomica.space.Space-etomica.nbr.list.PotentialMasterList-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeOverlap</h4>
-<pre>public&nbsp;ColorSchemeOverlap(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;ColorSchemeOverlap(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                           <a href="../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMaster,
-                          <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>

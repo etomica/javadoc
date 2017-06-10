@@ -159,13 +159,13 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.api.IAtom-">accept</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Returns true if atom is passes test of filter.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.api.IMolecule-">accept</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -174,7 +174,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getOrigin--">getOrigin</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -196,7 +196,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#inPlane-etomica.api.IVector-">inPlane</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#inPlane-etomica.space.Vector-">inPlane</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is inside the plane (within some small tolerance).</div>
 </td>
 </tr>
@@ -209,7 +209,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#isPositiveSide-etomica.api.IVector-">isPositiveSide</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#isPositiveSide-etomica.space.Vector-">isPositiveSide</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is on the side of the 
  plane toward which the normal vector points.</div>
 </td>
@@ -230,7 +230,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setOrigin-etomica.api.IVector-">setOrigin</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;origin)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setOrigin-etomica.space.Vector-">setOrigin</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;origin)</code>
 <div class="block">Sets the origin from which the position of the atom is measured.</div>
 </td>
 </tr>
@@ -295,31 +295,31 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IAtom-">
+<a name="accept-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">AtomFilter</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
 <div class="block">Returns true if atom is passes test of filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IMolecule-">
+<a name="accept-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.api.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -416,25 +416,25 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <div class="block">Returns the position i, such the the plane is located at the i-th from the origin.</div>
 </li>
 </ul>
-<a name="isPositiveSide-etomica.api.IVector-">
+<a name="isPositiveSide-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isPositiveSide</h4>
-<pre>public&nbsp;boolean&nbsp;isPositiveSide(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</pre>
+<pre>public&nbsp;boolean&nbsp;isPositiveSide(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</pre>
 <div class="block">Returns true if the given point is on the side of the 
  plane toward which the normal vector points.  The direction
  of the normal vector can be inverted using the invert method.</div>
 </li>
 </ul>
-<a name="inPlane-etomica.api.IVector-">
+<a name="inPlane-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>inPlane</h4>
-<pre>public&nbsp;boolean&nbsp;inPlane(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;p)</pre>
+<pre>public&nbsp;boolean&nbsp;inPlane(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</pre>
 <div class="block">Returns true if the given point is inside the plane (within some small tolerance).</div>
 </li>
 </ul>
@@ -447,13 +447,13 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <pre>public&nbsp;<a href="../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a>&nbsp;getPlane()</pre>
 </li>
 </ul>
-<a name="setOrigin-etomica.api.IVector-">
+<a name="setOrigin-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setOrigin</h4>
-<pre>public&nbsp;void&nbsp;setOrigin(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;origin)</pre>
+<pre>public&nbsp;void&nbsp;setOrigin(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;origin)</pre>
 <div class="block">Sets the origin from which the position of the atom is measured.</div>
 </li>
 </ul>
@@ -463,7 +463,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>getOrigin</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getOrigin()</pre>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getOrigin()</pre>
 </li>
 </ul>
 <a name="invert--">

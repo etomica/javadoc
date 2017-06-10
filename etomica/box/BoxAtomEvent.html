@@ -111,23 +111,17 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a>, <a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a>, java.io.Serializable</dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BoxAtomEvent</span>
-extends <a href="../../etomica/box/BoxEvent.html" title="class in etomica.box">BoxEvent</a>
-implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a></pre>
-<div class="block">Event that conveys some happening with respect to an Atom in a Box.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.box.BoxAtomEvent">Serialized Form</a></dd>
-</dl>
+extends <a href="../../etomica/box/BoxEvent.html" title="class in etomica.box">BoxEvent</a></pre>
+<div class="block">A box event that is somehow related to an atom.  The atom might have been
+ added or removed, or may have a new index.  Details may be determined from
+ the other interfaces implemented by the event object or obtained from
+ calling methods from those interfaces.</div>
 </li>
 </ul>
 </div>
@@ -147,7 +141,7 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAtomEvent.html#atom">atom</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -172,8 +166,8 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAtomEvent.html#BoxAtomEvent-etomica.api.IBox-etomica.api.IAtom-">BoxAtomEvent</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAtomEvent.html#BoxAtomEvent-etomica.box.Box-etomica.atom.IAtom-">BoxAtomEvent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,7 +185,7 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAtomEvent.html#getAtom--">getAtom</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -208,13 +202,6 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IBoxEvent">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IBoxEvent.html" title="interface in etomica.api">IBoxEvent</a></h3>
-<code><a href="../../etomica/api/IBoxEvent.html#getBox--">getBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -236,7 +223,7 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>atom</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a> atom</pre>
+<pre>protected final&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> atom</pre>
 </li>
 </ul>
 </li>
@@ -247,14 +234,14 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxAtomEvent-etomica.api.IBox-etomica.api.IAtom-">
+<a name="BoxAtomEvent-etomica.box.Box-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxAtomEvent</h4>
-<pre>public&nbsp;BoxAtomEvent(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                    <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;BoxAtomEvent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                    <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
 </li>
@@ -271,10 +258,8 @@ implements <a href="../../etomica/api/IBoxAtomEvent.html" title="interface in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAtom</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;getAtom()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;getAtom()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxAtomEvent.html#getAtom--">getAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxAtomEvent.html" title="interface in etomica.api">IBoxAtomEvent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the atom that is related to this event.</dd>
 </dl>

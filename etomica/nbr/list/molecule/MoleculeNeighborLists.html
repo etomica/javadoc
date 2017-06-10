@@ -141,11 +141,11 @@ implements java.io.Serializable</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#downList">downList</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#upList">upList</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -184,7 +184,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#addDownNbr-etomica.api.IMolecule-int-">addDownNbr</a></span>(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#addDownNbr-etomica.molecule.IMolecule-int-">addDownNbr</a></span>(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a,
           int&nbsp;index)</code>
 <div class="block">Adds the given atom as a "down" neighbor interacting via the potential 
  with the given index.</div>
@@ -192,7 +192,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#addUpNbr-etomica.api.IMolecule-int-">addUpNbr</a></span>(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#addUpNbr-etomica.molecule.IMolecule-int-">addUpNbr</a></span>(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a,
         int&nbsp;index)</code>
 <div class="block">Adds the given atom as a "down" neighbor interacting via the potential 
  with the given index.</div>
@@ -205,13 +205,13 @@ implements java.io.Serializable</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#getDownList--">getDownList</a></span>()</code>
 <div class="block">Returns an array of downlist-neighbor-molecule lists.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/list/molecule/MoleculeNeighborLists.html#getUpList--">getUpList</a></span>()</code>
 <div class="block">Returns an array of uplist-neighbor-molecule lists.</div>
 </td>
@@ -250,7 +250,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>upList</h4>
-<pre>protected&nbsp;<a href="../../../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[] upList</pre>
+<pre>protected&nbsp;<a href="../../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>[] upList</pre>
 </li>
 </ul>
 <a name="downList">
@@ -259,7 +259,7 @@ implements java.io.Serializable</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>downList</h4>
-<pre>protected&nbsp;<a href="../../../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>[] downList</pre>
+<pre>protected&nbsp;<a href="../../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>[] downList</pre>
 </li>
 </ul>
 </li>
@@ -288,13 +288,13 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="addUpNbr-etomica.api.IMolecule-int-">
+<a name="addUpNbr-etomica.molecule.IMolecule-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addUpNbr</h4>
-<pre>public&nbsp;void&nbsp;addUpNbr(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a,
+<pre>public&nbsp;void&nbsp;addUpNbr(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a,
                      int&nbsp;index)</pre>
 <div class="block">Adds the given atom as a "down" neighbor interacting via the potential 
  with the given index.</div>
@@ -305,13 +305,13 @@ implements java.io.Serializable</pre>
 </dl>
 </li>
 </ul>
-<a name="addDownNbr-etomica.api.IMolecule-int-">
+<a name="addDownNbr-etomica.molecule.IMolecule-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addDownNbr</h4>
-<pre>public&nbsp;void&nbsp;addDownNbr(<a href="../../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;a,
+<pre>public&nbsp;void&nbsp;addDownNbr(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a,
                        int&nbsp;index)</pre>
 <div class="block">Adds the given atom as a "down" neighbor interacting via the potential 
  with the given index.</div>
@@ -328,7 +328,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getUpList</h4>
-<pre>public&nbsp;<a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]&nbsp;getUpList()</pre>
+<pre>public&nbsp;<a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]&nbsp;getUpList()</pre>
 <div class="block">Returns an array of uplist-neighbor-molecule lists.  Each list in the
  array corresponds to a specific potential. A zero-length list indicates
  that no concrete potentials apply to the atom.</div>
@@ -340,7 +340,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDownList</h4>
-<pre>public&nbsp;<a href="../../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>[]&nbsp;getDownList()</pre>
+<pre>public&nbsp;<a href="../../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>[]&nbsp;getDownList()</pre>
 <div class="block">Returns an array of downlist-neighbor-molecule lists.  Each list in the
  array corresponds to a specific potential. A zero-length list indicates
  that no concrete potentials apply to the atom.</div>

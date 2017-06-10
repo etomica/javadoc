@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></dd>
+<dd><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></dd>
 </dl>
 <hr>
 <br>
@@ -218,7 +218,7 @@ extends <a href="../../../etomica/potential/PotentialGroup.html" title="class in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html#energy-etomica.api.IMoleculeList-">energy</a></span>(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html#energy-etomica.molecule.IMoleculeList-">energy</a></span>(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code>
 <div class="block">Returns the interaction energy between the given molecules.</div>
 </td>
 </tr>
@@ -228,7 +228,7 @@ extends <a href="../../../etomica/potential/PotentialGroup.html" title="class in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/OPLS/P2AceticAcidTwoSite.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts.</div>
 </td>
 </tr>
@@ -238,7 +238,7 @@ extends <a href="../../../etomica/potential/PotentialGroup.html" title="class in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></h3>
-<code><a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.api.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.api.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-etomica.api.IAtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.api.IPotentialAtomic-etomica.api.IAtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#calculate-etomica.atom.iterator.MoleculesetIterator-etomica.atom.iterator.IteratorDirective.Direction-etomica.api.IAtom-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../../etomica/potential/PotentialGroup.html#contains-etomica.api.IPotentialAtomic-">contains</a>, <a href="../../../etomica/potential/PotentialGroup.html#getAtomTypes-etomica.api.IPotential-">getAtomTypes</a>, <a href="../../../etomica/potential/PotentialGroup.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialGroup.html#getRange--">getRange</a>, <a href="../../../etomica/potential/PotentialGroup.html#isEnabled-etomica.api.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialGroup.html#removePotential-etomica.api.IPotentialAtomic-">removePotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#setEnabled-etomica.api.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialGroup.html#setPotentialMaster-etomica.api.IPotentialMaster-">setPotentialMaster</a></code></li>
+<code><a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.iterator.AtomsetIteratorBasisDependent-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#calculate-etomica.molecule.iterator.MoleculesetIterator-etomica.potential.IteratorDirective.Direction-etomica.atom.IAtom-etomica.potential.PotentialCalculation-">calculate</a>, <a href="../../../etomica/potential/PotentialGroup.html#contains-etomica.potential.IPotentialAtomic-">contains</a>, <a href="../../../etomica/potential/PotentialGroup.html#getAtomTypes-etomica.potential.IPotential-">getAtomTypes</a>, <a href="../../../etomica/potential/PotentialGroup.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialGroup.html#getRange--">getRange</a>, <a href="../../../etomica/potential/PotentialGroup.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialGroup.html#removePotential-etomica.potential.IPotentialAtomic-">removePotential</a>, <a href="../../../etomica/potential/PotentialGroup.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialGroup.html#setPotentialMaster-etomica.potential.PotentialMaster-">setPotentialMaster</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialMolecular">
@@ -331,41 +331,41 @@ extends <a href="../../../etomica/potential/PotentialGroup.html" title="class in
 <pre>public&nbsp;void&nbsp;setBiasVolume(<a href="../../../etomica/association/BiasVolume2SiteAceticAcid.html" title="class in etomica.association">BiasVolume2SiteAceticAcid</a>&nbsp;bv)</pre>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#setBox-etomica.api.IBox-">PotentialMolecular</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#setBox-etomica.box.Box-">PotentialMolecular</a></code></span></div>
 <div class="block">Informs the potential of the box on which it acts. Typically this
  requires at least that it update the nearestImageTransformer of its
  coordinatePair (if it uses one), e.g.:
  cPair.setNearestImageTransformer(box.boundary());</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialGroup.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialGroup.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="energy-etomica.api.IMoleculeList-">
+<a name="energy-etomica.molecule.IMoleculeList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>energy</h4>
-<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;molecules)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#energy-etomica.api.IMoleculeList-">PotentialMolecular</a></code></span></div>
+<pre>public&nbsp;double&nbsp;energy(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">PotentialMolecular</a></code></span></div>
 <div class="block">Returns the interaction energy between the given molecules.  There might
  be 0, 1, 2 or more atoms in the IMoleculeList.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IPotentialMolecular.html#energy-etomica.api.IMoleculeList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IPotentialMolecular.html" title="interface in etomica.api">IPotentialMolecular</a></code></dd>
+<dd><code><a href="../../../etomica/potential/IPotentialMolecular.html#energy-etomica.molecule.IMoleculeList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/potential/PotentialGroup.html#energy-etomica.api.IMoleculeList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
+<dd><code><a href="../../../etomica/potential/PotentialGroup.html#energy-etomica.molecule.IMoleculeList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></dd>
 </dl>
 </li>
 </ul>

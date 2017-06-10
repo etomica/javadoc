@@ -157,10 +157,10 @@ extends <a href="../../../etomica/lattice/crystal/Primitive.html" title="class i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#PrimitiveTetragonal-etomica.space.ISpace-">PrimitiveTetragonal</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#PrimitiveTetragonal-etomica.space.Space-">PrimitiveTetragonal</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#PrimitiveTetragonal-etomica.space.ISpace-double-double-">PrimitiveTetragonal</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#PrimitiveTetragonal-etomica.space.Space-double-double-">PrimitiveTetragonal</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                    double&nbsp;ab,
                    double&nbsp;c)</code>&nbsp;</td>
 </tr>
@@ -207,7 +207,7 @@ extends <a href="../../../etomica/lattice/crystal/Primitive.html" title="class i
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#latticeIndex-etomica.api.IVector-">latticeIndex</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;q)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#latticeIndex-etomica.space.Vector-">latticeIndex</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;q)</code>
 <div class="block">Returns the index which would give the unit cell containing the given
  point if the index were passed to a the site method of a sufficiently
  large lattice that uses this primitive.</div>
@@ -215,7 +215,7 @@ extends <a href="../../../etomica/lattice/crystal/Primitive.html" title="class i
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#latticeIndex-etomica.api.IVector-int:A-">latticeIndex</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;q,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/PrimitiveTetragonal.html#latticeIndex-etomica.space.Vector-int:A-">latticeIndex</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;q,
             int[]&nbsp;dimensions)</code>
 <div class="block">Same as latticeIndex(Space.Vector), but gives index for periodic system
  with number of unit cells in each direction as given by the dimensions array.</div>
@@ -291,22 +291,22 @@ extends <a href="../../../etomica/lattice/crystal/Primitive.html" title="class i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PrimitiveTetragonal-etomica.space.ISpace-">
+<a name="PrimitiveTetragonal-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PrimitiveTetragonal</h4>
-<pre>public&nbsp;PrimitiveTetragonal(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;PrimitiveTetragonal(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
-<a name="PrimitiveTetragonal-etomica.space.ISpace-double-double-">
+<a name="PrimitiveTetragonal-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PrimitiveTetragonal</h4>
-<pre>public&nbsp;PrimitiveTetragonal(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;PrimitiveTetragonal(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            double&nbsp;ab,
                            double&nbsp;c)</pre>
 </li>
@@ -439,39 +439,39 @@ extends <a href="../../../etomica/lattice/crystal/Primitive.html" title="class i
 </dl>
 </li>
 </ul>
-<a name="latticeIndex-etomica.api.IVector-">
+<a name="latticeIndex-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>latticeIndex</h4>
-<pre>public&nbsp;int[]&nbsp;latticeIndex(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;q)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.api.IVector-">Primitive</a></code></span></div>
+<pre>public&nbsp;int[]&nbsp;latticeIndex(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;q)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.space.Vector-">Primitive</a></code></span></div>
 <div class="block">Returns the index which would give the unit cell containing the given
  point if the index were passed to a the site method of a sufficiently
  large lattice that uses this primitive.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.api.IVector-">latticeIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a></code></dd>
+<dd><code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.space.Vector-">latticeIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="latticeIndex-etomica.api.IVector-int:A-">
+<a name="latticeIndex-etomica.space.Vector-int:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>latticeIndex</h4>
-<pre>public&nbsp;int[]&nbsp;latticeIndex(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;q,
+<pre>public&nbsp;int[]&nbsp;latticeIndex(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;q,
                           int[]&nbsp;dimensions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.api.IVector-int:A-">Primitive</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.space.Vector-int:A-">Primitive</a></code></span></div>
 <div class="block">Same as latticeIndex(Space.Vector), but gives index for periodic system
  with number of unit cells in each direction as given by the dimensions array.
  If lattice index corresponds to a cell outside the range of dimensions,
  index of image in central cells is returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.api.IVector-int:A-">latticeIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a></code></dd>
+<dd><code><a href="../../../etomica/lattice/crystal/Primitive.html#latticeIndex-etomica.space.Vector-int:A-">latticeIndex</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -111,22 +111,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="interface in etomica.api">ISimulationAtomTypeEvent</a>, <a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a>, java.io.Serializable</dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SimulationAtomTypeEvent</span>
-extends <a href="../../etomica/simulation/SimulationEvent.html" title="class in etomica.simulation">SimulationEvent</a>
-implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="interface in etomica.api">ISimulationAtomTypeEvent</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.simulation.SimulationAtomTypeEvent">Serialized Form</a></dd>
-</dl>
+extends <a href="../../etomica/simulation/SimulationEvent.html" title="class in etomica.simulation">SimulationEvent</a></pre>
 </li>
 </ul>
 </div>
@@ -145,8 +136,8 @@ implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationAtomTypeEvent.html#SimulationAtomTypeEvent-etomica.api.ISimulation-etomica.api.IAtomType-">SimulationAtomTypeEvent</a></span>(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                       <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationAtomTypeEvent.html#SimulationAtomTypeEvent-etomica.simulation.Simulation-etomica.atom.AtomType-">SimulationAtomTypeEvent</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                       <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -164,7 +155,7 @@ implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="inte
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationAtomTypeEvent.html#getAtomType--">getAtomType</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -182,13 +173,6 @@ implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="inte
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.ISimulationEvent">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/ISimulationEvent.html" title="interface in etomica.api">ISimulationEvent</a></h3>
-<code><a href="../../etomica/api/ISimulationEvent.html#getSimulation--">getSimulation</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -203,14 +187,14 @@ implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="inte
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimulationAtomTypeEvent-etomica.api.ISimulation-etomica.api.IAtomType-">
+<a name="SimulationAtomTypeEvent-etomica.simulation.Simulation-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationAtomTypeEvent</h4>
-<pre>public&nbsp;SimulationAtomTypeEvent(<a href="../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
-                               <a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;atomType)</pre>
+<pre>public&nbsp;SimulationAtomTypeEvent(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                               <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</pre>
 </li>
 </ul>
 </li>
@@ -227,11 +211,7 @@ implements <a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="inte
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAtomType</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;getAtomType()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/ISimulationAtomTypeEvent.html#getAtomType--">getAtomType</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/ISimulationAtomTypeEvent.html" title="interface in etomica.api">ISimulationAtomTypeEvent</a></code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getAtomType()</pre>
 </li>
 </ul>
 </li>

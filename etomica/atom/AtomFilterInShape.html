@@ -161,16 +161,16 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#accept-etomica.api.IAtom-">accept</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Returns true if the atom's position is inside the shape.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#accept-etomica.api.IMolecule-">accept</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#getPositionDefinition--">getPositionDefinition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -179,7 +179,7 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#setPositionDefinition-etomica.atom.IAtomPositionDefinition-">setPositionDefinition</a></span>(<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilterInShape.html#setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setPositionDefinition</a></span>(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code>
 <div class="block">Sets position definition.</div>
 </td>
 </tr>
@@ -227,30 +227,30 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.api.IAtom-">
+<a name="accept-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <div class="block">Returns true if the atom's position is inside the shape.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IMolecule-">
+<a name="accept-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;mole)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.api.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -286,20 +286,20 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>getPositionDefinition</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;getPositionDefinition()</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;getPositionDefinition()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the positionDefinition.</dd>
 </dl>
 </li>
 </ul>
-<a name="setPositionDefinition-etomica.atom.IAtomPositionDefinition-">
+<a name="setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setPositionDefinition</h4>
-<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../etomica/atom/IAtomPositionDefinition.html" title="interface in etomica.atom">IAtomPositionDefinition</a>&nbsp;positionDefinition)</pre>
+<pre>public&nbsp;void&nbsp;setPositionDefinition(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</pre>
 <div class="block">Sets position definition.  If given null, positionDefinition from
  each atom's type will be used.</div>
 <dl>

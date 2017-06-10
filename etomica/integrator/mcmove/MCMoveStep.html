@@ -175,10 +175,10 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStep.html#MCMoveStep-etomica.api.IPotentialMaster-">MCMoveStep</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStep.html#MCMoveStep-etomica.potential.PotentialMaster-">MCMoveStep</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStep.html#MCMoveStep-etomica.api.IPotentialMaster-etomica.integrator.mcmove.MCMoveStepTracker-">MCMoveStep</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStep.html#MCMoveStep-etomica.potential.PotentialMaster-etomica.integrator.mcmove.MCMoveStepTracker-">MCMoveStep</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
           <a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html" title="class in etomica.integrator.mcmove">MCMoveStepTracker</a>&nbsp;stepTracker)</code>&nbsp;</td>
 </tr>
 </table>
@@ -250,7 +250,7 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMove.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#doTrial--">doTrial</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.api.IBox-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getB--">getB</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getNominalFrequency--">getNominalFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getTracker--">getTracker</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#setTracker-etomica.integrator.mcmove.MCMoveTracker-">setTracker</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#toString--">toString</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMove.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#doTrial--">doTrial</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.box.Box-">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getB--">getB</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getNominalFrequency--">getNominalFrequency</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#getTracker--">getTracker</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#setTracker-etomica.integrator.mcmove.MCMoveTracker-">setTracker</a>, <a href="../../../etomica/integrator/mcmove/MCMove.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -308,22 +308,22 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveStep-etomica.api.IPotentialMaster-">
+<a name="MCMoveStep-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MCMoveStep</h4>
-<pre>public&nbsp;MCMoveStep(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</pre>
+<pre>public&nbsp;MCMoveStep(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
 </li>
 </ul>
-<a name="MCMoveStep-etomica.api.IPotentialMaster-etomica.integrator.mcmove.MCMoveStepTracker-">
+<a name="MCMoveStep-etomica.potential.PotentialMaster-etomica.integrator.mcmove.MCMoveStepTracker-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveStep</h4>
-<pre>public&nbsp;MCMoveStep(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<pre>public&nbsp;MCMoveStep(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                   <a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html" title="class in etomica.integrator.mcmove">MCMoveStepTracker</a>&nbsp;stepTracker)</pre>
 </li>
 </ul>

@@ -133,7 +133,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#axis">axis</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -149,7 +149,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#meter">meter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#work">work</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -167,7 +167,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#AtomFilterLiquid-etomica.space.ISpace-etomica.data.IDataSource-">AtomFilterLiquid</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#AtomFilterLiquid-etomica.space.Space-etomica.data.IDataSource-">AtomFilterLiquid</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                 <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>&nbsp;meterDeformation)</code>&nbsp;</td>
 </tr>
 </table>
@@ -187,13 +187,13 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#accept-etomica.api.IAtom-">accept</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Returns true if atom is passes test of filter.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#accept-etomica.api.IMolecule-">accept</a></span>(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;m)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/AtomFilterLiquid.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;m)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
@@ -266,7 +266,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>axis</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> axis</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> axis</pre>
 </li>
 </ul>
 <a name="work">
@@ -275,7 +275,7 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <ul class="blockListLast">
 <li class="blockList">
 <h4>work</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> work</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> work</pre>
 </li>
 </ul>
 </li>
@@ -286,13 +286,13 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomFilterLiquid-etomica.space.ISpace-etomica.data.IDataSource-">
+<a name="AtomFilterLiquid-etomica.space.Space-etomica.data.IDataSource-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomFilterLiquid</h4>
-<pre>public&nbsp;AtomFilterLiquid(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;AtomFilterLiquid(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                         <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>&nbsp;meterDeformation)</pre>
 </li>
 </ul>
@@ -339,31 +339,31 @@ implements <a href="../../../etomica/atom/AtomFilterCollective.html" title="inte
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IAtom-">
+<a name="accept-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">AtomFilter</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
 <div class="block">Returns true if atom is passes test of filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="accept-etomica.api.IMolecule-">
+<a name="accept-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;m)</pre>
+<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;m)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.api.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -187,7 +187,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Hypersphere.html#contains-etomica.api.IVector-">contains</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Hypersphere.html#contains-etomica.space.Vector-">contains</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Returns true if the given point lies on or in the sphere.</div>
 </td>
 </tr>
@@ -198,7 +198,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Hypersphere.html#getPosition--">getPosition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -213,7 +213,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Hypersphere.html#setPosition-etomica.api.IVector-">setPosition</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;position)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Hypersphere.html#setPosition-etomica.space.Vector-">setPosition</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;position)</code>
 <div class="block">Sets the position of the shape, which typically represents some central
  point within it.</div>
 </td>
@@ -322,17 +322,17 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="contains-etomica.api.IVector-">
+<a name="contains-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
 <div class="block">Returns true if the given point lies on or in the sphere.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.ClassCastException</code> - if given vector is not an instance of a D-dimensional vector</dd>
 </dl>
@@ -370,7 +370,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getPosition</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getPosition()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getPosition()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the vector (not a copy) used to represent the position of
@@ -378,19 +378,19 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="setPosition-etomica.api.IVector-">
+<a name="setPosition-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setPosition</h4>
-<pre>public&nbsp;void&nbsp;setPosition(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;position)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.api.IVector-">Shape</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setPosition(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;position)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.space.Vector-">Shape</a></code></span></div>
 <div class="block">Sets the position of the shape, which typically represents some central
  point within it.  Specific definition depends on the definition of the shape.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.api.IVector-">setPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.space.Vector-">setPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>position</code> - The new position, which is copied to an internal vector.</dd>
 </dl>

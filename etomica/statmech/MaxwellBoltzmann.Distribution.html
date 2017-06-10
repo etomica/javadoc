@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>, <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>, <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public static class <span class="typeNameLabel">MaxwellBoltzmann.Distribution</span>
 extends java.lang.Object
-implements <a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>, java.io.Serializable</pre>
 <div class="block">Function giving the Maxwell-Boltzmann distribution of speeds.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -136,11 +136,11 @@ implements <a href="../../etomica/util/Function.html" title="interface in etomic
 </a>
 <h3>Nested Class Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.etomica.util.Function">
+<li class="blockList"><a name="nested.classes.inherited.from.class.etomica.math.function.Function">
 <!--   -->
 </a>
-<h3>Nested classes/interfaces inherited from interface&nbsp;etomica.util.<a href="../../etomica/util/Function.html" title="interface in etomica.util">Function</a></h3>
-<code><a href="../../etomica/util/Function.Abs.html" title="class in etomica.util">Function.Abs</a>, <a href="../../etomica/util/Function.Chop.html" title="class in etomica.util">Function.Chop</a>, <a href="../../etomica/util/Function.Constant.html" title="class in etomica.util">Function.Constant</a>, <a href="../../etomica/util/Function.Exp.html" title="class in etomica.util">Function.Exp</a>, <a href="../../etomica/util/Function.Identity.html" title="class in etomica.util">Function.Identity</a>, <a href="../../etomica/util/Function.Linear.html" title="class in etomica.util">Function.Linear</a>, <a href="../../etomica/util/Function.Log.html" title="class in etomica.util">Function.Log</a>, <a href="../../etomica/util/Function.Reciprocal.html" title="class in etomica.util">Function.Reciprocal</a>, <a href="../../etomica/util/Function.Sqrt.html" title="class in etomica.util">Function.Sqrt</a></code></li>
+<h3>Nested classes/interfaces inherited from interface&nbsp;etomica.math.function.<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></h3>
+<code><a href="../../etomica/math/function/Function.Abs.html" title="class in etomica.math.function">Function.Abs</a>, <a href="../../etomica/math/function/Function.Chop.html" title="class in etomica.math.function">Function.Chop</a>, <a href="../../etomica/math/function/Function.Constant.html" title="class in etomica.math.function">Function.Constant</a>, <a href="../../etomica/math/function/Function.Exp.html" title="class in etomica.math.function">Function.Exp</a>, <a href="../../etomica/math/function/Function.Identity.html" title="class in etomica.math.function">Function.Identity</a>, <a href="../../etomica/math/function/Function.Linear.html" title="class in etomica.math.function">Function.Linear</a>, <a href="../../etomica/math/function/Function.Log.html" title="class in etomica.math.function">Function.Log</a>, <a href="../../etomica/math/function/Function.Reciprocal.html" title="class in etomica.math.function">Function.Reciprocal</a>, <a href="../../etomica/math/function/Function.Sqrt.html" title="class in etomica.math.function">Function.Sqrt</a></code></li>
 </ul>
 </li>
 </ul>
@@ -156,7 +156,7 @@ implements <a href="../../etomica/util/Function.html" title="interface in etomic
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/statmech/MaxwellBoltzmann.Distribution.html#Distribution-etomica.space.ISpace-double-double-">Distribution</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/statmech/MaxwellBoltzmann.Distribution.html#Distribution-etomica.space.Space-double-double-">Distribution</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
             double&nbsp;temperature,
             double&nbsp;mass)</code>&nbsp;</td>
 </tr>
@@ -233,13 +233,13 @@ implements <a href="../../etomica/util/Function.html" title="interface in etomic
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Distribution-etomica.space.ISpace-double-double-">
+<a name="Distribution-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Distribution</h4>
-<pre>public&nbsp;Distribution(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;Distribution(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                     double&nbsp;temperature,
                     double&nbsp;mass)</pre>
 </li>
@@ -261,7 +261,7 @@ implements <a href="../../etomica/util/Function.html" title="interface in etomic
 <pre>public&nbsp;double&nbsp;f(double&nbsp;v)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IFunction.html#f-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a></code></dd>
+<dd><code><a href="../../etomica/math/function/IFunction.html#f-double-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></dd>
 </dl>
 </li>
 </ul>

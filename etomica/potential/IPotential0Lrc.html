@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/potential/EwaldSumMolecules.MyCharge.html" title="class in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/potential/IPotential0MoleculeLrc.html" title="interface in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IPotential0Lrc</span>
-extends <a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></pre>
+extends <a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></pre>
 <div class="block">Interface for a long-range correction potential.</div>
 </li>
 </ul>
@@ -130,23 +130,23 @@ extends <a href="../../etomica/api/IPotential.html" title="interface in etomica.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotential0Lrc.html#setTargetAtom-etomica.api.IAtom-">setTargetAtom</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;targetAtom)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotential0Lrc.html#setTargetAtom-etomica.atom.IAtom-">setTargetAtom</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;targetAtom)</code>
 <div class="block">Informs the potential of a target atom.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotential0Lrc.html#setTargetMolecule-etomica.api.IMolecule-">setTargetMolecule</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;targetMolecule)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/IPotential0Lrc.html#setTargetMolecule-etomica.molecule.IMolecule-">setTargetMolecule</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;targetMolecule)</code>
 <div class="block">Informs the potential of a target atom.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/api/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/api/IPotential.html#setBox-etomica.api.IBox-">setBox</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#getRange--">getRange</a>, <a href="../../etomica/potential/IPotential.html#nBody--">nBody</a>, <a href="../../etomica/potential/IPotential.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -162,24 +162,24 @@ extends <a href="../../etomica/api/IPotential.html" title="interface in etomica.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setTargetAtom-etomica.api.IAtom-">
+<a name="setTargetAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTargetAtom</h4>
-<pre>void&nbsp;setTargetAtom(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;targetAtom)</pre>
+<pre>void&nbsp;setTargetAtom(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;targetAtom)</pre>
 <div class="block">Informs the potential of a target atom.  Null target atom indicates no
  target atom.</div>
 </li>
 </ul>
-<a name="setTargetMolecule-etomica.api.IMolecule-">
+<a name="setTargetMolecule-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setTargetMolecule</h4>
-<pre>void&nbsp;setTargetMolecule(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;targetMolecule)</pre>
+<pre>void&nbsp;setTargetMolecule(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;targetMolecule)</pre>
 <div class="block">Informs the potential of a target atom.  Null target atom indicates no
  target atom.</div>
 </li>
@@ -211,7 +211,7 @@ extends <a href="../../etomica/api/IPotential.html" title="interface in etomica.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/potential/EwaldSumMolecules.MyCharge.html" title="class in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/potential/IPotential0MoleculeLrc.html" title="interface in etomica.potential"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

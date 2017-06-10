@@ -141,7 +141,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.DataProcessorReweight.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -165,7 +165,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.DataProcessorReweight.html#v0">v0</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.DataProcessorReweight.html#vBias">vBias</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -190,14 +190,14 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.DataProcessorReweight.html#DataProcessorReweight-double-etomica.liquidLJ.LjMd3D.ValueCache-etomica.liquidLJ.LjMd3D.ValueCache-double-double-double-etomica.api.IBox-etomica.api.IFunction-">DataProcessorReweight</a></span>(double&nbsp;temperature,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/liquidLJ/LjMd3D.DataProcessorReweight.html#DataProcessorReweight-double-etomica.liquidLJ.LjMd3D.ValueCache-etomica.liquidLJ.LjMd3D.ValueCache-double-double-double-etomica.box.Box-etomica.math.function.IFunction-">DataProcessorReweight</a></span>(double&nbsp;temperature,
                      <a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html" title="class in etomica.liquidLJ">LjMd3D.ValueCache</a>&nbsp;energyFastCache,
                      <a href="../../etomica/liquidLJ/LjMd3D.ValueCache.html" title="class in etomica.liquidLJ">LjMd3D.ValueCache</a>&nbsp;energyFullCache,
                      double&nbsp;uFac,
                      double&nbsp;deltaMu,
                      double&nbsp;deltaP,
-                     <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                     <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;vBias)</code>&nbsp;</td>
+                     <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                     <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;vBias)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -264,15 +264,6 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="data">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>data</h4>
-<pre>protected&nbsp;<a href="../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a> data</pre>
-</li>
-</ul>
 <a name="deltaMu">
 <!--   -->
 </a>
@@ -297,7 +288,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="numMolecules0">
@@ -321,10 +312,19 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <a name="vBias">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>vBias</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a> vBias</pre>
+<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> vBias</pre>
+</li>
+</ul>
+<a name="data">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>data</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a> data</pre>
 </li>
 </ul>
 </li>
@@ -335,7 +335,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataProcessorReweight-double-etomica.liquidLJ.LjMd3D.ValueCache-etomica.liquidLJ.LjMd3D.ValueCache-double-double-double-etomica.api.IBox-etomica.api.IFunction-">
+<a name="DataProcessorReweight-double-etomica.liquidLJ.LjMd3D.ValueCache-etomica.liquidLJ.LjMd3D.ValueCache-double-double-double-etomica.box.Box-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -347,8 +347,8 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
                              double&nbsp;uFac,
                              double&nbsp;deltaMu,
                              double&nbsp;deltaP,
-                             <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
-                             <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;vBias)</pre>
+                             <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                             <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;vBias)</pre>
 </li>
 </ul>
 </li>

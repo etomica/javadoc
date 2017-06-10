@@ -146,7 +146,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#ApiIntraArrayList-etomica.api.IAtomList-">ApiIntraArrayList</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;list)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#ApiIntraArrayList-etomica.atom.IAtomList-">ApiIntraArrayList</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list)</code>
 <div class="block">Constructs iterator to return pairs from the given list.</div>
 </td>
 </tr>
@@ -166,7 +166,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#getList--">getList</a></span>()</code>
 <div class="block">Returns the list used to generate the pairs.</div>
 </td>
@@ -178,7 +178,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#next--">next</a></span>()</code>
 <div class="block">Returns the next iterate pair.</div>
 </td>
@@ -191,7 +191,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#setList-etomica.api.IAtomList-">setList</a></span>(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;newList)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/atom/iterator/ApiIntraArrayList.html#setList-etomica.atom.IAtomList-">setList</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;newList)</code>
 <div class="block">Sets the list that will be used to generate the pairs.</div>
 </td>
 </tr>
@@ -240,13 +240,13 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
  non-empty list is specified via setList.</div>
 </li>
 </ul>
-<a name="ApiIntraArrayList-etomica.api.IAtomList-">
+<a name="ApiIntraArrayList-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ApiIntraArrayList</h4>
-<pre>public&nbsp;ApiIntraArrayList(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;list)</pre>
+<pre>public&nbsp;ApiIntraArrayList(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list)</pre>
 <div class="block">Constructs iterator to return pairs from the given list. Requires reset()
  before first use.</div>
 <dl>
@@ -311,7 +311,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;next()</pre>
 <div class="block">Returns the next iterate pair. Returns null if hasNext() is false.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -334,13 +334,13 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 </dl>
 </li>
 </ul>
-<a name="setList-etomica.api.IAtomList-">
+<a name="setList-etomica.atom.IAtomList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setList</h4>
-<pre>public&nbsp;void&nbsp;setList(<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;newList)</pre>
+<pre>public&nbsp;void&nbsp;setList(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;newList)</pre>
 <div class="block">Sets the list that will be used to generate the pairs. Must call reset()
  before beginning iteration.</div>
 <dl>
@@ -355,7 +355,7 @@ implements <a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" tit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getList</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IAtomList.html" title="interface in etomica.api">IAtomList</a>&nbsp;getList()</pre>
+<pre>public&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;getList()</pre>
 <div class="block">Returns the list used to generate the pairs.</div>
 </li>
 </ul>

@@ -135,7 +135,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#del_r">del_r</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/SineTransform.html" title="class in etomica.util">SineTransform</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/math/numerical/SineTransform.html" title="class in etomica.math.numerical">SineTransform</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#dst">dst</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -185,7 +185,7 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#CalcFFT-etomica.api.IFunction-double-int-">CalcFFT</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#CalcFFT-etomica.math.function.IFunction-double-int-">CalcFFT</a></span>(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f,
        double&nbsp;dr,
        int&nbsp;power)</code>&nbsp;</td>
 </tr>
@@ -206,14 +206,14 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#getfr-etomica.api.IFunction-">getfr</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#getfr-etomica.math.function.IFunction-">getfr</a></span>(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a></code></td>
+<td class="colFirst"><code>static <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/CalcFFT.html#makeF-etomica.potential.Potential2Spherical-double-">makeF</a></span>(<a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>&nbsp;p2,
      double&nbsp;temperature)</code>&nbsp;</td>
 </tr>
@@ -283,7 +283,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>dst</h4>
-<pre>protected&nbsp;<a href="../../etomica/util/SineTransform.html" title="class in etomica.util">SineTransform</a> dst</pre>
+<pre>protected&nbsp;<a href="../../etomica/math/numerical/SineTransform.html" title="class in etomica.math.numerical">SineTransform</a> dst</pre>
 </li>
 </ul>
 <a name="del_r">
@@ -357,13 +357,13 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CalcFFT-etomica.api.IFunction-double-int-">
+<a name="CalcFFT-etomica.math.function.IFunction-double-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CalcFFT</h4>
-<pre>public&nbsp;CalcFFT(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f,
+<pre>public&nbsp;CalcFFT(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f,
                double&nbsp;dr,
                int&nbsp;power)</pre>
 </li>
@@ -382,17 +382,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeF</h4>
-<pre>public static&nbsp;<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;makeF(<a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>&nbsp;p2,
+<pre>public static&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;makeF(<a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>&nbsp;p2,
                               double&nbsp;temperature)</pre>
 </li>
 </ul>
-<a name="getfr-etomica.api.IFunction-">
+<a name="getfr-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getfr</h4>
-<pre>protected&nbsp;void&nbsp;getfr(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;f)</pre>
+<pre>protected&nbsp;void&nbsp;getfr(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f)</pre>
 </li>
 </ul>
 <a name="Mul-double:A-double:A-">

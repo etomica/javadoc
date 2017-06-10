@@ -158,7 +158,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#D">D</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#embeddedSpace">embeddedSpace</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -166,11 +166,11 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#hyperPlanes">hyperPlanes</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#position">position</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#vertices">vertices</a></span></code>
 <div class="block">These vertices are used in all external representations of the polygon.</div>
 </td>
@@ -221,7 +221,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.api.IVector-">contains</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#contains-etomica.space.Vector-">contains</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns <code>true</code> if the given vector lies inside the polytope,
  <code>false</code> otherwise.</div>
 </td>
@@ -238,13 +238,13 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#getEdges--">getEdges</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#getEmbeddedSpace--">getEmbeddedSpace</a></span>()</code>
 <div class="block">The space defining the vectors used to represent the vertices.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#getPosition--">getPosition</a></span>()</code>
 <div class="block">Returns the geometric center of the polytope.</div>
 </td>
@@ -256,7 +256,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#getVertices--">getVertices</a></span>()</code>
 <div class="block">Returns an array of all vertices of the polytrope.</div>
 </td>
@@ -269,7 +269,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.api.IVector-">setPosition</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/geometry/Polytope.html#setPosition-etomica.space.Vector-">setPosition</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</code>
 <div class="block">Sets the position of the geometric center of the polytope.</div>
 </td>
 </tr>
@@ -312,7 +312,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>embeddedSpace</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> embeddedSpace</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> embeddedSpace</pre>
 </li>
 </ul>
 <a name="D">
@@ -330,7 +330,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>vertices</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] vertices</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] vertices</pre>
 <div class="block">These vertices are used in all external representations of the polygon.
  Changes to them do not necessarily change the state of the polygon.</div>
 </li>
@@ -341,7 +341,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>position</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> position</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> position</pre>
 </li>
 </ul>
 <a name="hyperPlanes">
@@ -423,7 +423,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getVertices</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;getVertices()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getVertices()</pre>
 <div class="block">Returns an array of all vertices of the polytrope. For most subclasses
  this array will not provide the direct representation of the polytope.
  Instead polytope will be defined in another internal representation, which is
@@ -432,17 +432,17 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
  returned array will change the polytope.</div>
 </li>
 </ul>
-<a name="setPosition-etomica.api.IVector-">
+<a name="setPosition-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPosition</h4>
-<pre>public&nbsp;void&nbsp;setPosition(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;r)</pre>
+<pre>public&nbsp;void&nbsp;setPosition(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;r)</pre>
 <div class="block">Sets the position of the geometric center of the polytope.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.api.IVector-">setPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#setPosition-etomica.space.Vector-">setPosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -452,7 +452,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getPosition</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;getPosition()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getPosition()</pre>
 <div class="block">Returns the geometric center of the polytope. The returned vector is used
  to define the position internally, so changes to it will affect the
  logical position of the polytope, without immediately changing the vertices.
@@ -475,18 +475,18 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="contains-etomica.api.IVector-">
+<a name="contains-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public abstract&nbsp;boolean&nbsp;contains(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public abstract&nbsp;boolean&nbsp;contains(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 <div class="block">Returns <code>true</code> if the given vector lies inside the polytope,
  <code>false</code> otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.api.IVector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
+<dd><code><a href="../../../etomica/math/geometry/Shape.html#contains-etomica.space.Vector-">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -507,7 +507,7 @@ implements <a href="../../../etomica/math/geometry/Shape.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getEmbeddedSpace</h4>
-<pre>public&nbsp;<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;getEmbeddedSpace()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;getEmbeddedSpace()</pre>
 <div class="block">The space defining the vectors used to represent the vertices.</div>
 </li>
 </ul>

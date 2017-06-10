@@ -146,11 +146,11 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#atomAgentManager">atomAgentManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#atomSetSinglet">atomSetSinglet</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.HashMap&lt;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>,<a href="../../etomica/chem/models/Model.PotentialAndIterator.html" title="class in etomica.chem.models">Model.PotentialAndIterator</a>[]&gt;</code></td>
+<td class="colFirst"><code>protected java.util.HashMap&lt;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>,<a href="../../etomica/chem/models/Model.PotentialAndIterator.html" title="class in etomica.chem.models">Model.PotentialAndIterator</a>[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#bondIteratorsHash">bondIteratorsHash</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -158,7 +158,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#bondManager">bondManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -176,7 +176,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#BondListener-etomica.api.IBox-etomica.graphics.BondManager-">BondListener</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#BondListener-etomica.box.Box-etomica.graphics.BondManager-">BondListener</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
             <a href="../../etomica/graphics/BondManager.html" title="interface in etomica.graphics">BondManager</a>&nbsp;bondManager)</code>
 <div class="block">Creates a new BondListener for the given Box, using the given
  BondManager to actually create or remove bonds.</div>
@@ -210,16 +210,16 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newAtom,
-         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newAtom,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#releaseAgent-java.util.ArrayList-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></span>(java.util.ArrayList&nbsp;agent,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/BondListener.html#releaseAgent-java.util.ArrayList-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(java.util.ArrayList&nbsp;agent,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.</div>
 </td>
@@ -259,7 +259,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="atomAgentManager">
@@ -277,7 +277,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>bondIteratorsHash</h4>
-<pre>protected final&nbsp;java.util.HashMap&lt;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>,<a href="../../etomica/chem/models/Model.PotentialAndIterator.html" title="class in etomica.chem.models">Model.PotentialAndIterator</a>[]&gt; bondIteratorsHash</pre>
+<pre>protected final&nbsp;java.util.HashMap&lt;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>,<a href="../../etomica/chem/models/Model.PotentialAndIterator.html" title="class in etomica.chem.models">Model.PotentialAndIterator</a>[]&gt; bondIteratorsHash</pre>
 </li>
 </ul>
 <a name="bondManager">
@@ -295,7 +295,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>atomSetSinglet</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/MoleculeSetSinglet.html" title="class in etomica.atom">MoleculeSetSinglet</a> atomSetSinglet</pre>
+<pre>protected final&nbsp;<a href="../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a> atomSetSinglet</pre>
 </li>
 </ul>
 </li>
@@ -306,13 +306,13 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BondListener-etomica.api.IBox-etomica.graphics.BondManager-">
+<a name="BondListener-etomica.box.Box-etomica.graphics.BondManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BondListener</h4>
-<pre>public&nbsp;BondListener(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;BondListener(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                     <a href="../../etomica/graphics/BondManager.html" title="interface in etomica.graphics">BondManager</a>&nbsp;bondManager)</pre>
 <div class="block">Creates a new BondListener for the given Box, using the given
  BondManager to actually create or remove bonds.</div>
@@ -360,42 +360,42 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <pre>public&nbsp;java.lang.Class&nbsp;getAgentClass()</pre>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtom-etomica.api.IBox-">
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.util.ArrayList&nbsp;makeAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;newAtom,
-                                     <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;java.util.ArrayList&nbsp;makeAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newAtom,
+                                     <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given Atom.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.api.IAtom-etomica.api.IBox-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;java.util.ArrayList&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;java.util.ArrayList&gt;</code></dd>
 <dd><code>agentBox</code> - TODO</dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.util.ArrayList-etomica.api.IAtom-etomica.api.IBox-">
+<a name="releaseAgent-java.util.ArrayList-etomica.atom.IAtom-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.util.ArrayList&nbsp;agent,
-                         <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom,
-                         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
 <div class="block">This informs the agent source that the agent is going away and that 
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.api.IAtom-etomica.api.IBox-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;java.util.ArrayList&gt;</code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;java.util.ArrayList&gt;</code></dd>
 </dl>
 </li>
 </ul>

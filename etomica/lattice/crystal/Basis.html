@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../etomica/lattice/crystal/BasisBetaSnA5.html" title="class in etomica.lattice.crystal">BasisBetaSnA5</a>, <a href="../../../etomica/normalmode/BasisBigCell.html" title="class in etomica.normalmode">BasisBigCell</a>, <a href="../../../etomica/lattice/crystal/BasisCubicBcc.html" title="class in etomica.lattice.crystal">BasisCubicBcc</a>, <a href="../../../etomica/lattice/crystal/BasisCubicDiamond.html" title="class in etomica.lattice.crystal">BasisCubicDiamond</a>, <a href="../../../etomica/lattice/crystal/BasisCubicFcc.html" title="class in etomica.lattice.crystal">BasisCubicFcc</a>, <a href="../../../etomica/lattice/crystal/BasisCubicFccDiamond.html" title="class in etomica.lattice.crystal">BasisCubicFccDiamond</a>, <a href="../../../etomica/lattice/crystal/BasisHcp.html" title="class in etomica.lattice.crystal">BasisHcp</a>, <a href="../../../etomica/lattice/crystal/BasisHcpBaseCentered.html" title="class in etomica.lattice.crystal">BasisHcpBaseCentered</a>, <a href="../../../etomica/lattice/crystal/BasisMonatomic.html" title="class in etomica.lattice.crystal">BasisMonatomic</a>, <a href="../../../etomica/paracetamol/BasisMonoclinicParacetamol.html" title="class in etomica.paracetamol">BasisMonoclinicParacetamol</a>, <a href="../../../etomica/lattice/crystal/BasisOrthorhombicHexagonal.html" title="class in etomica.lattice.crystal">BasisOrthorhombicHexagonal</a>, <a href="../../../etomica/paracetamol/BasisOrthorhombicParacetamol.html" title="class in etomica.paracetamol">BasisOrthorhombicParacetamol</a>, <a href="../../../etomica/modules/catalysis/ConfigurationCatalysis.BasisOrthorhombicHexagonal3D.html" title="class in etomica.modules.catalysis">ConfigurationCatalysis.BasisOrthorhombicHexagonal3D</a></dd>
+<dd><a href="../../../etomica/lattice/crystal/BasisBetaSnA5.html" title="class in etomica.lattice.crystal">BasisBetaSnA5</a>, <a href="../../../etomica/normalmode/BasisBigCell.html" title="class in etomica.normalmode">BasisBigCell</a>, <a href="../../../etomica/lattice/crystal/BasisCubicBcc.html" title="class in etomica.lattice.crystal">BasisCubicBcc</a>, <a href="../../../etomica/lattice/crystal/BasisCubicDiamond.html" title="class in etomica.lattice.crystal">BasisCubicDiamond</a>, <a href="../../../etomica/lattice/crystal/BasisCubicFcc.html" title="class in etomica.lattice.crystal">BasisCubicFcc</a>, <a href="../../../etomica/lattice/crystal/BasisCubicFccDiamond.html" title="class in etomica.lattice.crystal">BasisCubicFccDiamond</a>, <a href="../../../etomica/lattice/crystal/BasisHcp.html" title="class in etomica.lattice.crystal">BasisHcp</a>, <a href="../../../etomica/lattice/crystal/BasisHcp4.html" title="class in etomica.lattice.crystal">BasisHcp4</a>, <a href="../../../etomica/lattice/crystal/BasisHcpBaseCentered.html" title="class in etomica.lattice.crystal">BasisHcpBaseCentered</a>, <a href="../../../etomica/lattice/crystal/BasisMonatomic.html" title="class in etomica.lattice.crystal">BasisMonatomic</a>, <a href="../../../etomica/paracetamol/BasisMonoclinicParacetamol.html" title="class in etomica.paracetamol">BasisMonoclinicParacetamol</a>, <a href="../../../etomica/lattice/crystal/BasisOrthorhombicHexagonal.html" title="class in etomica.lattice.crystal">BasisOrthorhombicHexagonal</a>, <a href="../../../etomica/paracetamol/BasisOrthorhombicParacetamol.html" title="class in etomica.paracetamol">BasisOrthorhombicParacetamol</a>, <a href="../../../etomica/modules/catalysis/ConfigurationCatalysis.BasisOrthorhombicHexagonal3D.html" title="class in etomica.modules.catalysis">ConfigurationCatalysis.BasisOrthorhombicHexagonal3D</a></dd>
 </dl>
 <hr>
 <br>
@@ -141,7 +141,7 @@ implements java.io.Serializable</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/Basis.html#Basis-etomica.api.IVector:A-">Basis</a></span>(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;scaledCoordinates)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/Basis.html#Basis-etomica.space.Vector:A-">Basis</a></span>(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;scaledCoordinates)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -159,7 +159,7 @@ implements java.io.Serializable</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/lattice/crystal/Basis.html#getScaledCoordinates--">getScaledCoordinates</a></span>()</code>
 <div class="block">Returns scaled coordinates</div>
 </td>
@@ -186,13 +186,13 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Basis-etomica.api.IVector:A-">
+<a name="Basis-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Basis</h4>
-<pre>public&nbsp;Basis(<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;scaledCoordinates)</pre>
+<pre>public&nbsp;Basis(<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;scaledCoordinates)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>scaledCoordinates</code> - basis coordinates for the case in which the
@@ -216,7 +216,7 @@ implements java.io.Serializable</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getScaledCoordinates</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;getScaledCoordinates()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getScaledCoordinates()</pre>
 <div class="block">Returns scaled coordinates</div>
 </li>
 </ul>

@@ -160,7 +160,7 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#tag">tag</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#testMolecule">testMolecule</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -178,7 +178,7 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#DataSourcePositionedBoltzmannFactor-etomica.space.ISpace-">DataSourcePositionedBoltzmannFactor</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#DataSourcePositionedBoltzmannFactor-etomica.space.Space-">DataSourcePositionedBoltzmannFactor</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,14 +197,14 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#getData-etomica.api.IVector-">getData</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#getData-etomica.space.Vector-">getData</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#getPositionDataInfo--">getPositionDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#getSpecies--">getSpecies</a></span>()</code>
 <div class="block">Returns the ISpecies for which the chemical potential is to be measured.</div>
 </td>
@@ -215,7 +215,7 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -225,7 +225,7 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#setSpecies-etomica.api.ISpecies-">setSpecies</a></span>(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourcePositionedBoltzmannFactor.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</code>
 <div class="block">Sets the ISpecies for which the chemical potential is to be measured.</div>
 </td>
 </tr>
@@ -257,7 +257,7 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>testMolecule</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a> testMolecule</pre>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a> testMolecule</pre>
 </li>
 </ul>
 <a name="atomTranslator">
@@ -322,13 +322,13 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataSourcePositionedBoltzmannFactor-etomica.space.ISpace-">
+<a name="DataSourcePositionedBoltzmannFactor-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataSourcePositionedBoltzmannFactor</h4>
-<pre>public&nbsp;DataSourcePositionedBoltzmannFactor(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;DataSourcePositionedBoltzmannFactor(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>
@@ -347,16 +347,16 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <h4>setIntegrator</h4>
 <pre>public&nbsp;void&nbsp;setIntegrator(<a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;newIntegrator)</pre>
 <div class="block">Sets the integrator.  The integrator is used to obtain the
- IPotentialMaster, IBox and temperature.</div>
+ PotentialMaster, Box and temperature.</div>
 </li>
 </ul>
-<a name="setSpecies-etomica.api.ISpecies-">
+<a name="setSpecies-etomica.species.ISpecies-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;newSpecies)</pre>
+<pre>public&nbsp;void&nbsp;setSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</pre>
 <div class="block">Sets the ISpecies for which the chemical potential is to be measured.</div>
 </li>
 </ul>
@@ -366,33 +366,33 @@ implements <a href="../../etomica/data/DataSourcePositioned.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public&nbsp;<a href="../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<pre>public&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies()</pre>
 <div class="block">Returns the ISpecies for which the chemical potential is to be measured.</div>
 </li>
 </ul>
-<a name="getData-etomica.api.IVector-">
+<a name="getData-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getData</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;a)</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;a)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/DataSourcePositioned.html#getData-etomica.api.IVector-">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataSourcePositioned.html" title="interface in etomica.data">DataSourcePositioned</a></code></dd>
+<dd><code><a href="../../etomica/data/DataSourcePositioned.html#getData-etomica.space.Vector-">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataSourcePositioned.html" title="interface in etomica.data">DataSourcePositioned</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/DataSourcePositioned.html#setBox-etomica.api.IBox-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataSourcePositioned.html" title="interface in etomica.data">DataSourcePositioned</a></code></dd>
+<dd><code><a href="../../etomica/data/DataSourcePositioned.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataSourcePositioned.html" title="interface in etomica.data">DataSourcePositioned</a></code></dd>
 </dl>
 </li>
 </ul>

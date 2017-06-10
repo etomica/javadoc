@@ -141,11 +141,11 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#rAccum">rAccum</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#rLast">rLast</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -170,11 +170,11 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#MeterMeanSquareDisplacement-etomica.space.ISpace-etomica.integrator.IntegratorBox-">MeterMeanSquareDisplacement</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#MeterMeanSquareDisplacement-etomica.space.Space-etomica.integrator.IntegratorBox-">MeterMeanSquareDisplacement</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#MeterMeanSquareDisplacement-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.atom.iterator.AtomIteratorBoxDependent-">MeterMeanSquareDisplacement</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#MeterMeanSquareDisplacement-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.atom.iterator.AtomIteratorBoxDependent-">MeterMeanSquareDisplacement</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                            <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator,
                            <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iter)</code>&nbsp;</td>
 </tr>
@@ -194,7 +194,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]</code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterMeanSquareDisplacement.html#getDataAsArray--">getDataAsArray</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -248,7 +248,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>rAccum</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] rAccum</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] rAccum</pre>
 </li>
 </ul>
 <a name="rLast">
@@ -257,7 +257,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>rLast</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>[] rLast</pre>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] rLast</pre>
 </li>
 </ul>
 </li>
@@ -268,23 +268,23 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterMeanSquareDisplacement-etomica.space.ISpace-etomica.integrator.IntegratorBox-">
+<a name="MeterMeanSquareDisplacement-etomica.space.Space-etomica.integrator.IntegratorBox-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MeterMeanSquareDisplacement</h4>
-<pre>public&nbsp;MeterMeanSquareDisplacement(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MeterMeanSquareDisplacement(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                    <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator)</pre>
 </li>
 </ul>
-<a name="MeterMeanSquareDisplacement-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.atom.iterator.AtomIteratorBoxDependent-">
+<a name="MeterMeanSquareDisplacement-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.atom.iterator.AtomIteratorBoxDependent-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterMeanSquareDisplacement</h4>
-<pre>public&nbsp;MeterMeanSquareDisplacement(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
+<pre>public&nbsp;MeterMeanSquareDisplacement(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                    <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator,
                                    <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iter)</pre>
 </li>
@@ -339,7 +339,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getDataAsArray</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>[]&nbsp;getDataAsArray()</pre>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getDataAsArray()</pre>
 </li>
 </ul>
 </li>

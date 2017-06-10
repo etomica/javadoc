@@ -212,7 +212,7 @@ implements java.io.Serializable</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#getSpecies--">getSpecies</a></span>()</code>
 <div class="block">Returns the species associated with this Model, if it has already been
  created.</div>
@@ -220,20 +220,20 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#initPotentials-etomica.api.ISimulation-">initPotentials</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#initPotentials-etomica.simulation.Simulation-">initPotentials</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>
 <div class="block">Internal method to be implemented by subclasses to initialize the
  intramolecular potentials associated with this model.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#makeSpecies-etomica.api.ISimulation-">makeSpecies</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</code>
+<td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#makeSpecies-etomica.simulation.Simulation-">makeSpecies</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>
 <div class="block">Creates a species in the given simulation and returns it.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#makeSpeciesInternal-etomica.api.ISimulation-">makeSpeciesInternal</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</code>
+<td class="colFirst"><code>protected abstract <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/chem/models/Model.html#makeSpeciesInternal-etomica.simulation.Simulation-">makeSpeciesInternal</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>
 <div class="block">Internal method to be implemented by subclasses to create the actual
  Species object for the given Simulation.</div>
 </td>
@@ -309,39 +309,39 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpecies</h4>
-<pre>public&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;getSpecies()</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies()</pre>
 <div class="block">Returns the species associated with this Model, if it has already been
  created.  If the species has not been made yet, getSpecies returns null.</div>
 </li>
 </ul>
-<a name="makeSpecies-etomica.api.ISimulation-">
+<a name="makeSpecies-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeSpecies</h4>
-<pre>public final&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;makeSpecies(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</pre>
+<pre>public final&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;makeSpecies(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 <div class="block">Creates a species in the given simulation and returns it.</div>
 </li>
 </ul>
-<a name="makeSpeciesInternal-etomica.api.ISimulation-">
+<a name="makeSpeciesInternal-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeSpeciesInternal</h4>
-<pre>protected abstract&nbsp;<a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;makeSpeciesInternal(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</pre>
+<pre>protected abstract&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;makeSpeciesInternal(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 <div class="block">Internal method to be implemented by subclasses to create the actual
  Species object for the given Simulation.</div>
 </li>
 </ul>
-<a name="initPotentials-etomica.api.ISimulation-">
+<a name="initPotentials-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initPotentials</h4>
-<pre>protected abstract&nbsp;void&nbsp;initPotentials(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim)</pre>
+<pre>protected abstract&nbsp;void&nbsp;initPotentials(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 <div class="block">Internal method to be implemented by subclasses to initialize the
  intramolecular potentials associated with this model.  Potential
  objects might be created earlier, but this method gives the subclass

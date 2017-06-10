@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">etomica.box.BoxListenerAdapter</a></li>
+<li><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">etomica.box.BoxEventListenerAdapter</a></li>
 <li>
 <ul class="inheritance">
 <li>etomica.atom.AtomLeafAgentManager&lt;E&gt;</li>
@@ -112,12 +112,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">AtomLeafAgentManager&lt;E&gt;</span>
-extends <a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a>
+extends <a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a>
 implements java.io.Serializable</pre>
 <div class="block">AtomAgentManager acts on behalf of client classes (an AgentSource) to
  manage agents for every leaf Atom in a box.  When leaf atoms are added or
@@ -187,7 +187,7 @@ implements java.io.Serializable</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#agentSource">agentSource</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -209,8 +209,8 @@ implements java.io.Serializable</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#AtomLeafAgentManager-etomica.atom.AtomLeafAgentManager.AgentSource-etomica.api.IBox-java.lang.Class-">AtomLeafAgentManager</a></span>(<a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&gt;&nbsp;source,
-                    <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#AtomLeafAgentManager-etomica.atom.AtomLeafAgentManager.AgentSource-etomica.box.Box-java.lang.Class-">AtomLeafAgentManager</a></span>(<a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&gt;&nbsp;source,
+                    <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                     java.lang.Class&nbsp;agentClass)</code>&nbsp;</td>
 </tr>
 </table>
@@ -230,13 +230,13 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#addAgent-etomica.api.IAtom-">addAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#addAgent-etomica.atom.IAtom-">addAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Adds an agent for the given leaf atom to the agents array.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#addAgent-etomica.api.IAtom-int-">addAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#addAgent-etomica.atom.IAtom-int-">addAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
         int&nbsp;index)</code>
 <div class="block">Adds an agent for the given leaf atom to the agents array at the given
  index.</div>
@@ -244,25 +244,25 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when an atom's global (leaf) index has changed.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is added to the box.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is removed from the box.</div>
 </td>
 </tr>
@@ -274,12 +274,12 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#getAgent-etomica.api.IAtom-">getAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#getAgent-etomica.atom.IAtom-">getAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Returns the agent associated with the given IAtom.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#getBox--">getBox</a></span>()</code>
 <div class="block">Convenience method to return the box the Manager is tracking.</div>
 </td>
@@ -296,7 +296,7 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#setAgent-etomica.api.IAtom-E-">setAgent</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomLeafAgentManager.html#setAgent-etomica.atom.IAtom-E-">setAgent</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
         <a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&nbsp;newAgent)</code>
 <div class="block">Sets the agent associated with the given atom to be the given agent.</div>
 </td>
@@ -315,11 +315,11 @@ implements java.io.Serializable</pre>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.box.BoxListenerAdapter">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.box.BoxEventListenerAdapter">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;etomica.box.<a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></h3>
-<code><a href="../../etomica/box/BoxListenerAdapter.html#boxMoleculeIndexChanged-etomica.api.IBoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/box/BoxListenerAdapter.html#boxNumberMolecules-etomica.api.IBoxMoleculeCountEvent-">boxNumberMolecules</a></code></li>
+<h3>Methods inherited from class&nbsp;etomica.box.<a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></h3>
+<code><a href="../../etomica/box/BoxEventListenerAdapter.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/box/BoxEventListenerAdapter.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -366,7 +366,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="reservoirSize">
@@ -395,14 +395,14 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AtomLeafAgentManager-etomica.atom.AtomLeafAgentManager.AgentSource-etomica.api.IBox-java.lang.Class-">
+<a name="AtomLeafAgentManager-etomica.atom.AtomLeafAgentManager.AgentSource-etomica.box.Box-java.lang.Class-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AtomLeafAgentManager</h4>
 <pre>public&nbsp;AtomLeafAgentManager(<a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&gt;&nbsp;source,
-                            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+                            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                             java.lang.Class&nbsp;agentClass)</pre>
 </li>
 </ul>
@@ -451,26 +451,26 @@ implements java.io.Serializable</pre>
 <div class="block">Returns an iterator that returns each non-null agent</div>
 </li>
 </ul>
-<a name="getAgent-etomica.api.IAtom-">
+<a name="getAgent-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAgent</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&nbsp;getAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&nbsp;getAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <div class="block">Returns the agent associated with the given IAtom.  The IAtom must be
  from the Box associated with this instance.</div>
 </li>
 </ul>
-<a name="setAgent-etomica.api.IAtom-java.lang.Object-">
+<a name="setAgent-etomica.atom.IAtom-java.lang.Object-">
 <!--   -->
-</a><a name="setAgent-etomica.api.IAtom-E-">
+</a><a name="setAgent-etomica.atom.IAtom-E-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAgent</h4>
-<pre>public&nbsp;void&nbsp;setAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<pre>public&nbsp;void&nbsp;setAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
                      <a href="../../etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&nbsp;newAgent)</pre>
 <div class="block">Sets the agent associated with the given atom to be the given agent.
  The IAtom must be from the Box associated with this instance.  The
@@ -484,7 +484,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getBox</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;getBox()</pre>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 <div class="block">Convenience method to return the box the Manager is tracking.</div>
 </li>
 </ul>
@@ -508,62 +508,62 @@ implements java.io.Serializable</pre>
 <div class="block">Sets the Box in which this AtomAgentManager will manage Atom agents.</div>
 </li>
 </ul>
-<a name="boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">
+<a name="boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
-<pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when a molecule is added to the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxMoleculeAdded-etomica.api.IBoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListenerAdapter.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the added molecule and the box to
           which it was added.</dd>
 </dl>
 </li>
 </ul>
-<a name="boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">
+<a name="boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeRemoved</h4>
-<pre>public&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/api/IBoxMoleculeEvent.html" title="interface in etomica.api">IBoxMoleculeEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when a molecule is removed from the box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxMoleculeRemoved-etomica.api.IBoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListenerAdapter.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the removed molecule and the box from
           which it was removed.</dd>
 </dl>
 </li>
 </ul>
-<a name="boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">
+<a name="boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxAtomLeafIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/api/IBoxAtomIndexEvent.html" title="interface in etomica.api">IBoxAtomIndexEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when an atom's global (leaf) index has changed.  This typically
  happens after one molecule is removed and the indices of other atoms are
  renumbered to fill in the gap left by the removed atoms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxAtomLeafIndexChanged-etomica.api.IBoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListenerAdapter.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box, the atom whose index changed
           and the atom's old leaf index.  The atom's new leaf index can
@@ -571,43 +571,43 @@ implements java.io.Serializable</pre>
 </dl>
 </li>
 </ul>
-<a name="boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">
+<a name="boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>boxGlobalAtomLeafIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/api/IBoxIndexEvent.html" title="interface in etomica.api">IBoxIndexEvent</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">IBoxListener</a></code></span></div>
+<pre>public&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxEventListener.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">BoxEventListener</a></code></span></div>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IBoxListener.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IBoxListener.html" title="interface in etomica.api">IBoxListener</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/box/BoxListenerAdapter.html#boxGlobalAtomLeafIndexChanged-etomica.api.IBoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxListenerAdapter.html" title="class in etomica.box">BoxListenerAdapter</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListenerAdapter.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - the event, which contains the box and the new maximum global
           index</dd>
 </dl>
 </li>
 </ul>
-<a name="addAgent-etomica.api.IAtom-">
+<a name="addAgent-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAgent</h4>
-<pre>protected&nbsp;void&nbsp;addAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a)</pre>
+<pre>protected&nbsp;void&nbsp;addAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 <div class="block">Adds an agent for the given leaf atom to the agents array.</div>
 </li>
 </ul>
-<a name="addAgent-etomica.api.IAtom-int-">
+<a name="addAgent-etomica.atom.IAtom-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addAgent</h4>
-<pre>protected&nbsp;void&nbsp;addAgent(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;a,
+<pre>protected&nbsp;void&nbsp;addAgent(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
                         int&nbsp;index)</pre>
 <div class="block">Adds an agent for the given leaf atom to the agents array at the given
  index.</div>

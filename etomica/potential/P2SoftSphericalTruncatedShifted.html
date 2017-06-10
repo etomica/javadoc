@@ -127,7 +127,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a>, <a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Soft.html" title="interface in etomica.potential">Potential2Soft</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>, <a href="../../etomica/potential/PotentialTruncated.html" title="interface in etomica.potential">PotentialTruncated</a></dd>
+<dd><a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a>, <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>, <a href="../../etomica/potential/Potential2Soft.html" title="interface in etomica.potential">Potential2Soft</a>, <a href="../../etomica/potential/Potential2Spherical.html" title="interface in etomica.potential">Potential2Spherical</a>, <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a>, <a href="../../etomica/potential/PotentialTruncated.html" title="interface in etomica.potential">PotentialTruncated</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -215,7 +215,7 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SoftSphericalTruncatedShifted.html#P2SoftSphericalTruncatedShifted-etomica.space.ISpace-etomica.potential.Potential2SoftSpherical-double-">P2SoftSphericalTruncatedShifted</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SoftSphericalTruncatedShifted.html#P2SoftSphericalTruncatedShifted-etomica.space.Space-etomica.potential.Potential2SoftSpherical-double-">P2SoftSphericalTruncatedShifted</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                                <a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;potential,
                                double&nbsp;truncationRadius)</code>&nbsp;</td>
 </tr>
@@ -242,7 +242,7 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SoftSphericalTruncatedShifted.html#makeLrcPotential-etomica.api.IAtomType:A-">makeLrcPotential</a></span>(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>[]&nbsp;types)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/P2SoftSphericalTruncatedShifted.html#makeLrcPotential-etomica.atom.AtomType:A-">makeLrcPotential</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;types)</code>
 <div class="block">Returns null because the shift can't be corrected.</div>
 </td>
 </tr>
@@ -265,14 +265,14 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="class in etomica.potential">P2SoftSphericalTruncated</a></h3>
-<code><a href="../../etomica/potential/P2SoftSphericalTruncated.html#d2u-double-">d2u</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#du-double-">du</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getMakeLrc--">getMakeLrc</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getRange--">getRange</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getTruncationRadius--">getTruncationRadius</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getTruncationRadiusDimension--">getTruncationRadiusDimension</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#setBox-etomica.api.IBox-">setBox</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#setMakeLrc-boolean-">setMakeLrc</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#uInt-double-">uInt</a></code></li>
+<code><a href="../../etomica/potential/P2SoftSphericalTruncated.html#d2u-double-">d2u</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#du-double-">du</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getMakeLrc--">getMakeLrc</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getRange--">getRange</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getTruncationRadius--">getTruncationRadius</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#getTruncationRadiusDimension--">getTruncationRadiusDimension</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#setMakeLrc-boolean-">setMakeLrc</a>, <a href="../../etomica/potential/P2SoftSphericalTruncated.html#uInt-double-">uInt</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential2SoftSpherical">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></h3>
-<code><a href="../../etomica/potential/Potential2SoftSpherical.html#energy-etomica.api.IAtomList-">energy</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.api.IAtomList-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.api.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#hyperVirial-etomica.api.IAtomList-">hyperVirial</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#integral-double-">integral</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#virial-etomica.api.IAtomList-">virial</a></code></li>
+<code><a href="../../etomica/potential/Potential2SoftSpherical.html#energy-etomica.atom.IAtomList-">energy</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.atom.IAtomList-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#gradient-etomica.atom.IAtomList-etomica.space.Tensor-">gradient</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#hyperVirial-etomica.atom.IAtomList-">hyperVirial</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#integral-double-">integral</a>, <a href="../../etomica/potential/Potential2SoftSpherical.html#virial-etomica.atom.IAtomList-">virial</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.potential.Potential">
@@ -289,18 +289,18 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotentialAtomic">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotentialAtomic">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotentialAtomic.html" title="interface in etomica.api">IPotentialAtomic</a></h3>
-<code><a href="../../etomica/api/IPotentialAtomic.html#energy-etomica.api.IAtomList-">energy</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></h3>
+<code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.api.IPotential">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.IPotential">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.api.<a href="../../etomica/api/IPotential.html" title="interface in etomica.api">IPotential</a></h3>
-<code><a href="../../etomica/api/IPotential.html#nBody--">nBody</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.potential.<a href="../../etomica/potential/IPotential.html" title="interface in etomica.potential">IPotential</a></h3>
+<code><a href="../../etomica/potential/IPotential.html#nBody--">nBody</a></code></li>
 </ul>
 </li>
 </ul>
@@ -333,13 +333,13 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P2SoftSphericalTruncatedShifted-etomica.space.ISpace-etomica.potential.Potential2SoftSpherical-double-">
+<a name="P2SoftSphericalTruncatedShifted-etomica.space.Space-etomica.potential.Potential2SoftSpherical-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>P2SoftSphericalTruncatedShifted</h4>
-<pre>public&nbsp;P2SoftSphericalTruncatedShifted(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;P2SoftSphericalTruncatedShifted(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                                        <a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;potential,
                                        double&nbsp;truncationRadius)</pre>
 </li>
@@ -399,19 +399,19 @@ extends <a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="c
 </dl>
 </li>
 </ul>
-<a name="makeLrcPotential-etomica.api.IAtomType:A-">
+<a name="makeLrcPotential-etomica.atom.AtomType:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>makeLrcPotential</h4>
-<pre>public&nbsp;<a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a>&nbsp;makeLrcPotential(<a href="../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>[]&nbsp;types)</pre>
+<pre>public&nbsp;<a href="../../etomica/potential/Potential0Lrc.html" title="class in etomica.potential">Potential0Lrc</a>&nbsp;makeLrcPotential(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;types)</pre>
 <div class="block">Returns null because the shift can't be corrected.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/potential/PotentialTruncated.html#makeLrcPotential-etomica.api.IAtomType:A-">makeLrcPotential</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialTruncated.html" title="interface in etomica.potential">PotentialTruncated</a></code></dd>
+<dd><code><a href="../../etomica/potential/PotentialTruncated.html#makeLrcPotential-etomica.atom.AtomType:A-">makeLrcPotential</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialTruncated.html" title="interface in etomica.potential">PotentialTruncated</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/potential/P2SoftSphericalTruncated.html#makeLrcPotential-etomica.api.IAtomType:A-">makeLrcPotential</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="class in etomica.potential">P2SoftSphericalTruncated</a></code></dd>
+<dd><code><a href="../../etomica/potential/P2SoftSphericalTruncated.html#makeLrcPotential-etomica.atom.AtomType:A-">makeLrcPotential</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/P2SoftSphericalTruncated.html" title="class in etomica.potential">P2SoftSphericalTruncated</a></code></dd>
 </dl>
 </li>
 </ul>

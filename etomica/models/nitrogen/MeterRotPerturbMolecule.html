@@ -156,7 +156,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MeterRotPerturbMolecule.html#primaryCoordDef">primaryCoordDef</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MeterRotPerturbMolecule.html#secondaryBox">secondaryBox</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -185,11 +185,11 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MeterRotPerturbMolecule.html#MeterRotPerturbMolecule-etomica.integrator.IntegratorMC-etomica.api.IPotentialMaster-etomica.api.ISpecies-etomica.space.ISpace-etomica.api.ISimulation-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">MeterRotPerturbMolecule</a></span>(<a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integrator,
-                       <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                       <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                       <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                       <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MeterRotPerturbMolecule.html#MeterRotPerturbMolecule-etomica.integrator.IntegratorMC-etomica.potential.PotentialMaster-etomica.species.ISpecies-etomica.space.Space-etomica.simulation.Simulation-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">MeterRotPerturbMolecule</a></span>(<a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integrator,
+                       <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                       <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                       <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                       <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                        <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDef)</code>&nbsp;</td>
 </tr>
 </table>
@@ -270,7 +270,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>secondaryBox</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> secondaryBox</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> secondaryBox</pre>
 </li>
 </ul>
 <a name="latticeEnergy">
@@ -308,17 +308,17 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterRotPerturbMolecule-etomica.integrator.IntegratorMC-etomica.api.IPotentialMaster-etomica.api.ISpecies-etomica.space.ISpace-etomica.api.ISimulation-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">
+<a name="MeterRotPerturbMolecule-etomica.integrator.IntegratorMC-etomica.potential.PotentialMaster-etomica.species.ISpecies-etomica.space.Space-etomica.simulation.Simulation-etomica.models.nitrogen.CoordinateDefinitionNitrogen-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterRotPerturbMolecule</h4>
 <pre>public&nbsp;MeterRotPerturbMolecule(<a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integrator,
-                               <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                               <a href="../../../etomica/api/ISpecies.html" title="interface in etomica.api">ISpecies</a>&nbsp;species,
-                               <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                               <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+                               <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                               <a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
+                               <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                               <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                                <a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html" title="class in etomica.models.nitrogen">CoordinateDefinitionNitrogen</a>&nbsp;coordinateDef)</pre>
 </li>
 </ul>

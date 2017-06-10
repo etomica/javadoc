@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,7 +137,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#atomIterator">atomIterator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -212,15 +212,11 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#nonintervalAction-etomica.integrator.IntegratorNonintervalEvent-">nonintervalAction</a></span>(<a href="../../../etomica/integrator/IntegratorNonintervalEvent.html" title="class in etomica.integrator">IntegratorNonintervalEvent</a>&nbsp;evt)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#reset--">reset</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#reset--">reset</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#setBox-etomica.api.IBox-">setBox</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/entropylottery/DataSourceProbabilityDensity.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -268,7 +264,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="atomIterator">
@@ -373,13 +369,13 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="setBox-etomica.api.IBox-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;newBox)</pre>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -394,7 +390,7 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <a name="actionPerformed--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>actionPerformed</h4>
 <pre>public&nbsp;void&nbsp;actionPerformed()</pre>
@@ -404,15 +400,6 @@ implements <a href="../../../etomica/data/IEtomicaDataSource.html" title="interf
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/IAction.html#actionPerformed--">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="nonintervalAction-etomica.integrator.IntegratorNonintervalEvent-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>nonintervalAction</h4>
-<pre>public&nbsp;void&nbsp;nonintervalAction(<a href="../../../etomica/integrator/IntegratorNonintervalEvent.html" title="class in etomica.integrator">IntegratorNonintervalEvent</a>&nbsp;evt)</pre>
 </li>
 </ul>
 </li>

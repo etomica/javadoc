@@ -143,7 +143,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#basisDim">basisDim</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -151,7 +151,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#nC">nC</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -159,7 +159,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#primitive">primitive</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -189,15 +189,15 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#NormalModesMolecular-etomica.models.water.SpeciesWater4P-boolean-etomica.api.IPotentialMaster-etomica.api.IBox-int:A-etomica.lattice.crystal.Primitive-int-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.space.ISpace-">NormalModesMolecular</a></span>(<a href="../../etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">SpeciesWater4P</a>&nbsp;species,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/NormalModesMolecular.html#NormalModesMolecular-etomica.models.water.SpeciesWater4P-boolean-etomica.potential.PotentialMaster-etomica.box.Box-int:A-etomica.lattice.crystal.Primitive-int-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.space.Space-">NormalModesMolecular</a></span>(<a href="../../etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">SpeciesWater4P</a>&nbsp;species,
                     boolean&nbsp;waveVectorMethod,
-                    <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                    <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+                    <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                    <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                     int[]&nbsp;nUniyCellsInSupBox,
                     <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                     int&nbsp;basisDim,
                     <a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;atomicTensorAtomicPair,
-                    <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>&nbsp;</td>
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -287,7 +287,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="box">
@@ -296,7 +296,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> box</pre>
+<pre>protected&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
 </li>
 </ul>
 <a name="basisDim">
@@ -341,7 +341,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>potentialMaster</h4>
-<pre>protected&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potentialMaster</pre>
+<pre>protected&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
 <a name="waveVectorMethod">
@@ -379,7 +379,7 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NormalModesMolecular-etomica.models.water.SpeciesWater4P-boolean-etomica.api.IPotentialMaster-etomica.api.IBox-int:A-etomica.lattice.crystal.Primitive-int-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.space.ISpace-">
+<a name="NormalModesMolecular-etomica.models.water.SpeciesWater4P-boolean-etomica.potential.PotentialMaster-etomica.box.Box-int:A-etomica.lattice.crystal.Primitive-int-etomica.normalmode.LatticeSumMolecularCrystal.AtomicTensorAtomicPair-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -387,13 +387,13 @@ implements <a href="../../etomica/normalmode/NormalModes.html" title="interface 
 <h4>NormalModesMolecular</h4>
 <pre>public&nbsp;NormalModesMolecular(<a href="../../etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">SpeciesWater4P</a>&nbsp;species,
                             boolean&nbsp;waveVectorMethod,
-                            <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                            <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+                            <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                             int[]&nbsp;nUniyCellsInSupBox,
                             <a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
                             int&nbsp;basisDim,
                             <a href="../../etomica/normalmode/LatticeSumMolecularCrystal.AtomicTensorAtomicPair.html" title="interface in etomica.normalmode">LatticeSumMolecularCrystal.AtomicTensorAtomicPair</a>&nbsp;atomicTensorAtomicPair,
-                            <a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+                            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 </li>
 </ul>
 </li>

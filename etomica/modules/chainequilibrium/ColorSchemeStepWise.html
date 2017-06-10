@@ -163,7 +163,7 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#colorMaps">colorMaps</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#simulation">simulation</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -188,7 +188,7 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#ColorSchemeStepWise-etomica.api.ISimulation-etomica.atom.AtomLeafAgentManager-">ColorSchemeStepWise</a></span>(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#ColorSchemeStepWise-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">ColorSchemeStepWise</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                    <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;bondingAgentManager)</code>&nbsp;</td>
 </tr>
 </table>
@@ -208,7 +208,7 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.awt.Color</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></span>(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.Class</code></td>
@@ -218,21 +218,21 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#makeAgent-etomica.api.IAtomType-">makeAgent</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#makeAgent-etomica.atom.AtomType-">makeAgent</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
-            <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+            <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#setColor-etomica.api.IAtomType-int-java.awt.Color-">setColor</a></span>(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ColorSchemeStepWise.html#setColor-etomica.atom.AtomType-int-java.awt.Color-">setColor</a></span>(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
         int&nbsp;nBonds,
         java.awt.Color&nbsp;color)</code>
 <div class="block">Sets atoms of the given type and number of bonds to be the given color.</div>
@@ -267,15 +267,6 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="colorMaps">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>colorMaps</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>[] colorMaps</pre>
-</li>
-</ul>
 <a name="bondingAgentManager">
 <!--   -->
 </a>
@@ -288,10 +279,19 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <a name="simulation">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>simulation</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a> simulation</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> simulation</pre>
+</li>
+</ul>
+<a name="colorMaps">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>colorMaps</h4>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>[] colorMaps</pre>
 </li>
 </ul>
 </li>
@@ -302,13 +302,13 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeStepWise-etomica.api.ISimulation-etomica.atom.AtomLeafAgentManager-">
+<a name="ColorSchemeStepWise-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeStepWise</h4>
-<pre>public&nbsp;ColorSchemeStepWise(<a href="../../../etomica/api/ISimulation.html" title="interface in etomica.api">ISimulation</a>&nbsp;sim,
+<pre>public&nbsp;ColorSchemeStepWise(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                            <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;bondingAgentManager)</pre>
 </li>
 </ul>
@@ -320,26 +320,26 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getAtomColor-etomica.api.IAtom-">
+<a name="getAtomColor-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAtomColor</h4>
-<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atom)</pre>
+<pre>public&nbsp;java.awt.Color&nbsp;getAtomColor(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/graphics/ColorScheme.html#getAtomColor-etomica.api.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/graphics/ColorScheme.html" title="class in etomica.graphics">ColorScheme</a></code></dd>
+<dd><code><a href="../../../etomica/graphics/ColorScheme.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/graphics/ColorScheme.html" title="class in etomica.graphics">ColorScheme</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setColor-etomica.api.IAtomType-int-java.awt.Color-">
+<a name="setColor-etomica.atom.AtomType-int-java.awt.Color-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setColor</h4>
-<pre>public&nbsp;void&nbsp;setColor(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type,
+<pre>public&nbsp;void&nbsp;setColor(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                      int&nbsp;nBonds,
                      java.awt.Color&nbsp;color)</pre>
 <div class="block">Sets atoms of the given type and number of bonds to be the given color.</div>
@@ -353,7 +353,7 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 <h4>getSpeciesAgentClass</h4>
 <pre>public&nbsp;java.lang.Class&nbsp;getSpeciesAgentClass()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#getSpeciesAgentClass--">AtomTypeAgentManager.AgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of 
+<div class="block">Returns the Class of the agent.  This is used to create an array of
  the appropriate Class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -361,35 +361,35 @@ implements <a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html"
 </dl>
 </li>
 </ul>
-<a name="makeAgent-etomica.api.IAtomType-">
+<a name="makeAgent-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.api.IAtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
+<pre>public&nbsp;java.lang.Object&nbsp;makeAgent(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.atom.AtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
 <div class="block">Returns an agent for the given AtomType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.api.IAtomType-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#makeAgent-etomica.atom.AtomType-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="releaseAgent-java.lang.Object-etomica.api.IAtomType-">
+<a name="releaseAgent-java.lang.Object-etomica.atom.AtomType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
-                         <a href="../../../etomica/api/IAtomType.html" title="interface in etomica.api">IAtomType</a>&nbsp;type)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+                         <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">AtomTypeAgentManager.AgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.api.IAtomType-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -115,10 +115,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">IntegratorOverlap</span>
@@ -180,7 +176,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#IntegratorOverlap-etomica.api.IIntegrator:A-">IntegratorOverlap</a></span>(<a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>[]&nbsp;aIntegrators)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#IntegratorOverlap-etomica.integrator.Integrator:A-">IntegratorOverlap</a></span>(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[]&nbsp;aIntegrators)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -272,7 +268,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a></h3>
-<code><a href="../../../etomica/integrator/IntegratorManagerMC.html#addIntegrator-etomica.api.IIntegrator-">addIntegrator</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#doGlobalMoves--">doGlobalMoves</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getGlobalMoveInterval--">getGlobalMoveInterval</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getIntegrators--">getIntegrators</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getMoveEventManager--">getMoveEventManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getMoveManager--">getMoveManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#removeIntegrator-etomica.api.IIntegrator-">removeIntegrator</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setGlobalMoveInterval-double-">setGlobalMoveInterval</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setMoveManager-etomica.integrator.mcmove.MCMoveManager-">setMoveManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setup--">setup</a></code></li>
+<code><a href="../../../etomica/integrator/IntegratorManagerMC.html#addIntegrator-etomica.integrator.Integrator-">addIntegrator</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#doGlobalMoves--">doGlobalMoves</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getGlobalMoveInterval--">getGlobalMoveInterval</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getIntegrators--">getIntegrators</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getMoveEventManager--">getMoveEventManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#getMoveManager--">getMoveManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#removeIntegrator-etomica.integrator.Integrator-">removeIntegrator</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setGlobalMoveInterval-double-">setGlobalMoveInterval</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setMoveManager-etomica.integrator.mcmove.MCMoveManager-">setMoveManager</a>, <a href="../../../etomica/integrator/IntegratorManagerMC.html#setup--">setup</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.Integrator">
@@ -302,13 +298,13 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorOverlap-etomica.api.IIntegrator:A-">
+<a name="IntegratorOverlap-etomica.integrator.Integrator:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntegratorOverlap</h4>
-<pre>public&nbsp;IntegratorOverlap(<a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a>[]&nbsp;aIntegrators)</pre>
+<pre>public&nbsp;IntegratorOverlap(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[]&nbsp;aIntegrators)</pre>
 </li>
 </ul>
 </li>
@@ -341,8 +337,6 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.  Resets this integrator and passes on the reset to all managed integrators.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/integrator/IntegratorManagerMC.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a></code></dd>
 </dl>

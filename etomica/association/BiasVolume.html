@@ -141,7 +141,7 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#space">space</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -159,7 +159,7 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#BiasVolume-etomica.space.ISpace-">BiasVolume</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;s)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#BiasVolume-etomica.space.Space-">BiasVolume</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;s)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,8 +178,8 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#biasInsert-etomica.api.IAtom-etomica.api.IAtom-">biasInsert</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomA,
-          <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomB)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#biasInsert-etomica.atom.IAtom-etomica.atom.IAtom-">biasInsert</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomA,
+          <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomB)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
@@ -187,8 +187,8 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#isAssociated-etomica.api.IAtom-etomica.api.IAtom-">isAssociated</a></span>(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomA,
-            <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomB)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/BiasVolume.html#isAssociated-etomica.atom.IAtom-etomica.atom.IAtom-">isAssociated</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomA,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomB)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -218,7 +218,7 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 <ul class="blockListLast">
 <li class="blockList">
 <h4>space</h4>
-<pre>public final&nbsp;<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a> space</pre>
+<pre>public final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>
@@ -229,13 +229,13 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BiasVolume-etomica.space.ISpace-">
+<a name="BiasVolume-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BiasVolume</h4>
-<pre>public&nbsp;BiasVolume(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;s)</pre>
+<pre>public&nbsp;BiasVolume(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;s)</pre>
 </li>
 </ul>
 </li>
@@ -255,27 +255,27 @@ implements <a href="../../etomica/association/AssociationDefinition.html" title=
 <pre>public abstract&nbsp;double&nbsp;biasVolume()</pre>
 </li>
 </ul>
-<a name="biasInsert-etomica.api.IAtom-etomica.api.IAtom-">
+<a name="biasInsert-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>biasInsert</h4>
-<pre>public abstract&nbsp;void&nbsp;biasInsert(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomA,
-                                <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomB)</pre>
+<pre>public abstract&nbsp;void&nbsp;biasInsert(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomA,
+                                <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomB)</pre>
 </li>
 </ul>
-<a name="isAssociated-etomica.api.IAtom-etomica.api.IAtom-">
+<a name="isAssociated-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isAssociated</h4>
-<pre>public abstract&nbsp;boolean&nbsp;isAssociated(<a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomA,
-                                     <a href="../../etomica/api/IAtom.html" title="interface in etomica.api">IAtom</a>&nbsp;atomB)</pre>
+<pre>public abstract&nbsp;boolean&nbsp;isAssociated(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomA,
+                                     <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atomB)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/association/AssociationDefinition.html#isAssociated-etomica.api.IAtom-etomica.api.IAtom-">isAssociated</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/association/AssociationDefinition.html" title="interface in etomica.association">AssociationDefinition</a></code></dd>
+<dd><code><a href="../../etomica/association/AssociationDefinition.html#isAssociated-etomica.atom.IAtom-etomica.atom.IAtom-">isAssociated</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/association/AssociationDefinition.html" title="interface in etomica.association">AssociationDefinition</a></code></dd>
 </dl>
 </li>
 </ul>

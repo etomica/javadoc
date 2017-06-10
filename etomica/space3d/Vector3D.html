@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>, <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a>, <a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">Vector3D</span>
 extends java.lang.Object
-implements <a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>, java.io.Serializable</pre>
 <div class="block">Implementation of the Vector class for a 3-dimensional space.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -212,13 +212,13 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#DE-etomica.api.IVector-">DE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#DE-etomica.space.Vector-">DE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Divide-equals (/=) operation.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#dot-etomica.api.IVector-">dot</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#dot-etomica.space.Vector-">dot</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Returns the dot product of this vector with the given one.</div>
 </td>
 </tr>
@@ -243,36 +243,36 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#E-etomica.api.IVector-">E</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#E-etomica.space.Vector-">E</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Sets the components of this vector equal to those of the given vector.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ea1Tv1-double-etomica.api.IVector-">Ea1Tv1</a></span>(double&nbsp;a1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ea1Tv1-double-etomica.space.Vector-">Ea1Tv1</a></span>(double&nbsp;a1,
+      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Operation (= a1 * v1); sets the components of this to those of the given
  vector multiplied by the given constant.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#equals-etomica.api.IVector-">equals</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#equals-etomica.space.Vector-">equals</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns true if all corresponding elements of this and the given vector
  are equal; returns false otherwise.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ev1Mv2-etomica.api.IVector-etomica.api.IVector-">Ev1Mv2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ev1Mv2-etomica.space.Vector-etomica.space.Vector-">Ev1Mv2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u1,
+      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u2)</code>
 <div class="block">Sets the components of this vector equal to (v1 - v2)</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ev1Pv2-etomica.api.IVector-etomica.api.IVector-">Ev1Pv2</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u1,
-      <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Ev1Pv2-etomica.space.Vector-etomica.space.Vector-">Ev1Pv2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u1,
+      <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u2)</code>
 <div class="block">Sets the components of this vector equal to (v1 + v2)</div>
 </td>
 </tr>
@@ -302,19 +302,19 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#map-etomica.api.IFunction-">map</a></span>(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;function)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#map-etomica.math.function.IFunction-">map</a></span>(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;function)</code>
 <div class="block">Applies the given function to each element of the vector.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#ME-etomica.api.IVector-">ME</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#ME-etomica.space.Vector-">ME</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Minus-equals (-=) operation.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#mod-etomica.api.IVector-">mod</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#mod-etomica.space.Vector-">mod</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Replaces each component of this vector with its value modulo
  the corresponding component in u</div>
 </td>
@@ -325,7 +325,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Mv1Squared-etomica.api.IVector-">Mv1Squared</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#Mv1Squared-etomica.space.Vector-">Mv1Squared</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Returns square of vector resulting from subtracting given vector
  from this one.</div>
 </td>
@@ -345,37 +345,37 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#PE-etomica.api.IVector-">PE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#PE-etomica.space.Vector-">PE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Plus-equals (+=) operation.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#PEa1Tv1-double-etomica.api.IVector-">PEa1Tv1</a></span>(double&nbsp;a1,
-       <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#PEa1Tv1-double-etomica.space.Vector-">PEa1Tv1</a></span>(double&nbsp;a1,
+       <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Increments (+=) components by (a1 * v1)</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setPerpendicularTo-etomica.api.IVector-">setPerpendicularTo</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setPerpendicularTo-etomica.space.Vector-">setPerpendicularTo</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomCube-etomica.api.IRandom-">setRandomCube</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomCube-etomica.util.random.IRandom-">setRandomCube</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns each component to (its own) random value between -0.5 and + 0.5.</div>
 </td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomInSphere-etomica.api.IRandom-">setRandomInSphere</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomInSphere-etomica.util.random.IRandom-">setRandomInSphere</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns this vector to equal a point chosen randomly in the volume
  of a unit sphere.</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomSphere-etomica.api.IRandom-">setRandomSphere</a></span>(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#setRandomSphere-etomica.util.random.IRandom-">setRandomSphere</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Creating a random unit vector on unit sphere Uses only two random number
  generator at a time
  
@@ -403,7 +403,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#TE-etomica.api.IVector-">TE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#TE-etomica.space.Vector-">TE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Times-equals (*=) operation.</div>
 </td>
 </tr>
@@ -413,7 +413,7 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#XE-etomica.api.IVector-">XE</a></span>(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space3d/Vector3D.html#XE-etomica.space.Vector-">XE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Sets this vector equal to the cross product of this vector with the
  given vector (only works for 3D vectors).</div>
 </td>
@@ -550,12 +550,12 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>getD</h4>
 <pre>public&nbsp;int&nbsp;getD()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#getD--">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#getD--">Vector</a></code></span></div>
 <div class="block">Dimension of the space occupied by the vector. Number of elements in the
  vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#getD--">getD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#getD--">getD</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -579,13 +579,13 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>getX</h4>
 <pre>public&nbsp;double&nbsp;getX(int&nbsp;i)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#getX-int-">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#getX-int-">Vector</a></code></span></div>
 <div class="block">Vector components corresponding to the given index. For example,
  x-component is given for i = 0. If index exceeds dimension of vector, no
  error is given and the last element of the vector is returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#getX-int-">getX</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#getX-int-">getX</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -596,29 +596,29 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>assignTo</h4>
 <pre>public&nbsp;void&nbsp;assignTo(double[]&nbsp;array)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#assignTo-double:A-">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#assignTo-double:A-">Vector</a></code></span></div>
 <div class="block">Assigns the components of this vector to the elements of the given array.
  Does not check that array length is consistent with vector dimension.
  Inverse of the E method.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#assignTo-double:A-">assignTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#assignTo-double:A-">assignTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="equals-etomica.api.IVector-">
+<a name="equals-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#equals-etomica.api.IVector-">IVector</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#equals-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Returns true if all corresponding elements of this and the given vector
  are equal; returns false otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#equals-etomica.api.IVector-">equals</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#equals-etomica.space.Vector-">equals</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -629,26 +629,26 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>isZero</h4>
 <pre>public&nbsp;boolean&nbsp;isZero()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#isZero--">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#isZero--">Vector</a></code></span></div>
 <div class="block">Returns true if all components of this vector are zero; false otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#isZero--">isZero</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#isZero--">isZero</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="E-etomica.api.IVector-">
+<a name="E-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>E</h4>
-<pre>public&nbsp;void&nbsp;E(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#E-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;E(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#E-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Sets the components of this vector equal to those of the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#E-etomica.api.IVector-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#E-etomica.space.Vector-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -659,11 +659,11 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>E</h4>
 <pre>public&nbsp;void&nbsp;E(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#E-double-">IVectorMutable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#E-double-">Vector</a></code></span></div>
 <div class="block">Sets all components of this vector equal to the given value.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#E-double-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#E-double-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -685,61 +685,61 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>E</h4>
 <pre>public&nbsp;void&nbsp;E(double[]&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#E-double:A-">IVectorMutable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#E-double:A-">Vector</a></code></span></div>
 <div class="block">Sets the components of this vector equal to the corresponding elements of
  the given array. Inverse of the assignTo method.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#E-double:A-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#E-double:A-">E</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="Ea1Tv1-double-etomica.api.IVector-">
+<a name="Ea1Tv1-double-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Ea1Tv1</h4>
 <pre>public&nbsp;void&nbsp;Ea1Tv1(double&nbsp;a1,
-                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#Ea1Tv1-double-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+                   <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#Ea1Tv1-double-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Operation (= a1 * v1); sets the components of this to those of the given
  vector multiplied by the given constant.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#Ea1Tv1-double-etomica.api.IVector-">Ea1Tv1</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#Ea1Tv1-double-etomica.space.Vector-">Ea1Tv1</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="PEa1Tv1-double-etomica.api.IVector-">
+<a name="PEa1Tv1-double-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PEa1Tv1</h4>
 <pre>public&nbsp;void&nbsp;PEa1Tv1(double&nbsp;a1,
-                    <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#PEa1Tv1-double-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+                    <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#PEa1Tv1-double-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Increments (+=) components by (a1 * v1)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#PEa1Tv1-double-etomica.api.IVector-">PEa1Tv1</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#PEa1Tv1-double-etomica.space.Vector-">PEa1Tv1</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="PE-etomica.api.IVector-">
+<a name="PE-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PE</h4>
-<pre>public&nbsp;void&nbsp;PE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#PE-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;PE(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#PE-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Plus-equals (+=) operation. Increments each component of this vector by
  the corresponding value in the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#PE-etomica.api.IVector-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#PE-etomica.space.Vector-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -750,28 +750,28 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>PE</h4>
 <pre>public&nbsp;void&nbsp;PE(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#PE-double-">IVectorMutable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#PE-double-">Vector</a></code></span></div>
 <div class="block">Plus-equals (+=) operation, causing a constant value to be added to all
  components of this vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#PE-double-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#PE-double-">PE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="ME-etomica.api.IVector-">
+<a name="ME-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ME</h4>
-<pre>public&nbsp;void&nbsp;ME(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#ME-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;ME(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#ME-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Minus-equals (-=) operation. Decrements each component of this vector by
  the corresponding value in the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#ME-etomica.api.IVector-">ME</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#ME-etomica.space.Vector-">ME</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -782,91 +782,91 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>TE</h4>
 <pre>public&nbsp;void&nbsp;TE(double&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#TE-double-">IVectorMutable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#TE-double-">Vector</a></code></span></div>
 <div class="block">Multiplies all components by a constant.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#TE-double-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#TE-double-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="TE-etomica.api.IVector-">
+<a name="TE-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>TE</h4>
-<pre>public&nbsp;void&nbsp;TE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#TE-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;TE(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#TE-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Times-equals (*=) operation. Multiplies each component of this vector by
  the corresponding value in the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#TE-etomica.api.IVector-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#TE-etomica.space.Vector-">TE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="DE-etomica.api.IVector-">
+<a name="DE-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>DE</h4>
-<pre>public&nbsp;void&nbsp;DE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#DE-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;DE(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#DE-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Divide-equals (/=) operation. Divides each component of this vector by
  the corresponding value in the given vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#DE-etomica.api.IVector-">DE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#DE-etomica.space.Vector-">DE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="Ev1Pv2-etomica.api.IVector-etomica.api.IVector-">
+<a name="Ev1Pv2-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Ev1Pv2</h4>
-<pre>public&nbsp;void&nbsp;Ev1Pv2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u1,
-                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u2)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#Ev1Pv2-etomica.api.IVector-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;Ev1Pv2(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u1,
+                   <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u2)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#Ev1Pv2-etomica.space.Vector-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Sets the components of this vector equal to (v1 + v2)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#Ev1Pv2-etomica.api.IVector-etomica.api.IVector-">Ev1Pv2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#Ev1Pv2-etomica.space.Vector-etomica.space.Vector-">Ev1Pv2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="Ev1Mv2-etomica.api.IVector-etomica.api.IVector-">
+<a name="Ev1Mv2-etomica.space.Vector-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Ev1Mv2</h4>
-<pre>public&nbsp;void&nbsp;Ev1Mv2(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u1,
-                   <a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u2)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#Ev1Mv2-etomica.api.IVector-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;Ev1Mv2(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u1,
+                   <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u2)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#Ev1Mv2-etomica.space.Vector-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Sets the components of this vector equal to (v1 - v2)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#Ev1Mv2-etomica.api.IVector-etomica.api.IVector-">Ev1Mv2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#Ev1Mv2-etomica.space.Vector-etomica.space.Vector-">Ev1Mv2</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="mod-etomica.api.IVector-">
+<a name="mod-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>mod</h4>
-<pre>public&nbsp;void&nbsp;mod(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#mod-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;mod(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#mod-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Replaces each component of this vector with its value modulo
  the corresponding component in u</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#mod-etomica.api.IVector-">mod</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#mod-etomica.space.Vector-">mod</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -886,52 +886,52 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>squared</h4>
 <pre>public&nbsp;double&nbsp;squared()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#squared--">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#squared--">Vector</a></code></span></div>
 <div class="block">Returns the square magnitude of this vector, e.g., x^2 + y^2 for D = 2.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#squared--">squared</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#squared--">squared</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="Mv1Squared-etomica.api.IVector-">
+<a name="Mv1Squared-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Mv1Squared</h4>
-<pre>public&nbsp;double&nbsp;Mv1Squared(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#Mv1Squared-etomica.api.IVector-">IVector</a></code></span></div>
+<pre>public&nbsp;double&nbsp;Mv1Squared(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#Mv1Squared-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Returns square of vector resulting from subtracting given vector
  from this one.  Neither vector is changed by this operation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#Mv1Squared-etomica.api.IVector-">Mv1Squared</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#Mv1Squared-etomica.space.Vector-">Mv1Squared</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="dot-etomica.api.IVector-">
+<a name="dot-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>dot</h4>
-<pre>public&nbsp;double&nbsp;dot(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#dot-etomica.api.IVector-">IVector</a></code></span></div>
+<pre>public&nbsp;double&nbsp;dot(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#dot-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Returns the dot product of this vector with the given one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#dot-etomica.api.IVector-">dot</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#dot-etomica.space.Vector-">dot</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setPerpendicularTo-etomica.api.IVector-">
+<a name="setPerpendicularTo-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPerpendicularTo</h4>
-<pre>public&nbsp;void&nbsp;setPerpendicularTo(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;v)</pre>
+<pre>public&nbsp;void&nbsp;setPerpendicularTo(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
 </li>
 </ul>
 <a name="setX-int-double-">
@@ -942,83 +942,83 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <h4>setX</h4>
 <pre>public&nbsp;void&nbsp;setX(int&nbsp;a,
                  double&nbsp;d)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#setX-int-double-">IVectorMutable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#setX-int-double-">Vector</a></code></span></div>
 <div class="block">Sets the i-th component of the vector to the given value d. If index
  exceeds dimension of vector, no error is given and the last element of
  the vector is assigned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#setX-int-double-">setX</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#setX-int-double-">setX</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setRandomCube-etomica.api.IRandom-">
+<a name="setRandomCube-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRandomCube</h4>
-<pre>public&nbsp;void&nbsp;setRandomCube(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/IVectorRandom.html#setRandomCube-etomica.api.IRandom-">IVectorRandom</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setRandomCube(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#setRandomCube-etomica.util.random.IRandom-">Vector</a></code></span></div>
 <div class="block">Assigns each component to (its own) random value between -0.5 and + 0.5.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomCube-etomica.api.IRandom-">setRandomCube</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#setRandomCube-etomica.util.random.IRandom-">setRandomCube</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>
-<a name="setRandomInSphere-etomica.api.IRandom-">
+<a name="setRandomInSphere-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRandomInSphere</h4>
-<pre>public&nbsp;void&nbsp;setRandomInSphere(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/IVectorRandom.html#setRandomInSphere-etomica.api.IRandom-">IVectorRandom</a></code></span></div>
+<pre>public&nbsp;void&nbsp;setRandomInSphere(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#setRandomInSphere-etomica.util.random.IRandom-">Vector</a></code></span></div>
 <div class="block">Assigns this vector to equal a point chosen randomly in the volume
  of a unit sphere.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomInSphere-etomica.api.IRandom-">setRandomInSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#setRandomInSphere-etomica.util.random.IRandom-">setRandomInSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>
-<a name="setRandomSphere-etomica.api.IRandom-">
+<a name="setRandomSphere-etomica.util.random.IRandom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRandomSphere</h4>
-<pre>public&nbsp;void&nbsp;setRandomSphere(<a href="../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random)</pre>
+<pre>public&nbsp;void&nbsp;setRandomSphere(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
 <div class="block">Creating a random unit vector on unit sphere Uses only two random number
  generator at a time
  
  Based on M.P. Allen and D.J. Tildesley, Computer Simulation of Liquids, p 349.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/IVectorRandom.html#setRandomSphere-etomica.api.IRandom-">setRandomSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/IVectorRandom.html" title="interface in etomica.space">IVectorRandom</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#setRandomSphere-etomica.util.random.IRandom-">setRandomSphere</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
 </li>
 </ul>
-<a name="XE-etomica.api.IVector-">
+<a name="XE-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>XE</h4>
-<pre>public&nbsp;void&nbsp;XE(<a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a>&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#XE-etomica.api.IVector-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;XE(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#XE-etomica.space.Vector-">Vector</a></code></span></div>
 <div class="block">Sets this vector equal to the cross product of this vector with the
  given vector (only works for 3D vectors).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#XE-etomica.api.IVector-">XE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#XE-etomica.space.Vector-">XE</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1029,12 +1029,12 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>normalize</h4>
 <pre>public&nbsp;void&nbsp;normalize()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#normalize--">IVectorMutable</a></code></span></div>
-<div class="block">Normalizes this vector, so this.squared() == 1.  Divides all 
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#normalize--">Vector</a></code></span></div>
+<div class="block">Normalizes this vector, so this.squared() == 1.  Divides all
  components by Math.sqrt(this.squared()).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#normalize--">normalize</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#normalize--">normalize</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1045,26 +1045,26 @@ implements <a href="../../etomica/space/IVectorRandom.html" title="interface in 
 <li class="blockList">
 <h4>isNaN</h4>
 <pre>public&nbsp;boolean&nbsp;isNaN()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVector.html#isNaN--">IVector</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#isNaN--">Vector</a></code></span></div>
 <div class="block">Returns true if any element of the vector is not-a-number.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVector.html#isNaN--">isNaN</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVector.html" title="interface in etomica.api">IVector</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#isNaN--">isNaN</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="map-etomica.api.IFunction-">
+<a name="map-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>map</h4>
-<pre>public&nbsp;void&nbsp;map(<a href="../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;function)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IVectorMutable.html#map-etomica.api.IFunction-">IVectorMutable</a></code></span></div>
+<pre>public&nbsp;void&nbsp;map(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;function)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/space/Vector.html#map-etomica.math.function.IFunction-">Vector</a></code></span></div>
 <div class="block">Applies the given function to each element of the vector.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IVectorMutable.html#map-etomica.api.IFunction-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></dd>
+<dd><code><a href="../../etomica/space/Vector.html#map-etomica.math.function.IFunction-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></dd>
 </dl>
 </li>
 </ul>

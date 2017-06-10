@@ -149,11 +149,11 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#firstBox">firstBox</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#secondBox">secondBox</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -185,9 +185,9 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#MCMoveVolumeExchange-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">MCMoveVolumeExchange</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                    <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                    <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#MCMoveVolumeExchange-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">MCMoveVolumeExchange</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                    <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                    <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                     <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator1,
                     <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator2)</code>&nbsp;</td>
 </tr>
@@ -215,7 +215,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns an iterator that yields the atoms that were affected by the trial
  move the last time doTrial was invoked (regardless of whether the move
  was accepted).</div>
@@ -229,7 +229,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#energyChange-etomica.api.IBox-">energyChange</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveVolumeExchange.html#energyChange-etomica.box.Box-">energyChange</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns the change in the energy of the given box that results from the
  trial move.</div>
 </td>
@@ -295,7 +295,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>firstBox</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> firstBox</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> firstBox</pre>
 </li>
 </ul>
 <a name="secondBox">
@@ -304,7 +304,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 <ul class="blockListLast">
 <li class="blockList">
 <h4>secondBox</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a> secondBox</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> secondBox</pre>
 </li>
 </ul>
 </li>
@@ -315,15 +315,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMoveVolumeExchange-etomica.api.IPotentialMaster-etomica.api.IRandom-etomica.space.ISpace-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">
+<a name="MCMoveVolumeExchange-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-etomica.integrator.IntegratorBox-etomica.integrator.IntegratorBox-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveVolumeExchange</h4>
-<pre>public&nbsp;MCMoveVolumeExchange(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
-                            <a href="../../../etomica/api/IRandom.html" title="interface in etomica.api">IRandom</a>&nbsp;random,
-                            <a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;_space,
+<pre>public&nbsp;MCMoveVolumeExchange(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                            <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+                            <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                             <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator1,
                             <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator2)</pre>
 </li>
@@ -420,31 +420,31 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
 </dl>
 </li>
 </ul>
-<a name="energyChange-etomica.api.IBox-">
+<a name="energyChange-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energyChange</h4>
-<pre>public&nbsp;double&nbsp;energyChange(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.api.IBox-">MCMove</a></code></span></div>
+<pre>public&nbsp;double&nbsp;energyChange(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.box.Box-">MCMove</a></code></span></div>
 <div class="block">Returns the change in the energy of the given box that results from the
  trial move. Should be called only after lnProbabilityRatio(); returns
  Double.NaN if invoked between calls to doTrial and lnProbabilityRatio.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.api.IBox-">energyChange</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.box.Box-">energyChange</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="affectedAtoms-etomica.api.IBox-">
+<a name="affectedAtoms-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>affectedAtoms</h4>
-<pre>public final&nbsp;<a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a>&nbsp;affectedAtoms(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.api.IBox-">MCMove</a></code></span></div>
+<pre>public final&nbsp;<a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a>&nbsp;affectedAtoms(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.box.Box-">MCMove</a></code></span></div>
 <div class="block">Returns an iterator that yields the atoms that were affected by the trial
  move the last time doTrial was invoked (regardless of whether the move
  was accepted). This information usually is not needed, but it is
@@ -456,7 +456,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveStep.html" title="clas
  because that Atom is not considered an affected Atom.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
 </dl>
 </li>
 </ul>

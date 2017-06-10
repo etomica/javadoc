@@ -141,7 +141,7 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#latticeEnergy">latticeEnergy</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#wrappedPotentialMaster">wrappedPotentialMaster</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -159,7 +159,7 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#APIPotentialTarget-etomica.api.IPotentialMaster-">APIPotentialTarget</a></span>(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;wrappedPotentialMaster)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#APIPotentialTarget-etomica.potential.PotentialMaster-">APIPotentialTarget</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;wrappedPotentialMaster)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,7 +178,7 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#calculateEnergy-etomica.api.IBox-">calculateEnergy</a></span>(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/SimOverlapLJModule.APIPotentialTarget.html#calculateEnergy-etomica.box.Box-">calculateEnergy</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns the potential energy of the given box.</div>
 </td>
 </tr>
@@ -218,7 +218,7 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>wrappedPotentialMaster</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> wrappedPotentialMaster</pre>
+<pre>protected final&nbsp;<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> wrappedPotentialMaster</pre>
 </li>
 </ul>
 <a name="latticeEnergy">
@@ -238,13 +238,13 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="APIPotentialTarget-etomica.api.IPotentialMaster-">
+<a name="APIPotentialTarget-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>APIPotentialTarget</h4>
-<pre>public&nbsp;APIPotentialTarget(<a href="../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;wrappedPotentialMaster)</pre>
+<pre>public&nbsp;APIPotentialTarget(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;wrappedPotentialMaster)</pre>
 </li>
 </ul>
 </li>
@@ -255,37 +255,37 @@ implements <a href="../../etomica/normalmode/IAPIPotential.html" title="interfac
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="calculateEnergy-etomica.api.IBox-">
+<a name="calculateEnergy-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calculateEnergy</h4>
-<pre>public&nbsp;double&nbsp;calculateEnergy(<a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/normalmode/IAPIPotential.html#calculateEnergy-etomica.api.IBox-">IAPIPotential</a></code></span></div>
+<pre>public&nbsp;double&nbsp;calculateEnergy(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/normalmode/IAPIPotential.html#calculateEnergy-etomica.box.Box-">IAPIPotential</a></code></span></div>
 <div class="block">Returns the potential energy of the given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/normalmode/IAPIPotential.html#calculateEnergy-etomica.api.IBox-">calculateEnergy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/normalmode/IAPIPotential.html" title="interface in etomica.normalmode">IAPIPotential</a></code></dd>
+<dd><code><a href="../../etomica/normalmode/IAPIPotential.html#calculateEnergy-etomica.box.Box-">calculateEnergy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/normalmode/IAPIPotential.html" title="interface in etomica.normalmode">IAPIPotential</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="setLatticeEnergy-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLatticeEnergy</h4>
-<pre>public&nbsp;void&nbsp;setLatticeEnergy(double&nbsp;newLatticeEnergy)</pre>
 </li>
 </ul>
 <a name="getLatticeEnergy--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getLatticeEnergy</h4>
 <pre>public&nbsp;double&nbsp;getLatticeEnergy()</pre>
+</li>
+</ul>
+<a name="setLatticeEnergy-double-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setLatticeEnergy</h4>
+<pre>public&nbsp;void&nbsp;setLatticeEnergy(double&nbsp;newLatticeEnergy)</pre>
 </li>
 </ul>
 </li>

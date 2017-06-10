@@ -106,18 +106,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../etomica/util/numerical/AkimaSplineSmootherApp.IntegratorSmoother.html" title="class in etomica.util.numerical">AkimaSplineSmootherApp.IntegratorSmoother</a>, <a href="../../etomica/util/numerical/AkimaSplineSmootherDyApp.IntegratorSmoother.html" title="class in etomica.util.numerical">AkimaSplineSmootherDyApp.IntegratorSmoother</a>, <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a>, <a href="../../etomica/thermointegration/IntegratorThermodynamic.html" title="class in etomica.thermointegration">IntegratorThermodynamic</a></dd>
+<dd><a href="../../etomica/math/numerical/AkimaSplineSmootherApp.IntegratorSmoother.html" title="class in etomica.math.numerical">AkimaSplineSmootherApp.IntegratorSmoother</a>, <a href="../../etomica/math/numerical/AkimaSplineSmootherDyApp.IntegratorSmoother.html" title="class in etomica.math.numerical">AkimaSplineSmootherDyApp.IntegratorSmoother</a>, <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a>, <a href="../../etomica/thermointegration/IntegratorThermodynamic.html" title="class in etomica.thermointegration">IntegratorThermodynamic</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Integrator</span>
-extends java.lang.Object
-implements <a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Integrator implements the algorithm used to move the atoms around and
  generate new configurations in one or more boxs. All integrator techniques,
  such as molecular dynamics or Monte Carlo, are implemented via subclasses of
@@ -235,7 +230,7 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#getEventInterval--">getEventInterval</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/api/IIntegratorEventManager.html" title="interface in etomica.api">IIntegratorEventManager</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/integrator/IntegratorEventManager.html" title="class in etomica.integrator">IntegratorEventManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#getEventManager--">getEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -293,6 +288,15 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="eventManager">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>eventManager</h4>
+<pre>protected final&nbsp;<a href="../../etomica/integrator/IntegratorEventManager.html" title="class in etomica.integrator">IntegratorEventManager</a> eventManager</pre>
+</li>
+</ul>
 <a name="initialized">
 <!--   -->
 </a>
@@ -314,19 +318,10 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <a name="stepCount">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>stepCount</h4>
 <pre>protected&nbsp;long stepCount</pre>
-</li>
-</ul>
-<a name="eventManager">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>eventManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/integrator/IntegratorEventManager.html" title="class in etomica.integrator">IntegratorEventManager</a> eventManager</pre>
 </li>
 </ul>
 </li>
@@ -389,13 +384,8 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <li class="blockList">
 <h4>doStep</h4>
 <pre>public final&nbsp;void&nbsp;doStep()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegrator.html#doStep--">IIntegrator</a></code></span></div>
 <div class="block">Performs the elementary integration step, such as a molecular dynamics
  time step, or a Monte Carlo trial.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#doStep--">doStep</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="doStepInternal--">
@@ -418,10 +408,6 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <pre>public&nbsp;long&nbsp;getStepCount()</pre>
 <div class="block">Returns the number of steps performed by the integrator since it was
  initialized.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#getStepCount--">getStepCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="reset--">
@@ -434,11 +420,9 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <div class="block">Defines the actions taken by the integrator to reset itself, such as
  required if a perturbation is applied to the simulated box (e.g.,
  addition or deletion of a molecule). Also invoked when the
- integrator is started or initialized.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
-</dl>
+ <p>
+ This should be called by subclasses before they have performed their own
+ reset integrator is started or initialized.</div>
 </li>
 </ul>
 <a name="resetStepCount--">
@@ -448,12 +432,7 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <li class="blockList">
 <h4>resetStepCount</h4>
 <pre>public&nbsp;void&nbsp;resetStepCount()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/api/IIntegrator.html#resetStepCount--">IIntegrator</a></code></span></div>
 <div class="block">This method resets the step counter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#resetStepCount--">resetStepCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="getEventManager--">
@@ -462,11 +441,7 @@ implements <a href="../../etomica/api/IIntegrator.html" title="interface in etom
 <ul class="blockList">
 <li class="blockList">
 <h4>getEventManager</h4>
-<pre>public&nbsp;<a href="../../etomica/api/IIntegratorEventManager.html" title="interface in etomica.api">IIntegratorEventManager</a>&nbsp;getEventManager()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/api/IIntegrator.html#getEventManager--">getEventManager</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/api/IIntegrator.html" title="interface in etomica.api">IIntegrator</a></code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../etomica/integrator/IntegratorEventManager.html" title="class in etomica.integrator">IntegratorEventManager</a>&nbsp;getEventManager()</pre>
 </li>
 </ul>
 <a name="setup--">

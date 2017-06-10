@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a>, <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></dd>
+<dd><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a>, <a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">TestNonLinearConjugateGradients</span>
 extends java.lang.Object
-implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></pre>
+implements <a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></pre>
 </li>
 </ul>
 </div>
@@ -218,7 +218,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <pre>public&nbsp;double&nbsp;f(double[]&nbsp;u)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensional.html#f-double:A-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensional.html#f-double:A-">f</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -230,7 +230,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <h4>df</h4>
 <pre>public&nbsp;double&nbsp;df(int[]&nbsp;d,
                  double[]&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">FunctionMultiDimensionalDifferentiable</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">FunctionMultiDimensionalDifferentiable</a></code></span></div>
 <div class="block">Returns the derivative indicated by the array d evaluated at the given point x.  The array d
  should be the same length as x. Each entry of d specifies the order of the derivative
  taken with respect to the corresponding variable in x.  For example, for a function
@@ -238,7 +238,7 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
  d2f/dx[0]dx[1]; d = {2,1} indicates d3f/dx[0]^2dx[1]; etc.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">df</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.util">FunctionMultiDimensionalDifferentiable</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html#df-int:A-double:A-">df</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensionalDifferentiable.html" title="interface in etomica.math.function">FunctionMultiDimensionalDifferentiable</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -249,12 +249,12 @@ implements <a href="../../etomica/util/FunctionMultiDimensionalDifferentiable.ht
 <li class="blockList">
 <h4>getDimension</h4>
 <pre>public&nbsp;int&nbsp;getDimension()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html#getDimension--">FunctionMultiDimensional</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html#getDimension--">FunctionMultiDimensional</a></code></span></div>
 <div class="block">The dimension of the space of independent variables.  The length of the
  array passed to the f should be equal to this quantity.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/FunctionMultiDimensional.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/FunctionMultiDimensional.html" title="interface in etomica.util">FunctionMultiDimensional</a></code></dd>
+<dd><code><a href="../../etomica/math/function/FunctionMultiDimensional.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/math/function/FunctionMultiDimensional.html" title="interface in etomica.math.function">FunctionMultiDimensional</a></code></dd>
 </dl>
 </li>
 </ul>

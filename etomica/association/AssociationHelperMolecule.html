@@ -148,11 +148,11 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#associationManager">associationManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#boundary">boundary</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#dr">dr</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -178,8 +178,8 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#AssociationHelperMolecule-etomica.space.ISpace-etomica.api.IBox-etomica.association.AssociationManagerMolecule-">AssociationHelperMolecule</a></span>(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                         <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#AssociationHelperMolecule-etomica.space.Space-etomica.box.Box-etomica.association.AssociationManagerMolecule-">AssociationHelperMolecule</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                          <a href="../../etomica/association/AssociationManagerMolecule.html" title="class in etomica.association">AssociationManagerMolecule</a>&nbsp;associationManager)</code>&nbsp;</td>
 </tr>
 </table>
@@ -207,14 +207,14 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#populate-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">populate</a></span>(<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>&nbsp;smerList,
-        <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#populate-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">populate</a></span>(<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>&nbsp;smerList,
+        <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
         boolean&nbsp;mightBeBroken)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#populateList-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">populateList</a></span>(<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>&nbsp;smerList,
-            <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#populateList-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">populateList</a></span>(<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>&nbsp;smerList,
+            <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
             boolean&nbsp;mightBeBroken)</code>
 <div class="block">Populates smerList with all molecules in the smer that contains molecule.</div>
 </td>
@@ -229,8 +229,8 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#validateBondList-etomica.api.IMolecule-etomica.api.IMoleculeList-boolean-">validateBondList</a></span>(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-                <a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;bondList,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationHelperMolecule.html#validateBondList-etomica.molecule.IMolecule-etomica.molecule.IMoleculeList-boolean-">validateBondList</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+                <a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;bondList,
                 boolean&nbsp;mightBeBroken)</code>
 <div class="block">Returns false if invalid bonding is recognized</div>
 </td>
@@ -281,7 +281,7 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>boundary</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IBoundary.html" title="interface in etomica.api">IBoundary</a> boundary</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
 </li>
 </ul>
 <a name="minR2">
@@ -299,7 +299,7 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <ul class="blockListLast">
 <li class="blockList">
 <h4>dr</h4>
-<pre>protected final&nbsp;<a href="../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> dr</pre>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
 </li>
@@ -310,14 +310,14 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AssociationHelperMolecule-etomica.space.ISpace-etomica.api.IBox-etomica.association.AssociationManagerMolecule-">
+<a name="AssociationHelperMolecule-etomica.space.Space-etomica.box.Box-etomica.association.AssociationManagerMolecule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AssociationHelperMolecule</h4>
-<pre>public&nbsp;AssociationHelperMolecule(<a href="../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space,
-                                 <a href="../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box,
+<pre>public&nbsp;AssociationHelperMolecule(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                 <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                  <a href="../../etomica/association/AssociationManagerMolecule.html" title="class in etomica.association">AssociationManagerMolecule</a>&nbsp;associationManager)</pre>
 </li>
 </ul>
@@ -365,16 +365,16 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
 <pre>public&nbsp;double&nbsp;getMinBondedMoleculeDistance()</pre>
 </li>
 </ul>
-<a name="populateList-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">
+<a name="populateList-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>populateList</h4>
-<pre>public&nbsp;boolean&nbsp;populateList(<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>&nbsp;smerList,
-                            <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>public&nbsp;boolean&nbsp;populateList(<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>&nbsp;smerList,
+                            <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                             boolean&nbsp;mightBeBroken)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/association/IAssociationHelperMolecule.html#populateList-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">IAssociationHelperMolecule</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/association/IAssociationHelperMolecule.html#populateList-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">IAssociationHelperMolecule</a></code></span></div>
 <div class="block">Populates smerList with all molecules in the smer that contains molecule.
  If mightBeBroken is false, an exception is throw if any invalid bonding
  is encountered (along with potentially useful information about the
@@ -383,29 +383,29 @@ implements <a href="../../etomica/association/IAssociationHelperMolecule.html" t
  if invalid bonding is not encountered.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/association/IAssociationHelperMolecule.html#populateList-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">populateList</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/association/IAssociationHelperMolecule.html" title="interface in etomica.association">IAssociationHelperMolecule</a></code></dd>
+<dd><code><a href="../../etomica/association/IAssociationHelperMolecule.html#populateList-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">populateList</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/association/IAssociationHelperMolecule.html" title="interface in etomica.association">IAssociationHelperMolecule</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="populate-etomica.atom.MoleculeArrayList-etomica.api.IMolecule-boolean-">
+<a name="populate-etomica.molecule.MoleculeArrayList-etomica.molecule.IMolecule-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>populate</h4>
-<pre>protected&nbsp;boolean&nbsp;populate(<a href="../../etomica/atom/MoleculeArrayList.html" title="class in etomica.atom">MoleculeArrayList</a>&nbsp;smerList,
-                           <a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
+<pre>protected&nbsp;boolean&nbsp;populate(<a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>&nbsp;smerList,
+                           <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
                            boolean&nbsp;mightBeBroken)</pre>
 </li>
 </ul>
-<a name="validateBondList-etomica.api.IMolecule-etomica.api.IMoleculeList-boolean-">
+<a name="validateBondList-etomica.molecule.IMolecule-etomica.molecule.IMoleculeList-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>validateBondList</h4>
-<pre>protected&nbsp;boolean&nbsp;validateBondList(<a href="../../etomica/api/IMolecule.html" title="interface in etomica.api">IMolecule</a>&nbsp;molecule,
-                                   <a href="../../etomica/api/IMoleculeList.html" title="interface in etomica.api">IMoleculeList</a>&nbsp;bondList,
+<pre>protected&nbsp;boolean&nbsp;validateBondList(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
+                                   <a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;bondList,
                                    boolean&nbsp;mightBeBroken)</pre>
 <div class="block">Returns false if invalid bonding is recognized</div>
 </li>

@@ -165,7 +165,7 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/types/DataVector.html#x">x</a></span></code>
 <div class="block">The wrapped vector data.</div>
 </td>
@@ -185,7 +185,7 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/types/DataVector.html#DataVector-etomica.space.ISpace-">DataVector</a></span>(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/data/types/DataVector.html#DataVector-etomica.space.Space-">DataVector</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
 <div class="block">Constructs a new instance with the given DataInfo, wrapping a new Vector
  instance from the given space.</div>
 </td>
@@ -256,7 +256,7 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/types/DataVector.html#map-etomica.api.IFunction-">map</a></span>(<a href="../../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;function)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/types/DataVector.html#map-etomica.math.function.IFunction-">map</a></span>(<a href="../../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;function)</code>
 <div class="block">Maps the function on all vector elements, replacing each with the
  value given by the function applied to it.</div>
 </td>
@@ -325,7 +325,7 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 <ul class="blockListLast">
 <li class="blockList">
 <h4>x</h4>
-<pre>public final&nbsp;<a href="../../../etomica/api/IVectorMutable.html" title="interface in etomica.api">IVectorMutable</a> x</pre>
+<pre>public final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> x</pre>
 <div class="block">The wrapped vector data.</div>
 </li>
 </ul>
@@ -337,13 +337,13 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataVector-etomica.space.ISpace-">
+<a name="DataVector-etomica.space.Space-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataVector</h4>
-<pre>public&nbsp;DataVector(<a href="../../../etomica/space/ISpace.html" title="interface in etomica.space">ISpace</a>&nbsp;space)</pre>
+<pre>public&nbsp;DataVector(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Constructs a new instance with the given DataInfo, wrapping a new Vector
  instance from the given space.</div>
 <dl>
@@ -501,18 +501,18 @@ implements <a href="../../../etomica/data/IData.html" title="interface in etomic
 </dl>
 </li>
 </ul>
-<a name="map-etomica.api.IFunction-">
+<a name="map-etomica.math.function.IFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>map</h4>
-<pre>public&nbsp;void&nbsp;map(<a href="../../../etomica/api/IFunction.html" title="interface in etomica.api">IFunction</a>&nbsp;function)</pre>
+<pre>public&nbsp;void&nbsp;map(<a href="../../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;function)</pre>
 <div class="block">Maps the function on all vector elements, replacing each with the
  value given by the function applied to it.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/data/IData.html#map-etomica.api.IFunction-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></dd>
+<dd><code><a href="../../../etomica/data/IData.html#map-etomica.math.function.IFunction-">map</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -148,7 +148,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#potential">potential</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -166,10 +166,10 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#MCMove-etomica.api.IPotentialMaster-">MCMove</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#MCMove-etomica.potential.PotentialMaster-">MCMove</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#MCMove-etomica.api.IPotentialMaster-etomica.integrator.mcmove.MCMoveTracker-">MCMove</a></span>(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#MCMove-etomica.potential.PotentialMaster-etomica.integrator.mcmove.MCMoveTracker-">MCMove</a></span>(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
       <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="class in etomica.integrator.mcmove">MCMoveTracker</a>&nbsp;acceptanceTracker)</code>&nbsp;</td>
 </tr>
 </table>
@@ -196,7 +196,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.api.IBox-">affectedAtoms</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#affectedAtoms-etomica.box.Box-">affectedAtoms</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns an iterator that yields the atoms that were affected by the trial
  move the last time doTrial was invoked (regardless of whether the move
  was accepted).</div>
@@ -210,7 +210,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.api.IBox-">energyChange</a></span>(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMove.html#energyChange-etomica.box.Box-">energyChange</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Returns the change in the energy of the given box that results from the
  trial move.</div>
 </td>
@@ -281,7 +281,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>potential</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a> potential</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potential</pre>
 </li>
 </ul>
 <a name="nominalFrequency">
@@ -312,26 +312,26 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MCMove-etomica.api.IPotentialMaster-">
+<a name="MCMove-etomica.potential.PotentialMaster-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>MCMove</h4>
-<pre>public&nbsp;MCMove(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster)</pre>
+<pre>public&nbsp;MCMove(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>potentialMaster</code> - the potential master that move can use to calculate energy</dd>
 </dl>
 </li>
 </ul>
-<a name="MCMove-etomica.api.IPotentialMaster-etomica.integrator.mcmove.MCMoveTracker-">
+<a name="MCMove-etomica.potential.PotentialMaster-etomica.integrator.mcmove.MCMoveTracker-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMove</h4>
-<pre>public&nbsp;MCMove(<a href="../../../etomica/api/IPotentialMaster.html" title="interface in etomica.api">IPotentialMaster</a>&nbsp;potentialMaster,
+<pre>public&nbsp;MCMove(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
               <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="class in etomica.integrator.mcmove">MCMoveTracker</a>&nbsp;acceptanceTracker)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -415,13 +415,13 @@ extends java.lang.Object</pre>
  the condition before the most recent call to doTrial.</div>
 </li>
 </ul>
-<a name="affectedAtoms-etomica.api.IBox-">
+<a name="affectedAtoms-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>affectedAtoms</h4>
-<pre>public abstract&nbsp;<a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a>&nbsp;affectedAtoms(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public abstract&nbsp;<a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a>&nbsp;affectedAtoms(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Returns an iterator that yields the atoms that were affected by the trial
  move the last time doTrial was invoked (regardless of whether the move
  was accepted). This information usually is not needed, but it is
@@ -433,13 +433,13 @@ extends java.lang.Object</pre>
  because that Atom is not considered an affected Atom.</div>
 </li>
 </ul>
-<a name="energyChange-etomica.api.IBox-">
+<a name="energyChange-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>energyChange</h4>
-<pre>public abstract&nbsp;double&nbsp;energyChange(<a href="../../../etomica/api/IBox.html" title="interface in etomica.api">IBox</a>&nbsp;box)</pre>
+<pre>public abstract&nbsp;double&nbsp;energyChange(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <div class="block">Returns the change in the energy of the given box that results from the
  trial move. Should be called only after lnProbabilityRatio(); returns
  Double.NaN if invoked between calls to doTrial and lnProbabilityRatio.</div>
