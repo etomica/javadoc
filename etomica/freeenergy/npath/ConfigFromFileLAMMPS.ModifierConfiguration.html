@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -152,6 +152,18 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#configIndex">configIndex</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#sfacData">sfacData</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#sfacDataInfo">sfacDataInfo</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#sfacPlotSink">sfacPlotSink</a></span></code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -167,9 +179,11 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#ModifierConfiguration-etomica.box.Box-java.util.List-java.util.List-">ModifierConfiguration</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#ModifierConfiguration-etomica.box.Box-java.util.List-java.util.List-java.util.List-java.util.List-">ModifierConfiguration</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                      java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allCoords,
-                     java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allEdges)</code>&nbsp;</td>
+                     java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allEdges,
+                     java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>&gt;&nbsp;sfacData,
+                     java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>&gt;&nbsp;sfacDataInfo)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -205,6 +219,10 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setSfacPlotSink-etomica.data.IDataSink-">setSfacPlotSink</a></span>(<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;sfacPlotSink)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setValue-double-">setValue</a></span>(double&nbsp;newValue)</code>
 <div class="block">Sets the value of the property.</div>
@@ -250,6 +268,24 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <pre>protected final&nbsp;java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt; allEdges</pre>
 </li>
 </ul>
+<a name="sfacData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sfacData</h4>
+<pre>protected final&nbsp;java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>&gt; sfacData</pre>
+</li>
+</ul>
+<a name="sfacDataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sfacDataInfo</h4>
+<pre>protected final&nbsp;java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>&gt; sfacDataInfo</pre>
+</li>
+</ul>
 <a name="configIndex">
 <!--   -->
 </a>
@@ -262,10 +298,19 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <a name="box">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>box</h4>
 <pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
+</li>
+</ul>
+<a name="sfacPlotSink">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>sfacPlotSink</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a> sfacPlotSink</pre>
 </li>
 </ul>
 </li>
@@ -276,7 +321,7 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ModifierConfiguration-etomica.box.Box-java.util.List-java.util.List-">
+<a name="ModifierConfiguration-etomica.box.Box-java.util.List-java.util.List-java.util.List-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -284,7 +329,9 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <h4>ModifierConfiguration</h4>
 <pre>public&nbsp;ModifierConfiguration(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                              java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allCoords,
-                             java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allEdges)</pre>
+                             java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;&nbsp;allEdges,
+                             java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>&gt;&nbsp;sfacData,
+                             java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>&gt;&nbsp;sfacDataInfo)</pre>
 </li>
 </ul>
 </li>
@@ -295,6 +342,15 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setSfacPlotSink-etomica.data.IDataSink-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSfacPlotSink</h4>
+<pre>public&nbsp;void&nbsp;setSfacPlotSink(<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;sfacPlotSink)</pre>
+</li>
+</ul>
 <a name="getValue--">
 <!--   -->
 </a>
