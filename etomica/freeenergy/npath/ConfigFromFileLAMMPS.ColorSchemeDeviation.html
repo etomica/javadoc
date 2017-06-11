@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ConfigFromFileLAMMPSParam.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -170,11 +170,35 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#latticeCoords">latticeCoords</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#edges">edges</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#edges0">edges0</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#r0">r0</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#rescaledCoords0">rescaledCoords0</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#rMax">rMax</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#scaledCoords0">scaledCoords0</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#t">t</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#t0">t0</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -227,6 +251,10 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 <td class="colFirst"><code>java.awt.Color</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#getAtomColor-etomica.atom.IAtom-">getAtomColor</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html#getRelativeDisplacement-etomica.atom.IAtom-">getRelativeDisplacement</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.ColorScheme">
@@ -256,13 +284,22 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="latticeCoords">
+<a name="scaledCoords0">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>latticeCoords</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] latticeCoords</pre>
+<h4>scaledCoords0</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] scaledCoords0</pre>
+</li>
+</ul>
+<a name="rescaledCoords0">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rescaledCoords0</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] rescaledCoords0</pre>
 </li>
 </ul>
 <a name="box">
@@ -290,6 +327,51 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 <li class="blockList">
 <h4>colors</h4>
 <pre>protected final&nbsp;java.awt.Color[] colors</pre>
+</li>
+</ul>
+<a name="edges0">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>edges0</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] edges0</pre>
+</li>
+</ul>
+<a name="edges">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>edges</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] edges</pre>
+</li>
+</ul>
+<a name="t0">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>t0</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a> t0</pre>
+</li>
+</ul>
+<a name="t">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>t</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a> t</pre>
+</li>
+</ul>
+<a name="r0">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>r0</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> r0</pre>
 </li>
 </ul>
 <a name="rMax">
@@ -344,6 +426,15 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 </dl>
 </li>
 </ul>
+<a name="getRelativeDisplacement-etomica.atom.IAtom-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRelativeDisplacement</h4>
+<pre>public&nbsp;double&nbsp;getRelativeDisplacement(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+</li>
+</ul>
 <a name="getAtomColor-etomica.atom.IAtom-">
 <!--   -->
 </a>
@@ -384,7 +475,7 @@ implements <a href="../../../etomica/graphics/ColorSchemeCollective.html" title=
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ConfigFromFileLAMMPSParam.html" title="class in etomica.freeenergy.npath"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
