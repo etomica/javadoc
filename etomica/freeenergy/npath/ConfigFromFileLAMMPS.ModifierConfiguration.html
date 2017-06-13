@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,12 +157,20 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#configIndex">configIndex</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#doPrevious">doPrevious</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#emptySfacData">emptySfacData</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#emptySfacDataInfo">emptySfacDataInfo</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#postAction">postAction</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected java.util.List&lt;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>&gt;</code></td>
@@ -220,26 +228,38 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#getDoPrevious--">getDoPrevious</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#getLabel--">getLabel</a></span>()</code>
 <div class="block">Returns a descriptive label of the property being modified.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#getValue--">getValue</a></span>()</code>
 <div class="block">Gets the current value of the property.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setColorScheme-etomica.freeenergy.npath.ConfigFromFileLAMMPS.ColorSchemeDeviation-">setColorScheme</a></span>(<a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html" title="class in etomica.freeenergy.npath">ConfigFromFileLAMMPS.ColorSchemeDeviation</a>&nbsp;colorScheme)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setDoPrevious-boolean-">setDoPrevious</a></span>(boolean&nbsp;doPrevious)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setPostAction-etomica.action.IAction-">setPostAction</a></span>(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;postAction)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setSfacPlotSink-etomica.data.IDataSink-">setSfacPlotSink</a></span>(<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;sfacPlotSink)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ModifierConfiguration.html#setValue-double-">setValue</a></span>(double&nbsp;newValue)</code>
 <div class="block">Sets the value of the property.</div>
@@ -351,10 +371,28 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <a name="colorScheme">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>colorScheme</h4>
 <pre>protected&nbsp;<a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.ColorSchemeDeviation.html" title="class in etomica.freeenergy.npath">ConfigFromFileLAMMPS.ColorSchemeDeviation</a> colorScheme</pre>
+</li>
+</ul>
+<a name="doPrevious">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doPrevious</h4>
+<pre>protected&nbsp;boolean doPrevious</pre>
+</li>
+</ul>
+<a name="postAction">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>postAction</h4>
+<pre>protected&nbsp;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a> postAction</pre>
 </li>
 </ul>
 </li>
@@ -387,6 +425,33 @@ implements <a href="../../../etomica/modifier/Modifier.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setPostAction-etomica.action.IAction-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPostAction</h4>
+<pre>public&nbsp;void&nbsp;setPostAction(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;postAction)</pre>
+</li>
+</ul>
+<a name="setDoPrevious-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoPrevious</h4>
+<pre>public&nbsp;void&nbsp;setDoPrevious(boolean&nbsp;doPrevious)</pre>
+</li>
+</ul>
+<a name="getDoPrevious--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDoPrevious</h4>
+<pre>public&nbsp;boolean&nbsp;getDoPrevious()</pre>
+</li>
+</ul>
 <a name="setColorScheme-etomica.freeenergy.npath.ConfigFromFileLAMMPS.ColorSchemeDeviation-">
 <!--   -->
 </a>
