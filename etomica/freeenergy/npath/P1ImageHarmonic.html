@@ -179,12 +179,12 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#gradient">gradient</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#nOffset">nOffset</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#offset">offset</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#partners">partners</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
@@ -251,12 +251,12 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getDUDW-etomica.atom.IAtomList-">getDUDW</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getNOffset--">getNOffset</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getOffset--">getOffset</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#getPartner-int-">getPartner</a></span>(int&nbsp;idx0)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -338,33 +338,6 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="w">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>w</h4>
-<pre>protected&nbsp;double w</pre>
-</li>
-</ul>
-<a name="boundary">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>boundary</h4>
-<pre>protected&nbsp;<a href="../../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
-</li>
-</ul>
-<a name="allAtoms">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>allAtoms</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> allAtoms</pre>
-</li>
-</ul>
 <a name="offset">
 <!--   -->
 </a>
@@ -392,13 +365,31 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] gradient</pre>
 </li>
 </ul>
-<a name="nOffset">
+<a name="w">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>nOffset</h4>
-<pre>protected&nbsp;int nOffset</pre>
+<h4>w</h4>
+<pre>protected&nbsp;double w</pre>
+</li>
+</ul>
+<a name="boundary">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>boundary</h4>
+<pre>protected&nbsp;<a href="../../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
+</li>
+</ul>
+<a name="allAtoms">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allAtoms</h4>
+<pre>protected&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> allAtoms</pre>
 </li>
 </ul>
 <a name="zeroF">
@@ -413,10 +404,19 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <a name="do21">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>do21</h4>
 <pre>protected&nbsp;boolean do21</pre>
+</li>
+</ul>
+<a name="partners">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>partners</h4>
+<pre>protected&nbsp;int[] partners</pre>
 </li>
 </ul>
 </li>
@@ -456,13 +456,13 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <pre>public&nbsp;void&nbsp;findNOffset(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a name="getNOffset--">
+<a name="getPartner-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNOffset</h4>
-<pre>public&nbsp;int&nbsp;getNOffset()</pre>
+<h4>getPartner</h4>
+<pre>public&nbsp;int&nbsp;getPartner(int&nbsp;idx0)</pre>
 </li>
 </ul>
 <a name="getOffset--">
@@ -474,15 +474,6 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;getOffset()</pre>
 </li>
 </ul>
-<a name="setW-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setW</h4>
-<pre>public&nbsp;void&nbsp;setW(double&nbsp;newW)</pre>
-</li>
-</ul>
 <a name="getW--">
 <!--   -->
 </a>
@@ -490,6 +481,15 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <li class="blockList">
 <h4>getW</h4>
 <pre>public&nbsp;double&nbsp;getW()</pre>
+</li>
+</ul>
+<a name="setW-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setW</h4>
+<pre>public&nbsp;void&nbsp;setW(double&nbsp;newW)</pre>
 </li>
 </ul>
 <a name="getDUDW-etomica.atom.IAtomList-">

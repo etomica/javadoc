@@ -176,8 +176,8 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomCoupled.html#fixOverlap">fixOverlap</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomCoupled.html#nOffset">nOffset</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomCoupled.html#p1">p1</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
@@ -329,7 +329,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomCoupled.html#setNOffset-int-">setNOffset</a></span>(int&nbsp;newOffset)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/MCMoveAtomCoupled.html#setP1-etomica.freeenergy.npath.P1ImageHarmonic-">setP1</a></span>(<a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a>&nbsp;p1)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -401,6 +401,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> translationVector</pre>
 </li>
 </ul>
+<a name="random">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>random</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
+</li>
+</ul>
 <a name="atom">
 <!--   -->
 </a>
@@ -455,15 +464,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <pre>protected&nbsp;boolean fixOverlap</pre>
 </li>
 </ul>
-<a name="random">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>random</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
-</li>
-</ul>
 <a name="space">
 <!--   -->
 </a>
@@ -482,13 +482,13 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <pre>protected&nbsp;<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> atoms</pre>
 </li>
 </ul>
-<a name="nOffset">
+<a name="p1">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>nOffset</h4>
-<pre>protected&nbsp;int nOffset</pre>
+<h4>p1</h4>
+<pre>protected&nbsp;<a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a> p1</pre>
 </li>
 </ul>
 </li>
@@ -547,13 +547,13 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setNOffset-int-">
+<a name="setP1-etomica.freeenergy.npath.P1ImageHarmonic-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setNOffset</h4>
-<pre>public&nbsp;void&nbsp;setNOffset(int&nbsp;newOffset)</pre>
+<h4>setP1</h4>
+<pre>public&nbsp;void&nbsp;setP1(<a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html" title="class in etomica.freeenergy.npath">P1ImageHarmonic</a>&nbsp;p1)</pre>
 </li>
 </ul>
 <a name="doTrial--">
