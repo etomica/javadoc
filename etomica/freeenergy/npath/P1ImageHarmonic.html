@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -292,13 +292,18 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setW-double-">setW</a></span>(double&nbsp;newW)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setPartner-int-int-">setPartner</a></span>(int&nbsp;idx0,
+          int&nbsp;idx1)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setZeroForce-boolean-">setZeroForce</a></span>(boolean&nbsp;doZeroForce)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setW-double-">setW</a></span>(double&nbsp;newW)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#setZeroForce-boolean-">setZeroForce</a></span>(boolean&nbsp;doZeroForce)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/P1ImageHarmonic.html#virial-etomica.atom.IAtomList-">virial</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
@@ -463,6 +468,16 @@ implements <a href="../../../etomica/potential/PotentialSoft.html" title="interf
 <li class="blockList">
 <h4>getPartner</h4>
 <pre>public&nbsp;int&nbsp;getPartner(int&nbsp;idx0)</pre>
+</li>
+</ul>
+<a name="setPartner-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPartner</h4>
+<pre>public&nbsp;void&nbsp;setPartner(int&nbsp;idx0,
+                       int&nbsp;idx1)</pre>
 </li>
 </ul>
 <a name="getOffset--">
