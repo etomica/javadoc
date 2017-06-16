@@ -185,11 +185,17 @@ extends java.lang.Object</pre>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/statmech/HardSphereFluid.html#Asolid-double-int-">Asolid</a></span>(double&nbsp;rho,
-      int&nbsp;n)</code>&nbsp;</td>
+      int&nbsp;n)</code>
+<div class="block">Returns the difference between absolute free energies between the given
+ densities for solid (FCC) hard spheres.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/statmech/HardSphereFluid.html#zFluid-double-">zFluid</a></span>(double&nbsp;rho)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/statmech/HardSphereFluid.html#zFluid-double-">zFluid</a></span>(double&nbsp;rho)</code>
+<div class="block">Computes Z using the following equation
+ Z = exp([Ni * rho^(i-1)] + rho^11 [Mi x^i]) where x = a^rho</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -276,6 +282,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>zFluid</h4>
 <pre>public static&nbsp;double&nbsp;zFluid(double&nbsp;rho)</pre>
+<div class="block">Computes Z using the following equation
+ Z = exp([Ni * rho^(i-1)] + rho^11 [Mi x^i]) where x = a^rho</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>rho</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Z</dd>
+</dl>
 </li>
 </ul>
 <a name="Asolid-double-">
@@ -288,6 +302,12 @@ extends java.lang.Object</pre>
 <div class="block">Returns the difference between absolute free energies between the given
  densities for solid (FCC) hard spheres.  The result is computed using
  numeric integration with n points.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>rho</code> - Density</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Absolute free energy difference</dd>
+</dl>
 </li>
 </ul>
 <a name="Asolid-double-int-">
@@ -298,6 +318,16 @@ extends java.lang.Object</pre>
 <h4>Asolid</h4>
 <pre>public static&nbsp;double&nbsp;Asolid(double&nbsp;rho,
                             int&nbsp;n)</pre>
+<div class="block">Returns the difference between absolute free energies between the given
+ densities for solid (FCC) hard spheres.  The result is computed using
+ numeric integration with n points.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>rho</code> - Density</dd>
+<dd><code>n</code> - number of points</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Absolute free energy difference</dd>
+</dl>
 </li>
 </ul>
 </li>
