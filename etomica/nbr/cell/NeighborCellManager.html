@@ -119,7 +119,10 @@ var activeTableTab = "activeTableTab";
 extends java.lang.Object
 implements <a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>, <a href="../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a>, <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</pre>
 <div class="block">Class that defines and manages construction and use of lattice of cells 
- for cell-based neighbor listing.</div>
+ for cell-based neighbor listing.
+
+ Before starting the simulation, it is necessary call makeMCMoveListener and
+ register the result with the MCMoveEventManager of the Integrator.</div>
 </li>
 </ul>
 </div>
