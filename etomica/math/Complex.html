@@ -109,8 +109,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Complex</span>
 extends java.lang.Object</pre>
-<div class="block">handle complex variables and relevant operations
- from Internet</div>
+<div class="block">Class that represents a complex number.
+ Handle complex variables and relevant operations.</div>
 </li>
 </ul>
 </div>
@@ -157,15 +157,15 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#chs--">chs</a></span>()</code>
-<div class="block">Negative of this complex number (chs stands for change sign).</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#changeSign--">changeSign</a></span>()</code>
+<div class="block">Negative of this complex number (changeSign stands for change sign).</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#conjugate--">conjugate</a></span>()</code>
 <div class="block">Complex conjugate of this Complex number
-    (the conjugate of x+i*y is x-i*y).</div>
+ (the conjugate of x+i*y is x-i*y).</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -177,8 +177,8 @@ extends java.lang.Object</pre>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#cosh--">cosh</a></span>()</code>
-<div class="block">Hyperbolic cosine of this Complex number 
-    (doesn't change this Complex number).</div>
+<div class="block">Hyperbolic cosine of this Complex number
+ (doesn't change this Complex number).</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -195,7 +195,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#imagine--">imagine</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#imaginary--">imaginary</a></span>()</code>
 <div class="block">Imaginary part of this Complex number,the y-coordinate in rectangular coordinates.</div>
 </td>
 </tr>
@@ -226,7 +226,7 @@ extends java.lang.Object</pre>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#real--">real</a></span>()</code>
-<div class="block">Real part of this Complex number, the x-coordinate in rectangular coordinates.return Re[z] where z is this Complex number.</div>
+<div class="block">Real part of this Complex number, the x-coordinate in rectangular coordinates.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -238,8 +238,8 @@ extends java.lang.Object</pre>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/Complex.html#sinh--">sinh</a></span>()</code>
-<div class="block">Hyperbolic sine of this Complex number 
-        (doesn't change this Complex number).</div>
+<div class="block">Hyperbolic sine of this Complex number
+ (doesn't change this Complex number).</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -319,16 +319,20 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>real</h4>
 <pre>public&nbsp;double&nbsp;real()</pre>
-<div class="block">Real part of this Complex number, the x-coordinate in rectangular coordinates.return Re[z] where z is this Complex number.</div>
+<div class="block">Real part of this Complex number, the x-coordinate in rectangular coordinates.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Re[z] where z is this Complex number.</dd>
+</dl>
 </li>
 </ul>
-<a name="imagine--">
+<a name="imaginary--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>imagine</h4>
-<pre>public&nbsp;double&nbsp;imagine()</pre>
+<h4>imaginary</h4>
+<pre>public&nbsp;double&nbsp;imaginary()</pre>
 <div class="block">Imaginary part of this Complex number,the y-coordinate in rectangular coordinates.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -358,7 +362,7 @@ extends java.lang.Object</pre>
 <h4>arg</h4>
 <pre>public&nbsp;double&nbsp;arg()</pre>
 <div class="block">Argument of this Complex number, the angle in radians with the x-axis in polar coordinates.
-    The argument or phase of z is the angle of the radius with the positive real axis, and is written as arg(z)</div>
+ The argument or phase of z is the angle of the radius with the positive real axis, and is written as arg(z)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>arg(z) where z is this Complex number.</dd>
@@ -373,7 +377,7 @@ extends java.lang.Object</pre>
 <h4>conjugate</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;conjugate()</pre>
 <div class="block">Complex conjugate of this Complex number
-    (the conjugate of x+i*y is x-i*y).</div>
+ (the conjugate of x+i*y is x-i*y).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>z-bar where z is this Complex number.</dd>
@@ -388,7 +392,7 @@ extends java.lang.Object</pre>
 <h4>plus</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;plus(<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;w)</pre>
 <div class="block">Addition of Complex numbers (doesn't change this Complex number).
-    <br>(x+i*y) + (s+i*t) = (x+s)+i*(y+t).</div>
+ <br>(x+i*y) + (s+i*t) = (x+s)+i*(y+t).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>w</code> - is the number to add.</dd>
@@ -437,7 +441,7 @@ extends java.lang.Object</pre>
 <h4>div</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;div(<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;w)</pre>
 <div class="block">Division of Complex numbers (doesn't change this Complex number).
-    (x+i*y)/(s+i*t) = ((x*s+y*t) + i*(y*s-y*t)) / (s^2+t^2)</div>
+ (x+i*y)/(s+i*t) = ((x*s+y*t) + i*(y*s-y*t)) / (s^2+t^2)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>w</code> - is the number to divide by</dd>
@@ -468,8 +472,8 @@ extends java.lang.Object</pre>
 <h4>log</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;log()</pre>
 <div class="block">Principal branch of the Complex logarithm of this Complex number.
-    (doesn't change this Complex number).
-    The principal branch is the branch with -pi < arg <= pi.</div>
+ (doesn't change this Complex number).
+ The principal branch is the branch with -pi < arg <= pi.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>log(z) where z is this Complex number.</dd>
@@ -484,8 +488,8 @@ extends java.lang.Object</pre>
 <h4>sqrt</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;sqrt()</pre>
 <div class="block">Complex square root (doesn't change this complex number).
-    Computes the principal branch of the square root, which 
-    is the value with 0 <= arg < pi.</div>
+ Computes the principal branch of the square root, which
+ is the value with 0 <= arg < pi.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>sqrt(z) where z is this Complex number.</dd>
@@ -515,7 +519,7 @@ extends java.lang.Object</pre>
 <h4>cos</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;cos()</pre>
 <div class="block">Cosine of this Complex number (doesn't change this Complex number).
-    cos(z) = (exp(i*z)+exp(-i*z))/ 2.</div>
+ cos(z) = (exp(i*z)+exp(-i*z))/ 2.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>cos(z) where z is this Complex number.</dd>
@@ -529,9 +533,9 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>sinh</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;sinh()</pre>
-<div class="block">Hyperbolic sine of this Complex number 
-        (doesn't change this Complex number).
-        sinh(z) = (exp(z)-exp(-z))/2.</div>
+<div class="block">Hyperbolic sine of this Complex number
+ (doesn't change this Complex number).
+ sinh(z) = (exp(z)-exp(-z))/2.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>sinh(z) where z is this Complex number.</dd>
@@ -545,9 +549,9 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>cosh</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;cosh()</pre>
-<div class="block">Hyperbolic cosine of this Complex number 
-    (doesn't change this Complex number).
-        cosh(z) = (exp(z) + exp(-z)) / 2.</div>
+<div class="block">Hyperbolic cosine of this Complex number
+ (doesn't change this Complex number).
+ cosh(z) = (exp(z) + exp(-z)) / 2.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>cosh(z) where z is this Complex number.</dd>
@@ -562,24 +566,24 @@ extends java.lang.Object</pre>
 <h4>tan</h4>
 <pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;tan()</pre>
 <div class="block">Tangent of this Complex number (doesn't change this Complex number).
-    tan(z) = sin(z)/cos(z).</div>
+ tan(z) = sin(z)/cos(z).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>tan(z) where z is this Complex number.</dd>
 </dl>
 </li>
 </ul>
-<a name="chs--">
+<a name="changeSign--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>chs</h4>
-<pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;chs()</pre>
-<div class="block">Negative of this complex number (chs stands for change sign). 
-    This produces a new Complex number and doesn't change 
-    this Complex number.
-    <br>-(x+i*y) = -x-i*y.</div>
+<h4>changeSign</h4>
+<pre>public&nbsp;<a href="../../etomica/math/Complex.html" title="class in etomica.math">Complex</a>&nbsp;changeSign()</pre>
+<div class="block">Negative of this complex number (changeSign stands for change sign).
+ This produces a new Complex number and doesn't change
+ this Complex number.
+ <br>-(x+i*y) = -x-i*y.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>-z where z is this Complex number.</dd>

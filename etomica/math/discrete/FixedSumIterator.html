@@ -133,7 +133,9 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/discrete/FixedSumIterator.html#FixedSumIterator-int-">FixedSumIterator</a></span>(int&nbsp;arrayLength)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/math/discrete/FixedSumIterator.html#FixedSumIterator-int-">FixedSumIterator</a></span>(int&nbsp;arrayLength)</code>
+<div class="block">Creates a FixedSumIterator with the given array length.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -156,9 +158,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/discrete/FixedSumIterator.html#next--">next</a></span>()</code>
-<div class="block">Returns the next iterate, or null if iterator has expired.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/math/discrete/FixedSumIterator.html#next--">next</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -201,6 +201,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>FixedSumIterator</h4>
 <pre>public&nbsp;FixedSumIterator(int&nbsp;arrayLength)</pre>
+<div class="block">Creates a FixedSumIterator with the given array length. Sum still needs to be set and reset called.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arrayLength</code> - the length of the generated arrays.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -211,6 +216,15 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="main-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>main</h4>
+<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
+</li>
+</ul>
 <a name="reset--">
 <!--   -->
 </a>
@@ -230,25 +244,23 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;void&nbsp;setSum(int&nbsp;sum)</pre>
 <div class="block">Specifies the target sum that defines the iterates.  Iterator is
  left in an unset state, so reset is required before invoking next().</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sum</code> - the fixed target sum.</dd>
+</dl>
 </li>
 </ul>
 <a name="next--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>next</h4>
 <pre>public&nbsp;int[]&nbsp;next()</pre>
-<div class="block">Returns the next iterate, or null if iterator has expired.</div>
-</li>
-</ul>
-<a name="main-java.lang.String:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>main</h4>
-<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the next iterate, or null if iterator has expired.</dd>
+</dl>
 </li>
 </ul>
 </li>

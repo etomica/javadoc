@@ -146,9 +146,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#nbin">nbin</a></span></code>
-<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#nbin">nbin</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,16 +188,13 @@ extends java.lang.Object</pre>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#erfc-double-">erfc</a></span>(double&nbsp;x)</code>
-<div class="block">consider using org.apache.commons.math3.special.Erf.erfc()
- this method is substantially faster (~10x - 100x), but only accurate to ~10^-7
- 
- Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.</div>
+<div class="block">Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#factorial-int-">factorial</a></span>(int&nbsp;n)</code>
-<div class="block">The factorial function, n!</div>
+<div class="block">The factorial function, n! Will overflow with any input value greater than 20.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -216,7 +211,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#lnFactorial-int-">lnFactorial</a></span>(int&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#lnFactorial-int-">lnFactorial</a></span>(int&nbsp;n)</code>
+<div class="block">The log of the factorial function, ln(n!).</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static double</code></td>
@@ -245,7 +242,9 @@ extends java.lang.Object</pre>
         int&nbsp;j3,
         int&nbsp;m1,
         int&nbsp;m2,
-        int&nbsp;m3)</code>&nbsp;</td>
+        int&nbsp;m3)</code>
+<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -303,15 +302,6 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>nbin</h4>
 <pre>protected static&nbsp;int nbin</pre>
-<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.
- Reference for code that is commented out: (this code is not much robust)
- 1. http://mathworld.wolfram.com/Wigner3j-Symbol.html
- 2. http://massey.dur.ac.uk/umk/files/python/wigner.py
- Robust code taken from Bartolomei's pes-mrci.f file located at
- /usr/users/rsubrama/Desktop/Acads/Phd/oxygen/Bartolomei2010/
- 
- Currently only works for all 6 inputs being integers and not
- half integers</div>
 </li>
 </ul>
 <a name="binom">
@@ -338,11 +328,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>erfc</h4>
 <pre>public static&nbsp;double&nbsp;erfc(double&nbsp;x)</pre>
-<div class="block">consider using org.apache.commons.math3.special.Erf.erfc()
- this method is substantially faster (~10x - 100x), but only accurate to ~10^-7
- 
- Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.
- Defined for x >= 0</div>
+<div class="block">Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.
+ Defined for x >= 0
+
+ Consider using <code>Erf.erfc(double)</code> if more precision is required.
+ This method is substantially faster (~10x - 100x), but only accurate to ~10^-7.</div>
 </li>
 </ul>
 <a name="factorial-int-">
@@ -352,8 +342,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>factorial</h4>
 <pre>public static&nbsp;long&nbsp;factorial(int&nbsp;n)</pre>
-<div class="block">The factorial function, n!</div>
+<div class="block">The factorial function, n! Will overflow with any input value greater than 20.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - an integer greater than or equal to 0</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the factorial of n</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if n < 0</dd>
 </dl>
@@ -366,6 +360,15 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>lnFactorial</h4>
 <pre>public static&nbsp;double&nbsp;lnFactorial(int&nbsp;n)</pre>
+<div class="block">The log of the factorial function, ln(n!). Will not overflow even if n! would be large.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - an integer greater than or equal to 0</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the natural logarithm of the factorial of n.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if n < 0</dd>
+</dl>
 </li>
 </ul>
 <a name="sgn-double-">
@@ -388,6 +391,12 @@ extends java.lang.Object</pre>
 <div class="block">Returns the ln(gamma), the natural logarithm of the gamma function.
  Lanczos approximation, with precision ~15 digits
  coefficients from GSL (GNU Scientific Library) with g=7</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - a non-negative number.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the natural logarithm of the gamma function of x.</dd>
+</dl>
 </li>
 </ul>
 <a name="gamma-double-">
@@ -452,6 +461,19 @@ extends java.lang.Object</pre>
                               int&nbsp;m1,
                               int&nbsp;m2,
                               int&nbsp;m3)</pre>
+<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.
+ Reference for code that is commented out: (this code is not much robust)
+ 1. http://mathworld.wolfram.com/Wigner3j-Symbol.html
+ 2. http://massey.dur.ac.uk/umk/files/python/wigner.py
+ Robust code taken from Bartolomei's pes-mrci.f file located at
+ /usr/users/rsubrama/Desktop/Acads/Phd/oxygen/Bartolomei2010/
+
+ Currently only works for all 6 inputs being integers and not
+ half integers</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>double w3j</dd>
+</dl>
 </li>
 </ul>
 <a name="pascal--">
