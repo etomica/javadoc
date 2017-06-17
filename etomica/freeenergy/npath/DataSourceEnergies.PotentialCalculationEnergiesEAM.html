@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -98,10 +98,15 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../etomica/potential/PotentialCalculationEnergySum.html" title="class in etomica.potential">etomica.potential.PotentialCalculationEnergySum</a></li>
+<li>
+<ul class="inheritance">
 <li><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">etomica.freeenergy.npath.DataSourceEnergies.PotentialCalculationEnergies</a></li>
 <li>
 <ul class="inheritance">
 <li>etomica.freeenergy.npath.DataSourceEnergies.PotentialCalculationEnergiesEAM</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -112,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></dd>
+<dd><a href="../../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>, <a href="../../../etomica/potential/PotentialCalculationMolecular.html" title="interface in etomica.potential">PotentialCalculationMolecular</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -122,6 +127,10 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public static class <span class="typeNameLabel">DataSourceEnergies.PotentialCalculationEnergiesEAM</span>
 extends <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../serialized-form.html#etomica.freeenergy.npath.DataSourceEnergies.PotentialCalculationEnergiesEAM">Serialized Form</a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -151,6 +160,13 @@ extends <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialC
 </a>
 <h3>Fields inherited from class&nbsp;etomica.freeenergy.npath.<a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></h3>
 <code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#sum1">sum1</a>, <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#sum2">sum2</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.etomica.potential.PotentialCalculationEnergySum">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialCalculationEnergySum.html" title="class in etomica.potential">PotentialCalculationEnergySum</a></h3>
+<code><a href="../../../etomica/potential/PotentialCalculationEnergySum.html#debug">debug</a>, <a href="../../../etomica/potential/PotentialCalculationEnergySum.html#sum">sum</a></code></li>
 </ul>
 </li>
 </ul>
@@ -185,11 +201,19 @@ extends <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialC
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergiesEAM.html#getSum2--">getSum2</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergiesEAM.html#getSum--">getSum</a></span>()</code>
+<div class="block">Returns the current value of the energy sum.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergiesEAM.html#getSum2--">getSum2</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergiesEAM.html#reset--">reset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergiesEAM.html#zeroSum--">zeroSum</a></span>()</code>
+<div class="block">Sets the energy sum to zero, typically to begin a new energy-sum calculation.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -198,6 +222,13 @@ extends <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialC
 </a>
 <h3>Methods inherited from class&nbsp;etomica.freeenergy.npath.<a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></h3>
 <code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a>, <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#getSum1--">getSum1</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.potential.PotentialCalculationEnergySum">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialCalculationEnergySum.html" title="class in etomica.potential">PotentialCalculationEnergySum</a></h3>
+<code><a href="../../../etomica/potential/PotentialCalculationEnergySum.html#doCalculation-etomica.molecule.IMoleculeList-etomica.potential.IPotentialMolecular-">doCalculation</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -254,29 +285,46 @@ extends <a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialC
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="reset--">
+<a name="zeroSum--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset()</pre>
+<h4>zeroSum</h4>
+<pre>public&nbsp;void&nbsp;zeroSum()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialCalculationEnergySum.html#zeroSum--">PotentialCalculationEnergySum</a></code></span></div>
+<div class="block">Sets the energy sum to zero, typically to begin a new energy-sum calculation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></code></dd>
+<dd><code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#zeroSum--">zeroSum</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></code></dd>
 </dl>
 </li>
 </ul>
 <a name="getSum2--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getSum2</h4>
 <pre>public&nbsp;double&nbsp;getSum2()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#getSum2--">getSum2</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSum--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getSum</h4>
+<pre>public&nbsp;double&nbsp;getSum()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/potential/PotentialCalculationEnergySum.html#getSum--">PotentialCalculationEnergySum</a></code></span></div>
+<div class="block">Returns the current value of the energy sum.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html#getSum--">getSum</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/freeenergy/npath/DataSourceEnergies.PotentialCalculationEnergies.html" title="class in etomica.freeenergy.npath">DataSourceEnergies.PotentialCalculationEnergies</a></code></dd>
 </dl>
 </li>
 </ul>
