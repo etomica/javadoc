@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -110,15 +110,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">LJ</span>
-extends <a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a>
-implements java.io.Serializable</pre>
+extends <a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a></pre>
 <div class="block">Lennard-Jones system of units, such that all quantities are made
  dimensionless with respect to a characteristic size (sigma), energy (epsilon)
  and mass. Values of sigma, epsilon and mass reside with the instance of
@@ -128,10 +123,6 @@ implements java.io.Serializable</pre>
  
  Values of sigma, epsilon, and mass are specified in simulation units.
  Default values are each 1.0.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.units.systems.LJ">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -219,7 +210,7 @@ implements java.io.Serializable</pre>
   double&nbsp;epsilon,
   double&nbsp;mass,
   boolean&nbsp;unicodeSymbols)</code>
-<div class="block">Constructs LJ unit system with given values of sigma, epsilon, mass.</div>
+<div class="block">Constructs LJ unit system with given values of sigma, epsilon, mass, given in simulation units.</div>
 </td>
 </tr>
 </table>
@@ -291,37 +282,41 @@ implements java.io.Serializable</pre>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#pressure--">pressure</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#power--">power</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#quantity--">quantity</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#pressure--">pressure</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setEpsilon-double-">setEpsilon</a></span>(double&nbsp;e)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#quantity--">quantity</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setMass-double-">setMass</a></span>(double&nbsp;m)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setEpsilon-double-">setEpsilon</a></span>(double&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setSigma-double-">setSigma</a></span>(double&nbsp;s)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setMass-double-">setMass</a></span>(double&nbsp;m)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#temperature--">temperature</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#setSigma-double-">setSigma</a></span>(double&nbsp;s)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#time--">time</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#temperature--">temperature</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#viscosity--">viscosity</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#time--">time</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#viscosity--">viscosity</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/LJ.html#volume--">volume</a></span>()</code>&nbsp;</td>
 </tr>
@@ -410,9 +405,14 @@ implements java.io.Serializable</pre>
           double&nbsp;epsilon,
           double&nbsp;mass,
           boolean&nbsp;unicodeSymbols)</pre>
-<div class="block">Constructs LJ unit system with given values of sigma, epsilon, mass.</div>
+<div class="block">Constructs LJ unit system with given values of sigma, epsilon, mass, given in simulation units.
+ Unit classes can be used to convert to simulation units if needed. For example, if epsilon is
+ given as epsilon/kB in units of Kelvin, the argument would take Kelvin.UNIT.toSim(epsilon).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sigma</code> - LJ length parameter</dd>
+<dd><code>epsilon</code> - LJ energy parameter</dd>
+<dd><code>mass</code> - characteristic mass, nominally the mass of a LJ atom</dd>
 <dd><code>unicodeSymbols</code> - if true, Unit symbols will be constructed using unicode
             expressions for sigma and epsilon and other symbols; otherwise
             substitutes are used.</dd>
@@ -621,6 +621,19 @@ implements java.io.Serializable</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/units/systems/UnitSystem.html#energy--">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="power--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>power</h4>
+<pre>public&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;power()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/units/systems/UnitSystem.html#power--">power</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a></code></dd>
 </dl>
 </li>
 </ul>
