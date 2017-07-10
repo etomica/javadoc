@@ -212,10 +212,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">IntegratorMC</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
             <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-            double&nbsp;temperature)</code>
-<div class="block">Constructs integrator and establishes PotentialMaster instance that
- will be used by moves to calculate the energy.</div>
-</td>
+            double&nbsp;temperature)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-">IntegratorMC</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
@@ -237,17 +234,14 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#doStepInternal--">doStepInternal</a></span>()</code>
-<div class="block">Method to select and perform an elementary Monte Carlo move.</div>
+<div class="block">Method to select and perform an elementary Monte Carlo move and decide acceptance.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#getMoveEventManager--">getMoveEventManager</a></span>()</code>
-<div class="block">Adds a listener that will be notified when a MCMove trial is attempted
- and when it is completed.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#getMoveEventManager--">getMoveEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a></code></td>
@@ -255,7 +249,10 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#notifyEnergyChange-double-">notifyEnergyChange</a></span>(double&nbsp;energyChange)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#notifyEnergyChange-double-">notifyEnergyChange</a></span>(double&nbsp;energyChange)</code>
+<div class="block">Notifies the IntegratorMC that the energy changed allowing
+ the internal potential energy field to be updated.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -266,8 +263,8 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
-<div class="block">Invokes superclass method and informs all MCMoves about the new box.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
+<div class="block">Performs activities needed to set up integrator to work on given box.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -310,6 +307,15 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="dodebug">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dodebug</h4>
+<pre>public static&nbsp;boolean dodebug</pre>
+</li>
+</ul>
 <a name="random">
 <!--   -->
 </a>
@@ -317,15 +323,6 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <li class="blockList">
 <h4>random</h4>
 <pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
-</li>
-</ul>
-<a name="moveManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>moveManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a> moveManager</pre>
 </li>
 </ul>
 <a name="moveEventManager">
@@ -337,13 +334,13 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <pre>protected final&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a> moveEventManager</pre>
 </li>
 </ul>
-<a name="dodebug">
+<a name="moveManager">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>dodebug</h4>
-<pre>public static&nbsp;boolean dodebug</pre>
+<h4>moveManager</h4>
+<pre>protected&nbsp;<a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a> moveManager</pre>
 </li>
 </ul>
 </li>
@@ -362,6 +359,11 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <h4>IntegratorMC</h4>
 <pre>public&nbsp;IntegratorMC(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                     <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sim</code> - Simulation where this integrator is used</dd>
+<dd><code>potentialMaster</code> - PotentialMaster instance used by moves to calculate the energy</dd>
+</dl>
 </li>
 </ul>
 <a name="IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">
@@ -373,8 +375,12 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <pre>public&nbsp;IntegratorMC(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                     <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                     double&nbsp;temperature)</pre>
-<div class="block">Constructs integrator and establishes PotentialMaster instance that
- will be used by moves to calculate the energy.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>potentialMaster</code> - PotentialMaster instance used by moves to calculate the energy</dd>
+<dd><code>random</code> - random number generator used to select moves and decide acceptance</dd>
+<dd><code>temperature</code> - temperature of the ensemble</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -417,13 +423,14 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</pre>
-<div class="block">Invokes superclass method and informs all MCMoves about the new box.
- Moves are not notified if they have a number of boxs different from
- the number of boxs handled by the integrator.</div>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">IntegratorBox</a></code></span></div>
+<div class="block">Performs activities needed to set up integrator to work on given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box to set</dd>
 </dl>
 </li>
 </ul>
@@ -433,13 +440,10 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>doStepInternal</h4>
-<pre>public&nbsp;void&nbsp;doStepInternal()</pre>
-<div class="block">Method to select and perform an elementary Monte Carlo move. The type of
+<pre>protected&nbsp;void&nbsp;doStepInternal()</pre>
+<div class="block">Method to select and perform an elementary Monte Carlo move and decide acceptance. The type of
  move performed is chosen from all MCMoves that have been added to the
- integrator. Each MCMove has associated with it a (unnormalized)
- frequency, which when weighed against the frequencies given the other
- MCMoves, determines the likelihood that the move is selected. After
- completing move, fires an MCMove event if there are any listeners.</div>
+ integrator. After completing move, fires an MCMove event if there are any listeners.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/integrator/Integrator.html#doStepInternal--">doStepInternal</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></dd>
@@ -453,6 +457,12 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <li class="blockList">
 <h4>notifyEnergyChange</h4>
 <pre>public&nbsp;void&nbsp;notifyEnergyChange(double&nbsp;energyChange)</pre>
+<div class="block">Notifies the IntegratorMC that the energy changed allowing
+ the internal potential energy field to be updated.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>energyChange</code> - Change in the energy</dd>
+</dl>
 </li>
 </ul>
 <a name="reset--">
@@ -477,8 +487,10 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <li class="blockList">
 <h4>getMoveEventManager</h4>
 <pre>public&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>&nbsp;getMoveEventManager()</pre>
-<div class="block">Adds a listener that will be notified when a MCMove trial is attempted
- and when it is completed.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>moveEventManager that fires move events</dd>
+</dl>
 </li>
 </ul>
 </li>
