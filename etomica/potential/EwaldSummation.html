@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -229,42 +229,38 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#nRealShells">nRealShells</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#numMolecules">numMolecules</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#rAB">rAB</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#rCutRealES">rCutRealES</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#rCutSquared">rCutSquared</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#secondDerivative">secondDerivative</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#sinkrj">sinkrj</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#space">space</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#sqrtPI">sqrtPI</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#tempTensorkk">tempTensorkk</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#volume">volume</a></span></code>&nbsp;</td>
 </tr>
@@ -362,35 +358,39 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#setAlpha-double-">setAlpha</a></span>(double&nbsp;alpha)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Informs the potential of the box on which it acts so that it can
  properly consider the boundaries.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#setRCut-double-">setRCut</a></span>(double&nbsp;newRCutRealES)</code>
 <div class="block">Sets a new value of rCutRealES
  This will not alter values of alpha or nRealShells!</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#uBondCorr--">uBondCorr</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#uFourier--">uFourier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#uReal--">uReal</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#uSelf--">uSelf</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/EwaldSummation.html#virial-etomica.atom.IAtomList-">virial</a></span>(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code>&nbsp;</td>
 </tr>
@@ -449,7 +449,7 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>alpha</h4>
-<pre>protected final&nbsp;double alpha</pre>
+<pre>protected&nbsp;double alpha</pre>
 </li>
 </ul>
 <a name="alpha2">
@@ -458,7 +458,7 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>alpha2</h4>
-<pre>protected final&nbsp;double alpha2</pre>
+<pre>protected&nbsp;double alpha2</pre>
 </li>
 </ul>
 <a name="alpha3">
@@ -467,7 +467,7 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>alpha3</h4>
-<pre>protected final&nbsp;double alpha3</pre>
+<pre>protected&nbsp;double alpha3</pre>
 </li>
 </ul>
 <a name="boxSize">
@@ -522,15 +522,6 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <li class="blockList">
 <h4>moleculeList</h4>
 <pre>protected final&nbsp;<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a> moleculeList</pre>
-</li>
-</ul>
-<a name="numMolecules">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numMolecules</h4>
-<pre>protected final&nbsp;int numMolecules</pre>
 </li>
 </ul>
 <a name="gradient">
@@ -752,6 +743,15 @@ implements <a href="../../etomica/potential/PotentialSoft.html" title="interface
 <li class="blockList">
 <h4>uBondCorr</h4>
 <pre>public&nbsp;double&nbsp;uBondCorr()</pre>
+</li>
+</ul>
+<a name="setAlpha-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAlpha</h4>
+<pre>public&nbsp;void&nbsp;setAlpha(double&nbsp;alpha)</pre>
 </li>
 </ul>
 <a name="getRange--">
