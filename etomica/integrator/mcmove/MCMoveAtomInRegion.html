@@ -383,8 +383,10 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="clas
 <li class="blockList">
 <h4>doTrial</h4>
 <pre>public&nbsp;boolean&nbsp;doTrial()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#doTrial--">MCMoveAtom</a></code></span></div>
-<div class="block">Method to perform trial move.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#doTrial--">MCMove</a></code></span></div>
+<div class="block">Method to perform trial move. Returns false if the trial could not be
+ attempted, for example if there were no molecules in the box and the
+ trial is designed to displace an atom; returns true otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html#doTrial--">doTrial</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>

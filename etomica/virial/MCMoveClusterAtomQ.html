@@ -220,7 +220,8 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomQ.html#acceptNotify--">acceptNotify</a></span>()</code>
-<div class="block">Method called by IntegratorMC in the event that the most recent trial is accepted.</div>
+<div class="block">Method called by IntegratorMC in the event that the most recent trial is
+ accepted.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -261,13 +262,15 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/AtomSource.html" title="interface in etomica.atom">AtomSource</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomQ.html#getAtomSource--">getAtomSource</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomQ.html#getAtomSource--">getAtomSource</a></span>()</code>
+<div class="block">The AtomSource is used to select the atom at the beginning of the trial</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomQ.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
+<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi),
+ for the states encountered before (i) and after (j) the most recent call to
  doTrial.</div>
 </td>
 </tr>
@@ -278,8 +281,8 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomQ.html#rejectNotify--">rejectNotify</a></span>()</code>
-<div class="block">Method called by IntegratorMC in the event that the most recent trial move is
- rejected.</div>
+<div class="block">Method called by IntegratorMC in the event that the most recent trial
+ move is rejected.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -382,8 +385,10 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>doTrial</h4>
 <pre>public&nbsp;boolean&nbsp;doTrial()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#doTrial--">MCMoveAtom</a></code></span></div>
-<div class="block">Method to perform trial move.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#doTrial--">MCMove</a></code></span></div>
+<div class="block">Method to perform trial move. Returns false if the trial could not be
+ attempted, for example if there were no molecules in the box and the
+ trial is designed to displace an atom; returns true otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#doTrial--">doTrial</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
@@ -414,8 +419,8 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <h4>getB</h4>
 <pre>public&nbsp;double&nbsp;getB()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getB--">MCMoveAtom</a></code></span></div>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
+<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi),
+ for the states encountered before (i) and after (j) the most recent call to
  doTrial.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -432,7 +437,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <pre>public&nbsp;double&nbsp;getA()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getA--">MCMoveAtom</a></code></span></div>
 <div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial(). 
+ states encountered before (i) and after (j) the most recent call to doTrial().
  Tij is the probability that this move would generate state j from state i, and
  Tji is the probability that a subsequent call to doTrial would return to state i
  from state j.</div>
@@ -449,10 +454,10 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>rejectNotify</h4>
 <pre>public&nbsp;void&nbsp;rejectNotify()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#rejectNotify--">MCMoveAtom</a></code></span></div>
-<div class="block">Method called by IntegratorMC in the event that the most recent trial move is
- rejected.  This method should cause the system to be restored to the condition
- before the most recent call to doTrial.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#rejectNotify--">MCMove</a></code></span></div>
+<div class="block">Method called by IntegratorMC in the event that the most recent trial
+ move is rejected. This method should cause the system to be restored to
+ the condition before the most recent call to doTrial.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#rejectNotify--">rejectNotify</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
@@ -466,8 +471,9 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>acceptNotify</h4>
 <pre>public&nbsp;void&nbsp;acceptNotify()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">MCMoveAtom</a></code></span></div>
-<div class="block">Method called by IntegratorMC in the event that the most recent trial is accepted.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#acceptNotify--">MCMove</a></code></span></div>
+<div class="block">Method called by IntegratorMC in the event that the most recent trial is
+ accepted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">acceptNotify</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
@@ -507,11 +513,13 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>getAtomSource</h4>
 <pre>public&nbsp;<a href="../../etomica/atom/AtomSource.html" title="interface in etomica.atom">AtomSource</a>&nbsp;getAtomSource()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">MCMoveAtom</a></code></span></div>
+<div class="block">The AtomSource is used to select the atom at the beginning of the trial</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns the atomSource.</dd>
+<dd>the atomSource.</dd>
 </dl>
 </li>
 </ul>
