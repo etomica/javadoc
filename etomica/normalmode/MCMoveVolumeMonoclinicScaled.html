@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -318,60 +318,54 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getChi-double-">getChi</a></span>(double&nbsp;temp)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getPressure--">getPressure</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getPressureDimension--">getPressureDimension</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#getULatFunction--">getULatFunction</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#rejectNotify--">rejectNotify</a></span>()</code>
 <div class="block">Method called by IntegratorMC in the event that the most recent trial
  move is rejected.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setInflater-etomica.action.BoxInflate-">setInflater</a></span>(<a href="../../etomica/action/BoxInflate.html" title="class in etomica.action">BoxInflate</a>&nbsp;newInflate)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setLatticeBox-etomica.box.Box-">setLatticeBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newLatticeBox)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setPressure-double-">setPressure</a></span>(double&nbsp;p)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;newTemperature)</code>
 <div class="block">Sets the temperature being sampled.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeMonoclinicScaled.html#setULatFunction-etomica.math.function.Function-">setULatFunction</a></span>(<a href="../../etomica/math/function/Function.html" title="interface in etomica.math.function">Function</a>&nbsp;newULatFunction)</code>
 <div class="block">Sets a function that returns the lattice energy for a given density.</div>
@@ -732,37 +726,23 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <pre>public&nbsp;void&nbsp;doTransform()</pre>
 </li>
 </ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temp)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getB--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temp</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

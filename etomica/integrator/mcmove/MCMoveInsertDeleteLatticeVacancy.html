@@ -374,15 +374,11 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getA--">getA</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getB--">getB</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
@@ -433,7 +429,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getChi-double-">getChi</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveInsertDelete">
@@ -867,14 +863,6 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <li class="blockList">
 <h4>getA</h4>
 <pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="getB--">
@@ -884,14 +872,6 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <li class="blockList">
 <h4>getB</h4>
 <pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getB--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="myAcceptNotify--">

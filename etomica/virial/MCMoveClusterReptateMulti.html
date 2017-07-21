@@ -176,9 +176,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#MCMoveClusterReptateMulti-etomica.potential.PotentialMaster-etomica.util.random.IRandom-int-">MCMoveClusterReptateMulti</a></span>(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                          <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-                         int&nbsp;nAtoms)</code>
-<div class="block">Constructor for MCMoveAtomMulti.</div>
-</td>
+                         int&nbsp;nAtoms)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#MCMoveClusterReptateMulti-etomica.simulation.Simulation-etomica.potential.PotentialMaster-int-">MCMoveClusterReptateMulti</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
@@ -223,14 +221,12 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#getB--">getB</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterReptateMulti.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -327,14 +323,6 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in
 <pre>public&nbsp;MCMoveClusterReptateMulti(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                                  <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                                  int&nbsp;nAtoms)</pre>
-<div class="block">Constructor for MCMoveAtomMulti.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>parentIntegrator</code> - </dd>
-<dd><code>nAtoms</code> - number of atoms to move in a trial.  Number of atoms in
- box should be at least one greater than this value (greater
- because first atom is never moved)</dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -436,30 +424,25 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBox.html" title="class in
 <li class="blockList">
 <h4>getB</h4>
 <pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
-</dl>
 </li>
 </ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

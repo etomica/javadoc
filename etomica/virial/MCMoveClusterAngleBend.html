@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -288,43 +288,37 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#energyChange--">energyChange</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#getAtomSource--">getAtomSource</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#rejectNotify--">rejectNotify</a></span>()</code>
 <div class="block">Method called by IntegratorMC in the event that the most recent trial
  move is rejected.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></span>(<a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAngleBend.html#transform-etomica.molecule.IMolecule-double-">transform</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule,
          double&nbsp;dt)</code>&nbsp;</td>
@@ -622,37 +616,23 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 </dl>
 </li>
 </ul>
-<a name="getB--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-dependent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getA--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html" title="class in etomica.integrator.mcmove">MCMove</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>
@@ -704,7 +684,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="clas
 <pre>public&nbsp;void&nbsp;setMoleculeSource(<a href="../../etomica/molecule/MoleculeSource.html" title="interface in etomica.molecule">MoleculeSource</a>&nbsp;source)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>atomSource</code> - The atomSource to set.</dd>
+<dd><code>source</code> - The atomSource to set.</dd>
 </dl>
 </li>
 </ul>

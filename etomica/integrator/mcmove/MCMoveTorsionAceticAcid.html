@@ -234,10 +234,8 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveTorsionAceticAcid.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveTorsionAceticAcid.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -253,7 +251,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -376,20 +374,23 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="
 </dl>
 </li>
 </ul>
-<a name="getB--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">MCMoveMolecule</a></code></span></div>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

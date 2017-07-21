@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,6 +178,10 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#random">random</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#temperature">temperature</a></span></code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.integrator.Integrator">
@@ -254,29 +258,39 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#getMoveManager--">getMoveManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#getTemperature--">getTemperature</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#removeIntegrator-etomica.integrator.Integrator-">removeIntegrator</a></span>(<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</code>
 <div class="block">Removes the given integrator from the list of integrators.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#reset--">reset</a></span>()</code>
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#setGlobalMoveInterval-double-">setGlobalMoveInterval</a></span>(double&nbsp;newGlobalMoveInterval)</code>
 <div class="block">Sets the average interval between box-swap trials.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#setMoveManager-etomica.integrator.mcmove.MCMoveManager-">setMoveManager</a></span>(<a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a>&nbsp;newMoveManager)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;temperature)</code>
+<div class="block">Sets the temperature for this integrator if that's relevant</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#setup--">setup</a></span>()</code>
 <div class="block">Perform initialization.</div>
@@ -311,6 +325,24 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="eventManager">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>eventManager</h4>
+<pre>protected final&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a> eventManager</pre>
+</li>
+</ul>
+<a name="random">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>random</h4>
+<pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
+</li>
+</ul>
 <a name="globalMoveProbability">
 <!--   -->
 </a>
@@ -327,15 +359,6 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <li class="blockList">
 <h4>moveManager</h4>
 <pre>protected&nbsp;<a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a> moveManager</pre>
-</li>
-</ul>
-<a name="eventManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>eventManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a> eventManager</pre>
 </li>
 </ul>
 <a name="integrators">
@@ -356,13 +379,13 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <pre>protected&nbsp;int nIntegrators</pre>
 </li>
 </ul>
-<a name="random">
+<a name="temperature">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>random</h4>
-<pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
+<h4>temperature</h4>
+<pre>protected&nbsp;double temperature</pre>
 </li>
 </ul>
 </li>
@@ -519,6 +542,16 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <pre>public&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>&nbsp;getMoveEventManager()</pre>
 </li>
 </ul>
+<a name="getGlobalMoveInterval--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGlobalMoveInterval</h4>
+<pre>public&nbsp;double&nbsp;getGlobalMoveInterval()</pre>
+<div class="block">Accessor method for the average interval between box-swap trials.</div>
+</li>
+</ul>
 <a name="setGlobalMoveInterval-double-">
 <!--   -->
 </a>
@@ -526,20 +559,33 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <li class="blockList">
 <h4>setGlobalMoveInterval</h4>
 <pre>public&nbsp;void&nbsp;setGlobalMoveInterval(double&nbsp;newGlobalMoveInterval)</pre>
-<div class="block">Sets the average interval between box-swap trials.  With each 
+<div class="block">Sets the average interval between box-swap trials.  With each
  call to doStep of this integrator, there will be a probability of
  1/globalMoveInterval that a swap trial will be attempted.  A swap is attempted
  for only one pair of boxs.  Default is 2.</div>
 </li>
 </ul>
-<a name="getGlobalMoveInterval--">
+<a name="getTemperature--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTemperature</h4>
+<pre>public&nbsp;double&nbsp;getTemperature()</pre>
+</li>
+</ul>
+<a name="setTemperature-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getGlobalMoveInterval</h4>
-<pre>public&nbsp;double&nbsp;getGlobalMoveInterval()</pre>
-<div class="block">Accessor method for the average interval between box-swap trials.</div>
+<h4>setTemperature</h4>
+<pre>public&nbsp;void&nbsp;setTemperature(double&nbsp;temperature)</pre>
+<div class="block">Sets the temperature for this integrator if that's relevant</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>

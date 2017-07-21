@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -274,33 +274,24 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="cla
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#getA--">getA</a></span>()</code>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial().</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#rejectNotify--">rejectNotify</a></span>()</code>
 <div class="block">Method called by IntegratorMC in the event that the most recent trial
  move is rejected.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterRotateCH3.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
@@ -550,39 +541,23 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="cla
 </dl>
 </li>
 </ul>
-<a name="getB--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">MCMoveMolecule</a></code></span></div>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">MCMoveMolecule</a></code></span></div>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial(). 
- Tij is the probability that this move would generate state j from state i, and
- Tji is the probability that a subsequent call to doTrial would return to state i
- from state j.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

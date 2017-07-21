@@ -199,9 +199,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
         double&nbsp;zFraction,
         double&nbsp;sigma,
-        int&nbsp;dim)</code>
-<div class="block">Constructor for MyMCMove.</div>
-</td>
+        int&nbsp;dim)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -234,8 +232,8 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/adsorption/MyMCMove.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/adsorption/MyMCMove.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -277,7 +275,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getB--">getB</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setMu-double-">setMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setMu-double-">setMu</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBox">
@@ -370,11 +368,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
                 double&nbsp;zFraction,
                 double&nbsp;sigma,
                 int&nbsp;dim)</pre>
-<div class="block">Constructor for MyMCMove.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>parent</code> - </dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -416,20 +409,23 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
 </dl>
 </li>
 </ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></code></dd>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>
@@ -509,8 +505,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>etomica.MCMoveInsertDelete#setSpecies(etomica.Species)</code></dd>
 </dl>
 </li>
 </ul>

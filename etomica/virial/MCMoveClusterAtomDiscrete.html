@@ -251,17 +251,12 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomDiscrete.html#getA--">getA</a></span>()</code>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial().</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomDiscrete.html#getA--">getA</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomDiscrete.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi),
- for the states encountered before (i) and after (j) the most recent call to
- doTrial.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomDiscrete.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -465,32 +460,25 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>getA</h4>
 <pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getA--">MCMoveAtom</a></code></span></div>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial().
- Tij is the probability that this move would generate state j from state i, and
- Tji is the probability that a subsequent call to doTrial would return to state i
- from state j.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
-</dl>
 </li>
 </ul>
-<a name="getB--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getB--">MCMoveAtom</a></code></span></div>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi),
- for the states encountered before (i) and after (j) the most recent call to
- doTrial.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

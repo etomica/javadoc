@@ -257,10 +257,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="cla
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveMoleculeSmer.html#getA--">getA</a></span>()</code>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial().</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveMoleculeSmer.html#getA--">getA</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -273,7 +270,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="cla
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">getB</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#rejectNotify--">rejectNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedMolecules-etomica.box.Box-">affectedMolecules</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getChi-double-">getChi</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#rejectNotify--">rejectNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -454,16 +451,6 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="cla
 <li class="blockList">
 <h4>getA</h4>
 <pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">MCMoveMolecule</a></code></span></div>
-<div class="block">Returns log of the ratio of the trial probabilities, ln(Tij/Tji) for the
- states encountered before (i) and after (j) the most recent call to doTrial(). 
- Tij is the probability that this move would generate state j from state i, and
- Tji is the probability that a subsequent call to doTrial would return to state i
- from state j.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
-</dl>
 </li>
 </ul>
 </li>

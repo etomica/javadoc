@@ -282,8 +282,8 @@ extends <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" ti
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecularOriented.html#getA--">getA</a></span>()</code>
-<div class="block">Returns the temperature-independent part of the acceptance probability.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecularOriented.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -315,7 +315,7 @@ extends <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.normalmode.<a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" title="class in etomica.normalmode">MCMoveVolumeSolidNPTMolecular</a></h3>
-<code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#doTrial--">doTrial</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#energyChange--">energyChange</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getB--">getB</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getPressure--">getPressure</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getPressureDimension--">getPressureDimension</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getULatFunction--">getULatFunction</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setInflater-etomica.action.BoxInflate-">setInflater</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setLatticeBox-etomica.box.Box-">setLatticeBox</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setPressure-double-">setPressure</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setULatFunction-etomica.math.function.Function-">setULatFunction</a></code></li>
+<code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#doTrial--">doTrial</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#energyChange--">energyChange</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getPressure--">getPressure</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getPressureDimension--">getPressureDimension</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getULatFunction--">getULatFunction</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setInflater-etomica.action.BoxInflate-">setInflater</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setLatticeBox-etomica.box.Box-">setLatticeBox</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setPressure-double-">setPressure</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#setULatFunction-etomica.math.function.Function-">setULatFunction</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -547,20 +547,23 @@ extends <a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" ti
                                 double&nbsp;b)</pre>
 </li>
 </ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getA--">MCMove</a></code></span></div>
-<div class="block">Returns the temperature-independent part of the acceptance probability.  
- The actual acceptance probility is calculated as max(1,A*exp(-B/T))
- where T is the IntegratorBox's temperature.</div>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getA--">getA</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" title="class in etomica.normalmode">MCMoveVolumeSolidNPTMolecular</a></code></dd>
+<dd><code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/normalmode/MCMoveVolumeSolidNPTMolecular.html" title="class in etomica.normalmode">MCMoveVolumeSolidNPTMolecular</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
 </dl>
 </li>
 </ul>

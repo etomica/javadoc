@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -321,21 +321,13 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveMolecular.html" tit
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MCMoveRotateMolecule3DSuperBox.html#getB--">getB</a></span>()</code>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MCMoveRotateMolecule3DSuperBox.html#rejectNotify--">rejectNotify</a></span>()</code>
 <div class="block">Method called by IntegratorMC in the event that the most recent trial
  move is rejected.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/MCMoveRotateMolecule3DSuperBox.html#setPotential-etomica.potential.IPotentialMolecular-">setPotential</a></span>(<a href="../../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;newPotential)</code>&nbsp;</td>
 </tr>
@@ -345,7 +337,7 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveMolecular.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getA--">getA</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#affectedAtoms--">affectedAtoms</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#energyChange--">energyChange</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getAtomSource--">getAtomSource</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getChi-double-">getChi</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#setMoleculeSource-etomica.molecule.MoleculeSource-">setMoleculeSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBoxStep">
@@ -622,23 +614,6 @@ implements <a href="../../../etomica/integrator/mcmove/MCMoveMolecular.html" tit
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#doTrial--">doTrial</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getB--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">MCMoveMolecule</a></code></span></div>
-<div class="block">Returns the log of the limiting-distribution probabilities of states, ln(Pj/Pi), 
- for the states encountered before (i) and after (j) the most recent call to 
- doTrial.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html#getB--">getB</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveMolecule.html" title="class in etomica.integrator.mcmove">MCMoveMolecule</a></code></dd>
 </dl>
 </li>
 </ul>
