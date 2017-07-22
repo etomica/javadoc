@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">SimpleUnit</span>
 extends java.lang.Object
-implements <a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></pre>
 <div class="block">Superclass for all base unit classes. These classes provide a means for
  indicating the physical units of a given quantity, and present methods for
  converting between units. A BaseUnit can be used as is, or combined with a
@@ -133,10 +133,6 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
  (Dalton-A-ps) Thus an instance of the base simulation units for any
  dimensioned quantity can be accessed by the handle BaseUnit.Energy.Sim.UNIT
  (e.g. for the energy unit).</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.units.SimpleUnit">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -159,9 +155,7 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
           double&nbsp;toSim,
           java.lang.String&nbsp;name,
           java.lang.String&nbsp;symbol,
-          boolean&nbsp;prefixAllowed)</code>
-<div class="block">Constructor.</div>
-</td>
+          boolean&nbsp;prefixAllowed)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -193,13 +187,15 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/units/SimpleUnit.html#prefixAllowed--">prefixAllowed</a></span>()</code>
-<div class="block">Returns flag indicating whether a prefix is allowed with this unit.</div>
+<div class="block">Some units (such as Angstroms) are not normally defined with a prefix
+ attached, and for such units this flag can be set to false to prohibit
+ the application of a prefix.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/units/SimpleUnit.html#symbol--">symbol</a></span>()</code>
-<div class="block">Accessor for symbol of unit</div>
+<div class="block">Returns the symbol of unit, such as "g" for grams.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -210,9 +206,7 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/units/SimpleUnit.html#toString--">toString</a></span>()</code>
-<div class="block">Accessor for common name of unit</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/units/SimpleUnit.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -247,7 +241,6 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
                   java.lang.String&nbsp;name,
                   java.lang.String&nbsp;symbol,
                   boolean&nbsp;prefixAllowed)</pre>
-<div class="block">Constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>toSim</code> - conversion factor from this unit to simulation units</dd>
@@ -324,10 +317,11 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 <li class="blockList">
 <h4>toString</h4>
 <pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
-<div class="block">Accessor for common name of unit</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the common name of this unit</dd>
 </dl>
 </li>
 </ul>
@@ -338,10 +332,13 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 <li class="blockList">
 <h4>symbol</h4>
 <pre>public&nbsp;java.lang.String&nbsp;symbol()</pre>
-<div class="block">Accessor for symbol of unit</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/units/Unit.html#symbol--">Unit</a></code></span></div>
+<div class="block">Returns the symbol of unit, such as "g" for grams.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/units/Unit.html#symbol--">symbol</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a symbol of this unit</dd>
 </dl>
 </li>
 </ul>
@@ -352,14 +349,15 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 <li class="blockList">
 <h4>prefixAllowed</h4>
 <pre>public&nbsp;boolean&nbsp;prefixAllowed()</pre>
-<div class="block">Returns flag indicating whether a prefix is allowed with this unit. Some
- units (such as Angstroms) are not normally defined with a prefix
+<div class="block">Some units (such as Angstroms) are not normally defined with a prefix
  attached, and for such units this flag can be set to false to prohibit
  the application of a prefix. This indication is usually made in the
  constructor of the base unit class.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/units/Unit.html#prefixAllowed--">prefixAllowed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>flag indicating whether a prefix is allowed with this unit</dd>
 </dl>
 </li>
 </ul>

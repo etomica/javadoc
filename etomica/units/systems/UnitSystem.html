@@ -156,7 +156,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/UnitSystem.html#SIM">SIM</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/UnitSystem.html#SIM">SIM</a></span></code>
+<div class="block">Instance of simulation units, the unit system used for internal calculations.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -200,7 +202,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/UnitSystem.html#baseUnits--">baseUnits</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/units/systems/UnitSystem.html#baseUnits--">baseUnits</a></span>()</code>
+<div class="block">Base dimensions are {length, mass, time, current, temperature, quantity, luminous intensity}</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></code></td>
@@ -295,6 +299,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>SIM</h4>
 <pre>public static final&nbsp;<a href="../../../etomica/units/systems/UnitSystem.html" title="class in etomica.units.systems">UnitSystem</a> SIM</pre>
+<div class="block">Instance of simulation units, the unit system used for internal calculations.</div>
 </li>
 </ul>
 </li>
@@ -329,6 +334,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>quantity</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;quantity()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>unit defining an amount in this unit system, typically a direct count or a mole</dd>
+</dl>
 </li>
 </ul>
 <a name="fraction--">
@@ -338,6 +347,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>fraction</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;fraction()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>unit defining a fractional amount in this unit system, typically a decimal or percent</dd>
+</dl>
 </li>
 </ul>
 <a name="mass--">
@@ -347,6 +360,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>mass</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;mass()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>mass unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="length--">
@@ -356,6 +373,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>length</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;length()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>length unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="time--">
@@ -365,6 +386,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>time</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;time()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>time unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="angle--">
@@ -374,6 +399,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>angle</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;angle()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>angle unit defined in this unit system, typically radians or degrees</dd>
+</dl>
 </li>
 </ul>
 <a name="charge--">
@@ -383,6 +412,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>charge</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;charge()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>electric-charge unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="current--">
@@ -392,6 +425,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>current</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;current()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>electric-current unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="dipole--">
@@ -401,6 +438,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>dipole</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;dipole()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>electric-dipole unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="force--">
@@ -410,6 +451,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>force</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;force()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>force unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="energy--">
@@ -419,6 +464,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>energy</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;energy()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>energy unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="power--">
@@ -428,6 +477,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>power</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;power()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>power (energy/time) unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="temperature--">
@@ -437,6 +490,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>temperature</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;temperature()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>temperature unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="pressure--">
@@ -446,6 +503,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>pressure</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;pressure()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>pressure unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="volume--">
@@ -455,6 +516,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>volume</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;volume()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>volume unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="area--">
@@ -464,6 +529,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>area</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;area()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>area unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="viscosity--">
@@ -473,6 +542,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>viscosity</h4>
 <pre>public abstract&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;viscosity()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>viscosity unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="luminousIntensity--">
@@ -482,6 +555,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>luminousIntensity</h4>
 <pre>public&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;luminousIntensity()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>luminous intensity unit defined in this unit system</dd>
+</dl>
 </li>
 </ul>
 <a name="baseUnits--">
@@ -491,6 +568,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>baseUnits</h4>
 <pre>public&nbsp;<a href="../../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>[]&nbsp;baseUnits()</pre>
+<div class="block">Base dimensions are {length, mass, time, current, temperature, quantity, luminous intensity}</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of the base units defined for this unit system</dd>
+</dl>
 </li>
 </ul>
 </li>

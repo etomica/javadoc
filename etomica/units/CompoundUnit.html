@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -118,10 +118,12 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">CompoundUnit</span>
 extends java.lang.Object
 implements <a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.units.CompoundUnit">Serialized Form</a></dd>
-</dl>
+<div class="block">Unit formed from other units raised to specified powers. Used to construct unit when desired unit is not
+ specifically implemented in an existing class. For example, a surface-tension unit in N/m could
+ be created by constructing this class as
+ <pre><code>
+ new CompoundUnit(new Unit[] {Newton.UNIT, Meter.UNIT}, new double[] {1.0,-1.0});
+ </code></pre></div>
 </li>
 </ul>
 </div>
@@ -141,7 +143,9 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/units/CompoundUnit.html#CompoundUnit-etomica.units.Unit:A-double:A-">CompoundUnit</a></span>(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>[]&nbsp;units,
-            double[]&nbsp;exponents)</code>&nbsp;</td>
+            double[]&nbsp;exponents)</code>
+<div class="block">Constructs unit with default name and abbreviation constructed from given units and exponents</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/units/CompoundUnit.html#CompoundUnit-etomica.units.Unit:A-double:A-java.lang.String-java.lang.String-">CompoundUnit</a></span>(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>[]&nbsp;units,
@@ -224,6 +228,14 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
 <h4>CompoundUnit</h4>
 <pre>public&nbsp;CompoundUnit(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>[]&nbsp;units,
                     double[]&nbsp;exponents)</pre>
+<div class="block">Constructs unit with default name and abbreviation constructed from given units and exponents</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>units</code> - array of units used to specify this unit</dd>
+<dd><code>exponents</code> - array exponents associated with each unit.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if argument arrays are of different length</dd>
+</dl>
 </li>
 </ul>
 <a name="CompoundUnit-etomica.units.Unit:A-double:A-java.lang.String-java.lang.String-">
@@ -236,6 +248,15 @@ implements <a href="../../etomica/units/Unit.html" title="interface in etomica.u
                     double[]&nbsp;exponents,
                     java.lang.String&nbsp;name,
                     java.lang.String&nbsp;symbol)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>units</code> - list of units used to specify this unit</dd>
+<dd><code>exponents</code> - exponents associated with each unit</dd>
+<dd><code>name</code> - a common name used to reference this unit (e.g., Newton)</dd>
+<dd><code>symbol</code> - an abbreviated name used to reference this unit (e.g., N)</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if units and exponents arrays are of different length</dd>
+</dl>
 </li>
 </ul>
 </li>
