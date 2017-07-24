@@ -283,7 +283,8 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#doThermostat--">doThermostat</a></span>()</code>
-<div class="block">thermostat implementation.</div>
+<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
+ algorithm of thermostat specified via setThermostat.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -312,9 +313,7 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
-<div class="block">Performs activities needed to set up integrator to work on given box.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -343,9 +342,7 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;newTemperature)</code>
-<div class="block">Sets the temperature for this integrator</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;newTemperature)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -365,7 +362,7 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></h3>
-<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#reset--">reset</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#isThermostatNoDrift--">isThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#reset--">reset</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetHybridAcceptance--">resetHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a>, <a href="../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.IntegratorBox">
@@ -546,8 +543,8 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <h4>doThermostat</h4>
 <pre>public&nbsp;void&nbsp;doThermostat()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">IntegratorMD</a></code></span></div>
-<div class="block">thermostat implementation.  This method takes whatever action is appropriate
- for the integrator's thermostat and updates the state of the integrator.</div>
+<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
+ algorithm of thermostat specified via setThermostat.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
@@ -589,11 +586,11 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <li class="blockList">
 <h4>setTemperature</h4>
 <pre>public&nbsp;void&nbsp;setTemperature(double&nbsp;newTemperature)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setTemperature-double-">IntegratorBox</a></code></span></div>
-<div class="block">Sets the temperature for this integrator</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newTemperature</code> - the new temperature</dd>
 </dl>
 </li>
 </ul>
@@ -640,8 +637,6 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <li class="blockList">
 <h4>setBox</h4>
 <pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">IntegratorBox</a></code></span></div>
-<div class="block">Performs activities needed to set up integrator to work on given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>

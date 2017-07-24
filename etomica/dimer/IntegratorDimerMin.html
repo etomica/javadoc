@@ -499,9 +499,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/dimer/IntegratorDimerMin.html#reset--">reset</a></span>()</code>
-<div class="block">Defines the actions taken by the integrator to reset itself, such as
- required if a perturbation is applied to the simulated box (e.g.,
- addition or deletion of a molecule).</div>
+<div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -1121,11 +1119,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#reset--">IntegratorBox</a></code></span></div>
-<div class="block">Defines the actions taken by the integrator to reset itself, such as
- required if a perturbation is applied to the simulated box (e.g.,
- addition or deletion of a molecule). Also invoked when the
- integrator is started or initialized. This also recalculates the 
- potential energy.</div>
+<div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -128,9 +128,7 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">IntegratorMD</span>
 extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>
 implements <a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></pre>
-<div class="block">Superclass of all molecular-dynamics integrators.
- Extends the Integrator class by adding methods that 
- set the time step.</div>
+<div class="block">Superclass of all molecular-dynamics integrators.</div>
 </li>
 </ul>
 </div>
@@ -155,7 +153,9 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.VectorSource.html" title="class in etomica.integrator">IntegratorMD.VectorSource</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.VectorSource.html" title="class in etomica.integrator">IntegratorMD.VectorSource</a></span></code>
+<div class="block">An AgentSource that permits another vector to be associated with each atom.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -233,9 +233,7 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#random">random</a></span></code>
-<div class="block">Elementary time step for the MD simulation</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
@@ -302,7 +300,9 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
             <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
             double&nbsp;timeStep,
             double&nbsp;temperature,
-            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
+            <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
+<div class="block">Constructs integrator with a default for non-isothermal sampling.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -366,7 +366,8 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a></span>()</code>
-<div class="block">thermostat implementation.</div>
+<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
+ algorithm of thermostat specified via setThermostat.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -393,9 +394,7 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a></span>()</code>
-<div class="block">returns the temperature meter used for velocity rescaling.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
@@ -410,118 +409,124 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#getTimeStepDimension--">getTimeStepDimension</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#isThermostatNoDrift--">isThermostatNoDrift</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a></span>()</code>
-<div class="block">randomizes the velocities for the given box using velocities
- chosen form a Maxwell-Boltzmann distribution as in the Andersen 
+<div class="block">Randomizes the velocities of all atoms in the box using values
+ chosen from a Maxwell-Boltzmann distribution, as in the Andersen
  thermostat.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a></span>(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</code>
-<div class="block">randomizes the velocity of an atom in the given box using velocities
- chosen form a Maxwell-Boltzmann distribution as in the Andersen 
+<div class="block">Randomizes the velocities of the given atom using value
+ chosen from a Maxwell-Boltzmann distribution, as in the Andersen
  thermostat.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a></span>()</code>
+<div class="block">Scales all velocities so that the total kinetic energy matches a value selected at random for the
+ previously specified temperature.</div>
+</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#reset--">reset</a></span>()</code>
-<div class="block">reset the integrator's kinetic energy tracker</div>
+<div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#resetHybridAcceptance--">resetHybridAcceptance</a></span>()</code>
+<div class="block">Zeros counters used to track acceptance fraction of HYBRID_MC thermostat.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a></span>()</code>
 <div class="block">This method resets the step counter.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta--">scaleMomenta</a></span>()</code>
-<div class="block">Crude method to enforce constant-temperature constraint
- Scales momenta of all atoms by a constant factor so that 
+<div class="block">Crude method to enforce constant-temperature constraint, by
+ scaling momenta of all atoms by a constant factor so that
  box adheres to setpoint temperature.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;t)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
-<div class="block">Performs activities needed to set up integrator to work on given box.</div>
-</td>
-</tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a></span>(<a href="../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integratorMC,
-               int&nbsp;mcSteps)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a></span>(boolean&nbsp;b)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a></span>(<a href="../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integratorMC,
+               int&nbsp;mcSteps)</code>
+<div class="block">A Monte Carlo integrator is employed with this MD integrator when performing hybrid MD/MC
+ sampling.</div>
+</td>
 </tr>
 <tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a></span>(boolean&nbsp;b)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a></span>(<a href="../../etomica/data/meter/MeterTemperature.html" title="class in etomica.data.meter">MeterTemperature</a>&nbsp;meter)</code>
 <div class="block">Sets the temperature meter used to calculate temperature for
  velocity rescaling.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;t)</code>
-<div class="block">Sets the temperature for this integrator</div>
-</td>
-</tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a></span>(<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;aThermostat)</code>
-<div class="block">Sets the type of thermostat used by the integrator.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a></span>(double&nbsp;t)</code>&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a></span>(int&nbsp;interval)</code>
-<div class="block">Sets the number of integrator intervals between thermostat
- actions (for velocity scaling and Andersen thermostat).</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a></span>(<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;aThermostat)</code>
+<div class="block">Sets the type of thermostat used by the integrator for isothermal sampling.</div>
 </td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a></span>(boolean&nbsp;newNoDrift)</code>
-<div class="block">Configures the thermostat to remove any net momenta imparted
- to the system.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a></span>(int&nbsp;interval)</code>
+<div class="block">Sets the number of integrator steps between thermostat
+ actions (for thermostats such as velocity scaling and Andersen).</div>
 </td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a></span>(double&nbsp;t)</code>
-<div class="block">Sets integration time step.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a></span>(boolean&nbsp;newNoDrift)</code>
+<div class="block">Configures the thermostat to remove any net momenta imparted
+ to the system after use of the thermostat.</div>
 </td>
 </tr>
 <tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a></span>(double&nbsp;t)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a></span>()</code>
 <div class="block">Perform initialization.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.html#shiftMomenta--">shiftMomenta</a></span>()</code>
 <div class="block">Subtracts velocity from all atoms such that the new net momentum of
- the whole system is 0.</div>
+ the whole system is zero.</div>
 </td>
 </tr>
 </table>
@@ -567,7 +572,33 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>random</h4>
 <pre>protected final&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
-<div class="block">Elementary time step for the MD simulation</div>
+</li>
+</ul>
+<a name="momentum">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>momentum</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> momentum</pre>
+</li>
+</ul>
+<a name="space">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>space</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
+</li>
+</ul>
+<a name="temperatureVec">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperatureVec</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> temperatureVec</pre>
 </li>
 </ul>
 <a name="timeStep">
@@ -642,15 +673,6 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <pre>protected&nbsp;<a href="../../etomica/data/meter/MeterTemperature.html" title="class in etomica.data.meter">MeterTemperature</a> meterTemperature</pre>
 </li>
 </ul>
-<a name="momentum">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>momentum</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> momentum</pre>
-</li>
-</ul>
 <a name="currentTime">
 <!--   -->
 </a>
@@ -658,15 +680,6 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>currentTime</h4>
 <pre>protected&nbsp;double currentTime</pre>
-</li>
-</ul>
-<a name="space">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 <a name="thermostatting">
@@ -744,19 +757,10 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <a name="mcSteps">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>mcSteps</h4>
 <pre>protected&nbsp;int mcSteps</pre>
-</li>
-</ul>
-<a name="temperatureVec">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>temperatureVec</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> temperatureVec</pre>
 </li>
 </ul>
 </li>
@@ -777,7 +781,16 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
                     <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                     double&nbsp;timeStep,
                     double&nbsp;temperature,
-                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+                    <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
+<div class="block">Constructs integrator with a default for non-isothermal sampling.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>potentialMaster</code> - PotentialMaster instance used to compute the energy and forces</dd>
+<dd><code>random</code> - random number generator used for initial velocities and some thermostats</dd>
+<dd><code>timeStep</code> - time step for integration</dd>
+<dd><code>temperature</code> - used by thermostat and/or to initialize velocities</dd>
+<dd><code>space</code> - the governing space, used to generate vectors</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -788,17 +801,6 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setTimeStep-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setTimeStep</h4>
-<pre>public&nbsp;void&nbsp;setTimeStep(double&nbsp;t)</pre>
-<div class="block">Sets integration time step.
- Updates zero-point counters used internally to manage the elapsedTime method</div>
-</li>
-</ul>
 <a name="getTimeStep--">
 <!--   -->
 </a>
@@ -806,15 +808,23 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getTimeStep</h4>
 <pre>public final&nbsp;double&nbsp;getTimeStep()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the integration time step</dd>
+</dl>
 </li>
 </ul>
-<a name="getTimeStepDimension--">
+<a name="setTimeStep-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTimeStepDimension</h4>
-<pre>public&nbsp;<a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a>&nbsp;getTimeStepDimension()</pre>
+<h4>setTimeStep</h4>
+<pre>public&nbsp;void&nbsp;setTimeStep(double&nbsp;t)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>t</code> - the new integration time step</dd>
+</dl>
 </li>
 </ul>
 <a name="setBox-etomica.box.Box-">
@@ -824,8 +834,6 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>setBox</h4>
 <pre>public&nbsp;void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">IntegratorBox</a></code></span></div>
-<div class="block">Performs activities needed to set up integrator to work on given box.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
@@ -872,7 +880,8 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
-<div class="block">reset the integrator's kinetic energy tracker</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#reset--">IntegratorBox</a></code></span></div>
+<div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
@@ -902,6 +911,11 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getCurrentTime</h4>
 <pre>public&nbsp;double&nbsp;getCurrentTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the amount of simulation time that has elapsed since construction or since last
+ call to resetStepCount</dd>
+</dl>
 </li>
 </ul>
 <a name="getKineticEnergy--">
@@ -927,6 +941,8 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#setIsothermal-boolean-">setIsothermal</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>b</code> - specifies whether the Integrator should (if true) sample according to a specified temperature</dd>
 </dl>
 </li>
 </ul>
@@ -937,11 +953,11 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>setTemperature</h4>
 <pre>public&nbsp;void&nbsp;setTemperature(double&nbsp;t)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html#setTemperature-double-">IntegratorBox</a></code></span></div>
-<div class="block">Sets the temperature for this integrator</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorBox.html#setTemperature-double-">setTemperature</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>t</code> - the new temperature</dd>
 </dl>
 </li>
 </ul>
@@ -953,6 +969,17 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <h4>setIntegratorMC</h4>
 <pre>public&nbsp;void&nbsp;setIntegratorMC(<a href="../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;integratorMC,
                             int&nbsp;mcSteps)</pre>
+<div class="block">A Monte Carlo integrator is employed with this MD integrator when performing hybrid MD/MC
+ sampling. The HYBRIC_MC thermostat will accept/reject a segment of the MD trajectory, and
+ then, optionally, the IntegratorMC will perform additional sampling (e.g., grand-canonical),
+ leaving the system in a state ready for the next MD segment.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>integratorMC</code> - the Monte Carlo integrator to be used for hybrid MC/MD</dd>
+<dd><code>mcSteps</code> - number of Monte Carlo trial steps to perform after MD segment</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.RuntimeException</code> - if HYBRID_MC thermostat is not enabled or if isothermal is false</dd>
+</dl>
 </li>
 </ul>
 <a name="getIntegratorMC--">
@@ -962,19 +989,10 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getIntegratorMC</h4>
 <pre>public&nbsp;<a href="../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a>&nbsp;getIntegratorMC()</pre>
-</li>
-</ul>
-<a name="setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setThermostat</h4>
-<pre>public&nbsp;void&nbsp;setThermostat(<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;aThermostat)</pre>
-<div class="block">Sets the type of thermostat used by the integrator.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>aThermostat</code> - the desired thermostat</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Monte Carlo integrator used to enable hybrid MD/MC sampling. Will be null
+ if not previously set via setIntegratorMC.</dd>
 </dl>
 </li>
 </ul>
@@ -986,7 +1004,24 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <h4>setThermostatNoDrift</h4>
 <pre>public&nbsp;void&nbsp;setThermostatNoDrift(boolean&nbsp;newNoDrift)</pre>
 <div class="block">Configures the thermostat to remove any net momenta imparted
- to the system.</div>
+ to the system after use of the thermostat.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newNoDrift</code> - if true, will remove net momentum after thermostat use</dd>
+</dl>
+</li>
+</ul>
+<a name="isThermostatNoDrift--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isThermostatNoDrift</h4>
+<pre>public&nbsp;boolean&nbsp;isThermostatNoDrift()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>flag specifying whether net momentum should be removed after application of thermostat</dd>
+</dl>
 </li>
 </ul>
 <a name="getThermostat--">
@@ -996,21 +1031,24 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getThermostat</h4>
 <pre>public&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;getThermostat()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the type of thermostat used to implement isothermal sampling.</dd>
+</dl>
 </li>
 </ul>
-<a name="setThermostatInterval-int-">
+<a name="setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setThermostatInterval</h4>
-<pre>public&nbsp;void&nbsp;setThermostatInterval(int&nbsp;interval)</pre>
-<div class="block">Sets the number of integrator intervals between thermostat
- actions (for velocity scaling and Andersen thermostat).</div>
+<h4>setThermostat</h4>
+<pre>public&nbsp;void&nbsp;setThermostat(<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;aThermostat)</pre>
+<div class="block">Sets the type of thermostat used by the integrator for isothermal sampling. The default
+ at construction is ANDERSEN.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>interval</code> - number of integrator intervals between thermostat
- activity</dd>
+<dd><code>aThermostat</code> - the desired thermostat</dd>
 </dl>
 </li>
 </ul>
@@ -1021,6 +1059,26 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getThermostatInterval</h4>
 <pre>public&nbsp;int&nbsp;getThermostatInterval()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the thermostat interval</dd>
+</dl>
+</li>
+</ul>
+<a name="setThermostatInterval-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setThermostatInterval</h4>
+<pre>public&nbsp;void&nbsp;setThermostatInterval(int&nbsp;interval)</pre>
+<div class="block">Sets the number of integrator steps between thermostat
+ actions (for thermostats such as velocity scaling and Andersen).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>interval</code> - number of integrator steps between thermostat
+                 activity</dd>
+</dl>
 </li>
 </ul>
 <a name="doThermostatInternal--">
@@ -1040,8 +1098,8 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>doThermostat</h4>
 <pre>public&nbsp;void&nbsp;doThermostat()</pre>
-<div class="block">thermostat implementation.  This method takes whatever action is appropriate
- for the integrator's thermostat and updates the state of the integrator.</div>
+<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
+ algorithm of thermostat specified via setThermostat.</div>
 </li>
 </ul>
 <a name="getHybridAcceptance--">
@@ -1051,6 +1109,21 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getHybridAcceptance</h4>
 <pre>public&nbsp;double&nbsp;getHybridAcceptance()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>fraction of Monte Carlo trials that were accepted when using HYBRID_MC thermostat,
+ since construction, or since last call to resetHybridAcceptance.</dd>
+</dl>
+</li>
+</ul>
+<a name="resetHybridAcceptance--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resetHybridAcceptance</h4>
+<pre>public&nbsp;void&nbsp;resetHybridAcceptance()</pre>
+<div class="block">Zeros counters used to track acceptance fraction of HYBRID_MC thermostat.</div>
 </li>
 </ul>
 <a name="randomizeTotalKE--">
@@ -1060,6 +1133,8 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>randomizeTotalKE</h4>
 <pre>protected&nbsp;void&nbsp;randomizeTotalKE()</pre>
+<div class="block">Scales all velocities so that the total kinetic energy matches a value selected at random for the
+ previously specified temperature.</div>
 </li>
 </ul>
 <a name="randomizeMomenta--">
@@ -1069,10 +1144,11 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>randomizeMomenta</h4>
 <pre>protected&nbsp;void&nbsp;randomizeMomenta()</pre>
-<div class="block">randomizes the velocities for the given box using velocities
- chosen form a Maxwell-Boltzmann distribution as in the Andersen 
- thermostat.  The state of the integrator needs to be updated 
- after calling this method.</div>
+<div class="block">Randomizes the velocities of all atoms in the box using values
+ chosen from a Maxwell-Boltzmann distribution, as in the Andersen
+ thermostat. Does not reset or otherwise updated integrator for
+ new velocities (some integrators, e.g. IntegratorHard, will need to be
+ reset after calling this method).</div>
 </li>
 </ul>
 <a name="randomizeMomentum-etomica.atom.IAtomKinetic-">
@@ -1082,10 +1158,11 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>randomizeMomentum</h4>
 <pre>protected&nbsp;void&nbsp;randomizeMomentum(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</pre>
-<div class="block">randomizes the velocity of an atom in the given box using velocities
- chosen form a Maxwell-Boltzmann distribution as in the Andersen 
- thermostat.  The state of the integrator needs to be updated 
- after calling this method.</div>
+<div class="block">Randomizes the velocities of the given atom using value
+ chosen from a Maxwell-Boltzmann distribution, as in the Andersen
+ thermostat. Does not reset or otherwise updated integrator for
+ new velocities (some integrators, e.g. IntegratorHard, will need to be
+ reset after calling this method).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>atom</code> - whose momenta is be randomized</dd>
@@ -1100,8 +1177,7 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <h4>shiftMomenta</h4>
 <pre>protected&nbsp;void&nbsp;shiftMomenta()</pre>
 <div class="block">Subtracts velocity from all atoms such that the new net momentum of
- the whole system is 0.  This could also be implemented to subtract
- momentum from each atom, but then 0-mass atoms would explode.</div>
+ the whole system is zero.</div>
 </li>
 </ul>
 <a name="scaleMomenta--">
@@ -1111,9 +1187,9 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>scaleMomenta</h4>
 <pre>protected&nbsp;void&nbsp;scaleMomenta()</pre>
-<div class="block">Crude method to enforce constant-temperature constraint
- Scales momenta of all atoms by a constant factor so that 
- box adheres to setpoint temperature.  The state of the 
+<div class="block">Crude method to enforce constant-temperature constraint, by
+ scaling momenta of all atoms by a constant factor so that
+ box adheres to setpoint temperature.  The state of the
  integrator may need to be updated after calling this method.</div>
 </li>
 </ul>
@@ -1133,7 +1209,10 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <li class="blockList">
 <h4>getMeterTemperature</h4>
 <pre>public&nbsp;<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;getMeterTemperature()</pre>
-<div class="block">returns the temperature meter used for velocity rescaling.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the temperature meter used for velocity rescaling.</dd>
+</dl>
 </li>
 </ul>
 <a name="setMeterTemperature-etomica.data.meter.MeterTemperature-">
@@ -1144,7 +1223,7 @@ implements <a href="../../etomica/box/BoxEventListener.html" title="interface in
 <h4>setMeterTemperature</h4>
 <pre>public&nbsp;void&nbsp;setMeterTemperature(<a href="../../etomica/data/meter/MeterTemperature.html" title="class in etomica.data.meter">MeterTemperature</a>&nbsp;meter)</pre>
 <div class="block">Sets the temperature meter used to calculate temperature for
- velocity rescaling.  You only need to call this method if 
+ velocity rescaling.  You only need to call this method if
  the standard MeterTemperature won't work.</div>
 </li>
 </ul>
