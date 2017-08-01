@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,8 +161,16 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#lastAdjust">lastAdjust</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#maxAdjustInterval">maxAdjustInterval</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#mcMove">mcMove</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#minAdjustStep">minAdjustStep</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -266,13 +274,25 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setMCMove-etomica.integrator.mcmove.MCMoveStepDependent-">setMCMove</a></span>(<a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a>&nbsp;newMCMove)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setMaxAdjustInterval-long-">setMaxAdjustInterval</a></span>(long&nbsp;maxAdjustInterval)</code>
+<div class="block">The step size is adjusted every adjustInterval trials.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setNoisyAdjustment-boolean-">setNoisyAdjustment</a></span>(boolean&nbsp;isNoisy)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setMCMove-etomica.integrator.mcmove.MCMoveStepDependent-">setMCMove</a></span>(<a href="../../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a>&nbsp;newMCMove)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setMinAdjustStep-double-">setMinAdjustStep</a></span>(double&nbsp;minAdjustStep)</code>
+<div class="block">When the step size is adjusted, it is adjusted by adjustStep.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setNoisyAdjustment-boolean-">setNoisyAdjustment</a></span>(boolean&nbsp;isNoisy)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#setTunable-boolean-">setTunable</a></span>(boolean&nbsp;b)</code>
 <div class="block">Sets a flag to indicate whether tuning of the move is to be performed
@@ -280,7 +300,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
  achieving a trial acceptance rate that is near to some target value.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveStepTracker.html#updateCounts-boolean-double-">updateCounts</a></span>(boolean&nbsp;moveWasAccepted,
             double&nbsp;chi)</code>
@@ -343,6 +363,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <pre>protected&nbsp;long adjustInterval</pre>
 </li>
 </ul>
+<a name="maxAdjustInterval">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>maxAdjustInterval</h4>
+<pre>protected&nbsp;long maxAdjustInterval</pre>
+</li>
+</ul>
 <a name="tunable">
 <!--   -->
 </a>
@@ -368,6 +397,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <li class="blockList">
 <h4>adjustStep</h4>
 <pre>protected&nbsp;double adjustStep</pre>
+</li>
+</ul>
+<a name="minAdjustStep">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>minAdjustStep</h4>
+<pre>protected&nbsp;double minAdjustStep</pre>
 </li>
 </ul>
 <a name="defaultAdjustStep">
@@ -472,20 +510,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <pre>protected&nbsp;void&nbsp;adjustStepSize()</pre>
 </li>
 </ul>
-<a name="setAcceptanceTarget-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setAcceptanceTarget</h4>
-<pre>public final&nbsp;void&nbsp;setAcceptanceTarget(double&nbsp;target)</pre>
-<div class="block">Sets the desired rate of acceptance (as a fraction between 0 and 1
- inclusive) of trials of this move. IllegalArgumentException is thrown if
- given value is outside of acceptable range.  The average acceptance 
- ratio and probability and the step size adjustment parameters and 
- convergence process are all reset.</div>
-</li>
-</ul>
 <a name="resetAdjustStep--">
 <!--   -->
 </a>
@@ -496,6 +520,40 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <div class="block">Resets damped step adjustment.  The adjustment interval is
  reset to defaultAdjustInterval and the adjustment step is
  reset to defaultAdjustStep.</div>
+</li>
+</ul>
+<a name="setMaxAdjustInterval-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMaxAdjustInterval</h4>
+<pre>public&nbsp;void&nbsp;setMaxAdjustInterval(long&nbsp;maxAdjustInterval)</pre>
+<div class="block">The step size is adjusted every adjustInterval trials.  When the
+ direction of the change oscillates, the adjustInterval is increased,
+ but it will not be increased beyond maxAdjustInterval</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>maxAdjustInterval</code> - the value beyond which adjustInterval will not
+                          be increased.</dd>
+</dl>
+</li>
+</ul>
+<a name="setMinAdjustStep-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMinAdjustStep</h4>
+<pre>public&nbsp;void&nbsp;setMinAdjustStep(double&nbsp;minAdjustStep)</pre>
+<div class="block">When the step size is adjusted, it is adjusted by adjustStep.  When the
+ direction of the change oscillates, the adjustStep is decreased,
+ but it will not be decreased beyond minAdjustStep.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>minAdjustStep</code> - the value beyond which adjustStep will not be
+                      decreased.</dd>
+</dl>
 </li>
 </ul>
 <a name="getAcceptanceTarget--">
@@ -511,16 +569,18 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 </dl>
 </li>
 </ul>
-<a name="setAdjustInterval-long-">
+<a name="setAcceptanceTarget-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setAdjustInterval</h4>
-<pre>public&nbsp;void&nbsp;setAdjustInterval(long&nbsp;i)</pre>
-<div class="block">Sets the interval between steps size adjustments.  This
- also resets the acceptance averages and other step adjustment 
- parameters to their default values.</div>
+<h4>setAcceptanceTarget</h4>
+<pre>public final&nbsp;void&nbsp;setAcceptanceTarget(double&nbsp;target)</pre>
+<div class="block">Sets the desired rate of acceptance (as a fraction between 0 and 1
+ inclusive) of trials of this move. IllegalArgumentException is thrown if
+ given value is outside of acceptable range.  The average acceptance
+ ratio and probability and the step size adjustment parameters and
+ convergence process are all reset.</div>
 </li>
 </ul>
 <a name="getAdjustInterval--">
@@ -532,17 +592,16 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <pre>public final&nbsp;long&nbsp;getAdjustInterval()</pre>
 </li>
 </ul>
-<a name="setAdjustStepSize-double-">
+<a name="setAdjustInterval-long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setAdjustStepSize</h4>
-<pre>public&nbsp;void&nbsp;setAdjustStepSize(double&nbsp;s)</pre>
-<div class="block">Sets the step adjustment size.  The step size is multiplied by 
- (1+s) when the acceptance ratio is too high and (1-s) when the step 
- size is too low.  This also resets the acceptance averages and other 
- step adjustment parameters to their default values.</div>
+<h4>setAdjustInterval</h4>
+<pre>public&nbsp;void&nbsp;setAdjustInterval(long&nbsp;i)</pre>
+<div class="block">Sets the interval between steps size adjustments.  This
+ also resets the acceptance averages and other step adjustment
+ parameters to their default values.</div>
 </li>
 </ul>
 <a name="getAdjustStepSize--">
@@ -552,6 +611,28 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
 <li class="blockList">
 <h4>getAdjustStepSize</h4>
 <pre>public&nbsp;double&nbsp;getAdjustStepSize()</pre>
+</li>
+</ul>
+<a name="setAdjustStepSize-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAdjustStepSize</h4>
+<pre>public&nbsp;void&nbsp;setAdjustStepSize(double&nbsp;s)</pre>
+<div class="block">Sets the step adjustment size.  The step size is multiplied by
+ (1+s) when the acceptance ratio is too high and (1-s) when the step
+ size is too low.  This also resets the acceptance averages and other
+ step adjustment parameters to their default values.</div>
+</li>
+</ul>
+<a name="getTunable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTunable</h4>
+<pre>public final&nbsp;boolean&nbsp;getTunable()</pre>
 </li>
 </ul>
 <a name="setTunable-boolean-">
@@ -568,31 +649,22 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveTracker.html" title="c
  have false for this property.</div>
 </li>
 </ul>
-<a name="getTunable--">
+<a name="getNoisyAdjustment--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTunable</h4>
-<pre>public final&nbsp;boolean&nbsp;getTunable()</pre>
+<h4>getNoisyAdjustment</h4>
+<pre>public&nbsp;boolean&nbsp;getNoisyAdjustment()</pre>
 </li>
 </ul>
 <a name="setNoisyAdjustment-boolean-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setNoisyAdjustment</h4>
 <pre>public&nbsp;void&nbsp;setNoisyAdjustment(boolean&nbsp;isNoisy)</pre>
-</li>
-</ul>
-<a name="getNoisyAdjustment--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getNoisyAdjustment</h4>
-<pre>public&nbsp;boolean&nbsp;getNoisyAdjustment()</pre>
 </li>
 </ul>
 </li>
