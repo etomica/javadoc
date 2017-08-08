@@ -194,7 +194,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a></span>(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code>
 <div class="block">Adds species to the list of all ISpecies in the simulation, and
- adds notifies all IBoxes of the new ISpecies.</div>
+ notifies all Boxes of the addition.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -208,47 +208,32 @@ extends java.lang.Object</pre>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getBox-int-">getBox</a></span>(int&nbsp;index)</code>
-<div class="block">Returns an array of Boxs contained in the Simulation</div>
+<div class="block">Returns one of the simulation Boxes.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a></span>()</code>
-<div class="block">Returns number of boxes contained in the Simulation</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getController--">getController</a></span>()</code>
-<div class="block">Returns the Controller used to run the simulation's Actions and
- Activities.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getController--">getController</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/simulation/SimulationEventManager.html" title="class in etomica.simulation">SimulationEventManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a></span>()</code>
-<div class="block">Returns the Simulation's event manager, which fires events for
- Boxes and Species being added and removed.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a></span>()</code>
-<div class="block">Returns the Simulation's primary integrator.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getRandom--">getRandom</a></span>()</code>
-<div class="block">Returns the Simulation's random number generator.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getRandom--">getRandom</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a></span>()</code>
-<div class="block">Returns the seeds that were used for the random number generator at
- construction.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
@@ -257,20 +242,17 @@ extends java.lang.Object</pre>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a></span>(int&nbsp;index)</code>
-<div class="block">Returns the Species in the Simulation for the specified index.</div>
+<div class="block">Returns one of the simulation ISpecies.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a></span>()</code>
-<div class="block">Returns the number of Species in the Simulation.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a></span>(java.lang.String&nbsp;symbolBase)</code>
-<div class="block">Returns an Element symbol starting with symbolBase that does not yet
- exist in the Simulation.</div>
+<div class="block">Method to allow generation of unique string to identify Elements in the Simulation.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -365,6 +347,10 @@ extends java.lang.Object</pre>
 <h4>Simulation</h4>
 <pre>public&nbsp;Simulation(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
 <div class="block">Creates a new simulation using the given space</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>space</code> - the space used to construct Vectors etc.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -382,9 +368,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getRandomSeeds</h4>
 <pre>public&nbsp;int[]&nbsp;getRandomSeeds()</pre>
-<div class="block">Returns the seeds that were used for the random number generator at
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the seeds that were used for the random number generator at
  construction.  If the random number generator has been set manually
- since then, this method returns null.</div>
+ since then, this method returns null.</dd>
+</dl>
 </li>
 </ul>
 <a name="addBox-etomica.box.Box-">
@@ -394,8 +383,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>addBox</h4>
 <pre>public final&nbsp;void&nbsp;addBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
-<div class="block">Adds a Box to the simulation.  This method should not be called if
- newBox is already held by the simulation.</div>
+<div class="block">Adds a Box to the simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newBox</code> - the Box being added.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if newBox was already added to the simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="removeBox-etomica.box.Box-">
@@ -405,8 +399,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>removeBox</h4>
 <pre>public final&nbsp;void&nbsp;removeBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;oldBox)</pre>
-<div class="block">Removes a Box to the simulation.  This method should not be called if
- oldBox is not held by the simulation.</div>
+<div class="block">Removes a Box to the simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>oldBox</code> - the Box being removed.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if oldBox was not previously added to the simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="getBox-int-">
@@ -416,7 +415,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getBox</h4>
 <pre>public final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox(int&nbsp;index)</pre>
-<div class="block">Returns an array of Boxs contained in the Simulation</div>
+<div class="block">Returns one of the simulation Boxes. Boxes are numbered in
+ the order that they are added, beginning with 0.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - specifies the Box to be returned.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the specified Box.</dd>
+</dl>
 </li>
 </ul>
 <a name="getBoxCount--">
@@ -426,7 +432,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getBoxCount</h4>
 <pre>public&nbsp;int&nbsp;getBoxCount()</pre>
-<div class="block">Returns number of boxes contained in the Simulation</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of boxes that have been added to the Simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="getController--">
@@ -436,8 +445,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getController</h4>
 <pre>public&nbsp;<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;getController()</pre>
-<div class="block">Returns the Controller used to run the simulation's Actions and
- Activities.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Controller used to run the simulation's Actions and
+ Activities.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSpace--">
@@ -449,7 +461,7 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;getSpace()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the space</dd>
+<dd>the Space that was specified in the constructor.</dd>
 </dl>
 </li>
 </ul>
@@ -460,7 +472,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getRandom</h4>
 <pre>public&nbsp;<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;getRandom()</pre>
-<div class="block">Returns the Simulation's random number generator.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Simulation's random number generator.</dd>
+</dl>
 </li>
 </ul>
 <a name="setRandom-etomica.util.random.IRandom-">
@@ -471,6 +486,10 @@ extends java.lang.Object</pre>
 <h4>setRandom</h4>
 <pre>public&nbsp;void&nbsp;setRandom(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;newRandom)</pre>
 <div class="block">Set the simulation's random number generator to the given one.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newRandom</code> - the new random number generator.</dd>
+</dl>
 </li>
 </ul>
 <a name="getEventManager--">
@@ -480,8 +499,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getEventManager</h4>
 <pre>public&nbsp;<a href="../../etomica/simulation/SimulationEventManager.html" title="class in etomica.simulation">SimulationEventManager</a>&nbsp;getEventManager()</pre>
-<div class="block">Returns the Simulation's event manager, which fires events for
- Boxes and Species being added and removed.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Simulation's event manager, which fires events for
+ Boxes and Species being added and removed.</dd>
+</dl>
 </li>
 </ul>
 <a name="addSpecies-etomica.species.ISpecies-">
@@ -492,7 +514,13 @@ extends java.lang.Object</pre>
 <h4>addSpecies</h4>
 <pre>public&nbsp;void&nbsp;addSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
 <div class="block">Adds species to the list of all ISpecies in the simulation, and
- adds notifies all IBoxes of the new ISpecies.</div>
+ notifies all Boxes of the addition.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>species</code> - the Species being added.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if species was already added (and not removed).</dd>
+</dl>
 </li>
 </ul>
 <a name="removeSpecies-etomica.species.ISpecies-">
@@ -503,6 +531,12 @@ extends java.lang.Object</pre>
 <h4>removeSpecies</h4>
 <pre>public&nbsp;void&nbsp;removeSpecies(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;removedSpecies)</pre>
 <div class="block">Removes the given ISpecies from the Simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>removedSpecies</code> - the Species to be removed.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if species is not in the Simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSpeciesCount--">
@@ -512,7 +546,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getSpeciesCount</h4>
 <pre>public&nbsp;int&nbsp;getSpeciesCount()</pre>
-<div class="block">Returns the number of Species in the Simulation.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of Species in the Simulation.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSpecies-int-">
@@ -522,7 +559,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getSpecies</h4>
 <pre>public&nbsp;<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies(int&nbsp;index)</pre>
-<div class="block">Returns the Species in the Simulation for the specified index.</div>
+<div class="block">Returns one of the simulation ISpecies. ISpecies are numbered in
+ the order that they are added, beginning with 0.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - specifies the ISpecies to be returned.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the specified ISpecies.</dd>
+</dl>
 </li>
 </ul>
 <a name="atomTypeAddedNotify-etomica.atom.AtomType-">
@@ -550,8 +594,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>makeUniqueElementSymbol</h4>
 <pre>public&nbsp;java.lang.String&nbsp;makeUniqueElementSymbol(java.lang.String&nbsp;symbolBase)</pre>
-<div class="block">Returns an Element symbol starting with symbolBase that does not yet
- exist in the Simulation.  Return values will be like "base0, base1, base2..."</div>
+<div class="block">Method to allow generation of unique string to identify Elements in the Simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>symbolBase</code> - the base string.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an Element symbol starting with symbolBase that does not yet
+ exist in the Simulation.  Return values will be like "base0, base1, base2..."</dd>
+</dl>
 </li>
 </ul>
 <a name="getIntegrator--">
@@ -561,11 +611,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getIntegrator</h4>
 <pre>public&nbsp;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;getIntegrator()</pre>
-<div class="block">Returns the Simulation's primary integrator.  If the controller holds
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Simulation's primary integrator.  If the controller holds
  multiple integrators, the first is returned.  If the first integrator
  holds sub-integrators, the top-level integrator is still returned.  This
  method assumes the controller holds an ActivityIntegrate or an
- ActionIntegrate.</div>
+ ActionIntegrate. Returns null if no integrator is found.</dd>
+</dl>
 </li>
 </ul>
 </li>
