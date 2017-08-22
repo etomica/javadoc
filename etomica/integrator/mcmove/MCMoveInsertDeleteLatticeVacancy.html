@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -374,52 +374,50 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getA--">getA</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getChi-double-">getChi</a></span>(double&nbsp;temperature)</code>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getB--">getB</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#getMaxDistance--">getMaxDistance</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#makeFccVectors-double-">makeFccVectors</a></span>(double&nbsp;newNbrDistance)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#makeHcpVectors-double-">makeHcpVectors</a></span>(double&nbsp;newNbrDistance)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#myAcceptNotify--">myAcceptNotify</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#reset--">reset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#setFluidNbrDistance-double-">setFluidNbrDistance</a></span>(double&nbsp;newNbrDistance)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#setLnBias-int-double-">setLnBias</a></span>(int&nbsp;n,
          double&nbsp;nBias)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#setMaxDistance-double-">setMaxDistance</a></span>(double&nbsp;maxDistance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteLatticeVacancy.html#setMaxInsertDistance-double-">setMaxInsertDistance</a></span>(double&nbsp;maxInsertDistance)</code>&nbsp;</td>
 </tr>
@@ -429,7 +427,7 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></h3>
-<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getChi-double-">getChi</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
+<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#acceptNotify--">acceptNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBias-int-">getLnBias</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getLnBiasDiff--">getLnBiasDiff</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#myRejectNotify--">myRejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#rejectNotify--">rejectNotify</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMinMax-int-int-">setMinMax</a>, <a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#setMu-double-">setMu</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveInsertDelete">
@@ -856,22 +854,24 @@ implements <a href="../../../etomica/util/IListener.html" title="interface in et
 <pre>protected&nbsp;void&nbsp;findCandidates()</pre>
 </li>
 </ul>
-<a name="getA--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getA</h4>
-<pre>public&nbsp;double&nbsp;getA()</pre>
-</li>
-</ul>
-<a name="getB--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getB</h4>
-<pre>public&nbsp;double&nbsp;getB()</pre>
+<h4>getChi</h4>
+<pre>public&nbsp;double&nbsp;getChi(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/integrator/mcmove/MCMoveInsertDeleteBiased.html" title="class in etomica.integrator.mcmove">MCMoveInsertDeleteBiased</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
+</dl>
 </li>
 </ul>
 <a name="myAcceptNotify--">
