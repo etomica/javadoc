@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,24 +129,16 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected static double[][]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#binom">binom</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#lastLPX">lastLPX</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected static double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#lp">lp</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#maxLPN">maxLPN</a></span></code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#nbin">nbin</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#maxLPN">maxLPN</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -165,19 +157,27 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#besselI-int-double-">besselI</a></span>(int&nbsp;order,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#besselI-double-double-">besselI</a></span>(double&nbsp;order,
        double&nbsp;x)</code>
-<div class="block">Calculates the modified bessel function of the first kind (I) for a given order and the variable x.</div>
+<div class="block">The modified Bessel function of the first kind, I
+ Reference: http://mathworld.wolfram.com/ModifiedBesselFunctionoftheFirstKind.html</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#besselJ-double-double-">besselJ</a></span>(double&nbsp;order,
+       double&nbsp;x)</code>
+<div class="block">The unmodified Bessel function of the first kind, J.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#calcLegendrePolynomial-int-double-">calcLegendrePolynomial</a></span>(int&nbsp;n,
                       double&nbsp;x)</code>
 <div class="block">Calculates Pn(x), Legendre polynomial of order n for the given input value.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#confluentHypergeometric1F1-double-double-double-">confluentHypergeometric1F1</a></span>(double&nbsp;a,
                           double&nbsp;c,
@@ -185,28 +185,22 @@ extends java.lang.Object</pre>
 <div class="block">The confluent hypergeometric function, usually given the symbol 1F1.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#erfc-double-">erfc</a></span>(double&nbsp;x)</code>
 <div class="block">Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#factorial-int-">factorial</a></span>(int&nbsp;n)</code>
 <div class="block">The factorial function, n! Will overflow with any input value greater than 20.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#gamma-double-">gamma</a></span>(double&nbsp;x)</code>&nbsp;</td>
-</tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#gammaQ-double-double-">gammaQ</a></span>(double&nbsp;a,
-      double&nbsp;x)</code>
-<div class="block">Normalized incomplete gamma function, equal to
- Integrate[Exp[-t] t^(a-1),{t,x,Infinity}]/Gamma[a]</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#gamma-double-">gamma</a></span>(double&nbsp;x)</code>
+<div class="block">Returns the value of the gamma function of x.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -224,27 +218,6 @@ extends java.lang.Object</pre>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>protected static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#pascal--">pascal</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#sgn-double-">sgn</a></span>(double&nbsp;x)</code>
-<div class="block">The sign function, returning -1 if x < 0, zero if x == 0, and +1 if x > 0.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/math/SpecialFunctions.html#wigner3J-int-int-int-int-int-int-">wigner3J</a></span>(int&nbsp;j1,
-        int&nbsp;j2,
-        int&nbsp;j3,
-        int&nbsp;m1,
-        int&nbsp;m2,
-        int&nbsp;m3)</code>
-<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.</div>
-</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -289,28 +262,10 @@ extends java.lang.Object</pre>
 <a name="maxLPN">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>maxLPN</h4>
 <pre>protected static&nbsp;int maxLPN</pre>
-</li>
-</ul>
-<a name="nbin">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>nbin</h4>
-<pre>protected static&nbsp;int nbin</pre>
-</li>
-</ul>
-<a name="binom">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>binom</h4>
-<pre>protected static&nbsp;double[][] binom</pre>
 </li>
 </ul>
 </li>
@@ -329,10 +284,15 @@ extends java.lang.Object</pre>
 <h4>erfc</h4>
 <pre>public static&nbsp;double&nbsp;erfc(double&nbsp;x)</pre>
 <div class="block">Complementary error function, computed using the approximant 7.1.26 of Abramowitz & Stegun.
- Defined for x >= 0
-
- Consider using <code>Erf.erfc(double)</code> if more precision is required.
- This method is substantially faster (~10x - 100x), but only accurate to ~10^-7.</div>
+ Absolute accuracy to within ~10^-7. If more precision is required,
+ consider using <code>Erf.erfc(double)</code>, which is more accurate
+ but substantially slower (~10x - 100x) than the method given here.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - argument to function, may take values from  Double.NEGATIVE_INFINITY to Double.POSITIVE_INFINITY.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>value of complementary error function.</dd>
+</dl>
 </li>
 </ul>
 <a name="factorial-int-">
@@ -371,16 +331,6 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="sgn-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sgn</h4>
-<pre>public static&nbsp;double&nbsp;sgn(double&nbsp;x)</pre>
-<div class="block">The sign function, returning -1 if x < 0, zero if x == 0, and +1 if x > 0.</div>
-</li>
-</ul>
 <a name="lnGamma-double-">
 <!--   -->
 </a>
@@ -393,9 +343,11 @@ extends java.lang.Object</pre>
  coefficients from GSL (GNU Scientific Library) with g=7</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>x</code> - a non-negative number.</dd>
+<dd><code>x</code> - a positive number.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the natural logarithm of the gamma function of x.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if x is not positive.</dd>
 </dl>
 </li>
 </ul>
@@ -406,18 +358,15 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>gamma</h4>
 <pre>public static&nbsp;double&nbsp;gamma(double&nbsp;x)</pre>
-</li>
-</ul>
-<a name="gammaQ-double-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>gammaQ</h4>
-<pre>public static&nbsp;double&nbsp;gammaQ(double&nbsp;a,
-                            double&nbsp;x)</pre>
-<div class="block">Normalized incomplete gamma function, equal to
- Integrate[Exp[-t] t^(a-1),{t,x,Infinity}]/Gamma[a]</div>
+<div class="block">Returns the value of the gamma function of x.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - a positive number.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the gamma function of x.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if x is not positive.</dd>
+</dl>
 </li>
 </ul>
 <a name="confluentHypergeometric1F1-double-double-double-">
@@ -429,10 +378,9 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;double&nbsp;confluentHypergeometric1F1(double&nbsp;a,
                                                 double&nbsp;c,
                                                 double&nbsp;xin)</pre>
-<div class="block">The confluent hypergeometric function, usually given the symbol 1F1.  This is a porting to Java
- of the function hyperg_1F1_luke in the file specfunc/hyperg_1F1.c from the GNU Scientific Library.
- For algorithm, see [Luke, Algorithms for the Computation of Mathematical Functions, p.182]
- (GSL license info to be added) GSL home page is http://www.gnu.org/software/gsl/</div>
+<div class="block">The confluent hypergeometric function, usually given the symbol 1F1.
+ For information about the function and use of parameters consult the link:
+ http://mathworld.wolfram.com/ConfluentHypergeometricFunctionoftheFirstKind.html</div>
 </li>
 </ul>
 <a name="calcLegendrePolynomial-int-double-">
@@ -444,64 +392,53 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;double&nbsp;calcLegendrePolynomial(int&nbsp;n,
                                             double&nbsp;x)</pre>
 <div class="block">Calculates Pn(x), Legendre polynomial of order n for the given input value.
- The method method makes use of a recursive method to calculate the return
+ The method method makes use of recursion to calculate the return
  value, so calling the method for all n in a sequence should not be much
  more expensive than the call for the highest order.</div>
-</li>
-</ul>
-<a name="wigner3J-int-int-int-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>wigner3J</h4>
-<pre>public static&nbsp;double&nbsp;wigner3J(int&nbsp;j1,
-                              int&nbsp;j2,
-                              int&nbsp;j3,
-                              int&nbsp;m1,
-                              int&nbsp;m2,
-                              int&nbsp;m3)</pre>
-<div class="block">Returns the Wigner 3j symbol associated with coupling angular momenta in quantum mechanics.
- Reference for code that is commented out: (this code is not much robust)
- 1. http://mathworld.wolfram.com/Wigner3j-Symbol.html
- 2. http://massey.dur.ac.uk/umk/files/python/wigner.py
- Robust code taken from Bartolomei's pes-mrci.f file located at
- /usr/users/rsubrama/Desktop/Acads/Phd/oxygen/Bartolomei2010/
-
- Currently only works for all 6 inputs being integers and not
- half integers</div>
 <dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>double w3j</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - order of the polynomial; must be non-negative.</dd>
+<dd><code>x</code> - argument of the polynomial.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if n < 0.</dd>
 </dl>
 </li>
 </ul>
-<a name="pascal--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>pascal</h4>
-<pre>protected static&nbsp;void&nbsp;pascal()</pre>
-</li>
-</ul>
-<a name="besselI-int-double-">
+<a name="besselI-double-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>besselI</h4>
-<pre>public static&nbsp;double&nbsp;besselI(int&nbsp;order,
+<pre>public static&nbsp;double&nbsp;besselI(double&nbsp;order,
                              double&nbsp;x)</pre>
-<div class="block">Calculates the modified bessel function of the first kind (I) for a given order and the variable x.
- Right now works only for integer orders.
+<div class="block">The modified Bessel function of the first kind, I
  Reference: http://mathworld.wolfram.com/ModifiedBesselFunctionoftheFirstKind.html</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>order</code> - </dd>
-<dd><code>x</code> - </dd>
+<dd><code>order</code> - of the Bessel function</dd>
+<dd><code>x</code> - the argument of the Bessel function</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>double y</dd>
+<dd>modified Bessel function of the first kind, to machine precision.</dd>
+</dl>
+</li>
+</ul>
+<a name="besselJ-double-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>besselJ</h4>
+<pre>public static&nbsp;double&nbsp;besselJ(double&nbsp;order,
+                             double&nbsp;x)</pre>
+<div class="block">The unmodified Bessel function of the first kind, J.
+ https://en.wikipedia.org/wiki/Bessel_function#Bessel_functions_of_the_first_kind:_J.CE.B1</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>order</code> - of the Bessel function</dd>
+<dd><code>x</code> - the argument of the Bessel function</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>unmodified Bessel function of the first kind, to the precision of 1E-13.</dd>
 </dl>
 </li>
 </ul>
