@@ -133,14 +133,15 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">AccumulatorAverage</span>
 extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomica.data">DataAccumulator</a></pre>
 <div class="block">Accumulator that keeps statistics for averaging and error analysis. The
- statisics are incremented with every call to addData. Statistics kept are
+ statistics are incremented with every call to addData. Statistics kept are
  <ul>
  <li>the value last given to addData
  <li>the mean, or average
- <li>the statistical error (67% confidence limits), obtained by standard
+ <li>the statistical error (68% confidence limits), obtained by standard
  error analysis of block averages
  <li>the standard deviation
  <li>the most recent block average
+ <li>the correlation between adjacent blocks (covariance divided by variance)
  </ul>
  Each statistic is recorded by a Data instance of the same type as the
  incoming data. The output Data is a DataGroup formed from these Data
@@ -149,7 +150,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
  A <i>block </i> is a subset of the input data, formed by grouping (for
  example) 100 or 1000 successive contributions to addData. Averages for each
  block are considered to be independent of other block averages, and the
- confidence limits for the overall average is obtained as the standard error
+ confidence interval for the overall average is obtained as the standard error
  of the mean of these block averages.</div>
 </li>
 </ul>
@@ -172,7 +173,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a></span></code>
-<div class="block">Enumerated type that can be used to indicated the statistic to be taken
+<div class="block">Enumerated type that can be used to indicate the statistic to be taken
  from the accumulator (e.g., average, error, current value, etc.).</div>
 </td>
 </tr>
@@ -281,12 +282,14 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#AccumulatorAverage--">AccumulatorAverage</a></span>()</code>
-<div class="block">Default constructor sets block size to Default value, and sets the
+<div class="block">Default constructor sets block size to 1000 and sets the
  interval for pushing the output data (pushInterval) to 100.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#AccumulatorAverage-long-">AccumulatorAverage</a></span>(long&nbsp;blockSize)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#AccumulatorAverage-long-">AccumulatorAverage</a></span>(long&nbsp;blockSize)</code>
+<div class="block">Constructs with interval for pushing the output data set to 100.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -312,28 +315,23 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getBlockCount--">getBlockCount</a></span>()</code>
-<div class="block">Returns the number of blocks that have been accumulated since construction or
- the last call to reset.</div>
-</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#doIncludeACInError--">doIncludeACInError</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getBlockSize--">getBlockSize</a></span>()</code>
-<div class="block">Returns the current value of the block size.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getBlockCount--">getBlockCount</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getData-etomica.data.AccumulatorAverage.StatType-">getData</a></span>(<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>&nbsp;stat)</code>
-<div class="block">This method will return an IData object corresponding to the requested
- StatType.</div>
-</td>
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getBlockSize--">getBlockSize</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getDoIncludeACInError--">getDoIncludeACInError</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#getData-etomica.data.AccumulatorAverage.StatType-">getData</a></span>(<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>&nbsp;stat)</code>
+<div class="block">Returns a specific element from the DataGroup returned
+ by getData().</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>long</code></td>
@@ -363,11 +361,11 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#setDoIncludeACInError-boolean-">setDoIncludeACInError</a></span>(boolean&nbsp;newDoIncludeACInError)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverage.html#setIncludeACInError-boolean-">setIncludeACInError</a></span>(boolean&nbsp;newDoIncludeACInError)</code>
 <div class="block">Include correction to the uncertainty from block correlation function as
  prescribed in
  Kolafa, Jiri(1986) 'Autocorrelations and subseries averages in Monte
-   Carlo Simulations', Molecular Physics (59) 1035</div>
+ Carlo Simulations', Molecular Physics (59) 1035</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -588,7 +586,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>AccumulatorAverage</h4>
 <pre>public&nbsp;AccumulatorAverage()</pre>
-<div class="block">Default constructor sets block size to Default value, and sets the
+<div class="block">Default constructor sets block size to 1000 and sets the
  interval for pushing the output data (pushInterval) to 100.</div>
 </li>
 </ul>
@@ -599,6 +597,11 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>AccumulatorAverage</h4>
 <pre>public&nbsp;AccumulatorAverage(long&nbsp;blockSize)</pre>
+<div class="block">Constructs with interval for pushing the output data set to 100.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>blockSize</code> - size of the block.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -609,6 +612,19 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="statChoices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>statChoices</h4>
+<pre>public static&nbsp;<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>[]&nbsp;statChoices()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>array of StatTypes identifying the statistics given in the DataGroup returned by getData().</dd>
+</dl>
+</li>
+</ul>
 <a name="getTag-etomica.data.AccumulatorAverage.StatType-">
 <!--   -->
 </a>
@@ -616,6 +632,12 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getTag</h4>
 <pre>public&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag(<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>&nbsp;statType)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>statType</code> - the statistic for which the DataTag is requested.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the DataTag that identifies the specified statistic.</dd>
+</dl>
 </li>
 </ul>
 <a name="getData-etomica.data.AccumulatorAverage.StatType-">
@@ -625,10 +647,13 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getData</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData(<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>&nbsp;stat)</pre>
-<div class="block">This method will return an IData object corresponding to the requested
- StatType.  This method returns the element from the DataGroup returned
+<div class="block">Returns a specific element from the DataGroup returned
  by getData().  Calling getData and extracting the data can be more
- efficient, although this method can be more convenient.</div>
+ efficient, while this method can be more convenient.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an IData object corresponding to the requested StatType.</dd>
+</dl>
 </li>
 </ul>
 <a name="reset--">
@@ -645,6 +670,19 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </dl>
 </li>
 </ul>
+<a name="getBlockSize--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBlockSize</h4>
+<pre>public&nbsp;long&nbsp;getBlockSize()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the current value of the block size.</dd>
+</dl>
+</li>
+</ul>
 <a name="setBlockSize-long-">
 <!--   -->
 </a>
@@ -653,21 +691,11 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <h4>setBlockSize</h4>
 <pre>public&nbsp;void&nbsp;setBlockSize(long&nbsp;newBlockSize)</pre>
 <div class="block">Sets the size of the block used to group data for error analysis. Resets
- statistics accumulated so far.  Default is 1000.</div>
+ statistics accumulated so far.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newBlockSize</code> - new block size.</dd>
 </dl>
-</li>
-</ul>
-<a name="getBlockSize--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getBlockSize</h4>
-<pre>public&nbsp;long&nbsp;getBlockSize()</pre>
-<div class="block">Returns the current value of the block size.</div>
 </li>
 </ul>
 <a name="processDataInfo-etomica.data.IEtomicaDataInfo-">
@@ -677,17 +705,16 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>processDataInfo</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block">Prepares the accumulator for input data.  Discards any previous 
+<div class="block">Prepares the accumulator for input data.  Discards any previous
  contributions to statistics.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/DataProcessor.html#processDataInfo-etomica.data.IEtomicaDataInfo-">processDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>incomingDataInfo</code> - the DataInfo instance for the data that will be given to
-            addData</dd>
+                         addData</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the DataInfo of the Data that will be output by this
-         DataProcessor</dd>
+<dd>dataInfo object for the output of this accumulator.</dd>
 </dl>
 </li>
 </ul>
@@ -708,7 +735,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newDataSink</code> - the new DataSink</dd>
 <dd><code>types</code> - array indicating the statistics to be included in the
-            DataGroup sent to the sink.</dd>
+                    DataGroup sent to the sink.</dd>
 </dl>
 </li>
 </ul>
@@ -719,8 +746,11 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getBlockCount</h4>
 <pre>public&nbsp;long&nbsp;getBlockCount()</pre>
-<div class="block">Returns the number of blocks that have been accumulated since construction or
- the last call to reset.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of blocks that have been accumulated since construction or
+ the last call to reset.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSampleCount--">
@@ -730,37 +760,43 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getSampleCount</h4>
 <pre>public&nbsp;long&nbsp;getSampleCount()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of samples that have been accumulated since construction or
+ the last call to reset.</dd>
+</dl>
 </li>
 </ul>
-<a name="setDoIncludeACInError-boolean-">
+<a name="doIncludeACInError--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setDoIncludeACInError</h4>
-<pre>public&nbsp;void&nbsp;setDoIncludeACInError(boolean&nbsp;newDoIncludeACInError)</pre>
-<div class="block">Include correction to the uncertainty from block correlation function as
- prescribed in
- Kolafa, Jiri(1986) 'Autocorrelations and subseries averages in Monte
-   Carlo Simulations', Molecular Physics (59) 1035</div>
+<h4>doIncludeACInError</h4>
+<pre>public&nbsp;boolean&nbsp;doIncludeACInError()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Flag indicating if auto-correlation is accounted for while calculating the uncertainty.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../etomica/data/AccumulatorAverage.html#setIncludeACInError-boolean-"><code>setIncludeACInError(boolean)</code></a></dd>
+</dl>
 </li>
 </ul>
-<a name="getDoIncludeACInError--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDoIncludeACInError</h4>
-<pre>public&nbsp;boolean&nbsp;getDoIncludeACInError()</pre>
-</li>
-</ul>
-<a name="statChoices--">
+<a name="setIncludeACInError-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>statChoices</h4>
-<pre>public static&nbsp;<a href="../../etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">AccumulatorAverage.StatType</a>[]&nbsp;statChoices()</pre>
+<h4>setIncludeACInError</h4>
+<pre>public&nbsp;void&nbsp;setIncludeACInError(boolean&nbsp;newDoIncludeACInError)</pre>
+<div class="block">Include correction to the uncertainty from block correlation function as
+ prescribed in
+ Kolafa, Jiri(1986) 'Autocorrelations and subseries averages in Monte
+ Carlo Simulations', Molecular Physics (59) 1035</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newDoIncludeACInError</code> - auto-correlation is accounted if true, otherwise it is not.</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -299,7 +299,7 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></h3>
-<code><a href="../../etomica/data/AccumulatorAverage.html#addDataSink-etomica.data.IDataSink-etomica.data.AccumulatorAverage.StatType:A-">addDataSink</a>, <a href="../../etomica/data/AccumulatorAverage.html#getBlockCount--">getBlockCount</a>, <a href="../../etomica/data/AccumulatorAverage.html#getBlockSize--">getBlockSize</a>, <a href="../../etomica/data/AccumulatorAverage.html#getData-etomica.data.AccumulatorAverage.StatType-">getData</a>, <a href="../../etomica/data/AccumulatorAverage.html#getDoIncludeACInError--">getDoIncludeACInError</a>, <a href="../../etomica/data/AccumulatorAverage.html#getSampleCount--">getSampleCount</a>, <a href="../../etomica/data/AccumulatorAverage.html#setBlockSize-long-">setBlockSize</a>, <a href="../../etomica/data/AccumulatorAverage.html#setDoIncludeACInError-boolean-">setDoIncludeACInError</a></code></li>
+<code><a href="../../etomica/data/AccumulatorAverage.html#addDataSink-etomica.data.IDataSink-etomica.data.AccumulatorAverage.StatType:A-">addDataSink</a>, <a href="../../etomica/data/AccumulatorAverage.html#doIncludeACInError--">doIncludeACInError</a>, <a href="../../etomica/data/AccumulatorAverage.html#getBlockCount--">getBlockCount</a>, <a href="../../etomica/data/AccumulatorAverage.html#getBlockSize--">getBlockSize</a>, <a href="../../etomica/data/AccumulatorAverage.html#getData-etomica.data.AccumulatorAverage.StatType-">getData</a>, <a href="../../etomica/data/AccumulatorAverage.html#getSampleCount--">getSampleCount</a>, <a href="../../etomica/data/AccumulatorAverage.html#setBlockSize-long-">setBlockSize</a>, <a href="../../etomica/data/AccumulatorAverage.html#setIncludeACInError-boolean-">setIncludeACInError</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataAccumulator">
@@ -462,6 +462,10 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/data/AccumulatorAverage.html#getTag-etomica.data.AccumulatorAverage.StatType-">getTag</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>statType</code> - the statistic for which the DataTag is requested.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the DataTag that identifies the specified statistic.</dd>
 </dl>
 </li>
 </ul>
@@ -517,8 +521,7 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <dd><code>incomingDataInfo</code> - the DataInfo instance for the data that will be given to
             addData</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the DataInfo of the Data that will be output by this
-         DataProcessor</dd>
+<dd>dataInfo object for the output of this accumulator.</dd>
 </dl>
 </li>
 </ul>
