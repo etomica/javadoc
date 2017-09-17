@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/virial/MCMoveClusterAtomMulti.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/virial/MCMoveClusterAtomHSTreeMix.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/virial/MCMoveClusterAtomHSTree.html" target="_top">Frames</a></li>
@@ -129,10 +129,18 @@ var activeTableTab = "activeTableTab";
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="../../etomica/integrator/mcmove/MCMoveStepDependent.html" title="interface in etomica.integrator.mcmove">MCMoveStepDependent</a></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../etomica/virial/MCMoveClusterAtomHSTreeMix.html" title="class in etomica.virial">MCMoveClusterAtomHSTreeMix</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MCMoveClusterAtomHSTree</span>
 extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></pre>
+<div class="block">Class that samples molecule positions based on a tree of hard spheres of
+ diameter sigma.  The tree structure is chosen randomly as a Prüfer sequence.
+ <p>
+ https://en.wikipedia.org/wiki/Pr%C3%BCfer_sequence#Algorithm_to_convert_a_Pr.C3.BCfer_sequence_into_a_tree</div>
 </li>
 </ul>
 </div>
@@ -253,13 +261,18 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSTree.html#getSigma-int-int-">getSigma</a></span>(int&nbsp;i,
+        int&nbsp;j)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSTree.html#rejectNotify--">rejectNotify</a></span>()</code>
 <div class="block">Method called by IntegratorMC in the event that the most recent trial
  move is rejected.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSTree.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Sets the box on which this move acts.</div>
@@ -420,6 +433,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </dl>
 </li>
 </ul>
+<a name="getSigma-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSigma</h4>
+<pre>protected&nbsp;double&nbsp;getSigma(int&nbsp;i,
+                          int&nbsp;j)</pre>
+</li>
+</ul>
 <a name="getChi-double-">
 <!--   -->
 </a>
@@ -501,7 +524,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/virial/MCMoveClusterAtomHSRing.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/virial/MCMoveClusterAtomMulti.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/virial/MCMoveClusterAtomHSTreeMix.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/virial/MCMoveClusterAtomHSTree.html" target="_top">Frames</a></li>
