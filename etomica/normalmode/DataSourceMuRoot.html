@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/normalmode/DataSourceImposedFEHistogram.html" title="class in etomica.normalmode"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootPressure.html" title="class in etomica.normalmode"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootDPressure.html" title="class in etomica.normalmode"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/normalmode/DataSourceMuRoot.html" target="_top">Frames</a></li>
@@ -143,6 +143,14 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootDPressure.html" title="class in etomica.normalmode">DataSourceMuRoot.DataSourceMuRootDPressure</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootDU.html" title="class in etomica.normalmode">DataSourceMuRoot.DataSourceMuRootDU</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootPressure.html" title="class in etomica.normalmode">DataSourceMuRoot.DataSourceMuRootPressure</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -182,27 +190,35 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#lastLnTot">lastLnTot</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#lastDU">lastDU</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#lastLnTot">lastLnTot</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#lastP">lastP</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#lastVacancyConcentration">lastVacancyConcentration</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#latticeDensity">latticeDensity</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/integrator/mcmove/MCMoveOverlapListener.html" title="class in etomica.integrator.mcmove">MCMoveOverlapListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#mcMoveOverlapMeter">mcMoveOverlapMeter</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#pSplitter">pSplitter</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#uSplitter">uSplitter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
@@ -268,15 +284,23 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastLnTot--">getLastLnTot</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastDU--">getLastDU</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastPressure--">getLastPressure</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastLnTot--">getLastLnTot</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastPressure--">getLastPressure</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#getLastVacancyConcentration--">getLastVacancyConcentration</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/DataSourceMuRoot.html#setUSplitter-etomica.data.DataDistributer-">setUSplitter</a></span>(<a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a>&nbsp;uSplitter)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -323,6 +347,15 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <li class="blockList">
 <h4>pSplitter</h4>
 <pre>protected final&nbsp;<a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a> pSplitter</pre>
+</li>
+</ul>
+<a name="uSplitter">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uSplitter</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a> uSplitter</pre>
 </li>
 </ul>
 <a name="bmu">
@@ -400,10 +433,19 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <a name="lastDMu">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>lastDMu</h4>
 <pre>protected&nbsp;double lastDMu</pre>
+</li>
+</ul>
+<a name="lastDU">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>lastDU</h4>
+<pre>protected&nbsp;double lastDU</pre>
 </li>
 </ul>
 </li>
@@ -436,6 +478,15 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setUSplitter-etomica.data.DataDistributer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUSplitter</h4>
+<pre>public&nbsp;void&nbsp;setUSplitter(<a href="../../etomica/data/DataDistributer.html" title="class in etomica.data">DataDistributer</a>&nbsp;uSplitter)</pre>
+</li>
+</ul>
 <a name="getDataAsScalar--">
 <!--   -->
 </a>
@@ -477,6 +528,15 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <li class="blockList">
 <h4>getLastDPressure</h4>
 <pre>public&nbsp;double&nbsp;getLastDPressure()</pre>
+</li>
+</ul>
+<a name="getLastDU--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLastDU</h4>
+<pre>public&nbsp;double&nbsp;getLastDU()</pre>
 </li>
 </ul>
 <a name="getLastVacancyConcentration--">
@@ -525,7 +585,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/normalmode/DataSourceImposedFEHistogram.html" title="class in etomica.normalmode"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootPressure.html" title="class in etomica.normalmode"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/normalmode/DataSourceMuRoot.DataSourceMuRootDPressure.html" title="class in etomica.normalmode"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/normalmode/DataSourceMuRoot.html" target="_top">Frames</a></li>
