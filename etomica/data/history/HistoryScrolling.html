@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -109,6 +109,10 @@ var activeTableTab = "activeTableTab";
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="../../../etomica/data/history/History.html" title="interface in etomica.data.history">History</a>, java.io.Serializable</dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../etomica/modules/statistics/HistoryStatistics.html" title="class in etomica.modules.statistics">HistoryStatistics</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">HistoryScrolling</span>
@@ -129,6 +133,45 @@ implements <a href="../../../etomica/data/history/History.html" title="interface
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#cursor">cursor</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#full">full</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#history">history</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#tempX">tempX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#tempY">tempY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/history/HistoryScrolling.html#xValues">xValues</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -225,6 +268,68 @@ implements <a href="../../../etomica/data/history/History.html" title="interface
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="history">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>history</h4>
+<pre>protected&nbsp;double[] history</pre>
+</li>
+</ul>
+<a name="cursor">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cursor</h4>
+<pre>protected&nbsp;int cursor</pre>
+</li>
+</ul>
+<a name="tempY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tempY</h4>
+<pre>protected&nbsp;double[] tempY</pre>
+</li>
+</ul>
+<a name="tempX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tempX</h4>
+<pre>protected&nbsp;double[] tempX</pre>
+</li>
+</ul>
+<a name="xValues">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xValues</h4>
+<pre>protected&nbsp;double[] xValues</pre>
+</li>
+</ul>
+<a name="full">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>full</h4>
+<pre>protected&nbsp;boolean full</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -424,13 +529,13 @@ implements <a href="../../../etomica/data/history/History.html" title="interface
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
