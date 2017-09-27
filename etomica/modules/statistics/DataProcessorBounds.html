@@ -101,7 +101,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../etomica/data/DataProcessor.html" title="class in etomica.data">etomica.data.DataProcessor</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../etomica/data/DataProcessorForked.html" title="class in etomica.data">etomica.data.DataProcessorForked</a></li>
+<li>
+<ul class="inheritance">
 <li>etomica.modules.statistics.DataProcessorBounds</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -112,12 +117,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></dd>
+<dd><a href="../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, <a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataProcessorBounds</span>
-extends <a href="../../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></pre>
+extends <a href="../../../etomica/data/DataProcessorForked.html" title="class in etomica.data">DataProcessorForked</a></pre>
 </li>
 </ul>
 </div>
@@ -137,18 +142,14 @@ extends <a href="../../../etomica/data/DataProcessor.html" title="class in etomi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/DataProcessorBounds.html#sinks">sinks</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/DataProcessorBounds.html#tags">tags</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDouble.html" title="class in etomica.data.types">DataDouble</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/DataProcessorBounds.html#x">x</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDouble.DataInfoDouble.html" title="class in etomica.data.types">DataDouble.DataInfoDouble</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/DataProcessorBounds.html#xInfo">xInfo</a></span></code>&nbsp;</td>
 </tr>
@@ -218,11 +219,18 @@ extends <a href="../../../etomica/data/DataProcessor.html" title="class in etomi
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataProcessorForked">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/DataProcessorForked.html" title="class in etomica.data">DataProcessorForked</a></h3>
+<code><a href="../../../etomica/data/DataProcessorForked.html#addDataSink-etomica.data.IDataSink-">addDataSink</a>, <a href="../../../etomica/data/DataProcessorForked.html#getDataSink--">getDataSink</a>, <a href="../../../etomica/data/DataProcessorForked.html#getDataSinks--">getDataSinks</a>, <a href="../../../etomica/data/DataProcessorForked.html#removeDataSink-etomica.data.IDataSink-">removeDataSink</a>, <a href="../../../etomica/data/DataProcessorForked.html#setDataSink-etomica.data.IDataSink-">setDataSink</a>, <a href="../../../etomica/data/DataProcessorForked.html#setDataSinks-etomica.data.IDataSink:A-">setDataSinks</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataProcessor">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../../etomica/data/DataProcessor.html#getDataSink--">getDataSink</a>, <a href="../../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../../etomica/data/DataProcessor.html#insertTransformerIfNeeded--">insertTransformerIfNeeded</a>, <a href="../../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a>, <a href="../../../etomica/data/DataProcessor.html#setDataSink-etomica.data.IDataSink-">setDataSink</a></code></li>
+<code><a href="../../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../../etomica/data/DataProcessor.html#insertTransformerIfNeeded--">insertTransformerIfNeeded</a>, <a href="../../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -230,6 +238,20 @@ extends <a href="../../../etomica/data/DataProcessor.html" title="class in etomi
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataPipe">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></h3>
+<code><a href="../../../etomica/data/DataPipe.html#getTag--">getTag</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.data.IDataSink">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></h3>
+<code><a href="../../../etomica/data/IDataSink.html#putData-etomica.data.IData-">putData</a>, <a href="../../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code></li>
 </ul>
 </li>
 </ul>
@@ -261,15 +283,6 @@ extends <a href="../../../etomica/data/DataProcessor.html" title="class in etomi
 <li class="blockList">
 <h4>xInfo</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/data/types/DataDouble.DataInfoDouble.html" title="class in etomica.data.types">DataDouble.DataInfoDouble</a>[] xInfo</pre>
-</li>
-</ul>
-<a name="sinks">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sinks</h4>
-<pre>protected&nbsp;<a href="../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[] sinks</pre>
 </li>
 </ul>
 <a name="tags">

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/statistics/HistoryStatistics.html" title="class in etomica.modules.statistics"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/statistics/StatisticsMCGraphic.html" target="_top">Frames</a></li>
@@ -72,7 +72,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -124,6 +124,25 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -200,13 +219,20 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#makeHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.AccumulatorAverageCollapsing-etomica.data.DataPumpListener-java.lang.String-">makeHistoryPlot</a></span>(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#makeHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">makeHistoryPlot</a></span>(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
                <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
                javax.swing.JPanel&nbsp;historyPanel,
-               <a href="../../../etomica/data/AccumulatorAverageCollapsing.html" title="class in etomica.data">AccumulatorAverageCollapsing</a>&nbsp;pAccumulator,
-               <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pPump,
+               <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pump,
                java.lang.String&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#makeMuHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">makeMuHistoryPlot</a></span>(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
+                 <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
+                 javax.swing.JPanel&nbsp;historyPanel,
+                 <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pump,
+                 java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -290,18 +316,30 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.AccumulatorAverageCollapsing-etomica.data.DataPumpListener-java.lang.String-">
+<a name="makeHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeHistoryPlot</h4>
-<pre>protected&nbsp;<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a>&nbsp;makeHistoryPlot(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
-                                   <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
-                                   javax.swing.JPanel&nbsp;historyPanel,
-                                   <a href="../../../etomica/data/AccumulatorAverageCollapsing.html" title="class in etomica.data">AccumulatorAverageCollapsing</a>&nbsp;pAccumulator,
-                                   <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pPump,
-                                   java.lang.String&nbsp;name)</pre>
+<pre>protected&nbsp;<a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a>&nbsp;makeHistoryPlot(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
+                                                              <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
+                                                              javax.swing.JPanel&nbsp;historyPanel,
+                                                              <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pump,
+                                                              java.lang.String&nbsp;name)</pre>
+</li>
+</ul>
+<a name="makeMuHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeMuHistoryPlot</h4>
+<pre>protected&nbsp;<a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a>&nbsp;makeMuHistoryPlot(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
+                                                                <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
+                                                                javax.swing.JPanel&nbsp;historyPanel,
+                                                                <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pump,
+                                                                java.lang.String&nbsp;name)</pre>
 </li>
 </ul>
 <a name="createStatPanel-etomica.data.DataFork-java.awt.Dimension-etomica.modules.statistics.AccumulatorFactory-boolean-">
@@ -353,7 +391,7 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/statistics/HistoryStatistics.html" title="class in etomica.modules.statistics"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/statistics/StatisticsMCGraphic.html" target="_top">Frames</a></li>
@@ -377,7 +415,7 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
