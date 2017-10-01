@@ -127,7 +127,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></dd>
+<dd><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -309,7 +309,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;incomingDataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
 <div class="block">Returns null (any data is good data)</div>
 </td>
 </tr>
@@ -318,14 +318,14 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getDoStrictBlockData--">getDoStrictBlockData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#processDataInfo-etomica.data.IEtomicaDataInfo-">processDataInfo</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;incomingDataInfo)</code>
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
 <div class="block">Prepares the accumulator for input data.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code>
 <div class="block">Invokes processDataInfo on the given DataInfo, and passes the returned
  DataInfo to the dataSink (if not null).</div>
 </td>
@@ -384,11 +384,11 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.data.IEtomicaDataSource">
+<li class="blockList"><a name="methods.inherited.from.class.etomica.data.IDataSource">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></h3>
-<code><a href="../../etomica/data/IEtomicaDataSource.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/IEtomicaDataSource.html#getTag--">getTag</a></code></li>
+<h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></h3>
+<code><a href="../../etomica/data/IDataSource.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/IDataSource.html#getTag--">getTag</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataPipe">
@@ -615,13 +615,13 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>public&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;getBlockDataSink()</pre>
 </li>
 </ul>
-<a name="getDataCaster-etomica.data.IEtomicaDataInfo-">
+<a name="getDataCaster-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;incomingDataInfo)</pre>
+<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
 <div class="block">Returns null (any data is good data)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -644,22 +644,22 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </dl>
 </li>
 </ul>
-<a name="putDataInfo-etomica.data.IEtomicaDataInfo-">
+<a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>putDataInfo</h4>
-<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IEtomicaDataInfo-">DataProcessor</a></code></span></div>
+<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">DataProcessor</a></code></span></div>
 <div class="block">Invokes processDataInfo on the given DataInfo, and passes the returned
  DataInfo to the dataSink (if not null).  Will insert a data caster before
  the DataSink if appropriate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></code></dd>
+<dd><code><a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -706,18 +706,18 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </dl>
 </li>
 </ul>
-<a name="processDataInfo-etomica.data.IEtomicaDataInfo-">
+<a name="processDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>processDataInfo</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;incomingDataInfo)</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
 <div class="block">Prepares the accumulator for input data.  Discards any previous 
  contributions to statistics.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/data/AccumulatorAverage.html#processDataInfo-etomica.data.IEtomicaDataInfo-">processDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></code></dd>
+<dd><code><a href="../../etomica/data/AccumulatorAverage.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>incomingDataInfo</code> - the DataInfo instance for the data that will be given to
             addData</dd>

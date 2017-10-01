@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>, java.io.Serializable</dd>
+<dd><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MeterDihedralAngle</span>
 extends java.lang.Object
-implements <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, java.io.Serializable</pre>
+implements <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, java.io.Serializable</pre>
 <div class="block">Meter for tabulation of a dihedral angle distribution between nearest neighbors.  The
  meter takes data via actionPerformed and returns the average dihedral angle via
  getData.</div>
@@ -232,7 +232,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDihedralAngle.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -438,10 +438,10 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataInfo</h4>
-<pre>public&nbsp;<a href="../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfo()</pre>
+<pre>public&nbsp;<a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfo()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/data/IEtomicaDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../../etomica/data/IDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -454,7 +454,9 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <pre>public&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/data/IEtomicaDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../../etomica/data/IDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a tag that uniquely identifies the IDataInfo</dd>
 </dl>
 </li>
 </ul>

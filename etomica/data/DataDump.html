@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></dd>
+<dd><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataDump</span>
 extends java.lang.Object
-implements <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></pre>
+implements <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></pre>
 <div class="block">DataDump acts both as a DataSink and a DataSource.  DataDump takes the Data
  it receives as a DataSink and exposes that as a DataSource.  This is useful
  as a way to combine multiple Data streams (with the caveat that this
@@ -141,7 +141,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#data">data</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#dataInfo">dataInfo</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -186,13 +186,13 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code>
 <div class="block">Returns a DataProcessor that casts the data that will be given 
  to this DataSink to a form that it can accept.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -207,7 +207,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataDump.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
@@ -248,7 +248,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>dataInfo</h4>
-<pre>protected&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a> dataInfo</pre>
+<pre>protected&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a> dataInfo</pre>
 </li>
 </ul>
 <a name="tag">
@@ -285,14 +285,14 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDataCaster-etomica.data.IEtomicaDataInfo-">
+<a name="getDataCaster-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IEtomicaDataInfo-">IDataSink</a></code></span></div>
+<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
 <div class="block">Returns a DataProcessor that casts the data that will be given 
  to this DataSink to a form that it can accept.  Returns null if the
  Data is acceptable without casting.  Otherwise object that is pushing
@@ -300,7 +300,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
  the returned DataTransformer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>inputDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
 </dl>
@@ -336,18 +336,18 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </dl>
 </li>
 </ul>
-<a name="putDataInfo-etomica.data.IEtomicaDataInfo-">
+<a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>putDataInfo</h4>
-<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;inputDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">IDataSink</a></code></span></div>
+<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -357,10 +357,10 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataInfo</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfo()</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfo()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -373,7 +373,9 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <pre>public&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a tag that uniquely identifies the IDataInfo</dd>
 </dl>
 </li>
 </ul>

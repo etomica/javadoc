@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></dd>
+<dd><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MeterWorkTargetHarmonicandReweighting</span>
 extends java.lang.Object
-implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></pre>
+implements <a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></pre>
 <div class="block">Meter used for overlap sampling in the target-sampled system.  The meter
  measures the energy difference for the harmonic and target
  potentials.
@@ -271,15 +271,15 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterWorkTargetHarmonicandReweighting.html#getDataHistogramBetaUBWr--">getDataHistogramBetaUBWr</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterWorkTargetHarmonicandReweighting.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterWorkTargetHarmonicandReweighting.html#getDataInfoHistogramBetaUBWf--">getDataInfoHistogramBetaUBWf</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/MeterWorkTargetHarmonicandReweighting.html#getDataInfoHistogramBetaUBWr--">getDataInfoHistogramBetaUBWr</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -522,10 +522,10 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataInfo</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfo()</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfo()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSource.html#getDataInfo--">getDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -538,7 +538,9 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <pre>public&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a tag that uniquely identifies the IDataInfo</dd>
 </dl>
 </li>
 </ul>
@@ -557,7 +559,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataInfoHistogramBetaUBWf</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfoHistogramBetaUBWf()</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfoHistogramBetaUBWf()</pre>
 </li>
 </ul>
 <a name="getDataHistogramBetaUBWr--">
@@ -575,7 +577,7 @@ implements <a href="../../etomica/data/IEtomicaDataSource.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataInfoHistogramBetaUBWr</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;getDataInfoHistogramBetaUBWr()</pre>
+<pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfoHistogramBetaUBWr()</pre>
 </li>
 </ul>
 <a name="getBetaUBWf--">

@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>, <a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>, java.io.Serializable</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">DataInfo</span>
 extends java.lang.Object
-implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></pre>
+implements java.io.Serializable, <a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></pre>
 <div class="block">Object associated with a Data instance and which provides descriptive 
  information about the data encapsulated in it. Information is typically used
  when displaying or writing the data to file, or making new Data instances 
@@ -217,18 +217,11 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.data.IEtomicaDataInfo">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></h3>
-<code><a href="../../etomica/data/IEtomicaDataInfo.html#getFactory--">getFactory</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.IDataInfo">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.data.<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></h3>
-<code><a href="../../etomica/data/IDataInfo.html#getLength--">getLength</a>, <a href="../../etomica/data/IDataInfo.html#makeData--">makeData</a></code></li>
+<code><a href="../../etomica/data/IDataInfo.html#getFactory--">getFactory</a>, <a href="../../etomica/data/IDataInfo.html#getLength--">getLength</a>, <a href="../../etomica/data/IDataInfo.html#makeData--">makeData</a></code></li>
 </ul>
 </li>
 </ul>
@@ -277,7 +270,7 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
 <pre>public&nbsp;<a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a>&nbsp;getDimension()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataInfo.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataInfo.html#getDimension--">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the dimension given at construction.</dd>
 </dl>
@@ -326,7 +319,7 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
 <div class="block">Adds the tag</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataInfo.html#addTag-etomica.data.DataTag-">addTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataInfo.html#addTag-etomica.data.DataTag-">addTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -340,7 +333,7 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
 <div class="block">Convenience method to add all of the given tags.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataInfo.html#addTags-etomica.data.DataTag:A-">addTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataInfo.html#addTags-etomica.data.DataTag:A-">addTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -354,7 +347,7 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
 <div class="block">Removes all tags.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataInfo.html#clearTags--">clearTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataInfo.html#clearTags--">clearTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -370,7 +363,7 @@ implements java.io.Serializable, <a href="../../etomica/data/IEtomicaDataInfo.ht
  so the array elements should not be modified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IEtomicaDataInfo.html#getTags--">getTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataInfo.html#getTags--">getTags</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></dd>
 </dl>
 </li>
 </ul>

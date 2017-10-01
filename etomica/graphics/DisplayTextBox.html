@@ -238,7 +238,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBox.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;dataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBox.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;dataInfo)</code>
 <div class="block">Returns caster needed to convert type indicated by DataInfo to a DataDouble.</div>
 </td>
 </tr>
@@ -286,7 +286,7 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBox.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;dataInfo)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBox.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;dataInfo)</code>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
@@ -428,32 +428,32 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="putDataInfo-etomica.data.IEtomicaDataInfo-">
+<a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>putDataInfo</h4>
-<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;dataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">IDataSink</a></code></span></div>
+<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;dataInfo)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getDataCaster-etomica.data.IEtomicaDataInfo-">
+<a name="getDataCaster-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;dataInfo)</pre>
+<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;dataInfo)</pre>
 <div class="block">Returns caster needed to convert type indicated by DataInfo to a DataDouble.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
 </dl>

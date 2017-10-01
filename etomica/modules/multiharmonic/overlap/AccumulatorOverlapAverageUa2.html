@@ -206,7 +206,7 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></span>(<a href="../../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;info)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</code>
 <div class="block">Returns a DataProcessor that casts the data that will be given 
  to this DataSink to a form that it can accept.</div>
 </td>
@@ -230,7 +230,7 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></span>(<a href="../../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;info)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</code>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
@@ -335,14 +335,14 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDataCaster-etomica.data.IEtomicaDataInfo-">
+<a name="getDataCaster-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;info)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IEtomicaDataInfo-">IDataSink</a></code></span></div>
+<pre>public&nbsp;<a href="../../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
 <div class="block">Returns a DataProcessor that casts the data that will be given 
  to this DataSink to a form that it can accept.  Returns null if the
  Data is acceptable without casting.  Otherwise object that is pushing
@@ -350,24 +350,24 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
  the returned DataTransformer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IEtomicaDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>info</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
 </dl>
 </li>
 </ul>
-<a name="putDataInfo-etomica.data.IEtomicaDataInfo-">
+<a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>putDataInfo</h4>
-<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a>&nbsp;info)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">IDataSink</a></code></span></div>
+<pre>public&nbsp;void&nbsp;putDataInfo(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IEtomicaDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../../../etomica/data/IDataSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 </dl>
 </li>
 </ul>

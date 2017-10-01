@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/IData.html" title="interface in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/data/IDataInfoFactory.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/IDataInfo.html" target="_top">Frames</a></li>
@@ -98,10 +98,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Subinterfaces:</dt>
-<dd><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data">IEtomicaDataInfo</a></dd>
-</dl>
-<dl>
 <dt>All Known Implementing Classes:</dt>
 <dd><a href="../../etomica/data/types/DataDouble.DataInfoDouble.html" title="class in etomica.data.types">DataDouble.DataInfoDouble</a>, <a href="../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a>, <a href="../../etomica/data/types/DataDoubleBDArray.DataInfoDoubleBDArray.html" title="class in etomica.data.types">DataDoubleBDArray.DataInfoDoubleBDArray</a>, <a href="../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>, <a href="../../etomica/data/types/DataGroup.DataInfoGroup.html" title="class in etomica.data.types">DataGroup.DataInfoGroup</a>, <a href="../../etomica/data/DataInfo.html" title="class in etomica.data">DataInfo</a>, <a href="../../etomica/data/types/DataTable.DataInfoTable.html" title="class in etomica.data.types">DataTable.DataInfoTable</a>, <a href="../../etomica/data/types/DataTensor.DataInfoTensor.html" title="class in etomica.data.types">DataTensor.DataInfoTensor</a>, <a href="../../etomica/data/types/DataVector.DataInfoVector.html" title="class in etomica.data.types">DataVector.DataInfoVector</a></dd>
 </dl>
@@ -127,22 +123,57 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#addTag-etomica.data.DataTag-">addTag</a></span>(<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;newTag)</code>
+<div class="block">Adds the tag to this IDataInfo object.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#addTags-etomica.data.DataTag:A-">addTags</a></span>(<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]&nbsp;newTags)</code>
+<div class="block">Convenience method to add all of the given tags.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#clearTags--">clearTags</a></span>()</code>
+<div class="block">Removes all tags.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#getDimension--">getDimension</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfoFactory.html" title="interface in etomica.data">IDataInfoFactory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#getFactory--">getFactory</a></span>()</code>
+<div class="block">Returns a mutable factory that can make copies of this instance of
+ DataInfo.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#getLabel--">getLabel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#getLength--">getLength</a></span>()</code>
 <div class="block">Returns the number of numerical values held by the IData object.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#getTags--">getTags</a></span>()</code>
+<div class="block">Returns the array of tags held by this DataInfo instance.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#makeData--">makeData</a></span>()</code>
 <div class="block">Returns a Data object appropriate for this DataInfo instance.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataInfo.html#toString--">toString</a></span>()</code>
 <div class="block">Returns "label (dimension)", where label and dimension are the values
@@ -206,11 +237,84 @@ var activeTableTab = "activeTableTab";
 <a name="makeData--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>makeData</h4>
 <pre><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;makeData()</pre>
 <div class="block">Returns a Data object appropriate for this DataInfo instance.</div>
+</li>
+</ul>
+<a name="getDimension--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDimension</h4>
+<pre><a href="../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a>&nbsp;getDimension()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns the dimension given at construction.</dd>
+</dl>
+</li>
+</ul>
+<a name="addTag-etomica.data.DataTag-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTag</h4>
+<pre>void&nbsp;addTag(<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;newTag)</pre>
+<div class="block">Adds the tag to this IDataInfo object.  You should only call this method
+ if you created this IDataInfo (You should not call this for IDataInfo
+ you receive.  Make a new instance with the DataInfoFactory and then add
+ your tag to that).</div>
+</li>
+</ul>
+<a name="addTags-etomica.data.DataTag:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTags</h4>
+<pre>void&nbsp;addTags(<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]&nbsp;newTags)</pre>
+<div class="block">Convenience method to add all of the given tags.  You should only call
+ this method if you created this IDataInfo (You should not call this for
+ IDataInfo you receive.  Make a new instance with the DataInfoFactory and
+ then add your tag to that).</div>
+</li>
+</ul>
+<a name="clearTags--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearTags</h4>
+<pre>void&nbsp;clearTags()</pre>
+<div class="block">Removes all tags.  You should only call this method if you created this
+ IDataInfo.</div>
+</li>
+</ul>
+<a name="getTags--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTags</h4>
+<pre><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]&nbsp;getTags()</pre>
+<div class="block">Returns the array of tags held by this DataInfo instance.  The same
+ instance of the array can be returned each time the method is called,
+ so the array elements should not be modified.</div>
+</li>
+</ul>
+<a name="getFactory--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFactory</h4>
+<pre><a href="../../etomica/data/IDataInfoFactory.html" title="interface in etomica.data">IDataInfoFactory</a>&nbsp;getFactory()</pre>
+<div class="block">Returns a mutable factory that can make copies of this instance of
+ DataInfo.</div>
 </li>
 </ul>
 </li>
@@ -241,7 +345,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/IData.html" title="interface in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/data/IDataInfoFactory.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/IDataInfo.html" target="_top">Frames</a></li>

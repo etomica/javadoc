@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
+var methods = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/IDataSource.html" target="_top">Frames</a></li>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><a href="../../etomica/virial/ClusterWeightSumWall.DataSourceClusterWall.html" title="interface in etomica.virial">ClusterWeightSumWall.DataSourceClusterWall</a>, <a href="../../etomica/data/IEtomicaDataSource.html" title="interface in etomica.data">IEtomicaDataSource</a>, <a href="../../etomica/paracetamol/LatticeEnergyParacetamol.html" title="interface in etomica.paracetamol">LatticeEnergyParacetamol</a></dd>
+<dd><a href="../../etomica/virial/ClusterWeightSumWall.DataSourceClusterWall.html" title="interface in etomica.virial">ClusterWeightSumWall.DataSourceClusterWall</a>, <a href="../../etomica/paracetamol/LatticeEnergyParacetamol.html" title="interface in etomica.paracetamol">LatticeEnergyParacetamol</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -108,6 +108,11 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IDataSource</span></pre>
+<div class="block">Interface for an object that can provide IData objects
+ on request.  Normally an IDataSource heads a stream that processes
+ and/or records the IData as it passes through different segments.
+ IData is pulled from the IDataSource by a DataPump and pushed down the
+ data stream.</div>
 </li>
 </ul>
 </div>
@@ -130,6 +135,14 @@ var activeTableTab = "activeTableTab";
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataSource.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataSource.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/IDataSource.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -148,7 +161,7 @@ var activeTableTab = "activeTableTab";
 <a name="getData--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getData</h4>
 <pre><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData()</pre>
@@ -156,6 +169,28 @@ var activeTableTab = "activeTableTab";
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the data given by this source</dd>
 </dl>
+</li>
+</ul>
+<a name="getTag--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTag</h4>
+<pre><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a tag that uniquely identifies the IDataInfo</dd>
+</dl>
+</li>
+</ul>
+<a name="getDataInfo--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getDataInfo</h4>
+<pre><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfo()</pre>
 </li>
 </ul>
 </li>
@@ -186,7 +221,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/IEtomicaDataInfo.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/IDataSource.html" target="_top">Frames</a></li>
