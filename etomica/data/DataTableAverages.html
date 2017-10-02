@@ -72,7 +72,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.etomica.data.DataSinkTable">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.etomica.data.DataSet">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -115,10 +115,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataTableAverages</span>
@@ -129,10 +125,6 @@ extends <a href="../../etomica/data/DataSinkTable.html" title="class in etomica.
  construction or added afterward. For each source added, this class
  automatically constructs an AccumulatorAverage, arranges for pumping of data
  from source to accumulator, and from accumulator to a column in this table.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.data.DataTableAverages">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -146,18 +138,11 @@ extends <a href="../../etomica/data/DataSinkTable.html" title="class in etomica.
 </a>
 <h3>Nested Class Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.etomica.data.DataSinkTable">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataSinkTable.html" title="class in etomica.data">DataSinkTable</a></h3>
-<code><a href="../../etomica/data/DataSinkTable.DataCasterJudgeTable.html" title="class in etomica.data">DataSinkTable.DataCasterJudgeTable</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.etomica.data.DataSet">
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataSet.html" title="class in etomica.data">DataSet</a></h3>
-<code><a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a>, <a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></code></li>
+<code><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></code></li>
 </ul>
 </li>
 </ul>
@@ -271,14 +256,14 @@ extends <a href="../../etomica/data/DataSinkTable.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataSinkTable.html" title="class in etomica.data">DataSinkTable</a></h3>
-<code><a href="../../etomica/data/DataSinkTable.html#dataChanged-etomica.data.DataSet.DataSetSink-">dataChanged</a>, <a href="../../etomica/data/DataSinkTable.html#dataInfoChanged-etomica.data.DataSet.DataSetSink-">dataInfoChanged</a>, <a href="../../etomica/data/DataSinkTable.html#fireRowCountChangedEvent--">fireRowCountChangedEvent</a>, <a href="../../etomica/data/DataSinkTable.html#getRowCount--">getRowCount</a>, <a href="../../etomica/data/DataSinkTable.html#getRowHeader-int-">getRowHeader</a>, <a href="../../etomica/data/DataSinkTable.html#getValue-int-int-">getValue</a></code></li>
+<code><a href="../../etomica/data/DataSinkTable.html#dataChanged-etomica.data.DataSet.DataSetSink-">dataChanged</a>, <a href="../../etomica/data/DataSinkTable.html#dataInfoChanged-etomica.data.DataSet.DataSetSink-">dataInfoChanged</a>, <a href="../../etomica/data/DataSinkTable.html#fireRowCountChangedEvent--">fireRowCountChangedEvent</a>, <a href="../../etomica/data/DataSinkTable.html#getRowCount--">getRowCount</a>, <a href="../../etomica/data/DataSinkTable.html#getRowHeader-int-">getRowHeader</a>, <a href="../../etomica/data/DataSinkTable.html#getValue-int-int-">getValue</a>, <a href="../../etomica/data/DataSinkTable.html#makeDataSink-etomica.data.IDataInfo-">makeDataSink</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.DataSet">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataSet.html" title="class in etomica.data">DataSet</a></h3>
-<code><a href="../../etomica/data/DataSet.html#addDataListener-etomica.data.DataSetListener-">addDataListener</a>, <a href="../../etomica/data/DataSet.html#fireDataChangedEvent--">fireDataChangedEvent</a>, <a href="../../etomica/data/DataSet.html#fireDataCountChangedEvent--">fireDataCountChangedEvent</a>, <a href="../../etomica/data/DataSet.html#getData-int-">getData</a>, <a href="../../etomica/data/DataSet.html#getDataCasterJudge--">getDataCasterJudge</a>, <a href="../../etomica/data/DataSet.html#getDataCount--">getDataCount</a>, <a href="../../etomica/data/DataSet.html#getDataInfo-int-">getDataInfo</a>, <a href="../../etomica/data/DataSet.html#isUpdatingOnAnyChange--">isUpdatingOnAnyChange</a>, <a href="../../etomica/data/DataSet.html#makeDataSink--">makeDataSink</a>, <a href="../../etomica/data/DataSet.html#removeDataListener-etomica.data.DataSetListener-">removeDataListener</a>, <a href="../../etomica/data/DataSet.html#reset--">reset</a>, <a href="../../etomica/data/DataSet.html#setUpdatingOnAnyChange-boolean-">setUpdatingOnAnyChange</a>, <a href="../../etomica/data/DataSet.html#updateDataMap--">updateDataMap</a></code></li>
+<code><a href="../../etomica/data/DataSet.html#addDataListener-etomica.data.DataSetListener-">addDataListener</a>, <a href="../../etomica/data/DataSet.html#fireDataChangedEvent--">fireDataChangedEvent</a>, <a href="../../etomica/data/DataSet.html#fireDataCountChangedEvent--">fireDataCountChangedEvent</a>, <a href="../../etomica/data/DataSet.html#getData-int-">getData</a>, <a href="../../etomica/data/DataSet.html#getDataCount--">getDataCount</a>, <a href="../../etomica/data/DataSet.html#getDataInfo-int-">getDataInfo</a>, <a href="../../etomica/data/DataSet.html#isUpdatingOnAnyChange--">isUpdatingOnAnyChange</a>, <a href="../../etomica/data/DataSet.html#makeDataSink--">makeDataSink</a>, <a href="../../etomica/data/DataSet.html#removeDataListener-etomica.data.DataSetListener-">removeDataListener</a>, <a href="../../etomica/data/DataSet.html#reset--">reset</a>, <a href="../../etomica/data/DataSet.html#setUpdatingOnAnyChange-boolean-">setUpdatingOnAnyChange</a>, <a href="../../etomica/data/DataSet.html#updateDataMap--">updateDataMap</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -487,7 +472,7 @@ extends <a href="../../etomica/data/DataSinkTable.html" title="class in etomica.
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.etomica.data.DataSinkTable">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.etomica.data.DataSet">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

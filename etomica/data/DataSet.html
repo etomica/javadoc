@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/DataPumpListenerSmart.html" title="class in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/DataSet.html" target="_top">Frames</a></li>
@@ -106,25 +106,16 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable</dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../etomica/data/DataSinkTable.html" title="class in etomica.data">DataSinkTable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataSet</span>
-extends java.lang.Object
-implements java.io.Serializable</pre>
+extends java.lang.Object</pre>
 <div class="block">Receives and organizes data from multiple streams. Fires event when new
  data arrives; can be configured to fire when any piece of data
  changes, or to perform action only when all data has changed.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.data.DataSet">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -144,10 +135,6 @@ implements java.io.Serializable</pre>
 <th class="colLast" scope="col">Class and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></span></code>
 <div class="block">A special DataSink used by the DataSet to receive Data and DataInfo 
@@ -202,9 +189,6 @@ implements java.io.Serializable</pre>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#DataSet--">DataSet</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#DataSet-etomica.data.DataSet.DataCasterJudge-">DataSet</a></span>(<a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a>&nbsp;dataCasterJudge)</code>&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -227,14 +211,14 @@ implements java.io.Serializable</pre>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#dataChanged-etomica.data.DataSet.DataSetSink-">dataChanged</a></span>(<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;dataSetSink)</code>
-<div class="block">Notifies the DataSet that new Data has arrived for the given psuedo 
+<div class="block">Notifies the DataSet that new Data has arrived for the given psuedo
  DataSink.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#dataInfoChanged-etomica.data.DataSet.DataSetSink-">dataInfoChanged</a></span>(<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;dataSetSink)</code>
-<div class="block">Notifies the DataSet that new DataInfo has arrived for the given 
+<div class="block">Notifies the DataSet that new DataInfo has arrived for the given
  psuedo DataSink.</div>
 </td>
 </tr>
@@ -253,43 +237,39 @@ implements java.io.Serializable</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#getDataCasterJudge--">getDataCasterJudge</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#getDataCount--">getDataCount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#getDataInfo-int-">getDataInfo</a></span>(int&nbsp;i)</code>
 <div class="block">Returns the ith DataInfo from the set.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#isUpdatingOnAnyChange--">isUpdatingOnAnyChange</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#makeDataSink--">makeDataSink</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#removeDataListener-etomica.data.DataSetListener-">removeDataListener</a></span>(<a href="../../etomica/data/DataSetListener.html" title="interface in etomica.data">DataSetListener</a>&nbsp;oldListener)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#reset--">reset</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#setUpdatingOnAnyChange-boolean-">setUpdatingOnAnyChange</a></span>(boolean&nbsp;updatingWithAnyChange)</code>
 <div class="block">Describes protocol for firing table events that notify of column data
  changes.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#updateDataMap--">updateDataMap</a></span>()</code>
 <div class="block">This updates the mapping between pseudo DataSinks and indices (used for
@@ -365,19 +345,10 @@ implements java.io.Serializable</pre>
 <a name="DataSet--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DataSet</h4>
-<pre>public&nbsp;DataSet()</pre>
-</li>
-</ul>
-<a name="DataSet-etomica.data.DataSet.DataCasterJudge-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataSet</h4>
-<pre>public&nbsp;DataSet(<a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a>&nbsp;dataCasterJudge)</pre>
+<pre>public&nbsp;DataSet()</pre>
 </li>
 </ul>
 </li>
@@ -388,15 +359,6 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDataCasterJudge--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCasterJudge</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data">DataSet.DataCasterJudge</a>&nbsp;getDataCasterJudge()</pre>
-</li>
-</ul>
 <a name="makeDataSink--">
 <!--   -->
 </a>
@@ -478,7 +440,7 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>dataChanged</h4>
 <pre>protected&nbsp;void&nbsp;dataChanged(<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;dataSetSink)</pre>
-<div class="block">Notifies the DataSet that new Data has arrived for the given psuedo 
+<div class="block">Notifies the DataSet that new Data has arrived for the given psuedo
  DataSink.</div>
 </li>
 </ul>
@@ -489,7 +451,7 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>dataInfoChanged</h4>
 <pre>protected&nbsp;void&nbsp;dataInfoChanged(<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;dataSetSink)</pre>
-<div class="block">Notifies the DataSet that new DataInfo has arrived for the given 
+<div class="block">Notifies the DataSet that new DataInfo has arrived for the given
  psuedo DataSink.</div>
 </li>
 </ul>
@@ -568,7 +530,7 @@ implements java.io.Serializable</pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/data/DataPumpListenerSmart.html" title="class in etomica.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/data/DataSet.DataCasterJudge.html" title="interface in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/data/DataSet.html" target="_top">Frames</a></li>
