@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,7 +178,7 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a>, <a href="../../etomica/data/DataProcessor.html#trueDataSink">trueDataSink</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a></code></li>
 </ul>
 </li>
 </ul>
@@ -226,103 +226,96 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#defaultFileName--">defaultFileName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#getFileName--">getFileName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#getWriteInterval--">getWriteInterval</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#getWriteOnFinishDataSource--">getWriteOnFinishDataSource</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#isAppending--">isAppending</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#isCloseFileEachTime--">isCloseFileEachTime</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#isSameFileEachTime--">isSameFileEachTime</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#isWriteOnInterval--">isWriteOnInterval</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#processData-etomica.data.IData-">processData</a></span>(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code>
 <div class="block">Gives data to DataSink for writing</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newDataInfo)</code>
 <div class="block">Informs this DataProcessor of the DataInfo for the Data it will be
  processing.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#putData-etomica.data.IData-">putData</a></span>(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code>
 <div class="block">Performs the open/write/close file actions in accordance with the
  settings of the Logger.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setAppending-boolean-">setAppending</a></span>(boolean&nbsp;appending)</code>
 <div class="block">Overwrite or attach the data to the file.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setCloseFileEachTime-boolean-">setCloseFileEachTime</a></span>(boolean&nbsp;closeFileEachTime)</code>
 <div class="block">Close the file and open a new one at each time INTERVAL.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setDataSink-etomica.data.IDataSink-">setDataSink</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink)</code>
 <div class="block">Sets the sink receiving the data.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setFileName-java.lang.String-">setFileName</a></span>(java.lang.String&nbsp;fileName)</code>
 <div class="block">Define the name of the output file.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setSameFileEachTime-boolean-">setSameFileEachTime</a></span>(boolean&nbsp;sameFileEachTime)</code>
 <div class="block">Write to the same file at each time INTERVAL, and close the file at the
  end of the simulation.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setWriteInterval-int-">setWriteInterval</a></span>(int&nbsp;newWriteInterval)</code>
 <div class="block">Define how many number of interval events received between writings to
  file.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setWriteOnFinish-etomica.data.IDataSource-">setWriteOnFinish</a></span>(<a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>&nbsp;newWriteOnFinishSource)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#setWriteOnInterval-boolean-">setWriteOnInterval</a></span>(boolean&nbsp;writeOnInterval)</code>&nbsp;</td>
 </tr>
@@ -332,7 +325,7 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/DataProcessor.html#getDataSink--">getDataSink</a>, <a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#insertTransformerIfNeeded--">insertTransformerIfNeeded</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/DataProcessor.html#getDataSink--">getDataSink</a>, <a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -455,27 +448,6 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the DataInfo of the Data that will be output by this
          DataProcessor</dd>
-</dl>
-</li>
-</ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.  Returns null if the
- Data is acceptable without casting.  Otherwise object that is pushing
- the Data into this DataSink is responsible for filtering the Data through
- the returned DataTransformer.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>incomingDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
 </dl>
 </li>
 </ul>

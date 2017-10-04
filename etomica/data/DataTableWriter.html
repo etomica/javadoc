@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -107,24 +107,39 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/DataLogger.DataWriter.html" title="interface in etomica.data">DataLogger.DataWriter</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/data/DataLogger.DataWriter.html" title="interface in etomica.data">DataLogger.DataWriter</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataTableWriter</span>
 extends java.lang.Object
-implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interface in etomica.data">DataLogger.DataWriter</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interface in etomica.data">DataLogger.DataWriter</a></pre>
 <div class="block">A DataWriter that writes out data as a table with optional column headings</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.data.DataTableWriter">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#internalDataSink">internalDataSink</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -155,17 +170,14 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newDataInfo)</code>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#getIncludeHeader--">getIncludeHeader</a></span>()</code>
 <div class="block">Returns whether the writer includes column headers or not</div>
 </td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#makeTerminalSink--">makeTerminalSink</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -180,19 +192,27 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#putDataInfoInternal-etomica.data.IDataInfo-">putDataInfoInternal</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;myDataInfo)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#putDataInternal-etomica.data.IData-">putDataInternal</a></span>(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#reset--">reset</a></span>()</code>
 <div class="block">Informs the DataSink that it will be writing the beginning of the 
  file so printing header information is appropriate.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#setFileWriter-java.io.FileWriter-">setFileWriter</a></span>(java.io.FileWriter&nbsp;newFileWriter)</code>
 <div class="block">Sets the FileWriter to be used for actual file I/O.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataTableWriter.html#setIncludeHeader-boolean-">setIncludeHeader</a></span>(boolean&nbsp;newIncludeHeader)</code>
 <div class="block">Directs the writer to include column headers or not</div>
@@ -214,6 +234,23 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="internalDataSink">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>internalDataSink</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a> internalDataSink</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -237,16 +274,6 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setIncludeHeader-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setIncludeHeader</h4>
-<pre>public&nbsp;void&nbsp;setIncludeHeader(boolean&nbsp;newIncludeHeader)</pre>
-<div class="block">Directs the writer to include column headers or not</div>
-</li>
-</ul>
 <a name="getIncludeHeader--">
 <!--   -->
 </a>
@@ -255,6 +282,16 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <h4>getIncludeHeader</h4>
 <pre>public&nbsp;boolean&nbsp;getIncludeHeader()</pre>
 <div class="block">Returns whether the writer includes column headers or not</div>
+</li>
+</ul>
+<a name="setIncludeHeader-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setIncludeHeader</h4>
+<pre>public&nbsp;void&nbsp;setIncludeHeader(boolean&nbsp;newIncludeHeader)</pre>
+<div class="block">Directs the writer to include column headers or not</div>
 </li>
 </ul>
 <a name="putDataInfo-etomica.data.IDataInfo-">
@@ -272,25 +309,22 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
+<a name="makeTerminalSink--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.  Returns null if the
- Data is acceptable without casting.  Otherwise object that is pushing
- the Data into this DataSink is responsible for filtering the Data through
- the returned DataTransformer.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
-</dl>
+<h4>makeTerminalSink</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;makeTerminalSink()</pre>
+</li>
+</ul>
+<a name="putDataInfoInternal-etomica.data.IDataInfo-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putDataInfoInternal</h4>
+<pre>protected&nbsp;void&nbsp;putDataInfoInternal(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;myDataInfo)</pre>
 </li>
 </ul>
 <a name="putData-etomica.data.IData-">
@@ -306,6 +340,15 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/IDataSink.html#putData-etomica.data.IData-">putData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="putDataInternal-etomica.data.IData-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putDataInternal</h4>
+<pre>protected&nbsp;void&nbsp;putDataInternal(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</pre>
 </li>
 </ul>
 <a name="setFileWriter-java.io.FileWriter-">
@@ -392,13 +435,13 @@ implements <a href="../../etomica/data/DataLogger.DataWriter.html" title="interf
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

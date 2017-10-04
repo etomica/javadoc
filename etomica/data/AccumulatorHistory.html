@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -193,7 +193,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a>, <a href="../../etomica/data/DataProcessor.html#trueDataSink">trueDataSink</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a></code></li>
 </ul>
 </li>
 </ul>
@@ -245,42 +245,36 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newInputDataInfo)</code>
-<div class="block">Returns null.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/history/History.html" title="interface in etomica.data.history">History</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#getHistory--">getHistory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#getTimeDataSource--">getTimeDataSource</a></span>()</code>
 <div class="block">Returns the DataSource used for the "time" component of the history.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newInputDataInfo)</code>
 <div class="block">Sets up data and histories, discarding any previous results.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#reset--">reset</a></span>()</code>
 <div class="block">Defined by subclass to perform some action that clears accumulated values.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#setHistory-etomica.data.history.History-">setHistory</a></span>(<a href="../../etomica/data/history/History.html" title="interface in etomica.data.history">History</a>&nbsp;newHistory)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorHistory.html#setTimeDataSource-etomica.data.DataSourceScalar-">setTimeDataSource</a></span>(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;newTimeDataSource)</code>
 <div class="block">Sets the DataSource used for the "time" component of the history.</div>
@@ -306,7 +300,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#insertTransformerIfNeeded--">insertTransformerIfNeeded</a>, <a href="../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -413,20 +407,6 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setTimeDataSource-etomica.data.DataSourceScalar-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setTimeDataSource</h4>
-<pre>public&nbsp;void&nbsp;setTimeDataSource(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;newTimeDataSource)</pre>
-<div class="block">Sets the DataSource used for the "time" component of the history.  Each
- time addData is called, the time DataSource's getData will be called and
- the returned scalar will be taken as the current time.  By default, the 
- time variable is taken to be the number of times data was added to the 
- history.</div>
-</li>
-</ul>
 <a name="getTimeDataSource--">
 <!--   -->
 </a>
@@ -437,18 +417,18 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <div class="block">Returns the DataSource used for the "time" component of the history.</div>
 </li>
 </ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
+<a name="setTimeDataSource-etomica.data.DataSourceScalar-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newInputDataInfo)</pre>
-<div class="block">Returns null.  AccumulatorHistogram can take an type of Data.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newInputDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
-</dl>
+<h4>setTimeDataSource</h4>
+<pre>public&nbsp;void&nbsp;setTimeDataSource(<a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a>&nbsp;newTimeDataSource)</pre>
+<div class="block">Sets the DataSource used for the "time" component of the history.  Each
+ time addData is called, the time DataSource's getData will be called and
+ the returned scalar will be taken as the current time.  By default, the
+ time variable is taken to be the number of times data was added to the
+ history.</div>
 </li>
 </ul>
 <a name="processDataInfo-etomica.data.IDataInfo-">

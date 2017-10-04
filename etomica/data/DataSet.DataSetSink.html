@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,23 +179,16 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newIncomingDataInfo)</code>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#putData-etomica.data.IData-">putData</a></span>(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;incomingData)</code>
 <div class="block">Gives data to DataSink for processing, display, or whatever it does.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newDataInfo)</code>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
@@ -284,27 +277,6 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/IDataSink.html#putData-etomica.data.IData-">putData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newIncomingDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.  Returns null if the
- Data is acceptable without casting.  Otherwise object that is pushing
- the Data into this DataSink is responsible for filtering the Data through
- the returned DataTransformer.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newIncomingDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
 </dl>
 </li>
 </ul>

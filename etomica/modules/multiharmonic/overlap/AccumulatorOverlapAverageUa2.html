@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,49 +205,42 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</code>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#getNBennetPoints--">getNBennetPoints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#getUa2-int-">getUa2</a></span>(int&nbsp;iParam)</code>
 <div class="block">Returns average value of expression used to determine optimal
  Bennet parameter (value[1]/(value[1]+expX[iParam]).</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#putData-etomica.data.IData-">putData</a></span>(<a href="../../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;value)</code>
 <div class="block">Add the given values to the sums and block sums</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</code>
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#reset--">reset</a></span>()</code>
 <div class="block">Resets all sums to zero</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#setBennetParam-double-double-">setBennetParam</a></span>(double&nbsp;aCenter,
               double&nbsp;aSpan)</code>
 <div class="block">sets the range of parameter values used for Bennets method.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/modules/multiharmonic/overlap/AccumulatorOverlapAverageUa2.html#setNumAlpha-int-">setNumAlpha</a></span>(int&nbsp;newNumAlpha)</code>&nbsp;</td>
 </tr>
@@ -335,27 +328,6 @@ implements <a href="../../../../etomica/data/IDataSink.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getDataCaster-etomica.data.IDataInfo-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;info)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">IDataSink</a></code></span></div>
-<div class="block">Returns a DataProcessor that casts the data that will be given 
- to this DataSink to a form that it can accept.  Returns null if the
- Data is acceptable without casting.  Otherwise object that is pushing
- the Data into this DataSink is responsible for filtering the Data through
- the returned DataTransformer.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>info</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
-</dl>
-</li>
-</ul>
 <a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>

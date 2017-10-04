@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,18 +107,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>, <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataFork</span>
 extends java.lang.Object
-implements <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a>, java.io.Serializable</pre>
+implements <a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a></pre>
 <div class="block">DataSink that takes a data stream and forwards it across multiple sinks.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.data.DataFork">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -142,7 +138,7 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#dataInfo">dataInfo</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected etomica.data.DataFork.DataSinkWrapper[]</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#dataSinkList">dataSinkList</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,45 +192,39 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
-<div class="block">Returns null, indicating that this DataSink can accept any type of Data.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#getDataSinks--">getDataSinks</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#putData-etomica.data.IData-">putData</a></span>(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code>
 <div class="block">Puts the given Data through into all DataSinks.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
 <div class="block">Puts the given DataInfo through into all DataSinks, inserting
  a data caster before any sinks needing one.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#removeDataSink-etomica.data.IDataSink-">removeDataSink</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink)</code>
 <div class="block">Removes the specified data sink.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#setDataSink-etomica.data.IDataSink-">setDataSink</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink)</code>
 <div class="block">Sets the given DataSink as the only one connected to this DataFork.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/DataFork.html#setDataSinks-etomica.data.IDataSink:A-">setDataSinks</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[]&nbsp;dataSinks)</code>
 <div class="block">Sets the list of DataSinks that receive the Data entering this DataFork.</div>
@@ -262,31 +252,31 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="tag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tag</h4>
+<pre>protected final&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
+</li>
+</ul>
 <a name="dataSinkList">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>dataSinkList</h4>
-<pre>protected&nbsp;etomica.data.DataFork.DataSinkWrapper[] dataSinkList</pre>
+<pre>protected&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>[] dataSinkList</pre>
 </li>
 </ul>
 <a name="dataInfo">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>dataInfo</h4>
 <pre>protected&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a> dataInfo</pre>
-</li>
-</ul>
-<a name="tag">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>tag</h4>
-<pre>protected final&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
 </li>
 </ul>
 </li>
@@ -340,22 +330,6 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 </dl>
 </li>
 </ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block">Returns null, indicating that this DataSink can accept any type of Data.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/IDataSink.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>incomingDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
-</dl>
-</li>
-</ul>
 <a name="putData-etomica.data.IData-">
 <!--   -->
 </a>
@@ -401,26 +375,6 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 </dl>
 </li>
 </ul>
-<a name="setDataSink-etomica.data.IDataSink-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setDataSink</h4>
-<pre>public&nbsp;void&nbsp;setDataSink(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink)</pre>
-<div class="block">Sets the given DataSink as the only one connected to this DataFork.  
- Previously set DataSinks are discarded.  If argument is null, this
- DataFork will be left with no DataSinks.
- <p> 
- Implementation of DataPipe interface.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/data/DataPipe.html#setDataSink-etomica.data.IDataSink-">setDataSink</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dataSink</code> - the new, sole DataSink connected to this DataFork</dd>
-</dl>
-</li>
-</ul>
 <a name="setDataSinks-etomica.data.IDataSink:A-">
 <!--   -->
 </a>
@@ -437,6 +391,26 @@ implements <a href="../../etomica/data/DataPipeForked.html" title="interface in 
 <dd><code><a href="../../etomica/data/DataPipeForked.html#setDataSinks-etomica.data.IDataSink:A-">setDataSinks</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataPipeForked.html" title="interface in etomica.data">DataPipeForked</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dataSinks</code> - The data sinks to set.</dd>
+</dl>
+</li>
+</ul>
+<a name="setDataSink-etomica.data.IDataSink-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDataSink</h4>
+<pre>public&nbsp;void&nbsp;setDataSink(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;dataSink)</pre>
+<div class="block">Sets the given DataSink as the only one connected to this DataFork.
+ Previously set DataSinks are discarded.  If argument is null, this
+ DataFork will be left with no DataSinks.
+ <p>
+ Implementation of DataPipe interface.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/data/DataPipe.html#setDataSink-etomica.data.IDataSink-">setDataSink</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dataSink</code> - the new, sole DataSink connected to this DataFork</dd>
 </dl>
 </li>
 </ul>

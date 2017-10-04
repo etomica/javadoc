@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,7 +238,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a>, <a href="../../etomica/data/DataProcessor.html#trueDataSink">trueDataSink</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#dataInfo">dataInfo</a>, <a href="../../etomica/data/DataProcessor.html#dataSink">dataSink</a>, <a href="../../etomica/data/DataProcessor.html#tag">tag</a></code></li>
 </ul>
 </li>
 </ul>
@@ -296,40 +296,34 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#getDataCaster-etomica.data.IDataInfo-">getDataCaster</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
-<div class="block">Returns null (any data is good data)</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/AccumulatorAverageBlockless.AllData.html" title="class in etomica.data">AccumulatorAverageBlockless.AllData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#getRawData--">getRawData</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#getSampleCount--">getSampleCount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#getTag-etomica.data.AccumulatorAverageBlockless.StatType-">getTag</a></span>(<a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a>&nbsp;statType)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code>
 <div class="block">Prepares the accumulator for input data.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#reset--">reset</a></span>()</code>
 <div class="block">Resets all sums to zero.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#setRawData-etomica.data.AccumulatorAverageBlockless.AllData-">setRawData</a></span>(<a href="../../etomica/data/AccumulatorAverageBlockless.AllData.html" title="class in etomica.data">AccumulatorAverageBlockless.AllData</a>&nbsp;ad)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageBlockless.html#statChoices--">statChoices</a></span>()</code>&nbsp;</td>
 </tr>
@@ -353,7 +347,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></h3>
-<code><a href="../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#insertTransformerIfNeeded--">insertTransformerIfNeeded</a>, <a href="../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
+<code><a href="../../etomica/data/DataProcessor.html#getDataInfo--">getDataInfo</a>, <a href="../../etomica/data/DataProcessor.html#getTag--">getTag</a>, <a href="../../etomica/data/DataProcessor.html#putData-etomica.data.IData-">putData</a>, <a href="../../etomica/data/DataProcessor.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -424,6 +418,15 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <pre>public static final&nbsp;<a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a> STANDARD_DEVIATION</pre>
 </li>
 </ul>
+<a name="negativeChop">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>negativeChop</h4>
+<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> negativeChop</pre>
+</li>
+</ul>
 <a name="mostRecent">
 <!--   -->
 </a>
@@ -490,19 +493,10 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <a name="work">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>work</h4>
 <pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> work</pre>
-</li>
-</ul>
-<a name="negativeChop">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>negativeChop</h4>
-<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> negativeChop</pre>
 </li>
 </ul>
 </li>
@@ -532,6 +526,15 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="statChoices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>statChoices</h4>
+<pre>public static&nbsp;<a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a>[]&nbsp;statChoices()</pre>
+</li>
+</ul>
 <a name="getTag-etomica.data.AccumulatorAverageBlockless.StatType-">
 <!--   -->
 </a>
@@ -539,20 +542,6 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getTag</h4>
 <pre>public&nbsp;<a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>&nbsp;getTag(<a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a>&nbsp;statType)</pre>
-</li>
-</ul>
-<a name="getDataCaster-etomica.data.IDataInfo-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDataCaster</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a>&nbsp;getDataCaster(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block">Returns null (any data is good data)</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>incomingDataInfo</code> - the DataInfo for the Data that will fed to the sink's putData method</dd>
-</dl>
 </li>
 </ul>
 <a name="addData-etomica.data.IData-">
@@ -610,7 +599,7 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>processDataInfo</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block">Prepares the accumulator for input data.  Discards any previous 
+<div class="block">Prepares the accumulator for input data.  Discards any previous
  contributions to statistics.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -652,15 +641,6 @@ extends <a href="../../etomica/data/DataAccumulator.html" title="class in etomic
 <li class="blockList">
 <h4>getSampleCount</h4>
 <pre>public&nbsp;long&nbsp;getSampleCount()</pre>
-</li>
-</ul>
-<a name="statChoices--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>statChoices</h4>
-<pre>public static&nbsp;<a href="../../etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">AccumulatorAverageBlockless.StatType</a>[]&nbsp;statChoices()</pre>
 </li>
 </ul>
 <a name="getRawData--">
