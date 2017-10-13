@@ -17,6 +17,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -42,7 +48,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/simulation/prototypes/ChainHSMD3D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/simulation/prototypes/HsMc2d.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/simulation/prototypes/HSMC2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/simulation/prototypes/GEMCWithRotation.html" target="_top">Frames</a></li>
@@ -69,13 +75,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.etomica.simulation.Simulation">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -108,7 +114,9 @@
 <br>
 <pre>public class <span class="typeNameLabel">GEMCWithRotation</span>
 extends <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></pre>
-<div class="block">Simple Gibbs-ensemble Monte Carlo simulation of rotating molecules.</div>
+<div class="block">Simple Gibbs-ensemble Monte Carlo simulation of rotating molecules.
+ <p>
+ Molecules interact with a hard sphere potential and a directional square well association.</div>
 </li>
 </ul>
 </div>
@@ -140,7 +148,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/GEMCWithRotation.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/potential/P2LennardJones.html" title="class in etomica.potential">P2LennardJones</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/potential/P2HardAssociationCone.html" title="class in etomica.potential">P2HardAssociationCone</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/GEMCWithRotation.html#potential">potential</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -169,6 +177,9 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/GEMCWithRotation.html#GEMCWithRotation--">GEMCWithRotation</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/GEMCWithRotation.html#GEMCWithRotation-etomica.space.Space-">GEMCWithRotation</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
 </tr>
 </table>
@@ -180,6 +191,17 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/GEMCWithRotation.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.simulation.Simulation">
 <!--   -->
@@ -250,7 +272,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockListLast">
 <li class="blockList">
 <h4>potential</h4>
-<pre>public&nbsp;<a href="../../../etomica/potential/P2LennardJones.html" title="class in etomica.potential">P2LennardJones</a> potential</pre>
+<pre>public&nbsp;<a href="../../../etomica/potential/P2HardAssociationCone.html" title="class in etomica.potential">P2HardAssociationCone</a> potential</pre>
 </li>
 </ul>
 </li>
@@ -261,6 +283,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="GEMCWithRotation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GEMCWithRotation</h4>
+<pre>public&nbsp;GEMCWithRotation()</pre>
+</li>
+</ul>
 <a name="GEMCWithRotation-etomica.space.Space-">
 <!--   -->
 </a>
@@ -268,6 +299,23 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>GEMCWithRotation</h4>
 <pre>public&nbsp;GEMCWithRotation(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="main-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>main</h4>
+<pre>public static&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
 </li>
 </ul>
 </li>
@@ -298,7 +346,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/simulation/prototypes/ChainHSMD3D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/simulation/prototypes/HsMc2d.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/simulation/prototypes/HSMC2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/simulation/prototypes/GEMCWithRotation.html" target="_top">Frames</a></li>
@@ -325,13 +373,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.etomica.simulation.Simulation">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

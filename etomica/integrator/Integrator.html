@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,6 +241,10 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#isInitialized--">isInitialized</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#reset--">reset</a></span>()</code>
 <div class="block">Defines the actions taken by the integrator to reset itself, such as
@@ -248,19 +252,19 @@ extends java.lang.Object</pre>
  addition or deletion of a molecule).</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#resetStepCount--">resetStepCount</a></span>()</code>
 <div class="block">This method resets the step counter.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#setEventInterval-int-">setEventInterval</a></span>(int&nbsp;interval)</code>
 <div class="block">Sets value of interval between successive firing of integrator interval events.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/Integrator.html#setup--">setup</a></span>()</code>
 <div class="block">Perform initialization.</div>
@@ -423,6 +427,19 @@ extends java.lang.Object</pre>
  <p>
  This should be called by subclasses before they have performed their own
  reset integrator is started or initialized.</div>
+</li>
+</ul>
+<a name="isInitialized--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInitialized</h4>
+<pre>public&nbsp;boolean&nbsp;isInitialized()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if reset() was ever called.</dd>
+</dl>
 </li>
 </ul>
 <a name="resetStepCount--">
