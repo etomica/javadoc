@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/simulation/prototypes/LJMD3D.Applet.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/simulation/prototypes/SwMd2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/simulation/prototypes/SWMD2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/simulation/prototypes/SoftSphere3d.html" target="_top">Frames</a></li>
@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">SoftSphere3d</span>
 extends <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></pre>
-<div class="block">Simple hard-sphere Monte Carlo simulation in 2D.</div>
+<div class="block">Simple soft-sphere Monte Carlo simulation in 3D.</div>
 </li>
 </ul>
 </div>
@@ -138,36 +138,28 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#box">box</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#controller">controller</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#mcMoveAtom">mcMoveAtom</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#meterCycles">meterCycles</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/potential/P2SoftSphere.html" title="class in etomica.potential">P2SoftSphere</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#potential">potential</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#potentialMaster">potentialMaster</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#species">species</a></span></code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#species2">species2</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#species">species</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -191,6 +183,9 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#SoftSphere3d--">SoftSphere3d</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/SoftSphere3d.html#SoftSphere3d-double-int-double-">SoftSphere3d</a></span>(double&nbsp;density,
             int&nbsp;exponent,
             double&nbsp;temperature)</code>&nbsp;</td>
@@ -270,15 +265,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> species</pre>
 </li>
 </ul>
-<a name="species2">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>species2</h4>
-<pre>public&nbsp;<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> species2</pre>
-</li>
-</ul>
 <a name="box">
 <!--   -->
 </a>
@@ -306,15 +292,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a> potentialMaster</pre>
 </li>
 </ul>
-<a name="controller">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>controller</h4>
-<pre>public&nbsp;<a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a> controller</pre>
-</li>
-</ul>
 <a name="meterCycles">
 <!--   -->
 </a>
@@ -332,6 +309,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="SoftSphere3d--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SoftSphere3d</h4>
+<pre>public&nbsp;SoftSphere3d()</pre>
+</li>
+</ul>
 <a name="SoftSphere3d-double-int-double-">
 <!--   -->
 </a>
@@ -388,7 +374,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/simulation/prototypes/LJMD3D.Applet.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/simulation/prototypes/SwMd2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/simulation/prototypes/SWMD2D.html" title="class in etomica.simulation.prototypes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/simulation/prototypes/SoftSphere3d.html" target="_top">Frames</a></li>
