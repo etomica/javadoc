@@ -136,7 +136,10 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <div class="block">AccumulatorAverage that adjusts the block size during the simulation.  When
  a certain number of blocks of data have been collected, the blocks are
  collapsed such that each new block contains the data from two of the old
- blocks.  This allows the accumulator to yield reasonable estimates of the
+ blocks. In other words, with each collapse, the number of blocks currently holding
+ data is cut in half and the size of each block is doubled.
+ <p>
+ This allows the accumulator to yield reasonable estimates of the
  average and uncertainty during the beginning of the simulation and still
  produce accurate estimates of the uncertainty for longer simulation runs.
  <p>
@@ -243,16 +246,21 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#AccumulatorAverageCollapsing--">AccumulatorAverageCollapsing</a></span>()</code>
-<div class="block">Default constructor sets block size to Default value, and sets the
- interval for pushing the output data (pushInterval) to 100.</div>
+<div class="block">Default constructor sets the maximum number of blocks (maxBlocks) to a default value of 20,
+ the initial block size (blockSize) to 1 and the interval for pushing the output data (pushInterval)
+ to 100.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#AccumulatorAverageCollapsing-int-">AccumulatorAverageCollapsing</a></span>(int&nbsp;maxBlocks)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#AccumulatorAverageCollapsing-int-">AccumulatorAverageCollapsing</a></span>(int&nbsp;maxBlocks)</code>
+<div class="block">Constructor with default pushInterval of 100 and initial blockSize of 1.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#AccumulatorAverageCollapsing-int-int-">AccumulatorAverageCollapsing</a></span>(int&nbsp;maxBlocks,
-                            int&nbsp;blockSize)</code>&nbsp;</td>
+                            int&nbsp;blockSize)</code>
+<div class="block">Constructor with default pushInterval of 100.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -287,10 +295,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#getData--">getData</a></span>()</code>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -316,7 +321,9 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#setMaxBlocks-int-">setMaxBlocks</a></span>(int&nbsp;newMaxBlocks)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#setMaxBlocks-int-">setMaxBlocks</a></span>(int&nbsp;newMaxBlocks)</code>
+<div class="block">Changes the maximum number of blocks.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -476,8 +483,9 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>AccumulatorAverageCollapsing</h4>
 <pre>public&nbsp;AccumulatorAverageCollapsing()</pre>
-<div class="block">Default constructor sets block size to Default value, and sets the
- interval for pushing the output data (pushInterval) to 100.</div>
+<div class="block">Default constructor sets the maximum number of blocks (maxBlocks) to a default value of 20,
+ the initial block size (blockSize) to 1 and the interval for pushing the output data (pushInterval)
+ to 100.</div>
 </li>
 </ul>
 <a name="AccumulatorAverageCollapsing-int-">
@@ -487,6 +495,12 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>AccumulatorAverageCollapsing</h4>
 <pre>public&nbsp;AccumulatorAverageCollapsing(int&nbsp;maxBlocks)</pre>
+<div class="block">Constructor with default pushInterval of 100 and initial blockSize of 1.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>maxBlocks</code> - the largest number of blocks. Adding new data beyond this triggers
+                  collapsing of blocks</dd>
+</dl>
 </li>
 </ul>
 <a name="AccumulatorAverageCollapsing-int-int-">
@@ -497,6 +511,14 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <h4>AccumulatorAverageCollapsing</h4>
 <pre>public&nbsp;AccumulatorAverageCollapsing(int&nbsp;maxBlocks,
                                     int&nbsp;blockSize)</pre>
+<div class="block">Constructor with default pushInterval of 100.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>maxBlocks</code> - the largest number of blocks. Adding new data beyond this triggers
+                  collapsing of blocks</dd>
+<dd><code>blockSize</code> - the initial number of terms that contribute to each block. Doubles
+                  with each collapse of the blocks.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -507,15 +529,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setMaxBlocks-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setMaxBlocks</h4>
-<pre>public&nbsp;void&nbsp;setMaxBlocks(int&nbsp;newMaxBlocks)</pre>
-</li>
-</ul>
 <a name="getMaxBlocks--">
 <!--   -->
 </a>
@@ -523,6 +536,28 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>getMaxBlocks</h4>
 <pre>public&nbsp;int&nbsp;getMaxBlocks()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the current value of maxBlocks.</dd>
+</dl>
+</li>
+</ul>
+<a name="setMaxBlocks-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMaxBlocks</h4>
+<pre>public&nbsp;void&nbsp;setMaxBlocks(int&nbsp;newMaxBlocks)</pre>
+<div class="block">Changes the maximum number of blocks. If the new value is less than the
+ current number of blocks, collapsing is done until number of blocks is
+ less than or equal to the given value.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newMaxBlocks</code> - new value for maxBlocks</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.RuntimeException</code> - if newMaxBlocks is less than 4 or an odd number.</dd>
+</dl>
 </li>
 </ul>
 <a name="processDataInfo-etomica.data.IDataInfo-">
@@ -558,6 +593,10 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/DataAccumulator.html#addData-etomica.data.IData-">addData</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataAccumulator.html" title="class in etomica.data">DataAccumulator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - Data to be added.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the Accumulator's getData method will now return different data.</dd>
 </dl>
 </li>
 </ul>
@@ -587,15 +626,14 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>getData</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData()</pre>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/IDataSource.html#getData--">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/DataAccumulator.html#getData--">getData</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataAccumulator.html" title="class in etomica.data">DataAccumulator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the data given by this source</dd>
+<dd>a DataGroup with Data instances holding the statistics kept by
+ this accumulator (as described in general comments for this class).</dd>
 </dl>
 </li>
 </ul>

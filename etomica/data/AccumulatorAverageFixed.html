@@ -131,13 +131,14 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../etomica/data/AccumulatorAverageCovariance.html" title="class in etomica.data">AccumulatorAverageCovariance</a>, <a href="../../etomica/modules/statistics/AccumulatorMimicMu.html" title="class in etomica.modules.statistics">AccumulatorMimicMu</a>, <a href="../../etomica/data/AccumulatorRatioAverage.html" title="class in etomica.data">AccumulatorRatioAverage</a></dd>
+<dd><a href="../../etomica/data/AccumulatorAverageCovariance.html" title="class in etomica.data">AccumulatorAverageCovariance</a>, <a href="../../etomica/modules/statistics/AccumulatorMimicMu.html" title="class in etomica.modules.statistics">AccumulatorMimicMu</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">AccumulatorAverageFixed</span>
 extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></pre>
 <div class="block">AccumulatorAverage that maintains a fixed block size.
+ This is standard accumulator for collecting averages in production runs.
  <p>
  This accumulator accepts any type of Data</div>
 </li>
@@ -262,12 +263,14 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#AccumulatorAverageFixed--">AccumulatorAverageFixed</a></span>()</code>
-<div class="block">Default constructor sets block size to Default value, and sets the
+<div class="block">Default constructor sets block size to 1000 and sets the
  interval for pushing the output data (pushInterval) to 100.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#AccumulatorAverageFixed-long-">AccumulatorAverageFixed</a></span>(long&nbsp;blockSize)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#AccumulatorAverageFixed-long-">AccumulatorAverageFixed</a></span>(long&nbsp;blockSize)</code>
+<div class="block">Constructs with interval for pushing the output data set to 100.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -302,10 +305,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getData--">getData</a></span>()</code>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -332,7 +332,9 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#setBlockDataSink-etomica.data.IDataSink-">setBlockDataSink</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;blockDataSink)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#setBlockDataSink-etomica.data.IDataSink-">setBlockDataSink</a></span>(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;blockDataSink)</code>
+<div class="block">Allows individual block data to be passed to a data sink.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -412,6 +414,24 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="negativeChop">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>negativeChop</h4>
+<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> negativeChop</pre>
+</li>
+</ul>
+<a name="sanityCheckBC">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sanityCheckBC</h4>
+<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> sanityCheckBC</pre>
+</li>
+</ul>
 <a name="sum">
 <!--   -->
 </a>
@@ -493,24 +513,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> work2</pre>
 </li>
 </ul>
-<a name="negativeChop">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>negativeChop</h4>
-<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> negativeChop</pre>
-</li>
-</ul>
-<a name="sanityCheckBC">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sanityCheckBC</h4>
-<pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> sanityCheckBC</pre>
-</li>
-</ul>
 <a name="doStrictBlockData">
 <!--   -->
 </a>
@@ -544,7 +546,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>AccumulatorAverageFixed</h4>
 <pre>public&nbsp;AccumulatorAverageFixed()</pre>
-<div class="block">Default constructor sets block size to Default value, and sets the
+<div class="block">Default constructor sets block size to 1000 and sets the
  interval for pushing the output data (pushInterval) to 100.</div>
 </li>
 </ul>
@@ -555,6 +557,11 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>AccumulatorAverageFixed</h4>
 <pre>public&nbsp;AccumulatorAverageFixed(long&nbsp;blockSize)</pre>
+<div class="block">Constructs with interval for pushing the output data set to 100.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>blockSize</code> - size of the block.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -565,6 +572,19 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getDoStrictBlockData--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDoStrictBlockData</h4>
+<pre>public&nbsp;boolean&nbsp;getDoStrictBlockData()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>value of DoStrictBlockData</dd>
+</dl>
+</li>
+</ul>
 <a name="setDoStrictBlockData-boolean-">
 <!--   -->
 </a>
@@ -582,13 +602,17 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </dl>
 </li>
 </ul>
-<a name="getDoStrictBlockData--">
+<a name="getBlockDataSink--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDoStrictBlockData</h4>
-<pre>public&nbsp;boolean&nbsp;getDoStrictBlockData()</pre>
+<h4>getBlockDataSink</h4>
+<pre>public&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;getBlockDataSink()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the data sink where block data are passed.</dd>
+</dl>
 </li>
 </ul>
 <a name="setBlockDataSink-etomica.data.IDataSink-">
@@ -598,15 +622,13 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>setBlockDataSink</h4>
 <pre>public&nbsp;void&nbsp;setBlockDataSink(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;blockDataSink)</pre>
-</li>
-</ul>
-<a name="getBlockDataSink--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getBlockDataSink</h4>
-<pre>public&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;getBlockDataSink()</pre>
+<div class="block">Allows individual block data to be passed to a data sink. Each block is
+ pushed to the sink after it is complete (as determined by block size).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>blockDataSink</code> - the sink where the blocks are to be passed. For
+                      multiple streams, this could be a DataFork.</dd>
+</dl>
 </li>
 </ul>
 <a name="addData-etomica.data.IData-">
@@ -621,6 +643,10 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/DataAccumulator.html#addData-etomica.data.IData-">addData</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/DataAccumulator.html" title="class in etomica.data">DataAccumulator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - data to be added.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if data are not NaN.</dd>
 </dl>
 </li>
 </ul>
@@ -660,8 +686,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>getData</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData()</pre>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/IDataSource.html#getData--">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
@@ -679,6 +703,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html#reset--">AccumulatorAverage</a></code></span></div>
 <div class="block">Resets all sums to zero. All statistics are cleared.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -693,14 +718,15 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>processDataInfo</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block">Prepares the accumulator for input data.  Discards any previous 
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html#processDataInfo-etomica.data.IDataInfo-">AccumulatorAverage</a></code></span></div>
+<div class="block">Prepares the accumulator for input data.  Discards any previous
  contributions to statistics.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/data/AccumulatorAverage.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>incomingDataInfo</code> - the DataInfo instance for the data that will be given to
-            addData</dd>
+                         addData</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>dataInfo object for the output of this accumulator.</dd>
 </dl>

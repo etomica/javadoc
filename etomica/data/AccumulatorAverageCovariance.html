@@ -292,10 +292,7 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCovariance.html#getData--">getData</a></span>()</code>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCovariance.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
@@ -526,6 +523,10 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/data/AccumulatorAverageFixed.html#addData-etomica.data.IData-">addData</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - data to be added.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if data are not NaN.</dd>
 </dl>
 </li>
 </ul>
@@ -551,9 +552,6 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <li class="blockList">
 <h4>getData</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;getData()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverageFixed.html#getData--">AccumulatorAverageFixed</a></code></span></div>
-<div class="block">Returns a DataGroup with Data instances holding the statistics kept by
- this accumulator (as described in general comments for this class).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/data/IDataSource.html#getData--">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
@@ -571,7 +569,7 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverageFixed.html#reset--">AccumulatorAverageFixed</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html#reset--">AccumulatorAverage</a></code></span></div>
 <div class="block">Resets all sums to zero. All statistics are cleared.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -586,15 +584,15 @@ extends <a href="../../etomica/data/AccumulatorAverageFixed.html" title="class i
 <li class="blockList">
 <h4>processDataInfo</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;processDataInfo(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverageFixed.html#processDataInfo-etomica.data.IDataInfo-">AccumulatorAverageFixed</a></code></span></div>
-<div class="block">Prepares the accumulator for input data.  Discards any previous 
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/data/AccumulatorAverage.html#processDataInfo-etomica.data.IDataInfo-">AccumulatorAverage</a></code></span></div>
+<div class="block">Prepares the accumulator for input data.  Discards any previous
  contributions to statistics.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/data/AccumulatorAverageFixed.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>incomingDataInfo</code> - the DataInfo instance for the data that will be given to
-            addData</dd>
+                         addData</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>dataInfo object for the output of this accumulator.</dd>
 </dl>
