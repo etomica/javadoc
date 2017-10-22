@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -140,6 +140,10 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></span></code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.StatsParams.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.StatsParams</a></span></code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -189,8 +193,8 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#StatisticsMCGraphic-etomica.modules.ensembles.LJMC-etomica.space.Space-">StatisticsMCGraphic</a></span>(<a href="../../../etomica/modules/ensembles/LJMC.html" title="class in etomica.modules.ensembles">LJMC</a>&nbsp;simulation,
-                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#StatisticsMCGraphic-etomica.modules.ensembles.LJMC-int-">StatisticsMCGraphic</a></span>(<a href="../../../etomica/modules/ensembles/LJMC.html" title="class in etomica.modules.ensembles">LJMC</a>&nbsp;simulation,
+                   int&nbsp;moduleNum)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -209,16 +213,22 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected javax.swing.JScrollPane</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#createHistogramPanel-etomica.data.DataFork-java.awt.Dimension-etomica.modules.statistics.AccumulatorFactory-">createHistogramPanel</a></span>(<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a>&nbsp;fork,
+                    java.awt.Dimension&nbsp;paneSize,
+                    <a href="../../../etomica/modules/statistics/AccumulatorFactory.html" title="interface in etomica.modules.statistics">AccumulatorFactory</a>&nbsp;accFactory)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected javax.swing.JScrollPane</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#createStatPanel-etomica.data.DataFork-java.awt.Dimension-etomica.modules.statistics.AccumulatorFactory-boolean-">createStatPanel</a></span>(<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a>&nbsp;fork,
                java.awt.Dimension&nbsp;paneSize,
                <a href="../../../etomica/modules/statistics/AccumulatorFactory.html" title="interface in etomica.modules.statistics">AccumulatorFactory</a>&nbsp;accFactory,
                boolean&nbsp;doHistory)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#main-java.lang.String:A-">main</a></span>(java.lang.String[]&nbsp;args)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#makeHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">makeHistoryPlot</a></span>(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
                <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
@@ -226,7 +236,7 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
                <a href="../../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a>&nbsp;pump,
                java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/modules/statistics/StatisticsMCGraphic.HistoryPlotBits.html" title="class in etomica.modules.statistics">StatisticsMCGraphic.HistoryPlotBits</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/StatisticsMCGraphic.html#makeMuHistoryPlot-java.util.ArrayList-etomica.data.DataSourceCountSteps-javax.swing.JPanel-etomica.data.DataPumpListener-java.lang.String-">makeMuHistoryPlot</a></span>(java.util.ArrayList&lt;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;&nbsp;dataStreamPumps,
                  <a href="../../../etomica/data/DataSourceCountSteps.html" title="class in etomica.data">DataSourceCountSteps</a>&nbsp;timeCounter,
@@ -298,14 +308,14 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="StatisticsMCGraphic-etomica.modules.ensembles.LJMC-etomica.space.Space-">
+<a name="StatisticsMCGraphic-etomica.modules.ensembles.LJMC-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>StatisticsMCGraphic</h4>
 <pre>public&nbsp;StatisticsMCGraphic(<a href="../../../etomica/modules/ensembles/LJMC.html" title="class in etomica.modules.ensembles">LJMC</a>&nbsp;simulation,
-                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+                           int&nbsp;moduleNum)</pre>
 </li>
 </ul>
 </li>
@@ -352,6 +362,17 @@ extends <a href="../../../etomica/graphics/SimulationGraphic.html" title="class 
                                                   java.awt.Dimension&nbsp;paneSize,
                                                   <a href="../../../etomica/modules/statistics/AccumulatorFactory.html" title="interface in etomica.modules.statistics">AccumulatorFactory</a>&nbsp;accFactory,
                                                   boolean&nbsp;doHistory)</pre>
+</li>
+</ul>
+<a name="createHistogramPanel-etomica.data.DataFork-java.awt.Dimension-etomica.modules.statistics.AccumulatorFactory-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createHistogramPanel</h4>
+<pre>protected&nbsp;javax.swing.JScrollPane&nbsp;createHistogramPanel(<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a>&nbsp;fork,
+                                                       java.awt.Dimension&nbsp;paneSize,
+                                                       <a href="../../../etomica/modules/statistics/AccumulatorFactory.html" title="interface in etomica.modules.statistics">AccumulatorFactory</a>&nbsp;accFactory)</pre>
 </li>
 </ul>
 <a name="main-java.lang.String:A-">
