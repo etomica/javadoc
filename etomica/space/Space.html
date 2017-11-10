@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":10,"i9":9,"i10":10,"i11":10,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
+var methods = {"i0":6,"i1":10,"i2":9,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":10,"i10":9,"i11":10,"i12":10,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,76 +165,80 @@ implements java.io.Serializable</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#D--">D</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#getD--">getD</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#getInstance-int-">getInstance</a></span>(int&nbsp;D)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-double-">makeArrayD</a></span>(double&nbsp;d)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>abstract int[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeArrayD-int-">makeArrayD</a></span>(int&nbsp;i)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/IOrientation.html" title="interface in etomica.space">IOrientation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeOrientation--">makeOrientation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeRotationTensor--">makeRotationTensor</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeTensor--">makeTensor</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector--">makeVector</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-double:A-">makeVector</a></span>(double[]&nbsp;a)</code>
 <div class="block">Returns a Vector initialized to the given set of values in the array.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-int-">makeVector</a></span>(int&nbsp;D)</code>
 <div class="block">Returns a Vector from the space of the given dimension.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVector-int:A-">makeVector</a></span>(int[]&nbsp;k)</code>
 <div class="block">Returns a Vector initialized to the given set of values in the array (cast to double).</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#makeVectorArray-int-">makeVectorArray</a></span>(int&nbsp;n)</code>
 <div class="block">Makes an array of Vectors.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-double-">powerD</a></span>(double&nbsp;a)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#powerD-int-">powerD</a></span>(int&nbsp;a)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#rootD-double-">rootD</a></span>(double&nbsp;a)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>abstract double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#sphereArea-double-">sphereArea</a></span>(double&nbsp;r)</code>
 <div class="block">The surface "area" of the "sphere" defined in the D-dimensional space.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>abstract double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Space.html#sphereVolume-double-">sphereVolume</a></span>(double&nbsp;r)</code>
 <div class="block">The "volume" of the "sphere" defined in the D-dimensional space.</div>
@@ -307,6 +311,15 @@ implements java.io.Serializable</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the dimension of this space.</dd>
 </dl>
+</li>
+</ul>
+<a name="getD--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getD</h4>
+<pre>public&nbsp;int&nbsp;getD()</pre>
 </li>
 </ul>
 <a name="rootD-double-">
