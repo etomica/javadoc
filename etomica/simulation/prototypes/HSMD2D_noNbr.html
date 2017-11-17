@@ -146,12 +146,20 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#integrator">integrator</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#pressureAverage">pressureAverage</a></span></code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../etomica/data/meter/MeterPressureHard.html" title="class in etomica.data.meter">MeterPressureHard</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#meterPressure">meterPressure</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/data/AccumulatorAverageCollapsing.html" title="class in etomica.data">AccumulatorAverageCollapsing</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#pressureAverage">pressureAverage</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/AccumulatorHistory.html" title="class in etomica.data">AccumulatorHistory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#pressureHistory">pressureHistory</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/simulation/prototypes/HSMD2D_noNbr.html#pressurePump">pressurePump</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
@@ -258,7 +266,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>pressureAverage</h4>
-<pre>public&nbsp;<a href="../../../etomica/data/AccumulatorAverage.html" title="class in etomica.data">AccumulatorAverage</a> pressureAverage</pre>
+<pre>public&nbsp;<a href="../../../etomica/data/AccumulatorAverageCollapsing.html" title="class in etomica.data">AccumulatorAverageCollapsing</a> pressureAverage</pre>
 </li>
 </ul>
 <a name="pressureHistory">
@@ -315,13 +323,31 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a> integrator</pre>
 </li>
 </ul>
+<a name="pressurePump">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pressurePump</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a> pressurePump</pre>
+</li>
+</ul>
 <a name="temperaturePump">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperaturePump</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a> temperaturePump</pre>
+</li>
+</ul>
+<a name="meterPressure">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>temperaturePump</h4>
-<pre>public&nbsp;<a href="../../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a> temperaturePump</pre>
+<h4>meterPressure</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/meter/MeterPressureHard.html" title="class in etomica.data.meter">MeterPressureHard</a> meterPressure</pre>
 </li>
 </ul>
 </li>

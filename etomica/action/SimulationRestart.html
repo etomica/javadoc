@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,6 +154,10 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#ignoreOverlap">ignoreOverlap</a></span></code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#postAction">postAction</a></span></code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.action.SimulationActionAdapter">
@@ -208,20 +212,28 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#getDataResetAction--">getDataResetAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#getPostAction--">getPostAction</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#isIgnoreOverlap--">isIgnoreOverlap</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#setConfiguration-etomica.config.Configuration-">setConfiguration</a></span>(<a href="../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a>&nbsp;configuration)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#setDataResetAction-etomica.action.SimulationDataAction-">setDataResetAction</a></span>(<a href="../../etomica/action/SimulationDataAction.html" title="class in etomica.action">SimulationDataAction</a>&nbsp;newResetAction)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#setIgnoreOverlap-boolean-">setIgnoreOverlap</a></span>(boolean&nbsp;doIgnoreOverlap)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/SimulationRestart.html#setPostAction-etomica.action.IAction-">setPostAction</a></span>(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;postAction)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -273,10 +285,19 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <a name="accumulatorAction">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>accumulatorAction</h4>
 <pre>protected&nbsp;<a href="../../etomica/action/SimulationDataAction.html" title="class in etomica.action">SimulationDataAction</a> accumulatorAction</pre>
+</li>
+</ul>
+<a name="postAction">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>postAction</h4>
+<pre>protected&nbsp;<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a> postAction</pre>
 </li>
 </ul>
 </li>
@@ -322,13 +343,22 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <pre>public&nbsp;void&nbsp;setDataResetAction(<a href="../../etomica/action/SimulationDataAction.html" title="class in etomica.action">SimulationDataAction</a>&nbsp;newResetAction)</pre>
 </li>
 </ul>
-<a name="setIgnoreOverlap-boolean-">
+<a name="getPostAction--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setIgnoreOverlap</h4>
-<pre>public&nbsp;void&nbsp;setIgnoreOverlap(boolean&nbsp;doIgnoreOverlap)</pre>
+<h4>getPostAction</h4>
+<pre>public&nbsp;<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;getPostAction()</pre>
+</li>
+</ul>
+<a name="setPostAction-etomica.action.IAction-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPostAction</h4>
+<pre>public&nbsp;void&nbsp;setPostAction(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;postAction)</pre>
 </li>
 </ul>
 <a name="isIgnoreOverlap--">
@@ -338,6 +368,15 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <li class="blockList">
 <h4>isIgnoreOverlap</h4>
 <pre>public&nbsp;boolean&nbsp;isIgnoreOverlap()</pre>
+</li>
+</ul>
+<a name="setIgnoreOverlap-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setIgnoreOverlap</h4>
+<pre>public&nbsp;void&nbsp;setIgnoreOverlap(boolean&nbsp;doIgnoreOverlap)</pre>
 </li>
 </ul>
 <a name="actionPerformed--">
