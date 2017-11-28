@@ -343,11 +343,9 @@ extends java.lang.Object</pre>
  coefficients from GSL (GNU Scientific Library) with g=7</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>x</code> - a positive number.</dd>
+<dd><code>x</code> - a real number.  If x is a non-positive integer (or if gamma(x) is negative), then NaN is returned.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the natural logarithm of the gamma function of x.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if x is not positive.</dd>
 </dl>
 </li>
 </ul>
@@ -361,11 +359,9 @@ extends java.lang.Object</pre>
 <div class="block">Returns the value of the gamma function of x.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>x</code> - a positive number.</dd>
+<dd><code>x</code> - a real number.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the gamma function of x.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if x is not positive.</dd>
+<dd>the gamma function of x.  If x is a non-positive integer, then NaN is returned.</dd>
 </dl>
 </li>
 </ul>
