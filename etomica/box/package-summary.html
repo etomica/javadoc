@@ -69,6 +69,10 @@
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;etomica.box</h1>
+<div class="docSummary">
+<div class="block">Defines the Box class, which is a container of molecules, and provides means to track activities relating to it.</div>
+</div>
+<p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
 <div class="contentContainer">
 <ul class="blockList">
@@ -83,7 +87,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;E&gt;</td>
 <td class="colLast">
-<div class="block">Interface for an object that makes an agent to be placed in each atom
+<div class="block">Interface for an object that makes an agent to be associated with each box
  upon construction.</div>
 </td>
 </tr>
@@ -119,7 +123,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Creates a facade that makes a set of molecule lists look like a single list.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></td>
@@ -131,7 +137,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;E&gt;</td>
 <td class="colLast">
-<div class="block">BoxAgentManager acts on behalf of client classes (a BoxAgentSource) to manage
+<div class="block">Acts on behalf of client classes (a BoxAgentSource) to manage
  agents for each Box in a simulation.</div>
 </td>
 </tr>
@@ -143,11 +149,15 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAgentSourceAtomManager.html" title="class in etomica.box">BoxAgentSourceAtomManager</a>&lt;E&gt;</td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">BoxAgentSource that creates an AtomLeafAgentManager.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="class in etomica.box">BoxAgentSourceMoleculeManager</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="class in etomica.box">BoxAgentSourceMoleculeManager</a>&lt;E&gt;</td>
+<td class="colLast">
+<div class="block">BoxAgentSource that creates an MoleculeAgentManager.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/box/BoxAtomEvent.html" title="class in etomica.box">BoxAtomEvent</a></td>
@@ -216,6 +226,11 @@
 </table>
 </li>
 </ul>
+<a name="package.description">
+<!--   -->
+</a>
+<h2 title="Package etomica.box Description">Package etomica.box Description</h2>
+<div class="block">Defines the Box class, which is a container of molecules, and provides means to track activities relating to it.</div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">

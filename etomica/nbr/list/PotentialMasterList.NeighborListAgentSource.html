@@ -191,7 +191,9 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/PotentialMasterList.NeighborListAgentSource.html#releaseAgent-etomica.nbr.list.NeighborListManager-">releaseAgent</a></span>(<a href="../../../etomica/nbr/list/NeighborListManager.html" title="class in etomica.nbr.list">NeighborListManager</a>&nbsp;object)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/PotentialMasterList.NeighborListAgentSource.html#releaseAgent-etomica.nbr.list.NeighborListManager-">releaseAgent</a></span>(<a href="../../../etomica/nbr/list/NeighborListManager.html" title="class in etomica.nbr.list">NeighborListManager</a>&nbsp;object)</code>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -304,6 +306,10 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html#makeAgent-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../../etomica/nbr/list/NeighborListManager.html" title="class in etomica.nbr.list">NeighborListManager</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box for this agent</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the object that source wants to have with the given box</dd>
 </dl>
 </li>
 </ul>
@@ -314,9 +320,13 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../../etomica/nbr/list/NeighborListManager.html" title="class in etomica.nbr.list">NeighborListManager</a>&nbsp;object)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">BoxAgentManager.BoxAgentSource</a></code></span></div>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../../etomica/nbr/list/NeighborListManager.html" title="class in etomica.nbr.list">NeighborListManager</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>object</code> - the agent being released</dd>
 </dl>
 </li>
 </ul>

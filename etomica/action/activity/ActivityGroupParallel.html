@@ -204,7 +204,7 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityGroupParallel.html#addAction-etomica.action.IAction-">addAction</a></span>(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;newAction)</code>
-<div class="block">Adds the given newAction to this group.</div>
+<div class="block">Adds the given action to this group, placing it at the end of the list.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -246,7 +246,7 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityGroupParallel.html#removeAction-etomica.action.IAction-">removeAction</a></span>(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code>
-<div class="block">Removes the given oldAction from the group.</div>
+<div class="block">Removes a specified action from the group.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -447,7 +447,7 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <h4>getAllActions</h4>
 <pre>public&nbsp;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>[]&nbsp;getAllActions()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/action/ActionGroup.html#getAllActions--">ActionGroup</a></code></span></div>
-<div class="block">Returns all actions from this group.</div>
+<div class="block">Returns all actions from this group. List of actions held by group is unchanged.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#getAllActions--">getAllActions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>
@@ -516,11 +516,13 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <h4>addAction</h4>
 <pre>public&nbsp;void&nbsp;addAction(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;newAction)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/action/ActionGroup.html#addAction-etomica.action.IAction-">ActionGroup</a></code></span></div>
-<div class="block">Adds the given newAction to this group.  This group should not already
- contain newAction.</div>
+<div class="block">Adds the given action to this group, placing it at the end of the list.  If action is
+ already in list, it will be performed repeatedly.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#addAction-etomica.action.IAction-">addAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newAction</code> - the action to be added</dd>
 </dl>
 </li>
 </ul>
@@ -532,11 +534,15 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <h4>removeAction</h4>
 <pre>public&nbsp;boolean&nbsp;removeAction(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/action/ActionGroup.html#removeAction-etomica.action.IAction-">ActionGroup</a></code></span></div>
-<div class="block">Removes the given oldAction from the group.  oldAction must currently be
- contained by this group.</div>
+<div class="block">Removes a specified action from the group. If action appears multiple times
+ in group, first instance in execution order is removed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#removeAction-etomica.action.IAction-">removeAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>action</code> - the action to be removed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>false if the given action is not in the group; true otherwise</dd>
 </dl>
 </li>
 </ul>

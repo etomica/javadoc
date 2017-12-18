@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">BoxAction</span>
 extends <a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></pre>
-<div class="block">Elementary action performed on a box.</div>
+<div class="block">Elementary action performed on a Box. If action is invoked without previously specifying Box, no action is performed.</div>
 </li>
 </ul>
 </div>
@@ -134,7 +134,9 @@ extends <a href="../../etomica/action/IAction.html" title="interface in etomica.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxAction.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/action/BoxAction.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
+<div class="block">Specifies the Box that will be subject to the action, upon subsequent call to actionPerformed()</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -158,22 +160,31 @@ extends <a href="../../etomica/action/IAction.html" title="interface in etomica.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.box.Box-">
+<a name="getBox--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setBox</h4>
-<pre>void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<h4>getBox</h4>
+<pre><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Box specified by the last call to setBox, or null if no Box was previously specified</dd>
+</dl>
 </li>
 </ul>
-<a name="getBox--">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getBox</h4>
-<pre><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
+<h4>setBox</h4>
+<pre>void&nbsp;setBox(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block">Specifies the Box that will be subject to the action, upon subsequent call to actionPerformed()</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box targeted by the action</dd>
+</dl>
 </li>
 </ul>
 </li>

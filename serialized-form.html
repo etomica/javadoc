@@ -75,26 +75,6 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.action</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.action.ActionGroupSeries">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/ActionGroupSeries.html" title="class in etomica.action">etomica.action.ActionGroupSeries</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>actions</h4>
-<pre><a href="etomica/action/IAction.html" title="interface in etomica.action">IAction</a>[] actions</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.action.ActionToggle">
 <!--   -->
 </a>
@@ -1516,16 +1496,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.association.TestLJAssociationMC3D_NPT__Javadoc">
-<!--   -->
-</a>
-<h3>Class etomica.association.TestLJAssociationMC3D_NPT__Javadoc extends java.lang.Object implements Serializable</h3>
-</li>
-<li class="blockList"><a name="etomica.association.TestLJAssociationMC3D_NPT:DVirialAssociatingFluidParam__Javadoc">
-<!--   -->
-</a>
-<h3>Class etomica.association.TestLJAssociationMC3D_NPT$VirialAssociatingFluidParam__Javadoc extends java.lang.Object implements Serializable</h3>
-</li>
 </ul>
 </li>
 <li class="blockList">
@@ -2588,56 +2558,6 @@
 <li class="blockListLast">
 <h4>atomArray</h4>
 <pre><a href="etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[] atomArray</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.box</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.box.Box">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/box/Box.html" title="class in etomica.box">etomica.box.Box</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>2L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>leafList</h4>
-<pre><a href="etomica/atom/AtomArrayList.html" title="class in etomica.atom">AtomArrayList</a> leafList</pre>
-<div class="block">List of leaf atoms in box</div>
-</li>
-<li class="blockList">
-<h4>allMoleculeList</h4>
-<pre><a href="etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a> allMoleculeList</pre>
-</li>
-<li class="blockList">
-<h4>eventManager</h4>
-<pre><a href="etomica/box/BoxEventManager.html" title="class in etomica.box">BoxEventManager</a> eventManager</pre>
-</li>
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>moleculeLists</h4>
-<pre><a href="etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a>[] moleculeLists</pre>
-</li>
-<li class="blockList">
-<h4>boundary</h4>
-<pre><a href="etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
-</li>
-<li class="blockListLast">
-<h4>index</h4>
-<pre>int index</pre>
 </li>
 </ul>
 </li>
@@ -8653,7 +8573,7 @@
 </li>
 <li class="blockList">
 <h4>orientationManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> orientationManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; orientationManager</pre>
 </li>
 <li class="blockList">
 <h4>atomGroupAction</h4>
@@ -8750,7 +8670,7 @@
 </li>
 <li class="blockList">
 <h4>orientationManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> orientationManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; orientationManager</pre>
 </li>
 <li class="blockList">
 <h4>atomGroupAction</h4>
@@ -11126,42 +11046,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.molecule.MoleculeAgentManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">etomica.molecule.MoleculeAgentManager</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentSource</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a> agentSource</pre>
-</li>
-<li class="blockList">
-<h4>box</h4>
-<pre><a href="etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
-</li>
-<li class="blockList">
-<h4>sim</h4>
-<pre><a href="etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
-</li>
-<li class="blockList">
-<h4>agents</h4>
-<pre>java.lang.Object[][] agents</pre>
-</li>
-<li class="blockListLast">
-<h4>reservoirSize</h4>
-<pre>int reservoirSize</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.molecule.MoleculeAgentManager.AgentIterator">
 <!--   -->
 </a>
@@ -11176,7 +11060,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>agentManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> agentManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; agentManager</pre>
 </li>
 <li class="blockList">
 <h4>speciesCursor</h4>
@@ -12622,7 +12506,7 @@
 </li>
 <li class="blockList">
 <h4>agentManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> agentManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; agentManager</pre>
 </li>
 <li class="blockList">
 <h4>doApplyPBC</h4>
@@ -12812,11 +12696,11 @@
 </li>
 <li class="blockList">
 <h4>agentManager2Body</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> agentManager2Body</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; agentManager2Body</pre>
 </li>
 <li class="blockList">
 <h4>agentManager1Body</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> agentManager1Body</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; agentManager1Body</pre>
 </li>
 <li class="blockList">
 <h4>eventManager</h4>
@@ -13205,7 +13089,7 @@
 </li>
 <li class="blockList">
 <h4>moleculeSiteManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> moleculeSiteManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; moleculeSiteManager</pre>
 </li>
 <li class="blockList">
 <h4>work1</h4>
@@ -13277,7 +13161,7 @@
 </li>
 <li class="blockList">
 <h4>moleculeSiteManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> moleculeSiteManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; moleculeSiteManager</pre>
 </li>
 <li class="blockList">
 <h4>work1</h4>
@@ -14161,7 +14045,7 @@
 </li>
 <li class="blockList">
 <h4>orientationManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> orientationManager</pre>
+<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; orientationManager</pre>
 </li>
 <li class="blockList">
 <h4>atomGroupAction</h4>
@@ -16388,50 +16272,6 @@
 <li class="blockListLast">
 <h4>aPairs</h4>
 <pre><a href="etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a>[][] aPairs</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.BoxCluster">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/BoxCluster.html" title="class in etomica.virial">etomica.virial.BoxCluster</a> extends <a href="etomica/box/Box.html" title="class in etomica.box">Box</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>isTrial</h4>
-<pre>boolean isTrial</pre>
-</li>
-<li class="blockList">
-<h4>cPairSet</h4>
-<pre><a href="etomica/virial/CoordinatePairSet.html" title="interface in etomica.virial">CoordinatePairSet</a> cPairSet</pre>
-</li>
-<li class="blockList">
-<h4>cPairTrialSet</h4>
-<pre><a href="etomica/virial/CoordinatePairSet.html" title="interface in etomica.virial">CoordinatePairSet</a> cPairTrialSet</pre>
-</li>
-<li class="blockList">
-<h4>cPairSetTmp</h4>
-<pre><a href="etomica/virial/CoordinatePairSet.html" title="interface in etomica.virial">CoordinatePairSet</a> cPairSetTmp</pre>
-</li>
-<li class="blockList">
-<h4>aPairSet</h4>
-<pre><a href="etomica/virial/AtomPairSet.html" title="class in etomica.virial">AtomPairSet</a> aPairSet</pre>
-</li>
-<li class="blockList">
-<h4>cPairID</h4>
-<pre>long cPairID</pre>
-</li>
-<li class="blockList">
-<h4>sampleCluster</h4>
-<pre><a href="etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a> sampleCluster</pre>
-</li>
-<li class="blockListLast">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>

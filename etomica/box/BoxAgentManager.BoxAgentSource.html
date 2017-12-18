@@ -108,9 +108,8 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public static interface <span class="typeNameLabel">BoxAgentManager.BoxAgentSource&lt;E&gt;</span></pre>
-<div class="block">Interface for an object that makes an agent to be placed in each atom
- upon construction.  AgentSource objects register with the AtomFactory
- the produces the atom.</div>
+<div class="block">Interface for an object that makes an agent to be associated with each box
+ upon construction.</div>
 </li>
 </ul>
 </div>
@@ -135,7 +134,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">releaseAgent</a></span>(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="type parameter in BoxAgentManager.BoxAgentSource">E</a>&nbsp;agent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">releaseAgent</a></span>(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="type parameter in BoxAgentManager.BoxAgentSource">E</a>&nbsp;agent)</code>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,6 +160,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>makeAgent</h4>
 <pre><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="type parameter in BoxAgentManager.BoxAgentSource">E</a>&nbsp;makeAgent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box for this agent</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the object that source wants to have with the given box</dd>
+</dl>
 </li>
 </ul>
 <a name="releaseAgent-java.lang.Object-">
@@ -170,6 +177,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>void&nbsp;releaseAgent(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="type parameter in BoxAgentManager.BoxAgentSource">E</a>&nbsp;agent)</pre>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>agent</code> - the agent being released</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -405,6 +405,8 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#addAction-etomica.action.IAction-">addAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newAction</code> - the action to be added</dd>
 </dl>
 </li>
 </ul>
@@ -421,6 +423,8 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#removeAction-etomica.action.IAction-">removeAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>action</code> - the action to be removed</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the action was removed</dd>
 </dl>
@@ -498,7 +502,7 @@ implements <a href="../../../etomica/action/activity/ActivityGroup.html" title="
 <h4>getAllActions</h4>
 <pre>public&nbsp;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>[]&nbsp;getAllActions()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/action/ActionGroup.html#getAllActions--">ActionGroup</a></code></span></div>
-<div class="block">Returns all actions from this group.</div>
+<div class="block">Returns all actions from this group. List of actions held by group is unchanged.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/action/ActionGroup.html#getAllActions--">getAllActions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></code></dd>

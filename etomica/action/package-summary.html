@@ -70,8 +70,7 @@
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;etomica.action</h1>
 <div class="docSummary">
-<div class="block">Provides interfaces and classes that define elementary actions that can be performed
- on simulation elements.</div>
+<div class="block">Define elementary actions that can be performed on simulation elements.</div>
 </div>
 <p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
@@ -87,18 +86,20 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">An action formed from a set of other actions.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/action/AtomAction.html" title="interface in etomica.action">AtomAction</a></td>
 <td class="colLast">
-<div class="block">Interface for a class that can perform an action on an atom.</div>
+<div class="block">Performs an action on an atom.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/action/BoxAction.html" title="interface in etomica.action">BoxAction</a></td>
 <td class="colLast">
-<div class="block">Elementary action performed on a box.</div>
+<div class="block">Elementary action performed on a Box.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -109,7 +110,10 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">General interface for performing an action, allowing the defined behavior to be separated from the driver that causes
+ it.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../etomica/action/IntegratorAction.html" title="interface in etomica.action">IntegratorAction</a></td>
@@ -152,7 +156,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../etomica/action/ActionGroupSeries.html" title="class in etomica.action">ActionGroupSeries</a></td>
 <td class="colLast">
-<div class="block">A set of Action instances grouped and performed in series 
+<div class="block">A set of Action instances grouped and performed in series
  as if a single action.</div>
 </td>
 </tr>
@@ -383,31 +387,18 @@
 <!--   -->
 </a>
 <h2 title="Package etomica.action Description">Package etomica.action Description</h2>
-<div class="block">Provides interfaces and classes that define elementary actions that can be performed
- on simulation elements. Examples include classes that move an atom, or that change the density of a box.
- This package defines the <a href="../../etomica/action/IAction.html" title="interface in etomica.action"><code>Action</code></a> interface. This interface includes the <tt>actionPerformed</tt>
- method, which a class implements to define its action.
- <p>
- Interfaces extending Action define actions for different <i>etomica</i> elements, such as
- Box, Atom, and so on.  Atomset actions are expected as arguments
- to the allAtoms methods of <code>atom iterators</code>.
+<div class="block">Define elementary actions that can be performed on simulation elements.
+ Examples include classes that move an Atom, or that change the density of a Box.
+ Classes defining such actions implement the <a href="../../etomica/action/IAction.html" title="interface in etomica.action"><code>Action</code></a> interface.
+ Interfaces extending IAction define actions for different simulation elements, such as
+ Box, Atom, and so on.
  <p>
  <a href="../../etomica/action/Activity.html" title="class in etomica.action"><code>Activity</code></a> implements Action and is an abstract class appropriate
  to encapsulate more complex, time-consuming tasks.  Classes extending Activity are collected
- in the subpackage <code>etomica.action.activity</code>.
- <!--
- <h2>Package Specification</h2>
- ##### FILL IN ANY SPECS NEEDED BY JAVA COMPATIBILITY KIT #####
- <ul>
- <li><a href="">##### REFER TO ANY FRAMEMAKER SPECIFICATION HERE #####</a>
- </ul>
- <h2>Related Documentation</h2>
- For overviews, tutorials, examples, guides, and tool documentation, please see:
- <ul>
- <li><a href="">##### REFER TO NON-SPEC DOCUMENTATION HERE #####</a>
- </ul>
- -->
- <!-- Put @see and @since tags down here. --></div>
+ in the subpackage <code>etomica.action.activity</code>. Whereas Actions must
+ be completed before further processing continues, Activity instances generally operate on a different
+ thread than the one that calls them, and can be paused, resumed or halted before they complete.
+ Classes extending Activity are collected in the subpackage <code>etomica.action.activity</code>.</div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">

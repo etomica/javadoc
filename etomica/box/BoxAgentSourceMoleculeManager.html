@@ -91,14 +91,14 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">etomica.box</div>
-<h2 title="Class BoxAgentSourceMoleculeManager" class="title">Class BoxAgentSourceMoleculeManager</h2>
+<h2 title="Class BoxAgentSourceMoleculeManager" class="title">Class BoxAgentSourceMoleculeManager&lt;E&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>etomica.box.BoxAgentSourceMoleculeManager</li>
+<li>etomica.box.BoxAgentSourceMoleculeManager&lt;E&gt;</li>
 </ul>
 </li>
 </ul>
@@ -107,13 +107,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&gt;</dd>
+<dd><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;E&gt;&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">BoxAgentSourceMoleculeManager</span>
+<pre>public class <span class="typeNameLabel">BoxAgentSourceMoleculeManager&lt;E&gt;</span>
 extends java.lang.Object
-implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&gt;</pre>
+implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;E&gt;&gt;</pre>
+<div class="block">BoxAgentSource that creates an MoleculeAgentManager.</div>
 </li>
 </ul>
 </div>
@@ -151,7 +152,7 @@ implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html#BoxAgentSourceMoleculeManager-etomica.molecule.MoleculeAgentManager.MoleculeAgentSource-etomica.simulation.Simulation-">BoxAgentSourceMoleculeManager</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>&nbsp;moleculeAgentSource,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html#BoxAgentSourceMoleculeManager-etomica.molecule.MoleculeAgentManager.MoleculeAgentSource-etomica.simulation.Simulation-">BoxAgentSourceMoleculeManager</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&nbsp;moleculeAgentSource,
                              <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
 </tr>
 </table>
@@ -170,12 +171,14 @@ implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html#makeAgent-etomica.box.Box-">makeAgent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html#releaseAgent-etomica.molecule.MoleculeAgentManager-">releaseAgent</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&nbsp;agent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentSourceMoleculeManager.html#releaseAgent-etomica.molecule.MoleculeAgentManager-">releaseAgent</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&nbsp;agent)</code>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -222,8 +225,13 @@ implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxAgentSourceMoleculeManager</h4>
-<pre>public&nbsp;BoxAgentSourceMoleculeManager(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>&nbsp;moleculeAgentSource,
+<pre>public&nbsp;BoxAgentSourceMoleculeManager(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&nbsp;moleculeAgentSource,
                                      <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>moleculeAgentSource</code> - object that makes the molecule agents</dd>
+<dd><code>sim</code> - the governing simulation</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -240,10 +248,14 @@ implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>public&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&nbsp;makeAgent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<pre>public&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&nbsp;makeAgent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#makeAgent-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#makeAgent-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box for this agent</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the object that source wants to have with the given box</dd>
 </dl>
 </li>
 </ul>
@@ -253,10 +265,14 @@ implements <a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
-<pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&nbsp;agent)</pre>
+<pre>public&nbsp;void&nbsp;releaseAgent(<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&nbsp;agent)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">BoxAgentManager.BoxAgentSource</a></code></span></div>
+<div class="block">Disconnects the given agent from its box and performs any actions needed to clean up</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&gt;</code></dd>
+<dd><code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html#releaseAgent-E-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/box/BoxAgentSourceMoleculeManager.html" title="type parameter in BoxAgentSourceMoleculeManager">E</a>&gt;&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>agent</code> - the agent being released</dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -114,12 +114,9 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">BoxAgentManager&lt;E&gt;</span>
 extends java.lang.Object
 implements <a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a></pre>
-<div class="block">BoxAgentManager acts on behalf of client classes (a BoxAgentSource) to manage
+<div class="block">Acts on behalf of client classes (a BoxAgentSource) to manage
  agents for each Box in a simulation.  When Box instances are added or removed
- from the simulation, the agents array (indexed by the box's index) is updated.
- The client should call getAgents() at any point where a Box might have have been
- added to (or removed from) the system because the old array would be stale at that
- point.</div>
+ from the simulation, the agents array (indexed by the Box's index) is updated.</div>
 </li>
 </ul>
 </div>
@@ -147,7 +144,7 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="type parameter in BoxAgentManager.BoxAgentSource">E</a>&gt;</span></code>
-<div class="block">Interface for an object that makes an agent to be placed in each atom
+<div class="block">Interface for an object that makes an agent to be associated with each box
  upon construction.</div>
 </td>
 </tr>
@@ -175,10 +172,6 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#agentSource">agentSource</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#boxAgentClass">boxAgentClass</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/simulation/SimulationEventManager.html" title="class in etomica.simulation">SimulationEventManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simEventManager">simEventManager</a></span></code>&nbsp;</td>
 </tr>
@@ -197,13 +190,11 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#BoxAgentManager-etomica.box.BoxAgentManager.BoxAgentSource-java.lang.Class-">BoxAgentManager</a></span>(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;&nbsp;source,
-               java.lang.Class&nbsp;boxAgentClass)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#BoxAgentManager-etomica.box.BoxAgentManager.BoxAgentSource-java.lang.Class-etomica.simulation.Simulation-">BoxAgentManager</a></span>(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;&nbsp;source,
                java.lang.Class&nbsp;boxAgentClass,
-               <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
+               <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>
+<div class="block">Constructs and sets the Simulation containing Boxes to be tracked.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -233,56 +224,48 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#getAgent-etomica.box.Box-">getAgent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
-<div class="block">Returns the agent associated with the given box</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#getAgent-etomica.box.Box-">getAgent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/box/BoxAgentManager.AgentIterator.html" title="class in etomica.box">BoxAgentManager.AgentIterator</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#makeIterator--">makeIterator</a></span>()</code>
-<div class="block">Returns an iterator that returns each non-null agent</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#makeIterator--">makeIterator</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#setAgent-etomica.box.Box-E-">setAgent</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-        <a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&nbsp;agent)</code>&nbsp;</td>
+        <a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&nbsp;agent)</code>
+<div class="block">Associates an Agent with a Box.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#setSimulation-etomica.simulation.Simulation-">setSimulation</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>
-<div class="block">Sets the Simulation containing Boxs to be tracked.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationAtomTypeMaxIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationAtomTypeMaxIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a></span>(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a></span>(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">simulationBoxRemoved</a></span>(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">simulationBoxRemoved</a></span>(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesAdded</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesAdded</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">simulationSpeciesIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html" title="class in etomica.simulation">SimulationSpeciesIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">simulationSpeciesIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html" title="class in etomica.simulation">SimulationSpeciesIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationSpeciesMaxIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxAgentManager.html#simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesRemoved</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
@@ -317,15 +300,6 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <pre>protected final&nbsp;<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt; agentSource</pre>
 </li>
 </ul>
-<a name="boxAgentClass">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>boxAgentClass</h4>
-<pre>protected final&nbsp;java.lang.Class boxAgentClass</pre>
-</li>
-</ul>
 <a name="simEventManager">
 <!--   -->
 </a>
@@ -352,16 +326,6 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxAgentManager-etomica.box.BoxAgentManager.BoxAgentSource-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>BoxAgentManager</h4>
-<pre>public&nbsp;BoxAgentManager(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;&nbsp;source,
-                       java.lang.Class&nbsp;boxAgentClass)</pre>
-</li>
-</ul>
 <a name="BoxAgentManager-etomica.box.BoxAgentManager.BoxAgentSource-java.lang.Class-etomica.simulation.Simulation-">
 <!--   -->
 </a>
@@ -371,6 +335,16 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <pre>public&nbsp;BoxAgentManager(<a href="../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;&nbsp;source,
                        java.lang.Class&nbsp;boxAgentClass,
                        <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
+<div class="block">Constructs and sets the Simulation containing Boxes to be tracked. This will register
+ this BoxAgentManager as a listener to the Simulation so that it will be notified
+ when Boxes are added or removed. This call also initializes the agents for any Boxes
+ already existing in the Simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - object that makes the agents.</dd>
+<dd><code>boxAgentClass</code> - class of the agent returned by the boxAgentSource</dd>
+<dd><code>sim</code> - the simulation using this BoxAgentManager</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -388,7 +362,10 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <li class="blockList">
 <h4>getAgent</h4>
 <pre>public&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&nbsp;getAgent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<div class="block">Returns the agent associated with the given box</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the agent associated with the given Box</dd>
+</dl>
 </li>
 </ul>
 <a name="setAgent-etomica.box.Box-java.lang.Object-">
@@ -401,6 +378,12 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <h4>setAgent</h4>
 <pre>public&nbsp;void&nbsp;setAgent(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                      <a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&nbsp;agent)</pre>
+<div class="block">Associates an Agent with a Box.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the Box</dd>
+<dd><code>agent</code> - the Agent</dd>
+</dl>
 </li>
 </ul>
 <a name="makeIterator--">
@@ -410,18 +393,10 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <li class="blockList">
 <h4>makeIterator</h4>
 <pre>public&nbsp;<a href="../../etomica/box/BoxAgentManager.AgentIterator.html" title="class in etomica.box">BoxAgentManager.AgentIterator</a>&lt;<a href="../../etomica/box/BoxAgentManager.html" title="type parameter in BoxAgentManager">E</a>&gt;&nbsp;makeIterator()</pre>
-<div class="block">Returns an iterator that returns each non-null agent</div>
-</li>
-</ul>
-<a name="setSimulation-etomica.simulation.Simulation-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSimulation</h4>
-<pre>public&nbsp;void&nbsp;setSimulation(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
-<div class="block">Sets the Simulation containing Boxs to be tracked.  This method should
- not be called if setSimulationEventManager is called.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an iterator that returns each non-null agent</dd>
+</dl>
 </li>
 </ul>
 <a name="dispose--">

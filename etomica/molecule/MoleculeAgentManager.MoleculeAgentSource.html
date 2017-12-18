@@ -91,7 +91,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">etomica.molecule</div>
-<h2 title="Interface MoleculeAgentManager.MoleculeAgentSource" class="title">Interface MoleculeAgentManager.MoleculeAgentSource</h2>
+<h2 title="Interface MoleculeAgentManager.MoleculeAgentSource" class="title">Interface MoleculeAgentManager.MoleculeAgentSource&lt;E&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -103,11 +103,11 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
-<dd><a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></dd>
+<dd><a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public static interface <span class="typeNameLabel">MoleculeAgentManager.MoleculeAgentSource</span></pre>
+<pre>public static interface <span class="typeNameLabel">MoleculeAgentManager.MoleculeAgentSource&lt;E&gt;</span></pre>
 <div class="block">Interface for an object that wants an agent associated with each
  IMolecule a Box.</div>
 </li>
@@ -135,14 +135,14 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colFirst"><code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="type parameter in MoleculeAgentManager.MoleculeAgentSource">E</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-E-etomica.molecule.IMolecule-">releaseAgent</a></span>(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="type parameter in MoleculeAgentManager.MoleculeAgentSource">E</a>&nbsp;agent,
             <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
 <div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
@@ -180,17 +180,19 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>makeAgent</h4>
-<pre>java.lang.Object&nbsp;makeAgent(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</pre>
+<pre><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="type parameter in MoleculeAgentManager.MoleculeAgentSource">E</a>&nbsp;makeAgent(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</pre>
 <div class="block">Returns an agent for the given Atom.</div>
 </li>
 </ul>
 <a name="releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">
 <!--   -->
+</a><a name="releaseAgent-E-etomica.molecule.IMolecule-">
+<!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
-<pre>void&nbsp;releaseAgent(java.lang.Object&nbsp;agent,
+<pre>void&nbsp;releaseAgent(<a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="type parameter in MoleculeAgentManager.MoleculeAgentSource">E</a>&nbsp;agent,
                   <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</pre>
 <div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements</div>
