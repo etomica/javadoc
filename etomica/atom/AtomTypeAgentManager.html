@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">AtomTypeAgentManager&lt;E&gt;</span>
+<pre>public final class <span class="typeNameLabel">AtomTypeAgentManager&lt;E&gt;</span>
 extends java.lang.Object
 implements <a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a></pre>
 <div class="block">AtomTypeAgentManager acts on behalf of client classes (an AgentSource) to manage agents for every AtomType in a box.
@@ -209,7 +209,7 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.Map&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../etomica/atom/AtomTypeAgentManager.html" title="type parameter in AtomTypeAgentManager">E</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../etomica/util/collections/IndexMap.html" title="class in etomica.util.collections">IndexMap</a>&lt;<a href="../../etomica/atom/AtomTypeAgentManager.html" title="type parameter in AtomTypeAgentManager">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeAgentManager.html#getAgents--">getAgents</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -221,9 +221,13 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeAgentManager.html#simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesAdded</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeAgentManager.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a></span>(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeAgentManager.html#simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesAdded</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomTypeAgentManager.html#simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesRemoved</a></span>(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
@@ -240,7 +244,7 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.simulation.<a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a></h3>
-<code><a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationAtomTypeMaxIndexChanged</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">simulationBoxRemoved</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">simulationSpeciesIndexChanged</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationSpeciesMaxIndexChanged</a></code></li>
+<code><a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationAtomTypeMaxIndexChanged</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">simulationBoxRemoved</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">simulationSpeciesIndexChanged</a>, <a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationSpeciesMaxIndexChanged</a></code></li>
 </ul>
 </li>
 </ul>
@@ -297,7 +301,7 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>getAgents</h4>
-<pre>public&nbsp;java.util.Map&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../etomica/atom/AtomTypeAgentManager.html" title="type parameter in AtomTypeAgentManager">E</a>&gt;&nbsp;getAgents()</pre>
+<pre>public&nbsp;<a href="../../etomica/util/collections/IndexMap.html" title="class in etomica.util.collections">IndexMap</a>&lt;<a href="../../etomica/atom/AtomTypeAgentManager.html" title="type parameter in AtomTypeAgentManager">E</a>&gt;&nbsp;getAgents()</pre>
 </li>
 </ul>
 <a name="setAgent-etomica.atom.AtomType-java.lang.Object-">
@@ -351,13 +355,26 @@ implements <a href="../../etomica/simulation/SimulationListener.html" title="int
 <a name="simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>simulationSpeciesRemoved</h4>
 <pre>public&nbsp;void&nbsp;simulationSpeciesRemoved(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesRemoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>simulationAtomTypeIndexChanged</h4>
+<pre>public&nbsp;void&nbsp;simulationAtomTypeIndexChanged(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a></code></dd>
 </dl>
 </li>
 </ul>
