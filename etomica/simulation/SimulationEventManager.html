@@ -124,10 +124,12 @@ extends java.lang.Object</pre>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#SimulationEventManager-etomica.simulation.Simulation-">SimulationEventManager</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#SimulationEventManager-etomica.simulation.Simulation-">SimulationEventManager</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -214,7 +216,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimulationEventManager</h4>
-<pre>public&nbsp;SimulationEventManager(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
+<pre>protected&nbsp;SimulationEventManager(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 </li>
 </ul>
 </li>
@@ -232,6 +234,15 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>addListener</h4>
 <pre>public&nbsp;void&nbsp;addListener(<a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a>&nbsp;listener)</pre>
+</li>
+</ul>
+<a name="removeListener-etomica.simulation.SimulationListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeListener</h4>
+<pre>public&nbsp;void&nbsp;removeListener(<a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a>&nbsp;listener)</pre>
 </li>
 </ul>
 <a name="boxAdded-etomica.box.Box-">
@@ -302,19 +313,10 @@ extends java.lang.Object</pre>
 <a name="atomTypeMaxIndexChanged-int-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>atomTypeMaxIndexChanged</h4>
 <pre>public&nbsp;void&nbsp;atomTypeMaxIndexChanged(int&nbsp;index)</pre>
-</li>
-</ul>
-<a name="removeListener-etomica.simulation.SimulationListener-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>removeListener</h4>
-<pre>public&nbsp;void&nbsp;removeListener(<a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a>&nbsp;listener)</pre>
 </li>
 </ul>
 </li>

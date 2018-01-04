@@ -47,8 +47,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/util/EnumeratedType.html" title="class in etomica.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/util/EventManager.Linker.html" title="class in etomica.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/util/Debug.html" title="class in etomica.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/util/Grabber.html" title="class in etomica.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/util/EventManager.html" target="_top">Frames</a></li>
@@ -72,14 +72,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -91,86 +91,33 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">etomica.util</div>
-<h2 title="Class EventManager" class="title">Class EventManager</h2>
+<h2 title="Class EventManager" class="title">Class EventManager&lt;E extends <a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>etomica.util.EventManager</li>
+<li>etomica.util.EventManager&lt;E&gt;</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>, java.io.Serializable</dd>
-</dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../etomica/action/activity/ControllerEventManager.html" title="class in etomica.action.activity">ControllerEventManager</a>, <a href="../../etomica/graphics/DeviceTernarySelector.MyEventManager.html" title="class in etomica.graphics">DeviceTernarySelector.MyEventManager</a>, <a href="../../etomica/integrator/mcmove/MCMoveEventManager.html" title="class in etomica.integrator.mcmove">MCMoveEventManager</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">EventManager</span>
-extends java.lang.Object
-implements <a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>, java.io.Serializable</pre>
+<pre>public class <span class="typeNameLabel">EventManager&lt;E extends <a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt;</span>
+extends java.lang.Object</pre>
 <div class="block">Class to take care of listener lists and event firing for simulation elements.
- A class can make an instance of this manager as a field, and delegate any 
+ A class can make an instance of this manager as a field, and delegate any
  listener management functions to it.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.util.EventManager">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.Linker.html" title="class in etomica.util">EventManager.Linker</a></span></code>
-<div class="block">Class used to construct a two-way linked list of listeners.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/EventManager.Linker.html" title="class in etomica.util">EventManager.Linker</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#first">first</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -202,18 +149,17 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#addListener-etomica.util.IListener-">addListener</a></span>(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#addListener-etomica.util.IListener-">addListener</a></span>(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&lt;<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&gt;&nbsp;listener)</code>
 <div class="block">Adds the given listener to this event manager.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#addListener-etomica.util.IListener-boolean-">addListener</a></span>(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener,
-           boolean&nbsp;doSerialize)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#fireEvent-E-">fireEvent</a></span>(<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#removeListener-etomica.util.IListener-">removeListener</a></span>(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/EventManager.html#removeListener-etomica.util.IListener-">removeListener</a></span>(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&lt;<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&gt;&nbsp;listener)</code>
 <div class="block">Removes the given listener from this event manager.</div>
 </td>
 </tr>
@@ -225,13 +171,6 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.util.IEventManager">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.util.<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></h3>
-<code><a href="../../etomica/util/IEventManager.html#fireEvent-etomica.util.IEvent-">fireEvent</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -240,23 +179,6 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="first">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>first</h4>
-<pre>protected transient&nbsp;<a href="../../etomica/util/EventManager.Linker.html" title="class in etomica.util">EventManager.Linker</a> first</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -280,29 +202,25 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="fireEvent-etomica.util.IEvent-">
+<!--   -->
+</a><a name="fireEvent-E-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fireEvent</h4>
+<pre>public&nbsp;void&nbsp;fireEvent(<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&nbsp;e)</pre>
+</li>
+</ul>
 <a name="addListener-etomica.util.IListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addListener</h4>
-<pre>public&nbsp;void&nbsp;addListener(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/IEventManager.html#addListener-etomica.util.IListener-">IEventManager</a></code></span></div>
+<pre>public&nbsp;void&nbsp;addListener(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&lt;<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&gt;&nbsp;listener)</pre>
 <div class="block">Adds the given listener to this event manager.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/IEventManager.html#addListener-etomica.util.IListener-">addListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="addListener-etomica.util.IListener-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addListener</h4>
-<pre>public&nbsp;void&nbsp;addListener(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener,
-                        boolean&nbsp;doSerialize)</pre>
 </li>
 </ul>
 <a name="removeListener-etomica.util.IListener-">
@@ -311,13 +229,8 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 <ul class="blockListLast">
 <li class="blockList">
 <h4>removeListener</h4>
-<pre>public&nbsp;void&nbsp;removeListener(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;listener)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/util/IEventManager.html#removeListener-etomica.util.IListener-">IEventManager</a></code></span></div>
+<pre>public&nbsp;void&nbsp;removeListener(<a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&lt;<a href="../../etomica/util/EventManager.html" title="type parameter in EventManager">E</a>&gt;&nbsp;listener)</pre>
 <div class="block">Removes the given listener from this event manager.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/IEventManager.html#removeListener-etomica.util.IListener-">removeListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -347,8 +260,8 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/util/EnumeratedType.html" title="class in etomica.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/util/EventManager.Linker.html" title="class in etomica.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/util/Debug.html" title="class in etomica.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/util/Grabber.html" title="class in etomica.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/util/EventManager.html" target="_top">Frames</a></li>
@@ -372,14 +285,14 @@ implements <a href="../../etomica/util/IEventManager.html" title="interface in e
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

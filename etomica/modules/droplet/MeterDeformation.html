@@ -157,7 +157,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#f">f</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></td>
+<td class="colFirst"><code>protected java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#filter">filter</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -221,7 +221,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#getDataInfo--">getDataInfo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></td>
+<td class="colFirst"><code>java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#getFilter--">getFilter</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -234,7 +234,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#setFilter-etomica.atom.AtomFilter-">setFilter</a></span>(<a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>&nbsp;newFilter)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/MeterDeformation.html#setFilter-java.util.function.Predicate-">setFilter</a></span>(java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;&nbsp;newFilter)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -258,15 +258,6 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="box">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>box</h4>
-<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
-</li>
-</ul>
 <a name="data">
 <!--   -->
 </a>
@@ -348,13 +339,22 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected final&nbsp;<a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a> workTensor</pre>
 </li>
 </ul>
+<a name="box">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>box</h4>
+<pre>protected&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
+</li>
+</ul>
 <a name="filter">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filter</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a> filter</pre>
+<pre>protected&nbsp;java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt; filter</pre>
 </li>
 </ul>
 </li>
@@ -382,15 +382,6 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
-</li>
-</ul>
 <a name="getBox--">
 <!--   -->
 </a>
@@ -400,13 +391,13 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox()</pre>
 </li>
 </ul>
-<a name="setFilter-etomica.atom.AtomFilter-">
+<a name="setBox-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setFilter</h4>
-<pre>public&nbsp;void&nbsp;setFilter(<a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>&nbsp;newFilter)</pre>
+<h4>setBox</h4>
+<pre>public&nbsp;void&nbsp;setBox(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</pre>
 </li>
 </ul>
 <a name="getFilter--">
@@ -415,7 +406,16 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getFilter</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>&nbsp;getFilter()</pre>
+<pre>public&nbsp;java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;&nbsp;getFilter()</pre>
+</li>
+</ul>
+<a name="setFilter-java.util.function.Predicate-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFilter</h4>
+<pre>public&nbsp;void&nbsp;setFilter(java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;&nbsp;newFilter)</pre>
 </li>
 </ul>
 <a name="getData--">

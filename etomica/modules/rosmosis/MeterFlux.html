@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -251,26 +251,20 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#getDim--">getDim</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></span>()</code>
-<div class="block">Returns the Class of the agent.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#getSpecies--">getSpecies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
             <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
@@ -278,21 +272,21 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#setBoundaries-int-double:A-int:A-">setBoundaries</a></span>(int&nbsp;newDim,
              double[]&nbsp;newBoundaries,
              int[]&nbsp;newBoundaryCoefficients)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#setIntegrator-etomica.integrator.IntegratorBox-">setIntegrator</a></span>(<a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;newIntegrator)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/rosmosis/MeterFlux.html#setSpecies-etomica.species.ISpecies:A-">setSpecies</a></span>(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;newSpecies)</code>&nbsp;</td>
 </tr>
@@ -584,22 +578,6 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <dd><code><a href="../../../etomica/data/IDataSource.html#getTag--">getTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a tag that uniquely identifies the IDataInfo</dd>
-</dl>
-</li>
-</ul>
-<a name="getMoleculeAgentClass--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMoleculeAgentClass</h4>
-<pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of
- the appropriate Class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>

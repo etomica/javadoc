@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -120,43 +120,43 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when an atom's global (leaf) index has changed.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a></span>(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is added to the box.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a></span>(<a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a>&nbsp;e)</code>
 <div class="block">Called when an molecule's index has changed.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a></span>(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</code>
 <div class="block">Called when a molecule is removed from the box.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/box/BoxEventListener.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a></span>(<a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>&nbsp;e)</code>
 <div class="block">Called when the number of molecules of a particular species has changed
  in the box.</div>
@@ -183,7 +183,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeAdded</h4>
-<pre>void&nbsp;boxMoleculeAdded(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxMoleculeAdded(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
 <div class="block">Called when a molecule is added to the box.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -198,7 +198,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeRemoved</h4>
-<pre>void&nbsp;boxMoleculeRemoved(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxMoleculeRemoved(<a href="../../etomica/box/BoxMoleculeEvent.html" title="class in etomica.box">BoxMoleculeEvent</a>&nbsp;e)</pre>
 <div class="block">Called when a molecule is removed from the box.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -213,7 +213,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>boxGlobalAtomLeafIndexChanged</h4>
-<pre>void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxGlobalAtomLeafIndexChanged(<a href="../../etomica/box/BoxIndexEvent.html" title="class in etomica.box">BoxIndexEvent</a>&nbsp;e)</pre>
 <div class="block">Called when the maximum leaf index in the box has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -228,7 +228,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>boxAtomLeafIndexChanged</h4>
-<pre>void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxAtomLeafIndexChanged(<a href="../../etomica/box/BoxAtomIndexEvent.html" title="class in etomica.box">BoxAtomIndexEvent</a>&nbsp;e)</pre>
 <div class="block">Called when an atom's global (leaf) index has changed.  This typically
  happens after one molecule is removed and the indices of other atoms are
  renumbered to fill in the gap left by the removed atoms.</div>
@@ -246,7 +246,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>boxMoleculeIndexChanged</h4>
-<pre>void&nbsp;boxMoleculeIndexChanged(<a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxMoleculeIndexChanged(<a href="../../etomica/box/BoxMoleculeIndexEvent.html" title="class in etomica.box">BoxMoleculeIndexEvent</a>&nbsp;e)</pre>
 <div class="block">Called when an molecule's index has changed.  This typically happens
  after one molecule is removed and the indices of another molecule is
  changed to fill in the gap.</div>
@@ -264,7 +264,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>boxNumberMolecules</h4>
-<pre>void&nbsp;boxNumberMolecules(<a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>&nbsp;e)</pre>
+<pre>default&nbsp;void&nbsp;boxNumberMolecules(<a href="../../etomica/box/BoxMoleculeCountEvent.html" title="class in etomica.box">BoxMoleculeCountEvent</a>&nbsp;e)</pre>
 <div class="block">Called when the number of molecules of a particular species has changed
  in the box.  This method is called before the new molecules have
  been added to the box.</div>

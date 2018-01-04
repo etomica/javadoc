@@ -144,9 +144,8 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/NeighborSiteManager.html#NeighborSiteManager-etomica.box.Box-int-etomica.space.Space-">NeighborSiteManager</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                   int&nbsp;nCells,
-                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/NeighborSiteManager.html#NeighborSiteManager-etomica.box.Box-int-">NeighborSiteManager</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                   int&nbsp;nCells)</code>
 <div class="block">Constructs manager for neighbor cells in the given box.</div>
 </td>
 </tr>
@@ -193,7 +192,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/site/NeighborSiteManager.html#releaseAgent-etomica.nbr.site.AtomSite-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/nbr/site/AtomSite.html" title="class in etomica.nbr.site">AtomSite</a>&nbsp;agent,
             <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
             <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
@@ -219,15 +218,14 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborSiteManager-etomica.box.Box-int-etomica.space.Space-">
+<a name="NeighborSiteManager-etomica.box.Box-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborSiteManager</h4>
 <pre>public&nbsp;NeighborSiteManager(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                           int&nbsp;nCells,
-                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+                           int&nbsp;nCells)</pre>
 <div class="block">Constructs manager for neighbor cells in the given box. The number of
  cells in each dimension is given by nCells. Position definition for each
  atom is that given by its type (it is set to null in this class).</div>
@@ -309,7 +307,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
                          <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
                          <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>

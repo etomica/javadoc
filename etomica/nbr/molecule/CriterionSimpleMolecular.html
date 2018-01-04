@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -231,37 +231,31 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#getInteractionRangeDimension--">getInteractionRangeDimension</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></span>()</code>
-<div class="block">Returns the Class of the agent.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#getNeighborRange--">getNeighborRange</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/units/dimensions/Dimension.html" title="class in etomica.units.dimensions">Dimension</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#getNeighborRangeDimension--">getNeighborRangeDimension</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#getSafetyFactor--">getSafetyFactor</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#needUpdate-etomica.molecule.IMolecule-">needUpdate</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Indicates whether the neighbor list for the given molecule should
  be updated, according to this criterion.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
             <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
@@ -269,7 +263,7 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#reset-etomica.molecule.IMolecule-">reset</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Indicates to criterion that given molecule's neighbor list has just been 
@@ -277,29 +271,29 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
  used by needUpdate and unsafe() methods should be reset.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code>
 <div class="block">Specifies the box where the criterion is being applied.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#setInteractionRange-double-">setInteractionRange</a></span>(double&nbsp;newInteractionRange)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#setMoleculePosition-etomica.molecule.IMoleculePositionDefinition-">setMoleculePosition</a></span>(<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#setNeighborRange-double-">setNeighborRange</a></span>(double&nbsp;r)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#setSafetyFactor-double-">setSafetyFactor</a></span>(double&nbsp;f)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/nbr/molecule/CriterionSimpleMolecular.html#unsafe--">unsafe</a></span>()</code>
 <div class="block">Indicates whether the molecule has changed (e.g.</div>
@@ -624,22 +618,6 @@ implements <a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.htm
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html#reset-etomica.molecule.IMolecule-">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/molecule/NeighborCriterionMolecular.html" title="interface in etomica.nbr.molecule">NeighborCriterionMolecular</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getMoleculeAgentClass--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMoleculeAgentClass</h4>
-<pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of
- the appropriate Class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>

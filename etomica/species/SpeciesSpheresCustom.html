@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></dd>
 </dl>
 <hr>
 <br>
@@ -120,10 +120,6 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></pre>
 <div class="block">Species in which molecules are made of arbitrary number of spheres,
  each of a specified type.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.species.SpeciesSpheresCustom">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -143,14 +139,10 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#atomTypes">atomTypes</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#isDynamic">isDynamic</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#space">space</a></span></code>&nbsp;</td>
 </tr>
@@ -160,7 +152,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#childTypes">childTypes</a>, <a href="../../etomica/species/Species.html#conformation">conformation</a>, <a href="../../etomica/species/Species.html#index">index</a></code></li>
+<code><a href="../../etomica/species/Species.html#atomTypes">atomTypes</a>, <a href="../../etomica/species/Species.html#conformation">conformation</a>, <a href="../../etomica/species/Species.html#index">index</a></code></li>
 </ul>
 </li>
 </ul>
@@ -211,49 +203,31 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#getNumComponents--">getNumComponents</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#getNumLeafAtoms--">getNumLeafAtoms</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#isDynamic--">isDynamic</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#makeAtomTypes-etomica.chem.elements.IElement:A-">makeAtomTypes</a></span>(<a href="../../etomica/chem/elements/IElement.html" title="interface in etomica.chem.elements">IElement</a>[]&nbsp;leafElements)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#makeLeafAtom-etomica.atom.AtomType-">makeLeafAtom</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;leafType)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#makeMolecule--">makeMolecule</a></span>()</code>
 <div class="block">Constructs a new group containing a block of atoms for
  each sub-type.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#setAtomTypes-int:A-">setAtomTypes</a></span>(int[]&nbsp;atomTypes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#setChildAtomTypes-int:A-">setChildAtomTypes</a></span>(int[]&nbsp;childAtomTypes)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#setChildTypes-etomica.atom.AtomType:A-">setChildTypes</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;newchildTypes)</code>
-<div class="block">Sets the factories that make the child atoms of this factory's atom.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/SpeciesSpheresCustom.html#setIsDynamic-boolean-">setIsDynamic</a></span>(boolean&nbsp;newIsDynamic)</code>&nbsp;</td>
 </tr>
@@ -263,7 +237,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
+<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getAtomTypes--">getAtomTypes</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -298,19 +272,10 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <a name="isDynamic">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>isDynamic</h4>
 <pre>protected&nbsp;boolean isDynamic</pre>
-</li>
-</ul>
-<a name="atomTypes">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>atomTypes</h4>
-<pre>protected&nbsp;int[] atomTypes</pre>
 </li>
 </ul>
 </li>
@@ -376,15 +341,6 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeAtomTypes-etomica.chem.elements.IElement:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeAtomTypes</h4>
-<pre>protected static final&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;makeAtomTypes(<a href="../../etomica/chem/elements/IElement.html" title="interface in etomica.chem.elements">IElement</a>[]&nbsp;leafElements)</pre>
-</li>
-</ul>
 <a name="setIsDynamic-boolean-">
 <!--   -->
 </a>
@@ -414,49 +370,13 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
  each sub-type.</div>
 </li>
 </ul>
-<a name="makeLeafAtom-etomica.atom.AtomType-">
+<a name="setChildAtomTypes-int:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>makeLeafAtom</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;makeLeafAtom(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;leafType)</pre>
-</li>
-</ul>
-<a name="getNumComponents--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getNumComponents</h4>
-<pre>public&nbsp;int&nbsp;getNumComponents()</pre>
-</li>
-</ul>
-<a name="setChildTypes-etomica.atom.AtomType:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setChildTypes</h4>
-<pre>public&nbsp;void&nbsp;setChildTypes(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;newchildTypes)</pre>
-<div class="block">Sets the factories that make the child atoms of this factory's atom.
- If the number of factories changes, the number fractions are set so
- that there is an equal amount of each child.  The caller is responsible
- for ensuring that the AtomTypes for the child factories are children
- of this AtomFactory's AtomType.</div>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if newChildFactory is an empty array</dd>
-</dl>
-</li>
-</ul>
-<a name="setAtomTypes-int:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setAtomTypes</h4>
-<pre>public&nbsp;void&nbsp;setAtomTypes(int[]&nbsp;atomTypes)</pre>
+<h4>setChildAtomTypes</h4>
+<pre>public&nbsp;void&nbsp;setChildAtomTypes(int[]&nbsp;childAtomTypes)</pre>
 </li>
 </ul>
 <a name="getNumLeafAtoms--">

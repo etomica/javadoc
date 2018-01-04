@@ -155,7 +155,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#eventManager">eventManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -163,7 +163,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#globalMoveProbability">globalMoveProbability</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[]</code></td>
+<td class="colFirst"><code>protected java.util.List&lt;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#integrators">integrators</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -171,14 +171,10 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#moveManager">moveManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#nIntegrators">nIntegrators</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#random">random</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#temperature">temperature</a></span></code>&nbsp;</td>
 </tr>
@@ -250,7 +246,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#getIntegrators--">getIntegrators</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorManagerMC.html#getMoveEventManager--">getMoveEventManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -331,7 +327,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>eventManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a> eventManager</pre>
+<pre>protected final&nbsp;<a href="../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt; eventManager</pre>
 </li>
 </ul>
 <a name="random">
@@ -367,16 +363,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>integrators</h4>
-<pre>protected&nbsp;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[] integrators</pre>
-</li>
-</ul>
-<a name="nIntegrators">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>nIntegrators</h4>
-<pre>protected&nbsp;int nIntegrators</pre>
+<pre>protected final&nbsp;java.util.List&lt;<a href="../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&gt; integrators</pre>
 </li>
 </ul>
 <a name="temperature">
@@ -539,7 +526,7 @@ extends <a href="../../etomica/integrator/Integrator.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>getMoveEventManager</h4>
-<pre>public&nbsp;<a href="../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>&nbsp;getMoveEventManager()</pre>
+<pre>public&nbsp;<a href="../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt;&nbsp;getMoveEventManager()</pre>
 </li>
 </ul>
 <a name="getGlobalMoveInterval--">

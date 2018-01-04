@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,14 +73,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#enum.constant.summary">Enum Constants</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#enum.constant.detail">Enum Constants</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -91,14 +91,14 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">etomica.integrator</div>
-<h2 title="Class IntegratorMD.ThermostatType" class="title">Class IntegratorMD.ThermostatType</h2>
+<h2 title="Enum IntegratorMD.ThermostatType" class="title">Enum IntegratorMD.ThermostatType</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../etomica/util/EnumeratedType.html" title="class in etomica.util">etomica.util.EnumeratedType</a></li>
+<li>java.lang.Enum&lt;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>etomica.integrator.IntegratorMD.ThermostatType</li>
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable</dd>
+<dd>java.io.Serializable, java.lang.Comparable&lt;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>&gt;</dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -120,68 +120,39 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">IntegratorMD.ThermostatType</span>
-extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.integrator.IntegratorMD.ThermostatType">Serialized Form</a></dd>
-</dl>
+<pre>public static enum <span class="typeNameLabel">IntegratorMD.ThermostatType</span>
+extends java.lang.Enum&lt;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="field.summary">
+<li class="blockList"><a name="enum.constant.summary">
 <!--   -->
 </a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<h3>Enum Constant Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Enum Constant Summary table, listing enum constants, and an explanation">
+<caption><span>Enum Constants</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
+<th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN">ANDERSEN</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN">ANDERSEN</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN_SCALING">ANDERSEN_SCALING</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN_SCALING">ANDERSEN_SCALING</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN_SINGLE">ANDERSEN_SINGLE</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ANDERSEN_SINGLE">ANDERSEN_SINGLE</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#HYBRID_MC">HYBRID_MC</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#HYBRID_MC">HYBRID_MC</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#VELOCITY_SCALING">VELOCITY_SCALING</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#ThermostatType-java.lang.String-">ThermostatType</a></span>(java.lang.String&nbsp;label)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#VELOCITY_SCALING">VELOCITY_SCALING</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -199,23 +170,32 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#choices--">choices</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#valueOf-java.lang.String-">valueOf</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Returns the enum constant of this type with the specified name.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMD.ThermostatType.html#values--">values</a></span>()</code>
+<div class="block">Returns an array containing the constants of this enum type, in
+the order they are declared.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.util.EnumeratedType">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Enum">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;etomica.util.<a href="../../etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a></h3>
-<code><a href="../../etomica/util/EnumeratedType.html#toString--">toString</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Enum</h3>
+<code>clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<code>getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -225,19 +205,19 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
+<!-- ============ ENUM CONSTANT DETAIL =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="field.detail">
+<li class="blockList"><a name="enum.constant.detail">
 <!--   -->
 </a>
-<h3>Field Detail</h3>
+<h3>Enum Constant Detail</h3>
 <a name="VELOCITY_SCALING">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>VELOCITY_SCALING</h4>
-<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a> VELOCITY_SCALING</pre>
+<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a> VELOCITY_SCALING</pre>
 </li>
 </ul>
 <a name="ANDERSEN">
@@ -246,7 +226,7 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <ul class="blockList">
 <li class="blockList">
 <h4>ANDERSEN</h4>
-<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN</pre>
+<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN</pre>
 </li>
 </ul>
 <a name="ANDERSEN_SINGLE">
@@ -255,7 +235,7 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <ul class="blockList">
 <li class="blockList">
 <h4>ANDERSEN_SINGLE</h4>
-<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN_SINGLE</pre>
+<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN_SINGLE</pre>
 </li>
 </ul>
 <a name="ANDERSEN_SCALING">
@@ -264,7 +244,7 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <ul class="blockList">
 <li class="blockList">
 <h4>ANDERSEN_SCALING</h4>
-<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN_SCALING</pre>
+<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a> ANDERSEN_SCALING</pre>
 </li>
 </ul>
 <a name="HYBRID_MC">
@@ -273,24 +253,7 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <ul class="blockListLast">
 <li class="blockList">
 <h4>HYBRID_MC</h4>
-<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a> HYBRID_MC</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="ThermostatType-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>ThermostatType</h4>
-<pre>protected&nbsp;ThermostatType(java.lang.String&nbsp;label)</pre>
+<pre>public static final&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a> HYBRID_MC</pre>
 </li>
 </ul>
 </li>
@@ -301,13 +264,46 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="choices--">
+<a name="values--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>values</h4>
+<pre>public static&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>[]&nbsp;values()</pre>
+<div class="block">Returns an array containing the constants of this enum type, in
+the order they are declared.  This method may be used to iterate
+over the constants as follows:
+<pre>
+for (IntegratorMD.ThermostatType c : IntegratorMD.ThermostatType.values())
+&nbsp;   System.out.println(c);
+</pre></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array containing the constants of this enum type, in the order they are declared</dd>
+</dl>
+</li>
+</ul>
+<a name="valueOf-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>choices</h4>
-<pre>public static&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">IntegratorMD.ThermostatType</a>[]&nbsp;choices()</pre>
+<h4>valueOf</h4>
+<pre>public static&nbsp;<a href="../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>&nbsp;valueOf(java.lang.String&nbsp;name)</pre>
+<div class="block">Returns the enum constant of this type with the specified name.
+The string must match <i>exactly</i> an identifier used to declare an
+enum constant in this type.  (Extraneous whitespace characters are 
+not permitted.)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the name of the enum constant to be returned.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the enum constant with the specified name</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if this enum type has no constant with the specified name</dd>
+<dd><code>java.lang.NullPointerException</code> - if the argument is null</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -363,14 +359,14 @@ extends <a href="../../etomica/util/EnumeratedType.html" title="class in etomica
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#enum.constant.summary">Enum Constants</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#enum.constant.detail">Enum Constants</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

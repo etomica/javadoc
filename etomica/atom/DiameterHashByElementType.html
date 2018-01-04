@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a>, <a href="../../etomica/atom/DiameterHash.html" title="interface in etomica.atom">DiameterHash</a></dd>
+<dd><a href="../../etomica/atom/DiameterHash.html" title="interface in etomica.atom">DiameterHash</a></dd>
 </dl>
 <hr>
 <br>
@@ -127,32 +127,6 @@ extends <a href="../../etomica/atom/DiameterHashByType.html" title="class in eto
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/DiameterHashByElement.html" title="class in etomica.atom">DiameterHashByElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByElementType.html#diameterManagerByElement">diameterManagerByElement</a></span></code>&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.etomica.atom.DiameterHashByType">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;etomica.atom.<a href="../../etomica/atom/DiameterHashByType.html" title="class in etomica.atom">DiameterHashByType</a></h3>
-<code><a href="../../etomica/atom/DiameterHashByType.html#agentManager">agentManager</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -165,7 +139,7 @@ extends <a href="../../etomica/atom/DiameterHashByType.html" title="class in eto
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByElementType.html#DiameterHashByElementType-etomica.simulation.Simulation-">DiameterHashByElementType</a></span>(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/atom/DiameterHashByElementType.html#DiameterHashByElementType--">DiameterHashByElementType</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -203,7 +177,7 @@ extends <a href="../../etomica/atom/DiameterHashByType.html" title="class in eto
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.atom.<a href="../../etomica/atom/DiameterHashByType.html" title="class in etomica.atom">DiameterHashByType</a></h3>
-<code><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.atom.AtomType-">getDiameter</a>, <a href="../../etomica/atom/DiameterHashByType.html#getSpeciesAgentClass--">getSpeciesAgentClass</a>, <a href="../../etomica/atom/DiameterHashByType.html#makeAgent-etomica.atom.AtomType-">makeAgent</a>, <a href="../../etomica/atom/DiameterHashByType.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a>, <a href="../../etomica/atom/DiameterHashByType.html#setDiameter-etomica.atom.AtomType-double-">setDiameter</a></code></li>
+<code><a href="../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.atom.AtomType-">getDiameter</a>, <a href="../../etomica/atom/DiameterHashByType.html#setDiameter-etomica.atom.AtomType-double-">setDiameter</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -220,36 +194,19 @@ extends <a href="../../etomica/atom/DiameterHashByType.html" title="class in eto
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="diameterManagerByElement">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>diameterManagerByElement</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/DiameterHashByElement.html" title="class in etomica.atom">DiameterHashByElement</a> diameterManagerByElement</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DiameterHashByElementType-etomica.simulation.Simulation-">
+<a name="DiameterHashByElementType--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DiameterHashByElementType</h4>
-<pre>public&nbsp;DiameterHashByElementType(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
+<pre>public&nbsp;DiameterHashByElementType()</pre>
 </li>
 </ul>
 </li>
@@ -350,13 +307,13 @@ extends <a href="../../etomica/atom/DiameterHashByType.html" title="class in eto
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

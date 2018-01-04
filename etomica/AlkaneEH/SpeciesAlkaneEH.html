@@ -112,17 +112,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SpeciesAlkaneEH</span>
 extends <a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></pre>
 <div class="block">Species for TraPPE-Explicit hydrogen,Siepmann</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.AlkaneEH.SpeciesAlkaneEH">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -154,7 +150,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html#isDynamic">isDynamic</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html#numCarbons">numCarbons</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -169,17 +165,13 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html#space">space</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html#totalAtoms">totalAtoms</a></span></code>&nbsp;</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.species.Species">
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#childTypes">childTypes</a>, <a href="../../etomica/species/Species.html#conformation">conformation</a>, <a href="../../etomica/species/Species.html#index">index</a></code></li>
+<code><a href="../../etomica/species/Species.html#atomTypes">atomTypes</a>, <a href="../../etomica/species/Species.html#conformation">conformation</a>, <a href="../../etomica/species/Species.html#index">index</a></code></li>
 </ul>
 </li>
 </ul>
@@ -245,7 +237,7 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.species.<a href="../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
+<code><a href="../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../etomica/species/Species.html#getAtomTypes--">getAtomTypes</a>, <a href="../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -268,6 +260,33 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="numCarbons">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numCarbons</h4>
+<pre>public final&nbsp;int numCarbons</pre>
+</li>
+</ul>
+<a name="numH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numH</h4>
+<pre>public final&nbsp;int numH</pre>
+</li>
+</ul>
+<a name="numCH2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numCH2</h4>
+<pre>public final&nbsp;int numCH2</pre>
+</li>
+</ul>
 <a name="space">
 <!--   -->
 </a>
@@ -275,24 +294,6 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <li class="blockList">
 <h4>space</h4>
 <pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-</ul>
-<a name="numCarbons">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numCarbons</h4>
-<pre>protected final&nbsp;int numCarbons</pre>
-</li>
-</ul>
-<a name="totalAtoms">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>totalAtoms</h4>
-<pre>protected final&nbsp;int totalAtoms</pre>
 </li>
 </ul>
 <a name="indexC_3_1">
@@ -311,24 +312,6 @@ extends <a href="../../etomica/species/Species.html" title="class in etomica.spe
 <li class="blockList">
 <h4>indexC_3_2</h4>
 <pre>public&nbsp;int indexC_3_2</pre>
-</li>
-</ul>
-<a name="numH">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numH</h4>
-<pre>public&nbsp;int numH</pre>
-</li>
-</ul>
-<a name="numCH2">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numCH2</h4>
-<pre>public&nbsp;int numCH2</pre>
 </li>
 </ul>
 <a name="isDynamic">

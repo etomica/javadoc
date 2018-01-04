@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>, java.io.Serializable, java.util.function.Predicate&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</dd>
 </dl>
 <hr>
 <br>
@@ -158,102 +158,98 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
-<div class="block">Returns true if atom is passes test of filter.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getMillerIndex-int-">getMillerIndex</a></span>(int&nbsp;i)</code>
 <div class="block">Returns the current value of the i-th Miller index.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getOrigin--">getOrigin</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/math/geometry/Plane.html" title="class in etomica.math.geometry">Plane</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getPlane--">getPlane</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getPosition--">getPosition</a></span>()</code>
 <div class="block">Returns the position i, such the the plane is located at the i-th from the origin.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#getSpacePosition--">getSpacePosition</a></span>()</code>
 <div class="block">Gets the position of the plane as the distance from the
  origin in the direction of the normal.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#inPlane-etomica.space.Vector-">inPlane</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is inside the plane (within some small tolerance).</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#invert--">invert</a></span>()</code>
 <div class="block">Changes the direction of the normal vector so that it points
  toward the other side of the plane from its present orientation.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#isPositiveSide-etomica.space.Vector-">isPositiveSide</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;p)</code>
 <div class="block">Returns true if the given point is on the side of the 
  plane toward which the normal vector points.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setMillerIndex-int-int-">setMillerIndex</a></span>(int&nbsp;i,
               int&nbsp;h)</code>
 <div class="block">Sets the i-th Miller index to h, keeping the others fixed.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setMillerIndices-int:A-">setMillerIndices</a></span>(int[]&nbsp;h)</code>
 <div class="block">Sets the plane to the orientation specified by the given Miller indices
  applied to the current primitive.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setOrigin-etomica.space.Vector-">setOrigin</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;origin)</code>
 <div class="block">Sets the origin from which the position of the atom is measured.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setPosition-double-">setPosition</a></span>(double&nbsp;d)</code>
 <div class="block">Sets to the position of the i-th plane from the one through the origin.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setPrimitive-etomica.lattice.crystal.Primitive-">setPrimitive</a></span>(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setSpacePosition-double-">setSpacePosition</a></span>(double&nbsp;d)</code>
 <div class="block">Sets the position of the plane to be the given distance from the
  origin in the direction of the normal.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#setTolerance-double-">setTolerance</a></span>(double&nbsp;tolerance)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/lattice/LatticePlane.html#test-etomica.atom.IAtom-">test</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
+<div class="block">Returns true if atom is passes test of filter.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -262,6 +258,13 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.function.Predicate">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.function.Predicate</h3>
+<code>and, isEqual, negate, or</code></li>
 </ul>
 </li>
 </ul>
@@ -295,31 +298,20 @@ implements <a href="../../etomica/atom/AtomFilter.html" title="interface in etom
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.atom.IAtom-">
+<a name="test-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
+<h4>test</h4>
+<pre>public&nbsp;boolean&nbsp;test(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomFilter.html#test-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
 <div class="block">Returns true if atom is passes test of filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="accept-etomica.molecule.IMolecule-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
-<dl>
+<dd><code><a href="../../etomica/atom/AtomFilter.html#test-etomica.atom.IAtom-">test</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code>test</code>&nbsp;in interface&nbsp;<code>java.util.function.Predicate&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

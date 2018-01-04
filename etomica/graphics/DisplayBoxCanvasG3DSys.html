@@ -225,7 +225,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#aamOriented">aamOriented</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></code></td>
+<td class="colFirst"><code>protected java.util.Map&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.OrientedSite.html" title="class in etomica.graphics">DisplayBoxCanvasG3DSys.OrientedSite</a>[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#atomTypeOrientedManager">atomTypeOrientedManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -387,7 +387,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.html#releaseAgent-g3dsys.images.Figure-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../g3dsys/images/Figure.html" title="class in g3dsys.images">Figure</a>&nbsp;agent,
             <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
             <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
@@ -541,7 +541,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>atomTypeOrientedManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> atomTypeOrientedManager</pre>
+<pre>protected final&nbsp;java.util.Map&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../etomica/graphics/DisplayBoxCanvasG3DSys.OrientedSite.html" title="class in etomica.graphics">DisplayBoxCanvasG3DSys.OrientedSite</a>[]&gt; atomTypeOrientedManager</pre>
 </li>
 </ul>
 <a name="aam">
@@ -926,7 +926,7 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
                          <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>

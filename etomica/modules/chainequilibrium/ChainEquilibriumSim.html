@@ -158,7 +158,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ChainEquilibriumSim.html#config">config</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ChainEquilibriumSim.html#controller1">controller1</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -288,7 +288,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/ChainEquilibriumSim.html#releaseAgent-etomica.atom.IAtom:A-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&nbsp;agent,
             <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
             <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
@@ -322,7 +322,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#box--">box</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxes--">getBoxes</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesList--">getSpeciesList</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a>, <a href="../../../etomica/simulation/Simulation.html#species--">species</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -369,7 +369,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>controller1</h4>
-<pre>public&nbsp;<a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a> controller1</pre>
+<pre>public&nbsp;<a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a> controller1</pre>
 </li>
 </ul>
 <a name="integratorHard">
@@ -667,7 +667,7 @@ implements <a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html"
                          <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
                          <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that 
+<div class="block">This informs the agent source that the agent is going away and that
  the agent source should disconnect the agent from other elements.
  The agentBox is provided for convenience for agent sources that
  handle multiple boxes.</div>

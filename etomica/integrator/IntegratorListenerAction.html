@@ -47,11 +47,11 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../etomica/listener/IntegratorListenerGroupSeries.html" title="class in etomica.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorListenerGroupSeries.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../index.html?etomica/listener/IntegratorListenerAction.html" target="_top">Frames</a></li>
+<li><a href="../../index.html?etomica/integrator/IntegratorListenerAction.html" target="_top">Frames</a></li>
 <li><a href="IntegratorListenerAction.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
@@ -90,7 +90,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">etomica.listener</div>
+<div class="subTitle">etomica.integrator</div>
 <h2 title="Class IntegratorListenerAction" class="title">Class IntegratorListenerAction</h2>
 </div>
 <div class="contentContainer">
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>etomica.listener.IntegratorListenerAction</li>
+<li>etomica.integrator.IntegratorListenerAction</li>
 </ul>
 </li>
 </ul>
@@ -111,9 +111,11 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">IntegratorListenerAction</span>
+<pre>public final class <span class="typeNameLabel">IntegratorListenerAction</span>
 extends java.lang.Object
 implements <a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></pre>
+<div class="block">An IntegratorListener that performs an action after every integrator step,
+ optionally with a given interval of integrator steps.</div>
 </li>
 </ul>
 </div>
@@ -132,10 +134,10 @@ implements <a href="../../etomica/integrator/IntegratorListener.html" title="int
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#IntegratorListenerAction-etomica.action.IAction-">IntegratorListenerAction</a></span>(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;a)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#IntegratorListenerAction-etomica.action.IAction-">IntegratorListenerAction</a></span>(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;a)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#IntegratorListenerAction-etomica.action.IAction-int-">IntegratorListenerAction</a></span>(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;a,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#IntegratorListenerAction-etomica.action.IAction-int-">IntegratorListenerAction</a></span>(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;a,
                         int&nbsp;interval)</code>&nbsp;</td>
 </tr>
 </table>
@@ -155,33 +157,33 @@ implements <a href="../../etomica/integrator/IntegratorListener.html" title="int
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#getInterval--">getInterval</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#getInterval--">getInterval</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>(<a href="../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code>
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/listener/IntegratorListenerAction.html#setInterval-int-">setInterval</a></span>(int&nbsp;i)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorListenerAction.html#setInterval-int-">setInterval</a></span>(int&nbsp;i)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -277,15 +279,6 @@ implements <a href="../../etomica/integrator/IntegratorListener.html" title="int
 </dl>
 </li>
 </ul>
-<a name="setInterval-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setInterval</h4>
-<pre>public&nbsp;void&nbsp;setInterval(int&nbsp;i)</pre>
-</li>
-</ul>
 <a name="getInterval--">
 <!--   -->
 </a>
@@ -293,6 +286,15 @@ implements <a href="../../etomica/integrator/IntegratorListener.html" title="int
 <li class="blockList">
 <h4>getInterval</h4>
 <pre>public&nbsp;int&nbsp;getInterval()</pre>
+</li>
+</ul>
+<a name="setInterval-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInterval</h4>
+<pre>public&nbsp;void&nbsp;setInterval(int&nbsp;i)</pre>
 </li>
 </ul>
 <a name="getAction--">
@@ -331,11 +333,11 @@ implements <a href="../../etomica/integrator/IntegratorListener.html" title="int
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../etomica/listener/IntegratorListenerGroupSeries.html" title="class in etomica.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorListenerGroupSeries.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../index.html?etomica/listener/IntegratorListenerAction.html" target="_top">Frames</a></li>
+<li><a href="../../index.html?etomica/integrator/IntegratorListenerAction.html" target="_top">Frames</a></li>
 <li><a href="IntegratorListenerAction.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">

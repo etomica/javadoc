@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -98,16 +98,21 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd>java.util.function.Predicate&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</dd>
+</dl>
+<dl>
 <dt>All Known Subinterfaces:</dt>
 <dd><a href="../../etomica/atom/AtomFilterCollective.html" title="interface in etomica.atom">AtomFilterCollective</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../etomica/modules/chainequilibrium/AtomFilterChainLength.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength</a>, <a href="../../etomica/atom/AtomFilterInShape.html" title="class in etomica.atom">AtomFilterInShape</a>, <a href="../../etomica/modules/droplet/AtomFilterLiquid.html" title="class in etomica.modules.droplet">AtomFilterLiquid</a>, <a href="../../etomica/modules/droplet/AtomFilterLiquidAtomic.html" title="class in etomica.modules.droplet">AtomFilterLiquidAtomic</a>, <a href="../../etomica/atom/AtomFilterStatic.html" title="class in etomica.atom">AtomFilterStatic</a>, <a href="../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html" title="class in etomica.freeenergy.npath">ConfigFromFileLAMMPS.AtomFilterDeviation</a>, <a href="../../etomica/lattice/LatticePlane.html" title="class in etomica.lattice">LatticePlane</a></dd>
+<dd><a href="../../etomica/modules/chainequilibrium/AtomFilterChainLength.html" title="class in etomica.modules.chainequilibrium">AtomFilterChainLength</a>, <a href="../../etomica/modules/droplet/AtomFilterLiquid.html" title="class in etomica.modules.droplet">AtomFilterLiquid</a>, <a href="../../etomica/modules/droplet/AtomFilterLiquidAtomic.html" title="class in etomica.modules.droplet">AtomFilterLiquidAtomic</a>, <a href="../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html" title="class in etomica.freeenergy.npath">ConfigFromFileLAMMPS.AtomFilterDeviation</a>, <a href="../../etomica/lattice/LatticePlane.html" title="class in etomica.lattice">LatticePlane</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">AtomFilter</span></pre>
+<pre>public interface <span class="typeNameLabel">AtomFilter</span>
+extends java.util.function.Predicate&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</pre>
 <div class="block">Interface for a class that screens atoms according
  to some criterion.</div>
 </li>
@@ -130,15 +135,18 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilter.html#test-etomica.atom.IAtom-">test</a></span>(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
 <div class="block">Returns true if atom is passes test of filter.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
-</tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.function.Predicate">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.function.Predicate</h3>
+<code>and, isEqual, negate, or</code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -153,23 +161,18 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.atom.IAtom-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>accept</h4>
-<pre>boolean&nbsp;accept(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
-<div class="block">Returns true if atom is passes test of filter.</div>
-</li>
-</ul>
-<a name="accept-etomica.molecule.IMolecule-">
+<a name="test-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>accept</h4>
-<pre>boolean&nbsp;accept(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
+<h4>test</h4>
+<pre>boolean&nbsp;test(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block">Returns true if atom is passes test of filter.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>test</code>&nbsp;in interface&nbsp;<code>java.util.function.Predicate&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 </li>

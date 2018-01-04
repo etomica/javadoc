@@ -115,10 +115,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ColorSchemeRadical</span>
@@ -157,16 +153,8 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/modules/catalysis/InteractionTracker.CatalysisAgent.html" title="class in etomica.modules.catalysis">InteractionTracker.CatalysisAgent</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#agentManager">agentManager</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#fullBondColorMap">fullBondColorMap</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#radicalColorMap">radicalColorMap</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -197,8 +185,7 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#ColorSchemeRadical-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">ColorSchemeRadical</a></span>(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                  <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/modules/catalysis/ColorSchemeRadical.html#ColorSchemeRadical-etomica.atom.AtomLeafAgentManager-">ColorSchemeRadical</a></span>(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/modules/catalysis/InteractionTracker.CatalysisAgent.html" title="class in etomica.modules.catalysis">InteractionTracker.CatalysisAgent</a>&gt;&nbsp;agentManager)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -235,7 +222,7 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../../etomica/graphics/ColorSchemeByType.html" title="class in etomica.graphics">ColorSchemeByType</a></h3>
-<code><a href="../../../etomica/graphics/ColorSchemeByType.html#getColor-etomica.atom.AtomType-">getColor</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#getSpeciesAgentClass--">getSpeciesAgentClass</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#makeAgent-etomica.atom.AtomType-">makeAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#releaseAgent-java.lang.Object-etomica.atom.AtomType-">releaseAgent</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#setColor-etomica.atom.AtomType-java.awt.Color-">setColor</a></code></li>
+<code><a href="../../../etomica/graphics/ColorSchemeByType.html#getColor-etomica.atom.AtomType-">getColor</a>, <a href="../../../etomica/graphics/ColorSchemeByType.html#setColor-etomica.atom.AtomType-java.awt.Color-">setColor</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.ColorScheme">
@@ -268,28 +255,10 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <a name="agentManager">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentManager</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a> agentManager</pre>
-</li>
-</ul>
-<a name="radicalColorMap">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>radicalColorMap</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> radicalColorMap</pre>
-</li>
-</ul>
-<a name="fullBondColorMap">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>fullBondColorMap</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> fullBondColorMap</pre>
+<h4>agentManager</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/modules/catalysis/InteractionTracker.CatalysisAgent.html" title="class in etomica.modules.catalysis">InteractionTracker.CatalysisAgent</a>&gt; agentManager</pre>
 </li>
 </ul>
 </li>
@@ -300,14 +269,13 @@ extends <a href="../../../etomica/graphics/ColorSchemeByType.html" title="class 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ColorSchemeRadical-etomica.simulation.Simulation-etomica.atom.AtomLeafAgentManager-">
+<a name="ColorSchemeRadical-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ColorSchemeRadical</h4>
-<pre>public&nbsp;ColorSchemeRadical(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                          <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</pre>
+<pre>public&nbsp;ColorSchemeRadical(<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/modules/catalysis/InteractionTracker.CatalysisAgent.html" title="class in etomica.modules.catalysis">InteractionTracker.CatalysisAgent</a>&gt;&nbsp;agentManager)</pre>
 </li>
 </ul>
 </li>

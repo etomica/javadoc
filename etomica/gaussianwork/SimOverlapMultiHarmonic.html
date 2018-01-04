@@ -176,7 +176,7 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/gaussianwork/SimOverlapMultiHarmonic.html#boxB">boxB</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/gaussianwork/SimOverlapMultiHarmonic.html#controller">controller</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -293,7 +293,7 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../etomica/simulation/Simulation.html#atomTypeAddedNotify-etomica.atom.AtomType-">atomTypeAddedNotify</a>, <a href="../../etomica/simulation/Simulation.html#atomTypeRemovedNotify-etomica.atom.AtomType-">atomTypeRemovedNotify</a>, <a href="../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></code></li>
+<code><a href="../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../etomica/simulation/Simulation.html#box--">box</a>, <a href="../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../etomica/simulation/Simulation.html#getBoxes--">getBoxes</a>, <a href="../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../etomica/simulation/Simulation.html#getSpeciesList--">getSpeciesList</a>, <a href="../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a>, <a href="../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a>, <a href="../../etomica/simulation/Simulation.html#species--">species</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -349,7 +349,7 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>controller</h4>
-<pre>protected&nbsp;<a href="../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a> controller</pre>
+<pre>protected&nbsp;<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a> controller</pre>
 </li>
 </ul>
 <a name="activityIntegrate">

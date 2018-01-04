@@ -127,7 +127,7 @@ implements <a href="../../../etomica/potential/PotentialPolarizable.html" title=
  The potential takes an AtomTypeAgentManager that is responsible for
  returning parameters for each atom.  Cross-parameters are computing using
  mixing rules published in
- 
+ <p>
  http://dx.doi.org/10.1063/1.3519022</div>
 </li>
 </ul>
@@ -239,7 +239,7 @@ implements <a href="../../../etomica/potential/PotentialPolarizable.html" title=
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#shift">shift</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></code></td>
+<td class="colFirst"><code>protected java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#typeManager">typeManager</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -268,13 +268,13 @@ implements <a href="../../../etomica/potential/PotentialPolarizable.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#PNGCPM-etomica.space.Space-etomica.atom.AtomTypeAgentManager-int-">PNGCPM</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-      <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>&nbsp;typeManager,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#PNGCPM-etomica.space.Space-java.util.Map-int-">PNGCPM</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+      java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt;&nbsp;typeManager,
       int&nbsp;nAtomTypes)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#PNGCPM-etomica.space.Space-etomica.atom.AtomTypeAgentManager-int-int-">PNGCPM</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-      <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>&nbsp;typeManager,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../etomica/models/co2/PNGCPM.html#PNGCPM-etomica.space.Space-java.util.Map-int-int-">PNGCPM</a></span>(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+      java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt;&nbsp;typeManager,
       int&nbsp;nAtomTypes,
       int&nbsp;nBody)</code>&nbsp;</td>
 </tr>
@@ -458,7 +458,7 @@ implements <a href="../../../etomica/potential/PotentialPolarizable.html" title=
 <ul class="blockList">
 <li class="blockList">
 <h4>typeManager</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> typeManager</pre>
+<pre>protected final&nbsp;java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt; typeManager</pre>
 </li>
 </ul>
 <a name="nAtomTypes">
@@ -550,25 +550,25 @@ implements <a href="../../../etomica/potential/PotentialPolarizable.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PNGCPM-etomica.space.Space-etomica.atom.AtomTypeAgentManager-int-">
+<a name="PNGCPM-etomica.space.Space-java.util.Map-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PNGCPM</h4>
 <pre>public&nbsp;PNGCPM(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-              <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>&nbsp;typeManager,
+              java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt;&nbsp;typeManager,
               int&nbsp;nAtomTypes)</pre>
 </li>
 </ul>
-<a name="PNGCPM-etomica.space.Space-etomica.atom.AtomTypeAgentManager-int-int-">
+<a name="PNGCPM-etomica.space.Space-java.util.Map-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PNGCPM</h4>
 <pre>public&nbsp;PNGCPM(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-              <a href="../../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a>&nbsp;typeManager,
+              java.util.Map&lt;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>,<a href="../../../etomica/models/co2/PNGCPM.GCPMAgent.html" title="class in etomica.models.co2">PNGCPM.GCPMAgent</a>&gt;&nbsp;typeManager,
               int&nbsp;nAtomTypes,
               int&nbsp;nBody)</pre>
 </li>

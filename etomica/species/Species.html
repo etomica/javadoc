@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/species/ISpeciesOriented.html" title="interface in etomica.species"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/species/SpeciesOriented.html" title="class in etomica.species"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/species/SpeciesAgentManager.html" title="class in etomica.species"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/species/Species.html" target="_top">Frames</a></li>
@@ -107,23 +107,18 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, java.io.Serializable</dd>
+<dd><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../etomica/virial/Species7SiteRigidSF6.html" title="class in etomica.virial">Species7SiteRigidSF6</a>, <a href="../../etomica/models/OPLS/SpeciesAceticAcid.html" title="class in etomica.models.OPLS">SpeciesAceticAcid</a>, <a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html" title="class in etomica.AlkaneEH">SpeciesAlkaneEH</a>, <a href="../../etomica/virial/SpeciesAlkaneEH.html" title="class in etomica.virial">SpeciesAlkaneEH</a>, <a href="../../etomica/virial/SpeciesAnthracene3site464.html" title="class in etomica.virial">SpeciesAnthracene3site464</a>, <a href="../../etomica/virial/SpeciesAnthracene3site545.html" title="class in etomica.virial">SpeciesAnthracene3site545</a>, <a href="../../etomica/models/rowley/SpeciesEthanol.html" title="class in etomica.models.rowley">SpeciesEthanol</a>, <a href="../../etomica/normalmode/SpeciesHSDimer.html" title="class in etomica.normalmode">SpeciesHSDimer</a>, <a href="../../etomica/AlkaneEH/SpeciesMethane.html" title="class in etomica.AlkaneEH">SpeciesMethane</a>, <a href="../../etomica/virial/SpeciesMethane.html" title="class in etomica.virial">SpeciesMethane</a>, <a href="../../etomica/models/rowley/SpeciesMethanol.html" title="class in etomica.models.rowley">SpeciesMethanol</a>, <a href="../../etomica/models/traPPE/SpeciesMethanol.html" title="class in etomica.models.traPPE">SpeciesMethanol</a>, <a href="../../etomica/models/nitrogen/SpeciesN2.html" title="class in etomica.models.nitrogen">SpeciesN2</a>, <a href="../../etomica/models/nitrogen/SpeciesN2B.html" title="class in etomica.models.nitrogen">SpeciesN2B</a>, <a href="../../etomica/models/nitrogen/SpeciesN2ShellModel.html" title="class in etomica.models.nitrogen">SpeciesN2ShellModel</a>, <a href="../../etomica/species/SpeciesOriented.html" title="class in etomica.species">SpeciesOriented</a>, <a href="../../etomica/paracetamol/SpeciesParacetamol.html" title="class in etomica.paracetamol">SpeciesParacetamol</a>, <a href="../../etomica/virial/SpeciesPh3site464.html" title="class in etomica.virial">SpeciesPh3site464</a>, <a href="../../etomica/virial/SpeciesPh3site545.html" title="class in etomica.virial">SpeciesPh3site545</a>, <a href="../../etomica/species/SpeciesSpheres.html" title="class in etomica.species">SpeciesSpheres</a>, <a href="../../etomica/species/SpeciesSpheresCustom.html" title="class in etomica.species">SpeciesSpheresCustom</a>, <a href="../../etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a>, <a href="../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>, <a href="../../etomica/virial/SpeciesTraPPEAnthracene.html" title="class in etomica.virial">SpeciesTraPPEAnthracene</a>, <a href="../../etomica/virial/SpeciesTraPPECO2.html" title="class in etomica.virial">SpeciesTraPPECO2</a>, <a href="../../etomica/virial/SpeciesTraPPENaphthalene.html" title="class in etomica.virial">SpeciesTraPPENaphthalene</a>, <a href="../../etomica/virial/SpeciesTraPPEPhenanthrene.html" title="class in etomica.virial">SpeciesTraPPEPhenanthrene</a>, <a href="../../etomica/models/water/SpeciesWater3P.html" title="class in etomica.models.water">SpeciesWater3P</a>, <a href="../../etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">SpeciesWater4P</a>, <a href="../../etomica/models/water/SpeciesWater4PCOM.html" title="class in etomica.models.water">SpeciesWater4PCOM</a></dd>
+<dd><a href="../../etomica/virial/Species7SiteRigidSF6.html" title="class in etomica.virial">Species7SiteRigidSF6</a>, <a href="../../etomica/models/OPLS/SpeciesAceticAcid.html" title="class in etomica.models.OPLS">SpeciesAceticAcid</a>, <a href="../../etomica/AlkaneEH/SpeciesAlkaneEH.html" title="class in etomica.AlkaneEH">SpeciesAlkaneEH</a>, <a href="../../etomica/virial/SpeciesAnthracene3site464.html" title="class in etomica.virial">SpeciesAnthracene3site464</a>, <a href="../../etomica/virial/SpeciesAnthracene3site545.html" title="class in etomica.virial">SpeciesAnthracene3site545</a>, <a href="../../etomica/models/rowley/SpeciesEthanol.html" title="class in etomica.models.rowley">SpeciesEthanol</a>, <a href="../../etomica/normalmode/SpeciesHSDimer.html" title="class in etomica.normalmode">SpeciesHSDimer</a>, <a href="../../etomica/AlkaneEH/SpeciesMethane.html" title="class in etomica.AlkaneEH">SpeciesMethane</a>, <a href="../../etomica/virial/SpeciesMethane.html" title="class in etomica.virial">SpeciesMethane</a>, <a href="../../etomica/models/rowley/SpeciesMethanol.html" title="class in etomica.models.rowley">SpeciesMethanol</a>, <a href="../../etomica/models/traPPE/SpeciesMethanol.html" title="class in etomica.models.traPPE">SpeciesMethanol</a>, <a href="../../etomica/models/nitrogen/SpeciesN2.html" title="class in etomica.models.nitrogen">SpeciesN2</a>, <a href="../../etomica/models/nitrogen/SpeciesN2B.html" title="class in etomica.models.nitrogen">SpeciesN2B</a>, <a href="../../etomica/models/nitrogen/SpeciesN2ShellModel.html" title="class in etomica.models.nitrogen">SpeciesN2ShellModel</a>, <a href="../../etomica/species/SpeciesOriented.html" title="class in etomica.species">SpeciesOriented</a>, <a href="../../etomica/paracetamol/SpeciesParacetamol.html" title="class in etomica.paracetamol">SpeciesParacetamol</a>, <a href="../../etomica/virial/SpeciesPh3site464.html" title="class in etomica.virial">SpeciesPh3site464</a>, <a href="../../etomica/virial/SpeciesPh3site545.html" title="class in etomica.virial">SpeciesPh3site545</a>, <a href="../../etomica/species/SpeciesSpheres.html" title="class in etomica.species">SpeciesSpheres</a>, <a href="../../etomica/species/SpeciesSpheresCustom.html" title="class in etomica.species">SpeciesSpheresCustom</a>, <a href="../../etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a>, <a href="../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>, <a href="../../etomica/virial/SpeciesTraPPEAnthracene.html" title="class in etomica.virial">SpeciesTraPPEAnthracene</a>, <a href="../../etomica/virial/SpeciesTraPPECO2.html" title="class in etomica.virial">SpeciesTraPPECO2</a>, <a href="../../etomica/virial/SpeciesTraPPENaphthalene.html" title="class in etomica.virial">SpeciesTraPPENaphthalene</a>, <a href="../../etomica/virial/SpeciesTraPPEPhenanthrene.html" title="class in etomica.virial">SpeciesTraPPEPhenanthrene</a>, <a href="../../etomica/models/water/SpeciesWater3P.html" title="class in etomica.models.water">SpeciesWater3P</a>, <a href="../../etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">SpeciesWater4P</a>, <a href="../../etomica/models/water/SpeciesWater4PCOM.html" title="class in etomica.models.water">SpeciesWater4PCOM</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Species</span>
 extends java.lang.Object
-implements <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>, java.io.Serializable</pre>
-<div class="block">Type for atom that is a group of other atoms, and for which its node is an
- instance of AtomTreeNodeGroup.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.species.Species">Serialized Form</a></dd>
-</dl>
+implements <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></pre>
+<div class="block">Type for atom that is a group of other atoms, and for which its node is an instance of AtomTreeNodeGroup.</div>
 </li>
 </ul>
 </div>
@@ -143,8 +138,8 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#childTypes">childTypes</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected java.util.List&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#atomTypes">atomTypes</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></td>
@@ -169,9 +164,7 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#Species--">Species</a></span>()</code>
-<div class="block">Simple invokes parent constructor with same arguments.</div>
-</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#Species--">Species</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -205,31 +198,36 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#getAtomTypes--">getAtomTypes</a></span>()</code>
+<div class="block">Get the list of AtomTypes that make up this Species.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#getConformation--">getConformation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#getIndex--">getIndex</a></span>()</code>
-<div class="block">Returns the index for this ISpecies, within the context of an
- Simulation.</div>
+<div class="block">Returns the index for this ISpecies, within the context of an Simulation.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Initializes the molecule's IAtoms in their standard arrangement.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a></span>(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;removedType)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a></span>(<a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/species/Species.html#setIndex-int-">setIndex</a></span>(int&nbsp;newIndex)</code>
 <div class="block">Informs the ISpecies what its index should be.</div>
@@ -264,6 +262,15 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="atomTypes">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atomTypes</h4>
+<pre>protected final&nbsp;java.util.List&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&gt; atomTypes</pre>
+</li>
+</ul>
 <a name="index">
 <!--   -->
 </a>
@@ -276,19 +283,10 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <a name="conformation">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>conformation</h4>
 <pre>protected&nbsp;<a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a> conformation</pre>
-</li>
-</ul>
-<a name="childTypes">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>childTypes</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[] childTypes</pre>
 </li>
 </ul>
 </li>
@@ -306,7 +304,6 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <li class="blockList">
 <h4>Species</h4>
 <pre>public&nbsp;Species()</pre>
-<div class="block">Simple invokes parent constructor with same arguments.</div>
 </li>
 </ul>
 </li>
@@ -325,9 +322,8 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <h4>getIndex</h4>
 <pre>public&nbsp;int&nbsp;getIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#getIndex--">ISpecies</a></code></span></div>
-<div class="block">Returns the index for this ISpecies, within the context of an
- Simulation.  The index is the ISpecies' position in the array returned
- by SpeciesManager.getSpecies().</div>
+<div class="block">Returns the index for this ISpecies, within the context of an Simulation.  The index is the ISpecies' position in
+ the array returned by SpeciesManager.getSpecies().</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/species/ISpecies.html#getIndex--">getIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
@@ -342,21 +338,26 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <h4>setIndex</h4>
 <pre>public&nbsp;void&nbsp;setIndex(int&nbsp;newIndex)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#setIndex-int-">ISpecies</a></code></span></div>
-<div class="block">Informs the ISpecies what its index should be.  This should only be
- called by the SpeciesManager.</div>
+<div class="block">Informs the ISpecies what its index should be.  This should only be called by the SpeciesManager.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/species/ISpecies.html#setIndex-int-">setIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="removeChildType-etomica.atom.AtomType-">
+<a name="getAtomTypeCount--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>removeChildType</h4>
-<pre>public&nbsp;void&nbsp;removeChildType(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;removedType)</pre>
+<h4>getAtomTypeCount</h4>
+<pre>public&nbsp;int&nbsp;getAtomTypeCount()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#getAtomTypeCount--">ISpecies</a></code></span></div>
+<div class="block">Returns the number of child types of this group.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/species/ISpecies.html#getAtomTypeCount--">getAtomTypeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getAtomType-int-">
@@ -374,19 +375,48 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 </dl>
 </li>
 </ul>
-<a name="getAtomTypeCount--">
+<a name="getAtomTypes--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAtomTypeCount</h4>
-<pre>public&nbsp;int&nbsp;getAtomTypeCount()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#getAtomTypeCount--">ISpecies</a></code></span></div>
-<div class="block">Returns the number of child types of this group.</div>
+<h4>getAtomTypes</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&gt;&nbsp;getAtomTypes()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#getAtomTypes--">ISpecies</a></code></span></div>
+<div class="block">Get the list of AtomTypes that make up this Species.
+ <p>
+ In general this list will be unmodifiable (will throw an exception if you attempt to modify it), instead you
+ should use methods defined on the implementing class to add or remove AtomTypes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/species/ISpecies.html#getAtomTypeCount--">getAtomTypeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
+<dd><code><a href="../../etomica/species/ISpecies.html#getAtomTypes--">getAtomTypes</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
+</li>
+</ul>
+<a name="initializeConformation-etomica.molecule.IMolecule-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeConformation</h4>
+<pre>public&nbsp;void&nbsp;initializeConformation(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#initializeConformation-etomica.molecule.IMolecule-">ISpecies</a></code></span></div>
+<div class="block">Initializes the molecule's IAtoms in their standard arrangement. The overall position of the molecule may be
+ changed by this method.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/species/ISpecies.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeChildType-etomica.atom.AtomType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeChildType</h4>
+<pre>public&nbsp;void&nbsp;removeChildType(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;removedType)</pre>
 </li>
 </ul>
 <a name="addChildType-etomica.atom.AtomType-">
@@ -410,26 +440,10 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <a name="setConformation-etomica.config.IConformation-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setConformation</h4>
 <pre>public&nbsp;void&nbsp;setConformation(<a href="../../etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a>&nbsp;config)</pre>
-</li>
-</ul>
-<a name="initializeConformation-etomica.molecule.IMolecule-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>initializeConformation</h4>
-<pre>public&nbsp;void&nbsp;initializeConformation(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/species/ISpecies.html#initializeConformation-etomica.molecule.IMolecule-">ISpecies</a></code></span></div>
-<div class="block">Initializes the molecule's IAtoms in their standard arrangement.
- The overall position of the molecule may be changed by this method.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/species/ISpecies.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -460,7 +474,7 @@ implements <a href="../../etomica/species/ISpecies.html" title="interface in eto
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/species/ISpeciesOriented.html" title="interface in etomica.species"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/species/SpeciesOriented.html" title="class in etomica.species"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/species/SpeciesAgentManager.html" title="class in etomica.species"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/species/Species.html" target="_top">Frames</a></li>

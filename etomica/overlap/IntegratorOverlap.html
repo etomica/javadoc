@@ -211,7 +211,7 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a></h3>
-<code><a href="../../etomica/integrator/IntegratorManagerMC.html#eventManager">eventManager</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#globalMoveProbability">globalMoveProbability</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#integrators">integrators</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#moveManager">moveManager</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#nIntegrators">nIntegrators</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#random">random</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#temperature">temperature</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorManagerMC.html#eventManager">eventManager</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#globalMoveProbability">globalMoveProbability</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#integrators">integrators</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#moveManager">moveManager</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#random">random</a>, <a href="../../etomica/integrator/IntegratorManagerMC.html#temperature">temperature</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.integrator.Integrator">
@@ -520,17 +520,6 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 </dl>
 </li>
 </ul>
-<a name="setNumSubSteps-long-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setNumSubSteps</h4>
-<pre>public&nbsp;void&nbsp;setNumSubSteps(long&nbsp;n)</pre>
-<div class="block">Sets the number of total number of integrator steps the sub-integrators
- perform for every step of the overlap integrator.  Default value is 1000.</div>
-</li>
-</ul>
 <a name="getNumSubSteps--">
 <!--   -->
 </a>
@@ -542,15 +531,15 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  perform for every step of the overlap integrator.  Default value is 1000.</div>
 </li>
 </ul>
-<a name="setAdjustStepFraction-boolean-">
+<a name="setNumSubSteps-long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setAdjustStepFraction</h4>
-<pre>public&nbsp;void&nbsp;setAdjustStepFraction(boolean&nbsp;b)</pre>
-<div class="block">Sets whether to adjust the number of relative number of steps for each
- sub-integrator.  Default is true.</div>
+<h4>setNumSubSteps</h4>
+<pre>public&nbsp;void&nbsp;setNumSubSteps(long&nbsp;n)</pre>
+<div class="block">Sets the number of total number of integrator steps the sub-integrators
+ perform for every step of the overlap integrator.  Default value is 1000.</div>
 </li>
 </ul>
 <a name="setAggressiveAdjustStepFraction-boolean-">
@@ -588,15 +577,15 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  sub-integrator.  Default is true.</div>
 </li>
 </ul>
-<a name="setAdjustInterval-long-">
+<a name="setAdjustStepFraction-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setAdjustInterval</h4>
-<pre>public&nbsp;void&nbsp;setAdjustInterval(long&nbsp;newInterval)</pre>
-<div class="block">Sets how frequently the appropriate reference vs. target step fraction
- is recalculated.</div>
+<h4>setAdjustStepFraction</h4>
+<pre>public&nbsp;void&nbsp;setAdjustStepFraction(boolean&nbsp;b)</pre>
+<div class="block">Sets whether to adjust the number of relative number of steps for each
+ sub-integrator.  Default is true.</div>
 </li>
 </ul>
 <a name="getAdjustInterval--">
@@ -606,6 +595,17 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <li class="blockList">
 <h4>getAdjustInterval</h4>
 <pre>public&nbsp;long&nbsp;getAdjustInterval()</pre>
+</li>
+</ul>
+<a name="setAdjustInterval-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAdjustInterval</h4>
+<pre>public&nbsp;void&nbsp;setAdjustInterval(long&nbsp;newInterval)</pre>
+<div class="block">Sets how frequently the appropriate reference vs. target step fraction
+ is recalculated.</div>
 </li>
 </ul>
 <a name="doStepInternal--">
@@ -625,15 +625,6 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 </dl>
 </li>
 </ul>
-<a name="setRefStepFraction-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setRefStepFraction</h4>
-<pre>public&nbsp;void&nbsp;setRefStepFraction(double&nbsp;f)</pre>
-</li>
-</ul>
 <a name="getIdealRefStepFraction--">
 <!--   -->
 </a>
@@ -650,6 +641,15 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <li class="blockList">
 <h4>getRefStepFraction</h4>
 <pre>public&nbsp;double&nbsp;getRefStepFraction()</pre>
+</li>
+</ul>
+<a name="setRefStepFraction-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRefStepFraction</h4>
+<pre>public&nbsp;void&nbsp;setRefStepFraction(double&nbsp;f)</pre>
 </li>
 </ul>
 <a name="getRefTimeFraction--">

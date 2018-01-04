@@ -227,17 +227,13 @@
 <!--   -->
 </a>
 <h3>Class <a href="etomica/action/BoxDeleteMolecules.html" title="class in etomica.action">etomica.action.BoxDeleteMolecules</a> extends <a href="etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
 <ul class="blockList">
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockListLast">
 <h4>filter</h4>
-<pre><a href="etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a> filter</pre>
+<pre>java.util.function.Predicate&lt;T&gt; filter</pre>
 </li>
 </ul>
 </li>
@@ -473,7 +469,7 @@
 <ul class="blockList">
 <li class="blockListLast">
 <h4>controller</h4>
-<pre><a href="etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a> controller</pre>
+<pre><a href="etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a> controller</pre>
 </li>
 </ul>
 </li>
@@ -700,7 +696,7 @@
 </li>
 <li class="blockListLast">
 <h4>controller</h4>
-<pre><a href="etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a> controller</pre>
+<pre><a href="etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a> controller</pre>
 </li>
 </ul>
 </li>
@@ -855,25 +851,13 @@
 <!--   -->
 </a>
 <h3>Class <a href="etomica/action/activity/Controller.html" title="class in etomica.action.activity">etomica.action.activity.Controller</a> extends <a href="etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity">ActivityGroupSeries</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
 <ul class="blockList">
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
-<h4>eventManager</h4>
-<pre><a href="etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a> eventManager</pre>
-</li>
-<li class="blockList">
-<h4>repeatCurrentAction</h4>
-<pre>boolean repeatCurrentAction</pre>
-</li>
-<li class="blockList">
 <h4>urgentWaitObject</h4>
-<pre><a href="etomica/action/activity/Controller.UrgentWaitObject.html" title="class in etomica.action.activity">Controller.UrgentWaitObject</a> urgentWaitObject</pre>
+<pre>etomica.action.activity.Controller.UrgentWaitObject urgentWaitObject</pre>
 </li>
 <li class="blockList">
 <h4>waitObject</h4>
@@ -881,118 +865,23 @@
 </li>
 <li class="blockList">
 <h4>actionStatusMap</h4>
-<pre>java.util.HashMap&lt;K,V&gt; actionStatusMap</pre>
+<pre>java.util.Map&lt;K,V&gt; actionStatusMap</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>actionExceptionMap</h4>
-<pre>java.util.HashMap&lt;K,V&gt; actionExceptionMap</pre>
+<pre>java.util.Map&lt;K,V&gt; actionExceptionMap</pre>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.action.activity.Controller.ActionStatus">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">etomica.action.activity.Controller.ActionStatus</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
 <li class="blockList">
-<h3>Serialization Methods</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>readResolve</h4>
-<pre>private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
-<div class="block">Required to guarantee singleton when deserializing.</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.action.activity.Controller.UrgentWaitObject">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/Controller.UrgentWaitObject.html" title="class in etomica.action.activity">etomica.action.activity.Controller.UrgentWaitObject</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
-<li class="blockList"><a name="etomica.action.activity.Controller.WaitObject">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/Controller.WaitObject.html" title="class in etomica.action.activity">etomica.action.activity.Controller.WaitObject</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>currentActionDone</h4>
-<pre>boolean currentActionDone</pre>
+<h4>eventManager</h4>
+<pre><a href="etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="etomica/util/EventManager.html" title="type parameter in EventManager">E</a> extends <a href="etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&gt; eventManager</pre>
 </li>
 <li class="blockListLast">
-<h4>actionException</h4>
-<pre>java.lang.Throwable actionException</pre>
+<h4>repeatCurrentAction</h4>
+<pre>boolean repeatCurrentAction</pre>
 </li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="blockList"><a name="etomica.action.activity.ControllerEvent">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/ControllerEvent.html" title="class in etomica.action.activity">etomica.action.activity.ControllerEvent</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>controller</h4>
-<pre><a href="etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a> controller</pre>
-</li>
-<li class="blockList">
-<h4>type</h4>
-<pre><a href="etomica/action/activity/ControllerEvent.Type.html" title="class in etomica.action.activity">ControllerEvent.Type</a> type</pre>
-</li>
-<li class="blockListLast">
-<h4>action</h4>
-<pre><a href="etomica/action/IAction.html" title="interface in etomica.action">IAction</a> action</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.action.activity.ControllerEvent.Type">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/ControllerEvent.Type.html" title="class in etomica.action.activity">etomica.action.activity.ControllerEvent.Type</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>index</h4>
-<pre>int index</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.action.activity.ControllerEventManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/action/activity/ControllerEventManager.html" title="class in etomica.action.activity">etomica.action.activity.ControllerEventManager</a> extends <a href="etomica/util/EventManager.html" title="class in etomica.util">EventManager</a> implements Serializable</h3>
 </li>
 </ul>
 </li>
@@ -1058,86 +947,6 @@
 <li class="blockListLast">
 <h4>numH</h4>
 <pre>int numH</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.AlkaneEH.SpeciesAlkaneEH">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/AlkaneEH/SpeciesAlkaneEH.html" title="class in etomica.AlkaneEH">etomica.AlkaneEH.SpeciesAlkaneEH</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>numCarbons</h4>
-<pre>int numCarbons</pre>
-</li>
-<li class="blockList">
-<h4>totalAtoms</h4>
-<pre>int totalAtoms</pre>
-</li>
-<li class="blockList">
-<h4>indexC_3_1</h4>
-<pre>int indexC_3_1</pre>
-</li>
-<li class="blockList">
-<h4>indexC_3_2</h4>
-<pre>int indexC_3_2</pre>
-</li>
-<li class="blockList">
-<h4>numH</h4>
-<pre>int numH</pre>
-</li>
-<li class="blockList">
-<h4>numCH2</h4>
-<pre>int numCH2</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.AlkaneEH.SpeciesMethane">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/AlkaneEH/SpeciesMethane.html" title="class in etomica.AlkaneEH">etomica.AlkaneEH.SpeciesMethane</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
 </li>
 </ul>
 </li>
@@ -1537,60 +1346,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.atom.AtomFilterInShape">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomFilterInShape.html" title="class in etomica.atom">etomica.atom.AtomFilterInShape</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>shape</h4>
-<pre><a href="etomica/math/geometry/Shape.html" title="interface in etomica.math.geometry">Shape</a> shape</pre>
-</li>
-<li class="blockListLast">
-<h4>positionDefinition</h4>
-<pre><a href="etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.AtomFilterStatic">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomFilterStatic.html" title="class in etomica.atom">etomica.atom.AtomFilterStatic</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialization Methods</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>readResolve</h4>
-<pre>private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
-<div class="block">Required to guarantee singleton when deserializing.</div>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>rv</h4>
-<pre>boolean rv</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.atom.AtomGroupVelocityAverage">
 <!--   -->
 </a>
@@ -1622,70 +1377,6 @@
 <li class="blockListLast">
 <h4>bondLength</h4>
 <pre>double bondLength</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.AtomLeafAgentManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">etomica.atom.AtomLeafAgentManager</a> extends <a href="etomica/box/BoxEventListenerAdapter.html" title="class in etomica.box">BoxEventListenerAdapter</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentSource</h4>
-<pre><a href="etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="etomica/atom/AtomLeafAgentManager.AgentSource.html" title="type parameter in AtomLeafAgentManager.AgentSource">E</a>&gt; agentSource</pre>
-</li>
-<li class="blockList">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
-</li>
-<li class="blockList">
-<h4>box</h4>
-<pre><a href="etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
-</li>
-<li class="blockList">
-<h4>reservoirSize</h4>
-<pre>int reservoirSize</pre>
-</li>
-<li class="blockListLast">
-<h4>agentClass</h4>
-<pre>java.lang.Class&lt;T&gt; agentClass</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.AtomLeafAgentManager.AgentIterator">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomLeafAgentManager.AgentIterator.html" title="class in etomica.atom">etomica.atom.AtomLeafAgentManager.AgentIterator</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentManager</h4>
-<pre><a href="etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="etomica/atom/AtomLeafAgentManager.html" title="type parameter in AtomLeafAgentManager">E</a>&gt; agentManager</pre>
-</li>
-<li class="blockList">
-<h4>cursor</h4>
-<pre>int cursor</pre>
-</li>
-<li class="blockListLast">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
 </li>
 </ul>
 </li>
@@ -1893,118 +1584,6 @@
 <dd>1L</dd>
 </dl>
 </li>
-<li class="blockList"><a name="etomica.atom.AtomTypeAgentManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">etomica.atom.AtomTypeAgentManager</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentSource</h4>
-<pre><a href="etomica/atom/AtomTypeAgentManager.AgentSource.html" title="interface in etomica.atom">AtomTypeAgentManager.AgentSource</a> agentSource</pre>
-</li>
-<li class="blockList">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
-</li>
-<li class="blockListLast">
-<h4>sim</h4>
-<pre><a href="etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.AtomTypeAgentManager.AgentIterator">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/AtomTypeAgentManager.AgentIterator.html" title="class in etomica.atom">etomica.atom.AtomTypeAgentManager.AgentIterator</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentManager</h4>
-<pre><a href="etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> agentManager</pre>
-</li>
-<li class="blockList">
-<h4>cursor</h4>
-<pre>int cursor</pre>
-</li>
-<li class="blockListLast">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.SpeciesAgentManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/SpeciesAgentManager.html" title="class in etomica.atom">etomica.atom.SpeciesAgentManager</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentSource</h4>
-<pre><a href="etomica/atom/SpeciesAgentManager.AgentSource.html" title="interface in etomica.atom">SpeciesAgentManager.AgentSource</a> agentSource</pre>
-</li>
-<li class="blockList">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
-</li>
-<li class="blockListLast">
-<h4>sim</h4>
-<pre><a href="etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.atom.SpeciesAgentManager.AgentIterator">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/atom/SpeciesAgentManager.AgentIterator.html" title="class in etomica.atom">etomica.atom.SpeciesAgentManager.AgentIterator</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentManager</h4>
-<pre><a href="etomica/atom/SpeciesAgentManager.html" title="class in etomica.atom">SpeciesAgentManager</a> agentManager</pre>
-</li>
-<li class="blockList">
-<h4>cursor</h4>
-<pre>int cursor</pre>
-</li>
-<li class="blockListLast">
-<h4>agents</h4>
-<pre>java.lang.Object[] agents</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="blockList">
@@ -2133,7 +1712,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>apiUp</h4>
@@ -2250,7 +1829,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>upListNow</h4>
@@ -3469,62 +3048,6 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.data</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.data.AccumulatorAverage.StatType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/data/AccumulatorAverage.StatType.html" title="class in etomica.data">etomica.data.AccumulatorAverage.StatType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>index</h4>
-<pre>int index</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.data.AccumulatorAverageBlockless.StatType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/data/AccumulatorAverageBlockless.StatType.html" title="class in etomica.data">etomica.data.AccumulatorAverageBlockless.StatType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>index</h4>
-<pre>int index</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.data.AccumulatorAverageBlocklessSlim.StatType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/data/AccumulatorAverageBlocklessSlim.StatType.html" title="class in etomica.data">etomica.data.AccumulatorAverageBlocklessSlim.StatType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>index</h4>
-<pre>int index</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.data.DataInfo">
 <!--   -->
 </a>
@@ -3871,11 +3394,11 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>typeMin</h4>
-<pre><a href="etomica/data/DataSourceUniform.LimitType.html" title="class in etomica.data">DataSourceUniform.LimitType</a> typeMin</pre>
+<pre><a href="etomica/data/DataSourceUniform.LimitType.html" title="enum in etomica.data">DataSourceUniform.LimitType</a> typeMin</pre>
 </li>
 <li class="blockList">
 <h4>typeMax</h4>
-<pre><a href="etomica/data/DataSourceUniform.LimitType.html" title="class in etomica.data">DataSourceUniform.LimitType</a> typeMax</pre>
+<pre><a href="etomica/data/DataSourceUniform.LimitType.html" title="enum in etomica.data">DataSourceUniform.LimitType</a> typeMax</pre>
 </li>
 <li class="blockList">
 <h4>xMin</h4>
@@ -3912,15 +3435,6 @@
 </ul>
 </li>
 </ul>
-</li>
-<li class="blockList"><a name="etomica.data.DataSourceUniform.LimitType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/data/DataSourceUniform.LimitType.html" title="class in etomica.data">etomica.data.DataSourceUniform.LimitType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
 </li>
 <li class="blockList"><a name="etomica.data.DataStreamAction">
 <!--   -->
@@ -5806,11 +5320,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.graphics.DeviceBox.LabelType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/graphics/DeviceBox.LabelType.html" title="class in etomica.graphics">etomica.graphics.DeviceBox.LabelType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-</li>
 <li class="blockList"><a name="etomica.graphics.DeviceBoxValueChangedEvent">
 <!--   -->
 </a>
@@ -5859,22 +5368,6 @@
 <li class="blockListLast">
 <h4>numRows</h4>
 <pre>int numRows</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.graphics.DeviceTernarySelector.MyEventManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/graphics/DeviceTernarySelector.MyEventManager.html" title="class in etomica.graphics">etomica.graphics.DeviceTernarySelector.MyEventManager</a> extends <a href="etomica/util/EventManager.html" title="class in etomica.util">EventManager</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>triangle</h4>
-<pre>etomica.graphics.DeviceTernarySelector.Triangle triangle</pre>
 </li>
 </ul>
 </li>
@@ -6010,7 +5503,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>atomTypeOrientedManager</h4>
-<pre><a href="etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a> atomTypeOrientedManager</pre>
+<pre>java.util.Map&lt;K,V&gt; atomTypeOrientedManager</pre>
 </li>
 <li class="blockList">
 <h4>coords</h4>
@@ -6254,11 +5747,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.graphics.DisplayTextBox.LabelType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/graphics/DisplayTextBox.LabelType.html" title="class in etomica.graphics">etomica.graphics.DisplayTextBox.LabelType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-</li>
 <li class="blockList"><a name="etomica.graphics.EtomicaPlot">
 <!--   -->
 </a>
@@ -6393,11 +5881,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.integrator.IntegratorMD.ThermostatType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/integrator/IntegratorMD.ThermostatType.html" title="class in etomica.integrator">etomica.integrator.IntegratorMD.ThermostatType</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-</li>
 <li class="blockList"><a name="etomica.integrator.IntegratorPT.BoxTracker">
 <!--   -->
 </a>
@@ -6507,11 +5990,6 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.integrator.mcmove</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.integrator.mcmove.MCMoveEventManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/integrator/mcmove/MCMoveEventManager.html" title="class in etomica.integrator.mcmove">etomica.integrator.mcmove.MCMoveEventManager</a> extends <a href="etomica/util/EventManager.html" title="class in etomica.util">EventManager</a> implements Serializable</h3>
-</li>
 <li class="blockList"><a name="etomica.integrator.mcmove.MCMoveSwapConfiguration.SwapFactory">
 <!--   -->
 </a>
@@ -7031,7 +6509,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>isPeriodic</h4>
@@ -7446,39 +6924,6 @@
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.listener</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.listener.IntegratorListenerGroupSeries">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/listener/IntegratorListenerGroupSeries.html" title="class in etomica.listener">etomica.listener.IntegratorListenerGroupSeries</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>interval</h4>
-<pre>int interval</pre>
-</li>
-<li class="blockList">
-<h4>intervalCount</h4>
-<pre>int intervalCount</pre>
-</li>
-<li class="blockListLast">
-<h4>listeners</h4>
-<pre><a href="etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a>[] listeners</pre>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -8446,34 +7891,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.models.hexane.SpeciesHexane">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/hexane/SpeciesHexane.html" title="class in etomica.models.hexane">etomica.models.hexane.SpeciesHexane</a> extends <a href="etomica/species/SpeciesSpheres.html" title="class in etomica.species">SpeciesSpheres</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>bondLength</h4>
-<pre>double bondLength</pre>
-</li>
-<li class="blockList">
-<h4>phi</h4>
-<pre>double phi</pre>
-</li>
-<li class="blockList">
-<h4>upperLimit</h4>
-<pre>double upperLimit</pre>
-</li>
-<li class="blockListLast">
-<h4>lowerLimit</h4>
-<pre>double lowerLimit</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="blockList">
@@ -8962,196 +8379,11 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.models.nitrogen.SpeciesN2">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/nitrogen/SpeciesN2.html" title="class in etomica.models.nitrogen">etomica.models.nitrogen.SpeciesN2</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>nType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> nType</pre>
-</li>
-<li class="blockListLast">
-<h4>pType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> pType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.nitrogen.SpeciesN2B">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/nitrogen/SpeciesN2B.html" title="class in etomica.models.nitrogen">etomica.models.nitrogen.SpeciesN2B</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>nType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> nType</pre>
-</li>
-<li class="blockListLast">
-<h4>pType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> pType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.nitrogen.SpeciesN2ShellModel">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/nitrogen/SpeciesN2ShellModel.html" title="class in etomica.models.nitrogen">etomica.models.nitrogen.SpeciesN2ShellModel</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>nType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> nType</pre>
-</li>
-<li class="blockListLast">
-<h4>pType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> pType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.models.OPLS</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.models.OPLS.SpeciesAceticAcid">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/OPLS/SpeciesAceticAcid.html" title="class in etomica.models.OPLS">etomica.models.OPLS.SpeciesAceticAcid</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>cH3Type</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cH3Type</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockList">
-<h4>dBOType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> dBOType</pre>
-</li>
-<li class="blockList">
-<h4>sBOType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> sBOType</pre>
-</li>
-<li class="blockListLast">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.models.rowley</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.models.rowley.SpeciesEthanol">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/rowley/SpeciesEthanol.html" title="class in etomica.models.rowley">etomica.models.rowley.SpeciesEthanol</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>acType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> acType</pre>
-</li>
-<li class="blockList">
-<h4>ahType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> ahType</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockListLast">
-<h4>xType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> xType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.models.rowley.SpeciesFactoryEthanol">
 <!--   -->
 </a>
@@ -9192,46 +8424,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.models.rowley.SpeciesMethanol">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/rowley/SpeciesMethanol.html" title="class in etomica.models.rowley">etomica.models.rowley.SpeciesMethanol</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>acType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> acType</pre>
-</li>
-<li class="blockList">
-<h4>ahType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> ahType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockListLast">
-<h4>xType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> xType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="blockList">
@@ -9245,38 +8437,6 @@
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
-</li>
-<li class="blockList"><a name="etomica.models.traPPE.SpeciesMethanol">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/traPPE/SpeciesMethanol.html" title="class in etomica.models.traPPE">etomica.models.traPPE.SpeciesMethanol</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>cH3Type</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cH3Type</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockListLast">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -9459,178 +8619,6 @@
 <li class="blockListLast">
 <h4>workTensor</h4>
 <pre><a href="etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a> workTensor</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.water.SpeciesWater3P">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/water/SpeciesWater3P.html" title="class in etomica.models.water">etomica.models.water.SpeciesWater3P</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.water.SpeciesWater3POriented">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/water/SpeciesWater3POriented.html" title="class in etomica.models.water">etomica.models.water.SpeciesWater3POriented</a> extends <a href="etomica/species/SpeciesOriented.html" title="class in etomica.species">SpeciesOriented</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.water.SpeciesWater4P">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/water/SpeciesWater4P.html" title="class in etomica.models.water">etomica.models.water.SpeciesWater4P</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockListLast">
-<h4>mType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> mType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.water.SpeciesWater4PCOM">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/water/SpeciesWater4PCOM.html" title="class in etomica.models.water">etomica.models.water.SpeciesWater4PCOM</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockList">
-<h4>mType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> mType</pre>
-</li>
-<li class="blockListLast">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.models.water.SpeciesWater4POriented">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/models/water/SpeciesWater4POriented.html" title="class in etomica.models.water">etomica.models.water.SpeciesWater4POriented</a> extends <a href="etomica/species/SpeciesOriented.html" title="class in etomica.species">SpeciesOriented</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-<li class="blockList">
-<h4>mType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> mType</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
 </li>
 </ul>
 </li>
@@ -10336,15 +9324,6 @@
 </a>
 <h3>Class <a href="etomica/modules/dcvgcmd/DCVGCMDGraphic.Applet.html" title="class in etomica.modules.dcvgcmd">etomica.modules.dcvgcmd.DCVGCMDGraphic.Applet</a> extends javax.swing.JApplet implements Serializable</h3>
 </li>
-<li class="blockList"><a name="etomica.modules.dcvgcmd.SpeciesTube">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">etomica.modules.dcvgcmd.SpeciesTube</a> extends <a href="etomica/species/SpeciesSpheres.html" title="class in etomica.species">SpeciesSpheres</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
 </ul>
 </li>
 <li class="blockList">
@@ -10921,15 +9900,6 @@
 <dd>1L</dd>
 </dl>
 </li>
-<li class="blockList"><a name="etomica.modules.sam.SpeciesAlkaneThiol">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/modules/sam/SpeciesAlkaneThiol.html" title="class in etomica.modules.sam">etomica.modules.sam.SpeciesAlkaneThiol</a> extends <a href="etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
 <li class="blockList"><a name="etomica.modules.sam.WallPlane">
 <!--   -->
 </a>
@@ -11041,42 +10011,6 @@
 <li class="blockListLast">
 <h4>species</h4>
 <pre><a href="etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.molecule.MoleculeAgentManager.AgentIterator">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/molecule/MoleculeAgentManager.AgentIterator.html" title="class in etomica.molecule">etomica.molecule.MoleculeAgentManager.AgentIterator</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>agentManager</h4>
-<pre><a href="etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="etomica/molecule/MoleculeAgentManager.html" title="type parameter in MoleculeAgentManager">E</a>&gt; agentManager</pre>
-</li>
-<li class="blockList">
-<h4>speciesCursor</h4>
-<pre>int speciesCursor</pre>
-</li>
-<li class="blockList">
-<h4>moleculeCursor</h4>
-<pre>int moleculeCursor</pre>
-</li>
-<li class="blockList">
-<h4>agents</h4>
-<pre>java.lang.Object[][] agents</pre>
-</li>
-<li class="blockListLast">
-<h4>speciesAgents</h4>
-<pre>java.lang.Object[] speciesAgents</pre>
 </li>
 </ul>
 </li>
@@ -11706,11 +10640,11 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>allowedDirection</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> allowedDirection</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> allowedDirection</pre>
 </li>
 <li class="blockList">
 <h4>box</h4>
@@ -11774,7 +10708,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>apiUp</h4>
@@ -12119,7 +11053,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>doGoDown</h4>
@@ -12382,7 +11316,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>doGoDown</h4>
@@ -12887,7 +11821,7 @@
 </li>
 <li class="blockList">
 <h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
+<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a> direction</pre>
 </li>
 <li class="blockList">
 <h4>targetAtom</h4>
@@ -13557,34 +12491,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.normalmode.SpeciesHSDimer">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/normalmode/SpeciesHSDimer.html" title="class in etomica.normalmode">etomica.normalmode.SpeciesHSDimer</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockListLast">
-<h4>dimerAtomType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> dimerAtomType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.normalmode.WaveVectorFactory1D">
 <!--   -->
 </a>
@@ -14086,130 +12992,11 @@
 <dd>1L</dd>
 </dl>
 </li>
-<li class="blockList"><a name="etomica.paracetamol.SpeciesParacetamol">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/paracetamol/SpeciesParacetamol.html" title="class in etomica.paracetamol">etomica.paracetamol.SpeciesParacetamol</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockList">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-<li class="blockList">
-<h4>nType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> nType</pre>
-</li>
-<li class="blockList">
-<h4>hpType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hpType</pre>
-</li>
-<li class="blockListLast">
-<h4>hyType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hyType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.potential</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.potential.IteratorDirective">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/potential/IteratorDirective.html" title="class in etomica.potential">etomica.potential.IteratorDirective</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>includeLrc</h4>
-<pre>boolean includeLrc</pre>
-<div class="block">Flag indicating whether long-range correction contributions should
- be included in calculation.  Default is <b>true</b>.</div>
-</li>
-<li class="blockList">
-<h4>direction</h4>
-<pre><a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">IteratorDirective.Direction</a> direction</pre>
-</li>
-<li class="blockList">
-<h4>potentialCriteriaHead</h4>
-<pre><a href="etomica/potential/IteratorDirective.PotentialCriterion.html" title="class in etomica.potential">IteratorDirective.PotentialCriterion</a> potentialCriteriaHead</pre>
-</li>
-<li class="blockList">
-<h4>targetAtom</h4>
-<pre><a href="etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a> targetAtom</pre>
-</li>
-<li class="blockListLast">
-<h4>targetMolecule</h4>
-<pre><a href="etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a> targetMolecule</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.potential.IteratorDirective.Direction">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/potential/IteratorDirective.Direction.html" title="class in etomica.potential">etomica.potential.IteratorDirective.Direction</a> extends <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">EnumeratedType</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialization Methods</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>readResolve</h4>
-<pre>private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
-<div class="block">Required to guarantee singleton when deserializing.</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.potential.IteratorDirective.PotentialCriterion">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/potential/IteratorDirective.PotentialCriterion.html" title="class in etomica.potential">etomica.potential.IteratorDirective.PotentialCriterion</a> extends java.lang.Object implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>nextCriterion</h4>
-<pre><a href="etomica/potential/IteratorDirective.PotentialCriterion.html" title="class in etomica.potential">IteratorDirective.PotentialCriterion</a> nextCriterion</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.potential.PotentialArray">
 <!--   -->
 </a>
@@ -14715,31 +13502,6 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.simulation</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.simulation.DataStreamHeader">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/simulation/DataStreamHeader.html" title="class in etomica.simulation">etomica.simulation.DataStreamHeader</a> extends java.lang.Object implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>dataSource</h4>
-<pre><a href="etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a> dataSource</pre>
-</li>
-<li class="blockListLast">
-<h4>client</h4>
-<pre>java.lang.Object client</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.simulation.prototypes</h2>
 <ul class="blockList">
 <li class="blockList"><a name="etomica.simulation.prototypes.LJMD3D.Applet">
@@ -15157,232 +13919,6 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.species</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.species.Species">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/Species.html" title="class in etomica.species">etomica.species.Species</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>2L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>index</h4>
-<pre>int index</pre>
-</li>
-<li class="blockList">
-<h4>conformation</h4>
-<pre><a href="etomica/config/IConformation.html" title="interface in etomica.config">IConformation</a> conformation</pre>
-</li>
-<li class="blockListLast">
-<h4>childTypes</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[] childTypes</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesOriented">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesOriented.html" title="class in etomica.species">etomica.species.SpeciesOriented</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>moment</h4>
-<pre><a href="etomica/space/Vector.html" title="interface in etomica.space">Vector</a> moment</pre>
-</li>
-<li class="blockList">
-<h4>mass</h4>
-<pre>double mass</pre>
-</li>
-<li class="blockListLast">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesPolyhedron">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesPolyhedron.html" title="class in etomica.species">etomica.species.SpeciesPolyhedron</a> extends <a href="etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> implements Serializable</h3>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheres">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheres.html" title="class in etomica.species">etomica.species.SpeciesSpheres</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>leafAtomType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> leafAtomType</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockListLast">
-<h4>atomsPerGroup</h4>
-<pre>int atomsPerGroup</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheresCustom">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheresCustom.html" title="class in etomica.species">etomica.species.SpeciesSpheresCustom</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockListLast">
-<h4>atomTypes</h4>
-<pre>int[] atomTypes</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheresHetero">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">etomica.species.SpeciesSpheresHetero</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>numberFraction</h4>
-<pre>double[] numberFraction</pre>
-</li>
-<li class="blockList">
-<h4>childCount</h4>
-<pre>int[] childCount</pre>
-</li>
-<li class="blockListLast">
-<h4>totalChildCount</h4>
-<pre>int totalChildCount</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheresMono">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">etomica.species.SpeciesSpheresMono</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>leafAtomType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> leafAtomType</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheresRotating">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheresRotating.html" title="class in etomica.species">etomica.species.SpeciesSpheresRotating</a> extends <a href="etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>isAxisSymmetric</h4>
-<pre>boolean isAxisSymmetric</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.species.SpeciesSpheresRotatingMolecule">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/species/SpeciesSpheresRotatingMolecule.html" title="class in etomica.species">etomica.species.SpeciesSpheresRotatingMolecule</a> extends <a href="etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>moment</h4>
-<pre><a href="etomica/space/Vector.html" title="interface in etomica.space">Vector</a> moment</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.spin</h2>
 <ul class="blockList">
 <li class="blockList"><a name="etomica.spin.ConfigurationAligned">
@@ -15430,16 +13966,6 @@
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;etomica.surfacetension</h2>
-<ul class="blockList">
-<li class="blockList"><a name="etomica.surfacetension.LJMC__Javadoc">
-<!--   -->
-</a>
-<h3>Class etomica.surfacetension.LJMC__Javadoc extends java.lang.Object implements Serializable</h3>
 </li>
 </ul>
 </li>
@@ -16072,54 +14598,6 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;etomica.util</h2>
 <ul class="blockList">
-<li class="blockList"><a name="etomica.util.EnumeratedType">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/util/EnumeratedType.html" title="class in etomica.util">etomica.util.EnumeratedType</a> extends java.lang.Object implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>label</h4>
-<pre>java.lang.String label</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.util.EventManager">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/util/EventManager.html" title="class in etomica.util">etomica.util.EventManager</a> extends java.lang.Object implements Serializable</h3>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialization Methods</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>readObject</h4>
-<pre>private&nbsp;void&nbsp;readObject(java.io.ObjectInputStream&nbsp;in)
-                 throws java.io.IOException,
-                        java.lang.ClassNotFoundException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-<dd><code>java.lang.ClassNotFoundException</code></dd>
-</dl>
-</li>
-<li class="blockListLast">
-<h4>writeObject</h4>
-<pre>private&nbsp;void&nbsp;writeObject(java.io.ObjectOutputStream&nbsp;out)
-                  throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.util.Grabber.ImagePanel">
 <!--   -->
 </a>
@@ -17315,70 +15793,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.virial.ConformationAlkaneEH">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/ConformationAlkaneEH.html" title="class in etomica.virial">etomica.virial.ConformationAlkaneEH</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>CCbondL</h4>
-<pre>double CCbondL</pre>
-</li>
-<li class="blockList">
-<h4>CHbondL</h4>
-<pre>double CHbondL</pre>
-</li>
-<li class="blockList">
-<h4>angleCCC</h4>
-<pre>double angleCCC</pre>
-</li>
-<li class="blockList">
-<h4>angleHCH</h4>
-<pre>double angleHCH</pre>
-</li>
-<li class="blockList">
-<h4>angleCCH</h4>
-<pre>double angleCCH</pre>
-</li>
-<li class="blockList">
-<h4>angleCCC_half</h4>
-<pre>double angleCCC_half</pre>
-</li>
-<li class="blockList">
-<h4>angleHCH_half</h4>
-<pre>double angleHCH_half</pre>
-</li>
-<li class="blockList">
-<h4>speciesAlkaneEH</h4>
-<pre><a href="etomica/virial/SpeciesAlkaneEH.html" title="class in etomica.virial">SpeciesAlkaneEH</a> speciesAlkaneEH</pre>
-</li>
-<li class="blockList">
-<h4>numCarbons</h4>
-<pre>int numCarbons</pre>
-</li>
-<li class="blockList">
-<h4>numCH2</h4>
-<pre>int numCH2</pre>
-</li>
-<li class="blockListLast">
-<h4>numH</h4>
-<pre>int numH</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.virial.ConformationAnthracene3site">
 <!--   -->
 </a>
@@ -18128,159 +16542,6 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="etomica.virial.Species7SiteRigidSF6">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/Species7SiteRigidSF6.html" title="class in etomica.virial">etomica.virial.Species7SiteRigidSF6</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>sType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> sType</pre>
-</li>
-<li class="blockListLast">
-<h4>fType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> fType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesAlkane">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesAlkane.html" title="class in etomica.virial">etomica.virial.SpeciesAlkane</a> extends <a href="etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesAlkaneEH">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesAlkaneEH.html" title="class in etomica.virial">etomica.virial.SpeciesAlkaneEH</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>numCarbons</h4>
-<pre>int numCarbons</pre>
-</li>
-<li class="blockList">
-<h4>totalAtoms</h4>
-<pre>int totalAtoms</pre>
-</li>
-<li class="blockList">
-<h4>indexC_3_1</h4>
-<pre>int indexC_3_1</pre>
-</li>
-<li class="blockList">
-<h4>indexC_3_2</h4>
-<pre>int indexC_3_2</pre>
-</li>
-<li class="blockList">
-<h4>numH</h4>
-<pre>int numH</pre>
-</li>
-<li class="blockList">
-<h4>numCH2</h4>
-<pre>int numCH2</pre>
-</li>
-<li class="blockListLast">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesAnthracene3site464">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesAnthracene3site464.html" title="class in etomica.virial">etomica.virial.SpeciesAnthracene3site464</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesAnthracene3site545">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesAnthracene3site545.html" title="class in etomica.virial">etomica.virial.SpeciesAnthracene3site545</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="blockList"><a name="etomica.virial.SpeciesFactoryOrientedSpheres">
 <!--   -->
 </a>
@@ -18420,230 +16681,6 @@
 <!--   -->
 </a>
 <h3>Class <a href="etomica/virial/SpeciesFactoryWaterGCPM.html" title="class in etomica.virial">etomica.virial.SpeciesFactoryWaterGCPM</a> extends java.lang.Object implements Serializable</h3>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesMethane">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesMethane.html" title="class in etomica.virial">etomica.virial.SpeciesMethane</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>hType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesPh3site464">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesPh3site464.html" title="class in etomica.virial">etomica.virial.SpeciesPh3site464</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesPh3site545">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesPh3site545.html" title="class in etomica.virial">etomica.virial.SpeciesPh3site545</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesTraPPEAnthracene">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesTraPPEAnthracene.html" title="class in etomica.virial">etomica.virial.SpeciesTraPPEAnthracene</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesTraPPECO2">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesTraPPECO2.html" title="class in etomica.virial">etomica.virial.SpeciesTraPPECO2</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>oType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesTraPPENaphthalene">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesTraPPENaphthalene.html" title="class in etomica.virial">etomica.virial.SpeciesTraPPENaphthalene</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="etomica.virial.SpeciesTraPPEPhenanthrene">
-<!--   -->
-</a>
-<h3>Class <a href="etomica/virial/SpeciesTraPPEPhenanthrene.html" title="class in etomica.virial">etomica.virial.SpeciesTraPPEPhenanthrene</a> extends <a href="etomica/species/Species.html" title="class in etomica.species">Species</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre><a href="etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-<li class="blockList">
-<h4>isDynamic</h4>
-<pre>boolean isDynamic</pre>
-</li>
-<li class="blockList">
-<h4>cType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> cType</pre>
-</li>
-<li class="blockListLast">
-<h4>chType</h4>
-<pre><a href="etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> chType</pre>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
 </li>

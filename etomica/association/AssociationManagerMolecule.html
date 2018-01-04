@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -182,22 +182,16 @@ implements <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSou
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationManagerMolecule.html#getAssociationDefinition--">getAssociationDefinition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationManagerMolecule.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></span>()</code>
-<div class="block">Returns the Class of the agent.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationManagerMolecule.html#initialize--">initialize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationManagerMolecule.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/association/AssociationManagerMolecule.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
             <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
@@ -284,7 +278,7 @@ implements <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSou
 <pre>public&nbsp;void&nbsp;actionPerformed(<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&nbsp;evt)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/IListener.html#actionPerformed-etomica.util.IEvent-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a></code></dd>
+<dd><code><a href="../../etomica/util/IListener.html#actionPerformed-E-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -296,22 +290,6 @@ implements <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSou
 <h4>getAssociatedMolecules</h4>
 <pre>public&nbsp;<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;getAssociatedMolecules(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 <div class="block">Returns the number of atoms on the list of associations of the given atom.</div>
-</li>
-</ul>
-<a name="getMoleculeAgentClass--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMoleculeAgentClass</h4>
-<pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of
- the appropriate Class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="makeAgent-etomica.molecule.IMolecule-">

@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/action/activity/ActivityIntegrate.html" title="class in etomica.action.activity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="enum in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/action/activity/Controller.html" target="_top">Frames</a></li>
@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.etomica.action.activity.ActivityGroupSeries">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -117,13 +117,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a>, <a href="../../../etomica/action/activity/ActivityGroup.html" title="interface in etomica.action.activity">ActivityGroup</a>, <a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a>, <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, java.io.Serializable</dd>
+<dd><a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a>, <a href="../../../etomica/action/activity/ActivityGroup.html" title="interface in etomica.action.activity">ActivityGroup</a>, <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, java.io.Serializable</dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Controller</span>
-extends <a href="../../../etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity">ActivityGroupSeries</a>
-implements java.io.Serializable, <a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></pre>
+<pre>public final class <span class="typeNameLabel">Controller</span>
+extends <a href="../../../etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity">ActivityGroupSeries</a></pre>
 <div class="block">Organizer and executor of actions performed by the simulation. The Controller
  holds a series of Actions which it performs in series, using a thread that it
  launches when start() is invoked. A simple Action will run on the
@@ -172,15 +171,11 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">Controller.ActionStatus</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="enum in etomica.action.activity">Controller.ActionStatus</a></span></code>
 <div class="block">Enumerated type describing the status of an action.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.UrgentWaitObject.html" title="class in etomica.action.activity">Controller.UrgentWaitObject</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>protected static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.WaitObject.html" title="class in etomica.action.activity">Controller.WaitObject</a></span></code>&nbsp;</td>
 </tr>
@@ -193,29 +188,6 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected java.util.HashMap&lt;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>,java.lang.Throwable&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#actionExceptionMap">actionExceptionMap</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected java.util.HashMap&lt;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>,<a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">Controller.ActionStatus</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#actionStatusMap">actionStatusMap</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/action/activity/Controller.UrgentWaitObject.html" title="class in etomica.action.activity">Controller.UrgentWaitObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#urgentWaitObject">urgentWaitObject</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/action/activity/Controller.WaitObject.html" title="class in etomica.action.activity">Controller.WaitObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#waitObject">waitObject</a></span></code>&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.action.activity.ActivityGroupSeries">
 <!--   -->
@@ -275,13 +247,13 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">Controller.ActionStatus</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="enum in etomica.action.activity">Controller.ActionStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#getActionStatus-etomica.action.IAction-">getActionStatus</a></span>(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code>
 <div class="block">Returns the status of an action held by the controller.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../../etomica/action/activity/ControllerEvent.html" title="class in etomica.action.activity">ControllerEvent</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/Controller.html#getEventManager--">getEventManager</a></span>()</code>
 <div class="block">Returns the event manager used by the controller to notify listeners of
  individual actions events as well as events related to the controller
@@ -352,20 +324,6 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.action.activity.ActivityGroup">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.action.activity.<a href="../../../etomica/action/activity/ActivityGroup.html" title="interface in etomica.action.activity">ActivityGroup</a></h3>
-<code><a href="../../../etomica/action/activity/ActivityGroup.html#getCompletedActions--">getCompletedActions</a>, <a href="../../../etomica/action/activity/ActivityGroup.html#getCurrentActions--">getCurrentActions</a>, <a href="../../../etomica/action/activity/ActivityGroup.html#getPendingActions--">getPendingActions</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.action.ActionGroup">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;etomica.action.<a href="../../../etomica/action/ActionGroup.html" title="interface in etomica.action">ActionGroup</a></h3>
-<code><a href="../../../etomica/action/ActionGroup.html#getAllActions--">getAllActions</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.action.IAction">
 <!--   -->
 </a>
@@ -380,50 +338,6 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="urgentWaitObject">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>urgentWaitObject</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/action/activity/Controller.UrgentWaitObject.html" title="class in etomica.action.activity">Controller.UrgentWaitObject</a> urgentWaitObject</pre>
-</li>
-</ul>
-<a name="waitObject">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>waitObject</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/action/activity/Controller.WaitObject.html" title="class in etomica.action.activity">Controller.WaitObject</a> waitObject</pre>
-</li>
-</ul>
-<a name="actionStatusMap">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>actionStatusMap</h4>
-<pre>protected final&nbsp;java.util.HashMap&lt;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>,<a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">Controller.ActionStatus</a>&gt; actionStatusMap</pre>
-</li>
-</ul>
-<a name="actionExceptionMap">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>actionExceptionMap</h4>
-<pre>protected final&nbsp;java.util.HashMap&lt;<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>,java.lang.Throwable&gt; actionExceptionMap</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -498,46 +412,12 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/action/activity/ActivityGroupSeries.html#reset--">ActivityGroupSeries</a></code></span></div>
-<div class="block">Marks all actions as pending.  Previously completed actions are put 
- first in the new list of pending actions.  The Controller must be 
+<div class="block">Marks all actions as pending.  Previously completed actions are put
+ first in the new list of pending actions.  The Controller must be
  inactive or halted before calling this method.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/activity/IController.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/action/activity/ActivityGroupSeries.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity">ActivityGroupSeries</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getActionStatus-etomica.action.IAction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getActionStatus</h4>
-<pre>public&nbsp;<a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity">Controller.ActionStatus</a>&nbsp;getActionStatus(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
-<div class="block">Returns the status of an action held by the controller.  Returns
- null for actions not held by the controller.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/activity/IController.html#getActionStatus-etomica.action.IAction-">getActionStatus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getException-etomica.action.IAction-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getException</h4>
-<pre>public&nbsp;java.lang.Throwable&nbsp;getException(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
-<div class="block">Returns the exception thrown by an action held by the controller.  
- Returns null if the given action did not throw an exception or is not 
- held by the controller.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/activity/IController.html#getException-etomica.action.IAction-">getException</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -557,6 +437,29 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 </dl>
 </li>
 </ul>
+<a name="getActionStatus-etomica.action.IAction-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getActionStatus</h4>
+<pre>public&nbsp;<a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="enum in etomica.action.activity">Controller.ActionStatus</a>&nbsp;getActionStatus(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
+<div class="block">Returns the status of an action held by the controller.  Returns
+ null for actions not held by the controller.</div>
+</li>
+</ul>
+<a name="getException-etomica.action.IAction-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getException</h4>
+<pre>public&nbsp;java.lang.Throwable&nbsp;getException(<a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
+<div class="block">Returns the exception thrown by an action held by the controller.
+ Returns null if the given action did not throw an exception or is not
+ held by the controller.</div>
+</li>
+</ul>
 <a name="doActionNow-etomica.action.IAction-">
 <!--   -->
 </a>
@@ -568,27 +471,9 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
  activity. If current action is already paused, it is not resumed by this
  method.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/activity/IController.html#doActionNow-etomica.action.IAction-">doActionNow</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>action</code> - Action to be performed right away; cannot be an Activity.</dd>
 </dl>
-</li>
-</ul>
-<a name="setRepeatCurrentAction-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setRepeatCurrentAction</h4>
-<pre>public&nbsp;void&nbsp;setRepeatCurrentAction(boolean&nbsp;repeatCurrentAction)</pre>
-<div class="block">Flag indicating whether the current action should be repeated indefinitely before
- moving on to the next action.  Setting this to true also sets pauseAfterEachAction 
- to true (setting false then has no effect on pauseAfterEachAction).  In repeating
- an action, when an action is completed it is placed again at the head of the pending 
- action list (for an Action the same instance is used; for an Activity a copy is made).
- <p>
- Default is false.</div>
 </li>
 </ul>
 <a name="isRepeatCurrentAction--">
@@ -599,6 +484,22 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <h4>isRepeatCurrentAction</h4>
 <pre>public&nbsp;boolean&nbsp;isRepeatCurrentAction()</pre>
 <div class="block">Returns value of repeatCurrentAction flag.</div>
+</li>
+</ul>
+<a name="setRepeatCurrentAction-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRepeatCurrentAction</h4>
+<pre>public&nbsp;void&nbsp;setRepeatCurrentAction(boolean&nbsp;repeatCurrentAction)</pre>
+<div class="block">Flag indicating whether the current action should be repeated indefinitely before
+ moving on to the next action.  Setting this to true also sets pauseAfterEachAction
+ to true (setting false then has no effect on pauseAfterEachAction).  In repeating
+ an action, when an action is completed it is placed again at the head of the pending
+ action list (for an Action the same instance is used; for an Activity a copy is made).
+ <p>
+ Default is false.</div>
 </li>
 </ul>
 <a name="toString--">
@@ -620,14 +521,11 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getEventManager</h4>
-<pre>public&nbsp;<a href="../../../etomica/util/IEventManager.html" title="interface in etomica.util">IEventManager</a>&nbsp;getEventManager()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/action/activity/IController.html#getEventManager--">IController</a></code></span></div>
+<pre>public&nbsp;<a href="../../../etomica/util/EventManager.html" title="class in etomica.util">EventManager</a>&lt;<a href="../../../etomica/action/activity/ControllerEvent.html" title="class in etomica.action.activity">ControllerEvent</a>&gt;&nbsp;getEventManager()</pre>
 <div class="block">Returns the event manager used by the controller to notify listeners of
  individual actions events as well as events related to the controller
  itself.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/activity/IController.html#getEventManager--">getEventManager</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/action/activity/IController.html" title="interface in etomica.action.activity">IController</a></code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../etomica/action/activity/ControllerEvent.html" title="class in etomica.action.activity"><code>ControllerEvent</code></a></dd>
 </dl>
@@ -661,7 +559,7 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/action/activity/ActivityIntegrate.html" title="class in etomica.action.activity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="class in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/action/activity/Controller.ActionStatus.html" title="enum in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/action/activity/Controller.html" target="_top">Frames</a></li>
@@ -686,13 +584,13 @@ implements java.io.Serializable, <a href="../../../etomica/action/activity/ICont
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.etomica.action.activity.ActivityGroupSeries">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

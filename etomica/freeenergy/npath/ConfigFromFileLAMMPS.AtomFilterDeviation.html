@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></dd>
+<dd><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a>, java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -177,22 +177,18 @@ implements <a href="../../../etomica/atom/AtomFilter.html" title="interface in e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html#accept-etomica.atom.IAtom-">accept</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
-<div class="block">Returns true if atom is passes test of filter.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html#accept-etomica.molecule.IMolecule-">accept</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html#getThreshold--">getThreshold</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html#setThreshold-double-">setThreshold</a></span>(double&nbsp;threshold)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/freeenergy/npath/ConfigFromFileLAMMPS.AtomFilterDeviation.html#test-etomica.atom.IAtom-">test</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code>
+<div class="block">Returns true if atom is passes test of filter.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -201,6 +197,13 @@ implements <a href="../../../etomica/atom/AtomFilter.html" title="interface in e
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.function.Predicate">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.function.Predicate</h3>
+<code>and, isEqual, negate, or</code></li>
 </ul>
 </li>
 </ul>
@@ -277,31 +280,20 @@ implements <a href="../../../etomica/atom/AtomFilter.html" title="interface in e
 <pre>public&nbsp;void&nbsp;setThreshold(double&nbsp;threshold)</pre>
 </li>
 </ul>
-<a name="accept-etomica.atom.IAtom-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
-<div class="block">Returns true if atom is passes test of filter.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="accept-etomica.molecule.IMolecule-">
+<a name="test-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;mole)</pre>
+<h4>test</h4>
+<pre>public&nbsp;boolean&nbsp;test(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html#test-etomica.atom.IAtom-">AtomFilter</a></code></span></div>
+<div class="block">Returns true if atom is passes test of filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/AtomFilter.html#accept-etomica.molecule.IMolecule-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomFilter.html#test-etomica.atom.IAtom-">test</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/AtomFilter.html" title="interface in etomica.atom">AtomFilter</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>test</code>&nbsp;in interface&nbsp;<code>java.util.function.Predicate&lt;<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

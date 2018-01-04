@@ -139,19 +139,11 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.AgentIterator.html" title="class in etomica.atom">AtomLeafAgentManager.AgentIterator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#leafAgentIterator">leafAgentIterator</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#leafAgentManager">leafAgentManager</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.AgentIterator.html" title="class in etomica.molecule">MoleculeAgentManager.AgentIterator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#moleculeAgentIterator">moleculeAgentIterator</a></span></code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#moleculeAgentManager">moleculeAgentManager</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -208,7 +200,7 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></span>(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationTorqueSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></span>(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;?&gt;&nbsp;agentManager)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -242,34 +234,16 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>leafAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a> leafAgentManager</pre>
-</li>
-</ul>
-<a name="leafAgentIterator">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>leafAgentIterator</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.AgentIterator.html" title="class in etomica.atom">AtomLeafAgentManager.AgentIterator</a> leafAgentIterator</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;?&gt; leafAgentManager</pre>
 </li>
 </ul>
 <a name="moleculeAgentManager">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>moleculeAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> moleculeAgentManager</pre>
-</li>
-</ul>
-<a name="moleculeAgentIterator">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>moleculeAgentIterator</h4>
-<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.AgentIterator.html" title="class in etomica.molecule">MoleculeAgentManager.AgentIterator</a> moleculeAgentIterator</pre>
+<h4>moleculeAgentManager</h4>
+<pre>protected&nbsp;<a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;?&gt; moleculeAgentManager</pre>
 </li>
 </ul>
 </li>
@@ -303,7 +277,7 @@ implements <a href="../../etomica/potential/PotentialCalculationMolecular.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>setAgentManager</h4>
-<pre>public&nbsp;void&nbsp;setAgentManager(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&nbsp;agentManager)</pre>
+<pre>public&nbsp;void&nbsp;setAgentManager(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;?&gt;&nbsp;agentManager)</pre>
 </li>
 </ul>
 <a name="setMoleculeAgentManager-etomica.molecule.MoleculeAgentManager-">

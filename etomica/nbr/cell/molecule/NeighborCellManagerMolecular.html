@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -282,45 +282,39 @@ implements <a href="../../../../etomica/box/BoxCellManager.html" title="interfac
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></span>()</code>
-<div class="block">Returns the Class of the agent.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#getPotentialRange--">getPotentialRange</a></span>()</code>
 <div class="block">Returns the potential range.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Returns the cell containing the given atom.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#makeMCMoveListener--">makeMCMoveListener</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;cell,
             <a href="../../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>
 <div class="block">Removes the given atom from the cell.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setCellRange-int-">setCellRange</a></span>(int&nbsp;newCellRange)</code>
 <div class="block">Sets the cell range to the given value.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setDoApplyPBC-boolean-">setDoApplyPBC</a></span>(boolean&nbsp;newDoApplyPBC)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../etomica/nbr/cell/molecule/NeighborCellManagerMolecular.html#setPotentialRange-double-">setPotentialRange</a></span>(double&nbsp;newRange)</code>
 <div class="block">Sets the potential range to the given value.</div>
@@ -651,22 +645,6 @@ implements <a href="../../../../etomica/box/BoxCellManager.html" title="interfac
 <li class="blockList">
 <h4>makeMCMoveListener</h4>
 <pre>public&nbsp;<a href="../../../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>&nbsp;makeMCMoveListener()</pre>
-</li>
-</ul>
-<a name="getMoleculeAgentClass--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMoleculeAgentClass</h4>
-<pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of
- the appropriate Class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="makeAgent-etomica.molecule.IMolecule-">

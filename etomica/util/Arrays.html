@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,89 +129,18 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static java.lang.Object[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#addObject-java.lang.Object:A-java.lang.Object-">addObject</a></span>(java.lang.Object[]&nbsp;objects,
-         java.lang.Object&nbsp;newObject)</code>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#addObject-T:A-T-">addObject</a></span>(T[]&nbsp;objects,
+         T&nbsp;newObject)</code>
 <div class="block">Returns an array formed from adding the newObject to the elements
  in the given array.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static java.lang.Object[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#removeObject-java.lang.Object:A-java.lang.Object-">removeObject</a></span>(java.lang.Object[]&nbsp;array,
-            java.lang.Object&nbsp;object)</code>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#removeObject-T:A-T-">removeObject</a></span>(T[]&nbsp;array,
+            T&nbsp;object)</code>
 <div class="block">Returns an array formed by removing the given object from the given array.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static boolean[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#resizeArray-boolean:A-int-">resizeArray</a></span>(boolean[]&nbsp;oldArray,
-           int&nbsp;newSize)</code>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static double[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#resizeArray-double:A-int-">resizeArray</a></span>(double[]&nbsp;oldArray,
-           int&nbsp;newSize)</code>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#resizeArray-int:A-int-">resizeArray</a></span>(int[]&nbsp;oldArray,
-           int&nbsp;newSize)</code>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static long[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#resizeArray-long:A-int-">resizeArray</a></span>(long[]&nbsp;oldArray,
-           int&nbsp;newSize)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>static java.lang.Object[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#resizeArray-java.lang.Object:A-int-">resizeArray</a></span>(java.lang.Object[]&nbsp;oldArray,
-           int&nbsp;newSize)</code>
-<div class="block">Returns a new array holding the objects in the given array, but adjusted
- to the given size.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static java.util.LinkedList</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#toList-java.lang.Object:A-">toList</a></span>(java.lang.Object[]&nbsp;obj)</code>
-<div class="block">Creates a new LinkedList filled with the elements of the given array, in the same order.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#toString-boolean:A-">toString</a></span>(boolean[]&nbsp;array)</code>
-<div class="block">Converts the given array of booleans into a string with a comma-separated
- list of the booleans enclosed by braces.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#toString-double:A-">toString</a></span>(double[]&nbsp;array)</code>
-<div class="block">Converts the given array of doubles into a string with a comma-separated
- list of the doubles enclosed by braces.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#toString-float:A-">toString</a></span>(float[]&nbsp;array)</code>
-<div class="block">Converts the given array of floats into a string with a comma-separated
- list of the floats enclosed by braces.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/util/Arrays.html#toString-int:A-">toString</a></span>(int[]&nbsp;array)</code>
-<div class="block">Converts the given array of integers into a string with a comma-separated
- list of the integers enclosed by braces.</div>
 </td>
 </tr>
 </table>
@@ -236,118 +165,16 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="resizeArray-java.lang.Object:A-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>resizeArray</h4>
-<pre>public static&nbsp;java.lang.Object[]&nbsp;resizeArray(java.lang.Object[]&nbsp;oldArray,
-                                             int&nbsp;newSize)</pre>
-<div class="block">Returns a new array holding the objects in the given array, but adjusted
- to the given size.  If the new size is greater than the given array, all
- elements of the array are copied to the new array, starting from index 0
- (with unfilled elements of new array left as null);
- if the new size is smaller than the given array, elements of the old array
- (starting from 0) will be copied to fill the new array.  New array is
- of the same type as the old one (returned array must be cast before
- assigning to a field of the same type as the old array).</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>oldArray</code> - array with elements to be copied to the new array</dd>
-<dd><code>newSize</code> - size of the new array</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new array</dd>
-</dl>
-</li>
-</ul>
-<a name="resizeArray-double:A-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>resizeArray</h4>
-<pre>public static&nbsp;double[]&nbsp;resizeArray(double[]&nbsp;oldArray,
-                                   int&nbsp;newSize)</pre>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.  If the new size is greater than the given array, all
- elements of the array are copied to the new array, starting from index 0
- (with unfilled elements of new array left as zero);
- if the new size is smaller than the given array, elements of the old array
- (starting from 0) will be copied to fill the new array.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>oldArray</code> - array with elements to be copied to the new array</dd>
-<dd><code>newSize</code> - size of the new array</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new array</dd>
-</dl>
-</li>
-</ul>
-<a name="resizeArray-int:A-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>resizeArray</h4>
-<pre>public static&nbsp;int[]&nbsp;resizeArray(int[]&nbsp;oldArray,
-                                int&nbsp;newSize)</pre>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.  If the new size is greater than the given array, all
- elements of the array are copied to the new array, starting from index 0
- (with unfilled elements of new array left as zero);
- if the new size is smaller than the given array, elements of the old array
- (starting from 0) will be copied to fill the new array.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>oldArray</code> - array with elements to be copied to the new array</dd>
-<dd><code>newSize</code> - size of the new array</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new array</dd>
-</dl>
-</li>
-</ul>
-<a name="resizeArray-long:A-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>resizeArray</h4>
-<pre>public static&nbsp;long[]&nbsp;resizeArray(long[]&nbsp;oldArray,
-                                 int&nbsp;newSize)</pre>
-</li>
-</ul>
-<a name="resizeArray-boolean:A-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>resizeArray</h4>
-<pre>public static&nbsp;boolean[]&nbsp;resizeArray(boolean[]&nbsp;oldArray,
-                                    int&nbsp;newSize)</pre>
-<div class="block">Returns a new array holding the values in the given array, but adjusted
- to the given size.  If the new size is greater than the given array, all
- elements of the array are copied to the new array, starting from index 0
- (with unfilled elements of new array left as false);
- if the new size is smaller than the given array, elements of the old array
- (starting from 0) will be copied to fill the new array.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>oldArray</code> - array with elements to be copied to the new array</dd>
-<dd><code>newSize</code> - size of the new array</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new array</dd>
-</dl>
-</li>
-</ul>
 <a name="addObject-java.lang.Object:A-java.lang.Object-">
+<!--   -->
+</a><a name="addObject-T:A-T-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addObject</h4>
-<pre>public static&nbsp;java.lang.Object[]&nbsp;addObject(java.lang.Object[]&nbsp;objects,
-                                           java.lang.Object&nbsp;newObject)</pre>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;addObject(T[]&nbsp;objects,
+                                T&nbsp;newObject)</pre>
 <div class="block">Returns an array formed from adding the newObject to the elements
  in the given array.  New array is one element larger than given array,
  and is of same type as given array.  newObject is placed at the end of 
@@ -363,12 +190,14 @@ extends java.lang.Object</pre>
 </ul>
 <a name="removeObject-java.lang.Object:A-java.lang.Object-">
 <!--   -->
+</a><a name="removeObject-T:A-T-">
+<!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>removeObject</h4>
-<pre>public static&nbsp;java.lang.Object[]&nbsp;removeObject(java.lang.Object[]&nbsp;array,
-                                              java.lang.Object&nbsp;object)</pre>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;removeObject(T[]&nbsp;array,
+                                   T&nbsp;object)</pre>
 <div class="block">Returns an array formed by removing the given object from the given array.  
  New array is one element smaller than given array,
  and is of same type as given array.  Order of objects in the new
@@ -382,64 +211,6 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>new array with the object removed</dd>
 </dl>
-</li>
-</ul>
-<a name="toString-int:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;toString(int[]&nbsp;array)</pre>
-<div class="block">Converts the given array of integers into a string with a comma-separated
- list of the integers enclosed by braces.  Null argument or empty array
- are converted to the string "{}".</div>
-</li>
-</ul>
-<a name="toString-double:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;toString(double[]&nbsp;array)</pre>
-<div class="block">Converts the given array of doubles into a string with a comma-separated
- list of the doubles enclosed by braces.  Null argument or empty array
- are converted to the string "{}".</div>
-</li>
-</ul>
-<a name="toString-float:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;toString(float[]&nbsp;array)</pre>
-<div class="block">Converts the given array of floats into a string with a comma-separated
- list of the floats enclosed by braces.  Null argument or empty array
- are converted to the string "{}".</div>
-</li>
-</ul>
-<a name="toString-boolean:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;toString(boolean[]&nbsp;array)</pre>
-<div class="block">Converts the given array of booleans into a string with a comma-separated
- list of the booleans enclosed by braces.  Null argument or empty array
- are converted to the string "{}".</div>
-</li>
-</ul>
-<a name="toList-java.lang.Object:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>toList</h4>
-<pre>public static&nbsp;java.util.LinkedList&nbsp;toList(java.lang.Object[]&nbsp;obj)</pre>
-<div class="block">Creates a new LinkedList filled with the elements of the given array, in the same order.</div>
 </li>
 </ul>
 </li>

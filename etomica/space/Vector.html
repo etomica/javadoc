@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":18,"i30":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":17,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":17,"i21":17,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":18,"i33":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -130,37 +130,43 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#d-int-">d</a></span>(int&nbsp;dimension)</code>
+<div class="block">Creates a Vector of the given dimension.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#DE-etomica.space.Vector-">DE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Divide-equals (/=) operation.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#dot-etomica.space.Vector-">dot</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Returns the dot product of this vector with the given one.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#E-double-">E</a></span>(double&nbsp;a)</code>
 <div class="block">Sets all components of this vector equal to the given value.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#E-double:A-">E</a></span>(double[]&nbsp;a)</code>
 <div class="block">Sets the components of this vector equal to the corresponding elements of
  the given array.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#E-etomica.space.Vector-">E</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Sets the components of this vector equal to those of the given vector.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#Ea1Tv1-double-etomica.space.Vector-">Ea1Tv1</a></span>(double&nbsp;a,
       <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1)</code>
@@ -168,153 +174,165 @@ var activeTableTab = "activeTableTab";
  vector multiplied by the given constant.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#equals-etomica.space.Vector-">equals</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code>
 <div class="block">Returns true if all corresponding elements of this and the given vector
  are equal; returns false otherwise.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#Ev1Mv2-etomica.space.Vector-etomica.space.Vector-">Ev1Mv2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
       <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</code>
 <div class="block">Sets the components of this vector equal to (v1 - v2)</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#Ev1Pv2-etomica.space.Vector-etomica.space.Vector-">Ev1Pv2</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1,
       <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v2)</code>
 <div class="block">Sets the components of this vector equal to (v1 + v2)</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#getD--">getD</a></span>()</code>
 <div class="block">Dimension of the space occupied by the vector.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#getX-int-">getX</a></span>(int&nbsp;i)</code>
 <div class="block">Vector components corresponding to the given index.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#isNaN--">isNaN</a></span>()</code>
 <div class="block">Returns true if any element of the vector is not-a-number.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#isZero--">isZero</a></span>()</code>
 <div class="block">Returns true if all components of this vector are zero; false otherwise.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#map-etomica.math.function.IFunction-">map</a></span>(<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a>&nbsp;f)</code>
 <div class="block">Applies the given function to each element of the vector.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#ME-etomica.space.Vector-">ME</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Minus-equals (-=) operation.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#mod-etomica.space.Vector-">mod</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Replaces each component of this vector with its value modulo
  the corresponding component in u</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#Mv1Squared-etomica.space.Vector-">Mv1Squared</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1)</code>
 <div class="block">Returns square of vector resulting from subtracting given vector
  from this one.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#normalize--">normalize</a></span>()</code>
 <div class="block">Normalizes this vector, so this.squared() == 1.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#of-double...-">of</a></span>(double...&nbsp;components)</code>
+<div class="block">Returns a Vector initialized to the given set of values.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#of-int...-">of</a></span>(int...&nbsp;components)</code>
+<div class="block">Returns a Vector initialized to the given set of values (cast to double).</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PE-double-">PE</a></span>(double&nbsp;a)</code>
 <div class="block">Plus-equals (+=) operation, causing a constant value to be added to all
  components of this vector.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PE-etomica.space.Vector-">PE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Plus-equals (+=) operation.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PEa1Tv1-double-etomica.space.Vector-">PEa1Tv1</a></span>(double&nbsp;a,
        <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1)</code>
 <div class="block">Increments (+=) components by (a1 * v1)</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomCube-etomica.util.random.IRandom-">setRandomCube</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns each component to (its own) random value between -0.5 and + 0.5.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomInSphere-etomica.util.random.IRandom-">setRandomInSphere</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns this vector to equal a point chosen randomly in the volume
  of a unit sphere.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomSphere-etomica.util.random.IRandom-">setRandomSphere</a></span>(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code>
 <div class="block">Assigns this vector to equal a point chosen randomly on the
  surface of a unit sphere.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setX-int-double-">setX</a></span>(int&nbsp;i,
     double&nbsp;d)</code>
 <div class="block">Sets the i-th component of the vector to the given value d.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#squared--">squared</a></span>()</code>
 <div class="block">Returns the square magnitude of this vector, e.g., x^2 + y^2 for D = 2.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#TE-double-">TE</a></span>(double&nbsp;a)</code>
 <div class="block">Multiplies all components by a constant.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#TE-etomica.space.Vector-">TE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Times-equals (*=) operation.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>default double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#toArray--">toArray</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#XE-etomica.space.Vector-">XE</a></span>(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code>
 <div class="block">Sets this vector equal to the cross product of this vector with the
@@ -671,7 +689,7 @@ var activeTableTab = "activeTableTab";
 <a name="setRandomInSphere-etomica.util.random.IRandom-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setRandomInSphere</h4>
 <pre>void&nbsp;setRandomInSphere(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</pre>
@@ -680,6 +698,49 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>random</code> - the random number generator used to perform the operation</dd>
+</dl>
+</li>
+</ul>
+<a name="of-double...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre>static&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;of(double...&nbsp;components)</pre>
+<div class="block">Returns a Vector initialized to the given set of values.
+ Spatial dimension of the Vector is determined by the number of components.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if number of components is not greater than 0</dd>
+</dl>
+</li>
+</ul>
+<a name="of-int...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre>static&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;of(int...&nbsp;components)</pre>
+<div class="block">Returns a Vector initialized to the given set of values (cast to double).
+ Spatial dimension of the Vector is determined by the number of components.</div>
+</li>
+</ul>
+<a name="d-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>d</h4>
+<pre>static&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;d(int&nbsp;dimension)</pre>
+<div class="block">Creates a Vector of the given dimension. Uses specific vector types for dimensions 1, 2, and 3, and VectorND for
+ any higher dimension.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dimension</code> - greater than 0</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a Vector of the given dimension.</dd>
 </dl>
 </li>
 </ul>

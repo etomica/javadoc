@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -208,25 +208,19 @@ implements <a href="../../../etomica/nbr/NeighborCriterion.html" title="interfac
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#accept-etomica.atom.IAtomList-">accept</a></span>(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></span>()</code>
-<div class="block">Returns the Class of the agent.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code>
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#needUpdate-etomica.atom.IAtom-">needUpdate</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates whether the neighbor list for the given atom should
  be updated, according to this criterion.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>(java.lang.Object&nbsp;agent,
             <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>
@@ -234,7 +228,7 @@ implements <a href="../../../etomica/nbr/NeighborCriterion.html" title="interfac
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#reset-etomica.atom.IAtom-">reset</a></span>(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code>
 <div class="block">Indicates to criterion that given atom's neighbor list has just been 
@@ -242,18 +236,18 @@ implements <a href="../../../etomica/nbr/NeighborCriterion.html" title="interfac
  used by needUpdate and unsafe() methods should be reset.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#setBondedSurfaceAtoms-etomica.molecule.IMolecule-etomica.atom.IAtomList-">setBondedSurfaceAtoms</a></span>(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;polymerMolecule,
                      <a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;surfaceAtoms)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#setBox-etomica.box.Box-">setBox</a></span>(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code>
 <div class="block">Specifies the box where the criterion is being applied.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../etomica/modules/sam/CriterionTether3.html#unsafe--">unsafe</a></span>()</code>
 <div class="block">Indicates whether the atom has changed (e.g.</div>
@@ -479,22 +473,6 @@ implements <a href="../../../etomica/nbr/NeighborCriterion.html" title="interfac
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/nbr/NeighborCriterion.html#unsafe--">unsafe</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getMoleculeAgentClass--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMoleculeAgentClass</h4>
-<pre>public&nbsp;java.lang.Class&nbsp;getMoleculeAgentClass()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">MoleculeAgentManager.MoleculeAgentSource</a></code></span></div>
-<div class="block">Returns the Class of the agent.  This is used to create an array of
- the appropriate Class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#getMoleculeAgentClass--">getMoleculeAgentClass</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
 </li>
 </ul>

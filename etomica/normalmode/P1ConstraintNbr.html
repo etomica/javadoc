@@ -141,30 +141,26 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#boxIndex">boxIndex</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;int[][]&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#boxManager">boxManager</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#constraint">constraint</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#drj">drj</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#drk">drk</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#leafList">leafList</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int[][]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#neighborAtoms">neighborAtoms</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#neighborRadiusSq">neighborRadiusSq</a></span></code>&nbsp;</td>
 </tr>
@@ -183,14 +179,12 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#P1ConstraintNbr-etomica.space.Space-double-etomica.simulation.Simulation-">P1ConstraintNbr</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-               double&nbsp;neighborDistance,
-               <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#P1ConstraintNbr-etomica.space.Space-double-">P1ConstraintNbr</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+               double&nbsp;neighborDistance)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#P1ConstraintNbr-etomica.space.Space-double-etomica.simulation.Simulation-double-">P1ConstraintNbr</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/normalmode/P1ConstraintNbr.html#P1ConstraintNbr-etomica.space.Space-double-double-">P1ConstraintNbr</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                double&nbsp;neighborDistance,
-               <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                double&nbsp;constraint)</code>&nbsp;</td>
 </tr>
 </table>
@@ -287,15 +281,6 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="neighborAtoms">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>neighborAtoms</h4>
-<pre>protected&nbsp;int[][] neighborAtoms</pre>
-</li>
-</ul>
 <a name="drj">
 <!--   -->
 </a>
@@ -312,6 +297,15 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <li class="blockList">
 <h4>drk</h4>
 <pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> drk</pre>
+</li>
+</ul>
+<a name="neighborAtoms">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>neighborAtoms</h4>
+<pre>protected&nbsp;int[][] neighborAtoms</pre>
 </li>
 </ul>
 <a name="neighborRadiusSq">
@@ -341,15 +335,6 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <pre>protected&nbsp;<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a> leafList</pre>
 </li>
 </ul>
-<a name="boxManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>boxManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;int[][]&gt; boxManager</pre>
-</li>
-</ul>
 <a name="boxIndex">
 <!--   -->
 </a>
@@ -376,18 +361,17 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="P1ConstraintNbr-etomica.space.Space-double-etomica.simulation.Simulation-">
+<a name="P1ConstraintNbr-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>P1ConstraintNbr</h4>
 <pre>public&nbsp;P1ConstraintNbr(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                       double&nbsp;neighborDistance,
-                       <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
+                       double&nbsp;neighborDistance)</pre>
 </li>
 </ul>
-<a name="P1ConstraintNbr-etomica.space.Space-double-etomica.simulation.Simulation-double-">
+<a name="P1ConstraintNbr-etomica.space.Space-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -395,7 +379,6 @@ implements <a href="../../etomica/potential/IPotentialAtomic.html" title="interf
 <h4>P1ConstraintNbr</h4>
 <pre>public&nbsp;P1ConstraintNbr(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                        double&nbsp;neighborDistance,
-                       <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
                        double&nbsp;constraint)</pre>
 </li>
 </ul>
