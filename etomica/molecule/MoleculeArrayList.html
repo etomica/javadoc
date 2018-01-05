@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">MoleculeArrayList</span>
+<pre>public final class <span class="typeNameLabel">MoleculeArrayList</span>
 extends java.lang.Object
 implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a></pre>
 </li>
@@ -120,41 +120,6 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#DEFAULT_INIT_SIZE">DEFAULT_INIT_SIZE</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#itemsInList">itemsInList</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#molecules">molecules</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#SIZE_INCREASE_RATIO">SIZE_INCREASE_RATIO</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#trimThreshold">trimThreshold</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -189,11 +154,11 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#add-etomica.molecule.IMolecule-">add</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#add-etomica.molecule.IMolecule-">add</a></span>(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#addAll-etomica.molecule.IMoleculeList-">addAll</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../etomica/molecule/MoleculeArrayList.html#addAll-etomica.molecule.IMoleculeList-">addAll</a></span>(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;moleculeList)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -282,59 +247,6 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="trimThreshold">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>trimThreshold</h4>
-<pre>protected&nbsp;float trimThreshold</pre>
-</li>
-</ul>
-<a name="molecules">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>molecules</h4>
-<pre>protected&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>[] molecules</pre>
-</li>
-</ul>
-<a name="DEFAULT_INIT_SIZE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DEFAULT_INIT_SIZE</h4>
-<pre>protected static&nbsp;int DEFAULT_INIT_SIZE</pre>
-</li>
-</ul>
-<a name="SIZE_INCREASE_RATIO">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SIZE_INCREASE_RATIO</h4>
-<pre>protected static&nbsp;float SIZE_INCREASE_RATIO</pre>
-</li>
-</ul>
-<a name="itemsInList">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>itemsInList</h4>
-<pre>protected&nbsp;int itemsInList</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -491,7 +403,7 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
-<pre>public&nbsp;boolean&nbsp;add(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</pre>
+<pre>public&nbsp;boolean&nbsp;add(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;molecule)</pre>
 </li>
 </ul>
 <a name="addAll-etomica.molecule.IMoleculeList-">
@@ -500,7 +412,7 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre>public&nbsp;void&nbsp;addAll(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</pre>
+<pre>public&nbsp;void&nbsp;addAll(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;moleculeList)</pre>
 </li>
 </ul>
 <a name="remove-int-">
@@ -605,13 +517,13 @@ implements <a href="../../etomica/molecule/IMoleculeList.html" title="interface 
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
