@@ -192,12 +192,22 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.box.Box-etomica.space.Space-">BoxInflate</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
           <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
-<div class="block">Constructs action ready to be performed on the given box.</div>
+<div class="block">Constructs BoxInflate action with the given box, but no directive to
+ actually change the box size.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.box.Box-etomica.space.Space-double-">BoxInflate</a></span>(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+          <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+          double&nbsp;targetDensity)</code>
+<div class="block">Constructs BoxInflate action set to change the given box's density to
+ the given value.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../etomica/action/BoxInflate.html#BoxInflate-etomica.space.Space-">BoxInflate</a></span>(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code>
-<div class="block">Constructs action with a default scale of 1.0.</div>
+<div class="block">Constructs BoxInflate action without a box or directive to actually change
+ the box size.</div>
 </td>
 </tr>
 </table>
@@ -353,19 +363,39 @@ implements <a href="../../etomica/action/Undoable.html" title="interface in etom
 <li class="blockList">
 <h4>BoxInflate</h4>
 <pre>public&nbsp;BoxInflate(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
-<div class="block">Constructs action with a default scale of 1.0.  Requires call
- to setBox before action can have any effect.</div>
+<div class="block">Constructs BoxInflate action without a box or directive to actually change
+ the box size.</div>
 </li>
 </ul>
 <a name="BoxInflate-etomica.box.Box-etomica.space.Space-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BoxInflate</h4>
+<pre>public&nbsp;BoxInflate(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
+<div class="block">Constructs BoxInflate action with the given box, but no directive to
+ actually change the box size.</div>
+</li>
+</ul>
+<a name="BoxInflate-etomica.box.Box-etomica.space.Space-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxInflate</h4>
 <pre>public&nbsp;BoxInflate(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
-<div class="block">Constructs action ready to be performed on the given box.</div>
+                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                  double&nbsp;targetDensity)</pre>
+<div class="block">Constructs BoxInflate action set to change the given box's density to
+ the given value.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>box</code> - the box</dd>
+<dd><code>space</code> - the space</dd>
+<dd><code>targetDensity</code> - the target density</dd>
+</dl>
 </li>
 </ul>
 </li>
