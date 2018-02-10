@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,7 +147,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code>, <code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code>, <code><a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code>, <code><a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -157,7 +157,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <br>
 <pre>public class <span class="typeNameLabel">IntegratorVelocityVerletShake</span>
 extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>
-implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a>, <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</pre>
+implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a></pre>
 <div class="block">Integrator implementing SHAKE algorithm.</div>
 </li>
 </ul>
@@ -214,7 +214,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#agentManager">agentManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -364,31 +364,13 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
-         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
-<td class="colLast">
-<div class="block">Returns an agent for the given Atom.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#makeAgent-etomica.species.ISpecies-">makeAgent</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;a)</code></th>
 <td class="colLast">
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#releaseAgent-etomica.integrator.IntegratorVelocityVerlet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&nbsp;agent,
-            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
-            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
-<td class="colLast">
-<div class="block">This informs the agent source that the agent is going away and that
- the agent source should disconnect the agent from other elements.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;atom)</code></th>
@@ -397,36 +379,36 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#setBondConstraints-etomica.species.ISpecies-int:A:A-double:A-">setBondConstraints</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                   int[][]&nbsp;bondedAtoms,
                   double[]&nbsp;bondLengths)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#setForceSum-etomica.potential.PotentialCalculationForceSum-">setForceSum</a></span>&#8203;(<a href="../../etomica/potential/PotentialCalculationForceSum.html" title="class in etomica.potential">PotentialCalculationForceSum</a>&nbsp;pc)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#setMaxIterations-int-">setMaxIterations</a></span>&#8203;(int&nbsp;newMaxIterations)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorVelocityVerletShake.html#setShakeTolerance-double-">setShakeTolerance</a></span>&#8203;(double&nbsp;newShakeTol)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -507,7 +489,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>agentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt; agentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; agentManager</pre>
 </li>
 </ul>
 <a name="dr">
@@ -731,45 +713,6 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#reset--">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeAgent</h4>
-<pre>public final&nbsp;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&nbsp;makeAgent&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
-                                                        <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
-<div class="block">Returns an agent for the given Atom.
- The agentBox is provided for convenience for agent sources that
- handle multiple boxes.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code></dd>
-<dd><code>agentBox</code> - TODO</dd>
-</dl>
-</li>
-</ul>
-<a name="releaseAgent-etomica.integrator.IntegratorVelocityVerlet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>releaseAgent</h4>
-<pre>public&nbsp;void&nbsp;releaseAgent&#8203;(<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&nbsp;agent,
-                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
-                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
-<div class="block">This informs the agent source that the agent is going away and that
- the agent source should disconnect the agent from other elements.
- The agentBox is provided for convenience for agent sources that
- handle multiple boxes.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

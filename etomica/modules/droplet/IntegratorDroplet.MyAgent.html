@@ -26,12 +26,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -94,13 +88,13 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -131,22 +125,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a></code>, <code>java.io.Serializable</code></dd>
-</dl>
-<dl>
 <dt>Enclosing class:</dt>
 <dd><a href="../../../etomica/modules/droplet/IntegratorDroplet.html" title="class in etomica.modules.droplet">IntegratorDroplet</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public static final class <span class="typeNameLabel">IntegratorDroplet.MyAgent</span>
-extends java.lang.Object
-implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>, java.io.Serializable</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.modules.droplet.IntegratorDroplet.MyAgent">Serialized Form</a></dd>
-</dl>
+extends java.lang.Object</pre>
 </li>
 </ul>
 </div>
@@ -168,15 +153,10 @@ implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title=
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html#force">force</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html#r0">r0</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html#rp">rp</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -209,19 +189,6 @@ implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title=
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/droplet/IntegratorDroplet.MyAgent.html#force--">force</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -243,15 +210,6 @@ implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title=
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="force">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>force</h4>
-<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> force</pre>
-</li>
-</ul>
 <a name="r0">
 <!--   -->
 </a>
@@ -285,27 +243,6 @@ implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title=
 <li class="blockList">
 <h4>MyAgent</h4>
 <pre>public&nbsp;MyAgent&#8203;(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>Method Detail</h3>
-<a name="force--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>force</h4>
-<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;force&#8203;()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/integrator/Integrator.Forcible.html#force--">force</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a></code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -366,13 +303,13 @@ implements <a href="../../../etomica/integrator/Integrator.Forcible.html" title=
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

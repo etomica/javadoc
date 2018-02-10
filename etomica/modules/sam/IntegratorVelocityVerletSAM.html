@@ -91,7 +91,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.etomica.integrator.IntegratorVelocityVerlet">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.etomica.integrator.IntegratorMD">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -152,7 +152,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code>, <code><a href="../../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
+<dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code>, <code><a href="../../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -185,13 +185,6 @@ extends <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" titl
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;etomica.integrator.<a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></h3>
 <code><a href="../../../etomica/integrator/IntegratorMD.ThermostatType.html" title="enum in etomica.integrator">IntegratorMD.ThermostatType</a>, <a href="../../../etomica/integrator/IntegratorMD.VectorSource.html" title="class in etomica.integrator">IntegratorMD.VectorSource</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.etomica.integrator.IntegratorVelocityVerlet">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;etomica.integrator.<a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" title="class in etomica.integrator">IntegratorVelocityVerlet</a></h3>
-<code><a href="../../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a></code></li>
 </ul>
 </li>
 </ul>
@@ -320,7 +313,7 @@ extends <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" title="class in etomica.integrator">IntegratorVelocityVerlet</a></h3>
-<code><a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getAgentManager--">getAgentManager</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getForceSum--">getForceSum</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getPressureTensor--">getPressureTensor</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#releaseAgent-etomica.integrator.IntegratorVelocityVerlet.MyAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#reset--">reset</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#setForceSum-etomica.potential.PotentialCalculationForceSum-">setForceSum</a></code></li>
+<code><a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getAgentManager--">getAgentManager</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getForceSum--">getForceSum</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#getPressureTensor--">getPressureTensor</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#releaseAgent-etomica.space.Vector-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#reset--">reset</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html#setForceSum-etomica.potential.PotentialCalculationForceSum-">setForceSum</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -461,7 +454,7 @@ extends <a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" titl
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.etomica.integrator.IntegratorVelocityVerlet">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.etomica.integrator.IntegratorMD">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

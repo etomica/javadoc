@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,7 +160,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#atomAgentManager">atomAgentManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -270,38 +270,33 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#getAtomAgentManager--">getAtomAgentManager</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#getBox--">getBox</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#getData--">getData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#getDataInfo--">getDataInfo</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#getTag--">getTag</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>&#8203;(<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code></th>
 <td class="colLast">
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code></th>
@@ -310,7 +305,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterDipoleSumSquaredMappedAverage.html#setDipoleSource-etomica.molecule.DipoleSource-">setDipoleSource</a></span>&#8203;(<a href="../../../etomica/molecule/DipoleSource.html" title="interface in etomica.molecule">DipoleSource</a>&nbsp;newDipoleSource)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -451,7 +446,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <ul class="blockList">
 <li class="blockList">
 <h4>atomAgentManager</h4>
-<pre>protected&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a> atomAgentManager</pre>
+<pre>protected&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; atomAgentManager</pre>
 </li>
 </ul>
 <a name="pcForce">
@@ -572,7 +567,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <a name="releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
 <pre>public&nbsp;void&nbsp;releaseAgent&#8203;(java.lang.Object&nbsp;agent,
@@ -584,15 +579,6 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html#releaseAgent-E-etomica.molecule.IMolecule-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="getAtomAgentManager--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getAtomAgentManager</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/integrator/IntegratorVelocityVerlet.MyAgent.html" title="class in etomica.integrator">IntegratorVelocityVerlet.MyAgent</a>&gt;&nbsp;getAtomAgentManager&#8203;()</pre>
 </li>
 </ul>
 </li>

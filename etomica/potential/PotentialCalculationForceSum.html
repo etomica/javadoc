@@ -136,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../etomica/integrator/IntegratorGear4NPH.ForceSumNPH.html" title="class in etomica.integrator">IntegratorGear4NPH.ForceSumNPH</a></code>, <code><a href="../../etomica/potential/PotentialCalculationForcePressureSum.html" title="class in etomica.potential">PotentialCalculationForcePressureSum</a></code>, <code><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html" title="class in etomica.dimer">PotentialCalculationForcePressureSumGB</a></code>, <code><a href="../../etomica/threaded/PotentialCalculationForceSumThreaded.html" title="class in etomica.threaded">PotentialCalculationForceSumThreaded</a></code>, <code><a href="../../etomica/modules/sam/PotentialCalculationForceSumWall.html" title="class in etomica.modules.sam">PotentialCalculationForceSumWall</a></code>, <code><a href="../../etomica/modules/rosmosis/PotentialCalculationForceSumWallForce.html" title="class in etomica.modules.rosmosis">PotentialCalculationForceSumWallForce</a></code></dd>
+<dd><code><a href="../../etomica/integrator/IntegratorGear4NPH.ForceSumNPH.html" title="class in etomica.integrator">IntegratorGear4NPH.ForceSumNPH</a></code>, <code><a href="../../etomica/potential/PotentialCalculationForcePressureSum.html" title="class in etomica.potential">PotentialCalculationForcePressureSum</a></code>, <code><a href="../../etomica/dimer/PotentialCalculationForcePressureSumGB.html" title="class in etomica.dimer">PotentialCalculationForcePressureSumGB</a></code>, <code><a href="../../etomica/modules/sam/PotentialCalculationForceSumWall.html" title="class in etomica.modules.sam">PotentialCalculationForceSumWall</a></code>, <code><a href="../../etomica/modules/rosmosis/PotentialCalculationForceSumWallForce.html" title="class in etomica.modules.rosmosis">PotentialCalculationForceSumWallForce</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -165,7 +165,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;? extends <a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationForceSum.html#integratorAgentManager">integratorAgentManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -221,7 +221,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationForceSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></span>&#8203;(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;? extends <a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;&nbsp;agentManager)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialCalculationForceSum.html#setAgentManager-etomica.atom.AtomLeafAgentManager-">setAgentManager</a></span>&#8203;(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&nbsp;agentManager)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -252,7 +252,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>integratorAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;? extends <a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt; integratorAgentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; integratorAgentManager</pre>
 </li>
 </ul>
 </li>
@@ -286,7 +286,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>setAgentManager</h4>
-<pre>public&nbsp;void&nbsp;setAgentManager&#8203;(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;? extends <a href="../../etomica/integrator/Integrator.Forcible.html" title="interface in etomica.integrator">Integrator.Forcible</a>&gt;&nbsp;agentManager)</pre>
+<pre>public&nbsp;void&nbsp;setAgentManager&#8203;(<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&nbsp;agentManager)</pre>
 </li>
 </ul>
 <a name="reset--">
