@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,10 +143,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <br>
 <pre>public class <span class="typeNameLabel">MeterKineticEnergy</span>
 extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></pre>
-<div class="block">Meter for the total kinetic energy in a box
- Computes total KE by summing values of KE returned by every atom in the box.
- A different box-dependent atom integrator may be set to permit calculation
- over a particular set of atoms in the box.</div>
+<div class="block">Meter for the total kinetic energy in a box Computes total KE by summing values of KE returned by every atom in the
+ box. A different box-dependent atom integrator may be set to permit calculation over a particular set of atoms in the
+ box.</div>
 </li>
 </ul>
 </div>
@@ -181,7 +180,12 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#MeterKineticEnergy--">MeterKineticEnergy</a></span>&#8203;()</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#MeterKineticEnergy-etomica.box.Box-">MeterKineticEnergy</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#MeterKineticEnergy-etomica.box.Box-etomica.atom.iterator.AtomIteratorBoxDependent-">MeterKineticEnergy</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                  <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iterator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -209,29 +213,14 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#getDataAsScalar--">getDataAsScalar</a></span>&#8203;()</code></th>
 <td class="colLast">
-<div class="block">Returns the total kinetic energy summed over all atoms produced by
- the iterator when applied to the given box.</div>
+<div class="block">Returns the total kinetic energy summed over all atoms produced by the iterator when applied to the given box.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#getIterator--">getIterator</a></span>&#8203;()</code></th>
 <td class="colLast">
-<div class="block">Returns the iterator that defines the atoms summed for their
- kinetic energy.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterKineticEnergy.html#setIterator-etomica.atom.iterator.AtomIteratorBoxDependent-">setIterator</a></span>&#8203;(<a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iterator)</code></th>
-<td class="colLast">
-<div class="block">Sets the iterator that defines the atoms which are summed for
- their total kinetic energy.</div>
+<div class="block">Returns the iterator that defines the atoms summed for their kinetic energy.</div>
 </td>
 </tr>
 </table>
@@ -263,13 +252,23 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterKineticEnergy--">
+<a name="MeterKineticEnergy-etomica.box.Box-etomica.atom.iterator.AtomIteratorBoxDependent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MeterKineticEnergy</h4>
+<pre>public&nbsp;MeterKineticEnergy&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                          <a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iterator)</pre>
+</li>
+</ul>
+<a name="MeterKineticEnergy-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterKineticEnergy</h4>
-<pre>public&nbsp;MeterKineticEnergy&#8203;()</pre>
+<pre>public&nbsp;MeterKineticEnergy&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -287,24 +286,7 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <li class="blockList">
 <h4>getIterator</h4>
 <pre>public&nbsp;<a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;getIterator&#8203;()</pre>
-<div class="block">Returns the iterator that defines the atoms summed for their
- kinetic energy.</div>
-</li>
-</ul>
-<a name="setIterator-etomica.atom.iterator.AtomIteratorBoxDependent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setIterator</h4>
-<pre>public&nbsp;void&nbsp;setIterator&#8203;(<a href="../../../etomica/atom/iterator/AtomIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomIteratorBoxDependent</a>&nbsp;iterator)</pre>
-<div class="block">Sets the iterator that defines the atoms which are summed for
- their total kinetic energy.  Default is a leaf-atom iterator,
- giving all leaf atoms in the box.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>iterator</code> - </dd>
-</dl>
+<div class="block">Returns the iterator that defines the atoms summed for their kinetic energy.</div>
 </li>
 </ul>
 <a name="getDataAsScalar--">
@@ -314,9 +296,8 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <li class="blockList">
 <h4>getDataAsScalar</h4>
 <pre>public&nbsp;double&nbsp;getDataAsScalar&#8203;()</pre>
-<div class="block">Returns the total kinetic energy summed over all atoms produced by
- the iterator when applied to the given box.  Does not include contributions
- from atoms having infinite mass (it assumes they are stationary).</div>
+<div class="block">Returns the total kinetic energy summed over all atoms produced by the iterator when applied to the given box.
+ Does not include contributions from atoms having infinite mass (it assumes they are stationary).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/data/DataSourceScalar.html#getDataAsScalar--">getDataAsScalar</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></code></dd>
@@ -326,26 +307,13 @@ extends <a href="../../../etomica/data/DataSourceScalar.html" title="class in et
 <a name="getBox--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>getBox</h4>
 <pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox&#8203;()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the box.</dd>
-</dl>
-</li>
-</ul>
-<a name="setBox-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>box</code> - The box to set.</dd>
 </dl>
 </li>
 </ul>

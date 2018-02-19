@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,7 +224,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></h3>
-<code><a href="../../etomica/integrator/IntegratorBox.html#box">box</a>, <a href="../../etomica/integrator/IntegratorBox.html#currentPotentialEnergy">currentPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#isothermal">isothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#meterPE">meterPE</a>, <a href="../../etomica/integrator/IntegratorBox.html#potentialMaster">potentialMaster</a>, <a href="../../etomica/integrator/IntegratorBox.html#temperature">temperature</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorBox.html#box">box</a>, <a href="../../etomica/integrator/IntegratorBox.html#currentPotentialEnergy">currentPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#isothermal">isothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#meterPE">meterPE</a>, <a href="../../etomica/integrator/IntegratorBox.html#potentialMaster">potentialMaster</a>, <a href="../../etomica/integrator/IntegratorBox.html#space">space</a>, <a href="../../etomica/integrator/IntegratorBox.html#temperature">temperature</a></code></li>
 </ul>
 </li>
 </ul>
@@ -241,14 +241,16 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">IntegratorMC</a></span>&#8203;(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-etomica.box.Box-">IntegratorMC</a></span>&#8203;(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
             <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-            double&nbsp;temperature)</code></th>
+            double&nbsp;temperature,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-">IntegratorMC</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-            <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.box.Box-">IntegratorMC</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+            <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -302,11 +304,6 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorMC.html#setMoveManager-etomica.integrator.mcmove.MCMoveManager-">setMoveManager</a></span>&#8203;(<a href="../../etomica/integrator/mcmove/MCMoveManager.html" title="class in etomica.integrator.mcmove">MCMoveManager</a>&nbsp;newMoveManager)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -323,7 +320,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></h3>
-<code><a href="../../etomica/integrator/IntegratorBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/IntegratorBox.html#getMeterPotentialEnergy--">getMeterPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#getPotentialEnergy--">getPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#getPotentialMaster--">getPotentialMaster</a>, <a href="../../etomica/integrator/IntegratorBox.html#getTemperature--">getTemperature</a>, <a href="../../etomica/integrator/IntegratorBox.html#getTemperatureDimension--">getTemperatureDimension</a>, <a href="../../etomica/integrator/IntegratorBox.html#isIsothermal--">isIsothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#setMeterPotentialEnergy-etomica.data.DataSourceScalar-">setMeterPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#setTemperature-double-">setTemperature</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorBox.html#getBox--">getBox</a>, <a href="../../etomica/integrator/IntegratorBox.html#getMeterPotentialEnergy--">getMeterPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#getPotentialEnergy--">getPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#getPotentialMaster--">getPotentialMaster</a>, <a href="../../etomica/integrator/IntegratorBox.html#getTemperature--">getTemperature</a>, <a href="../../etomica/integrator/IntegratorBox.html#getTemperatureDimension--">getTemperatureDimension</a>, <a href="../../etomica/integrator/IntegratorBox.html#isIsothermal--">isIsothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a>, <a href="../../etomica/integrator/IntegratorBox.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorBox.html#setMeterPotentialEnergy-etomica.data.DataSourceScalar-">setMeterPotentialEnergy</a>, <a href="../../etomica/integrator/IntegratorBox.html#setTemperature-double-">setTemperature</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -390,14 +387,15 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-">
+<a name="IntegratorMC-etomica.simulation.Simulation-etomica.potential.PotentialMaster-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>IntegratorMC</h4>
 <pre>public&nbsp;IntegratorMC&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                    <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster)</pre>
+                    <a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
+                    <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sim</code> - Simulation where this integrator is used</dd>
@@ -405,7 +403,7 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 </dl>
 </li>
 </ul>
-<a name="IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-">
+<a name="IntegratorMC-etomica.potential.PotentialMaster-etomica.util.random.IRandom-double-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -413,7 +411,8 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <h4>IntegratorMC</h4>
 <pre>public&nbsp;IntegratorMC&#8203;(<a href="../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                     <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-                    double&nbsp;temperature)</pre>
+                    double&nbsp;temperature,
+                    <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>potentialMaster</code> - PotentialMaster instance used by moves to calculate the energy</dd>
@@ -453,21 +452,6 @@ extends <a href="../../etomica/integrator/IntegratorBox.html" title="class in et
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newMoveManager</code> - The moveManager to set.</dd>
-</dl>
-</li>
-</ul>
-<a name="setBox-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorBox.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>box</code> - the Box to set</dd>
 </dl>
 </li>
 </ul>
