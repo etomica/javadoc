@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -306,34 +306,48 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#makeBox--">makeBox</a></span>&#8203;()</code></th>
+<td class="colLast">
+<div class="block">Creates a new Box with the default Boundary and adds it to the Simulation.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#makeBox-etomica.space.Boundary-">makeBox</a></span>&#8203;(<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a>&nbsp;boundary)</code></th>
+<td class="colLast">
+<div class="block">Creates a new Box and adds it to the Simulation.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a></span>&#8203;(java.lang.String&nbsp;symbolBase)</code></th>
 <td class="colLast">
 <div class="block">Method to allow generation of unique string to identify Elements in the Simulation.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;oldBox)</code></th>
 <td class="colLast">
 <div class="block">Removes a Box to the simulation.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#removeSpecies-etomica.species.ISpecies-">removeSpecies</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;removedSpecies)</code></th>
 <td class="colLast">
 <div class="block">Removes the given ISpecies from the Simulation.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;newRandom)</code></th>
 <td class="colLast">
 <div class="block">Set the simulation's random number generator to the given one.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/Simulation.html#species--">species</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -488,6 +502,36 @@ extends java.lang.Object</pre>
 <dd><code>newBox</code> - the Box being added.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if newBox was already added to the simulation.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeBox--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeBox</h4>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;makeBox&#8203;()</pre>
+<div class="block">Creates a new Box with the default Boundary and adds it to the Simulation.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new Box.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeBox-etomica.space.Boundary-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeBox</h4>
+<pre>public&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;makeBox&#8203;(<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a>&nbsp;boundary)</pre>
+<div class="block">Creates a new Box and adds it to the Simulation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>boundary</code> - the boundary to use when constructing the Box.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new Box.</dd>
 </dl>
 </li>
 </ul>
