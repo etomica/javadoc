@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code>, <code><a href="../../../etomica/data/meter/DataSourceCollisional.html" title="interface in etomica.data.meter">DataSourceCollisional</a></code>, <code><a href="../../../etomica/integrator/IntegratorHard.CollisionListener.html" title="interface in etomica.integrator">IntegratorHard.CollisionListener</a></code></dd>
+<dd><code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code>, <code><a href="../../../etomica/integrator/IntegratorHard.CollisionListener.html" title="interface in etomica.integrator">IntegratorHard.CollisionListener</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -173,7 +173,7 @@ extends <a href="../../../etomica/data/meter/MeterPressureHard.html" title="clas
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.data.meter.<a href="../../../etomica/data/meter/MeterPressureHard.html" title="class in etomica.data.meter">MeterPressureHard</a></h3>
-<code><a href="../../../etomica/data/meter/MeterPressureHard.html#integratorHard">integratorHard</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#lastTime">lastTime</a></code></li>
+<code><a href="../../../etomica/data/meter/MeterPressureHard.html#dim">dim</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#integratorHard">integratorHard</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#lastTime">lastTime</a></code></li>
 </ul>
 </li>
 </ul>
@@ -190,8 +190,8 @@ extends <a href="../../../etomica/data/meter/MeterPressureHard.html" title="clas
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/osmosis/MeterOsmoticPressure.html#MeterOsmoticPressure-etomica.space.Space-etomica.potential.P1HardBoundary:A-">MeterOsmoticPressure</a></span>&#8203;(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                    <a href="../../../etomica/potential/P1HardBoundary.html" title="class in etomica.potential">P1HardBoundary</a>[]&nbsp;boundaryPotentials)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/osmosis/MeterOsmoticPressure.html#MeterOsmoticPressure-etomica.potential.P1HardBoundary:A-etomica.integrator.IntegratorHard-">MeterOsmoticPressure</a></span>&#8203;(<a href="../../../etomica/potential/P1HardBoundary.html" title="class in etomica.potential">P1HardBoundary</a>[]&nbsp;boundaryPotentials,
+                    <a href="../../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -255,7 +255,7 @@ extends <a href="../../../etomica/data/meter/MeterPressureHard.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.meter.<a href="../../../etomica/data/meter/MeterPressureHard.html" title="class in etomica.data.meter">MeterPressureHard</a></h3>
-<code><a href="../../../etomica/data/meter/MeterPressureHard.html#collisionValue-etomica.integrator.IntegratorHard.Agent-">collisionValue</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#reset--">reset</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#setIntegrator-etomica.integrator.IntegratorHard-">setIntegrator</a></code></li>
+<code><a href="../../../etomica/data/meter/MeterPressureHard.html#collisionValue-etomica.integrator.IntegratorHard.Agent-">collisionValue</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/data/meter/MeterPressureHard.html#reset--">reset</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -278,14 +278,14 @@ extends <a href="../../../etomica/data/meter/MeterPressureHard.html" title="clas
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MeterOsmoticPressure-etomica.space.Space-etomica.potential.P1HardBoundary:A-">
+<a name="MeterOsmoticPressure-etomica.potential.P1HardBoundary:A-etomica.integrator.IntegratorHard-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MeterOsmoticPressure</h4>
-<pre>public&nbsp;MeterOsmoticPressure&#8203;(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                            <a href="../../../etomica/potential/P1HardBoundary.html" title="class in etomica.potential">P1HardBoundary</a>[]&nbsp;boundaryPotentials)</pre>
+<pre>public&nbsp;MeterOsmoticPressure&#8203;(<a href="../../../etomica/potential/P1HardBoundary.html" title="class in etomica.potential">P1HardBoundary</a>[]&nbsp;boundaryPotentials,
+                            <a href="../../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</pre>
 </li>
 </ul>
 </li>
