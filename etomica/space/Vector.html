@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":17,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":17,"i21":17,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":18,"i33":6};
+var methods = {"i0":6,"i1":17,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":17,"i22":17,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":18,"i34":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -292,26 +292,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#nearestImage-etomica.space.Vector-">nearestImage</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dimensions)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#normalize--">normalize</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Normalizes this vector, so this.squared() == 1.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#of-double...-">of</a></span>&#8203;(double...&nbsp;components)</code></th>
 <td class="colLast">
 <div class="block">Returns a Vector initialized to the given set of values.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#of-int...-">of</a></span>&#8203;(int...&nbsp;components)</code></th>
 <td class="colLast">
 <div class="block">Returns a Vector initialized to the given set of values (cast to double).</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PE-double-">PE</a></span>&#8203;(double&nbsp;a)</code></th>
 <td class="colLast">
@@ -319,14 +324,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  components of this vector.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PE-etomica.space.Vector-">PE</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code></th>
 <td class="colLast">
 <div class="block">Plus-equals (+=) operation.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#PEa1Tv1-double-etomica.space.Vector-">PEa1Tv1</a></span>&#8203;(double&nbsp;a,
        <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v1)</code></th>
@@ -334,14 +339,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Increments (+=) components by (a1 * v1)</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomCube-etomica.util.random.IRandom-">setRandomCube</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code></th>
 <td class="colLast">
 <div class="block">Assigns each component to (its own) random value between -0.5 and + 0.5.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomInSphere-etomica.util.random.IRandom-">setRandomInSphere</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code></th>
 <td class="colLast">
@@ -349,7 +354,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  of a unit sphere.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setRandomSphere-etomica.util.random.IRandom-">setRandomSphere</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random)</code></th>
 <td class="colLast">
@@ -357,7 +362,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  surface of a unit sphere.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#setX-int-double-">setX</a></span>&#8203;(int&nbsp;i,
     double&nbsp;d)</code></th>
@@ -365,33 +370,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the i-th component of the vector to the given value d.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#squared--">squared</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the square magnitude of this vector, e.g., x^2 + y^2 for D = 2.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#TE-double-">TE</a></span>&#8203;(double&nbsp;a)</code></th>
 <td class="colLast">
 <div class="block">Multiplies all components by a constant.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#TE-etomica.space.Vector-">TE</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code></th>
 <td class="colLast">
 <div class="block">Times-equals (*=) operation.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>default double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#toArray--">toArray</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Vector.html#XE-etomica.space.Vector-">XE</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;u)</code></th>
 <td class="colLast">
@@ -759,6 +764,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>random</code> - the random number generator used to perform the operation</dd>
 </dl>
+</li>
+</ul>
+<a name="nearestImage-etomica.space.Vector-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nearestImage</h4>
+<pre>void&nbsp;nearestImage&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dimensions)</pre>
 </li>
 </ul>
 <a name="of-double...-">

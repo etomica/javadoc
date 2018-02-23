@@ -170,11 +170,6 @@ extends <a href="../../etomica/space/BoundaryRectangular.html" title="class in e
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangularPeriodic.html#dimensionsHalf">dimensionsHalf</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryRectangularPeriodic.html#tempImage">tempImage</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -315,15 +310,6 @@ extends <a href="../../etomica/space/BoundaryRectangular.html" title="class in e
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="dimensionsHalf">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>dimensionsHalf</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dimensionsHalf</pre>
-</li>
-</ul>
 <a name="tempImage">
 <!--   -->
 </a>
@@ -394,25 +380,16 @@ extends <a href="../../etomica/space/BoundaryRectangular.html" title="class in e
 </dl>
 </li>
 </ul>
-<a name="nearestImage-etomica.space.Vector-">
+<a name="getIndexIterator--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>nearestImage</h4>
-<pre>public&nbsp;void&nbsp;nearestImage&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dr)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">Boundary</a></code></span></div>
-<div class="block">The nearest image is the pair of atom images that are closest when all
- periodic-boundary images are considered.
- <p>
- If the vector passed to this method is the displacement vector between
- two points, the vector will be transformed such that it corresponds to
- the vector between the nearest image of those two points.</div>
+<h4>getIndexIterator</h4>
+<pre>public&nbsp;<a href="../../etomica/lattice/IndexIteratorSizable.html" title="interface in etomica.lattice">IndexIteratorSizable</a>&nbsp;getIndexIterator&#8203;()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">nearestImage</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dr</code> - the vector to be transformed</dd>
+<dd><code><a href="../../etomica/space/Boundary.html#getIndexIterator--">getIndexIterator</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -440,16 +417,25 @@ extends <a href="../../etomica/space/BoundaryRectangular.html" title="class in e
 </dl>
 </li>
 </ul>
-<a name="getIndexIterator--">
+<a name="nearestImage-etomica.space.Vector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIndexIterator</h4>
-<pre>public&nbsp;<a href="../../etomica/lattice/IndexIteratorSizable.html" title="interface in etomica.lattice">IndexIteratorSizable</a>&nbsp;getIndexIterator&#8203;()</pre>
+<h4>nearestImage</h4>
+<pre>public&nbsp;void&nbsp;nearestImage&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dr)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">Boundary</a></code></span></div>
+<div class="block">The nearest image is the pair of atom images that are closest when all
+ periodic-boundary images are considered.
+ <p>
+ If the vector passed to this method is the displacement vector between
+ two points, the vector will be transformed such that it corresponds to
+ the vector between the nearest image of those two points.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/space/Boundary.html#getIndexIterator--">getIndexIterator</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
+<dd><code><a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">nearestImage</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dr</code> - the vector to be transformed</dd>
 </dl>
 </li>
 </ul>
