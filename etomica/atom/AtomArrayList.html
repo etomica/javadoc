@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -92,7 +92,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.java.util.AbstractList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -123,7 +123,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li>java.util.AbstractCollection&lt;E&gt;</li>
+<li>
+<ul class="inheritance">
+<li>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</li>
+<li>
+<ul class="inheritance">
 <li>etomica.atom.AtomArrayList</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -132,19 +142,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code>, <code>java.lang.Iterable&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code>, <code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code>, <code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code>, <code>java.util.RandomAccess</code></dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">AtomArrayList</span>
-extends java.lang.Object
-implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></pre>
+extends java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;
+implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>, java.util.RandomAccess</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.java.util.AbstractList">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;java.util.AbstractList</h3>
+<code>modCount</code></li>
+</ul>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -163,6 +188,10 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#AtomArrayList-int-">AtomArrayList</a></span>&#8203;(int&nbsp;initialSize)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#AtomArrayList-etomica.atom.IAtomList-">AtomArrayList</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -210,42 +239,37 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#getAtom-int-">getAtom</a></span>&#8203;(int&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#get-int-">get</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#getAtomCount--">getAtomCount</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#getSizeIncreaseRatio--">getSizeIncreaseRatio</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#getTrimThreshold--">getTrimThreshold</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#indexOf-etomica.atom.IAtom-">indexOf</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;elem)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#isEmpty--">isEmpty</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#maybeTrimToSize--">maybeTrimToSize</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#remove-int-">remove</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">
@@ -253,7 +277,7 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
  back (maintaining the order).</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#removeAndReplace-int-">removeAndReplace</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">
@@ -261,15 +285,20 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
  last atom.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#set-int-etomica.atom.IAtom-">set</a></span>&#8203;(int&nbsp;index,
    <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;element)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#setTrimThreshold-float-">setTrimThreshold</a></span>&#8203;(float&nbsp;newTrimThreshold)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#size--">size</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
@@ -278,7 +307,7 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]</code></td>
+<td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/atom/AtomArrayList.html#toArray--">toArray</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -299,6 +328,27 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.AbstractCollection">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.util.AbstractCollection</h3>
+<code>addAll, contains, containsAll, remove, removeAll, retainAll, toArray</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.AbstractList">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.util.AbstractList</h3>
+<code>add, addAll, equals, hashCode, indexOf, iterator, lastIndexOf, listIterator, listIterator, removeRange, subList</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.Collection">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.Collection</h3>
+<code>parallelStream, removeIf, stream</code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.atom.IAtomList">
 <!--   -->
 </a>
@@ -306,11 +356,25 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <code><a href="../../etomica/atom/IAtomList.html#getAtoms--">getAtoms</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<code>forEach</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.List">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.List</h3>
+<code>add, addAll, addAll, contains, containsAll, equals, hashCode, indexOf, iterator, lastIndexOf, listIterator, listIterator, of, of, of, of, of, of, of, of, of, of, of, of, remove, removeAll, replaceAll, retainAll, sort, spliterator, subList, toArray</code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -338,10 +402,19 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <a name="AtomArrayList-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>AtomArrayList</h4>
 <pre>public&nbsp;AtomArrayList&#8203;(int&nbsp;initialSize)</pre>
+</li>
+</ul>
+<a name="AtomArrayList-etomica.atom.IAtomList-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AtomArrayList</h4>
+<pre>public&nbsp;AtomArrayList&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;list)</pre>
 </li>
 </ul>
 </li>
@@ -413,6 +486,14 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <li class="blockList">
 <h4>isEmpty</h4>
 <pre>public&nbsp;boolean&nbsp;isEmpty&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>isEmpty</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>isEmpty</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>isEmpty</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="toArray--">
@@ -421,7 +502,15 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>toArray</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&nbsp;toArray&#8203;()</pre>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>[]&nbsp;toArray&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>toArray</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>toArray</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toArray</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="clear--">
@@ -431,6 +520,14 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <li class="blockList">
 <h4>clear</h4>
 <pre>public&nbsp;void&nbsp;clear&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>clear</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>clear</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>clear</code>&nbsp;in class&nbsp;<code>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="sizeOfArray--">
@@ -478,6 +575,12 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <h4>set</h4>
 <pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;set&#8203;(int&nbsp;index,
                  <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;element)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>set</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>set</code>&nbsp;in class&nbsp;<code>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="add-etomica.atom.IAtom-">
@@ -487,6 +590,14 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <li class="blockList">
 <h4>add</h4>
 <pre>public&nbsp;boolean&nbsp;add&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>add</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>add</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>add</code>&nbsp;in class&nbsp;<code>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="addAll-etomica.atom.IAtomList-">
@@ -507,6 +618,12 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;remove&#8203;(int&nbsp;index)</pre>
 <div class="block">This removes the atom at the given index and shifts the remaining atoms
  back (maintaining the order).</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>remove</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>remove</code>&nbsp;in class&nbsp;<code>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="removeAndReplace-int-">
@@ -520,33 +637,43 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
  last atom.  This is faster than the remove() method.</div>
 </li>
 </ul>
-<a name="getAtomCount--">
+<a name="size--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAtomCount</h4>
-<pre>public&nbsp;int&nbsp;getAtomCount&#8203;()</pre>
+<h4>size</h4>
+<pre>public&nbsp;int&nbsp;size&#8203;()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/IAtomList.html#getAtomCount--">getAtomCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
+<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/atom/IAtomList.html#size--">size</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>size</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of atoms in the list</dd>
 </dl>
 </li>
 </ul>
-<a name="getAtom-int-">
+<a name="get-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAtom</h4>
-<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;getAtom&#8203;(int&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/IAtomList.html#getAtom-int-">IAtomList</a></code></span></div>
+<h4>get</h4>
+<pre>public&nbsp;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;get&#8203;(int&nbsp;index)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/IAtomList.html#get-int-">IAtomList</a></code></span></div>
 <div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/atom/IAtomList.html#getAtom-int-">getAtom</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
+<dd><code><a href="../../etomica/atom/IAtomList.html#get-int-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>get</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>get</code>&nbsp;in class&nbsp;<code>java.util.AbstractList&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - the index of the desired atom in the list
           if i is greater than count-1, throws an IllegalArgumentException.</dd>
@@ -564,7 +691,7 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <pre>public&nbsp;java.lang.String&nbsp;toString&#8203;()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -624,7 +751,7 @@ implements <a href="../../etomica/atom/IAtomList.html" title="interface in etomi
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.java.util.AbstractList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

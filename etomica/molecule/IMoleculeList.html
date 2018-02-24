@@ -123,14 +123,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd><code>java.util.Collection&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code>, <code>java.lang.Iterable&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code>, <code>java.util.List&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code></dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a></code>, <code><a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code>, <code><a href="../../etomica/molecule/MoleculeListWrapper.html" title="class in etomica.molecule">MoleculeListWrapper</a></code>, <code><a href="../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a></code>, <code><a href="../../etomica/molecule/MoleculesetArray.html" title="class in etomica.molecule">MoleculesetArray</a></code>, <code><a href="../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a></code></dd>
+<dd><code><a href="../../etomica/box/AtomSetAllMolecules.html" title="class in etomica.box">AtomSetAllMolecules</a></code>, <code><a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code>, <code><a href="../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a></code>, <code><a href="../../etomica/molecule/MoleculeSetSinglet.html" title="class in etomica.molecule">MoleculeSetSinglet</a></code></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">IMoleculeList</span></pre>
-<div class="block">Interface for a set of IAtoms.  The IAtomSet might contain 0, 1, 2 or many
- IAtoms.</div>
+<pre>public interface <span class="typeNameLabel">IMoleculeList</span>
+extends java.util.List&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</pre>
+<div class="block">Interface for a set of IMolecules.  The IMoleculeList might contain 0, 1, 2 or many
+ IMolecules.</div>
 </li>
 </ul>
 </div>
@@ -152,17 +157,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/molecule/IMoleculeList.html#getMolecule-int-">getMolecule</a></span>&#8203;(int&nbsp;i)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/molecule/IMoleculeList.html#get-int-">get</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">
-<div class="block">Returns the i-th atom, with numbering beginning from 0.</div>
+<div class="block">Returns the i-th molecule, with numbering beginning from 0.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/molecule/IMoleculeList.html#getMoleculeCount--">getMoleculeCount</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/molecule/IMoleculeList.html#size--">size</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.Collection">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.Collection</h3>
+<code>parallelStream, removeIf, stream</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<code>forEach</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.util.List">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.List</h3>
+<code>add, add, addAll, addAll, clear, contains, containsAll, equals, hashCode, indexOf, isEmpty, iterator, lastIndexOf, listIterator, listIterator, of, of, of, of, of, of, of, of, of, of, of, of, remove, remove, removeAll, replaceAll, retainAll, set, sort, spliterator, subList, toArray, toArray</code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -177,27 +203,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getMolecule-int-">
+<a name="get-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getMolecule</h4>
-<pre><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;getMolecule&#8203;(int&nbsp;i)</pre>
-<div class="block">Returns the i-th atom, with numbering beginning from 0. 
+<h4>get</h4>
+<pre><a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;get&#8203;(int&nbsp;i)</pre>
+<div class="block">Returns the i-th molecule, with numbering beginning from 0.
  If i is greater than count-1, throws an IllegalArgumentException.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>get</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="getMoleculeCount--">
+<a name="size--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getMoleculeCount</h4>
-<pre>int&nbsp;getMoleculeCount&#8203;()</pre>
+<h4>size</h4>
+<pre>int&nbsp;size&#8203;()</pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.List&lt;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of atoms in the set</dd>
+<dd>the number of molecules in the list</dd>
 </dl>
 </li>
 </ul>
