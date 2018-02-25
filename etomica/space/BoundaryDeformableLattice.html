@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -88,13 +94,13 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.etomica.space.BoundaryDeformablePeriodic">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.etomica.space.BoundaryDeformablePeriodic">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -205,6 +211,20 @@ extends <a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="cla
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformableLattice.html#updateSize-etomica.lattice.crystal.Primitive-int:A-">updateSize</a></span>&#8203;(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
+          int[]&nbsp;nCells)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.space.Boundary">
 <!--   -->
@@ -217,7 +237,7 @@ extends <a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="cla
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.space.<a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="class in etomica.space">BoundaryDeformablePeriodic</a></h3>
-<code><a href="../../etomica/space/BoundaryDeformablePeriodic.html#centralImage-etomica.space.Vector-">centralImage</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#deform-etomica.space.Tensor-">deform</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getBoundaryTensor--">getBoundaryTensor</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getBoxSize--">getBoxSize</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getEdgeVector-int-">getEdgeVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getIndexIterator--">getIndexIterator</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getPeriodicity-int-">getPeriodicity</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getTruncationRadius--">getTruncationRadius</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#imageOrigins-int-">imageOrigins</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#nearestImage-etomica.space.Vector-">nearestImage</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setAsCube-double-">setAsCube</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setAsRectangular-etomica.space.Vector-">setAsRectangular</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setBoxSize-etomica.space.Vector-">setBoxSize</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setDimensions-etomica.space.Tensor-">setDimensions</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setEdgeVector-int-etomica.space.Vector-">setEdgeVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setTruncationRadius-double-">setTruncationRadius</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#testTransformVector-etomica.space.Vector-">testTransformVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#update--">update</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#volume--">volume</a></code></li>
+<code><a href="../../etomica/space/BoundaryDeformablePeriodic.html#centralImage-etomica.space.Vector-">centralImage</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#deform-etomica.space.Tensor-">deform</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getBoundaryTensor--">getBoundaryTensor</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getBoxSize--">getBoxSize</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getEdgeVector-int-">getEdgeVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getIndexIterator--">getIndexIterator</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getPeriodicity-int-">getPeriodicity</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#getTruncationRadius--">getTruncationRadius</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#imageOrigins-int-">imageOrigins</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#nearestImage-etomica.space.Vector-">nearestImage</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setAsCube-double-">setAsCube</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setAsRectangular-etomica.space.Vector-">setAsRectangular</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setBoxSize-etomica.space.Vector-">setBoxSize</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setDimensions-etomica.space.Tensor-">setDimensions</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setEdgeVector-int-etomica.space.Vector-">setEdgeVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setEdgeVectors-etomica.space.Vector:A-">setEdgeVectors</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#setTruncationRadius-double-">setTruncationRadius</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#testTransformVector-etomica.space.Vector-">testTransformVector</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#update--">update</a>, <a href="../../etomica/space/BoundaryDeformablePeriodic.html#volume--">volume</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -264,6 +284,24 @@ extends <a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="cla
 <div class="block">Creates boundary with the shape of the given primitive and the given
  number of cells for each dimension.  Changes to the primitive after
  creating this instance will not affect the boundary.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="updateSize-etomica.lattice.crystal.Primitive-int:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>updateSize</h4>
+<pre>public&nbsp;void&nbsp;updateSize&#8203;(<a href="../../etomica/lattice/crystal/Primitive.html" title="class in etomica.lattice.crystal">Primitive</a>&nbsp;primitive,
+                       int[]&nbsp;nCells)</pre>
 </li>
 </ul>
 </li>
@@ -324,13 +362,13 @@ extends <a href="../../etomica/space/BoundaryDeformablePeriodic.html" title="cla
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.etomica.space.BoundaryDeformablePeriodic">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.etomica.space.BoundaryDeformablePeriodic">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -351,10 +351,15 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#setTruncationRadius-double-">setTruncationRadius</a></span>&#8203;(double&nbsp;newTruncationRadius)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#setEdgeVectors-etomica.space.Vector:A-">setEdgeVectors</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;vectors)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#setTruncationRadius-double-">setTruncationRadius</a></span>&#8203;(double&nbsp;newTruncationRadius)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#testTransformVector-etomica.space.Vector-">testTransformVector</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code></th>
 <td class="colLast">
@@ -362,12 +367,12 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
  of our existing transformVectors.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#update--">update</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/BoundaryDeformablePeriodic.html#volume--">volume</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -630,6 +635,15 @@ extends <a href="../../etomica/space/Boundary.html" title="class in etomica.spac
 <h4>setEdgeVector</h4>
 <pre>public&nbsp;void&nbsp;setEdgeVector&#8203;(int&nbsp;i,
                           <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</pre>
+</li>
+</ul>
+<a name="setEdgeVectors-etomica.space.Vector:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEdgeVectors</h4>
+<pre>public&nbsp;void&nbsp;setEdgeVectors&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;vectors)</pre>
 </li>
 </ul>
 <a name="setDimensions-etomica.space.Tensor-">
