@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/integrator/IntegratorPT.MCMoveSwapFactory.html" title="interface in etomica.integrator"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/integrator/IntegratorRigidIterative.MoleculeAgent.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/integrator/IntegratorRigidIterative.html" target="_top">Frames</a></li>
@@ -147,13 +147,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code>, <code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code>, <code><a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a></code></dd>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt;</code>, <code><a href="../../etomica/box/BoxEventListener.html" title="interface in etomica.box">BoxEventListener</a></code>, <code><a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></code>, <code><a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">IntegratorRigidIterative</span>
 extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>
-implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a>, <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a></pre>
+implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" title="interface in etomica.species">SpeciesAgentManager.AgentSource</a>, <a href="../../etomica/molecule/MoleculeAgentManager.MoleculeAgentSource.html" title="interface in etomica.molecule">MoleculeAgentManager.MoleculeAgentSource</a>, <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -174,6 +174,11 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.MoleculeAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.MoleculeAgent</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -214,7 +219,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#leafAgentManager">leafAgentManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -391,20 +396,28 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.lang.Object</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>&#8203;(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code></th>
+<td class="colFirst"><code><a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
 <td class="colLast">
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#makeAgent-etomica.molecule.IMolecule-">makeAgent</a></span>&#8203;(<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;a)</code></th>
+<td class="colLast">
+<div class="block">Returns an agent for the given Atom.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#makeAgent-etomica.species.ISpecies-">makeAgent</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Returns an agent for the given AtomType.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#randomizeMomenta--">randomizeMomenta</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -413,7 +426,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  thermostat.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a></span>&#8203;(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</code></th>
 <td class="colLast">
@@ -422,7 +435,17 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  thermostat.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#releaseAgent-etomica.integrator.IntegratorRigidIterative.AtomForceAgent-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&nbsp;agent,
+            <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+            <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
+<td class="colLast">
+<div class="block">This informs the agent source that the agent is going away and that
+ the agent source should disconnect the agent from other elements.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code></th>
@@ -431,7 +454,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code></th>
@@ -440,14 +463,14 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#scaleMomenta--">scaleMomenta</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -456,23 +479,23 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  box adheres to setpoint temperature.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#setMaxIterations-int-">setMaxIterations</a></span>&#8203;(int&nbsp;newMaxIterations)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#setOrientationCalc-etomica.species.ISpecies-etomica.molecule.OrientationCalc-">setOrientationCalc</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;moleculeType,
                   <a href="../../etomica/molecule/OrientationCalc.html" title="interface in etomica.molecule">OrientationCalc</a>&nbsp;calcer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#setTorqueSum-etomica.potential.PotentialCalculationTorqueSum-">setTorqueSum</a></span>&#8203;(<a href="../../etomica/potential/PotentialCalculationTorqueSum.html" title="class in etomica.potential">PotentialCalculationTorqueSum</a>&nbsp;pc)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/integrator/IntegratorRigidIterative.html#shiftMomenta--">shiftMomenta</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -686,7 +709,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>leafAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; leafAgentManager</pre>
+<pre>protected&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt; leafAgentManager</pre>
 </li>
 </ul>
 <a name="moleculeAgentManager">
@@ -914,6 +937,45 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 </dl>
 </li>
 </ul>
+<a name="makeAgent-etomica.atom.IAtom-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAgent</h4>
+<pre>public&nbsp;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&nbsp;makeAgent&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a,
+                                                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<div class="block">Returns an agent for the given Atom.
+ The agentBox is provided for convenience for agent sources that
+ handle multiple boxes.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt;</code></dd>
+<dd><code>agentBox</code> - TODO</dd>
+</dl>
+</li>
+</ul>
+<a name="releaseAgent-etomica.integrator.IntegratorRigidIterative.AtomForceAgent-etomica.atom.IAtom-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>releaseAgent</h4>
+<pre>public&nbsp;void&nbsp;releaseAgent&#8203;(<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&nbsp;agent,
+                         <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>
+<div class="block">This informs the agent source that the agent is going away and that
+ the agent source should disconnect the agent from other elements.
+ The agentBox is provided for convenience for agent sources that
+ handle multiple boxes.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator">IntegratorRigidIterative.AtomForceAgent</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
 <a name="makeAgent-etomica.species.ISpecies-">
 <!--   -->
 </a>
@@ -983,7 +1045,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/integrator/IntegratorPT.MCMoveSwapFactory.html" title="interface in etomica.integrator"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/integrator/IntegratorRigidIterative.MoleculeAgent.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/integrator/IntegratorRigidIterative.AtomForceAgent.html" title="class in etomica.integrator"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/integrator/IntegratorRigidIterative.html" target="_top">Frames</a></li>
