@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":42,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -141,11 +141,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <br>
-<pre>public class <span class="typeNameLabel">IntegratorOverlap</span>
+<pre>@Deprecated
+public class <span class="typeNameLabel">IntegratorOverlap</span>
 extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="class in etomica.integrator">IntegratorManagerMC</a></pre>
 <div class="block">This integrator class manages (2) sub-integrators for an overlap
  sampling simulation. Used for computing virial coefficients with overlap sampling.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../etomica/overlap/IntegratorOverlap.html" title="class in etomica.overlap"><code>IntegratorOverlap</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -203,7 +209,9 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#IntegratorOverlap-etomica.integrator.Integrator:A-">IntegratorOverlap</a></span>&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[]&nbsp;aIntegrators)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -215,7 +223,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -225,6 +233,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#adjustStepFreq--">adjustStepFreq</a></span>&#8203;()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Adjusts the frequency with which steps for each sub-integrator are
  performed.</div>
 </td>
@@ -233,6 +242,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#doStepInternal--">doStepInternal</a></span>&#8203;()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Performs a Monte Carlo trial that attempts to swap the configurations
  between two "adjacent" boxes, or instructs all integrators to perform
  a single doStep.</div>
@@ -241,12 +251,15 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#getActualStepFreq0--">getActualStepFreq0</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#getNumSubSteps--">getNumSubSteps</a></span>&#8203;()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Retruns the number of total number of integrator steps the sub-integrators
  perform for every step of the overlap integrator.</div>
 </td>
@@ -254,12 +267,15 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#getStepFreq0--">getStepFreq0</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#isAdjustStepFreq--">isAdjustStepFreq</a></span>&#8203;()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets whether to adjust the number of relative number of steps for each
  sub-integrator.</div>
 </td>
@@ -268,6 +284,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.</div>
 </td>
@@ -276,6 +293,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#setAdjustStepFreq-boolean-">setAdjustStepFreq</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets whether to adjust the number of relative number of steps for each
  sub-integrator.</div>
 </td>
@@ -284,6 +302,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#setDSVO-etomica.virial.overlap.DataSourceVirialOverlap-">setDSVO</a></span>&#8203;(<a href="../../../etomica/virial/overlap/DataSourceVirialOverlap.html" title="class in etomica.virial.overlap">DataSourceVirialOverlap</a>&nbsp;dataSource)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets the DataSource that retrieves data from both boxs and provides
  information to the integrator about their progress.</div>
 </td>
@@ -292,6 +311,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#setNumSubSteps-int-">setNumSubSteps</a></span>&#8203;(int&nbsp;n)</code></th>
 <td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets the number of total number of integrator steps the sub-integrators
  perform for every step of the overlap integrator.</div>
 </td>
@@ -299,7 +319,9 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/IntegratorOverlap.html#setStepFreq0-double-">setStepFreq0</a></span>&#8203;(double&nbsp;freq)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -344,6 +366,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>IntegratorOverlap</h4>
 <pre>public&nbsp;IntegratorOverlap&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>[]&nbsp;aIntegrators)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
@@ -361,6 +384,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>setDSVO</h4>
 <pre>public&nbsp;void&nbsp;setDSVO&#8203;(<a href="../../../etomica/virial/overlap/DataSourceVirialOverlap.html" title="class in etomica.virial.overlap">DataSourceVirialOverlap</a>&nbsp;dataSource)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets the DataSource that retrieves data from both boxs and provides
  information to the integrator about their progress.</div>
 </li>
@@ -372,6 +396,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/IntegratorManagerMC.html#reset--">IntegratorManagerMC</a></code></span></div>
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.  Resets this integrator and passes on the reset to all managed integrators.</div>
@@ -388,6 +413,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>setNumSubSteps</h4>
 <pre>public&nbsp;void&nbsp;setNumSubSteps&#8203;(int&nbsp;n)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets the number of total number of integrator steps the sub-integrators
  perform for every step of the overlap integrator.  Default value is 1000.</div>
 </li>
@@ -399,6 +425,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>getNumSubSteps</h4>
 <pre>public&nbsp;long&nbsp;getNumSubSteps&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Retruns the number of total number of integrator steps the sub-integrators
  perform for every step of the overlap integrator.  Default value is 1000.</div>
 </li>
@@ -410,6 +437,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>setAdjustStepFreq</h4>
 <pre>public&nbsp;void&nbsp;setAdjustStepFreq&#8203;(boolean&nbsp;b)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets whether to adjust the number of relative number of steps for each
  sub-integrator.  Default is true.</div>
 </li>
@@ -421,6 +449,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>isAdjustStepFreq</h4>
 <pre>public&nbsp;boolean&nbsp;isAdjustStepFreq&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets whether to adjust the number of relative number of steps for each
  sub-integrator.  Default is true.</div>
 </li>
@@ -432,6 +461,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>doStepInternal</h4>
 <pre>protected&nbsp;void&nbsp;doStepInternal&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/integrator/IntegratorManagerMC.html#doStepInternal--">IntegratorManagerMC</a></code></span></div>
 <div class="block">Performs a Monte Carlo trial that attempts to swap the configurations
  between two "adjacent" boxes, or instructs all integrators to perform
@@ -449,6 +479,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>adjustStepFreq</h4>
 <pre>public&nbsp;void&nbsp;adjustStepFreq&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Adjusts the frequency with which steps for each sub-integrator are
  performed.  Integrators handling clusters with high errors are favored over
  ones with low errors.</div>
@@ -461,6 +492,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>setStepFreq0</h4>
 <pre>public&nbsp;void&nbsp;setStepFreq0&#8203;(double&nbsp;freq)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getStepFreq0--">
@@ -470,6 +502,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>getStepFreq0</h4>
 <pre>public&nbsp;double&nbsp;getStepFreq0&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="getActualStepFreq0--">
@@ -479,6 +512,7 @@ extends <a href="../../../etomica/integrator/IntegratorManagerMC.html" title="cl
 <li class="blockList">
 <h4>getActualStepFreq0</h4>
 <pre>public&nbsp;double&nbsp;getActualStepFreq0&#8203;()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
