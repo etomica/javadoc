@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,49 +181,17 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#atomTypeIndexChanged-etomica.atom.AtomType-int-">atomTypeIndexChanged</a></span>&#8203;(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType,
-                    int&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#boxAdded-etomica.box.Box-">boxAdded</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#atomTypeMaxIndexChanged-int-">atomTypeMaxIndexChanged</a></span>&#8203;(int&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#boxRemoved-etomica.box.Box-">boxRemoved</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#boxAdded-etomica.box.Box-">boxAdded</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#boxRemoved-etomica.box.Box-">boxRemoved</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#removeListener-etomica.simulation.SimulationListener-">removeListener</a></span>&#8203;(<a href="../../etomica/simulation/SimulationListener.html" title="interface in etomica.simulation">SimulationListener</a>&nbsp;listener)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#speciesAdded-etomica.species.ISpecies-">speciesAdded</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#speciesIndexChanged-etomica.species.ISpecies-int-">speciesIndexChanged</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
-                   int&nbsp;index)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#speciesMaxIndexChanged-int-">speciesMaxIndexChanged</a></span>&#8203;(int&nbsp;index)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationEventManager.html#speciesRemoved-etomica.species.ISpecies-">speciesRemoved</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -295,66 +263,10 @@ extends java.lang.Object</pre>
 <a name="boxRemoved-etomica.box.Box-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>boxRemoved</h4>
 <pre>public&nbsp;void&nbsp;boxRemoved&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-</li>
-</ul>
-<a name="speciesAdded-etomica.species.ISpecies-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>speciesAdded</h4>
-<pre>public&nbsp;void&nbsp;speciesAdded&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
-</li>
-</ul>
-<a name="speciesRemoved-etomica.species.ISpecies-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>speciesRemoved</h4>
-<pre>public&nbsp;void&nbsp;speciesRemoved&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species)</pre>
-</li>
-</ul>
-<a name="speciesIndexChanged-etomica.species.ISpecies-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>speciesIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;speciesIndexChanged&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
-                                int&nbsp;index)</pre>
-</li>
-</ul>
-<a name="speciesMaxIndexChanged-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>speciesMaxIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;speciesMaxIndexChanged&#8203;(int&nbsp;index)</pre>
-</li>
-</ul>
-<a name="atomTypeIndexChanged-etomica.atom.AtomType-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>atomTypeIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;atomTypeIndexChanged&#8203;(<a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType,
-                                 int&nbsp;index)</pre>
-</li>
-</ul>
-<a name="atomTypeMaxIndexChanged-int-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>atomTypeMaxIndexChanged</h4>
-<pre>public&nbsp;void&nbsp;atomTypeMaxIndexChanged&#8203;(int&nbsp;index)</pre>
 </li>
 </ul>
 </li>

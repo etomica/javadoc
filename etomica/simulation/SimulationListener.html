@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18};
+var methods = {"i0":18,"i1":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../etomica/atom/AtomTypeAgentManager.html" title="class in etomica.atom">AtomTypeAgentManager</a></code>, <code><a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a></code>, <code><a href="../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></dd>
+<dd><code><a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -150,42 +150,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">simulationAtomTypeIndexChanged</a></span>&#8203;(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a></span>&#8203;(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationAtomTypeMaxIndexChanged</a></span>&#8203;(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationBoxAdded-etomica.simulation.SimulationBoxEvent-">simulationBoxAdded</a></span>&#8203;(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">simulationBoxRemoved</a></span>&#8203;(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesAdded</a></span>&#8203;(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">simulationSpeciesIndexChanged</a></span>&#8203;(<a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html" title="class in etomica.simulation">SimulationSpeciesIndexEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">simulationSpeciesMaxIndexChanged</a></span>&#8203;(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/simulation/SimulationListener.html#simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">simulationSpeciesRemoved</a></span>&#8203;(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -215,64 +185,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a name="simulationBoxRemoved-etomica.simulation.SimulationBoxEvent-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>simulationBoxRemoved</h4>
 <pre>default&nbsp;void&nbsp;simulationBoxRemoved&#8203;(<a href="../../etomica/simulation/SimulationBoxEvent.html" title="class in etomica.simulation">SimulationBoxEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationSpeciesAdded-etomica.simulation.SimulationSpeciesEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>simulationSpeciesAdded</h4>
-<pre>default&nbsp;void&nbsp;simulationSpeciesAdded&#8203;(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationSpeciesRemoved-etomica.simulation.SimulationSpeciesEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>simulationSpeciesRemoved</h4>
-<pre>default&nbsp;void&nbsp;simulationSpeciesRemoved&#8203;(<a href="../../etomica/simulation/SimulationSpeciesEvent.html" title="class in etomica.simulation">SimulationSpeciesEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationSpeciesIndexChanged-etomica.simulation.SimulationSpeciesIndexEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>simulationSpeciesIndexChanged</h4>
-<pre>default&nbsp;void&nbsp;simulationSpeciesIndexChanged&#8203;(<a href="../../etomica/simulation/SimulationSpeciesIndexEvent.html" title="class in etomica.simulation">SimulationSpeciesIndexEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationSpeciesMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>simulationSpeciesMaxIndexChanged</h4>
-<pre>default&nbsp;void&nbsp;simulationSpeciesMaxIndexChanged&#8203;(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationAtomTypeIndexChanged-etomica.simulation.SimulationAtomTypeIndexEvent-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>simulationAtomTypeIndexChanged</h4>
-<pre>default&nbsp;void&nbsp;simulationAtomTypeIndexChanged&#8203;(<a href="../../etomica/simulation/SimulationAtomTypeIndexEvent.html" title="class in etomica.simulation">SimulationAtomTypeIndexEvent</a>&nbsp;e)</pre>
-</li>
-</ul>
-<a name="simulationAtomTypeMaxIndexChanged-etomica.simulation.SimulationIndexEvent-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>simulationAtomTypeMaxIndexChanged</h4>
-<pre>default&nbsp;void&nbsp;simulationAtomTypeMaxIndexChanged&#8203;(<a href="../../etomica/simulation/SimulationIndexEvent.html" title="class in etomica.simulation">SimulationIndexEvent</a>&nbsp;e)</pre>
 </li>
 </ul>
 </li>
