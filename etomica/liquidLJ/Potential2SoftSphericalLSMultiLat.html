@@ -153,9 +153,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">Potential2SoftSphericalLSMultiLat</span>
 extends <a href="../../etomica/potential/Potential2.html" title="class in etomica.potential">Potential2</a>
 implements <a href="../../etomica/potential/PotentialSoft.html" title="interface in etomica.potential">PotentialSoft</a></pre>
-<div class="block">Methods for a soft (non-impulsive), spherically-symmetric pair potential.
- Subclasses must provide concrete definitions for the energy (method
- u(double)) and its derivatives.</div>
+<div class="block">Class for spherical pair potential that computes lattice sums for various
+ truncations.  This class only pretends to implement the PotentialSoft
+ interface.  Only the energyVirialCut method should be called.  It will
+ return an instance of ReturnValue, which contains sums of various
+ quantities for all cutoffs passed to the constructor.
+
+ This will compute self-contributions (interaction between an Atom and its
+ own image), but only if invoked with an atom pair holding two intsances of
+ that Atom (PotentialMaster classes don't know how to do this).</div>
 </li>
 </ul>
 </div>
