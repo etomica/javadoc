@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -196,58 +196,48 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#coordinateDefinition">coordinateDefinition</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#eValNum">eValNum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#isRejectable">isRejectable</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#lastEnergy">lastEnergy</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#oneEVal">oneEVal</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#oneWV">oneWV</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#Qi">Qi</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#Qr">Qr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#temperature">temperature</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#u">u</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected double[][]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#uOld">uOld</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -292,10 +282,12 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#IntegratorHarmonic-etomica.util.random.IRandom-double-double-etomica.box.Box-">IntegratorHarmonic</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#IntegratorHarmonic-etomica.util.random.IRandom-double-double-etomica.box.Box-etomica.normalmode.CoordinateDefinition-etomica.space.Vector:A-">IntegratorHarmonic</a></span>&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                   double&nbsp;timeStep,
                   double&nbsp;temperature,
-                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
+                  <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                  <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordDef,
+                  <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;waveVectors)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -362,51 +354,46 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setCoordinateDefinition-etomica.normalmode.CoordinateDefinition-">setCoordinateDefinition</a></span>&#8203;(<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;newCoordinateDefinition)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setEigenVectors-double:A:A:A-">setEigenVectors</a></span>&#8203;(double[][][]&nbsp;newEigenVectors)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setEigenVectors-double:A:A:A-">setEigenVectors</a></span>&#8203;(double[][][]&nbsp;newEigenVectors)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setEValNum-int-">setEValNum</a></span>&#8203;(int&nbsp;valNum)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setOmegaSquared-double:A:A-double:A-">setOmegaSquared</a></span>&#8203;(double[][]&nbsp;omega2,
                double[]&nbsp;coeff)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setOneEVal-boolean-">setOneEVal</a></span>&#8203;(boolean&nbsp;oneEVal)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setOneWV-boolean-">setOneWV</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;newTemperature)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setWaveVectorCoefficients-double:A-">setWaveVectorCoefficients</a></span>&#8203;(double[]&nbsp;newWaveVectorCoefficients)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setWaveVectorNum-int-">setWaveVectorNum</a></span>&#8203;(int&nbsp;waveVectorNum)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/normalmode/IntegratorHarmonic.html#setWaveVectors-etomica.space.Vector:A-">setWaveVectors</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;newWaveVectors)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -454,15 +441,6 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="coordinateDefinition">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>coordinateDefinition</h4>
-<pre>protected&nbsp;<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a> coordinateDefinition</pre>
-</li>
-</ul>
 <a name="u">
 <!--   -->
 </a>
@@ -517,15 +495,6 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <pre>protected&nbsp;boolean isRejectable</pre>
 </li>
 </ul>
-<a name="uOld">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>uOld</h4>
-<pre>protected&nbsp;double[][] uOld</pre>
-</li>
-</ul>
 <a name="oneWV">
 <!--   -->
 </a>
@@ -570,7 +539,7 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntegratorHarmonic-etomica.util.random.IRandom-double-double-etomica.box.Box-">
+<a name="IntegratorHarmonic-etomica.util.random.IRandom-double-double-etomica.box.Box-etomica.normalmode.CoordinateDefinition-etomica.space.Vector:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -579,7 +548,9 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <pre>public&nbsp;IntegratorHarmonic&#8203;(<a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                           double&nbsp;timeStep,
                           double&nbsp;temperature,
-                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+                          <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                          <a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;coordDef,
+                          <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;waveVectors)</pre>
 </li>
 </ul>
 </li>
@@ -590,31 +561,6 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="doThermostat--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doThermostat</h4>
-<pre>public&nbsp;void&nbsp;doThermostat&#8203;()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">IntegratorMD</a></code></span></div>
-<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
- algorithm of thermostat specified via setThermostat.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="setCoordinateDefinition-etomica.normalmode.CoordinateDefinition-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setCoordinateDefinition</h4>
-<pre>public&nbsp;void&nbsp;setCoordinateDefinition&#8203;(<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;newCoordinateDefinition)</pre>
-</li>
-</ul>
 <a name="getCoordinateDefinition--">
 <!--   -->
 </a>
@@ -624,29 +570,13 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <pre>public&nbsp;<a href="../../etomica/normalmode/CoordinateDefinition.html" title="class in etomica.normalmode">CoordinateDefinition</a>&nbsp;getCoordinateDefinition&#8203;()</pre>
 </li>
 </ul>
-<a name="setOmegaSquared-double:A:A-double:A-">
+<a name="getWaveVectors--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setOmegaSquared</h4>
-<pre>public&nbsp;void&nbsp;setOmegaSquared&#8203;(double[][]&nbsp;omega2,
-                            double[]&nbsp;coeff)</pre>
-</li>
-</ul>
-<a name="setTemperature-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setTemperature</h4>
-<pre>public&nbsp;void&nbsp;setTemperature&#8203;(double&nbsp;newTemperature)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newTemperature</code> - the new temperature</dd>
-</dl>
+<h4>getWaveVectors</h4>
+<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getWaveVectors&#8203;()</pre>
 </li>
 </ul>
 <a name="setWaveVectors-etomica.space.Vector:A-">
@@ -658,13 +588,14 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <pre>public&nbsp;void&nbsp;setWaveVectors&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;newWaveVectors)</pre>
 </li>
 </ul>
-<a name="getWaveVectors--">
+<a name="setOmegaSquared-double:A:A-double:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getWaveVectors</h4>
-<pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getWaveVectors&#8203;()</pre>
+<h4>setOmegaSquared</h4>
+<pre>public&nbsp;void&nbsp;setOmegaSquared&#8203;(double[][]&nbsp;omega2,
+                            double[]&nbsp;coeff)</pre>
 </li>
 </ul>
 <a name="setWaveVectorCoefficients-double:A-">
@@ -701,13 +632,35 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 </dl>
 </li>
 </ul>
-<a name="setOneWV-boolean-">
+<a name="setTemperature-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setOneWV</h4>
-<pre>public&nbsp;void&nbsp;setOneWV&#8203;(boolean&nbsp;b)</pre>
+<h4>setTemperature</h4>
+<pre>public&nbsp;void&nbsp;setTemperature&#8203;(double&nbsp;newTemperature)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newTemperature</code> - the new temperature</dd>
+</dl>
+</li>
+</ul>
+<a name="doThermostat--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doThermostat</h4>
+<pre>public&nbsp;void&nbsp;doThermostat&#8203;()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">IntegratorMD</a></code></span></div>
+<div class="block">Invokes thermostat, modifying velocities according to specified temperature and
+ algorithm of thermostat specified via setThermostat.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="isOneWV--">
@@ -717,6 +670,15 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <li class="blockList">
 <h4>isOneWV</h4>
 <pre>public&nbsp;boolean&nbsp;isOneWV&#8203;()</pre>
+</li>
+</ul>
+<a name="setOneWV-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOneWV</h4>
+<pre>public&nbsp;void&nbsp;setOneWV&#8203;(boolean&nbsp;b)</pre>
 </li>
 </ul>
 <a name="getWaveVectorNum--">
@@ -737,6 +699,15 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <pre>public&nbsp;void&nbsp;setWaveVectorNum&#8203;(int&nbsp;waveVectorNum)</pre>
 </li>
 </ul>
+<a name="getEValNum--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEValNum</h4>
+<pre>public&nbsp;int&nbsp;getEValNum&#8203;()</pre>
+</li>
+</ul>
 <a name="isOneEVal--">
 <!--   -->
 </a>
@@ -753,15 +724,6 @@ extends <a href="../../etomica/integrator/IntegratorMD.html" title="class in eto
 <li class="blockList">
 <h4>setOneEVal</h4>
 <pre>public&nbsp;void&nbsp;setOneEVal&#8203;(boolean&nbsp;oneEVal)</pre>
-</li>
-</ul>
-<a name="getEValNum--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getEValNum</h4>
-<pre>public&nbsp;int&nbsp;getEValNum&#8203;()</pre>
 </li>
 </ul>
 <a name="setEValNum-int-">
