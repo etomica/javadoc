@@ -261,7 +261,7 @@ implements java.io.Serializable</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html#orientationManager">orientationManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -405,9 +405,7 @@ implements java.io.Serializable</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/nitrogen/CoordinateDefinitionNitrogen.html#initNominalU-etomica.molecule.IMoleculeList-">initNominalU</a></span>&#8203;(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</code></th>
 <td class="colLast">
 <div class="block">Override if nominal U is more than the lattice position of the molecule
- Number of molecules equals to basis atoms
- 
- initNomial is the method to define the initial orientation of the molecule</div>
+ Number of molecules equals to basis atoms</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -560,15 +558,6 @@ implements java.io.Serializable</pre>
 <pre>protected final&nbsp;<a href="../../../etomica/space/Tensor.html" title="interface in etomica.space">Tensor</a>[] yOrientationTensor</pre>
 </li>
 </ul>
-<a name="positionVector">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>positionVector</h4>
-<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] positionVector</pre>
-</li>
-</ul>
 <a name="tensor">
 <!--   -->
 </a>
@@ -596,24 +585,6 @@ implements java.io.Serializable</pre>
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> orientVector</pre>
 </li>
 </ul>
-<a name="configuration">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>configuration</h4>
-<pre>protected&nbsp;<a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a> configuration</pre>
-</li>
-</ul>
-<a name="orientationManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>orientationManager</h4>
-<pre>protected&nbsp;<a href="../../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a> orientationManager</pre>
-</li>
-</ul>
 <a name="atomGroupAction">
 <!--   -->
 </a>
@@ -621,24 +592,6 @@ implements java.io.Serializable</pre>
 <li class="blockList">
 <h4>atomGroupAction</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/action/MoleculeChildAtomAction.html" title="class in etomica.action">MoleculeChildAtomAction</a> atomGroupAction</pre>
-</li>
-</ul>
-<a name="translateBy">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>translateBy</h4>
-<pre>protected&nbsp;<a href="../../../etomica/action/AtomActionTranslateBy.html" title="class in etomica.action">AtomActionTranslateBy</a> translateBy</pre>
-</li>
-</ul>
-<a name="atomGroupActionTranslate">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>atomGroupActionTranslate</h4>
-<pre>protected&nbsp;<a href="../../../etomica/action/MoleculeChildAtomAction.html" title="class in etomica.action">MoleculeChildAtomAction</a> atomGroupActionTranslate</pre>
 </li>
 </ul>
 <a name="isAlpha">
@@ -695,22 +648,67 @@ implements java.io.Serializable</pre>
 <pre>public&nbsp;boolean isDoLatticeSum</pre>
 </li>
 </ul>
-<a name="random">
+<a name="rotDim">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>random</h4>
-<pre>protected&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
+<h4>rotDim</h4>
+<pre>public&nbsp;int rotDim</pre>
 </li>
 </ul>
-<a name="rotDim">
+<a name="positionVector">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>positionVector</h4>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] positionVector</pre>
+</li>
+</ul>
+<a name="configuration">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>configuration</h4>
+<pre>protected&nbsp;<a href="../../../etomica/config/Configuration.html" title="interface in etomica.config">Configuration</a> configuration</pre>
+</li>
+</ul>
+<a name="orientationManager">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>orientationManager</h4>
+<pre>protected&nbsp;<a href="../../../etomica/molecule/MoleculeAgentManager.html" title="class in etomica.molecule">MoleculeAgentManager</a>&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&gt; orientationManager</pre>
+</li>
+</ul>
+<a name="translateBy">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>translateBy</h4>
+<pre>protected&nbsp;<a href="../../../etomica/action/AtomActionTranslateBy.html" title="class in etomica.action">AtomActionTranslateBy</a> translateBy</pre>
+</li>
+</ul>
+<a name="atomGroupActionTranslate">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atomGroupActionTranslate</h4>
+<pre>protected&nbsp;<a href="../../../etomica/action/MoleculeChildAtomAction.html" title="class in etomica.action">MoleculeChildAtomAction</a> atomGroupActionTranslate</pre>
+</li>
+</ul>
+<a name="random">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>rotDim</h4>
-<pre>public&nbsp;int rotDim</pre>
+<h4>random</h4>
+<pre>protected&nbsp;<a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a> random</pre>
 </li>
 </ul>
 </li>
@@ -888,7 +886,7 @@ implements java.io.Serializable</pre>
 <pre>public&nbsp;void&nbsp;initNominalU&#8203;(<a href="../../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;molecules)</pre>
 <div class="block">Override if nominal U is more than the lattice position of the molecule
  Number of molecules equals to basis atoms
- 
+ <p>
  initNomial is the method to define the initial orientation of the molecule</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
