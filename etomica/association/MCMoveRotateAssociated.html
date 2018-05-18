@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -297,6 +297,13 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveRotateAssociated.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
+<td class="colLast">
+<div class="block">Sets the box on which this move acts.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/association/MCMoveRotateAssociated.html#setMaxLength-int-">setMaxLength</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -313,7 +320,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">acceptNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.box.Box-">setBox</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#acceptNotify--">acceptNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBox">
@@ -420,6 +427,22 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>setAssociationManager</h4>
 <pre>public&nbsp;void&nbsp;setAssociationManager&#8203;(<a href="../../etomica/association/AssociationManager.html" title="class in etomica.association">AssociationManager</a>&nbsp;associationManager)</pre>
+</li>
+</ul>
+<a name="setBox-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBox</h4>
+<pre>public&nbsp;void&nbsp;setBox&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveBox.html#setBox-etomica.box.Box-">MCMoveBox</a></code></span></div>
+<div class="block">Sets the box on which this move acts.  The box itself can be changed
+ via this method, if desired.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="doTrial--">
