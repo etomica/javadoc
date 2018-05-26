@@ -204,33 +204,13 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomSetSinglet.html" title="class in etomica.atom">AtomSetSinglet</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#atomSetSinglet">atomSetSinglet</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#box">box</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#doApplyPBC">doApplyPBC</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#initialized">initialized</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#numUnsafe">numUnsafe</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#numUpdates">numUpdates</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -257,9 +237,14 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.box.Box-">NeighborListManager</a></span>&#8203;(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
                    double&nbsp;range,
                    <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">
-<div class="block">Configures instance for use by the given PotentialMaster.</div>
-</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#NeighborListManager-etomica.nbr.list.PotentialMasterList-etomica.nbr.cell.NeighborCellManager-double-etomica.box.Box-">NeighborListManager</a></span>&#8203;(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
+                   <a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&nbsp;neighborCellManager,
+                   double&nbsp;range,
+                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -290,8 +275,8 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getCriteria-etomica.atom.AtomType-">getCriteria</a></span>&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#ensureDownLists--">ensureDownLists</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -310,66 +295,71 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getNeighborCellManager--">getNeighborCellManager</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getNumUpdates--">getNumUpdates</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the number of times the neighbor lists have been updated.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/action/BoxImposePbc.html" title="class in etomica.action">BoxImposePbc</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getPbcEnforcer--">getPbcEnforcer</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getPotential1BodyList-etomica.atom.IAtom-">getPotential1BodyList</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getRange--">getRange</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getUpdateInterval--">getUpdateInterval</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the interval for which neighbor update checks are performed.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#getUpList-etomica.atom.IAtom-">getUpList</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#isQuiet--">isQuiet</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#makeAgent-etomica.atom.IAtom-etomica.box.Box-">makeAgent</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
          <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
@@ -377,7 +367,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <div class="block">Returns an agent for the given Atom.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#neighborSetup--">neighborSetup</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -386,9 +376,9 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
  and if so, puts each in the other's neighbor list.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>&#8203;(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;agent,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#releaseAgent-etomica.nbr.list.AtomNeighborLists-etomica.atom.IAtom-etomica.box.Box-">releaseAgent</a></span>&#8203;(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;nbrLists,
             <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
             <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</code></th>
 <td class="colLast">
@@ -396,7 +386,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -405,14 +395,9 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
  lists.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#setDoApplyPBC-boolean-">setDoApplyPBC</a></span>&#8203;(boolean&nbsp;newDoApplyPBC)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#setPbcEnforcer-etomica.action.BoxImposePbc-">setPbcEnforcer</a></span>&#8203;(<a href="../../../etomica/action/BoxImposePbc.html" title="class in etomica.action">BoxImposePbc</a>&nbsp;pbcEnforcer)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/list/NeighborListManager.html#setDoApplyPBC-boolean-">setDoApplyPBC</a></span>&#8203;(boolean&nbsp;newDoApplyPBC)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
@@ -470,15 +455,6 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="atomSetSinglet">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>atomSetSinglet</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomSetSinglet.html" title="class in etomica.atom">AtomSetSinglet</a> atomSetSinglet</pre>
-</li>
-</ul>
 <a name="potentialMaster">
 <!--   -->
 </a>
@@ -506,15 +482,6 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <pre>protected final&nbsp;<a href="../../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../../etomica/nbr/list/AtomPotentialList.html" title="class in etomica.nbr.list">AtomPotentialList</a>&gt; agentManager1Body</pre>
 </li>
 </ul>
-<a name="numUnsafe">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>numUnsafe</h4>
-<pre>protected&nbsp;long numUnsafe</pre>
-</li>
-</ul>
 <a name="box">
 <!--   -->
 </a>
@@ -527,28 +494,10 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <a name="initialized">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>initialized</h4>
 <pre>protected&nbsp;boolean initialized</pre>
-</li>
-</ul>
-<a name="doApplyPBC">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doApplyPBC</h4>
-<pre>protected&nbsp;boolean doApplyPBC</pre>
-</li>
-</ul>
-<a name="numUpdates">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>numUpdates</h4>
-<pre>protected&nbsp;int numUpdates</pre>
 </li>
 </ul>
 </li>
@@ -562,13 +511,24 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <a name="NeighborListManager-etomica.nbr.list.PotentialMasterList-double-etomica.box.Box-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>NeighborListManager</h4>
 <pre>public&nbsp;NeighborListManager&#8203;(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
                            double&nbsp;range,
                            <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<div class="block">Configures instance for use by the given PotentialMaster.</div>
+</li>
+</ul>
+<a name="NeighborListManager-etomica.nbr.list.PotentialMasterList-etomica.nbr.cell.NeighborCellManager-double-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NeighborListManager</h4>
+<pre>public&nbsp;NeighborListManager&#8203;(<a href="../../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a>&nbsp;potentialMasterList,
+                           <a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&nbsp;neighborCellManager,
+                           double&nbsp;range,
+                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>
@@ -579,6 +539,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getNeighborCellManager--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNeighborCellManager</h4>
+<pre>public&nbsp;<a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&nbsp;getNeighborCellManager&#8203;()</pre>
+</li>
+</ul>
 <a name="getDoApplyPBC--">
 <!--   -->
 </a>
@@ -699,15 +668,6 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <div class="block">Returns the number of times the neighbor lists have been updated.</div>
 </li>
 </ul>
-<a name="getCriteria-etomica.atom.AtomType-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getCriteria</h4>
-<pre>public&nbsp;<a href="../../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[]&nbsp;getCriteria&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;atomType)</pre>
-</li>
-</ul>
 <a name="getPbcEnforcer--">
 <!--   -->
 </a>
@@ -718,19 +678,6 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns the pbcEnforcer.</dd>
-</dl>
-</li>
-</ul>
-<a name="setPbcEnforcer-etomica.action.BoxImposePbc-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPbcEnforcer</h4>
-<pre>public&nbsp;void&nbsp;setPbcEnforcer&#8203;(<a href="../../../etomica/action/BoxImposePbc.html" title="class in etomica.action">BoxImposePbc</a>&nbsp;pbcEnforcer)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pbcEnforcer</code> - The pbcEnforcer to set.</dd>
 </dl>
 </li>
 </ul>
@@ -745,6 +692,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
  neighbor pairs, determines for each pair whether a potential applies to it,
  and if so, puts each in the other's neighbor list.
  Called by updateNbrsIfNeeded, and by reset.</div>
+</li>
+</ul>
+<a name="ensureDownLists--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ensureDownLists</h4>
+<pre>public&nbsp;void&nbsp;ensureDownLists&#8203;()</pre>
 </li>
 </ul>
 <a name="addAtomNotify-etomica.atom.IAtom-">
@@ -787,8 +743,8 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>quiet flag, indicating if unsafe-neighbor conditions should
-         generate an error message (would not want this if atoms were
-         inserted in a MC move, for example).</dd>
+ generate an error message (would not want this if atoms were
+ inserted in a MC move, for example).</dd>
 </dl>
 </li>
 </ul>
@@ -878,7 +834,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <ul class="blockListLast">
 <li class="blockList">
 <h4>releaseAgent</h4>
-<pre>public&nbsp;void&nbsp;releaseAgent&#8203;(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;agent,
+<pre>public&nbsp;void&nbsp;releaseAgent&#8203;(<a href="../../../etomica/nbr/list/AtomNeighborLists.html" title="class in etomica.nbr.list">AtomNeighborLists</a>&nbsp;nbrLists,
                          <a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
                          <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;agentBox)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html#releaseAgent-E-etomica.atom.IAtom-etomica.box.Box-">AtomLeafAgentManager.AgentSource</a></code></span></div>

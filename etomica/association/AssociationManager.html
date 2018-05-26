@@ -143,13 +143,13 @@ implements <a href="../../etomica/atom/AtomLeafAgentManager.AgentSource.html" ti
  that defines the set of atoms that is managed, and an association definition
  that is used to determine if atoms are associated.  Only pairwise associations
  are considered.
- To incorporate an instance of this class in a simulation, add an instance of 
+ To incorporate an instance of this class in a simulation, add an instance of
  this EnergySum inner class to the simulation:<br>
-       sim.setEnergySum(associationManager.new EnergySum());
-
+ sim.setEnergySum(associationManager.new EnergySum());
+ <p>
  If a MC simulation, this should be done before any MCMove classes are instantiated.
  Also, register this as a listener to IntegratorMC:<br>
-       integrator.addMCMoveListener(associationManager);</div>
+ integrator.addMCMoveListener(associationManager);</div>
 </li>
 </ul>
 </div>

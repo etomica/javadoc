@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -315,13 +315,18 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#anyAtom-etomica.atom.IAtomList-">anyAtom</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#anyAtom-etomica.atom.IAtom...-">anyAtom</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>...&nbsp;atoms)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#anyAtom-java.util.List-">anyAtom</a></span>&#8203;(java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;&nbsp;atoms)</code></th>
 <td class="colLast">
 <div class="block">determines whether any of the atoms in the given array are set to be debugged
  (via ATOMx_NUM)</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#anyMolecule-etomica.molecule.IMoleculeList-">anyMolecule</a></span>&#8203;(<a href="../../etomica/molecule/IMoleculeList.html" title="interface in etomica.molecule">IMoleculeList</a>&nbsp;atoms)</code></th>
 <td class="colLast">
@@ -329,7 +334,7 @@ extends java.lang.Object</pre>
  (via ATOMx_NUM)</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#getAtomLeaf1-etomica.box.Box-">getAtomLeaf1</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -337,7 +342,7 @@ extends java.lang.Object</pre>
  ATOM1_INDEX and ATOM2_INDEX within the given box.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../etomica/atom/AtomPair.html" title="class in etomica.atom">AtomPair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#getAtoms-etomica.box.Box-">getAtoms</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -345,7 +350,7 @@ extends java.lang.Object</pre>
  ATOM1_INDEX and ATOM2_INDEX within the given box.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../etomica/molecule/MoleculePair.html" title="class in etomica.molecule">MoleculePair</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#getMolecules-etomica.box.Box-">getMolecules</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -353,7 +358,7 @@ extends java.lang.Object</pre>
  ATOM1_INDEX and ATOM2_INDEX within the given box.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/util/Debug.html#thisBox-etomica.box.Box-">thisBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -614,13 +619,13 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="anyAtom-etomica.atom.IAtomList-">
+<a name="anyAtom-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>anyAtom</h4>
-<pre>public static&nbsp;boolean&nbsp;anyAtom&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms)</pre>
+<pre>public static&nbsp;boolean&nbsp;anyAtom&#8203;(java.util.List&lt;<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&gt;&nbsp;atoms)</pre>
 <div class="block">determines whether any of the atoms in the given array are set to be debugged
  (via ATOMx_NUM)</div>
 <dl>
@@ -629,6 +634,15 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if any of the atoms in the atoms array should be debugged</dd>
 </dl>
+</li>
+</ul>
+<a name="anyAtom-etomica.atom.IAtom...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>anyAtom</h4>
+<pre>public static&nbsp;boolean&nbsp;anyAtom&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>...&nbsp;atoms)</pre>
 </li>
 </ul>
 <a name="anyMolecule-etomica.molecule.IMoleculeList-">

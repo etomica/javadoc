@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10,"i2":6,"i3":10,"i4":6,"i5":10,"i6":6,"i7":6,"i8":10,"i9":6,"i10":6,"i11":10,"i12":6,"i13":10};
+var methods = {"i0":6,"i1":10,"i2":6,"i3":10,"i4":6,"i5":10,"i6":6,"i7":10,"i8":6,"i9":10,"i10":6,"i11":6,"i12":10,"i13":6,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -277,6 +277,11 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#getPeriodicity--">getPeriodicity</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#getPeriodicity-int-">getPeriodicity</a></span>&#8203;(int&nbsp;d)</code></th>
 <td class="colLast">
@@ -284,12 +289,12 @@ extends java.lang.Object</pre>
  defined by the getEdgeVector method).</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/math/geometry/Polytope.html" title="class in etomica.math.geometry">Polytope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#getShape--">getShape</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract double[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#imageOrigins-int-">imageOrigins</a></span>&#8203;(int&nbsp;nShells)</code></th>
 <td class="colLast">
@@ -297,7 +302,7 @@ extends java.lang.Object</pre>
  central image to all of the periodic images.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#nearestImage-etomica.space.Vector-">nearestImage</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;dr)</code></th>
 <td class="colLast">
@@ -305,14 +310,14 @@ extends java.lang.Object</pre>
  periodic-boundary images are considered.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;newBox)</code></th>
 <td class="colLast">
 <div class="block">Sets the box that holds the boundary.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#setBoxSize-etomica.space.Vector-">setBoxSize</a></span>&#8203;(<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;v)</code></th>
 <td class="colLast">
@@ -320,7 +325,7 @@ extends java.lang.Object</pre>
  inscribed within a rectangle of the of the given size.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/space/Boundary.html#volume--">volume</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -625,7 +630,7 @@ extends java.lang.Object</pre>
 <a name="getPeriodicity-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPeriodicity</h4>
 <pre>public abstract&nbsp;boolean&nbsp;getPeriodicity&#8203;(int&nbsp;d)</pre>
@@ -637,6 +642,15 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the periodicity of dimension d</dd>
 </dl>
+</li>
+</ul>
+<a name="getPeriodicity--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPeriodicity</h4>
+<pre>public&nbsp;boolean[]&nbsp;getPeriodicity&#8203;()</pre>
 </li>
 </ul>
 </li>

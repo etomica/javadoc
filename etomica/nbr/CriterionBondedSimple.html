@@ -202,7 +202,8 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionBondedSimple.html#accept-etomica.atom.IAtomList-">accept</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/CriterionBondedSimple.html#accept-etomica.atom.IAtom-etomica.atom.IAtom-">accept</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+      <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</code></th>
 <td class="colLast">
 <div class="block">Implementation of this method should introduce new criterion and return
  true if pair meets this criterion and that of the wrapped
@@ -283,22 +284,23 @@ extends <a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomic
 <pre>public&nbsp;boolean&nbsp;isBonded&#8203;()</pre>
 </li>
 </ul>
-<a name="accept-etomica.atom.IAtomList-">
+<a name="accept-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>accept</h4>
-<pre>public&nbsp;boolean&nbsp;accept&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtomList-">CriterionAdapter</a></code></span></div>
+<pre>public&nbsp;boolean&nbsp;accept&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+                      <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtom-etomica.atom.IAtom-">CriterionAdapter</a></code></span></div>
 <div class="block">Implementation of this method should introduce new criterion and return
  true if pair meets this criterion and that of the wrapped
  NeighborCriterion.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
+<dd><code><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtom-etomica.atom.IAtom-">accept</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtomList-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code></dd>
+<dd><code><a href="../../etomica/nbr/CriterionAdapter.html#accept-etomica.atom.IAtom-etomica.atom.IAtom-">accept</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code></dd>
 </dl>
 </li>
 </ul>

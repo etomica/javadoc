@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":6,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../etomica/nbr/PotentialMasterHybrid.html" title="class in etomica.nbr">PotentialMasterHybrid</a></code>, <code><a href="../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a></code>, <code><a href="../../etomica/nbr/site/PotentialMasterSite.html" title="class in etomica.nbr.site">PotentialMasterSite</a></code></dd>
+<dd><code><a href="../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a></code>, <code><a href="../../etomica/nbr/PotentialMasterHybrid.html" title="class in etomica.nbr">PotentialMasterHybrid</a></code>, <code><a href="../../etomica/nbr/list/PotentialMasterList.html" title="class in etomica.nbr.list">PotentialMasterList</a></code>, <code><a href="../../etomica/nbr/site/PotentialMasterSite.html" title="class in etomica.nbr.site">PotentialMasterSite</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -178,36 +178,31 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#boxAgentManager">boxAgentManager</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#criteria">criteria</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected java.util.List&lt;<a href="../../etomica/nbr/NeighborCriterion.html" title="interface in etomica.nbr">NeighborCriterion</a>&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#criteria1Body">criteria1Body</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected java.util.List&lt;<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#potentials0body">potentials0body</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#rangedPotentials">rangedPotentials</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected java.util.List&lt;<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#rangedPotentials1Body">rangedPotentials1Body</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#simulation">simulation</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -235,8 +230,7 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#PotentialMasterNbr-etomica.simulation.Simulation-etomica.box.BoxAgentManager-">PotentialMasterNbr</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                  <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentManager)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#PotentialMasterNbr-etomica.simulation.Simulation-">PotentialMasterNbr</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -249,7 +243,7 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -271,8 +265,8 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#getCellAgentManager--">getCellAgentManager</a></span>&#8203;()</code></th>
+<td class="colFirst"><code>abstract <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/PotentialMasterNbr.html#getBoxCellManager-etomica.box.Box-">getBoxCellManager</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -447,19 +441,10 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 <a name="simulation">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>simulation</h4>
 <pre>protected final&nbsp;<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> simulation</pre>
-</li>
-</ul>
-<a name="boxAgentManager">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>boxAgentManager</h4>
-<pre>protected&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt; boxAgentManager</pre>
 </li>
 </ul>
 </li>
@@ -470,14 +455,13 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PotentialMasterNbr-etomica.simulation.Simulation-etomica.box.BoxAgentManager-">
+<a name="PotentialMasterNbr-etomica.simulation.Simulation-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PotentialMasterNbr</h4>
-<pre>public&nbsp;PotentialMasterNbr&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                          <a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;boxAgentManager)</pre>
+<pre>public&nbsp;PotentialMasterNbr&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim)</pre>
 </li>
 </ul>
 </li>
@@ -716,13 +700,13 @@ extends <a href="../../etomica/potential/PotentialMaster.html" title="class in e
 </dl>
 </li>
 </ul>
-<a name="getCellAgentManager--">
+<a name="getBoxCellManager-etomica.box.Box-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getCellAgentManager</h4>
-<pre>public final&nbsp;<a href="../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&lt;? extends <a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&gt;&nbsp;getCellAgentManager&#8203;()</pre>
+<h4>getBoxCellManager</h4>
+<pre>public abstract&nbsp;<a href="../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a>&nbsp;getBoxCellManager&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 </li>

@@ -134,10 +134,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" title="interface in etomica.box">BoxAgentManager.BoxAgentSource</a>&lt;<a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&gt;</code></dd>
 </dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../etomica/nbr/list/BoxAgentSourceCellManagerList.html" title="class in etomica.nbr.list">BoxAgentSourceCellManagerList</a></code></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BoxAgentSourceCellManager</span>
@@ -173,16 +169,6 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/BoxAgentSourceCellManager.html#range">range</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/BoxAgentSourceCellManager.html#sim">sim</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/BoxAgentSourceCellManager.html#space">space</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -199,9 +185,8 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/BoxAgentSourceCellManager.html#BoxAgentSourceCellManager-etomica.simulation.Simulation-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">BoxAgentSourceCellManager</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                         <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
-                         <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/BoxAgentSourceCellManager.html#BoxAgentSourceCellManager-etomica.molecule.IMoleculePositionDefinition-double-">BoxAgentSourceCellManager</a></span>&#8203;(<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                         double&nbsp;range)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -259,15 +244,6 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="sim">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
-</li>
-</ul>
 <a name="range">
 <!--   -->
 </a>
@@ -280,19 +256,10 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <a name="positionDefinition">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>positionDefinition</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
-</li>
-</ul>
-<a name="space">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
 </li>
 </ul>
 </li>
@@ -303,15 +270,14 @@ implements <a href="../../../etomica/box/BoxAgentManager.BoxAgentSource.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BoxAgentSourceCellManager-etomica.simulation.Simulation-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">
+<a name="BoxAgentSourceCellManager-etomica.molecule.IMoleculePositionDefinition-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BoxAgentSourceCellManager</h4>
-<pre>public&nbsp;BoxAgentSourceCellManager&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                                 <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
-                                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+<pre>public&nbsp;BoxAgentSourceCellManager&#8203;(<a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
+                                 double&nbsp;range)</pre>
 </li>
 </ul>
 </li>

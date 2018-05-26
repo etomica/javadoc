@@ -58,7 +58,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/nbr/cell/Cell.CellFactory.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/nbr/cell/NeighborIteratorCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/NeighborCellManager.html" target="_top">Frames</a></li>
@@ -134,10 +134,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="../../../etomica/atom/AtomLeafAgentManager.AgentSource.html" title="interface in etomica.atom">AtomLeafAgentManager.AgentSource</a>&lt;<a href="../../../etomica/nbr/cell/Cell.html" title="class in etomica.nbr.cell">Cell</a>&gt;</code>, <code><a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a></code>, <code><a href="../../../etomica/space/BoundaryEventListener.html" title="interface in etomica.space">BoundaryEventListener</a></code></dd>
 </dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../etomica/nbr/list/NeighborCellManagerList.html" title="class in etomica.nbr.list">NeighborCellManagerList</a></code></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">NeighborCellManager</span>
@@ -208,16 +204,11 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#sim">sim</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#suppressBoxLengthWarning">suppressBoxLengthWarning</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#v">v</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -238,22 +229,18 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">NeighborCellManager</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                   double&nbsp;potentialRange,
-                   <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
-                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.box.Box-double-">NeighborCellManager</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                   double&nbsp;potentialRange)</code></th>
 <td class="colLast">
-<div class="block">Construct manager for neighbor cells in the given box.</div>
+<div class="block">Constructs manager for neighbor cells in the given box.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">NeighborCellManager</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                   <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#NeighborCellManager-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-">NeighborCellManager</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                    double&nbsp;potentialRange,
-                   <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code></th>
+                   <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code></th>
 <td class="colLast">
-<div class="block">Constructs manager for neighbor cells in the given box.</div>
+<div class="block">Construct manager for neighbor cells in the given box.</div>
 </td>
 </tr>
 </table>
@@ -400,15 +387,6 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="sim">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>sim</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a> sim</pre>
-</li>
-</ul>
 <a name="lattice">
 <!--   -->
 </a>
@@ -507,32 +485,28 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.space.Space-">
+<a name="NeighborCellManager-etomica.box.Box-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>NeighborCellManager</h4>
-<pre>public&nbsp;NeighborCellManager&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                           double&nbsp;potentialRange,
-                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+<pre>public&nbsp;NeighborCellManager&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                           double&nbsp;potentialRange)</pre>
 <div class="block">Constructs manager for neighbor cells in the given box.  The number of
  cells in each dimension is given by nCells. Position definition for each
  atom is that given by its type (it is set to null in this class).</div>
 </li>
 </ul>
-<a name="NeighborCellManager-etomica.simulation.Simulation-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-etomica.space.Space-">
+<a name="NeighborCellManager-etomica.box.Box-double-etomica.molecule.IMoleculePositionDefinition-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborCellManager</h4>
-<pre>public&nbsp;NeighborCellManager&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                           <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+<pre>public&nbsp;NeighborCellManager&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                            double&nbsp;potentialRange,
-                           <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition,
-                           <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
+                           <a href="../../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</pre>
 <div class="block">Construct manager for neighbor cells in the given box.  The number
  of cells in each dimension is given by nCells.  Position definition is
  used to determine the cell a given atom is in; if null, the position
@@ -772,7 +746,7 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/nbr/cell/Cell.CellFactory.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/nbr/cell/NeighborIteratorCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/NeighborCellManager.html" target="_top">Frames</a></li>

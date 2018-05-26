@@ -219,46 +219,41 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/nbr/cell/Api1ACell.html" title="class in etomica.nbr.cell">Api1ACell</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#neighborIterator">neighborIterator</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#potentialMaster">potentialMaster</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#r0">r0</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#random">random</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/RotationTensor.html" title="interface in etomica.space">RotationTensor</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#rotationTensor">rotationTensor</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#translationVector">translationVector</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#uNew">uNew</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#uOld">uOld</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -300,19 +295,20 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#MCMoveDimerRotate-etomica.nbr.cell.PotentialMasterCell-etomica.util.random.IRandom-etomica.space.Space-double-double-boolean-etomica.potential.IPotentialAtomic-">MCMoveDimerRotate</a></span>&#8203;(<a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#MCMoveDimerRotate-etomica.simulation.Simulation-etomica.nbr.cell.PotentialMasterCell-etomica.space.Space-etomica.potential.IPotentialAtomic-">MCMoveDimerRotate</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                 <a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
+                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
+                 <a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;dimerPotential)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#MCMoveDimerRotate-etomica.simulation.Simulation-etomica.nbr.cell.PotentialMasterCell-etomica.util.random.IRandom-etomica.space.Space-double-double-boolean-etomica.potential.IPotentialAtomic-">MCMoveDimerRotate</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                 <a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
                  <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                  <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                  double&nbsp;stepSize,
                  double&nbsp;stepSizeMax,
                  boolean&nbsp;fixOverlap,
-                 <a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;dimerPotential)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveDimerRotate.html#MCMoveDimerRotate-etomica.simulation.Simulation-etomica.nbr.cell.PotentialMasterCell-etomica.space.Space-etomica.potential.IPotentialAtomic-">MCMoveDimerRotate</a></span>&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                 <a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
-                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                  <a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;dimerPotential)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -544,15 +540,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
 <pre>protected final&nbsp;<a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a> potentialMaster</pre>
 </li>
 </ul>
-<a name="neighborIterator">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>neighborIterator</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/nbr/cell/Api1ACell.html" title="class in etomica.nbr.cell">Api1ACell</a> neighborIterator</pre>
-</li>
-</ul>
 <a name="dr">
 <!--   -->
 </a>
@@ -618,13 +605,14 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBoxStep.html" title="c
                          <a href="../../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;dimerPotential)</pre>
 </li>
 </ul>
-<a name="MCMoveDimerRotate-etomica.nbr.cell.PotentialMasterCell-etomica.util.random.IRandom-etomica.space.Space-double-double-boolean-etomica.potential.IPotentialAtomic-">
+<a name="MCMoveDimerRotate-etomica.simulation.Simulation-etomica.nbr.cell.PotentialMasterCell-etomica.util.random.IRandom-etomica.space.Space-double-double-boolean-etomica.potential.IPotentialAtomic-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MCMoveDimerRotate</h4>
-<pre>public&nbsp;MCMoveDimerRotate&#8203;(<a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
+<pre>public&nbsp;MCMoveDimerRotate&#8203;(<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
+                         <a href="../../../etomica/nbr/cell/PotentialMasterCell.html" title="class in etomica.nbr.cell">PotentialMasterCell</a>&nbsp;potentialMaster,
                          <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
                          <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
                          double&nbsp;stepSize,

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a></code></dd>
+<dd><code><a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">SpaceLattice</span>
-extends <a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a></pre>
+extends <a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</pre>
 <div class="block">Marker interface indicating that AbstractLattice.site(int[]) returns an
  IVector instance. No specification is made here regarding whether repeated
  calls will return the same IVector instance. However, repeated calls with the
@@ -172,13 +172,20 @@ extends <a href="../../etomica/lattice/AbstractLattice.html" title="interface in
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/lattice/SpaceLattice.html#getSpace--">getSpace</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/lattice/SpaceLattice.html#site-int:A-">site</a></span>&#8203;(int[]&nbsp;index)</code></th>
+<td class="colLast">
+<div class="block">Returns the site specified by the given index.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.lattice.AbstractLattice">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;etomica.lattice.<a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a></h3>
-<code><a href="../../etomica/lattice/AbstractLattice.html#D--">D</a>, <a href="../../etomica/lattice/AbstractLattice.html#site-int:A-">site</a></code></li>
+<code><a href="../../etomica/lattice/AbstractLattice.html#D--">D</a></code></li>
 </ul>
 </li>
 </ul>
@@ -194,6 +201,26 @@ extends <a href="../../etomica/lattice/AbstractLattice.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="site-int:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>site</h4>
+<pre><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&nbsp;site&#8203;(int[]&nbsp;index)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/lattice/AbstractLattice.html#site-int:A-">AbstractLattice</a></code></span></div>
+<div class="block">Returns the site specified by the given index.  The number of integers
+ in the index array must be equal to D, the lattice dimension.  No specification
+ is made here regarding the identity of the instance returned by this method.
+ Thus repeated calls may return different object instances, or the same instance,
+ regardless of the argument.  The concrete implementations of this class should
+ provide this specification.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/lattice/AbstractLattice.html#site-int:A-">site</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/lattice/AbstractLattice.html" title="interface in etomica.lattice">AbstractLattice</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getSpace--">
 <!--   -->
 </a>

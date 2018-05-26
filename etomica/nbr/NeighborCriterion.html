@@ -58,7 +58,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/nbr/CriterionSimple.html" title="class in etomica.nbr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/nbr/PotentialGroupHybrid.html" title="class in etomica.nbr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/nbr/NeighborIterator.html" title="interface in etomica.nbr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/nbr/NeighborCriterion.html" target="_top">Frames</a></li>
@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../etomica/modules/colloid/ColloidSim.CriterionNone.html" title="class in etomica.modules.colloid">ColloidSim.CriterionNone</a></code>, <code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code>, <code><a href="../../etomica/nbr/CriterionAll.html" title="class in etomica.nbr">CriterionAll</a></code>, <code><a href="../../etomica/nbr/CriterionBondedSimple.html" title="class in etomica.nbr">CriterionBondedSimple</a></code>, <code><a href="../../etomica/nbr/CriterionInterMolecular.html" title="class in etomica.nbr">CriterionInterMolecular</a></code>, <code><a href="../../etomica/nbr/CriterionMolecular.html" title="class in etomica.nbr">CriterionMolecular</a></code>, <code><a href="../../etomica/nbr/CriterionMolecularNonAdjacent.html" title="class in etomica.nbr">CriterionMolecularNonAdjacent</a></code>, <code><a href="../../etomica/nbr/CriterionNone.html" title="class in etomica.nbr">CriterionNone</a></code>, <code><a href="../../etomica/nbr/CriterionPositionWall.html" title="class in etomica.nbr">CriterionPositionWall</a></code>, <code><a href="../../etomica/nbr/CriterionSimple.html" title="class in etomica.nbr">CriterionSimple</a></code>, <code><a href="../../etomica/modules/sam/CriterionTether3.html" title="class in etomica.modules.sam">CriterionTether3</a></code></dd>
+<dd><code><a href="../../etomica/modules/colloid/ColloidSim.CriterionNone.html" title="class in etomica.modules.colloid">ColloidSim.CriterionNone</a></code>, <code><a href="../../etomica/nbr/CriterionAdapter.html" title="class in etomica.nbr">CriterionAdapter</a></code>, <code><a href="../../etomica/nbr/CriterionAll.html" title="class in etomica.nbr">CriterionAll</a></code>, <code><a href="../../etomica/nbr/CriterionBondedSimple.html" title="class in etomica.nbr">CriterionBondedSimple</a></code>, <code><a href="../../etomica/nbr/CriterionInterMolecular.html" title="class in etomica.nbr">CriterionInterMolecular</a></code>, <code><a href="../../etomica/nbr/CriterionNone.html" title="class in etomica.nbr">CriterionNone</a></code>, <code><a href="../../etomica/nbr/CriterionPositionWall.html" title="class in etomica.nbr">CriterionPositionWall</a></code>, <code><a href="../../etomica/nbr/CriterionSimple.html" title="class in etomica.nbr">CriterionSimple</a></code>, <code><a href="../../etomica/modules/sam/CriterionTether3.html" title="class in etomica.modules.sam">CriterionTether3</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -155,7 +155,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtomList-">accept</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/nbr/NeighborCriterion.html#accept-etomica.atom.IAtom-etomica.atom.IAtom-">accept</a></span>&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+      <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -204,13 +205,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accept-etomica.atom.IAtomList-">
+<a name="accept-etomica.atom.IAtom-etomica.atom.IAtom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>accept</h4>
-<pre>boolean&nbsp;accept&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
+<pre>boolean&nbsp;accept&#8203;(<a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom1,
+               <a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom2)</pre>
 </li>
 </ul>
 <a name="needUpdate-etomica.atom.IAtom-">
@@ -293,7 +295,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/nbr/CriterionSimple.html" title="class in etomica.nbr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/nbr/PotentialGroupHybrid.html" title="class in etomica.nbr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/nbr/NeighborIterator.html" title="interface in etomica.nbr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/nbr/NeighborCriterion.html" target="_top">Frames</a></li>

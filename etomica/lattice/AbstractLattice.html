@@ -116,7 +116,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="../../etomica/lattice/package-summary.html">etomica.lattice</a></div>
-<h2 title="Interface AbstractLattice" class="title">Interface AbstractLattice</h2>
+<h2 title="Interface AbstractLattice" class="title">Interface AbstractLattice&lt;T&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../../etomica/lattice/CubicLattice.html" title="interface in etomica.lattice">CubicLattice</a></code>, <code><a href="../../etomica/lattice/FiniteLattice.html" title="interface in etomica.lattice">FiniteLattice</a></code>, <code><a href="../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a></code></dd>
+<dd><code><a href="../../etomica/lattice/CubicLattice.html" title="interface in etomica.lattice">CubicLattice</a></code>, <code><a href="../../etomica/lattice/FiniteLattice.html" title="interface in etomica.lattice">FiniteLattice</a>&lt;T&gt;</code>, <code><a href="../../etomica/lattice/SpaceLattice.html" title="interface in etomica.lattice">SpaceLattice</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">AbstractLattice</span></pre>
+<pre>public interface <span class="typeNameLabel">AbstractLattice&lt;T&gt;</span></pre>
 <div class="block">Interface for a generic lattice, which is a collection of sites that can be
  accessed individually via specification of a set of integers.  Any object can
  play the role of a site.</div>
@@ -163,7 +163,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colFirst"><code><a href="../../etomica/lattice/AbstractLattice.html" title="type parameter in AbstractLattice">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/lattice/AbstractLattice.html#site-int:A-">site</a></span>&#8203;(int[]&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Returns the site specified by the given index.</div>
@@ -201,7 +201,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>site</h4>
-<pre>java.lang.Object&nbsp;site&#8203;(int[]&nbsp;index)</pre>
+<pre><a href="../../etomica/lattice/AbstractLattice.html" title="type parameter in AbstractLattice">T</a>&nbsp;site&#8203;(int[]&nbsp;index)</pre>
 <div class="block">Returns the site specified by the given index.  The number of integers
  in the index array must be equal to D, the lattice dimension.  No specification
  is made here regarding the identity of the instance returned by this method.

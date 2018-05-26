@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../etomica/nbr/cell/ApiAACell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/Api1ACell.html" target="_top">Frames</a></li>
@@ -92,13 +92,13 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -132,48 +132,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" title="interface in etomica.atom.iterator">AtomLeafsetIterator</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIterator.html" title="interface in etomica.atom.iterator">AtomsetIterator</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" title="interface in etomica.atom.iterator">AtomsetIteratorPDT</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code>, <code><a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell">AtomsetIteratorCellular</a></code>, <code>java.io.Serializable</code></dd>
+<dd><code><a href="../../../etomica/atom/iterator/AtomLeafsetIterator.html" title="interface in etomica.atom.iterator">AtomLeafsetIterator</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIterator.html" title="interface in etomica.atom.iterator">AtomsetIterator</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a></code>, <code><a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a></code>, <code><a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell">AtomsetIteratorCellular</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Api1ACell</span>
 extends java.lang.Object
-implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" title="interface in etomica.atom.iterator">AtomsetIteratorPDT</a>, <a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell">AtomsetIteratorCellular</a>, java.io.Serializable</pre>
+implements <a href="../../../etomica/atom/iterator/AtomsetIteratorDirectable.html" title="interface in etomica.atom.iterator">AtomsetIteratorDirectable</a>, <a href="../../../etomica/atom/iterator/AtomsetIteratorTargetable.html" title="interface in etomica.atom.iterator">AtomsetIteratorTargetable</a>, <a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell">AtomsetIteratorCellular</a></pre>
 <div class="block">Generates pairs that are cell-based neighbors of a specific Atom. Iteration is
  performed using cell lists, which defines the neighboring molecules.
  Direction is related to ordering of cells and, within a cell, ordering of
  molecules in cell's occupant list.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.nbr.cell.Api1ACell">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Field</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#periodicity">periodicity</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -187,9 +162,9 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#Api1ACell-int-double-etomica.box.BoxAgentManager-">Api1ACell</a></span>&#8203;(int&nbsp;D,
-         double&nbsp;range,
-         <a href="../../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&nbsp;agentManager)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#Api1ACell-double-etomica.box.Box-etomica.nbr.cell.NeighborCellManager-">Api1ACell</a></span>&#8203;(double&nbsp;range,
+         <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+         <a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&nbsp;neighborCellManager)</code></th>
 <td class="colLast">
 <div class="block">Constructor makes iterator that must have box specified and then be
  reset() before iteration.</div>
@@ -239,27 +214,20 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
-<td class="colLast">
-<div class="block">Sets the Box to pull iterates from</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#setDirection-etomica.potential.IteratorDirective.Direction-">setDirection</a></span>&#8203;(<a href="../../../etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</code></th>
 <td class="colLast">
 <div class="block">Indicates allowed direction for iteration, relative to specified target
  atom.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#setTarget-etomica.atom.IAtom-">setTarget</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</code></th>
 <td class="colLast">
 <div class="block">Sets the target molecule with which all pairs are formed.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#size--">size</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -267,7 +235,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
  reset and iterated in its present state.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/Api1ACell.html#unset--">unset</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -290,47 +258,30 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="periodicity">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>periodicity</h4>
-<pre>protected final&nbsp;boolean[] periodicity</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Api1ACell-int-double-etomica.box.BoxAgentManager-">
+<a name="Api1ACell-double-etomica.box.Box-etomica.nbr.cell.NeighborCellManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Api1ACell</h4>
-<pre>public&nbsp;Api1ACell&#8203;(int&nbsp;D,
-                 double&nbsp;range,
-                 <a href="../../../etomica/box/BoxAgentManager.html" title="class in etomica.box">BoxAgentManager</a>&nbsp;agentManager)</pre>
+<pre>public&nbsp;Api1ACell&#8203;(double&nbsp;range,
+                 <a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                 <a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a>&nbsp;neighborCellManager)</pre>
 <div class="block">Constructor makes iterator that must have box specified and then be
  reset() before iteration.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>D</code> - the dimension of the space of the simulation (used to
-            construct cell iterators)</dd>
+              construct cell iterators)</dd>
 <dd><code>range</code> - the distance within which pairs of atoms are considered
-            neighbors. Used to define neighbor cells; some iterates may
-            exceed this separation</dd>
+              neighbors. Used to define neighbor cells; some iterates may
+              exceed this separation</dd>
 </dl>
 </li>
 </ul>
@@ -342,21 +293,6 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setBox-etomica.box.Box-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setBox</h4>
-<pre>public&nbsp;void&nbsp;setBox&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.box.Box-">AtomsetIteratorBoxDependent</a></code></span></div>
-<div class="block">Sets the Box to pull iterates from</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/atom/iterator/AtomsetIteratorBoxDependent.html" title="interface in etomica.atom.iterator">AtomsetIteratorBoxDependent</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="size--">
 <!--   -->
 </a>
@@ -458,7 +394,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <pre>public&nbsp;void&nbsp;setTarget&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;newTargetAtom)</pre>
 <div class="block">Sets the target molecule with which all pairs are formed.  Molecule
  is determined from the first atom of the array, which may be the molecule
- itself or an atom that is part of it.  If the atom is null or is not 
+ itself or an atom that is part of it.  If the atom is null or is not
  in one of the species given at construction, no iterates will be returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -509,7 +445,7 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../etomica/nbr/cell/ApiAACell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/nbr/cell/AtomsetIteratorCellular.html" title="interface in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/Api1ACell.html" target="_top">Frames</a></li>
@@ -537,13 +473,13 @@ implements <a href="../../../etomica/atom/iterator/AtomsetIteratorPDT.html" titl
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
