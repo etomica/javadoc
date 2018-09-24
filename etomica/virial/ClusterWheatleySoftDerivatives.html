@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -276,26 +276,31 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#rCut2">rCut2</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#SoftBDcount">SoftBDcount</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#stepcount">stepcount</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#tol">tol</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#totcount">totcount</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#value">value</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -394,15 +399,25 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;temperature)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#setRCut-double-">setRCut</a></span>&#8203;(double&nbsp;newRCut)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;temperature)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#setTolerance-double-">setTolerance</a></span>&#8203;(double&nbsp;newTol)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#updateF-etomica.virial.BoxCluster-">updateF</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.html#value-etomica.virial.BoxCluster-">value</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -633,10 +648,19 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <a name="count">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>count</h4>
 <pre>protected&nbsp;boolean count</pre>
+</li>
+</ul>
+<a name="rCut2">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>rCut2</h4>
+<pre>protected&nbsp;double rCut2</pre>
 </li>
 </ul>
 </li>
@@ -667,6 +691,15 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setTolerance-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTolerance</h4>
+<pre>public&nbsp;void&nbsp;setTolerance&#8203;(double&nbsp;newTol)</pre>
+</li>
+</ul>
 <a name="setDoCaching-boolean-">
 <!--   -->
 </a>
@@ -733,6 +766,15 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <pre>protected&nbsp;void&nbsp;calcFullFQ&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</pre>
 <div class="block">This calculates all FQ values given that the entries for pairs have
  already been populated.</div>
+</li>
+</ul>
+<a name="setRCut-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRCut</h4>
+<pre>public&nbsp;void&nbsp;setRCut&#8203;(double&nbsp;newRCut)</pre>
 </li>
 </ul>
 <a name="calcValue-etomica.virial.BoxCluster-">
