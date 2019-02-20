@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,41 +175,46 @@ extends <a href="../../etomica/virial/ClusterWheatleySoft.html" title="class in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#doTotal">doTotal</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#fMulti">fMulti</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/virial/MayerFunctionNonAdditive.html" title="interface in etomica.virial">MayerFunctionNonAdditive</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#fNonAdditive">fNonAdditive</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#fQmulti">fQmulti</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#moleculeIndices">moleculeIndices</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#molecules">molecules</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#multiTol">multiTol</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#r2">r2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#rCut2">rCut2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -296,15 +301,20 @@ extends <a href="../../etomica/virial/ClusterWheatleySoft.html" title="class in 
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setRCut-double-">setRCut</a></span>&#8203;(double&nbsp;newRCut)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setDoTotal-boolean-">setDoTotal</a></span>&#8203;(boolean&nbsp;newDoTotal)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;newT)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setRCut-double-">setRCut</a></span>&#8203;(double&nbsp;newRCut)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;newT)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibody.html#setTolerance-double-">setTolerance</a></span>&#8203;(double&nbsp;newTol)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -390,6 +400,15 @@ extends <a href="../../etomica/virial/ClusterWheatleySoft.html" title="class in 
 <li class="blockList">
 <h4>doMulti</h4>
 <pre>protected&nbsp;boolean doMulti</pre>
+</li>
+</ul>
+<a name="doTotal">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doTotal</h4>
+<pre>protected&nbsp;boolean doTotal</pre>
 </li>
 </ul>
 <a name="rCut2">
@@ -552,6 +571,15 @@ extends <a href="../../etomica/virial/ClusterWheatleySoft.html" title="class in 
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/virial/ClusterWheatleySoft.html#setTemperature-double-">setTemperature</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/virial/ClusterWheatleySoft.html" title="class in etomica.virial">ClusterWheatleySoft</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="setDoTotal-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoTotal</h4>
+<pre>public&nbsp;void&nbsp;setDoTotal&#8203;(boolean&nbsp;newDoTotal)</pre>
 </li>
 </ul>
 <a name="setRCut-double-">
