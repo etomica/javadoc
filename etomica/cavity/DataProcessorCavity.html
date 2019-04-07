@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/cavity/ColorSchemePaired.html" title="class in etomica.cavity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/cavity/DataProcessorRDF.html" title="class in etomica.cavity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/cavity/HSMDCavity.html" title="class in etomica.cavity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/cavity/DataProcessorCavity.html" target="_top">Frames</a></li>
@@ -137,12 +137,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code>, <code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
+<dd><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code>, <code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code>, <code><a href="../../etomica/integrator/IntegratorHard.CollisionListener.html" title="interface in etomica.integrator">IntegratorHard.CollisionListener</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataProcessorCavity</span>
-extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></pre>
+extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a>
+implements <a href="../../etomica/integrator/IntegratorHard.CollisionListener.html" title="interface in etomica.integrator">IntegratorHard.CollisionListener</a></pre>
 <div class="block">This processor scales up the measured cavity function so that its contact
  value is equal to the RDF contact value.</div>
 </li>
@@ -175,8 +176,18 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/cavity/P2HardSphereCavity.html" title="class in etomica.cavity">P2HardSphereCavity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#p2">p2</a></span></code></th>
+<td class="colFirst"><code>protected long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#internalCollisions">internalCollisions</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#sigma">sigma</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#totalCollisions">totalCollisions</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -202,8 +213,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#DataProcessorCavity-etomica.integrator.IntegratorHard-etomica.cavity.P2HardSphereCavity-">DataProcessorCavity</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator,
-                   <a href="../../etomica/cavity/P2HardSphereCavity.html" title="class in etomica.cavity">P2HardSphereCavity</a>&nbsp;p2)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#DataProcessorCavity-etomica.integrator.IntegratorHard-">DataProcessorCavity</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -223,6 +233,11 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#collisionAction-etomica.integrator.IntegratorHard.Agent-">collisionAction</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorHard.Agent.html" title="class in etomica.integrator">IntegratorHard.Agent</a>&nbsp;agent)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#processData-etomica.data.IData-">processData</a></span>&#8203;(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;inputData)</code></th>
 <td class="colLast">
@@ -230,13 +245,18 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
  DataSink.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>&#8203;(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code></th>
 <td class="colLast">
 <div class="block">Informs this DataProcessor of the DataInfo for the Data it will be
  processing.</div>
 </td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/DataProcessorCavity.html#reset--">reset</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -285,13 +305,31 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <pre>protected final&nbsp;<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a> integrator</pre>
 </li>
 </ul>
-<a name="p2">
+<a name="internalCollisions">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>internalCollisions</h4>
+<pre>protected&nbsp;long internalCollisions</pre>
+</li>
+</ul>
+<a name="totalCollisions">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalCollisions</h4>
+<pre>protected&nbsp;long totalCollisions</pre>
+</li>
+</ul>
+<a name="sigma">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>p2</h4>
-<pre>protected final&nbsp;<a href="../../etomica/cavity/P2HardSphereCavity.html" title="class in etomica.cavity">P2HardSphereCavity</a> p2</pre>
+<h4>sigma</h4>
+<pre>protected&nbsp;double sigma</pre>
 </li>
 </ul>
 </li>
@@ -302,14 +340,13 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataProcessorCavity-etomica.integrator.IntegratorHard-etomica.cavity.P2HardSphereCavity-">
+<a name="DataProcessorCavity-etomica.integrator.IntegratorHard-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DataProcessorCavity</h4>
-<pre>public&nbsp;DataProcessorCavity&#8203;(<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator,
-                           <a href="../../etomica/cavity/P2HardSphereCavity.html" title="class in etomica.cavity">P2HardSphereCavity</a>&nbsp;p2)</pre>
+<pre>public&nbsp;DataProcessorCavity&#8203;(<a href="../../etomica/integrator/IntegratorHard.html" title="class in etomica.integrator">IntegratorHard</a>&nbsp;integrator)</pre>
 </li>
 </ul>
 </li>
@@ -320,6 +357,28 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="reset--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reset</h4>
+<pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+</li>
+</ul>
+<a name="collisionAction-etomica.integrator.IntegratorHard.Agent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>collisionAction</h4>
+<pre>public&nbsp;void&nbsp;collisionAction&#8203;(<a href="../../etomica/integrator/IntegratorHard.Agent.html" title="class in etomica.integrator">IntegratorHard.Agent</a>&nbsp;agent)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/integrator/IntegratorHard.CollisionListener.html#collisionAction-etomica.integrator.IntegratorHard.Agent-">collisionAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/integrator/IntegratorHard.CollisionListener.html" title="interface in etomica.integrator">IntegratorHard.CollisionListener</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="processData-etomica.data.IData-">
 <!--   -->
 </a>
@@ -392,7 +451,7 @@ extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/cavity/ColorSchemePaired.html" title="class in etomica.cavity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../etomica/cavity/DataProcessorRDF.html" title="class in etomica.cavity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../etomica/cavity/HSMDCavity.html" title="class in etomica.cavity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/cavity/DataProcessorCavity.html" target="_top">Frames</a></li>

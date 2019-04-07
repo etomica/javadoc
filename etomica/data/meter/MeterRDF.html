@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code>, <code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code>, <code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code>, <code>java.io.Serializable</code></dd>
+<dd><code><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code>, <code><a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></code>, <code><a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -142,14 +142,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <br>
 <pre>public class <span class="typeNameLabel">MeterRDF</span>
 extends java.lang.Object
-implements <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a>, java.io.Serializable</pre>
+implements <a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>, <a href="../../../etomica/data/IDataSource.html" title="interface in etomica.data">IDataSource</a>, <a href="../../../etomica/data/DataSourceIndependent.html" title="interface in etomica.data">DataSourceIndependent</a></pre>
 <div class="block">Meter for tabulation of the atomic radial distribution function (RDF).  The
  meter takes data via actionPerformed and returns the average RDF via
  getData.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.data.meter.MeterRDF">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -205,31 +201,36 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#resetAfterData">resetAfterData</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#tag">tag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#type1">type1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#type2">type2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#xDataSource">xDataSource</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#xMax">xMax</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -368,6 +369,16 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setName-java.lang.String-">setName</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#setResetAfterData-boolean-">setResetAfterData</a></span>&#8203;(boolean&nbsp;doResetAfterData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/data/meter/MeterRDF.html#zeroData--">zeroData</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -501,10 +512,19 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <a name="type2">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>type2</h4>
 <pre>protected&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type2</pre>
+</li>
+</ul>
+<a name="resetAfterData">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>resetAfterData</h4>
+<pre>protected&nbsp;boolean resetAfterData</pre>
 </li>
 </ul>
 </li>
@@ -585,6 +605,15 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
                          <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type2)</pre>
 </li>
 </ul>
+<a name="setResetAfterData-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResetAfterData</h4>
+<pre>public&nbsp;void&nbsp;setResetAfterData&#8203;(boolean&nbsp;doResetAfterData)</pre>
+</li>
+</ul>
 <a name="reset--">
 <!--   -->
 </a>
@@ -593,6 +622,15 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
 <div class="block">Zero's out the RDF sum tracked by this meter.</div>
+</li>
+</ul>
+<a name="zeroData--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>zeroData</h4>
+<pre>public&nbsp;void&nbsp;zeroData&#8203;()</pre>
 </li>
 </ul>
 <a name="actionPerformed--">
