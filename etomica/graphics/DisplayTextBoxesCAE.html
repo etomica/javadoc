@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,7 +177,17 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#corBox">corBox</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#currentBox">currentBox</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#doShowCorrelation">doShowCorrelation</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -313,34 +323,39 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setDoShowCurrent-boolean-">setDoShowCurrent</a></span>&#8203;(boolean&nbsp;newDoShowCurrent)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setDoShowCorrelation-boolean-">setDoShowCorrelation</a></span>&#8203;(boolean&nbsp;newDoShowCorrelation)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setDoShowCurrent-boolean-">setDoShowCurrent</a></span>&#8203;(boolean&nbsp;newDoShowCurrent)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setLabel-java.lang.String-">setLabel</a></span>&#8203;(java.lang.String&nbsp;s)</code></th>
 <td class="colLast">
 <div class="block">Accessor method of the label describing the display.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setLabelPosition-etomica.util.Constants.CompassDirection-">setLabelPosition</a></span>&#8203;(<a href="../../etomica/util/Constants.CompassDirection.html" title="enum in etomica.util">Constants.CompassDirection</a>&nbsp;position)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setLabelType-etomica.graphics.DisplayTextBox.LabelType-">setLabelType</a></span>&#8203;(<a href="../../etomica/graphics/DisplayTextBox.LabelType.html" title="enum in etomica.graphics">DisplayTextBox.LabelType</a>&nbsp;labelType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setPrecision-int-">setPrecision</a></span>&#8203;(int&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Accessor method of the precision, which specifies the number of significant figures to be displayed.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DisplayTextBoxesCAE.html#setUnit-etomica.units.Unit-">setUnit</a></span>&#8203;(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -410,6 +425,15 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <pre>public&nbsp;<a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a> errorBox</pre>
 </li>
 </ul>
+<a name="corBox">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>corBox</h4>
+<pre>public&nbsp;<a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a> corBox</pre>
+</li>
+</ul>
 <a name="panelParentGroup">
 <!--   -->
 </a>
@@ -426,6 +450,15 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <li class="blockList">
 <h4>doShowCurrent</h4>
 <pre>protected&nbsp;boolean doShowCurrent</pre>
+</li>
+</ul>
+<a name="doShowCorrelation">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doShowCorrelation</h4>
+<pre>protected&nbsp;boolean doShowCorrelation</pre>
 </li>
 </ul>
 <a name="labelPosition">
@@ -487,6 +520,15 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <li class="blockList">
 <h4>getDoShowCurrent</h4>
 <pre>public&nbsp;boolean&nbsp;getDoShowCurrent&#8203;()</pre>
+</li>
+</ul>
+<a name="setDoShowCorrelation-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoShowCorrelation</h4>
+<pre>public&nbsp;void&nbsp;setDoShowCorrelation&#8203;(boolean&nbsp;newDoShowCorrelation)</pre>
 </li>
 </ul>
 <a name="putDataInfo-etomica.data.IDataInfo-">
