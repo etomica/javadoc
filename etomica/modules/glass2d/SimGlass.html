@@ -163,6 +163,11 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.GlassParams.html" title="class in etomica.modules.glass2d">SimGlass.GlassParams</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass2d">SimGlass.PotentialChoice</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -190,7 +195,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" title="class in etomica.integrator">IntegratorVelocityVerlet</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.html#integrator">integrator</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -200,8 +205,8 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.html#isLJ">isLJ</a></span></code></th>
+<td class="colFirst"><code><a href="../../../etomica/modules/glass2d/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass2d">SimGlass.PotentialChoice</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.html#potentialChoice">potentialChoice</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -242,12 +247,12 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.html#SimGlass-int-int-int-double-boolean-boolean-">SimGlass</a></span>&#8203;(int&nbsp;D,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/SimGlass.html#SimGlass-int-int-int-double-boolean-etomica.modules.glass2d.SimGlass.PotentialChoice-">SimGlass</a></span>&#8203;(int&nbsp;D,
         int&nbsp;nA,
         int&nbsp;nB,
         double&nbsp;density,
         boolean&nbsp;doSwap,
-        boolean&nbsp;doLJ)</code></th>
+        <a href="../../../etomica/modules/glass2d/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass2d">SimGlass.PotentialChoice</a>&nbsp;pc)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -333,7 +338,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>integrator</h4>
-<pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorVelocityVerlet.html" title="class in etomica.integrator">IntegratorVelocityVerlet</a> integrator</pre>
+<pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a> integrator</pre>
 </li>
 </ul>
 <a name="activityIntegrate">
@@ -363,13 +368,13 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <pre>public final&nbsp;<a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a> integratorMC</pre>
 </li>
 </ul>
-<a name="isLJ">
+<a name="potentialChoice">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>isLJ</h4>
-<pre>public final&nbsp;boolean isLJ</pre>
+<h4>potentialChoice</h4>
+<pre>public final&nbsp;<a href="../../../etomica/modules/glass2d/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass2d">SimGlass.PotentialChoice</a> potentialChoice</pre>
 </li>
 </ul>
 </li>
@@ -380,7 +385,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimGlass-int-int-int-double-boolean-boolean-">
+<a name="SimGlass-int-int-int-double-boolean-etomica.modules.glass2d.SimGlass.PotentialChoice-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -391,7 +396,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
                 int&nbsp;nB,
                 double&nbsp;density,
                 boolean&nbsp;doSwap,
-                boolean&nbsp;doLJ)</pre>
+                <a href="../../../etomica/modules/glass2d/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass2d">SimGlass.PotentialChoice</a>&nbsp;pc)</pre>
 </li>
 </ul>
 </li>
