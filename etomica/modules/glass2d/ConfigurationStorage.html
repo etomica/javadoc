@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass2d/ColorSchemeDeviation.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass2d/ConfigurationStorage.html" target="_top">Frames</a></li>
@@ -91,7 +91,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -149,6 +149,27 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -180,6 +201,16 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#dri">dri</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#enabled">enabled</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected java.util.Set&lt;<a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#listeners">listeners</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -239,39 +270,64 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#addListener-etomica.modules.glass2d.ConfigurationStorage.ConfigurationStorageListener-">addListener</a></span>&#8203;(<a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a>&nbsp;l)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getEnabled--">getEnabled</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getLastConfigIndex--">getLastConfigIndex</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedConfig-int-">getSavedConfig</a></span>&#8203;(int&nbsp;idx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedSteps--">getSavedSteps</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedTimes--">getSavedTimes</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#reset--">reset</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#setEnabled-boolean-">setEnabled</a></span>&#8203;(boolean&nbsp;newEnabled)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -362,10 +418,28 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <a name="dri">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>dri</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dri</pre>
+</li>
+</ul>
+<a name="listeners">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>listeners</h4>
+<pre>protected final&nbsp;java.util.Set&lt;<a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a>&gt; listeners</pre>
+</li>
+</ul>
+<a name="enabled">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>enabled</h4>
+<pre>protected&nbsp;boolean enabled</pre>
 </li>
 </ul>
 </li>
@@ -394,6 +468,24 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setEnabled-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEnabled</h4>
+<pre>public&nbsp;void&nbsp;setEnabled&#8203;(boolean&nbsp;newEnabled)</pre>
+</li>
+</ul>
+<a name="getEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEnabled</h4>
+<pre>public&nbsp;boolean&nbsp;getEnabled&#8203;()</pre>
+</li>
+</ul>
 <a name="reset--">
 <!--   -->
 </a>
@@ -401,6 +493,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+</li>
+</ul>
+<a name="addListener-etomica.modules.glass2d.ConfigurationStorage.ConfigurationStorageListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>public&nbsp;void&nbsp;addListener&#8203;(<a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a>&nbsp;l)</pre>
 </li>
 </ul>
 <a name="integratorInitialized-etomica.integrator.IntegratorEvent-">
@@ -431,6 +532,24 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/integrator/IntegratorListener.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/integrator/IntegratorListener.html" title="interface in etomica.integrator">IntegratorListener</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getLastConfigIndex--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLastConfigIndex</h4>
+<pre>public&nbsp;int&nbsp;getLastConfigIndex&#8203;()</pre>
+</li>
+</ul>
+<a name="getSavedTimes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSavedTimes</h4>
+<pre>public&nbsp;double[]&nbsp;getSavedTimes&#8203;()</pre>
 </li>
 </ul>
 <a name="getSavedSteps--">
@@ -494,7 +613,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass2d/ColorSchemeDeviation.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass2d/ConfigurationStorage.html" target="_top">Frames</a></li>
@@ -521,7 +640,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

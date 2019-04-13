@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,7 +57,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass2d/DataSourceMSD.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass2d/GlassGraphic.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -224,13 +224,23 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#configIndex">configIndex</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d">ConfigurationStorage</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#configStorage">configStorage</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#dr">dr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#oldPositions">oldPositions</a></span></code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#drawDisplacement">drawDisplacement</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -284,9 +294,10 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#DisplayBoxCanvas2DGlass-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">DisplayBoxCanvas2DGlass</a></span>&#8203;(<a href="../../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#DisplayBoxCanvas2DGlass-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-etomica.modules.glass2d.ConfigurationStorage-">DisplayBoxCanvas2DGlass</a></span>&#8203;(<a href="../../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
                        <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
-                       <a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code></th>
+                       <a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+                       <a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d">ConfigurationStorage</a>&nbsp;configStorage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -313,8 +324,23 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#getConfigIndex--">getConfigIndex</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#getDrawDisplacement--">getDrawDisplacement</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#reset--">reset</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#setConfigIndex-int-">setConfigIndex</a></span>&#8203;(int&nbsp;idx)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/DisplayBoxCanvas2DGlass.html#setDrawDisplacement-boolean-">setDrawDisplacement</a></span>&#8203;(boolean&nbsp;doDrawDisplacement)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -381,22 +407,40 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="oldPositions">
+<a name="configStorage">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>oldPositions</h4>
-<pre>protected final&nbsp;java.util.List&lt;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; oldPositions</pre>
+<h4>configStorage</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d">ConfigurationStorage</a> configStorage</pre>
+</li>
+</ul>
+<a name="configIndex">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>configIndex</h4>
+<pre>protected&nbsp;int configIndex</pre>
 </li>
 </ul>
 <a name="dr">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>dr</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
+</li>
+</ul>
+<a name="drawDisplacement">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>drawDisplacement</h4>
+<pre>protected&nbsp;boolean drawDisplacement</pre>
 </li>
 </ul>
 </li>
@@ -407,7 +451,7 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DisplayBoxCanvas2DGlass-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-">
+<a name="DisplayBoxCanvas2DGlass-etomica.graphics.DisplayBox-etomica.space.Space-etomica.action.activity.Controller-etomica.modules.glass2d.ConfigurationStorage-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -415,7 +459,8 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <h4>DisplayBoxCanvas2DGlass</h4>
 <pre>public&nbsp;DisplayBoxCanvas2DGlass&#8203;(<a href="../../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a>&nbsp;_box,
                                <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space,
-                               <a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
+                               <a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+                               <a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d">ConfigurationStorage</a>&nbsp;configStorage)</pre>
 </li>
 </ul>
 </li>
@@ -426,13 +471,40 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="reset--">
+<a name="setConfigIndex-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+<h4>setConfigIndex</h4>
+<pre>public&nbsp;void&nbsp;setConfigIndex&#8203;(int&nbsp;idx)</pre>
+</li>
+</ul>
+<a name="getConfigIndex--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfigIndex</h4>
+<pre>public&nbsp;int&nbsp;getConfigIndex&#8203;()</pre>
+</li>
+</ul>
+<a name="setDrawDisplacement-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDrawDisplacement</h4>
+<pre>public&nbsp;void&nbsp;setDrawDisplacement&#8203;(boolean&nbsp;doDrawDisplacement)</pre>
+</li>
+</ul>
+<a name="getDrawDisplacement--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDrawDisplacement</h4>
+<pre>public&nbsp;boolean&nbsp;getDrawDisplacement&#8203;()</pre>
 </li>
 </ul>
 <a name="drawAtom-java.awt.Graphics-int:A-etomica.atom.IAtom-">
@@ -477,7 +549,7 @@ extends <a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass2d/DataSourceMSD.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass2d/GlassGraphic.html" title="class in etomica.modules.glass2d"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
