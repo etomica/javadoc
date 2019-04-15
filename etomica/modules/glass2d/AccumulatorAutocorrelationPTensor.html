@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,18 +178,48 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataGroup.html" title="class in etomica.data.types">DataGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#avgErrData">avgErrData</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataGroup.DataInfoGroup.html" title="class in etomica.data.types">DataGroup.DataInfoGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#avgErrDataInfo">avgErrDataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#avgErrFork">avgErrFork</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#data">data</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#dim">dim</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#dt">dt</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#errData">errData</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#errDataInfo">errDataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#errTag">errTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -199,35 +229,40 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#nMax">nMax</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#nBlocks">nBlocks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#nMax">nMax</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#product">product</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected java.util.List&lt;double[]&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#savedData">savedData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#sum">sum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#tData">tData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#tDataInfo">tDataInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#tTag">tTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -290,39 +325,44 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getAvgErrFork--">getAvgErrFork</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getData--">getData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getIndependentArrayDimension--">getIndependentArrayDimension</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the number of independent data dimensions</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getIndependentData-int-">getIndependentData</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">
 <div class="block">Returns the X data for the given dimension</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getIndependentDataInfo-int-">getIndependentDataInfo</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">
 <div class="block">Returns the DataInfo for the given dimension</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#getIndependentTag--">getIndependentTag</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the tag associated with this DataSource.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>&#8203;(<a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code></th>
 <td class="colLast">
@@ -330,7 +370,7 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
  processing.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/AccumulatorAutocorrelationPTensor.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -434,7 +474,16 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>tTag</h4>
-<pre>protected&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tTag</pre>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tTag</pre>
+</li>
+</ul>
+<a name="errTag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>errTag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> errTag</pre>
 </li>
 </ul>
 <a name="nMax">
@@ -494,10 +543,64 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 <a name="dt">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>dt</h4>
 <pre>protected final&nbsp;double dt</pre>
+</li>
+</ul>
+<a name="nBlocks">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nBlocks</h4>
+<pre>protected&nbsp;int nBlocks</pre>
+</li>
+</ul>
+<a name="errData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>errData</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> errData</pre>
+</li>
+</ul>
+<a name="errDataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>errDataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> errDataInfo</pre>
+</li>
+</ul>
+<a name="avgErrFork">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>avgErrFork</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a> avgErrFork</pre>
+</li>
+</ul>
+<a name="avgErrData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>avgErrData</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataGroup.html" title="class in etomica.data.types">DataGroup</a> avgErrData</pre>
+</li>
+</ul>
+<a name="avgErrDataInfo">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>avgErrDataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataGroup.DataInfoGroup.html" title="class in etomica.data.types">DataGroup.DataInfoGroup</a> avgErrDataInfo</pre>
 </li>
 </ul>
 </li>
@@ -526,6 +629,15 @@ implements <a href="../../../etomica/data/DataSourceIndependent.html" title="int
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getAvgErrFork--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAvgErrFork</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/DataFork.html" title="class in etomica.data">DataFork</a>&nbsp;getAvgErrFork&#8203;()</pre>
+</li>
+</ul>
 <a name="addData-etomica.data.IData-">
 <!--   -->
 </a>
