@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,6 +167,11 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -209,28 +214,38 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#interval">interval</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#intervalCountdown">intervalCountdown</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected java.util.Set&lt;<a href="../../../etomica/modules/glass2d/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass2d">ConfigurationStorage.ConfigurationStorageListener</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#listeners">listeners</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#msd">msd</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#savedSteps">savedSteps</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#savedTimes">savedTimes</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#stepCount">stepCount</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#storageType">storageType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -249,8 +264,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#ConfigurationStorage-etomica.box.Box-boolean-">ConfigurationStorage</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                    boolean&nbsp;storeForMSD)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#ConfigurationStorage-etomica.box.Box-etomica.modules.glass2d.ConfigurationStorage.StorageType-">ConfigurationStorage</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                    <a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a>&nbsp;storageType)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#ConfigurationStorage-etomica.box.Box-etomica.modules.glass2d.ConfigurationStorage.StorageType-int-int-">ConfigurationStorage</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                    <a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a>&nbsp;storageType,
+                    int&nbsp;maxStored,
+                    int&nbsp;interval)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -275,59 +297,74 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getBox--">getBox</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getEnabled--">getEnabled</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getLastConfigIndex--">getLastConfigIndex</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSampleInterval--">getSampleInterval</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedConfig-int-">getSavedConfig</a></span>&#8203;(int&nbsp;idx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedSteps--">getSavedSteps</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#getSavedTimes--">getSavedTimes</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#setEnabled-boolean-">setEnabled</a></span>&#8203;(boolean&nbsp;newEnabled)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass2d/ConfigurationStorage.html#setSampleInterval-int-">setSampleInterval</a></span>&#8203;(int&nbsp;newSampleInterval)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -385,7 +422,7 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>savedSteps</h4>
-<pre>protected&nbsp;long[] savedSteps</pre>
+<pre>protected final&nbsp;long[] savedSteps</pre>
 </li>
 </ul>
 <a name="savedTimes">
@@ -394,16 +431,16 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>savedTimes</h4>
-<pre>protected&nbsp;double[] savedTimes</pre>
+<pre>protected final&nbsp;double[] savedTimes</pre>
 </li>
 </ul>
-<a name="msd">
+<a name="storageType">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>msd</h4>
-<pre>protected&nbsp;boolean msd</pre>
+<h4>storageType</h4>
+<pre>protected&nbsp;<a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a> storageType</pre>
 </li>
 </ul>
 <a name="dr">
@@ -436,10 +473,28 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <a name="enabled">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>enabled</h4>
 <pre>protected&nbsp;boolean enabled</pre>
+</li>
+</ul>
+<a name="interval">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>interval</h4>
+<pre>protected&nbsp;int interval</pre>
+</li>
+</ul>
+<a name="intervalCountdown">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>intervalCountdown</h4>
+<pre>protected&nbsp;int intervalCountdown</pre>
 </li>
 </ul>
 </li>
@@ -450,14 +505,26 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ConfigurationStorage-etomica.box.Box-boolean-">
+<a name="ConfigurationStorage-etomica.box.Box-etomica.modules.glass2d.ConfigurationStorage.StorageType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConfigurationStorage</h4>
+<pre>public&nbsp;ConfigurationStorage&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
+                            <a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a>&nbsp;storageType)</pre>
+</li>
+</ul>
+<a name="ConfigurationStorage-etomica.box.Box-etomica.modules.glass2d.ConfigurationStorage.StorageType-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConfigurationStorage</h4>
 <pre>public&nbsp;ConfigurationStorage&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
-                            boolean&nbsp;storeForMSD)</pre>
+                            <a href="../../../etomica/modules/glass2d/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass2d">ConfigurationStorage.StorageType</a>&nbsp;storageType,
+                            int&nbsp;maxStored,
+                            int&nbsp;interval)</pre>
 </li>
 </ul>
 </li>
@@ -468,6 +535,33 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setSampleInterval-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSampleInterval</h4>
+<pre>public&nbsp;void&nbsp;setSampleInterval&#8203;(int&nbsp;newSampleInterval)</pre>
+</li>
+</ul>
+<a name="getSampleInterval--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSampleInterval</h4>
+<pre>public&nbsp;int&nbsp;getSampleInterval&#8203;()</pre>
+</li>
+</ul>
+<a name="getBox--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBox</h4>
+<pre>public&nbsp;<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;getBox&#8203;()</pre>
+</li>
+</ul>
 <a name="setEnabled-boolean-">
 <!--   -->
 </a>
