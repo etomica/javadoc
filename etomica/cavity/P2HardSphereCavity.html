@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -312,16 +312,24 @@ extends <a href="../../etomica/potential/P2HardSphere.html" title="class in etom
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/P2HardSphereCavity.html#energy-etomica.atom.IAtomList-">energy</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code></th>
+<td class="colLast">
+<div class="block">Energy of the pair as given by the u(double) method, with application
+ of any PotentialTruncation that may be defined for the potential.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/cavity/P2HardSphereCavity.CollisionType.html" title="enum in etomica.cavity">P2HardSphereCavity.CollisionType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/P2HardSphereCavity.html#getLastCollisionType--">getLastCollisionType</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/P2HardSphereCavity.html#getPairedAtom1--">getPairedAtom1</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/P2HardSphereCavity.html#getPairedAtom2--">getPairedAtom2</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -360,7 +368,7 @@ extends <a href="../../etomica/potential/P2HardSphere.html" title="class in etom
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../etomica/potential/Potential2HardSpherical.html" title="class in etomica.potential">Potential2HardSpherical</a></h3>
-<code><a href="../../etomica/potential/Potential2HardSpherical.html#energy-etomica.atom.IAtomList-">energy</a>, <a href="../../etomica/potential/Potential2HardSpherical.html#setBox-etomica.box.Box-">setBox</a></code></li>
+<code><a href="../../etomica/potential/Potential2HardSpherical.html#setBox-etomica.box.Box-">setBox</a></code></li>
 </ul>
 </li>
 </ul>
@@ -525,6 +533,26 @@ extends <a href="../../etomica/potential/P2HardSphere.html" title="class in etom
 <dd><code><a href="../../etomica/potential/PotentialHard.html#bump-etomica.atom.IAtomList-double-">bump</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/PotentialHard.html" title="interface in etomica.potential">PotentialHard</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/potential/P2HardSphere.html#bump-etomica.atom.IAtomList-double-">bump</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/P2HardSphere.html" title="class in etomica.potential">P2HardSphere</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="energy-etomica.atom.IAtomList-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>energy</h4>
+<pre>public&nbsp;double&nbsp;energy&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/potential/Potential2HardSpherical.html#energy-etomica.atom.IAtomList-">Potential2HardSpherical</a></code></span></div>
+<div class="block">Energy of the pair as given by the u(double) method, with application
+ of any PotentialTruncation that may be defined for the potential.  This
+ does not take into account any false positioning that the Integrator may
+ be using.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/potential/IPotentialAtomic.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/potential/Potential2HardSpherical.html#energy-etomica.atom.IAtomList-">energy</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential2HardSpherical.html" title="class in etomica.potential">Potential2HardSpherical</a></code></dd>
 </dl>
 </li>
 </ul>
