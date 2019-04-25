@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -240,41 +240,46 @@ implements <a href="../../etomica/data/IDataSource.html" title="interface in eto
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#mappingCut2">mappingCut2</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#rData">rData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#resetAfterData">resetAfterData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#sigma">sigma</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#tag">tag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#tExternal">tExternal</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#tInternal">tInternal</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#totalCollisions">totalCollisions</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#xDataSource">xDataSource</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -381,10 +386,15 @@ implements <a href="../../etomica/data/IDataSource.html" title="interface in eto
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#setResetAfterData-boolean-">setResetAfterData</a></span>&#8203;(boolean&nbsp;doResetAfterData)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#setMappingCut-double-">setMappingCut</a></span>&#8203;(double&nbsp;mappingCut)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#setResetAfterData-boolean-">setResetAfterData</a></span>&#8203;(boolean&nbsp;doResetAfterData)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/cavity/MeterRDFMapped.html#zeroData--">zeroData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -621,7 +631,7 @@ implements <a href="../../etomica/data/IDataSource.html" title="interface in eto
 <a name="foobar">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>foobar</h4>
 <pre>protected final&nbsp;boolean foobar</pre>
@@ -629,6 +639,15 @@ implements <a href="../../etomica/data/IDataSource.html" title="interface in eto
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../constant-values.html#etomica.cavity.MeterRDFMapped.foobar">Constant Field Values</a></dd>
 </dl>
+</li>
+</ul>
+<a name="mappingCut2">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>mappingCut2</h4>
+<pre>protected&nbsp;double mappingCut2</pre>
 </li>
 </ul>
 </li>
@@ -682,6 +701,15 @@ implements <a href="../../etomica/data/IDataSource.html" title="interface in eto
 <li class="blockList">
 <h4>zeroData</h4>
 <pre>public&nbsp;void&nbsp;zeroData&#8203;()</pre>
+</li>
+</ul>
+<a name="setMappingCut-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMappingCut</h4>
+<pre>public&nbsp;void&nbsp;setMappingCut&#8203;(double&nbsp;mappingCut)</pre>
 </li>
 </ul>
 <a name="setResetAfterData-boolean-">
