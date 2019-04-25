@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,6 +167,11 @@ extends <a href="../../../etomica/atom/DiameterHashByType.html" title="class in 
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#fac">fac</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#flipped">flipped</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -204,19 +209,34 @@ extends <a href="../../../etomica/atom/DiameterHashByType.html" title="class in 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#getActualDiameter-etomica.atom.IAtom-">getActualDiameter</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#getDiameter-etomica.atom.IAtom-">getDiameter</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
 <td class="colLast">
 <div class="block">Returns an appropriate diameter for the given atom.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#getFac--">getFac</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#getFlipped--">getFlipped</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#setFac-double-">setFac</a></span>&#8203;(double&nbsp;fac)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DiameterHashGlass.html#setFlipped-boolean-">setFlipped</a></span>&#8203;(boolean&nbsp;flipped)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -251,10 +271,19 @@ extends <a href="../../../etomica/atom/DiameterHashByType.html" title="class in 
 <a name="fac">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>fac</h4>
 <pre>protected&nbsp;double fac</pre>
+</li>
+</ul>
+<a name="flipped">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>flipped</h4>
+<pre>protected&nbsp;boolean flipped</pre>
 </li>
 </ul>
 </li>
@@ -303,7 +332,7 @@ extends <a href="../../../etomica/atom/DiameterHashByType.html" title="class in 
 <a name="getDiameter-etomica.atom.IAtom-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getDiameter</h4>
 <pre>public&nbsp;double&nbsp;getDiameter&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
@@ -316,6 +345,33 @@ extends <a href="../../../etomica/atom/DiameterHashByType.html" title="class in 
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/atom/DiameterHashByType.html#getDiameter-etomica.atom.IAtom-">getDiameter</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/atom/DiameterHashByType.html" title="class in etomica.atom">DiameterHashByType</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="setFlipped-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFlipped</h4>
+<pre>public&nbsp;void&nbsp;setFlipped&#8203;(boolean&nbsp;flipped)</pre>
+</li>
+</ul>
+<a name="getFlipped--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFlipped</h4>
+<pre>public&nbsp;boolean&nbsp;getFlipped&#8203;()</pre>
+</li>
+</ul>
+<a name="getActualDiameter-etomica.atom.IAtom-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getActualDiameter</h4>
+<pre>public&nbsp;double&nbsp;getActualDiameter&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</pre>
 </li>
 </ul>
 </li>

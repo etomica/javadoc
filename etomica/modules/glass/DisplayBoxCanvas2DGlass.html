@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -248,6 +248,11 @@ implements <a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" t
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#drawDisplacement">drawDisplacement</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#flipDisplacement">flipDisplacement</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.java.awt.Component">
@@ -344,18 +349,28 @@ implements <a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" t
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setConfigIndex-int-">setConfigIndex</a></span>&#8203;(int&nbsp;idx)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#getFlipDisplacement--">getFlipDisplacement</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setConfigStorage-etomica.modules.glass.ConfigurationStorage-">setConfigStorage</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setConfigIndex-int-">setConfigIndex</a></span>&#8203;(int&nbsp;idx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setConfigStorage-etomica.modules.glass.ConfigurationStorage-">setConfigStorage</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setDrawDisplacement-boolean-">setDrawDisplacement</a></span>&#8203;(boolean&nbsp;doDrawDisplacement)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DisplayBoxCanvas2DGlass.html#setFlipDisplacement-boolean-">setFlipDisplacement</a></span>&#8203;(boolean&nbsp;flipDisplacement)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -452,10 +467,19 @@ implements <a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" t
 <a name="drawDisplacement">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>drawDisplacement</h4>
 <pre>protected&nbsp;boolean drawDisplacement</pre>
+</li>
+</ul>
+<a name="flipDisplacement">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>flipDisplacement</h4>
+<pre>protected&nbsp;boolean flipDisplacement</pre>
 </li>
 </ul>
 </li>
@@ -567,7 +591,7 @@ implements <a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" t
 <a name="drawAtom-java.awt.Graphics-int:A-etomica.atom.IAtom-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>drawAtom</h4>
 <pre>protected&nbsp;void&nbsp;drawAtom&#8203;(java.awt.Graphics&nbsp;g,
@@ -576,6 +600,32 @@ implements <a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/graphics/DisplayBoxCanvas2D.html#drawAtom-java.awt.Graphics-int:A-etomica.atom.IAtom-">drawAtom</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/graphics/DisplayBoxCanvas2D.html" title="class in etomica.graphics">DisplayBoxCanvas2D</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setFlipDisplacement-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFlipDisplacement</h4>
+<pre>public&nbsp;void&nbsp;setFlipDisplacement&#8203;(boolean&nbsp;flipDisplacement)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html#setFlipDisplacement-boolean-">setFlipDisplacement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" title="interface in etomica.modules.glass">DisplayBoxCanvasGlass</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getFlipDisplacement--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFlipDisplacement</h4>
+<pre>public&nbsp;boolean&nbsp;getFlipDisplacement&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html#getFlipDisplacement--">getFlipDisplacement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/modules/glass/DisplayBoxCanvasGlass.html" title="interface in etomica.modules.glass">DisplayBoxCanvasGlass</a></code></dd>
 </dl>
 </li>
 </ul>
