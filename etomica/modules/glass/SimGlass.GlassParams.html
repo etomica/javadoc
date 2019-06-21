@@ -130,6 +130,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="../../../etomica/modules/glass/GlassProd.SimParams.html" title="class in etomica.modules.glass">GlassProd.SimParams</a></code>, <code><a href="../../../etomica/modules/glass/GlassProdF.SimParams.html" title="class in etomica.modules.glass">GlassProdF.SimParams</a></code></dd>
+</dl>
+<dl>
 <dt>Enclosing class:</dt>
 <dd><a href="../../../etomica/modules/glass/SimGlass.html" title="class in etomica.modules.glass">SimGlass</a></dd>
 </dl>
@@ -173,17 +177,37 @@ extends <a href="../../../etomica/util/ParameterBase.html" title="class in etomi
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nA">nA</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#log2StepE">log2StepE</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nB">nB</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#log2StepS">log2StepS</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#minDrFilter">minDrFilter</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nA">nA</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nB">nB</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/glass/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass">SimGlass.PotentialChoice</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#potential">potential</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#temperature">temperature</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -285,6 +309,15 @@ extends <a href="../../../etomica/util/ParameterBase.html" title="class in etomi
 <pre>public&nbsp;double density</pre>
 </li>
 </ul>
+<a name="temperature">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperature</h4>
+<pre>public&nbsp;double temperature</pre>
+</li>
+</ul>
 <a name="doSwap">
 <!--   -->
 </a>
@@ -297,10 +330,37 @@ extends <a href="../../../etomica/util/ParameterBase.html" title="class in etomi
 <a name="potential">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>potential</h4>
 <pre>public&nbsp;<a href="../../../etomica/modules/glass/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass">SimGlass.PotentialChoice</a> potential</pre>
+</li>
+</ul>
+<a name="log2StepS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log2StepS</h4>
+<pre>public&nbsp;int log2StepS</pre>
+</li>
+</ul>
+<a name="log2StepE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log2StepE</h4>
+<pre>public&nbsp;int log2StepE</pre>
+</li>
+</ul>
+<a name="minDrFilter">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>minDrFilter</h4>
+<pre>public&nbsp;double minDrFilter</pre>
 </li>
 </ul>
 </li>

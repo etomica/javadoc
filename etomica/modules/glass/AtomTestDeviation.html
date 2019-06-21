@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,8 +57,8 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/AccumulatorAutocorrelationPTensor.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/ColorSchemeDeviation.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/AtomNbrClusterer.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/ColorSchemeCluster.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/AtomTestDeviation.html" target="_top">Frames</a></li>
@@ -174,11 +174,16 @@ implements <a href="../../../etomica/atom/AtomTest.html" title="interface in eto
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#doMobileOnly">doMobileOnly</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#dr">dr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#minDistance">minDistance</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -230,26 +235,36 @@ implements <a href="../../../etomica/atom/AtomTest.html" title="interface in eto
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#getDoMobileOnly--">getDoMobileOnly</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#getMinDistance--">getMinDistance</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#setConfigIndex-int-">setConfigIndex</a></span>&#8203;(int&nbsp;idx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#setConfigStorage-etomica.modules.glass.ConfigurationStorage-">setConfigStorage</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#setDoMobileOnly-boolean-">setDoMobileOnly</a></span>&#8203;(boolean&nbsp;doMobileOnly)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#setMinDistance-double-">setMinDistance</a></span>&#8203;(double&nbsp;minDistance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/AtomTestDeviation.html#test-etomica.atom.IAtom-">test</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
 <td class="colLast">
@@ -324,10 +339,19 @@ implements <a href="../../../etomica/atom/AtomTest.html" title="interface in eto
 <a name="minDistance">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>minDistance</h4>
 <pre>protected&nbsp;double minDistance</pre>
+</li>
+</ul>
+<a name="doMobileOnly">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>doMobileOnly</h4>
+<pre>protected&nbsp;boolean doMobileOnly</pre>
 </li>
 </ul>
 </li>
@@ -356,6 +380,24 @@ implements <a href="../../../etomica/atom/AtomTest.html" title="interface in eto
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setDoMobileOnly-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoMobileOnly</h4>
+<pre>public&nbsp;void&nbsp;setDoMobileOnly&#8203;(boolean&nbsp;doMobileOnly)</pre>
+</li>
+</ul>
+<a name="getDoMobileOnly--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDoMobileOnly</h4>
+<pre>public&nbsp;boolean&nbsp;getDoMobileOnly&#8203;()</pre>
+</li>
+</ul>
 <a name="setConfigIndex-int-">
 <!--   -->
 </a>
@@ -454,8 +496,8 @@ implements <a href="../../../etomica/atom/AtomTest.html" title="interface in eto
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/AccumulatorAutocorrelationPTensor.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/ColorSchemeDeviation.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/AtomNbrClusterer.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/ColorSchemeCluster.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/AtomTestDeviation.html" target="_top">Frames</a></li>
