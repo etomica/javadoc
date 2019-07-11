@@ -184,7 +184,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/DensitySingletHMA.html#ex2erfc-int-double-">ex2erfc</a></span>&#8203;(int&nbsp;n,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/DensitySingletHMA.html#ex2erfc-int-double-">ex2erfc</a></span>&#8203;(int&nbsp;nmax,
        double&nbsp;x)</code></th>
 <td class="colLast">
 <div class="block">The function exp(+x^2) erfc(x).</div>
@@ -281,14 +281,14 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ex2erfc</h4>
-<pre>public static&nbsp;double&nbsp;ex2erfc&#8203;(int&nbsp;n,
+<pre>public static&nbsp;double&nbsp;ex2erfc&#8203;(int&nbsp;nmax,
                              double&nbsp;x)</pre>
 <div class="block">The function exp(+x^2) erfc(x). Uses asymptotic expansion for x > 5, and explicit function calls for x < 5.
  Not well tested for negative x (explicit calls are used, so result should be correct)
- For x > 5, results are accurate within 10^-9 for n = 10, and 10^-6 for n = 5</div>
+ For x > 5, results are accurate within 10^-9 for n = 10, and 10^-7 for n = 5</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>n</code> - number of terms in asymptotic series.</dd>
+<dd><code>nmax</code> - number of terms in asymptotic series.</dd>
 <dd><code>x</code> - argument of function</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 </dl>
