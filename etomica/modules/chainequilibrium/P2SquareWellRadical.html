@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,6 +197,11 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#random">random</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#solventThermoFrac">solventThermoFrac</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.potential.P2SquareWell">
@@ -309,11 +314,19 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#getSolventThermoFrac--">getSolventThermoFrac</a></span>&#8203;()</code></th>
+<td class="colLast">
+<div class="block">Returns the fraction of well energy that is gained or lost by an atom
+ pair when they hop in or leave their well.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#isEmpty-etomica.atom.IAtom-">isEmpty</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#isRadical-etomica.atom.IAtom-">isRadical</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
 <td class="colLast">
@@ -321,19 +334,27 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
  it has only one unreacted site).</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#lowest-etomica.atom.IAtom-">lowest</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;a)</code></th>
 <td class="colLast">
 <div class="block">This will tell you what the lowest open space is in atom a</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#setCombinationProbability-double-">setCombinationProbability</a></span>&#8203;(double&nbsp;newCombinationProbability)</code></th>
 <td class="colLast">
 <div class="block">Sets the probability that two radicals will bond instead of becoming
  unreactive.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/chainequilibrium/P2SquareWellRadical.html#setSolventThermoFrac-double-">setSolventThermoFrac</a></span>&#8203;(double&nbsp;newSolventThermoFrac)</code></th>
+<td class="colLast">
+<div class="block">Sets the fraction of well energy that is gained by an atom pair when
+ they hop in their well.</div>
 </td>
 </tr>
 </table>
@@ -407,10 +428,19 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
 <a name="combinationProbability">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>combinationProbability</h4>
 <pre>protected&nbsp;double combinationProbability</pre>
+</li>
+</ul>
+<a name="solventThermoFrac">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>solventThermoFrac</h4>
+<pre>protected&nbsp;double solventThermoFrac</pre>
 </li>
 </ul>
 </li>
@@ -550,7 +580,7 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
 <a name="bump-etomica.atom.IAtomList-double-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>bump</h4>
 <pre>public&nbsp;void&nbsp;bump&#8203;(<a href="../../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair,
@@ -565,6 +595,30 @@ extends <a href="../../../etomica/potential/P2SquareWell.html" title="class in e
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/potential/P2SquareWell.html#bump-etomica.atom.IAtomList-double-">bump</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/P2SquareWell.html" title="class in etomica.potential">P2SquareWell</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getSolventThermoFrac--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSolventThermoFrac</h4>
+<pre>public&nbsp;double&nbsp;getSolventThermoFrac&#8203;()</pre>
+<div class="block">Returns the fraction of well energy that is gained or lost by an atom
+ pair when they hop in or leave their well.</div>
+</li>
+</ul>
+<a name="setSolventThermoFrac-double-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSolventThermoFrac</h4>
+<pre>public&nbsp;void&nbsp;setSolventThermoFrac&#8203;(double&nbsp;newSolventThermoFrac)</pre>
+<div class="block">Sets the fraction of well energy that is gained by an atom pair when
+ they hop in their well.  This is also the fraction of energy they give
+ up when they leave the well.  The pair does still need to have
+ sufficient energy to escape the well at its full strength.</div>
 </li>
 </ul>
 </li>
