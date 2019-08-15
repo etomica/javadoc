@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -58,7 +58,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/mappedRdf/MeterMappedRdf.html" title="class in etomica.mappedRdf"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../etomica/mappedRdf/SimMappedRdf.html" title="class in etomica.mappedRdf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/mappedRdf/PotentialCalculationMappedRdf.html" target="_top">Frames</a></li>
@@ -139,7 +139,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">PotentialCalculationMappedRdf</span>
 extends java.lang.Object
 implements <a href="../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a></pre>
-<div class="block">Created by aksharag on 5/16/17.</div>
 </li>
 </ul>
 </div>
@@ -160,63 +159,73 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#allAtoms">allAtoms</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#beta">beta</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#box">box</a></span></code></th>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#boundary">boundary</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#c1">c1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#cumint">cumint</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#dr">dr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#forceManager">forceManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#gSum">gSum</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#gSum2">gSum2</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#nbins">nbins</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#newestgSum">newestgSum</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/atom/AtomPair.html" title="class in etomica.atom">AtomPair</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#pair">pair</a></span></code></th>
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#newgSum">newgSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#p2">p2</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#q">q</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#qp">qp</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#qp_q">qp_q</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#qp">qp</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -225,38 +234,53 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#rcforHandfinmap">rcforHandfinmap</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#sum">sum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#uR">uR</a></span></code></th>
+<tr class="altColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#thirdterm">thirdterm</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#vCut">vCut</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#vol">vol</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#vShift">vShift</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#x0">x0</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#xDataSource">xDataSource</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#xMax">xMax</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -275,7 +299,8 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#PotentialCalculationMappedRdf-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">PotentialCalculationMappedRdf</a></span>&#8203;(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#PotentialCalculationMappedRdf-double-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">PotentialCalculationMappedRdf</a></span>&#8203;(double&nbsp;rcforHandfinmap,
+                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                              <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                              int&nbsp;nbins,
                              <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&nbsp;forceManager)</code></th>
@@ -291,7 +316,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -304,17 +329,6 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#calcXu-double-double-">calcXu</a></span>&#8203;(double&nbsp;r,
-      double&nbsp;u)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#cumint-double-">cumint</a></span>&#8203;(double&nbsp;r)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">doCalculation</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;atoms,
              <a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code></th>
@@ -322,38 +336,59 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <div class="block">Method giving the specific calculation performed by this class.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#getRdf--">getRdf</a></span>&#8203;()</code></th>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#getGSum--">getGSum</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#getq--">getq</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#getX0--">getX0</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#getXDataSource--">getXDataSource</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#main-java.lang.String:A-">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
+<td class="colFirst"><code>double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#gR--">gR</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#reset--">reset</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Zero's out the RDF sum tracked by this meter.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setTemperature-double-etomica.potential.Potential2SoftSpherical-">setTemperature</a></span>&#8203;(double&nbsp;T,
-              <a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;p2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setVCut-double-">setVCut</a></span>&#8203;(double&nbsp;newVCut)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setPotential-etomica.potential.Potential2SoftSpherical-">setPotential</a></span>&#8203;(<a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;p)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;T)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setVCut-double-">setVCut</a></span>&#8203;(double&nbsp;newVCut)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/mappedRdf/PotentialCalculationMappedRdf.html#setVolume-double-">setVolume</a></span>&#8203;(double&nbsp;newVol)</code></th>
 <td class="colLast">
@@ -382,51 +417,6 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="box">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>box</h4>
-<pre>protected final&nbsp;<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a> box</pre>
-</li>
-</ul>
-<a name="allAtoms">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>allAtoms</h4>
-<pre>protected final&nbsp;<a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a> allAtoms</pre>
-</li>
-</ul>
-<a name="forceManager">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>forceManager</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; forceManager</pre>
-</li>
-</ul>
-<a name="space">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-</ul>
-<a name="beta">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>beta</h4>
-<pre>protected&nbsp;double beta</pre>
-</li>
-</ul>
 <a name="dr">
 <!--   -->
 </a>
@@ -436,31 +426,85 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <pre>protected final&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dr</pre>
 </li>
 </ul>
-<a name="c1">
+<a name="gSum">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>c1</h4>
-<pre>protected&nbsp;double c1</pre>
+<h4>gSum</h4>
+<pre>protected&nbsp;double[] gSum</pre>
 </li>
 </ul>
-<a name="cumint">
+<a name="gSum2">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>cumint</h4>
-<pre>protected final&nbsp;double[] cumint</pre>
+<h4>gSum2</h4>
+<pre>protected&nbsp;double[] gSum2</pre>
 </li>
 </ul>
-<a name="pair">
+<a name="newgSum">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>pair</h4>
-<pre>protected final&nbsp;<a href="../../etomica/atom/AtomPair.html" title="class in etomica.atom">AtomPair</a> pair</pre>
+<h4>newgSum</h4>
+<pre>protected&nbsp;double[] newgSum</pre>
+</li>
+</ul>
+<a name="newestgSum">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newestgSum</h4>
+<pre>protected&nbsp;double[] newestgSum</pre>
+</li>
+</ul>
+<a name="thirdterm">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>thirdterm</h4>
+<pre>protected&nbsp;double[] thirdterm</pre>
+</li>
+</ul>
+<a name="rcforHandfinmap">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rcforHandfinmap</h4>
+<pre>protected&nbsp;double rcforHandfinmap</pre>
+</li>
+</ul>
+<a name="boundary">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>boundary</h4>
+<pre>protected&nbsp;<a href="../../etomica/space/Boundary.html" title="class in etomica.space">Boundary</a> boundary</pre>
+</li>
+</ul>
+<a name="xDataSource">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xDataSource</h4>
+<pre>protected final&nbsp;<a href="../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a> xDataSource</pre>
+</li>
+</ul>
+<a name="xMax">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xMax</h4>
+<pre>protected&nbsp;double xMax</pre>
 </li>
 </ul>
 <a name="vol">
@@ -490,24 +534,6 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <pre>protected&nbsp;double qp</pre>
 </li>
 </ul>
-<a name="qp_q">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>qp_q</h4>
-<pre>protected&nbsp;double qp_q</pre>
-</li>
-</ul>
-<a name="nbins">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>nbins</h4>
-<pre>protected final&nbsp;int nbins</pre>
-</li>
-</ul>
 <a name="sum">
 <!--   -->
 </a>
@@ -515,6 +541,15 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <li class="blockList">
 <h4>sum</h4>
 <pre>protected&nbsp;double sum</pre>
+</li>
+</ul>
+<a name="R">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>R</h4>
+<pre>protected&nbsp;double R</pre>
 </li>
 </ul>
 <a name="x0">
@@ -544,22 +579,67 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <pre>protected&nbsp;double vShift</pre>
 </li>
 </ul>
-<a name="R">
+<a name="beta">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>R</h4>
-<pre>protected&nbsp;double R</pre>
+<h4>beta</h4>
+<pre>protected&nbsp;double beta</pre>
 </li>
 </ul>
-<a name="uR">
+<a name="c1">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>c1</h4>
+<pre>protected&nbsp;double c1</pre>
+</li>
+</ul>
+<a name="nbins">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nbins</h4>
+<pre>protected final&nbsp;int nbins</pre>
+</li>
+</ul>
+<a name="space">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>space</h4>
+<pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
+</li>
+</ul>
+<a name="cumint">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cumint</h4>
+<pre>protected final&nbsp;double[] cumint</pre>
+</li>
+</ul>
+<a name="forceManager">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forceManager</h4>
+<pre>protected final&nbsp;<a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt; forceManager</pre>
+</li>
+</ul>
+<a name="p2">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>uR</h4>
-<pre>protected&nbsp;double uR</pre>
+<h4>p2</h4>
+<pre>protected&nbsp;<a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a> p2</pre>
 </li>
 </ul>
 </li>
@@ -570,13 +650,14 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PotentialCalculationMappedRdf-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">
+<a name="PotentialCalculationMappedRdf-double-etomica.space.Space-etomica.box.Box-int-etomica.atom.AtomLeafAgentManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PotentialCalculationMappedRdf</h4>
-<pre>public&nbsp;PotentialCalculationMappedRdf&#8203;(<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+<pre>public&nbsp;PotentialCalculationMappedRdf&#8203;(double&nbsp;rcforHandfinmap,
+                                     <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
                                      <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
                                      int&nbsp;nbins,
                                      <a href="../../etomica/atom/AtomLeafAgentManager.html" title="class in etomica.atom">AtomLeafAgentManager</a>&lt;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>&gt;&nbsp;forceManager)</pre>
@@ -590,18 +671,22 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="main-java.lang.String:A-">
+<a name="getXDataSource--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>main</h4>
-<pre>public static&nbsp;void&nbsp;main&#8203;(java.lang.String[]&nbsp;args)
-                 throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
+<h4>getXDataSource</h4>
+<pre>public&nbsp;<a href="../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a>&nbsp;getXDataSource&#8203;()</pre>
+</li>
+</ul>
+<a name="setBox-etomica.box.Box-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBox</h4>
+<pre>public&nbsp;void&nbsp;setBox&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
 <a name="getX0--">
@@ -611,6 +696,15 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <li class="blockList">
 <h4>getX0</h4>
 <pre>public&nbsp;double&nbsp;getX0&#8203;()</pre>
+</li>
+</ul>
+<a name="getq--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getq</h4>
+<pre>public&nbsp;double&nbsp;getq&#8203;()</pre>
 </li>
 </ul>
 <a name="setVCut-double-">
@@ -633,24 +727,22 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
  used for 1/(1+q/V) terms.</div>
 </li>
 </ul>
-<a name="setTemperature-double-etomica.potential.Potential2SoftSpherical-">
+<a name="setPotential-etomica.potential.Potential2SoftSpherical-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPotential</h4>
+<pre>public&nbsp;void&nbsp;setPotential&#8203;(<a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;p)</pre>
+</li>
+</ul>
+<a name="setTemperature-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTemperature</h4>
-<pre>public&nbsp;void&nbsp;setTemperature&#8203;(double&nbsp;T,
-                           <a href="../../etomica/potential/Potential2SoftSpherical.html" title="class in etomica.potential">Potential2SoftSpherical</a>&nbsp;p2)</pre>
-</li>
-</ul>
-<a name="calcXu-double-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>calcXu</h4>
-<pre>protected&nbsp;double&nbsp;calcXu&#8203;(double&nbsp;r,
-                        double&nbsp;u)</pre>
+<pre>public&nbsp;void&nbsp;setTemperature&#8203;(double&nbsp;T)</pre>
 </li>
 </ul>
 <a name="calcV-double-double-">
@@ -663,13 +755,13 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
                        double&nbsp;u)</pre>
 </li>
 </ul>
-<a name="cumint-double-">
+<a name="gR--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>cumint</h4>
-<pre>protected&nbsp;double&nbsp;cumint&#8203;(double&nbsp;r)</pre>
+<h4>gR</h4>
+<pre>public&nbsp;double[]&nbsp;gR&#8203;()</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -679,6 +771,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+<div class="block">Zero's out the RDF sum tracked by this meter.</div>
 </li>
 </ul>
 <a name="doCalculation-etomica.atom.IAtomList-etomica.potential.IPotentialAtomic-">
@@ -700,13 +793,13 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 </dl>
 </li>
 </ul>
-<a name="getRdf--">
+<a name="getGSum--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getRdf</h4>
-<pre>public&nbsp;double&nbsp;getRdf&#8203;()</pre>
+<h4>getGSum</h4>
+<pre>public&nbsp;double[]&nbsp;getGSum&#8203;()</pre>
 </li>
 </ul>
 </li>
@@ -737,7 +830,7 @@ implements <a href="../../etomica/potential/PotentialCalculation.html" title="in
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../etomica/mappedRdf/MeterMappedRdf.html" title="class in etomica.mappedRdf"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../etomica/mappedRdf/SimMappedRdf.html" title="class in etomica.mappedRdf"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?etomica/mappedRdf/PotentialCalculationMappedRdf.html" target="_top">Frames</a></li>
