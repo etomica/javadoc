@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -199,6 +199,16 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#configVelList">configVelList</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#doVel">doVel</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#dr">dr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -332,37 +342,42 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#getSavedVel-int-">getSavedVel</a></span>&#8203;(int&nbsp;idx)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#integratorInitialized-etomica.integrator.IntegratorEvent-">integratorInitialized</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked when integration begins.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#integratorStepFinished-etomica.integrator.IntegratorEvent-">integratorStepFinished</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the end of each integrator step.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#integratorStepStarted-etomica.integrator.IntegratorEvent-">integratorStepStarted</a></span>&#8203;(<a href="../../../etomica/integrator/IntegratorEvent.html" title="class in etomica.integrator">IntegratorEvent</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Invoked at the beginning of each integrator step.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#setEnabled-boolean-">setEnabled</a></span>&#8203;(boolean&nbsp;newEnabled)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/ConfigurationStorage.html#setSampleInterval-int-">setSampleInterval</a></span>&#8203;(int&nbsp;newSampleInterval)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -405,6 +420,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <li class="blockList">
 <h4>configList</h4>
 <pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][] configList</pre>
+</li>
+</ul>
+<a name="configVelList">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>configVelList</h4>
+<pre>protected&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[][] configVelList</pre>
 </li>
 </ul>
 <a name="stepCount">
@@ -491,10 +515,19 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <a name="intervalCountdown">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>intervalCountdown</h4>
 <pre>protected&nbsp;int intervalCountdown</pre>
+</li>
+</ul>
+<a name="doVel">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>doVel</h4>
+<pre>protected&nbsp;boolean doVel</pre>
 </li>
 </ul>
 </li>
@@ -662,6 +695,15 @@ implements <a href="../../../etomica/integrator/IntegratorListener.html" title="
 <li class="blockList">
 <h4>getSavedConfig</h4>
 <pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getSavedConfig&#8203;(int&nbsp;idx)</pre>
+</li>
+</ul>
+<a name="getSavedVel-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSavedVel</h4>
+<pre>public&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]&nbsp;getSavedVel&#8203;(int&nbsp;idx)</pre>
 </li>
 </ul>
 <a name="integratorStepFinished-etomica.integrator.IntegratorEvent-">

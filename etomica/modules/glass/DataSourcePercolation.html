@@ -241,12 +241,12 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepE">log2StepE</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepMax">log2StepMax</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepS">log2StepS</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepMin">log2StepMin</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -312,8 +312,8 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-int-">DataSourcePercolation</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
                      <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
-                     int&nbsp;log2StepS,
-                     int&nbsp;log2StepE)</code></th>
+                     int&nbsp;log2StepMin,
+                     int&nbsp;log2StepMax)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -631,22 +631,22 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[] r</pre>
 </li>
 </ul>
-<a name="log2StepS">
+<a name="log2StepMin">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>log2StepS</h4>
-<pre>protected&nbsp;int log2StepS</pre>
+<h4>log2StepMin</h4>
+<pre>protected&nbsp;int log2StepMin</pre>
 </li>
 </ul>
-<a name="log2StepE">
+<a name="log2StepMax">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>log2StepE</h4>
-<pre>protected&nbsp;int log2StepE</pre>
+<h4>log2StepMax</h4>
+<pre>protected&nbsp;int log2StepMax</pre>
 </li>
 </ul>
 </li>
@@ -665,8 +665,8 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <h4>DataSourcePercolation</h4>
 <pre>public&nbsp;DataSourcePercolation&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
                              <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
-                             int&nbsp;log2StepS,
-                             int&nbsp;log2StepE)</pre>
+                             int&nbsp;log2StepMin,
+                             int&nbsp;log2StepMax)</pre>
 </li>
 </ul>
 </li>

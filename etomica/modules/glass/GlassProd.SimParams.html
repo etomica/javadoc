@@ -52,7 +52,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass/GlassProd.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/GlassProdF.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/MCMoveSwap.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/GlassProd.SimParams.html" target="_top">Frames</a></li>
@@ -163,12 +163,32 @@ extends <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html" title
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#log2StepMin">log2StepMin</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#minDrFilter">minDrFilter</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#numSteps">numSteps</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#numStepsEq">numStepsEq</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#qx">qx</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassProd.SimParams.html#temperatureMelt">temperatureMelt</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -184,7 +204,7 @@ extends <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html" title
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.modules.glass.<a href="../../../etomica/modules/glass/SimGlass.GlassParams.html" title="class in etomica.modules.glass">SimGlass.GlassParams</a></h3>
-<code><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#D">D</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#density">density</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#doSwap">doSwap</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#log2StepE">log2StepE</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#log2StepS">log2StepS</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#minDrFilter">minDrFilter</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nA">nA</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nB">nB</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#potential">potential</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#temperature">temperature</a></code></li>
+<code><a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#D">D</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#density">density</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#doSwap">doSwap</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nA">nA</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#nB">nB</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#potential">potential</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#temperature">temperature</a>, <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html#tStep">tStep</a></code></li>
 </ul>
 </li>
 </ul>
@@ -253,10 +273,46 @@ extends <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html" title
 <a name="numSteps">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>numSteps</h4>
 <pre>public&nbsp;int numSteps</pre>
+</li>
+</ul>
+<a name="minDrFilter">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>minDrFilter</h4>
+<pre>public&nbsp;double minDrFilter</pre>
+</li>
+</ul>
+<a name="log2StepMin">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log2StepMin</h4>
+<pre>public&nbsp;int log2StepMin</pre>
+</li>
+</ul>
+<a name="temperatureMelt">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperatureMelt</h4>
+<pre>public&nbsp;double temperatureMelt</pre>
+</li>
+</ul>
+<a name="qx">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>qx</h4>
+<pre>public&nbsp;double qx</pre>
 </li>
 </ul>
 </li>
@@ -304,7 +360,7 @@ extends <a href="../../../etomica/modules/glass/SimGlass.GlassParams.html" title
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass/GlassProd.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/GlassProdF.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/MCMoveSwap.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/GlassProd.SimParams.html" target="_top">Frames</a></li>
