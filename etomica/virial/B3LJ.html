@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,6 +178,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#getd2fdT2-int-double-double-">getd2fdT2</a></span>&#8203;(int&nbsp;N,
+         double&nbsp;del_r,
+         double&nbsp;reducedTemp)</code></th>
+<td class="colLast">
+<div class="block">Returns a discretized df/dT function containing N points with a
+ separation interval of del_r</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#getdfdT-int-double-double-">getdfdT</a></span>&#8203;(int&nbsp;N,
        double&nbsp;del_r,
        double&nbsp;reducedTemp)</code></th>
@@ -186,7 +196,7 @@ extends java.lang.Object</pre>
  separation interval of del_r</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#getfr-int-double-double-">getfr</a></span>&#8203;(int&nbsp;N,
      double&nbsp;del_r,
@@ -196,14 +206,15 @@ extends java.lang.Object</pre>
  separation interval of del_r</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#main-java.lang.String:A-">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static double[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#value-double-">value</a></span>&#8203;(double&nbsp;temperature)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/B3LJ.html#value-double-int-">value</a></span>&#8203;(double&nbsp;temperature,
+     int&nbsp;d)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -254,13 +265,14 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;void&nbsp;main&#8203;(java.lang.String[]&nbsp;args)</pre>
 </li>
 </ul>
-<a name="value-double-">
+<a name="value-double-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>value</h4>
-<pre>public static&nbsp;double[]&nbsp;value&#8203;(double&nbsp;temperature)</pre>
+<pre>public static&nbsp;double[]&nbsp;value&#8203;(double&nbsp;temperature,
+                             int&nbsp;d)</pre>
 </li>
 </ul>
 <a name="getfr-int-double-double-">
@@ -279,12 +291,25 @@ extends java.lang.Object</pre>
 <a name="getdfdT-int-double-double-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getdfdT</h4>
 <pre>public static&nbsp;double[]&nbsp;getdfdT&#8203;(int&nbsp;N,
                                double&nbsp;del_r,
                                double&nbsp;reducedTemp)</pre>
+<div class="block">Returns a discretized df/dT function containing N points with a
+ separation interval of del_r</div>
+</li>
+</ul>
+<a name="getd2fdT2-int-double-double-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getd2fdT2</h4>
+<pre>public static&nbsp;double[]&nbsp;getd2fdT2&#8203;(int&nbsp;N,
+                                 double&nbsp;del_r,
+                                 double&nbsp;reducedTemp)</pre>
 <div class="block">Returns a discretized df/dT function containing N points with a
  separation interval of del_r</div>
 </li>
