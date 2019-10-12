@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,6 +178,11 @@ implements <a href="../../etomica/virial/ClusterWeight.html" title="interface in
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWeightAbs.html#doAbs">doAbs</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWeightAbs.html#weightCluster">weightCluster</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -248,10 +253,17 @@ implements <a href="../../etomica/virial/ClusterWeight.html" title="interface in
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWeightAbs.html#setDoAbs-boolean-">setDoAbs</a></span>&#8203;(boolean&nbsp;doAbs)</code></th>
+<td class="colLast">
+<div class="block">Sets the cluster to actually return the |value| (as default) or just value.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWeightAbs.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;temp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWeightAbs.html#value-etomica.virial.BoxCluster-">value</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -284,10 +296,19 @@ implements <a href="../../etomica/virial/ClusterWeight.html" title="interface in
 <a name="weightCluster">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>weightCluster</h4>
 <pre>protected final&nbsp;<a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a> weightCluster</pre>
+</li>
+</ul>
+<a name="doAbs">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>doAbs</h4>
+<pre>protected&nbsp;boolean doAbs</pre>
 </li>
 </ul>
 </li>
@@ -315,6 +336,16 @@ implements <a href="../../etomica/virial/ClusterWeight.html" title="interface in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setDoAbs-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoAbs</h4>
+<pre>public&nbsp;void&nbsp;setDoAbs&#8203;(boolean&nbsp;doAbs)</pre>
+<div class="block">Sets the cluster to actually return the |value| (as default) or just value.</div>
+</li>
+</ul>
 <a name="makeWeightCluster-etomica.virial.ClusterAbstract-">
 <!--   -->
 </a>
