@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,7 +165,14 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <div class="block">AccumulatorAverage that maintains a fixed block size.
  This is standard accumulator for collecting averages in production runs.
  <p>
- This accumulator accepts any type of Data</div>
+ This accumulator accepts any type of Data
+ <p>
+ The average value is based on block averages -- it does not include samples
+ that are not part of blocks.  Average and error are computed using a
+ formulation that reduces numeric roundoff.
+ <p>
+ The standard deviation does include samples not included in a complete block
+ and uses a simpler formulation that is more vulnerable to roundoff.</div>
 </li>
 </ul>
 </div>
@@ -207,17 +214,17 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#correlationSum">correlationSum</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#blockVarSum">blockVarSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#currentBlockSum">currentBlockSum</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#correlationSum">correlationSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#doStrictBlockData">doStrictBlockData</a></span></code></th>
+<td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#currentBlockAvg">currentBlockAvg</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -238,16 +245,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#sanityCheckBC">sanityCheckBC</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#sum">sum</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#sumBlockSquare">sumBlockSquare</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -388,14 +385,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <div class="block">Allows individual block data to be passed to a data sink.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#setDoStrictBlockData-boolean-">setDoStrictBlockData</a></span>&#8203;(boolean&nbsp;newDoStrictBlockData)</code></th>
-<td class="colLast">
-<div class="block">Sets the accumulator to base statistics only on block data (where that
- makes sense).</div>
-</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.AccumulatorAverage">
@@ -485,31 +474,22 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>protected final&nbsp;<a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a> sanityCheckBC</pre>
 </li>
 </ul>
-<a name="sum">
+<a name="blockVarSum">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>sum</h4>
-<pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> sum</pre>
+<h4>blockVarSum</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> blockVarSum</pre>
 </li>
 </ul>
-<a name="sumBlockSquare">
+<a name="currentBlockAvg">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>sumBlockSquare</h4>
-<pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> sumBlockSquare</pre>
-</li>
-</ul>
-<a name="currentBlockSum">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>currentBlockSum</h4>
-<pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> currentBlockSum</pre>
+<h4>currentBlockAvg</h4>
+<pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> currentBlockAvg</pre>
 </li>
 </ul>
 <a name="sumSquare">
@@ -564,15 +544,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <li class="blockList">
 <h4>work2</h4>
 <pre>protected&nbsp;<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a> work2</pre>
-</li>
-</ul>
-<a name="doStrictBlockData">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doStrictBlockData</h4>
-<pre>protected&nbsp;boolean doStrictBlockData</pre>
 </li>
 </ul>
 <a name="blockDataSink">
@@ -635,23 +606,6 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>value of DoStrictBlockData</dd>
-</dl>
-</li>
-</ul>
-<a name="setDoStrictBlockData-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setDoStrictBlockData</h4>
-<pre>public&nbsp;void&nbsp;setDoStrictBlockData&#8203;(boolean&nbsp;newDoStrictBlockData)</pre>
-<div class="block">Sets the accumulator to base statistics only on block data (where that
- makes sense).  The primary effect here is that data does not go into
- the average unless it is part of a complete block.  Because of how it
- is computed, the standard deviation is unaffected by this flag.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newDoStrictBlockData</code> - </dd>
 </dl>
 </li>
 </ul>

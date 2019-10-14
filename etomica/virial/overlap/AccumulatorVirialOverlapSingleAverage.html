@@ -220,36 +220,31 @@ extends <a href="../../../etomica/data/AccumulatorRatioAverageCovariance.html" t
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#bennetUDiff">bennetUDiff</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#blockCounter">blockCounter</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected java.io.FileWriter</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#fileWriter">fileWriter</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#overlapBlockCovSum">overlapBlockCovSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#overlapCorrelationSum">overlapCorrelationSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#overlapFirstBlock">overlapFirstBlock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/virial/overlap/AccumulatorVirialOverlapSingleAverage.html#overlapMostRecentBlock">overlapMostRecentBlock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -274,7 +269,7 @@ extends <a href="../../../etomica/data/AccumulatorRatioAverageCovariance.html" t
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a></h3>
-<code><a href="../../../etomica/data/AccumulatorAverageFixed.html#blockDataSink">blockDataSink</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#correlationSum">correlationSum</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#currentBlockSum">currentBlockSum</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#doStrictBlockData">doStrictBlockData</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#firstBlock">firstBlock</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#mostRecentBlock">mostRecentBlock</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#negativeChop">negativeChop</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sanityCheckBC">sanityCheckBC</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sum">sum</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sumBlockSquare">sumBlockSquare</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sumSquare">sumSquare</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#work">work</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#work2">work2</a></code></li>
+<code><a href="../../../etomica/data/AccumulatorAverageFixed.html#blockDataSink">blockDataSink</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#blockVarSum">blockVarSum</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#correlationSum">correlationSum</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#currentBlockAvg">currentBlockAvg</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#firstBlock">firstBlock</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#mostRecentBlock">mostRecentBlock</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#negativeChop">negativeChop</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sanityCheckBC">sanityCheckBC</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#sumSquare">sumSquare</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#work">work</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#work2">work2</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.data.AccumulatorRatioAverageCovariance">
@@ -447,7 +442,7 @@ extends <a href="../../../etomica/data/AccumulatorRatioAverageCovariance.html" t
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.data.<a href="../../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a></h3>
-<code><a href="../../../etomica/data/AccumulatorAverageFixed.html#getBlockDataSink--">getBlockDataSink</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#getDoStrictBlockData--">getDoStrictBlockData</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#setBlockDataSink-etomica.data.IDataSink-">setBlockDataSink</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#setDoStrictBlockData-boolean-">setDoStrictBlockData</a></code></li>
+<code><a href="../../../etomica/data/AccumulatorAverageFixed.html#getBlockDataSink--">getBlockDataSink</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#getDoStrictBlockData--">getDoStrictBlockData</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a>, <a href="../../../etomica/data/AccumulatorAverageFixed.html#setBlockDataSink-etomica.data.IDataSink-">setBlockDataSink</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.data.AccumulatorRatioAverageCovariance">
@@ -553,15 +548,6 @@ extends <a href="../../../etomica/data/AccumulatorRatioAverageCovariance.html" t
 <li class="blockList">
 <h4>overlapBlockCovSum</h4>
 <pre>protected&nbsp;double[] overlapBlockCovSum</pre>
-</li>
-</ul>
-<a name="bennetUDiff">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>bennetUDiff</h4>
-<pre>protected&nbsp;double bennetUDiff</pre>
 </li>
 </ul>
 <a name="fileWriter">
