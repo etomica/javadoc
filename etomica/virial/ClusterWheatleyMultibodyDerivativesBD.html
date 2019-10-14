@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -315,18 +315,23 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#getNumValues--">getNumValues</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#makeCopy--">makeCopy</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns another instance of an identical cluster (shallow copy).</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#setPrecisionLimit-int-">setPrecisionLimit</a></span>&#8203;(int&nbsp;newLimit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;newT)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -593,6 +598,23 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#calcFullFQ-etomica.virial.BoxCluster-">calcFullFQ</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesBD</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getNumValues--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNumValues</h4>
+<pre>public&nbsp;int&nbsp;getNumValues&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/virial/ClusterAbstractMultivalue.html#getNumValues--">getNumValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="interface in etomica.virial">ClusterAbstractMultivalue</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#getNumValues--">getNumValues</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesBD</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>number of values returned by getAllLastValues</dd>
 </dl>
 </li>
 </ul>
