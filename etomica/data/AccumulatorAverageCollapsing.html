@@ -205,7 +205,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#blockSums">blockSums</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#blockAvgs">blockAvgs</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -215,7 +215,7 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#currentBlockSum">currentBlockSum</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#currentBlockAvg">currentBlockAvg</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -230,17 +230,27 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalBlockSum">totalBlockSum</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalAvg">totalAvg</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalSumBlockSq">totalSumBlockSq</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalBlockAvg">totalBlockAvg</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalBlockVarSum">totalBlockVarSum</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalSumSquare">totalSumSquare</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageCollapsing.html#totalVarSum">totalVarSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -453,22 +463,22 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>protected&nbsp;int maxBlocks</pre>
 </li>
 </ul>
-<a name="blockSums">
+<a name="blockAvgs">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>blockSums</h4>
-<pre>protected&nbsp;double[] blockSums</pre>
+<h4>blockAvgs</h4>
+<pre>protected&nbsp;double[] blockAvgs</pre>
 </li>
 </ul>
-<a name="currentBlockSum">
+<a name="currentBlockAvg">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>currentBlockSum</h4>
-<pre>protected&nbsp;double currentBlockSum</pre>
+<h4>currentBlockAvg</h4>
+<pre>protected&nbsp;double currentBlockAvg</pre>
 </li>
 </ul>
 <a name="totalSumSquare">
@@ -480,13 +490,22 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>protected&nbsp;double totalSumSquare</pre>
 </li>
 </ul>
-<a name="totalSumBlockSq">
+<a name="totalBlockVarSum">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>totalSumBlockSq</h4>
-<pre>protected&nbsp;double totalSumBlockSq</pre>
+<h4>totalBlockVarSum</h4>
+<pre>protected&nbsp;double totalBlockVarSum</pre>
+</li>
+</ul>
+<a name="totalVarSum">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalVarSum</h4>
+<pre>protected&nbsp;double totalVarSum</pre>
 </li>
 </ul>
 <a name="correlationSum">
@@ -498,13 +517,22 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <pre>protected&nbsp;double correlationSum</pre>
 </li>
 </ul>
-<a name="totalBlockSum">
+<a name="totalBlockAvg">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>totalBlockSum</h4>
-<pre>protected&nbsp;double totalBlockSum</pre>
+<h4>totalBlockAvg</h4>
+<pre>protected&nbsp;double totalBlockAvg</pre>
+</li>
+</ul>
+<a name="totalAvg">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalAvg</h4>
+<pre>protected&nbsp;double totalAvg</pre>
 </li>
 </ul>
 <a name="nominalBlockSize">
