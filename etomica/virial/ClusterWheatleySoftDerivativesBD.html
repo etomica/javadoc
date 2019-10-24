@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,7 +57,7 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.ClusterRetrievePrimes.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.ClusterRetrievePrimesBD.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.ClusterRetrievePrimes.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -212,7 +212,7 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesBD</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#clusterBD">clusterBD</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#clusterBDBD">clusterBDBD</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -228,6 +228,16 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#doCaching">doCaching</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static java.math.BigDecimal</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#E">E</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.util.ArrayList&lt;java.math.BigDecimal&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#Epow">Epow</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -345,10 +355,20 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected java.math.BigDecimal</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#BDlog-java.math.BigDecimal-">BDlog</a></span>&#8203;(java.math.BigDecimal&nbsp;val)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#BDexp-java.math.BigDecimal-">BDexp</a></span>&#8203;(java.math.BigDecimal&nbsp;val)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected java.math.BigDecimal</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#BDExpInternal-java.math.BigDecimal-">BDExpInternal</a></span>&#8203;(java.math.BigDecimal&nbsp;val)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected java.math.BigDecimal</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#BDlog-java.math.BigDecimal-">BDlog</a></span>&#8203;(java.math.BigDecimal&nbsp;val)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#calcFullFQ-etomica.virial.BoxCluster-">calcFullFQ</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -356,63 +376,63 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
  already been populated.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#calcValue-etomica.virial.BoxCluster-">calcValue</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
 <div class="block">Returns the cluster value for the given configuration.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#getAllLastValues-etomica.virial.BoxCluster-">getAllLastValues</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#getNumValues--">getNumValues</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#makeCopy--">makeCopy</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns another instance of an identical cluster (shallow copy).</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#pointCount--">pointCount</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Number of points in the cluster.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setDoCaching-boolean-">setDoCaching</a></span>&#8203;(boolean&nbsp;newDoCaching)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setPrecisionLimit-int-">setPrecisionLimit</a></span>&#8203;(int&nbsp;newLimit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setRCut-double-">setRCut</a></span>&#8203;(double&nbsp;newRCut)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;temperature)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#updateF-etomica.virial.BoxCluster-">updateF</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#value-etomica.virial.BoxCluster-">value</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -595,13 +615,13 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <pre>protected&nbsp;double tol</pre>
 </li>
 </ul>
-<a name="clusterBD">
+<a name="clusterBDBD">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>clusterBD</h4>
-<pre>protected&nbsp;<a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesBD</a> clusterBD</pre>
+<h4>clusterBDBD</h4>
+<pre>protected&nbsp;<a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesBD</a> clusterBDBD</pre>
 </li>
 </ul>
 <a name="debug">
@@ -652,10 +672,28 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <a name="rCut2">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>rCut2</h4>
 <pre>protected&nbsp;double rCut2</pre>
+</li>
+</ul>
+<a name="E">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>E</h4>
+<pre>protected static&nbsp;java.math.BigDecimal E</pre>
+</li>
+</ul>
+<a name="Epow">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Epow</h4>
+<pre>protected final&nbsp;java.util.ArrayList&lt;java.math.BigDecimal&gt; Epow</pre>
 </li>
 </ul>
 </li>
@@ -752,6 +790,32 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </dl>
 </li>
 </ul>
+<a name="BDexp-java.math.BigDecimal-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BDexp</h4>
+<pre>protected&nbsp;java.math.BigDecimal&nbsp;BDexp&#8203;(java.math.BigDecimal&nbsp;val)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>BigDecimal exp.  Should handle any |val| < 2^31</dd>
+</dl>
+</li>
+</ul>
+<a name="BDExpInternal-java.math.BigDecimal-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BDExpInternal</h4>
+<pre>protected&nbsp;java.math.BigDecimal&nbsp;BDExpInternal&#8203;(java.math.BigDecimal&nbsp;val)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>BigDecimal exponential from Taylor series expansion about x=0</dd>
+</dl>
+</li>
+</ul>
 <a name="BDlog-java.math.BigDecimal-">
 <!--   -->
 </a>
@@ -759,6 +823,10 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <li class="blockList">
 <h4>BDlog</h4>
 <pre>protected&nbsp;java.math.BigDecimal&nbsp;BDlog&#8203;(java.math.BigDecimal&nbsp;val)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>BigDecimal natural log</dd>
+</dl>
 </li>
 </ul>
 <a name="calcFullFQ-etomica.virial.BoxCluster-">
@@ -869,7 +937,7 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.ClusterRetrievePrimes.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../etomica/virial/ClusterWheatleySoftDerivatives.ClusterRetrievePrimesBD.html" title="class in etomica.virial"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.ClusterRetrievePrimes.html" title="class in etomica.virial"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
