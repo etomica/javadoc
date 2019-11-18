@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,11 +178,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomMulti.html#imposePBC">imposePBC</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomMulti.html#startAtom">startAtom</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomMulti.html#translationVectors">translationVectors</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -295,6 +300,11 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomMulti.html#setDoImposePBC-boolean-">setDoImposePBC</a></span>&#8203;(boolean&nbsp;doImposePBC)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomMulti.html#setStartAtom-int-">setStartAtom</a></span>&#8203;(int&nbsp;newStartAtom)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -360,10 +370,19 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <a name="startAtom">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>startAtom</h4>
 <pre>protected&nbsp;int startAtom</pre>
+</li>
+</ul>
+<a name="imposePBC">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>imposePBC</h4>
+<pre>protected&nbsp;boolean imposePBC</pre>
 </li>
 </ul>
 </li>
@@ -424,6 +443,15 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <li class="blockList">
 <h4>getStartAtom</h4>
 <pre>public&nbsp;int&nbsp;getStartAtom&#8203;()</pre>
+</li>
+</ul>
+<a name="setDoImposePBC-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDoImposePBC</h4>
+<pre>public&nbsp;void&nbsp;setDoImposePBC&#8203;(boolean&nbsp;doImposePBC)</pre>
 </li>
 </ul>
 <a name="doTrial--">

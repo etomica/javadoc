@@ -251,8 +251,10 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtom.html#getChi--">getChi</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtom.html#getChi-double-">getChi</a></span>&#8203;(double&nbsp;temperature)</code></th>
+<td class="colLast">
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -282,7 +284,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getChi-double-">getChi</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getAtomSource--">getAtomSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveAtom.html#setAtomSource-etomica.atom.AtomSource-">setAtomSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMoveBox">
@@ -370,13 +372,24 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 </dl>
 </li>
 </ul>
-<a name="getChi--">
+<a name="getChi-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getChi</h4>
-<pre>public&nbsp;double&nbsp;getChi&#8203;()</pre>
+<pre>public&nbsp;double&nbsp;getChi&#8203;(double&nbsp;temperature)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#getChi-double-">MCMove</a></code></span></div>
+<div class="block">Chi is the parameter within standard Metropolis Monte Carlo.  The
+ probability of accepting the move is given by min(1,chi).</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html#getChi-double-">getChi</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class in etomica.integrator.mcmove">MCMoveAtom</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>temperature</code> - used to compute chi</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>chi</dd>
+</dl>
 </li>
 </ul>
 <a name="rejectNotify--">
