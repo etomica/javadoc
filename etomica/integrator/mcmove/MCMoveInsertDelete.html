@@ -266,8 +266,10 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#MCMoveInsertDelete-etomica.potential.PotentialMaster-etomica.util.random.IRandom-etomica.space.Space-">MCMoveInsertDelete</a></span>&#8203;(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                   <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-                  <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</code></th>
-<td class="colLast">&nbsp;</td>
+                  <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</code></th>
+<td class="colLast">
+<div class="block">Constructs using default isPotentialHard = false</div>
+</td>
 </tr>
 </table>
 </li>
@@ -297,7 +299,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <td class="colFirst"><code><a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a></span>&#8203;()</code></th>
 <td class="colLast">
-<div class="block">Returns an iterator giving molecule that is being added or deleted 
+<div class="block">Returns an iterator giving molecule that is being added or deleted
  in the current or most recent trial.</div>
 </td>
 </tr>
@@ -422,15 +424,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="mu">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>mu</h4>
-<pre>protected&nbsp;double mu</pre>
-</li>
-</ul>
 <a name="energyMeter">
 <!--   -->
 </a>
@@ -440,15 +433,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <pre>protected final&nbsp;<a href="../../../etomica/data/meter/MeterPotentialEnergy.html" title="class in etomica.data.meter">MeterPotentialEnergy</a> energyMeter</pre>
 </li>
 </ul>
-<a name="species">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>species</h4>
-<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
-</li>
-</ul>
 <a name="affectedAtomIterator">
 <!--   -->
 </a>
@@ -456,6 +440,42 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <li class="blockList">
 <h4>affectedAtomIterator</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/atom/iterator/AtomIteratorArrayListSimple.html" title="class in etomica.atom.iterator">AtomIteratorArrayListSimple</a> affectedAtomIterator</pre>
+</li>
+</ul>
+<a name="reservoir">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reservoir</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a> reservoir</pre>
+</li>
+</ul>
+<a name="atomTranslator">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atomTranslator</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/action/MoleculeActionTranslateTo.html" title="class in etomica.action">MoleculeActionTranslateTo</a> atomTranslator</pre>
+</li>
+</ul>
+<a name="mu">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mu</h4>
+<pre>protected&nbsp;double mu</pre>
+</li>
+</ul>
+<a name="species">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>species</h4>
+<pre>protected&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a> species</pre>
 </li>
 </ul>
 <a name="testMolecule">
@@ -492,24 +512,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <li class="blockList">
 <h4>insert</h4>
 <pre>protected&nbsp;boolean insert</pre>
-</li>
-</ul>
-<a name="reservoir">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>reservoir</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/molecule/MoleculeArrayList.html" title="class in etomica.molecule">MoleculeArrayList</a> reservoir</pre>
-</li>
-</ul>
-<a name="atomTranslator">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>atomTranslator</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/action/MoleculeActionTranslateTo.html" title="class in etomica.action">MoleculeActionTranslateTo</a> atomTranslator</pre>
 </li>
 </ul>
 <a name="moleculeList">
@@ -555,7 +557,14 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <h4>MCMoveInsertDelete</h4>
 <pre>public&nbsp;MCMoveInsertDelete&#8203;(<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a>&nbsp;potentialMaster,
                           <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;random,
-                          <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
+                          <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space)</pre>
+<div class="block">Constructs using default isPotentialHard = false</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>potentialMaster</code> - used for calculation of energies</dd>
+<dd><code>random</code> - random number generator used by the simulation</dd>
+<dd><code>space</code> - governing space for the simulation</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -566,15 +575,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSpecies-etomica.species.ISpecies-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSpecies</h4>
-<pre>public&nbsp;void&nbsp;setSpecies&#8203;(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</pre>
-</li>
-</ul>
 <a name="getSpecies--">
 <!--   -->
 </a>
@@ -582,6 +582,15 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <li class="blockList">
 <h4>getSpecies</h4>
 <pre>public&nbsp;<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;getSpecies&#8203;()</pre>
+</li>
+</ul>
+<a name="setSpecies-etomica.species.ISpecies-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSpecies</h4>
+<pre>public&nbsp;void&nbsp;setSpecies&#8203;(<a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</pre>
 </li>
 </ul>
 <a name="setBox-etomica.box.Box-">
@@ -600,6 +609,16 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 </dl>
 </li>
 </ul>
+<a name="getPositionSource--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPositionSource</h4>
+<pre>public&nbsp;<a href="../../../etomica/box/RandomPositionSource.html" title="interface in etomica.box">RandomPositionSource</a>&nbsp;getPositionSource&#8203;()</pre>
+<div class="block">Returns the RandomPositionSource used by this move.</div>
+</li>
+</ul>
 <a name="setPositionSource-etomica.box.RandomPositionSource-">
 <!--   -->
 </a>
@@ -609,16 +628,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <pre>public&nbsp;void&nbsp;setPositionSource&#8203;(<a href="../../../etomica/box/RandomPositionSource.html" title="interface in etomica.box">RandomPositionSource</a>&nbsp;newPositionSource)</pre>
 <div class="block">Sets a new RandomPositionSource for this move to use.  By default, a
  position source is used which assumes rectangular boundaries.</div>
-</li>
-</ul>
-<a name="getPositionSource--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPositionSource</h4>
-<pre>public&nbsp;<a href="../../../etomica/box/RandomPositionSource.html" title="interface in etomica.box">RandomPositionSource</a>&nbsp;getPositionSource&#8203;()</pre>
-<div class="block">Returns the RandomPositionSource used by this move.</div>
 </li>
 </ul>
 <a name="doTrial--">
@@ -709,7 +718,7 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <li class="blockList">
 <h4>affectedAtoms</h4>
 <pre>public&nbsp;<a href="../../../etomica/atom/iterator/AtomIterator.html" title="interface in etomica.atom.iterator">AtomIterator</a>&nbsp;affectedAtoms&#8203;()</pre>
-<div class="block">Returns an iterator giving molecule that is being added or deleted 
+<div class="block">Returns an iterator giving molecule that is being added or deleted
  in the current or most recent trial.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -726,16 +735,6 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <pre>public&nbsp;boolean&nbsp;lastMoveInsert&#8203;()</pre>
 </li>
 </ul>
-<a name="setMu-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setMu</h4>
-<pre>public&nbsp;void&nbsp;setMu&#8203;(double&nbsp;mu)</pre>
-<div class="block">Mutator method for the chemical potential of the insertion/deletion species.</div>
-</li>
-</ul>
 <a name="getMu--">
 <!--   -->
 </a>
@@ -744,6 +743,16 @@ extends <a href="../../../etomica/integrator/mcmove/MCMoveBox.html" title="class
 <h4>getMu</h4>
 <pre>public final&nbsp;double&nbsp;getMu&#8203;()</pre>
 <div class="block">Accessor method for the chemical potential of th insertion/deletion species.</div>
+</li>
+</ul>
+<a name="setMu-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMu</h4>
+<pre>public&nbsp;void&nbsp;setMu&#8203;(double&nbsp;mu)</pre>
+<div class="block">Mutator method for the chemical potential of the insertion/deletion species.</div>
 </li>
 </ul>
 <a name="getMuDimension--">

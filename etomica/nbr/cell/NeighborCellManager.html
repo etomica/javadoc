@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -365,6 +365,11 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#setSuppressBoxLengthWarning-boolean-">setSuppressBoxLengthWarning</a></span>&#8203;(boolean&nbsp;doSuppress)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/NeighborCellManager.html#updateCell-etomica.atom.IAtom-">updateCell</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -674,6 +679,15 @@ implements <a href="../../../etomica/box/BoxCellManager.html" title="interface i
 <div class="block">Assigns the cell for the given atom.  The atom will be listed in the
  cell's atom list and the cell with be associated with the atom via
  agentManager.</div>
+</li>
+</ul>
+<a name="updateCell-etomica.atom.IAtom-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateCell</h4>
+<pre>public&nbsp;void&nbsp;updateCell&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom)</pre>
 </li>
 </ul>
 <a name="makeMCMoveListener--">

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/nbr/cell/NeighborIteratorCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/nbr/cell/PotentialMasterCellMixed.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/PotentialMasterCell.html" target="_top">Frames</a></li>
@@ -140,6 +140,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="../../../etomica/nbr/cell/PotentialMasterCellMixed.html" title="class in etomica.nbr.cell">PotentialMasterCellMixed</a></code></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PotentialMasterCell</span>
@@ -178,7 +182,7 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></h3>
-<code><a href="../../../etomica/potential/PotentialMaster.html#enabled">enabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#iteratorFactory">iteratorFactory</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#potentialList">potentialList</a></code></li>
+<code><a href="../../../etomica/potential/PotentialMaster.html#enabled">enabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isPotentialHard">isPotentialHard</a>, <a href="../../../etomica/potential/PotentialMaster.html#iteratorFactory">iteratorFactory</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#potentialList">potentialList</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.nbr.PotentialMasterNbr">
@@ -246,6 +250,14 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#calculate-etomica.atom.IAtom-etomica.nbr.NeighborIterator-etomica.potential.PotentialCalculation-etomica.potential.IteratorDirective.Direction-">calculate</a></span>&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+         <a href="../../../etomica/nbr/NeighborIterator.html" title="interface in etomica.nbr">NeighborIterator</a>&nbsp;neighborIterator,
+         <a href="../../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>&nbsp;pc,
+         <a href="../../../etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
          <a href="../../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a>&nbsp;id,
@@ -254,41 +266,41 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <div class="block">Performs the given PotentialCalculation on the atoms of the given Box.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#calculate-etomica.box.Box-etomica.potential.PotentialCalculation-boolean-">calculate</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
          <a href="../../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>&nbsp;pc,
          boolean&nbsp;includeLrc)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/box/BoxCellManager.html" title="interface in etomica.box">BoxCellManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#getBoxCellManager-etomica.box.Box-">getBoxCellManager</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/nbr/cell/NeighborCellManager.html" title="class in etomica.nbr.cell">NeighborCellManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#getNbrCellManager-etomica.box.Box-">getNbrCellManager</a></span>&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#getRange--">getRange</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Reassign atoms to cell lists for all boxes.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#setCellRange-int-">setCellRange</a></span>&#8203;(int&nbsp;d)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/nbr/cell/PotentialMasterCell.html#setRange-double-">setRange</a></span>&#8203;(double&nbsp;d)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -306,7 +318,7 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.potential.<a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></h3>
-<code><a href="../../../etomica/potential/PotentialMaster.html#addModel-etomica.chem.models.Model-">addModel</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.molecule.iterator.MoleculesetIteratorPDT-etomica.species.ISpecies:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotential-etomica.species.ISpecies:A-">getPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialMaster.html#getSpecies-etomica.potential.IPotentialMolecular-">getSpecies</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled--">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialMolecular-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster--">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialMolecular-boolean-">setEnabled</a></code></li>
+<code><a href="../../../etomica/potential/PotentialMaster.html#addModel-etomica.chem.models.Model-">addModel</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.molecule.iterator.MoleculesetIteratorPDT-etomica.species.ISpecies:A-">addPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotential-etomica.species.ISpecies:A-">getPotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#getPotentials--">getPotentials</a>, <a href="../../../etomica/potential/PotentialMaster.html#getSpecies-etomica.potential.IPotentialMolecular-">getSpecies</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled--">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialMolecular-">isEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#isPotentialHard--">isPotentialHard</a>, <a href="../../../etomica/potential/PotentialMaster.html#lrcMaster--">lrcMaster</a>, <a href="../../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialMolecular-boolean-">setEnabled</a>, <a href="../../../etomica/potential/PotentialMaster.html#setPotentialHard-boolean-">setPotentialHard</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.nbr.PotentialMasterNbr">
@@ -465,7 +477,7 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <a name="calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>calculate</h4>
 <pre>public&nbsp;void&nbsp;calculate&#8203;(<a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
@@ -481,6 +493,18 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/potential/PotentialMaster.html#calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/potential/PotentialMaster.html" title="class in etomica.potential">PotentialMaster</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="calculate-etomica.atom.IAtom-etomica.nbr.NeighborIterator-etomica.potential.PotentialCalculation-etomica.potential.IteratorDirective.Direction-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>calculate</h4>
+<pre>protected&nbsp;void&nbsp;calculate&#8203;(<a href="../../../etomica/atom/IAtom.html" title="interface in etomica.atom">IAtom</a>&nbsp;atom,
+                         <a href="../../../etomica/nbr/NeighborIterator.html" title="interface in etomica.nbr">NeighborIterator</a>&nbsp;neighborIterator,
+                         <a href="../../../etomica/potential/PotentialCalculation.html" title="interface in etomica.potential">PotentialCalculation</a>&nbsp;pc,
+                         <a href="../../../etomica/potential/IteratorDirective.Direction.html" title="enum in etomica.potential">IteratorDirective.Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
 </li>
@@ -511,7 +535,7 @@ extends <a href="../../../etomica/nbr/PotentialMasterNbr.html" title="class in e
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/nbr/cell/NeighborIteratorCell.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../etomica/nbr/cell/PotentialMasterCellMixed.html" title="class in etomica.nbr.cell"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/nbr/cell/PotentialMasterCell.html" target="_top">Frames</a></li>

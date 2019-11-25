@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -92,13 +92,13 @@ var pathtoroot = "../../";loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.etomica.potential.Potential">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -166,6 +166,19 @@ implements <a href="../../etomica/potential/Potential2Soft.html" title="interfac
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/P2Ideal.html#range">range</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.etomica.potential.Potential">
 <!--   -->
@@ -303,13 +316,18 @@ implements <a href="../../etomica/potential/Potential2Soft.html" title="interfac
 </td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/P2Ideal.html#setRange-double-">setRange</a></span>&#8203;(double&nbsp;range)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/P2Ideal.html#u-double-">u</a></span>&#8203;(double&nbsp;r2)</code></th>
 <td class="colLast">
 <div class="block">Returns zero.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/P2Ideal.html#virial-etomica.atom.IAtomList-">virial</a></span>&#8203;(<a href="../../etomica/atom/IAtomList.html" title="interface in etomica.atom">IAtomList</a>&nbsp;pair)</code></th>
 <td class="colLast">
@@ -346,6 +364,23 @@ implements <a href="../../etomica/potential/Potential2Soft.html" title="interfac
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="range">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>range</h4>
+<pre>protected&nbsp;double range</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -383,6 +418,15 @@ implements <a href="../../etomica/potential/Potential2Soft.html" title="interfac
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../etomica/potential/Potential.html#setBox-etomica.box.Box-">setBox</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/potential/Potential.html" title="class in etomica.potential">Potential</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="setRange-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRange</h4>
+<pre>public&nbsp;void&nbsp;setRange&#8203;(double&nbsp;range)</pre>
 </li>
 </ul>
 <a name="getRange--">
@@ -657,13 +701,13 @@ implements <a href="../../etomica/potential/Potential2Soft.html" title="interfac
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.etomica.potential.Potential">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
