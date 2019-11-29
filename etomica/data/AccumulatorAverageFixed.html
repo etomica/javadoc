@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -218,46 +218,51 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected java.io.FileWriter</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#blockWriter">blockWriter</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#correlationSum">correlationSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#currentBlockAvg">currentBlockAvg</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#firstBlock">firstBlock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#mostRecentBlock">mostRecentBlock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#negativeChop">negativeChop</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/math/function/IFunction.html" title="interface in etomica.math.function">IFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#sanityCheckBC">sanityCheckBC</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#sumSquare">sumSquare</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#work">work</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#work2">work2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -335,35 +340,42 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#closeBlockFile--">closeBlockFile</a></span>&#8203;()</code></th>
+<td class="colLast">
+<div class="block">Causes the file with block data to be closed.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#doBlockSum--">doBlockSum</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Performs the block sum after <tt>blockSize</tt> calls to addData.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getBlockDataSink--">getBlockDataSink</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getData--">getData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#getDoStrictBlockData--">getDoStrictBlockData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#processDataInfo-etomica.data.IDataInfo-">processDataInfo</a></span>&#8203;(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;incomingDataInfo)</code></th>
 <td class="colLast">
 <div class="block">Prepares the accumulator for input data.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>&#8203;(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code></th>
 <td class="colLast">
@@ -371,18 +383,32 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
  DataInfo to the dataSink (if not null).</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#readBlockData-java.lang.String-">readBlockData</a></span>&#8203;(java.lang.String&nbsp;filename)</code></th>
+<td class="colLast">
+<div class="block">Reads block data from the given file.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Resets all sums to zero.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#setBlockDataSink-etomica.data.IDataSink-">setBlockDataSink</a></span>&#8203;(<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a>&nbsp;blockDataSink)</code></th>
 <td class="colLast">
 <div class="block">Allows individual block data to be passed to a data sink.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/AccumulatorAverageFixed.html#setWriteBlocks-java.lang.String-">setWriteBlocks</a></span>&#8203;(java.lang.String&nbsp;filename)</code></th>
+<td class="colLast">
+<div class="block">Configures the accumulator to write block data to the given file.</div>
 </td>
 </tr>
 </table>
@@ -549,10 +575,19 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <a name="blockDataSink">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>blockDataSink</h4>
 <pre>protected&nbsp;<a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a> blockDataSink</pre>
+</li>
+</ul>
+<a name="blockWriter">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>blockWriter</h4>
+<pre>protected&nbsp;java.io.FileWriter blockWriter</pre>
 </li>
 </ul>
 </li>
@@ -620,6 +655,39 @@ extends <a href="../../etomica/data/AccumulatorAverage.html" title="class in eto
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the data sink where block data are passed.</dd>
 </dl>
+</li>
+</ul>
+<a name="setWriteBlocks-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWriteBlocks</h4>
+<pre>public&nbsp;void&nbsp;setWriteBlocks&#8203;(java.lang.String&nbsp;filename)</pre>
+<div class="block">Configures the accumulator to write block data to the given file.
+ The data can be read back in later so long as the underlying data
+ is DataDoubleArray.</div>
+</li>
+</ul>
+<a name="closeBlockFile--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>closeBlockFile</h4>
+<pre>public&nbsp;void&nbsp;closeBlockFile&#8203;()</pre>
+<div class="block">Causes the file with block data to be closed.</div>
+</li>
+</ul>
+<a name="readBlockData-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readBlockData</h4>
+<pre>public&nbsp;void&nbsp;readBlockData&#8203;(java.lang.String&nbsp;filename)</pre>
+<div class="block">Reads block data from the given file.  The accumulator's state (for
+ block data) will match that when the file was last written to.</div>
 </li>
 </ul>
 <a name="setBlockDataSink-etomica.data.IDataSink-">
