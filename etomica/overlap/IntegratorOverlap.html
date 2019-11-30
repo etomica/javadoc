@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,21 +224,26 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#ignoreResetForFrac">ignoreResetForFrac</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#numSubSteps">numSubSteps</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#stepFrac">stepFrac</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected long[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#totNumSubSteps">totNumSubSteps</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#totNumSteps">totNumSteps</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#totTime">totTime</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -339,20 +344,25 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#readStateFromFile-java.io.BufferedReader-">readStateFromFile</a></span>&#8203;(java.io.BufferedReader&nbsp;br)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Causes recalculation of move frequencies and zero of selection counts for
  moves.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setAdjustInterval-long-">setAdjustInterval</a></span>&#8203;(long&nbsp;newInterval)</code></th>
 <td class="colLast">
 <div class="block">Sets how frequently the appropriate reference vs.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setAdjustStepFraction-boolean-">setAdjustStepFraction</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
@@ -360,14 +370,14 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  sub-integrator.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setAggressiveAdjustStepFraction-boolean-">setAggressiveAdjustStepFraction</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
 <div class="block">Sets whether to use "aggressive" adjustment.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setDoAdjustOnTime-boolean-">setDoAdjustOnTime</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
@@ -375,7 +385,7 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  based on the wall clock time needed to run steps in each system.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setNumSubSteps-long-">setNumSubSteps</a></span>&#8203;(long&nbsp;n)</code></th>
 <td class="colLast">
@@ -383,7 +393,7 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  perform for every step of the overlap integrator.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setReferenceFracSource-etomica.overlap.IntegratorOverlap.ReferenceFracSource-">setReferenceFracSource</a></span>&#8203;(<a href="../../etomica/overlap/IntegratorOverlap.ReferenceFracSource.html" title="interface in etomica.overlap">IntegratorOverlap.ReferenceFracSource</a>&nbsp;fracSource)</code></th>
 <td class="colLast">
@@ -392,9 +402,14 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
  decide how much to sample each system.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#setRefStepFraction-double-">setRefStepFraction</a></span>&#8203;(double&nbsp;f)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/overlap/IntegratorOverlap.html#writeStateToFile-java.io.OutputStreamWriter-">writeStateToFile</a></span>&#8203;(java.io.OutputStreamWriter&nbsp;osw)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -451,13 +466,13 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <pre>protected&nbsp;long numSubSteps</pre>
 </li>
 </ul>
-<a name="totNumSubSteps">
+<a name="totNumSteps">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>totNumSubSteps</h4>
-<pre>protected&nbsp;long[] totNumSubSteps</pre>
+<h4>totNumSteps</h4>
+<pre>protected&nbsp;long[] totNumSteps</pre>
 </li>
 </ul>
 <a name="fracSource">
@@ -517,10 +532,19 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <a name="doAdjustStepsOnTime">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>doAdjustStepsOnTime</h4>
 <pre>protected&nbsp;boolean doAdjustStepsOnTime</pre>
+</li>
+</ul>
+<a name="ignoreResetForFrac">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ignoreResetForFrac</h4>
+<pre>protected&nbsp;boolean ignoreResetForFrac</pre>
 </li>
 </ul>
 </li>
@@ -711,10 +735,28 @@ extends <a href="../../etomica/integrator/IntegratorManagerMC.html" title="class
 <a name="getRefTimeFraction--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRefTimeFraction</h4>
 <pre>public&nbsp;double&nbsp;getRefTimeFraction&#8203;()</pre>
+</li>
+</ul>
+<a name="writeStateToFile-java.io.OutputStreamWriter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeStateToFile</h4>
+<pre>public&nbsp;void&nbsp;writeStateToFile&#8203;(java.io.OutputStreamWriter&nbsp;osw)</pre>
+</li>
+</ul>
+<a name="readStateFromFile-java.io.BufferedReader-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>readStateFromFile</h4>
+<pre>public&nbsp;void&nbsp;readStateFromFile&#8203;(java.io.BufferedReader&nbsp;br)</pre>
 </li>
 </ul>
 </li>
