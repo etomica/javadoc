@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,7 +57,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/CorrelationSelf2.MeterCorrelationSelf2.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass/DataClusterer.PressureSink.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -180,13 +180,23 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.List&lt;double[]&gt;</code></td>
+<td class="colFirst"><code>protected java.util.List&lt;float[]&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#allData">allData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected double[][]</code></td>
+<td class="colFirst"><code>protected float[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#centers">centers</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#clusterOutName">clusterOutName</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#clusterP">clusterP</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -207,6 +217,16 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#first">first</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#iBondCount">iBondCount</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#iBonds">iBonds</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -242,6 +262,11 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#random">random</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#totalBondCount">totalBondCount</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -282,71 +307,91 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#findClusters--">findClusters</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#computePopulation--">computePopulation</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getClusterNeighborDistance--">getClusterNeighborDistance</a></span>&#8203;()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#findClusters--">findClusters</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getMaxClusterDistance--">getMaxClusterDistance</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getClusterNeighborDistance--">getClusterNeighborDistance</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getMaxIterations--">getMaxIterations</a></span>&#8203;()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getMaxClusterDistance--">getMaxClusterDistance</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getNumClusters--">getNumClusters</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getMaxIterations--">getMaxIterations</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#getNumClusters--">getNumClusters</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/glass/DataClusterer.PressureSink.html" title="class in etomica.modules.glass">DataClusterer.PressureSink</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#makePressureSink--">makePressureSink</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#putData-etomica.data.IData-">putData</a></span>&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code></th>
 <td class="colLast">
 <div class="block">Gives data to DataSink for processing, display, or whatever it does.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>&#8203;(<a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code></th>
 <td class="colLast">
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#reset--">reset</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setClusterNeighborDistance-double-">setClusterNeighborDistance</a></span>&#8203;(double&nbsp;d)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#readClusterFile-java.lang.String-">readClusterFile</a></span>&#8203;(java.lang.String&nbsp;filename)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setMaxClusterDistance-double-">setMaxClusterDistance</a></span>&#8203;(double&nbsp;dMax)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setMaxIterations-int-">setMaxIterations</a></span>&#8203;(int&nbsp;maxIterations)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setClusterFileOut-java.lang.String-">setClusterFileOut</a></span>&#8203;(java.lang.String&nbsp;clusterOutName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setClusterNeighborDistance-double-">setClusterNeighborDistance</a></span>&#8203;(double&nbsp;d)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setMaxClusterDistance-double-">setMaxClusterDistance</a></span>&#8203;(double&nbsp;dMax)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setMaxIterations-int-">setMaxIterations</a></span>&#8203;(int&nbsp;maxIterations)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#setNumClusters-int-">setNumClusters</a></span>&#8203;(int&nbsp;nClusters)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataClusterer.html#writeGraph-java.lang.String-">writeGraph</a></span>&#8203;(java.lang.String&nbsp;filename)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -377,7 +422,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>centers</h4>
-<pre>protected&nbsp;double[][] centers</pre>
+<pre>protected&nbsp;float[][] centers</pre>
 </li>
 </ul>
 <a name="allData">
@@ -386,7 +431,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <ul class="blockList">
 <li class="blockList">
 <h4>allData</h4>
-<pre>protected final&nbsp;java.util.List&lt;double[]&gt; allData</pre>
+<pre>protected final&nbsp;java.util.List&lt;float[]&gt; allData</pre>
 </li>
 </ul>
 <a name="first">
@@ -482,10 +527,55 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <a name="pData">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>pData</h4>
 <pre>protected&nbsp;double[] pData</pre>
+</li>
+</ul>
+<a name="totalBondCount">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalBondCount</h4>
+<pre>protected&nbsp;int totalBondCount</pre>
+</li>
+</ul>
+<a name="clusterP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clusterP</h4>
+<pre>protected&nbsp;double[] clusterP</pre>
+</li>
+</ul>
+<a name="iBonds">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>iBonds</h4>
+<pre>protected&nbsp;int[][] iBonds</pre>
+</li>
+</ul>
+<a name="iBondCount">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>iBondCount</h4>
+<pre>protected&nbsp;int[][] iBondCount</pre>
+</li>
+</ul>
+<a name="clusterOutName">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>clusterOutName</h4>
+<pre>protected&nbsp;java.lang.String clusterOutName</pre>
 </li>
 </ul>
 </li>
@@ -610,6 +700,42 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <pre>public&nbsp;void&nbsp;setMaxIterations&#8203;(int&nbsp;maxIterations)</pre>
 </li>
 </ul>
+<a name="readClusterFile-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readClusterFile</h4>
+<pre>public&nbsp;void&nbsp;readClusterFile&#8203;(java.lang.String&nbsp;filename)</pre>
+</li>
+</ul>
+<a name="computePopulation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computePopulation</h4>
+<pre>public&nbsp;void&nbsp;computePopulation&#8203;()</pre>
+</li>
+</ul>
+<a name="writeGraph-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeGraph</h4>
+<pre>public&nbsp;void&nbsp;writeGraph&#8203;(java.lang.String&nbsp;filename)</pre>
+</li>
+</ul>
+<a name="setClusterFileOut-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setClusterFileOut</h4>
+<pre>public&nbsp;void&nbsp;setClusterFileOut&#8203;(java.lang.String&nbsp;clusterOutName)</pre>
+</li>
+</ul>
 <a name="findClusters--">
 <!--   -->
 </a>
@@ -670,7 +796,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/ConfigurationStorage.StorageType.html" title="enum in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/CorrelationSelf2.MeterCorrelationSelf2.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass/DataClusterer.PressureSink.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

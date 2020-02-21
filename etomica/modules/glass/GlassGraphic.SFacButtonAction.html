@@ -57,7 +57,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/GlassGraphic.DataProcessorTensorTrace.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/GlassGraphic.MeterFromDumps.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass/GlassProd.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -168,21 +168,16 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/data/meter/MeterStructureFactor.html" title="class in etomica.data.meter">MeterStructureFactor</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#meters">meters</a></span></code></th>
+<td class="colFirst"><code>protected java.util.List&lt;<a href="../../../etomica/data/meter/MeterStructureFactor.AtomSignalSourceByType.html" title="class in etomica.data.meter">MeterStructureFactor.AtomSignalSourceByType</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#signalSources">signalSources</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass/DataClusterer.html" title="class in etomica.modules.glass">DataClusterer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#sfacClusterer">sfacClusterer</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#type">type</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#value">value</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -203,9 +198,8 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#SFacButtonAction-etomica.data.meter.MeterStructureFactor:A-etomica.data.AccumulatorAverageFixed-etomica.modules.glass.DataClusterer-etomica.atom.AtomType-double-">SFacButtonAction</a></span>&#8203;(<a href="../../../etomica/data/meter/MeterStructureFactor.html" title="class in etomica.data.meter">MeterStructureFactor</a>[]&nbsp;meters,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/GlassGraphic.SFacButtonAction.html#SFacButtonAction-java.util.List-etomica.data.AccumulatorAverageFixed-etomica.atom.AtomType-double-">SFacButtonAction</a></span>&#8203;(java.util.List&lt;<a href="../../../etomica/data/meter/MeterStructureFactor.AtomSignalSourceByType.html" title="class in etomica.data.meter">MeterStructureFactor.AtomSignalSourceByType</a>&gt;&nbsp;signalSources,
                 <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a>&nbsp;acc,
-                <a href="../../../etomica/modules/glass/DataClusterer.html" title="class in etomica.modules.glass">DataClusterer</a>&nbsp;sfacClusterer,
                 <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                 double&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -273,31 +267,22 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type</pre>
 </li>
 </ul>
-<a name="meters">
+<a name="signalSources">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>meters</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/data/meter/MeterStructureFactor.html" title="class in etomica.data.meter">MeterStructureFactor</a>[] meters</pre>
+<h4>signalSources</h4>
+<pre>protected final&nbsp;java.util.List&lt;<a href="../../../etomica/data/meter/MeterStructureFactor.AtomSignalSourceByType.html" title="class in etomica.data.meter">MeterStructureFactor.AtomSignalSourceByType</a>&gt; signalSources</pre>
 </li>
 </ul>
 <a name="acc">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>acc</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a> acc</pre>
-</li>
-</ul>
-<a name="sfacClusterer">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>sfacClusterer</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/modules/glass/DataClusterer.html" title="class in etomica.modules.glass">DataClusterer</a> sfacClusterer</pre>
 </li>
 </ul>
 </li>
@@ -308,15 +293,14 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SFacButtonAction-etomica.data.meter.MeterStructureFactor:A-etomica.data.AccumulatorAverageFixed-etomica.modules.glass.DataClusterer-etomica.atom.AtomType-double-">
+<a name="SFacButtonAction-java.util.List-etomica.data.AccumulatorAverageFixed-etomica.atom.AtomType-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SFacButtonAction</h4>
-<pre>public&nbsp;SFacButtonAction&#8203;(<a href="../../../etomica/data/meter/MeterStructureFactor.html" title="class in etomica.data.meter">MeterStructureFactor</a>[]&nbsp;meters,
+<pre>public&nbsp;SFacButtonAction&#8203;(java.util.List&lt;<a href="../../../etomica/data/meter/MeterStructureFactor.AtomSignalSourceByType.html" title="class in etomica.data.meter">MeterStructureFactor.AtomSignalSourceByType</a>&gt;&nbsp;signalSources,
                         <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="class in etomica.data">AccumulatorAverageFixed</a>&nbsp;acc,
-                        <a href="../../../etomica/modules/glass/DataClusterer.html" title="class in etomica.modules.glass">DataClusterer</a>&nbsp;sfacClusterer,
                         <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type,
                         double&nbsp;value)</pre>
 </li>
@@ -371,7 +355,7 @@ implements <a href="../../../etomica/action/IAction.html" title="interface in et
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/GlassGraphic.DataProcessorTensorTrace.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/GlassGraphic.MeterFromDumps.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../etomica/modules/glass/GlassProd.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

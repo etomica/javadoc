@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -193,7 +193,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected double[]</code></td>
+<td class="colFirst"><code>protected double[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#corSum">corSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -208,32 +208,32 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected double</code></td>
+<td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr1SumA">dr1SumA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected double</code></td>
+<td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr1SumB">dr1SumB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected long</code></td>
+<td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr2CountA">dr2CountA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected long</code></td>
+<td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr2CountB">dr2CountB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected double</code></td>
+<td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr2SumA">dr2SumA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected double</code></td>
+<td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#dr2SumB">dr2SumB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -244,50 +244,55 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#drj">drj</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#drk">drk</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected long[]</code></td>
+<td class="colFirst"><code>protected long[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#gSum">gSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#prevSampleIndex">prevSampleIndex</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#minPrevSample">minPrevSample</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#prevSampleIndex">prevSampleIndex</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#rData">rData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#tag">tag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#tmp">tmp</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#type1">type1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#type2">type2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#xDataSource">xDataSource</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#xMax">xMax</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -375,43 +380,51 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#getPrevSampleIndex--">getPrevSampleIndex</a></span>&#8203;()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#getMinPrevSample--">getMinPrevSample</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#getPrevSampleIndex--">getPrevSampleIndex</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#getTag--">getTag</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataSourceUniform.html" title="class in etomica.data">DataSourceUniform</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#getXDataSource--">getXDataSource</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#newConfigruation--">newConfigruation</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#reset--">reset</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Zero's out the RDF sum tracked by this meter.</div>
-</td>
-</tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#reallocate-int-">reallocate</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#setAtomTypes-etomica.atom.AtomType-etomica.atom.AtomType-">setAtomTypes</a></span>&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type1,
             <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#setMinPrevSample-int-">setMinPrevSample</a></span>&#8203;(int&nbsp;idx)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#setPrevSampleIndex-int-">setPrevSampleIndex</a></span>&#8203;(int&nbsp;idx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/MeterCorrelation.html#zeroData--">zeroData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -492,13 +505,13 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> dri</pre>
 </li>
 </ul>
-<a name="drj">
+<a name="drk">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>drj</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> drj</pre>
+<h4>drk</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> drk</pre>
 </li>
 </ul>
 <a name="tmp">
@@ -516,7 +529,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>corSum</h4>
-<pre>protected&nbsp;double[] corSum</pre>
+<pre>protected&nbsp;double[][] corSum</pre>
 </li>
 </ul>
 <a name="gSum">
@@ -525,7 +538,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>gSum</h4>
-<pre>protected&nbsp;long[] gSum</pre>
+<pre>protected&nbsp;long[][] gSum</pre>
 </li>
 </ul>
 <a name="data">
@@ -582,13 +595,22 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <pre>protected&nbsp;int prevSampleIndex</pre>
 </li>
 </ul>
+<a name="minPrevSample">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>minPrevSample</h4>
+<pre>protected&nbsp;int minPrevSample</pre>
+</li>
+</ul>
 <a name="dr2SumA">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>dr2SumA</h4>
-<pre>protected&nbsp;double dr2SumA</pre>
+<pre>protected&nbsp;double[] dr2SumA</pre>
 </li>
 </ul>
 <a name="dr2SumB">
@@ -597,7 +619,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>dr2SumB</h4>
-<pre>protected&nbsp;double dr2SumB</pre>
+<pre>protected&nbsp;double[] dr2SumB</pre>
 </li>
 </ul>
 <a name="dr1SumA">
@@ -606,7 +628,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>dr1SumA</h4>
-<pre>protected&nbsp;double dr1SumA</pre>
+<pre>protected&nbsp;double[] dr1SumA</pre>
 </li>
 </ul>
 <a name="dr1SumB">
@@ -615,7 +637,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>dr1SumB</h4>
-<pre>protected&nbsp;double dr1SumB</pre>
+<pre>protected&nbsp;double[] dr1SumB</pre>
 </li>
 </ul>
 <a name="dr2CountA">
@@ -624,7 +646,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockList">
 <li class="blockList">
 <h4>dr2CountA</h4>
-<pre>protected&nbsp;long dr2CountA</pre>
+<pre>protected&nbsp;long[] dr2CountA</pre>
 </li>
 </ul>
 <a name="dr2CountB">
@@ -633,7 +655,7 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <ul class="blockListLast">
 <li class="blockList">
 <h4>dr2CountB</h4>
-<pre>protected&nbsp;long dr2CountB</pre>
+<pre>protected&nbsp;long[] dr2CountB</pre>
 </li>
 </ul>
 </li>
@@ -671,6 +693,24 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setMinPrevSample-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMinPrevSample</h4>
+<pre>public&nbsp;void&nbsp;setMinPrevSample&#8203;(int&nbsp;idx)</pre>
+</li>
+</ul>
+<a name="getMinPrevSample--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMinPrevSample</h4>
+<pre>public&nbsp;int&nbsp;getMinPrevSample&#8203;()</pre>
+</li>
+</ul>
 <a name="setPrevSampleIndex-int-">
 <!--   -->
 </a>
@@ -727,14 +767,13 @@ implements <a href="../../../etomica/modules/glass/ConfigurationStorage.Configur
                          <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type2)</pre>
 </li>
 </ul>
-<a name="reset--">
+<a name="reallocate-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
-<div class="block">Zero's out the RDF sum tracked by this meter.</div>
+<h4>reallocate</h4>
+<pre>protected&nbsp;void&nbsp;reallocate&#8203;(int&nbsp;n)</pre>
 </li>
 </ul>
 <a name="zeroData--">

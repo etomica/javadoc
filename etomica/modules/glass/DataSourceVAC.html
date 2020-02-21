@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,13 +180,13 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected long[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#nSamples">nSamples</a></span></code></th>
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#minInterval">minInterval</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#space">space</a></span></code></th>
+<td class="colFirst"><code>protected long[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#nSamples">nSamples</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -308,11 +308,16 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#reallocate-int-">reallocate</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceVAC.html#setAtomType-etomica.atom.AtomType-">setAtomType</a></span>&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -447,13 +452,13 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> type</pre>
 </li>
 </ul>
-<a name="space">
+<a name="minInterval">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>space</h4>
-<pre>protected&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
+<h4>minInterval</h4>
+<pre>protected&nbsp;int minInterval</pre>
 </li>
 </ul>
 </li>
@@ -488,6 +493,15 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+</li>
+</ul>
+<a name="reallocate-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reallocate</h4>
+<pre>protected&nbsp;void&nbsp;reallocate&#8203;(int&nbsp;n)</pre>
 </li>
 </ul>
 <a name="getData--">

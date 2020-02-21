@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,8 +57,8 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionSource.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourcePercolation.Chi4Source.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/DataSourcePercolation.html" target="_top">Frames</a></li>
@@ -160,7 +160,22 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.Chi4Source.html" title="class in etomica.modules.glass">DataSourcePercolation.Chi4Source</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionByTypeSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionByTypeSource</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionSource</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.PercolationByImmFrac.html" title="class in etomica.modules.glass">DataSourcePercolation.PercolationByImmFrac</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -185,33 +200,63 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass/AtomNbrClusterer.html" title="class in etomica.modules.glass">AtomNbrClusterer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterer">clusterer</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected int[][]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterSize">clusterSize</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected int[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterStack">clusterStack</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#configStorage">configStorage</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#data">data</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#chi4Data">chi4Data</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#chi4DataInfo">chi4DataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#chi4Tag">chi4Tag</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass/AtomNbrClusterer.html" title="class in etomica.modules.glass">AtomNbrClusterer</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterer">clusterer</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterSize">clusterSize</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#clusterStack">clusterStack</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#configStorage">configStorage</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#data">data</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#dataInfo">dataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#histogramImmPerc">histogramImmPerc</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected long[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#imm2Total">imm2Total</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracByTypeTag">immFracByTypeTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -220,18 +265,48 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracDataByType">immFracDataByType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracDataByTypeInfo">immFracDataByTypeInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracDataInfo">immFracDataInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracPercData">immFracPercData</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracPercDataInfo">immFracPercDataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracPercTag">immFracPercTag</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFracTag">immFracTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected long[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFractionByType">immFractionByType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected long[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immFraction">immFraction</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#immTotal">immTotal</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -241,55 +316,60 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepMax">log2StepMax</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#log2StepMin">log2StepMin</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#nSamples">nSamples</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#numAtoms">numAtoms</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#numAtomsByType">numAtomsByType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#numTypes">numTypes</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#percP">percP</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#r">r</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#tag">tag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#tData">tData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#tDataInfo">tDataInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#tTag">tTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -310,10 +390,16 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-int-">DataSourcePercolation</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-">DataSourcePercolation</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
+                     <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
+                     int&nbsp;log2StepMin)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-etomica.data.histogram.HistogramNotSoSimple-">DataSourcePercolation</a></span>&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
                      <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
                      int&nbsp;log2StepMin,
-                     int&nbsp;log2StepMax)</code></th>
+                     <a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a>&nbsp;sharedHistogram)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -343,37 +429,37 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getHistogram--">getHistogram</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getIndependentArrayDimension--">getIndependentArrayDimension</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the number of independent data dimensions</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getIndependentData-int-">getIndependentData</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">
 <div class="block">Returns the X data for the given dimension</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getIndependentDataInfo-int-">getIndependentDataInfo</a></span>&#8203;(int&nbsp;i)</code></th>
 <td class="colLast">
 <div class="block">Returns the DataInfo for the given dimension</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getIndependentTag--">getIndependentTag</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns the tag associated with this DataSource.</div>
 </td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#getLog2StepEnd--">getLog2StepEnd</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -391,33 +477,48 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/modules/glass/DataSourcePercolation.Chi4Source.html" title="class in etomica.modules.glass">DataSourcePercolation.Chi4Source</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#makeChi4Source--">makeChi4Source</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#makeImmFractionSource--">makeImmFractionSource</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#newConfigruation--">newConfigruation</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#reset--">reset</a></span>&#8203;()</code></th>
+<td class="colFirst"><code><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionByTypeSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionByTypeSource</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#makeImmFractionSource-etomica.atom.AtomType-">makeImmFractionSource</a></span>&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#setLog2StepEnd-int-">setLog2StepEnd</a></span>&#8203;(int&nbsp;newEnd)</code></th>
+<td class="colFirst"><code><a href="../../../etomica/modules/glass/DataSourcePercolation.PercolationByImmFrac.html" title="class in etomica.modules.glass">DataSourcePercolation.PercolationByImmFrac</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#makePerclationByImmFracSource--">makePerclationByImmFracSource</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#setLog2StepStart-int-">setLog2StepStart</a></span>&#8203;(int&nbsp;newStart)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#newConfigruation--">newConfigruation</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#reallocate-int-">reallocate</a></span>&#8203;(int&nbsp;n)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#setLog2StepStart-int-">setLog2StepStart</a></span>&#8203;(int&nbsp;newStart)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#setNbrMax-double-">setNbrMax</a></span>&#8203;(double&nbsp;nbrMax)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourcePercolation.html#zeroData--">zeroData</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -487,6 +588,42 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> immFracData</pre>
 </li>
 </ul>
+<a name="immFracPercData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracPercData</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> immFracPercData</pre>
+</li>
+</ul>
+<a name="chi4Data">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chi4Data</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> chi4Data</pre>
+</li>
+</ul>
+<a name="immFracDataByType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracDataByType</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a>[] immFracDataByType</pre>
+</li>
+</ul>
+<a name="immFracDataByTypeInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracDataByTypeInfo</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a>[] immFracDataByTypeInfo</pre>
+</li>
+</ul>
 <a name="dataInfo">
 <!--   -->
 </a>
@@ -505,6 +642,24 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> immFracDataInfo</pre>
 </li>
 </ul>
+<a name="immFracPercDataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracPercDataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> immFracPercDataInfo</pre>
+</li>
+</ul>
+<a name="chi4DataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chi4DataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> chi4DataInfo</pre>
+</li>
+</ul>
 <a name="percP">
 <!--   -->
 </a>
@@ -514,13 +669,40 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected&nbsp;double[] percP</pre>
 </li>
 </ul>
-<a name="immFraction">
+<a name="immTotal">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>immFraction</h4>
-<pre>protected&nbsp;long[] immFraction</pre>
+<h4>immTotal</h4>
+<pre>protected&nbsp;long[] immTotal</pre>
+</li>
+</ul>
+<a name="imm2Total">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>imm2Total</h4>
+<pre>protected&nbsp;long[] imm2Total</pre>
+</li>
+</ul>
+<a name="immFractionByType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFractionByType</h4>
+<pre>protected&nbsp;long[][] immFractionByType</pre>
+</li>
+</ul>
+<a name="numAtomsByType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numAtomsByType</h4>
+<pre>protected final&nbsp;int[] numAtomsByType</pre>
 </li>
 </ul>
 <a name="tTag">
@@ -548,6 +730,33 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <li class="blockList">
 <h4>immFracTag</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> immFracTag</pre>
+</li>
+</ul>
+<a name="immFracPercTag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracPercTag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> immFracPercTag</pre>
+</li>
+</ul>
+<a name="chi4Tag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chi4Tag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> chi4Tag</pre>
+</li>
+</ul>
+<a name="immFracByTypeTag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>immFracByTypeTag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a>[] immFracByTypeTag</pre>
 </li>
 </ul>
 <a name="nSamples">
@@ -640,13 +849,22 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>protected&nbsp;int log2StepMin</pre>
 </li>
 </ul>
-<a name="log2StepMax">
+<a name="numTypes">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>numTypes</h4>
+<pre>protected final&nbsp;int numTypes</pre>
+</li>
+</ul>
+<a name="histogramImmPerc">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>log2StepMax</h4>
-<pre>protected&nbsp;int log2StepMax</pre>
+<h4>histogramImmPerc</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a> histogramImmPerc</pre>
 </li>
 </ul>
 </li>
@@ -657,7 +875,18 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-int-">
+<a name="DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DataSourcePercolation</h4>
+<pre>public&nbsp;DataSourcePercolation&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
+                             <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
+                             int&nbsp;log2StepMin)</pre>
+</li>
+</ul>
+<a name="DataSourcePercolation-etomica.modules.glass.ConfigurationStorage-etomica.modules.glass.AtomTestDeviation-int-etomica.data.histogram.HistogramNotSoSimple-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -666,7 +895,7 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>public&nbsp;DataSourcePercolation&#8203;(<a href="../../../etomica/modules/glass/ConfigurationStorage.html" title="class in etomica.modules.glass">ConfigurationStorage</a>&nbsp;configStorage,
                              <a href="../../../etomica/modules/glass/AtomTestDeviation.html" title="class in etomica.modules.glass">AtomTestDeviation</a>&nbsp;atomTest,
                              int&nbsp;log2StepMin,
-                             int&nbsp;log2StepMax)</pre>
+                             <a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a>&nbsp;sharedHistogram)</pre>
 </li>
 </ul>
 </li>
@@ -695,24 +924,6 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>public&nbsp;int&nbsp;getLog2StepStart&#8203;()</pre>
 </li>
 </ul>
-<a name="setLog2StepEnd-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLog2StepEnd</h4>
-<pre>public&nbsp;void&nbsp;setLog2StepEnd&#8203;(int&nbsp;newEnd)</pre>
-</li>
-</ul>
-<a name="getLog2StepEnd--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getLog2StepEnd</h4>
-<pre>public&nbsp;int&nbsp;getLog2StepEnd&#8203;()</pre>
-</li>
-</ul>
 <a name="setNbrMax-double-">
 <!--   -->
 </a>
@@ -731,13 +942,22 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <pre>public&nbsp;double&nbsp;getNbrMax&#8203;()</pre>
 </li>
 </ul>
-<a name="reset--">
+<a name="zeroData--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset&#8203;()</pre>
+<h4>zeroData</h4>
+<pre>public&nbsp;void&nbsp;zeroData&#8203;()</pre>
+</li>
+</ul>
+<a name="reallocate-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reallocate</h4>
+<pre>public&nbsp;void&nbsp;reallocate&#8203;(int&nbsp;n)</pre>
 </li>
 </ul>
 <a name="newConfigruation--">
@@ -751,6 +971,15 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/modules/glass/ConfigurationStorage.ConfigurationStorageListener.html#newConfigruation--">newConfigruation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/modules/glass/ConfigurationStorage.ConfigurationStorageListener.html" title="interface in etomica.modules.glass">ConfigurationStorage.ConfigurationStorageListener</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getHistogram--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHistogram</h4>
+<pre>public&nbsp;<a href="../../../etomica/data/histogram/HistogramNotSoSimple.html" title="class in etomica.data.histogram">HistogramNotSoSimple</a>&nbsp;getHistogram&#8203;()</pre>
 </li>
 </ul>
 <a name="getData--">
@@ -859,10 +1088,37 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 <a name="makeImmFractionSource--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>makeImmFractionSource</h4>
 <pre>public&nbsp;<a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionSource</a>&nbsp;makeImmFractionSource&#8203;()</pre>
+</li>
+</ul>
+<a name="makeImmFractionSource-etomica.atom.AtomType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeImmFractionSource</h4>
+<pre>public&nbsp;<a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionByTypeSource.html" title="class in etomica.modules.glass">DataSourcePercolation.ImmFractionByTypeSource</a>&nbsp;makeImmFractionSource&#8203;(<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;type)</pre>
+</li>
+</ul>
+<a name="makePerclationByImmFracSource--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makePerclationByImmFracSource</h4>
+<pre>public&nbsp;<a href="../../../etomica/modules/glass/DataSourcePercolation.PercolationByImmFrac.html" title="class in etomica.modules.glass">DataSourcePercolation.PercolationByImmFrac</a>&nbsp;makePerclationByImmFracSource&#8203;()</pre>
+</li>
+</ul>
+<a name="makeChi4Source--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeChi4Source</h4>
+<pre>public&nbsp;<a href="../../../etomica/modules/glass/DataSourcePercolation.Chi4Source.html" title="class in etomica.modules.glass">DataSourcePercolation.Chi4Source</a>&nbsp;makeChi4Source&#8203;()</pre>
 </li>
 </ul>
 </li>
@@ -892,8 +1148,8 @@ implements <a href="../../../etomica/data/IDataSource.html" title="interface in 
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/DataSourcePercolation.ImmFractionSource.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourcePercolation.Chi4Source.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/DataSourcePercolation.html" target="_top">Frames</a></li>

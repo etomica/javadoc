@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass/DataSourceMSD.MSDSink.html" title="interface in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/DataSourcePercolation.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/DataSourceMSDcorP.html" target="_top">Frames</a></li>
@@ -91,7 +91,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -145,6 +145,29 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass">DataSourceMSDcorP.DataSourceMSDcovP</a></span></code></th>
+<td class="colLast">
+<div class="block">Returns the covariance of the MSD with P, divided by t</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -165,105 +188,120 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#data">data</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#covData">covData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#dataInfo">dataInfo</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#covDataInfo">covDataInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#covTag">covTag</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#data">data</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#dataInfo">dataInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#enabled">enabled</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#integrator">integrator</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#lastSampleMSD">lastSampleMSD</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#lastSampleX">lastSampleX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#lastStepMSD">lastStepMSD</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#lastStepX">lastStepX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#msd2Sum">msd2Sum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#msdSum">msdSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#nBlockSamplesX">nBlockSamplesX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected long[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#nSamples">nSamples</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#step0">step0</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#tag">tag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.html" title="class in etomica.data.types">DataDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#tData">tData</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataDoubleArray.DataInfoDoubleArray.html" title="class in etomica.data.types">DataDoubleArray.DataInfoDoubleArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#tDataInfo">tDataInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#tTag">tTag</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#x2Sum">x2Sum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#xlog2Interval">xlog2Interval</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#xmsdSum">xmsdSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#xSum">xSum</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -357,37 +395,42 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass">DataSourceMSDcorP.DataSourceMSDcovP</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#makeCov--">makeCov</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#putData-etomica.data.IData-">putData</a></span>&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;inputData)</code></th>
 <td class="colLast">
 <div class="block">Gives data to DataSink for processing, display, or whatever it does.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>&#8203;(<a href="../../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;inputDataInfo)</code></th>
 <td class="colLast">
 <div class="block">Informs the DataSink of the type of Data it should expect to receive.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#putMSD-int-long-double-">putMSD</a></span>&#8203;(int&nbsp;log2interval,
       long&nbsp;step,
       double&nbsp;msd)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#reallocate-int-">reallocate</a></span>&#8203;(int&nbsp;n)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#resetStep0--">resetStep0</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/DataSourceMSDcorP.html#setEnabled-boolean-">setEnabled</a></span>&#8203;(boolean&nbsp;isEnabled)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -441,6 +484,15 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> data</pre>
 </li>
 </ul>
+<a name="covData">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>covData</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.html" title="class in etomica.data.types">DataFunction</a> covData</pre>
+</li>
+</ul>
 <a name="dataInfo">
 <!--   -->
 </a>
@@ -448,6 +500,15 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <li class="blockList">
 <h4>dataInfo</h4>
 <pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> dataInfo</pre>
+</li>
+</ul>
+<a name="covDataInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>covDataInfo</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataFunction.DataInfoFunction.html" title="class in etomica.data.types">DataFunction.DataInfoFunction</a> covDataInfo</pre>
 </li>
 </ul>
 <a name="msdSum">
@@ -511,6 +572,15 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <li class="blockList">
 <h4>tag</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> tag</pre>
+</li>
+</ul>
+<a name="covTag">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>covTag</h4>
+<pre>protected final&nbsp;<a href="../../../etomica/data/DataTag.html" title="class in etomica.data">DataTag</a> covTag</pre>
 </li>
 </ul>
 <a name="nSamples">
@@ -819,7 +889,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <a name="putMSD-int-long-double-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>putMSD</h4>
 <pre>public&nbsp;void&nbsp;putMSD&#8203;(int&nbsp;log2interval,
@@ -829,6 +899,15 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../etomica/modules/glass/DataSourceMSD.MSDSink.html#putMSD-int-long-double-">putMSD</a></code>&nbsp;in interface&nbsp;<code><a href="../../../etomica/modules/glass/DataSourceMSD.MSDSink.html" title="interface in etomica.modules.glass">DataSourceMSD.MSDSink</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="makeCov--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeCov</h4>
+<pre>public&nbsp;<a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass">DataSourceMSDcorP.DataSourceMSDcovP</a>&nbsp;makeCov&#8203;()</pre>
 </li>
 </ul>
 </li>
@@ -859,7 +938,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../etomica/modules/glass/DataSourceMSD.MSDSink.html" title="interface in etomica.modules.glass"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/modules/glass/DataSourcePercolation.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/modules/glass/DataSourceMSDcorP.DataSourceMSDcovP.html" title="class in etomica.modules.glass"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/modules/glass/DataSourceMSDcorP.html" target="_top">Frames</a></li>
@@ -886,7 +965,7 @@ implements <a href="../../../etomica/data/IDataSink.html" title="interface in et
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
