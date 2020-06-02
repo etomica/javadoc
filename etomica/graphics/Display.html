@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":6,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -131,18 +131,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></code></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a></code>, <code><a href="../../etomica/graphics/DisplayPlot.html" title="class in etomica.graphics">DisplayPlot</a></code>, <code><a href="../../etomica/graphics/DisplayPolytope.html" title="class in etomica.graphics">DisplayPolytope</a></code>, <code><a href="../../etomica/graphics/DisplayScrollingGraph.html" title="class in etomica.graphics">DisplayScrollingGraph</a></code>, <code><a href="../../etomica/graphics/DisplayTable.html" title="class in etomica.graphics">DisplayTable</a></code>, <code><a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a></code>, <code><a href="../../etomica/graphics/DisplayTextBoxesCAE.html" title="class in etomica.graphics">DisplayTextBoxesCAE</a></code></dd>
+<dd><code><a href="../../etomica/graphics/DisplayBox.html" title="class in etomica.graphics">DisplayBox</a></code>, <code><a href="../../etomica/graphics/DisplayPlot.html" title="class in etomica.graphics">DisplayPlot</a></code>, <code><a href="../../etomica/graphics/DisplayPolytope.html" title="class in etomica.graphics">DisplayPolytope</a></code>, <code><a href="../../etomica/graphics/DisplayTable.html" title="class in etomica.graphics">DisplayTable</a></code>, <code><a href="../../etomica/graphics/DisplayTextBox.html" title="class in etomica.graphics">DisplayTextBox</a></code>, <code><a href="../../etomica/graphics/DisplayTextBoxesCAE.html" title="class in etomica.graphics">DisplayTextBoxesCAE</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Display</span>
-extends java.lang.Object
-implements <a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Superclass of all classes that display something from the simulation.
  Included are displays of graphical and tabular data, and views of the
  molecules as they move about during the simulation.</div>
@@ -204,7 +199,7 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -223,37 +218,25 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.awt.Component</code></td>
+<td class="colFirst"><code>abstract java.awt.Component</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#graphic--">graphic</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Same as graphic method with a null argument.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.awt.Component</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#graphic-java.lang.Object-">graphic</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Method of Simulation.GraphicElement interface.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#removePropertyChangeListener-java.beans.PropertyChangeListener-">removePropertyChangeListener</a></span>&#8203;(java.beans.PropertyChangeListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#repaint--">repaint</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#setLabel-java.lang.String-">setLabel</a></span>&#8203;(java.lang.String&nbsp;label)</code></th>
 <td class="colLast">
 <div class="block">Accessor method of the label describing the display.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Display.html#toString--">toString</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -326,48 +309,17 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="graphic-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>graphic</h4>
-<pre>public&nbsp;java.awt.Component&nbsp;graphic&#8203;(java.lang.Object&nbsp;obj)</pre>
-<div class="block">Method of Simulation.GraphicElement interface. Default action is to
- return this Display (which is a Panel) as the graphic object. May
- override in subclass to return a more appropriate graphical element, or
- none at all.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/graphics/GraphicalElement.html#graphic-java.lang.Object-">graphic</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>obj</code> - An object that might be used to specify the graphic that the GraphicalElement is to return.
- In most cases the GraphicalElement ignores this parameter, and it can be set to null.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>A Component that can be used in the GUI of a graphical simulation</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../etomica/graphics/Device.html" title="class in etomica.graphics"><code>Device</code></a>, 
-<a href="../../etomica/graphics/Display.html" title="class in etomica.graphics"><code>Display</code></a></dd>
-</dl>
-</li>
-</ul>
 <a name="graphic--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>graphic</h4>
-<pre>public final&nbsp;java.awt.Component&nbsp;graphic&#8203;()</pre>
-<div class="block">Same as graphic method with a null argument.</div>
-</li>
-</ul>
-<a name="repaint--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>repaint</h4>
-<pre>public&nbsp;void&nbsp;repaint&#8203;()</pre>
+<pre>public abstract&nbsp;java.awt.Component&nbsp;graphic&#8203;()</pre>
+<div class="block">Method of Simulation.GraphicElement interface. Default action is to
+ return this Display (which is a Panel) as the graphic object. May
+ override in subclass to return a more appropriate graphical element, or
+ none at all.</div>
 </li>
 </ul>
 <a name="getLabel--">

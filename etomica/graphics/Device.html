@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":6,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":6,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,18 +131,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></code></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><code><a href="../../etomica/graphics/DeviceBox.html" title="class in etomica.graphics">DeviceBox</a></code>, <code><a href="../../etomica/graphics/DeviceButton.html" title="class in etomica.graphics">DeviceButton</a></code>, <code><a href="../../etomica/graphics/DeviceButtonGroup.html" title="class in etomica.graphics">DeviceButtonGroup</a></code>, <code><a href="../../etomica/zeolite/DeviceButtonSingle.html" title="class in etomica.zeolite">DeviceButtonSingle</a></code>, <code><a href="../../etomica/normalmode/DeviceCellNum3DSlider.html" title="class in etomica.normalmode">DeviceCellNum3DSlider</a></code>, <code><a href="../../etomica/normalmode/DeviceCellNumXYSlider.html" title="class in etomica.normalmode">DeviceCellNumXYSlider</a></code>, <code><a href="../../etomica/graphics/DeviceCheckBox.html" title="class in etomica.graphics">DeviceCheckBox</a></code>, <code><a href="../../etomica/normalmode/DeviceEigenvaluesSlider.html" title="class in etomica.normalmode">DeviceEigenvaluesSlider</a></code>, <code><a href="../../etomica/graphics/DeviceSelector.html" title="class in etomica.graphics">DeviceSelector</a></code>, <code><a href="../../etomica/graphics/DeviceSlider.html" title="class in etomica.graphics">DeviceSlider</a></code>, <code><a href="../../etomica/graphics/DeviceSpinner.html" title="class in etomica.graphics">DeviceSpinner</a></code>, <code><a href="../../etomica/graphics/DeviceTable.html" title="class in etomica.graphics">DeviceTable</a></code>, <code><a href="../../etomica/graphics/DeviceThermoSelector.html" title="class in etomica.graphics">DeviceThermoSelector</a></code>, <code><a href="../../etomica/graphics/DeviceThermoSlider.html" title="class in etomica.graphics">DeviceThermoSlider</a></code>, <code><a href="../../etomica/heVLE/DeviceThermoSliderGEMC.html" title="class in etomica.heVLE">DeviceThermoSliderGEMC</a></code>, <code><a href="../../etomica/modules/vle/DeviceThermoSliderGEMC.html" title="class in etomica.modules.vle">DeviceThermoSliderGEMC</a></code>, <code><a href="../../etomica/graphics/DeviceToggleRadioButtons.html" title="class in etomica.graphics">DeviceToggleRadioButtons</a></code>, <code><a href="../../etomica/graphics/DeviceTrioControllerButton.html" title="class in etomica.graphics">DeviceTrioControllerButton</a></code>, <code><a href="../../etomica/normalmode/DeviceWaveVectorSlider.html" title="class in etomica.normalmode">DeviceWaveVectorSlider</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Device</span>
-extends java.lang.Object
-implements <a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Base class for all Devices.  These are objects that permit manipulation of the
  fields of other objects.  They provide a (usually) graphical interface to permit
  values of fields to be input and changed.</div>
@@ -271,25 +266,16 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.awt.Component</code></td>
+<td class="colFirst"><code>abstract java.awt.Component</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#graphic--">graphic</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Same as graphic method with a null argument.</div>
-</td>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>abstract java.awt.Component</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#graphic-java.lang.Object-">graphic</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
-<td class="colLast">
-<div class="block">Interface for a Simulation element that would be used in a simulation graphical user interface (GUI)</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#setController-etomica.action.activity.Controller-">setController</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#setPostAction-etomica.action.IAction-">setPostAction</a></span>&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code></th>
 <td class="colLast">
@@ -297,7 +283,7 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
  by the device.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#setPreAction-etomica.action.IAction-">setPreAction</a></span>&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code></th>
 <td class="colLast">
@@ -305,7 +291,7 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
  by the device.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/Device.html#setUnit-etomica.units.Unit-">setUnit</a></span>&#8203;(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;u)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -471,37 +457,13 @@ implements <a href="../../etomica/graphics/GraphicalElement.html" title="interfa
 </dl>
 </li>
 </ul>
-<a name="graphic-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>graphic</h4>
-<pre>public abstract&nbsp;java.awt.Component&nbsp;graphic&#8203;(java.lang.Object&nbsp;obj)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../etomica/graphics/GraphicalElement.html#graphic-java.lang.Object-">GraphicalElement</a></code></span></div>
-<div class="block">Interface for a Simulation element that would be used in a simulation graphical user interface (GUI)</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/graphics/GraphicalElement.html#graphic-java.lang.Object-">graphic</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/graphics/GraphicalElement.html" title="interface in etomica.graphics">GraphicalElement</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>obj</code> - An object that might be used to specify the graphic that the GraphicalElement is to return.
- In most cases the GraphicalElement ignores this parameter, and it can be set to null.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>A Component that can be used in the GUI of a graphical simulation</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../etomica/graphics/Device.html" title="class in etomica.graphics"><code>Device</code></a>, 
-<a href="../../etomica/graphics/Display.html" title="class in etomica.graphics"><code>Display</code></a></dd>
-</dl>
-</li>
-</ul>
 <a name="graphic--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>graphic</h4>
-<pre>public final&nbsp;java.awt.Component&nbsp;graphic&#8203;()</pre>
-<div class="block">Same as graphic method with a null argument.</div>
+<pre>public abstract&nbsp;java.awt.Component&nbsp;graphic&#8203;()</pre>
 </li>
 </ul>
 <a name="setUnit-etomica.units.Unit-">
