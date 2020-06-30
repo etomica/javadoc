@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -290,26 +290,36 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#getName-int-">getName</a></span>&#8203;(int&nbsp;i)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#isUpdatingOnAnyChange--">isUpdatingOnAnyChange</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#makeDataSink--">makeDataSink</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#makeDataSink-java.lang.String-">makeDataSink</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#removeDataListener-etomica.data.DataSetListener-">removeDataListener</a></span>&#8203;(<a href="../../etomica/data/DataSetListener.html" title="interface in etomica.data">DataSetListener</a>&nbsp;oldListener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#setUpdatingOnAnyChange-boolean-">setUpdatingOnAnyChange</a></span>&#8203;(boolean&nbsp;updatingWithAnyChange)</code></th>
 <td class="colLast">
@@ -317,7 +327,7 @@ extends java.lang.Object</pre>
  changes.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.html#updateDataMap--">updateDataMap</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -417,6 +427,15 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;makeDataSink&#8203;()</pre>
 </li>
 </ul>
+<a name="makeDataSink-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeDataSink</h4>
+<pre>public&nbsp;<a href="../../etomica/data/DataSet.DataSetSink.html" title="class in etomica.data">DataSet.DataSetSink</a>&nbsp;makeDataSink&#8203;(java.lang.String&nbsp;name)</pre>
+</li>
+</ul>
 <a name="reset--">
 <!--   -->
 </a>
@@ -444,6 +463,15 @@ extends java.lang.Object</pre>
 <h4>getDataInfo</h4>
 <pre>public&nbsp;<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;getDataInfo&#8203;(int&nbsp;i)</pre>
 <div class="block">Returns the ith DataInfo from the set.</div>
+</li>
+</ul>
+<a name="getName-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getName&#8203;(int&nbsp;i)</pre>
 </li>
 </ul>
 <a name="getDataCount--">

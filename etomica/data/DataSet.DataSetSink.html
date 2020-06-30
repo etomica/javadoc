@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,6 +188,11 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#DataSetSink-etomica.data.DataSet-">DataSetSink</a></span>&#8203;(<a href="../../etomica/data/DataSet.html" title="class in etomica.data">DataSet</a>&nbsp;dataSet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#DataSetSink-etomica.data.DataSet-java.lang.String-">DataSetSink</a></span>&#8203;(<a href="../../etomica/data/DataSet.html" title="class in etomica.data">DataSet</a>&nbsp;dataSet,
+           java.lang.String&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -215,13 +220,18 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#getName--">getName</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#putData-etomica.data.IData-">putData</a></span>&#8203;(<a href="../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;incomingData)</code></th>
 <td class="colLast">
 <div class="block">Gives data to DataSink for processing, display, or whatever it does.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSet.DataSetSink.html#putDataInfo-etomica.data.IDataInfo-">putDataInfo</a></span>&#8203;(<a href="../../etomica/data/IDataInfo.html" title="interface in etomica.data">IDataInfo</a>&nbsp;newDataInfo)</code></th>
 <td class="colLast">
@@ -267,6 +277,16 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="DataSetSink-etomica.data.DataSet-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DataSetSink</h4>
+<pre>public&nbsp;DataSetSink&#8203;(<a href="../../etomica/data/DataSet.html" title="class in etomica.data">DataSet</a>&nbsp;dataSet,
+                   java.lang.String&nbsp;name)</pre>
+</li>
+</ul>
 <a name="DataSetSink-etomica.data.DataSet-">
 <!--   -->
 </a>
@@ -284,6 +304,15 @@ implements <a href="../../etomica/data/IDataSink.html" title="interface in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getName&#8203;()</pre>
+</li>
+</ul>
 <a name="putDataInfo-etomica.data.IDataInfo-">
 <!--   -->
 </a>
