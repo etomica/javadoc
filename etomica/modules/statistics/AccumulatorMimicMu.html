@@ -198,6 +198,11 @@ extends <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="clas
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../etomica/data/types/DataGroup.html" title="class in etomica.data.types">DataGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/AccumulatorMimicMu.html#data">data</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/AccumulatorMimicMu.html#integrator">integrator</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -267,7 +272,7 @@ extends <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="clas
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/AccumulatorMimicMu.html#processData-etomica.data.IData-">processData</a></span>&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/statistics/AccumulatorMimicMu.html#processData-etomica.data.IData-">processData</a></span>&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;inputData)</code></th>
 <td class="colLast">
 <div class="block">Returns getData() every <tt>pushInterval</tt> times it is invoked, otherwise returns null
  (thereby preventing transmission of data to the next DataSinks).</div>
@@ -362,10 +367,19 @@ extends <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="clas
 <a name="integrator">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>integrator</h4>
 <pre>protected final&nbsp;<a href="../../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a> integrator</pre>
+</li>
+</ul>
+<a name="data">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>data</h4>
+<pre>protected&nbsp;<a href="../../../etomica/data/types/DataGroup.html" title="class in etomica.data.types">DataGroup</a> data</pre>
 </li>
 </ul>
 </li>
@@ -418,7 +432,7 @@ extends <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="clas
 <ul class="blockListLast">
 <li class="blockList">
 <h4>processData</h4>
-<pre>public&nbsp;<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;processData&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;data)</pre>
+<pre>public&nbsp;<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;processData&#8203;(<a href="../../../etomica/data/IData.html" title="interface in etomica.data">IData</a>&nbsp;inputData)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../etomica/data/DataAccumulator.html#processData-etomica.data.IData-">DataAccumulator</a></code></span></div>
 <div class="block">Returns getData() every <tt>pushInterval</tt> times it is invoked, otherwise returns null
  (thereby preventing transmission of data to the next DataSinks).
@@ -427,7 +441,7 @@ extends <a href="../../../etomica/data/AccumulatorAverageFixed.html" title="clas
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../etomica/data/DataAccumulator.html#processData-etomica.data.IData-">processData</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/data/DataAccumulator.html" title="class in etomica.data">DataAccumulator</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>data</code> - data to be processed.</dd>
+<dd><code>inputData</code> - data to be processed.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>processed data</dd>
 </dl>
