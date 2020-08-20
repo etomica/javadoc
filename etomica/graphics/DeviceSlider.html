@@ -251,18 +251,18 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.activity.Controller-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.controller.Controller-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.activity.Controller-etomica.modifier.Modifier-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.controller.Controller-etomica.modifier.Modifier-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller,
             <a href="../../etomica/modifier/Modifier.html" title="interface in etomica.modifier">Modifier</a>&nbsp;m)</code></th>
 <td class="colLast">
 <div class="block">Constructs a slider connected to the get/set Value methods of the given Modifier</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.activity.Controller-java.lang.Object-java.lang.String-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#DeviceSlider-etomica.action.controller.Controller-java.lang.Object-java.lang.String-">DeviceSlider</a></span>&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller,
             java.lang.Object&nbsp;object,
             java.lang.String&nbsp;property)</code></th>
 <td class="colLast">
@@ -286,7 +286,7 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceSlider.html#doAction-etomica.action.IAction-">doAction</a></span>&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code></th>
 <td class="colLast">
 <div class="block">Method called by subclasses to execute the action of the device.</div>
@@ -507,7 +507,7 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../etomica/graphics/Device.html" title="class in etomica.graphics">Device</a></h3>
-<code><a href="../../etomica/graphics/Device.html#getController--">getController</a>, <a href="../../etomica/graphics/Device.html#getDimension--">getDimension</a>, <a href="../../etomica/graphics/Device.html#getPostAction--">getPostAction</a>, <a href="../../etomica/graphics/Device.html#getPreAction--">getPreAction</a>, <a href="../../etomica/graphics/Device.html#getUnit--">getUnit</a>, <a href="../../etomica/graphics/Device.html#setController-etomica.action.activity.Controller-">setController</a>, <a href="../../etomica/graphics/Device.html#setPostAction-etomica.action.IAction-">setPostAction</a>, <a href="../../etomica/graphics/Device.html#setPreAction-etomica.action.IAction-">setPreAction</a></code></li>
+<code><a href="../../etomica/graphics/Device.html#getController--">getController</a>, <a href="../../etomica/graphics/Device.html#getDimension--">getDimension</a>, <a href="../../etomica/graphics/Device.html#getPostAction--">getPostAction</a>, <a href="../../etomica/graphics/Device.html#getPreAction--">getPreAction</a>, <a href="../../etomica/graphics/Device.html#getUnit--">getUnit</a>, <a href="../../etomica/graphics/Device.html#setController-etomica.action.controller.Controller-">setController</a>, <a href="../../etomica/graphics/Device.html#setPostAction-etomica.action.IAction-">setPostAction</a>, <a href="../../etomica/graphics/Device.html#setPreAction-etomica.action.IAction-">setPreAction</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -607,34 +607,34 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DeviceSlider-etomica.action.activity.Controller-">
+<a name="DeviceSlider-etomica.action.controller.Controller-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>DeviceSlider</h4>
-<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
+<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller)</pre>
 </li>
 </ul>
-<a name="DeviceSlider-etomica.action.activity.Controller-java.lang.Object-java.lang.String-">
+<a name="DeviceSlider-etomica.action.controller.Controller-java.lang.Object-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>DeviceSlider</h4>
-<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller,
                     java.lang.Object&nbsp;object,
                     java.lang.String&nbsp;property)</pre>
 <div class="block">Constructs a slider connected to the given property of the given object</div>
 </li>
 </ul>
-<a name="DeviceSlider-etomica.action.activity.Controller-etomica.modifier.Modifier-">
+<a name="DeviceSlider-etomica.action.controller.Controller-etomica.modifier.Modifier-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DeviceSlider</h4>
-<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller,
+<pre>public&nbsp;DeviceSlider&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller,
                     <a href="../../etomica/modifier/Modifier.html" title="interface in etomica.modifier">Modifier</a>&nbsp;m)</pre>
 <div class="block">Constructs a slider connected to the get/set Value methods of the given Modifier</div>
 </li>
@@ -722,7 +722,7 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <ul class="blockList">
 <li class="blockList">
 <h4>doAction</h4>
-<pre>public&nbsp;void&nbsp;doAction&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
+<pre>public&nbsp;java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;doAction&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/graphics/Device.html#doAction-etomica.action.IAction-">Device</a></code></span></div>
 <div class="block">Method called by subclasses to execute the action of the device.
  Action is specified by the subclass as the targetAction field; if

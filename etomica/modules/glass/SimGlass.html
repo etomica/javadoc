@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -185,56 +185,51 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/action/activity/ActivityIntegrate.html" title="class in etomica.action.activity">ActivityIntegrate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#activityIntegrate">activityIntegrate</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/box/Box.html" title="class in etomica.box">Box</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#box">box</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#chs">chs</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#integrator">integrator</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorMC.html" title="class in etomica.integrator">IntegratorMC</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#integratorMC">integratorMC</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../etomica/potential/P2SquareWell.html" title="class in etomica.potential">P2SquareWell</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#p2AA">p2AA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/glass/SimGlass.PotentialChoice.html" title="enum in etomica.modules.glass">SimGlass.PotentialChoice</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#potentialChoice">potentialChoice</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#sigmaB">sigmaB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#speciesA">speciesA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#speciesB">speciesB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../etomica/modules/glass/MCMoveSwap.html" title="class in etomica.modules.glass">MCMoveSwap</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#swapMove">swapMove</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -301,13 +296,23 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#getIntegrator--">getIntegrator</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#initConfig--">initConfig</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#main-java.lang.String:A-">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">Activity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/glass/SimGlass.html#makeInitConfigActivity--">makeInitConfigActivity</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -323,7 +328,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.simulation.<a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></h3>
-<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#box--">box</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxes--">getBoxes</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesList--">getSpeciesList</a>, <a href="../../../etomica/simulation/Simulation.html#makeBox--">makeBox</a>, <a href="../../../etomica/simulation/Simulation.html#makeBox-etomica.space.Boundary-">makeBox</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a>, <a href="../../../etomica/simulation/Simulation.html#species--">species</a></code></li>
+<code><a href="../../../etomica/simulation/Simulation.html#addBox-etomica.box.Box-">addBox</a>, <a href="../../../etomica/simulation/Simulation.html#addSpecies-etomica.species.ISpecies-">addSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#box--">box</a>, <a href="../../../etomica/simulation/Simulation.html#getBox-int-">getBox</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxCount--">getBoxCount</a>, <a href="../../../etomica/simulation/Simulation.html#getBoxes--">getBoxes</a>, <a href="../../../etomica/simulation/Simulation.html#getController--">getController</a>, <a href="../../../etomica/simulation/Simulation.html#getEventManager--">getEventManager</a>, <a href="../../../etomica/simulation/Simulation.html#getRandom--">getRandom</a>, <a href="../../../etomica/simulation/Simulation.html#getRandomSeeds--">getRandomSeeds</a>, <a href="../../../etomica/simulation/Simulation.html#getSpace--">getSpace</a>, <a href="../../../etomica/simulation/Simulation.html#getSpecies-int-">getSpecies</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesCount--">getSpeciesCount</a>, <a href="../../../etomica/simulation/Simulation.html#getSpeciesList--">getSpeciesList</a>, <a href="../../../etomica/simulation/Simulation.html#makeBox--">makeBox</a>, <a href="../../../etomica/simulation/Simulation.html#makeBox-etomica.space.Boundary-">makeBox</a>, <a href="../../../etomica/simulation/Simulation.html#makeUniqueElementSymbol-java.lang.String-">makeUniqueElementSymbol</a>, <a href="../../../etomica/simulation/Simulation.html#removeBox-etomica.box.Box-">removeBox</a>, <a href="../../../etomica/simulation/Simulation.html#setRandom-etomica.util.random.IRandom-">setRandom</a>, <a href="../../../etomica/simulation/Simulation.html#species--">species</a></code></li>
 </ul>
 </li>
 </ul>
@@ -373,15 +378,6 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>integrator</h4>
 <pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a> integrator</pre>
-</li>
-</ul>
-<a name="activityIntegrate">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>activityIntegrate</h4>
-<pre>public&nbsp;<a href="../../../etomica/action/activity/ActivityIntegrate.html" title="class in etomica.action.activity">ActivityIntegrate</a> activityIntegrate</pre>
 </li>
 </ul>
 <a name="swapMove">
@@ -487,6 +483,15 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="makeInitConfigActivity--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeInitConfigActivity</h4>
+<pre>public&nbsp;<a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">Activity</a>&nbsp;makeInitConfigActivity&#8203;()</pre>
+</li>
+</ul>
 <a name="initConfig--">
 <!--   -->
 </a>
@@ -494,6 +499,25 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <li class="blockList">
 <h4>initConfig</h4>
 <pre>public&nbsp;void&nbsp;initConfig&#8203;()</pre>
+</li>
+</ul>
+<a name="getIntegrator--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIntegrator</h4>
+<pre>public&nbsp;<a href="../../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>&nbsp;getIntegrator&#8203;()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../etomica/simulation/Simulation.html#getIntegrator--">getIntegrator</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Simulation's primary integrator.  If the controller holds
+ multiple integrators, the first is returned.  If the first integrator
+ holds sub-integrators, the top-level integrator is still returned.  This
+ method assumes the controller holds an ActivityIntegrate.
+ Returns null if no integrator is found.</dd>
+</dl>
 </li>
 </ul>
 <a name="main-java.lang.String:A-">

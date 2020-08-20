@@ -123,12 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../etomica/action/SimulationActionAdapter.html" title="class in etomica.action">etomica.action.SimulationActionAdapter</a></li>
-<li>
-<ul class="inheritance">
 <li>etomica.action.SimulationRestart</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -137,18 +132,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code>, <code><a href="../../etomica/action/SimulationAction.html" title="interface in etomica.action">SimulationAction</a></code></dd>
+<dd><code><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">SimulationRestart</span>
-extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class in etomica.action">SimulationActionAdapter</a></pre>
+extends java.lang.Object
+implements <a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></pre>
 <div class="block">Action that invokes reset method of all registered simulation elements,
  effectively initializing the entire simulation.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.action.SimulationRestart">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -189,13 +181,6 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.etomica.action.SimulationActionAdapter">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;etomica.action.<a href="../../etomica/action/SimulationActionAdapter.html" title="class in etomica.action">SimulationActionAdapter</a></h3>
-<code><a href="../../etomica/action/SimulationActionAdapter.html#simulation">simulation</a>, <a href="../../etomica/action/SimulationActionAdapter.html#space">space</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -284,13 +269,6 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.action.SimulationActionAdapter">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;etomica.action.<a href="../../etomica/action/SimulationActionAdapter.html" title="class in etomica.action">SimulationActionAdapter</a></h3>
-<code><a href="../../etomica/action/SimulationActionAdapter.html#getSimulation--">getSimulation</a>, <a href="../../etomica/action/SimulationActionAdapter.html#setSimulation-etomica.simulation.Simulation-etomica.space.Space-">setSimulation</a></code></li>
 </ul>
 </li>
 </ul>
@@ -429,6 +407,10 @@ extends <a href="../../etomica/action/SimulationActionAdapter.html" title="class
 <h4>actionPerformed</h4>
 <pre>public&nbsp;void&nbsp;actionPerformed&#8203;()</pre>
 <div class="block">Resets boxs, integrators, and accumulators.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../etomica/action/IAction.html#actionPerformed--">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getConfiguration--">

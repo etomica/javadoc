@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -206,16 +206,9 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#DeviceTrioControllerButton--">DeviceTrioControllerButton</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">No-argument contructor gives device that performs no action until
- setSimulation is used to specify the target simulation.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#DeviceTrioControllerButton-etomica.simulation.Simulation-etomica.space.Space-etomica.action.activity.Controller-">DeviceTrioControllerButton</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;simulation,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#DeviceTrioControllerButton-etomica.simulation.Simulation-etomica.space.Space-etomica.action.controller.Controller-">DeviceTrioControllerButton</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;simulation,
                           <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                          <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;_controller)</code></th>
+                          <a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller)</code></th>
 <td class="colLast">
 <div class="block">Contructs device with buttons that affect the given simulation.</div>
 </td>
@@ -237,25 +230,25 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../etomica/graphics/DeviceControllerButton.html" title="class in etomica.graphics">DeviceControllerButton</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#getControllerButton--">getControllerButton</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#getDataStreamPumps--">getDataStreamPumps</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns an ArrayList of DataPumps that are headers for the data streams.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/graphics/DeviceButton.html" title="class in etomica.graphics">DeviceButton</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#getReinitButton--">getReinitButton</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/graphics/DeviceButton.html" title="class in etomica.graphics">DeviceButton</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#getResetAveragesButton--">getResetAveragesButton</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/graphics/DeviceRunControls.html" title="class in etomica.graphics">DeviceRunControls</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#getRunControls--">getRunControls</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -303,22 +296,13 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <div class="block">Sets display shape of the device.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceTrioControllerButton.html#setSimulation-etomica.simulation.Simulation-etomica.space.Space-etomica.action.activity.Controller-">setSimulation</a></span>&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-             <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</code></th>
-<td class="colLast">
-<div class="block">Sets the controller that is toggled by this device.</div>
-</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.graphics.Device">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.graphics.<a href="../../etomica/graphics/Device.html" title="class in etomica.graphics">Device</a></h3>
-<code><a href="../../etomica/graphics/Device.html#doAction-etomica.action.IAction-">doAction</a>, <a href="../../etomica/graphics/Device.html#getController--">getController</a>, <a href="../../etomica/graphics/Device.html#getDimension--">getDimension</a>, <a href="../../etomica/graphics/Device.html#getPostAction--">getPostAction</a>, <a href="../../etomica/graphics/Device.html#getPreAction--">getPreAction</a>, <a href="../../etomica/graphics/Device.html#getUnit--">getUnit</a>, <a href="../../etomica/graphics/Device.html#setController-etomica.action.activity.Controller-">setController</a>, <a href="../../etomica/graphics/Device.html#setPostAction-etomica.action.IAction-">setPostAction</a>, <a href="../../etomica/graphics/Device.html#setPreAction-etomica.action.IAction-">setPreAction</a>, <a href="../../etomica/graphics/Device.html#setUnit-etomica.units.Unit-">setUnit</a></code></li>
+<code><a href="../../etomica/graphics/Device.html#doAction-etomica.action.IAction-">doAction</a>, <a href="../../etomica/graphics/Device.html#getController--">getController</a>, <a href="../../etomica/graphics/Device.html#getDimension--">getDimension</a>, <a href="../../etomica/graphics/Device.html#getPostAction--">getPostAction</a>, <a href="../../etomica/graphics/Device.html#getPreAction--">getPreAction</a>, <a href="../../etomica/graphics/Device.html#getUnit--">getUnit</a>, <a href="../../etomica/graphics/Device.html#setController-etomica.action.controller.Controller-">setController</a>, <a href="../../etomica/graphics/Device.html#setPostAction-etomica.action.IAction-">setPostAction</a>, <a href="../../etomica/graphics/Device.html#setPreAction-etomica.action.IAction-">setPreAction</a>, <a href="../../etomica/graphics/Device.html#setUnit-etomica.units.Unit-">setUnit</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -341,27 +325,16 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DeviceTrioControllerButton-etomica.simulation.Simulation-etomica.space.Space-etomica.action.activity.Controller-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DeviceTrioControllerButton</h4>
-<pre>public&nbsp;DeviceTrioControllerButton&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;simulation,
-                                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                                  <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;_controller)</pre>
-<div class="block">Contructs device with buttons that affect the given simulation.</div>
-</li>
-</ul>
-<a name="DeviceTrioControllerButton--">
+<a name="DeviceTrioControllerButton-etomica.simulation.Simulation-etomica.space.Space-etomica.action.controller.Controller-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DeviceTrioControllerButton</h4>
-<pre>public&nbsp;DeviceTrioControllerButton&#8203;()</pre>
-<div class="block">No-argument contructor gives device that performs no action until
- setSimulation is used to specify the target simulation.</div>
+<pre>public&nbsp;DeviceTrioControllerButton&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;simulation,
+                                  <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
+                                  <a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;controller)</pre>
+<div class="block">Contructs device with buttons that affect the given simulation.</div>
 </li>
 </ul>
 </li>
@@ -372,18 +345,6 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSimulation-etomica.simulation.Simulation-etomica.space.Space-etomica.action.activity.Controller-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSimulation</h4>
-<pre>protected&nbsp;void&nbsp;setSimulation&#8203;(<a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a>&nbsp;sim,
-                             <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                             <a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;controller)</pre>
-<div class="block">Sets the controller that is toggled by this device.</div>
-</li>
-</ul>
 <a name="getDataStreamPumps--">
 <!--   -->
 </a>
@@ -420,13 +381,13 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 </dl>
 </li>
 </ul>
-<a name="getControllerButton--">
+<a name="getRunControls--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getControllerButton</h4>
-<pre>public&nbsp;<a href="../../etomica/graphics/DeviceControllerButton.html" title="class in etomica.graphics">DeviceControllerButton</a>&nbsp;getControllerButton&#8203;()</pre>
+<h4>getRunControls</h4>
+<pre>public&nbsp;<a href="../../etomica/graphics/DeviceRunControls.html" title="class in etomica.graphics">DeviceRunControls</a>&nbsp;getRunControls&#8203;()</pre>
 </li>
 </ul>
 <a name="getReinitButton--">

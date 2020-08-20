@@ -137,19 +137,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code>, <code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code>, <code><a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a></code>, <code>java.io.Serializable</code></dd>
+<dd><code><a href="../../etomica/data/DataPipe.html" title="interface in etomica.data">DataPipe</a></code>, <code><a href="../../etomica/data/IDataSink.html" title="interface in etomica.data">IDataSink</a></code></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DataLogger</span>
-extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a>
-implements <a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a>, java.io.Serializable</pre>
+extends <a href="../../etomica/data/DataProcessor.html" title="class in etomica.data">DataProcessor</a></pre>
 <div class="block">DataSink that manages a FileWriter and also listens to non-interval 
  integrator events and sends appropriate data to a DataWriter.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../serialized-form.html#etomica.data.DataLogger">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -246,10 +241,8 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#actionPerformed-etomica.util.IEvent-">actionPerformed</a></span>&#8203;(<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&nbsp;evt)</code></th>
-<td class="colLast">
-<div class="block">Close file when integrator is done.</div>
-</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataLogger.html#cleanUp--">cleanUp</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -505,18 +498,13 @@ implements <a href="../../etomica/util/IListener.html" title="interface in etomi
 </dl>
 </li>
 </ul>
-<a name="actionPerformed-etomica.util.IEvent-">
+<a name="cleanUp--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>actionPerformed</h4>
-<pre>public&nbsp;void&nbsp;actionPerformed&#8203;(<a href="../../etomica/util/IEvent.html" title="interface in etomica.util">IEvent</a>&nbsp;evt)</pre>
-<div class="block">Close file when integrator is done.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../etomica/util/IListener.html#actionPerformed-E-">actionPerformed</a></code>&nbsp;in interface&nbsp;<code><a href="../../etomica/util/IListener.html" title="interface in etomica.util">IListener</a></code></dd>
-</dl>
+<h4>cleanUp</h4>
+<pre>public&nbsp;void&nbsp;cleanUp&#8203;()</pre>
 </li>
 </ul>
 <a name="putData-etomica.data.IData-">

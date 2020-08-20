@@ -102,7 +102,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  Interfaces extending IAction define actions for different simulation elements, such as
  Box, Atom, and so on.
  <p>
- <a href="../../etomica/action/Activity.html" title="class in etomica.action"><code>Activity</code></a> implements Action and is an abstract class appropriate
+ <code>Activity</code> implements Action and is an abstract class appropriate
  to encapsulate more complex, time-consuming tasks.  Classes extending Activity are collected
  in the subpackage <a href="../../etomica/action/activity/package-summary.html"><code>etomica.action.activity</code></a>. Whereas Actions must
  be completed before further processing continues, Activity instances generally operate on a different
@@ -136,35 +136,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/ControllerAction.html" title="interface in etomica.action">ControllerAction</a></th>
-<td class="colLast">
-<div class="block">Elementary action performed on a controller.</div>
-</td>
-</tr>
-<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></th>
 <td class="colLast">
 <div class="block">General interface for performing an action, allowing the defined behavior to be separated from the driver that causes
  it.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/IntegratorAction.html" title="interface in etomica.action">IntegratorAction</a></th>
 <td class="colLast">
 <div class="block">Elementary action performed on an integrator.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/MoleculeAction.html" title="interface in etomica.action">MoleculeAction</a></th>
 <td class="colLast">
 <div class="block">Interface for a class that can perform an action on an atom.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/SimulationAction.html" title="interface in etomica.action">SimulationAction</a></th>
-<td class="colLast">
-<div class="block">Interface for classes that apply some elementary action (transformation) to a
- simulation.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -214,139 +201,119 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/Activity.html" title="class in etomica.action">Activity</a></th>
-<td class="colLast">
-<div class="block">An Action that supports the capability of pausing/unpausing and terminating
- on request.</div>
-</td>
-</tr>
-<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/AtomActionRandomizeVelocity.html" title="class in etomica.action">AtomActionRandomizeVelocity</a></th>
 <td class="colLast">
 <div class="block">Action that sets the velocity vector of a given atom to a randomly
  chosen value sampled from a Boltzmann distribution.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/AtomActionRotateBy.html" title="class in etomica.action">AtomActionRotateBy</a></th>
 <td class="colLast">
 <div class="block">Performs RIGHT-HANDED rotations of an atom about the x-, y-, and z-axes by the specified angles (roll, pitch, and yaw angles, respectively) in radians.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/AtomActionTransformed.html" title="class in etomica.action">AtomActionTransformed</a></th>
 <td class="colLast">
 <div class="block">Moves (translates) an atom by a specified vector amount.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/AtomActionTranslateBy.html" title="class in etomica.action">AtomActionTranslateBy</a></th>
 <td class="colLast">
 <div class="block">Moves (translates) an atom by a specified vector amount.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxActionAdapter.html" title="class in etomica.action">BoxActionAdapter</a></th>
 <td class="colLast">
 <div class="block">Convenience class used to define a BoxAction.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxDeleteMolecules.html" title="class in etomica.action">BoxDeleteMolecules</a></th>
 <td class="colLast">
 <div class="block">Deletes molecules from a box as determined by an AtomTest.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxImposePbc.html" title="class in etomica.action">BoxImposePbc</a></th>
 <td class="colLast">
 <div class="block">Action that imposes the central-image effect of a box having periodic
  boundaries.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxInflate.html" title="class in etomica.action">BoxInflate</a></th>
 <td class="colLast">
 <div class="block">Performs actions that cause volume of system to expand or contract, with
  molecule positions scaled to keep them in the same relative positions.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxInflateAnisotropic.html" title="class in etomica.action">BoxInflateAnisotropic</a></th>
 <td class="colLast">
 <div class="block">Class that perform anisotropic angle fluctuation</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxInflateDeformable.html" title="class in etomica.action">BoxInflateDeformable</a></th>
 <td class="colLast">
 <div class="block">Performs actions that cause volume of a deformable system to expand, with molecule
  positions scaled to keep them in the same relative positions.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxQuench.html" title="class in etomica.action">BoxQuench</a></th>
 <td class="colLast">
 <div class="block">Scales all velocities of a box so that its kinetic temperature is equal to
  a given value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxRandomizeMomenta.html" title="class in etomica.action">BoxRandomizeMomenta</a></th>
 <td class="colLast">
 <div class="block">Randomizes the velocities of all the leaf atoms in a Box based on the
  Maxwell-Boltzmann distribution.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/BoxScaleMomenta.html" title="class in etomica.action">BoxScaleMomenta</a></th>
 <td class="colLast">
 <div class="block">Scales the momenta of all the leaf atoms in a Box such that the kinetic
  temperature matches some value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/CalcVibrationalModes.html" title="class in etomica.action">CalcVibrationalModes</a></th>
 <td class="colLast">
 <div class="block">Calculates the eigenvalues of an NxN matrix.</div>
 </td>
 </tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/ControllerActionAdapter.html" title="class in etomica.action">ControllerActionAdapter</a></th>
-<td class="colLast">
-<div class="block">Convenience class used to define a ControllerAction.</div>
-</td>
-</tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/ControllerToggle.html" title="class in etomica.action">ControllerToggle</a></th>
-<td class="colLast">
-<div class="block">Switches controller between paused and unpaused conditions, or starts
- it if not yet active.</div>
-</td>
-</tr>
-<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/IntegratorActionAdapter.html" title="class in etomica.action">IntegratorActionAdapter</a></th>
 <td class="colLast">
 <div class="block">Convenience class used to define a IntegratorAction.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/IntegratorDimerApproach.html" title="class in etomica.action">IntegratorDimerApproach</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/IntegratorReset.html" title="class in etomica.action">IntegratorReset</a></th>
 <td class="colLast">
 <div class="block">Action that calls the reset method of an integrator.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/MoleculeActionTranslateTo.html" title="class in etomica.action">MoleculeActionTranslateTo</a></th>
 <td class="colLast">
 <div class="block">Moves (translates) an atom to a specified position.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/MoleculeChildAtomAction.html" title="class in etomica.action">MoleculeChildAtomAction</a></th>
 <td class="colLast">
 <div class="block">Wraps an AtomAction, and performs the wrapped action on the atom
@@ -355,25 +322,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  child atoms.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/PDBWriter.html" title="class in etomica.action">PDBWriter</a></th>
 <td class="colLast">
 <div class="block">Action that dumps a box's configuration to an PDB file.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/ResetAccumulators.html" title="class in etomica.action">ResetAccumulators</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/ResetAccumulatorsAveraged.html" title="class in etomica.action">ResetAccumulatorsAveraged</a></th>
 <td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="../../etomica/action/SimulationActionAdapter.html" title="class in etomica.action">SimulationActionAdapter</a></th>
-<td class="colLast">
-<div class="block">Convenience class used to define a SimulationAction.</div>
-</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="../../etomica/action/SimulationDataAction.html" title="class in etomica.action">SimulationDataAction</a></th>

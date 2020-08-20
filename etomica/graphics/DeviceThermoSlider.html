@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -221,7 +221,7 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#DeviceThermoSlider-etomica.action.activity.Controller-etomica.integrator.IntegratorBox-">DeviceThermoSlider</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;cont,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#DeviceThermoSlider-etomica.action.controller.Controller-etomica.integrator.IntegratorBox-">DeviceThermoSlider</a></span>&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;cont,
                   <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -235,7 +235,7 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -272,72 +272,67 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#main-java.lang.String:A-">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setAdiabatic--">setAdiabatic</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Set the Adiabatic button to its selected state.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setController-etomica.action.activity.Controller-">setController</a></span>&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;cont)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setController-etomica.action.controller.Controller-">setController</a></span>&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;cont)</code></th>
 <td class="colLast">
 <div class="block">Set the temperature slider controller.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setEditValues-boolean-">setEditValues</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
 <div class="block">Set whether the temperature text box should be editable.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setIsothermal--">setIsothermal</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Set the Isothermal button to its selected state.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setIsothermalButtonsVisibility-boolean-">setIsothermalButtonsVisibility</a></span>&#8203;(boolean&nbsp;doShowIsothermalButtons)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setMaximum-double-">setMaximum</a></span>&#8203;(double&nbsp;max)</code></th>
 <td class="colLast">
 <div class="block">Set the maximum value for the temperature.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setMinimum-double-">setMinimum</a></span>&#8203;(double&nbsp;min)</code></th>
 <td class="colLast">
 <div class="block">Set the minimum value for the temperature.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setModifier-etomica.modifier.Modifier-">setModifier</a></span>&#8203;(<a href="../../etomica/modifier/Modifier.html" title="interface in etomica.modifier">Modifier</a>&nbsp;mod)</code></th>
 <td class="colLast">
 <div class="block">Set the temperature modifier object.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setPrecision-int-">setPrecision</a></span>&#8203;(int&nbsp;prec)</code></th>
 <td class="colLast">
 <div class="block">Set the precision of the scrollbar.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setRadioGroupPostAction-etomica.action.IAction-">setRadioGroupPostAction</a></span>&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code></th>
 <td class="colLast">
@@ -345,14 +340,14 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
  pressed and the integrator's isothermality has been set.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setShowValues-boolean-">setShowValues</a></span>&#8203;(boolean&nbsp;b)</code></th>
 <td class="colLast">
 <div class="block">Set whether the temperature text box should be displayed.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setSliderMajorValues-int-">setSliderMajorValues</a></span>&#8203;(int&nbsp;major)</code></th>
 <td class="colLast">
@@ -360,26 +355,26 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
  temperature slider.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setSliderMinorValues-int-">setSliderMinorValues</a></span>&#8203;(int&nbsp;minor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setSliderPostAction-etomica.action.IAction-">setSliderPostAction</a></span>&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</code></th>
 <td class="colLast">
 <div class="block">Set the post slider value changed action.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Set the current value for the temperature slider/text box.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/graphics/DeviceThermoSlider.html#setUnit-etomica.units.Unit-">setUnit</a></span>&#8203;(<a href="../../etomica/units/Unit.html" title="interface in etomica.units">Unit</a>&nbsp;u)</code></th>
 <td class="colLast">
@@ -476,13 +471,13 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DeviceThermoSlider-etomica.action.activity.Controller-etomica.integrator.IntegratorBox-">
+<a name="DeviceThermoSlider-etomica.action.controller.Controller-etomica.integrator.IntegratorBox-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DeviceThermoSlider</h4>
-<pre>public&nbsp;DeviceThermoSlider&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;cont,
+<pre>public&nbsp;DeviceThermoSlider&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;cont,
                           <a href="../../etomica/integrator/IntegratorBox.html" title="class in etomica.integrator">IntegratorBox</a>&nbsp;integrator)</pre>
 </li>
 </ul>
@@ -718,17 +713,17 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 </dl>
 </li>
 </ul>
-<a name="setController-etomica.action.activity.Controller-">
+<a name="setController-etomica.action.controller.Controller-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setController</h4>
-<pre>public&nbsp;void&nbsp;setController&#8203;(<a href="../../etomica/action/activity/Controller.html" title="class in etomica.action.activity">Controller</a>&nbsp;cont)</pre>
+<pre>public&nbsp;void&nbsp;setController&#8203;(<a href="../../etomica/action/controller/Controller.html" title="class in etomica.action.controller">Controller</a>&nbsp;cont)</pre>
 <div class="block">Set the temperature slider controller.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/graphics/Device.html#setController-etomica.action.activity.Controller-">setController</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/graphics/Device.html" title="class in etomica.graphics">Device</a></code></dd>
+<dd><code><a href="../../etomica/graphics/Device.html#setController-etomica.action.controller.Controller-">setController</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/graphics/Device.html" title="class in etomica.graphics">Device</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cont</code> - The controller to set.</dd>
 </dl>
@@ -737,20 +732,11 @@ extends <a href="../../etomica/graphics/Device.html" title="class in etomica.gra
 <a name="setSliderPostAction-etomica.action.IAction-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setSliderPostAction</h4>
 <pre>public&nbsp;void&nbsp;setSliderPostAction&#8203;(<a href="../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a>&nbsp;action)</pre>
 <div class="block">Set the post slider value changed action.</div>
-</li>
-</ul>
-<a name="main-java.lang.String:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>main</h4>
-<pre>public static&nbsp;void&nbsp;main&#8203;(java.lang.String[]&nbsp;args)</pre>
 </li>
 </ul>
 </li>

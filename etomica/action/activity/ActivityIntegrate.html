@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,8 +57,8 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/action/activity/ActivityIntegrate.html" target="_top">Frames</a></li>
@@ -92,13 +92,13 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../etomica/action/Activity.html" title="class in etomica.action">etomica.action.Activity</a></li>
+<li><a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">etomica.action.controller.Activity</a></li>
 <li>
 <ul class="inheritance">
 <li>etomica.action.activity.ActivityIntegrate</li>
@@ -135,58 +135,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/action/IAction.html" title="interface in etomica.action">IAction</a></code></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ActivityIntegrate</span>
-extends <a href="../../../etomica/action/Activity.html" title="class in etomica.action">Activity</a></pre>
-<div class="block">Activity that repeatedly invokes an Integrator's doStep method.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../serialized-form.html#etomica.action.activity.ActivityIntegrate">Serialized Form</a></dd>
-</dl>
+extends <a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">Activity</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Field</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#maxSteps">maxSteps</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#stepCount">stepCount</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.etomica.action.Activity">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;etomica.action.<a href="../../../etomica/action/Activity.html" title="class in etomica.action">Activity</a></h3>
-<code><a href="../../../etomica/action/Activity.html#haltRequested">haltRequested</a>, <a href="../../../etomica/action/Activity.html#isActive">isActive</a>, <a href="../../../etomica/action/Activity.html#pauseRequested">pauseRequested</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -201,14 +159,16 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#ActivityIntegrate-etomica.integrator.Integrator-">ActivityIntegrate</a></span>&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</code></th>
-<td class="colLast">
-<div class="block">Constructs activity to generate configurations with
- the given integrator (which is final).</div>
-</td>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#ActivityIntegrate-etomica.integrator.Integrator-int-boolean-">ActivityIntegrate</a></span>&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
-                 int&nbsp;sleepPeriod,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#ActivityIntegrate-etomica.integrator.Integrator-long-">ActivityIntegrate</a></span>&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
+                 long&nbsp;maxSteps)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#ActivityIntegrate-etomica.integrator.Integrator-long-boolean-">ActivityIntegrate</a></span>&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
+                 long&nbsp;maxSteps,
                  boolean&nbsp;ignoreOverlap)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -229,8 +189,8 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#getCurrentStep--">getCurrentStep</a></span>&#8203;()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#doAction--">doAction</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -241,50 +201,34 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#getMaxSteps--">getMaxSteps</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Accessor method for the number of doStep calls to be
- performed by this integrator after it is started.</div>
-</td>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#getSleepPeriod--">getSleepPeriod</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Amount of time that thread is kept in sleep state after
- each doStep done on integrator.</div>
-</td>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#isIgnoreOverlap--">isIgnoreOverlap</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#run--">run</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Main loop for conduct of integration.</div>
-</td>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#restart--">restart</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#setMaxSteps-long-">setMaxSteps</a></span>&#8203;(long&nbsp;maxSteps)</code></th>
-<td class="colLast">
-<div class="block">Mutator method for the number of doStep steps to be
- performed by this integrator after it is started.</div>
-</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#runActivity-etomica.action.controller.Controller.ControllerHandle-">runActivity</a></span>&#8203;(<a href="../../../etomica/action/controller/Controller.ControllerHandle.html" title="class in etomica.action.controller">Controller.ControllerHandle</a>&nbsp;handle)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#setSleepPeriod-double-">setSleepPeriod</a></span>&#8203;(double&nbsp;sleepPeriod)</code></th>
-<td class="colLast">
-<div class="block">Sets amount of time that thread is kept in sleep state after
- each doStep done on integrator.</div>
-</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#setIgnoreOverlap-boolean-">setIgnoreOverlap</a></span>&#8203;(boolean&nbsp;ignoreOverlap)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/action/activity/ActivityIntegrate.html#setMaxSteps-long-">setMaxSteps</a></span>&#8203;(long&nbsp;maxSteps)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.action.Activity">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;etomica.action.<a href="../../../etomica/action/Activity.html" title="class in etomica.action">Activity</a></h3>
-<code><a href="../../../etomica/action/Activity.html#actionPerformed--">actionPerformed</a>, <a href="../../../etomica/action/Activity.html#doContinue--">doContinue</a>, <a href="../../../etomica/action/Activity.html#doWait--">doWait</a>, <a href="../../../etomica/action/Activity.html#halt--">halt</a>, <a href="../../../etomica/action/Activity.html#isActive--">isActive</a>, <a href="../../../etomica/action/Activity.html#isPaused--">isPaused</a>, <a href="../../../etomica/action/Activity.html#pause--">pause</a>, <a href="../../../etomica/action/Activity.html#unPause--">unPause</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -300,59 +244,40 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="maxSteps">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>maxSteps</h4>
-<pre>protected&nbsp;long maxSteps</pre>
-</li>
-</ul>
-<a name="stepCount">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>stepCount</h4>
-<pre>protected&nbsp;long stepCount</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ActivityIntegrate-etomica.integrator.Integrator-">
+<a name="ActivityIntegrate-etomica.integrator.Integrator-long-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ActivityIntegrate</h4>
-<pre>public&nbsp;ActivityIntegrate&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</pre>
-<div class="block">Constructs activity to generate configurations with
- the given integrator (which is final).  Defaults include
- interval = 1, doSleep given by Default class, and sleepPeriod = 10.</div>
+<pre>public&nbsp;ActivityIntegrate&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
+                         long&nbsp;maxSteps,
+                         boolean&nbsp;ignoreOverlap)</pre>
 </li>
 </ul>
-<a name="ActivityIntegrate-etomica.integrator.Integrator-int-boolean-">
+<a name="ActivityIntegrate-etomica.integrator.Integrator-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ActivityIntegrate</h4>
+<pre>public&nbsp;ActivityIntegrate&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
+                         long&nbsp;maxSteps)</pre>
+</li>
+</ul>
+<a name="ActivityIntegrate-etomica.integrator.Integrator-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ActivityIntegrate</h4>
-<pre>public&nbsp;ActivityIntegrate&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator,
-                         int&nbsp;sleepPeriod,
-                         boolean&nbsp;ignoreOverlap)</pre>
+<pre>public&nbsp;ActivityIntegrate&#8203;(<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;integrator)</pre>
 </li>
 </ul>
 </li>
@@ -363,49 +288,48 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="run--">
+<a name="doAction--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>run</h4>
-<pre>protected&nbsp;void&nbsp;run&#8203;()</pre>
-<div class="block">Main loop for conduct of integration.  Repeatedly calls doStep() method,
- while checking for halt/pause/reset requests, firing regular interval events,
- and entering a brief sleep state if so indicated by doSleep flag.  Integration
- loop continues until number of steps equals maxSteps field.  This method should
- not be called directly, but instead is called by the instance's actionPerformed method.</div>
+<h4>doAction</h4>
+<pre>public&nbsp;void&nbsp;doAction&#8203;()</pre>
+</li>
+</ul>
+<a name="runActivity-etomica.action.controller.Controller.ControllerHandle-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>runActivity</h4>
+<pre>public&nbsp;void&nbsp;runActivity&#8203;(<a href="../../../etomica/action/controller/Controller.ControllerHandle.html" title="class in etomica.action.controller">Controller.ControllerHandle</a>&nbsp;handle)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../etomica/action/Activity.html#run--">run</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/action/Activity.html" title="class in etomica.action">Activity</a></code></dd>
+<dd><code><a href="../../../etomica/action/controller/Activity.html#runActivity-etomica.action.controller.Controller.ControllerHandle-">runActivity</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">Activity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getSleepPeriod--">
+<a name="restart--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSleepPeriod</h4>
-<pre>public&nbsp;double&nbsp;getSleepPeriod&#8203;()</pre>
-<div class="block">Amount of time that thread is kept in sleep state after
- each doStep done on integrator.  If doSleep is false, this no sleep
- is performed and this parameter has no effect.</div>
+<h4>restart</h4>
+<pre>public&nbsp;void&nbsp;restart&#8203;()</pre>
 <dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>sleep period, in milliseconds.</dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../etomica/action/controller/Activity.html#restart--">restart</a></code>&nbsp;in class&nbsp;<code><a href="../../../etomica/action/controller/Activity.html" title="class in etomica.action.controller">Activity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setSleepPeriod-double-">
+<a name="getIntegrator--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setSleepPeriod</h4>
-<pre>public&nbsp;void&nbsp;setSleepPeriod&#8203;(double&nbsp;sleepPeriod)</pre>
-<div class="block">Sets amount of time that thread is kept in sleep state after
- each doStep done on integrator.  Default value is 0.</div>
+<h4>getIntegrator</h4>
+<pre>public&nbsp;<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;getIntegrator&#8203;()</pre>
 </li>
 </ul>
 <a name="getMaxSteps--">
@@ -415,8 +339,6 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <li class="blockList">
 <h4>getMaxSteps</h4>
 <pre>public&nbsp;long&nbsp;getMaxSteps&#8203;()</pre>
-<div class="block">Accessor method for the number of doStep calls to be
- performed by this integrator after it is started.</div>
 </li>
 </ul>
 <a name="setMaxSteps-long-">
@@ -426,32 +348,24 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <li class="blockList">
 <h4>setMaxSteps</h4>
 <pre>public&nbsp;void&nbsp;setMaxSteps&#8203;(long&nbsp;maxSteps)</pre>
-<div class="block">Mutator method for the number of doStep steps to be
- performed by this integrator after it is started.  Can
- be changed while activity is running; if set to a value
- less than number of steps already executed, integration will end.</div>
 </li>
 </ul>
-<a name="getCurrentStep--">
+<a name="isIgnoreOverlap--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getCurrentStep</h4>
-<pre>public&nbsp;long&nbsp;getCurrentStep&#8203;()</pre>
+<h4>isIgnoreOverlap</h4>
+<pre>public&nbsp;boolean&nbsp;isIgnoreOverlap&#8203;()</pre>
 </li>
 </ul>
-<a name="getIntegrator--">
+<a name="setIgnoreOverlap-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getIntegrator</h4>
-<pre>public&nbsp;<a href="../../../etomica/integrator/Integrator.html" title="class in etomica.integrator">Integrator</a>&nbsp;getIntegrator&#8203;()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns the integrator.</dd>
-</dl>
+<h4>setIgnoreOverlap</h4>
+<pre>public&nbsp;void&nbsp;setIgnoreOverlap&#8203;(boolean&nbsp;ignoreOverlap)</pre>
 </li>
 </ul>
 </li>
@@ -481,8 +395,8 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/action/activity/ActivityGroupSeries.html" title="class in etomica.action.activity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../etomica/action/activity/Controller.html" title="class in etomica.action.activity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?etomica/action/activity/ActivityIntegrate.html" target="_top">Frames</a></li>
@@ -510,13 +424,13 @@ extends <a href="../../../etomica/action/Activity.html" title="class in etomica.
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
