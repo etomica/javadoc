@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -405,15 +405,6 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a></span>&#8203;(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</code></th>
-<td class="colLast">
-<div class="block">Randomizes the velocities of the given atom using value
- chosen from a Maxwell-Boltzmann distribution, as in the Andersen
- thermostat.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#releaseAgent-java.lang.Object-etomica.molecule.IMolecule-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;atom)</code></th>
 <td class="colLast">
@@ -421,7 +412,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  the agent source should disconnect the agent from other elements</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#releaseAgent-java.lang.Object-etomica.species.ISpecies-">releaseAgent</a></span>&#8203;(java.lang.Object&nbsp;agent,
             <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;type)</code></th>
@@ -430,14 +421,14 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  the agent source should disconnect the agent from other elements.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#reset--">reset</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Performs superclass reset actions and recalculated currentPotentialEnergy</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#scaleMomenta--">scaleMomenta</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -446,13 +437,13 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
  box adheres to setpoint temperature.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#setOrientationCalc-etomica.species.ISpecies-etomica.molecule.OrientationCalcQuaternion-">setOrientationCalc</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;species,
                   <a href="../../etomica/molecule/OrientationCalcQuaternion.html" title="interface in etomica.molecule">OrientationCalcQuaternion</a>&nbsp;calcer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/rotation/IntegratorVelocityVerletQuaternion.html#shiftMomenta--">shiftMomenta</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -480,7 +471,7 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></h3>
-<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getAlwaysScaleRandomizedMomenta--">getAlwaysScaleRandomizedMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#isThermostatNoDrift--">isThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetHybridAcceptance--">resetHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setAlwaysScaleRandomizedMomenta-boolean-">setAlwaysScaleRandomizedMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a></code></li>
+<code><a href="../../etomica/integrator/IntegratorMD.html#boxAtomLeafIndexChanged-etomica.box.BoxAtomIndexEvent-">boxAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxGlobalAtomLeafIndexChanged-etomica.box.BoxIndexEvent-">boxGlobalAtomLeafIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeAdded-etomica.box.BoxMoleculeEvent-">boxMoleculeAdded</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeIndexChanged-etomica.box.BoxMoleculeIndexEvent-">boxMoleculeIndexChanged</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxMoleculeRemoved-etomica.box.BoxMoleculeEvent-">boxMoleculeRemoved</a>, <a href="../../etomica/integrator/IntegratorMD.html#boxNumberMolecules-etomica.box.BoxMoleculeCountEvent-">boxNumberMolecules</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostat--">doThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#doThermostatInternal--">doThermostatInternal</a>, <a href="../../etomica/integrator/IntegratorMD.html#getAlwaysScaleRandomizedMomenta--">getAlwaysScaleRandomizedMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#getCurrentTime--">getCurrentTime</a>, <a href="../../etomica/integrator/IntegratorMD.html#getHybridAcceptance--">getHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#getIntegratorMC--">getIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#getKineticEnergy--">getKineticEnergy</a>, <a href="../../etomica/integrator/IntegratorMD.html#getMeterTemperature--">getMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostat--">getThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#getThermostatInterval--">getThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#getTimeStep--">getTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#isThermostatNoDrift--">isThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a>, <a href="../../etomica/integrator/IntegratorMD.html#randomizeTotalKE--">randomizeTotalKE</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetHybridAcceptance--">resetHybridAcceptance</a>, <a href="../../etomica/integrator/IntegratorMD.html#resetStepCount--">resetStepCount</a>, <a href="../../etomica/integrator/IntegratorMD.html#scaleMomenta-etomica.space.Vector-">scaleMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setAlwaysScaleRandomizedMomenta-boolean-">setAlwaysScaleRandomizedMomenta</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIntegratorMC-etomica.integrator.IntegratorMC-int-">setIntegratorMC</a>, <a href="../../etomica/integrator/IntegratorMD.html#setIsothermal-boolean-">setIsothermal</a>, <a href="../../etomica/integrator/IntegratorMD.html#setMeterTemperature-etomica.data.meter.MeterTemperature-">setMeterTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTemperature-double-">setTemperature</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostat-etomica.integrator.IntegratorMD.ThermostatType-">setThermostat</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatInterval-int-">setThermostatInterval</a>, <a href="../../etomica/integrator/IntegratorMD.html#setThermostatNoDrift-boolean-">setThermostatNoDrift</a>, <a href="../../etomica/integrator/IntegratorMD.html#setTimeStep-double-">setTimeStep</a>, <a href="../../etomica/integrator/IntegratorMD.html#setup--">setup</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -767,27 +758,6 @@ implements <a href="../../etomica/species/SpeciesAgentManager.AgentSource.html" 
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomenta--">randomizeMomenta</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="randomizeMomentum-etomica.atom.IAtomKinetic-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>randomizeMomentum</h4>
-<pre>public&nbsp;void&nbsp;randomizeMomentum&#8203;(<a href="../../etomica/atom/IAtomKinetic.html" title="interface in etomica.atom">IAtomKinetic</a>&nbsp;atom)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">IntegratorMD</a></code></span></div>
-<div class="block">Randomizes the velocities of the given atom using value
- chosen from a Maxwell-Boltzmann distribution, as in the Andersen
- thermostat. Does not reset or otherwise updated integrator for
- new velocities (some integrators, e.g. IntegratorHard, will need to be
- reset after calling this method).</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../etomica/integrator/IntegratorMD.html#randomizeMomentum-etomica.atom.IAtomKinetic-">randomizeMomentum</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>atom</code> - whose momenta is be randomized</dd>
 </dl>
 </li>
 </ul>
