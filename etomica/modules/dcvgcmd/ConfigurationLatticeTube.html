@@ -185,12 +185,12 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>[]</code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#speciesSpheres">speciesSpheres</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">SpeciesTube</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#speciesTube">speciesTube</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -257,12 +257,12 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#setSpeciesSpheres-etomica.species.SpeciesSpheresMono:A-">setSpeciesSpheres</a></span>&#8203;(<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>[]&nbsp;speciesSpheres)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#setSpeciesSpheres-etomica.species.SpeciesGeneral:A-">setSpeciesSpheres</a></span>&#8203;(<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>[]&nbsp;speciesSpheres)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#setSpeciesTube-etomica.modules.dcvgcmd.SpeciesTube-">setSpeciesTube</a></span>&#8203;(<a href="../../../etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">SpeciesTube</a>&nbsp;speciesTube)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/dcvgcmd/ConfigurationLatticeTube.html#setSpeciesTube-etomica.species.SpeciesGeneral-">setSpeciesTube</a></span>&#8203;(<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>&nbsp;speciesTube)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -300,7 +300,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesSpheres</h4>
-<pre>protected&nbsp;<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>[] speciesSpheres</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>[] speciesSpheres</pre>
 </li>
 </ul>
 <a name="speciesTube">
@@ -309,7 +309,7 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <ul class="blockListLast">
 <li class="blockList">
 <h4>speciesTube</h4>
-<pre>protected&nbsp;<a href="../../../etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">SpeciesTube</a> speciesTube</pre>
+<pre>protected&nbsp;<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a> speciesTube</pre>
 </li>
 </ul>
 </li>
@@ -342,10 +342,6 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
                                 <a href="../../../etomica/lattice/IndexIteratorSizable.html" title="interface in etomica.lattice">IndexIteratorSizable</a>&nbsp;indexIterator,
                                 <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;_space)</pre>
 <div class="block">Constructor for ConfigurationLatticeTube.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>space</code> - </dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -356,22 +352,22 @@ extends <a href="../../../etomica/config/ConfigurationLattice.html" title="class
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setSpeciesSpheres-etomica.species.SpeciesSpheresMono:A-">
+<a name="setSpeciesSpheres-etomica.species.SpeciesGeneral:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpeciesSpheres</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesSpheres&#8203;(<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a>[]&nbsp;speciesSpheres)</pre>
+<pre>public&nbsp;void&nbsp;setSpeciesSpheres&#8203;(<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>[]&nbsp;speciesSpheres)</pre>
 </li>
 </ul>
-<a name="setSpeciesTube-etomica.modules.dcvgcmd.SpeciesTube-">
+<a name="setSpeciesTube-etomica.species.SpeciesGeneral-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpeciesTube</h4>
-<pre>public&nbsp;void&nbsp;setSpeciesTube&#8203;(<a href="../../../etomica/modules/dcvgcmd/SpeciesTube.html" title="class in etomica.modules.dcvgcmd">SpeciesTube</a>&nbsp;speciesTube)</pre>
+<pre>public&nbsp;void&nbsp;setSpeciesTube&#8203;(<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>&nbsp;speciesTube)</pre>
 </li>
 </ul>
 <a name="initializeCoordinates-etomica.box.Box-">

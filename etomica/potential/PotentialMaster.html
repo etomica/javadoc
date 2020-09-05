@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -258,13 +258,6 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#addModel-etomica.chem.models.Model-">addModel</a></span>&#8203;(<a href="../../etomica/chem/models/Model.html" title="class in etomica.chem.models">Model</a>&nbsp;newModel)</code></th>
-<td class="colLast">
-<div class="block">Add the given Model's intramolecular potentials to this PotentialMaster</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialAtomic-etomica.atom.AtomType:A-">addPotential</a></span>&#8203;(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential,
             <a href="../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>[]&nbsp;atomTypes)</code></th>
 <td class="colLast">
@@ -272,14 +265,14 @@ extends java.lang.Object</pre>
  the specified atom types.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.molecule.iterator.MoleculesetIteratorPDT-etomica.species.ISpecies:A-">addPotential</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
             <a href="../../etomica/molecule/iterator/MoleculesetIteratorPDT.html" title="interface in etomica.molecule.iterator">MoleculesetIteratorPDT</a>&nbsp;iterator,
             <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;types)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">addPotential</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
             <a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;species)</code></th>
@@ -288,7 +281,7 @@ extends java.lang.Object</pre>
  the specified species.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#calculate-etomica.box.Box-etomica.potential.IteratorDirective-etomica.potential.PotentialCalculation-">calculate</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;box,
          <a href="../../etomica/potential/IteratorDirective.html" title="class in etomica.potential">IteratorDirective</a>&nbsp;id,
@@ -297,7 +290,7 @@ extends java.lang.Object</pre>
 <div class="block">Performs the given PotentialCalculation on the atoms of the given Box.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#getPotential-etomica.species.ISpecies:A-">getPotential</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]&nbsp;types)</code></th>
 <td class="colLast">
@@ -305,24 +298,24 @@ extends java.lang.Object</pre>
  or null of no existing potential applies.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#getPotentials--">getPotentials</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns an array containing all molecular Potentials.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#getSpecies-etomica.potential.IPotentialMolecular-">getSpecies</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#isEnabled--">isEnabled</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialAtomic-">isEnabled</a></span>&#8203;(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code></th>
 <td class="colLast">
@@ -330,7 +323,7 @@ extends java.lang.Object</pre>
  via a previous call to setEnabled; returns false otherwise.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#isEnabled-etomica.potential.IPotentialMolecular-">isEnabled</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code></th>
 <td class="colLast">
@@ -338,7 +331,7 @@ extends java.lang.Object</pre>
  via a previous call to setEnabled; returns false otherwise.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#isPotentialHard--">isPotentialHard</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -346,7 +339,7 @@ extends java.lang.Object</pre>
  prohibit overlap but otherwise have zero energy.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/potential/PotentialMasterLrc.html" title="class in etomica.potential">PotentialMasterLrc</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#lrcMaster--">lrcMaster</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -354,7 +347,7 @@ extends java.lang.Object</pre>
  correction zero-body potentials.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#makePotentialGroup-int-">makePotentialGroup</a></span>&#8203;(int&nbsp;nBody)</code></th>
 <td class="colLast">
@@ -362,7 +355,7 @@ extends java.lang.Object</pre>
  PotentialMaster.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#potentialAddedNotify-etomica.potential.IPotentialAtomic-etomica.potential.PotentialGroup-">potentialAddedNotify</a></span>&#8203;(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;subPotential,
                     <a href="../../etomica/potential/PotentialGroup.html" title="class in etomica.potential">PotentialGroup</a>&nbsp;pGroup)</code></th>
@@ -372,28 +365,28 @@ extends java.lang.Object</pre>
  by) this PotentialMaster.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialAtomic-">removePotential</a></span>&#8203;(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential)</code></th>
 <td class="colLast">
 <div class="block">Removes given potential from the group.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#removePotential-etomica.potential.IPotentialMolecular-">removePotential</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential)</code></th>
 <td class="colLast">
 <div class="block">Removes given potential from the group.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#setEnabled-boolean-">setEnabled</a></span>&#8203;(boolean&nbsp;enabled)</code></th>
 <td class="colLast">
 <div class="block">Permits enabling/disabling of all potentials.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialAtomic-boolean-">setEnabled</a></span>&#8203;(<a href="../../etomica/potential/IPotentialAtomic.html" title="interface in etomica.potential">IPotentialAtomic</a>&nbsp;potential,
           boolean&nbsp;enabled)</code></th>
@@ -402,7 +395,7 @@ extends java.lang.Object</pre>
  calculations.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#setEnabled-etomica.potential.IPotentialMolecular-boolean-">setEnabled</a></span>&#8203;(<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;potential,
           boolean&nbsp;enabled)</code></th>
@@ -411,7 +404,7 @@ extends java.lang.Object</pre>
  calculations.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/potential/PotentialMaster.html#setPotentialHard-boolean-">setPotentialHard</a></span>&#8203;(boolean&nbsp;potentialHard)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -553,16 +546,6 @@ extends java.lang.Object</pre>
  and direction for iterators as specified by given IteratorDirective,
  and applies doCalculation of given PotentialCalculation with the iterators
  and potentials.</div>
-</li>
-</ul>
-<a name="addModel-etomica.chem.models.Model-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addModel</h4>
-<pre>public&nbsp;void&nbsp;addModel&#8203;(<a href="../../etomica/chem/models/Model.html" title="class in etomica.chem.models">Model</a>&nbsp;newModel)</pre>
-<div class="block">Add the given Model's intramolecular potentials to this PotentialMaster</div>
 </li>
 </ul>
 <a name="addPotential-etomica.potential.IPotentialMolecular-etomica.species.ISpecies:A-">

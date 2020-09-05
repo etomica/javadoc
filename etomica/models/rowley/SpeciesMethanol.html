@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -57,7 +57,7 @@ var pathtoroot = "../../../";loadScripts(document, 'script');</script>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/models/rowley/SpeciesFactoryMethanol.html" title="class in etomica.models.rowley"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/models/rowley/SpeciesEthanol.html" title="class in etomica.models.rowley"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -123,26 +123,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../etomica/species/Species.html" title="class in etomica.species">etomica.species.Species</a></li>
-<li>
-<ul class="inheritance">
 <li>etomica.models.rowley.SpeciesMethanol</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a></code></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SpeciesMethanol</span>
-extends <a href="../../../etomica/species/Species.html" title="class in etomica.species">Species</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Species for methanol with satellite site (Rowley et al 2006).</div>
 </li>
 </ul>
@@ -164,78 +155,41 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#acType">acType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#ahType">ahType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#hType">hType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexaC">indexaC</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexaH">indexaH</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexH1">indexH1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexH2a">indexH2a</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexH2b">indexH2b</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexO">indexO</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#indexX">indexX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#oType">oType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#space">space</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#xType">xType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.etomica.species.Species">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;etomica.species.<a href="../../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../../etomica/species/Species.html#atomTypes">atomTypes</a>, <a href="../../../etomica/species/Species.html#conformation">conformation</a>, <a href="../../../etomica/species/Species.html#index">index</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -251,8 +205,7 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#SpeciesMethanol-etomica.space.Space-boolean-">SpeciesMethanol</a></span>&#8203;(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-               boolean&nbsp;pointCharges)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#SpeciesMethanol--">SpeciesMethanol</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -265,48 +218,16 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getAlphaCarbonType--">getAlphaCarbonType</a></span>&#8203;()</code></th>
+<td class="colFirst"><code>static <a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#create-boolean-">create</a></span>&#8203;(boolean&nbsp;pointCharges)</code></th>
 <td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getAlphaHydrogenType--">getAlphaHydrogenType</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getHydrogenType--">getHydrogenType</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getNumLeafAtoms--">getNumLeafAtoms</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getOxygenType--">getOxygenType</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#getXType--">getXType</a></span>&#8203;()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/models/rowley/SpeciesMethanol.html#makeMolecule--">makeMolecule</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Builds and returns the IMolecule of this ISpecies.</div>
-</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -315,13 +236,6 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.etomica.species.Species">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;etomica.species.<a href="../../../etomica/species/Species.html" title="class in etomica.species">Species</a></h3>
-<code><a href="../../../etomica/species/Species.html#addChildType-etomica.atom.AtomType-">addChildType</a>, <a href="../../../etomica/species/Species.html#getAtomType-int-">getAtomType</a>, <a href="../../../etomica/species/Species.html#getAtomTypeCount--">getAtomTypeCount</a>, <a href="../../../etomica/species/Species.html#getAtomTypes--">getAtomTypes</a>, <a href="../../../etomica/species/Species.html#getConformation--">getConformation</a>, <a href="../../../etomica/species/Species.html#getIndex--">getIndex</a>, <a href="../../../etomica/species/Species.html#initializeConformation-etomica.molecule.IMolecule-">initializeConformation</a>, <a href="../../../etomica/species/Species.html#removeChildType-etomica.atom.AtomType-">removeChildType</a>, <a href="../../../etomica/species/Species.html#setConformation-etomica.config.IConformation-">setConformation</a>, <a href="../../../etomica/species/Species.html#setIndex-int-">setIndex</a></code></li>
 </ul>
 </li>
 </ul>
@@ -418,7 +332,7 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <a name="indexX">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>indexX</h4>
 <pre>public static final&nbsp;int indexX</pre>
@@ -426,60 +340,6 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#etomica.models.rowley.SpeciesMethanol.indexX">Constant Field Values</a></dd>
 </dl>
-</li>
-</ul>
-<a name="space">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>space</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
-</li>
-</ul>
-<a name="oType">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>oType</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> oType</pre>
-</li>
-</ul>
-<a name="acType">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>acType</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> acType</pre>
-</li>
-</ul>
-<a name="ahType">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ahType</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> ahType</pre>
-</li>
-</ul>
-<a name="hType">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hType</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> hType</pre>
-</li>
-</ul>
-<a name="xType">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>xType</h4>
-<pre>protected final&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a> xType</pre>
 </li>
 </ul>
 </li>
@@ -490,14 +350,13 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpeciesMethanol-etomica.space.Space-boolean-">
+<a name="SpeciesMethanol--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpeciesMethanol</h4>
-<pre>public&nbsp;SpeciesMethanol&#8203;(<a href="../../../etomica/space/Space.html" title="class in etomica.space">Space</a>&nbsp;space,
-                       boolean&nbsp;pointCharges)</pre>
+<pre>public&nbsp;SpeciesMethanol&#8203;()</pre>
 </li>
 </ul>
 </li>
@@ -508,69 +367,13 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="makeMolecule--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeMolecule</h4>
-<pre>public&nbsp;<a href="../../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a>&nbsp;makeMolecule&#8203;()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../etomica/species/ISpecies.html#makeMolecule--">ISpecies</a></code></span></div>
-<div class="block">Builds and returns the IMolecule of this ISpecies.</div>
-</li>
-</ul>
-<a name="getOxygenType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOxygenType</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getOxygenType&#8203;()</pre>
-</li>
-</ul>
-<a name="getAlphaCarbonType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAlphaCarbonType</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getAlphaCarbonType&#8203;()</pre>
-</li>
-</ul>
-<a name="getAlphaHydrogenType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAlphaHydrogenType</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getAlphaHydrogenType&#8203;()</pre>
-</li>
-</ul>
-<a name="getHydrogenType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHydrogenType</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getHydrogenType&#8203;()</pre>
-</li>
-</ul>
-<a name="getXType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getXType</h4>
-<pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getXType&#8203;()</pre>
-</li>
-</ul>
-<a name="getNumLeafAtoms--">
+<a name="create-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getNumLeafAtoms</h4>
-<pre>public&nbsp;int&nbsp;getNumLeafAtoms&#8203;()</pre>
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>&nbsp;create&#8203;(boolean&nbsp;pointCharges)</pre>
 </li>
 </ul>
 </li>
@@ -600,7 +403,7 @@ extends <a href="../../../etomica/species/Species.html" title="class in etomica.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../etomica/models/rowley/SpeciesFactoryMethanol.html" title="class in etomica.models.rowley"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../etomica/models/rowley/SpeciesEthanol.html" title="class in etomica.models.rowley"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">

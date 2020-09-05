@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -249,12 +249,12 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#speciesA">speciesA</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a></code></td>
+<td class="colFirst"><code><a href="../../../etomica/species/SpeciesGeneralMutable.html" title="class in etomica.species">SpeciesGeneralMutable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#speciesB">speciesB</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -356,21 +356,27 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNA-int-">setNA</a></span>&#8203;(int&nbsp;nA)</code></th>
+<td class="colFirst"><code><a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#makeSpeciesB-int-int-">makeSpeciesB</a></span>&#8203;(int&nbsp;nB1,
+            int&nbsp;nB2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNB-int-">setNB</a></span>&#8203;(int&nbsp;nB)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNA-int-">setNA</a></span>&#8203;(int&nbsp;nA)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNB1-int-">setNB1</a></span>&#8203;(int&nbsp;nB1)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNB-int-">setNB</a></span>&#8203;(int&nbsp;nB)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNB1-int-">setNB1</a></span>&#8203;(int&nbsp;nB1)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../etomica/modules/selfassembly/SelfAssemblySim.html#setNB2-int-">setNB2</a></span>&#8203;(int&nbsp;nB2)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -464,7 +470,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesA</h4>
-<pre>public&nbsp;<a href="../../../etomica/species/SpeciesSpheresMono.html" title="class in etomica.species">SpeciesSpheresMono</a> speciesA</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a> speciesA</pre>
 </li>
 </ul>
 <a name="speciesB">
@@ -473,7 +479,7 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <ul class="blockList">
 <li class="blockList">
 <h4>speciesB</h4>
-<pre>public&nbsp;<a href="../../../etomica/species/SpeciesSpheresHetero.html" title="class in etomica.species">SpeciesSpheresHetero</a> speciesB</pre>
+<pre>public&nbsp;<a href="../../../etomica/species/SpeciesGeneralMutable.html" title="class in etomica.species">SpeciesGeneralMutable</a> speciesB</pre>
 </li>
 </ul>
 <a name="p2AA">
@@ -738,10 +744,20 @@ extends <a href="../../../etomica/simulation/Simulation.html" title="class in et
 <a name="getTypeB2--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getTypeB2</h4>
 <pre>public&nbsp;<a href="../../../etomica/atom/AtomType.html" title="class in etomica.atom">AtomType</a>&nbsp;getTypeB2&#8203;()</pre>
+</li>
+</ul>
+<a name="makeSpeciesB-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeSpeciesB</h4>
+<pre>public&nbsp;<a href="../../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a>&nbsp;makeSpeciesB&#8203;(int&nbsp;nB1,
+                                   int&nbsp;nB2)</pre>
 </li>
 </ul>
 </li>
