@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,53 +214,63 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#lastValueBD">lastValueBD</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#minFlipDistance">minFlipDistance</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#nDer">nDer</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#positionDefinition">positionDefinition</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected boolean[][]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#printed">printed</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#pushme">pushme</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#random">random</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#tol">tol</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#totcount">totcount</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected double[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#value">value</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#valueBD">valueBD</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -399,6 +409,11 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <div class="block">Value of this cluster for the given pairset at the specified reciprocal
  temperature.</div>
 </td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterCoupledFlippedMultivalue.html#valueIsBD--">valueIsBD</a></span>&#8203;()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -627,10 +642,28 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <a name="FlipAccFrac">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>FlipAccFrac</h4>
 <pre>public&nbsp;double FlipAccFrac</pre>
+</li>
+</ul>
+<a name="valueBD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueBD</h4>
+<pre>public&nbsp;boolean valueBD</pre>
+</li>
+</ul>
+<a name="lastValueBD">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>lastValueBD</h4>
+<pre>public&nbsp;boolean lastValueBD</pre>
 </li>
 </ul>
 </li>
@@ -715,6 +748,15 @@ implements <a href="../../etomica/virial/ClusterAbstractMultivalue.html" title="
 <h4>setBDAccFrac</h4>
 <pre>public&nbsp;void&nbsp;setBDAccFrac&#8203;(double&nbsp;p,
                          <a href="../../etomica/util/random/IRandom.html" title="interface in etomica.util.random">IRandom</a>&nbsp;rng)</pre>
+</li>
+</ul>
+<a name="valueIsBD--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueIsBD</h4>
+<pre>public&nbsp;boolean&nbsp;valueIsBD&#8203;()</pre>
 </li>
 </ul>
 <a name="value-etomica.virial.BoxCluster-">

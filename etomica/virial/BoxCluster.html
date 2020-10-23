@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -189,11 +189,16 @@ extends <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/BoxCluster.html#positionDefinition">positionDefinition</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../etomica/virial/ClusterWeight.html" title="interface in etomica.virial">ClusterWeight</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/BoxCluster.html#sampleCluster">sampleCluster</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/BoxCluster.html#space">space</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -290,6 +295,11 @@ extends <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/BoxCluster.html#setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">setPositionDefinition</a></span>&#8203;(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/BoxCluster.html#trialNotify--">trialNotify</a></span>&#8203;()</code></th>
 <td class="colLast">
@@ -392,10 +402,19 @@ extends <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a
 <a name="space">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>space</h4>
 <pre>protected final&nbsp;<a href="../../etomica/space/Space.html" title="class in etomica.space">Space</a> space</pre>
+</li>
+</ul>
+<a name="positionDefinition">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>positionDefinition</h4>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a> positionDefinition</pre>
 </li>
 </ul>
 </li>
@@ -436,6 +455,15 @@ extends <a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setPositionDefinition-etomica.molecule.IMoleculePositionDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPositionDefinition</h4>
+<pre>public&nbsp;void&nbsp;setPositionDefinition&#8203;(<a href="../../etomica/molecule/IMoleculePositionDefinition.html" title="interface in etomica.molecule">IMoleculePositionDefinition</a>&nbsp;positionDefinition)</pre>
+</li>
+</ul>
 <a name="getCPairSet--">
 <!--   -->
 </a>

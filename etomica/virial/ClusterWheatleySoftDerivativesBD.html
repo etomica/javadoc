@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -136,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html" title="class in etomica.virial">ClusterWheatleyMultibodyDerivativesBD</a></code></dd>
+<dd><code><a href="../../etomica/virial/ClusterWheatleyMultibodyDerivativesBD.html" title="class in etomica.virial">ClusterWheatleyMultibodyDerivativesBD</a></code>, <code><a href="../../etomica/virial/ClusterWheatleySoftDerivativesMixBD.html" title="class in etomica.virial">ClusterWheatleySoftDerivativesMixBD</a></code></dd>
 </dl>
 <hr>
 <br>
@@ -394,45 +394,50 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#makeClusterBDBD-int-">makeClusterBDBD</a></span>&#8203;(int&nbsp;newPrecision)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../etomica/virial/ClusterAbstract.html" title="interface in etomica.virial">ClusterAbstract</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#makeCopy--">makeCopy</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Returns another instance of an identical cluster (shallow copy).</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#pointCount--">pointCount</a></span>&#8203;()</code></th>
 <td class="colLast">
 <div class="block">Number of points in the cluster.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setDoCaching-boolean-">setDoCaching</a></span>&#8203;(boolean&nbsp;newDoCaching)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setPrecisionLimit-int-">setPrecisionLimit</a></span>&#8203;(int&nbsp;newLimit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setRCut-double-">setRCut</a></span>&#8203;(double&nbsp;newRCut)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#setTemperature-double-">setTemperature</a></span>&#8203;(double&nbsp;temperature)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#updateF-etomica.virial.BoxCluster-">updateF</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/ClusterWheatleySoftDerivativesBD.html#value-etomica.virial.BoxCluster-">value</a></span>&#8203;(<a href="../../etomica/virial/BoxCluster.html" title="class in etomica.virial">BoxCluster</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -724,6 +729,15 @@ implements <a href="../../etomica/virial/ClusterAbstract.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="makeClusterBDBD-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeClusterBDBD</h4>
+<pre>public&nbsp;void&nbsp;makeClusterBDBD&#8203;(int&nbsp;newPrecision)</pre>
+</li>
+</ul>
 <a name="setPrecisionLimit-int-">
 <!--   -->
 </a>
