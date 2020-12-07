@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,10 +143,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <br>
 <pre>public class <span class="typeNameLabel">DataSourceCountTime</span>
 extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomica.data">DataSourceScalar</a></pre>
-<div class="block">Data source that keeps track of the elapsed simulation time of an MD
- integrator. More precisely, sums the integrator's interval value times the
- time-step each time the integrator fires an INTERVAL event. A START event
- from the integrator will reset the elapsedTime.</div>
+<div class="block">Data source that returns the elapsed simulation time of an MD integrator.</div>
 </li>
 </ul>
 </div>
@@ -194,12 +191,6 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceCountTime.html#DataSourceCountTime--">DataSourceCountTime</a></span>&#8203;()</code></th>
-<td class="colLast">
-<div class="block">Sets up data source with no integrator specified.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceCountTime.html#DataSourceCountTime-etomica.integrator.IntegratorMD-">DataSourceCountTime</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>&nbsp;integrator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -226,11 +217,6 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <div class="block">Returns the simulation time elapsed by the integrator tracked
  by this class since the last reset.</div>
 </td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/data/DataSourceCountTime.html#setIntegrator-etomica.integrator.IntegratorMD-">setIntegrator</a></span>&#8203;(<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>&nbsp;newIntegrator)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -267,7 +253,7 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>integrator</h4>
-<pre>protected&nbsp;<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a> integrator</pre>
+<pre>protected final&nbsp;<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a> integrator</pre>
 </li>
 </ul>
 </li>
@@ -278,17 +264,6 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DataSourceCountTime--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DataSourceCountTime</h4>
-<pre>public&nbsp;DataSourceCountTime&#8203;()</pre>
-<div class="block">Sets up data source with no integrator specified.  Requires
- call to addIntegrator or setIntegrator before use.</div>
-</li>
-</ul>
 <a name="DataSourceCountTime-etomica.integrator.IntegratorMD-">
 <!--   -->
 </a>
@@ -306,15 +281,6 @@ extends <a href="../../etomica/data/DataSourceScalar.html" title="class in etomi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setIntegrator-etomica.integrator.IntegratorMD-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setIntegrator</h4>
-<pre>public&nbsp;void&nbsp;setIntegrator&#8203;(<a href="../../etomica/integrator/IntegratorMD.html" title="class in etomica.integrator">IntegratorMD</a>&nbsp;newIntegrator)</pre>
-</li>
-</ul>
 <a name="getDataAsScalar--">
 <!--   -->
 </a>
