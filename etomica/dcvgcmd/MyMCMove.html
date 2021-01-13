@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,6 +169,31 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#nReservoirTrials">nReservoirTrials</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#nReservoirTrialsAccepted">nReservoirTrialsAccepted</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#p1">p1</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#resevoirMolecule">resevoirMolecule</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#temperature">temperature</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#testMoleculeIndex">testMoleculeIndex</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -269,22 +294,37 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#rejectNotify--">rejectNotify</a></span>&#8203;()</code></th>
+<td class="colLast">
+<div class="block">Method called by IntegratorMC in the event that the most recent trial
+ move is rejected.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#setBox-etomica.box.Box-">setBox</a></span>&#8203;(<a href="../../etomica/box/Box.html" title="class in etomica.box">Box</a>&nbsp;p)</code></th>
 <td class="colLast">
 <div class="block">Sets the box on which this move acts.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#setSpecies-etomica.species.ISpecies-">setSpecies</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#setSpecies-etomica.species.ISpecies-double-etomica.potential.IPotentialMolecular-">setSpecies</a></span>&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s,
+          double&nbsp;temperature,
+          <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;p1)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#setupActiveAtoms--">setupActiveAtoms</a></span>&#8203;()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/MyMCMove.html#setZFraction-double-">setZFraction</a></span>&#8203;(double&nbsp;zFraction)</code></th>
 <td class="colLast">
@@ -312,7 +352,7 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;etomica.integrator.mcmove.<a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></h3>
-<code><a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#rejectNotify--">rejectNotify</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setMu-double-">setMu</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
+<code><a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#affectedAtoms--">affectedAtoms</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#energyChange--">energyChange</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMu--">getMu</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getMuDimension--">getMuDimension</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getPositionSource--">getPositionSource</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#getSpecies--">getSpecies</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#lastMoveInsert--">lastMoveInsert</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setMu-double-">setMu</a>, <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#setPositionSource-etomica.box.RandomPositionSource-">setPositionSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -338,10 +378,55 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 <a name="testMoleculeIndex">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>testMoleculeIndex</h4>
 <pre>protected&nbsp;int testMoleculeIndex</pre>
+</li>
+</ul>
+<a name="temperature">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperature</h4>
+<pre>protected&nbsp;double temperature</pre>
+</li>
+</ul>
+<a name="p1">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>p1</h4>
+<pre>protected&nbsp;<a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a> p1</pre>
+</li>
+</ul>
+<a name="resevoirMolecule">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resevoirMolecule</h4>
+<pre>protected&nbsp;<a href="../../etomica/molecule/IMolecule.html" title="interface in etomica.molecule">IMolecule</a> resevoirMolecule</pre>
+</li>
+</ul>
+<a name="nReservoirTrials">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nReservoirTrials</h4>
+<pre>public&nbsp;long nReservoirTrials</pre>
+</li>
+</ul>
+<a name="nReservoirTrialsAccepted">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>nReservoirTrialsAccepted</h4>
+<pre>public&nbsp;long nReservoirTrialsAccepted</pre>
 </li>
 </ul>
 </li>
@@ -388,6 +473,17 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 </dl>
 </li>
 </ul>
+<a name="setSpecies-etomica.species.ISpecies-double-etomica.potential.IPotentialMolecular-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSpecies</h4>
+<pre>public&nbsp;void&nbsp;setSpecies&#8203;(<a href="../../etomica/species/ISpecies.html" title="interface in etomica.species">ISpecies</a>&nbsp;s,
+                       double&nbsp;temperature,
+                       <a href="../../etomica/potential/IPotentialMolecular.html" title="interface in etomica.potential">IPotentialMolecular</a>&nbsp;p1)</pre>
+</li>
+</ul>
 <a name="doTrial--">
 <!--   -->
 </a>
@@ -420,6 +516,23 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title=
 <dd><code>temperature</code> - used to compute chi</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>chi</dd>
+</dl>
+</li>
+</ul>
+<a name="rejectNotify--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rejectNotify</h4>
+<pre>public&nbsp;void&nbsp;rejectNotify&#8203;()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMove.html#rejectNotify--">MCMove</a></code></span></div>
+<div class="block">Method called by IntegratorMC in the event that the most recent trial
+ move is rejected. This method should cause the system to be restored to
+ the condition before the most recent call to doTrial.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html#rejectNotify--">rejectNotify</a></code>&nbsp;in class&nbsp;<code><a href="../../etomica/integrator/mcmove/MCMoveInsertDelete.html" title="class in etomica.integrator.mcmove">MCMoveInsertDelete</a></code></dd>
 </dl>
 </li>
 </ul>
