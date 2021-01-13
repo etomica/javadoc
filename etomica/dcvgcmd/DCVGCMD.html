@@ -139,7 +139,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <br>
 <pre>public class <span class="typeNameLabel">DCVGCMD</span>
 extends <a href="../../etomica/simulation/Simulation.html" title="class in etomica.simulation">Simulation</a></pre>
-<div class="block">Dual-control-volume grand-canonical molecular dynamics simulation.</div>
+<div class="block">Dual-control-volume grand-canonical molecular dynamics simulation.
+ TraPPE propane and propene</div>
 </li>
 </ul>
 </div>
@@ -220,48 +221,58 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../etomica/potential/P2LennardJones.html" title="class in etomica.potential">P2LennardJones</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#p2MM">p2MM</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#poreCenter">poreCenter</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../etomica/dcvgcmd/P1WCAWall.html" title="class in etomica.dcvgcmd">P1WCAWall</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#potentialwall">potentialwall</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/dcvgcmd/P1WCAWall.html" title="class in etomica.dcvgcmd">P1WCAWall</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#potentialwall1">potentialwall1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/meter/MeterProfileByVolume.html" title="class in etomica.data.meter">MeterProfileByVolume</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile1">profile1</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile1pump">profile1pump</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../etomica/data/meter/MeterProfileByVolume.html" title="class in etomica.data.meter">MeterProfileByVolume</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile2">profile2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile2pump">profile2pump</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#propane">propane</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/species/SpeciesGeneral.html" title="class in etomica.species">SpeciesGeneral</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#propene">propene</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#sigma">sigma</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -537,10 +548,28 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <a name="poreCenter">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>poreCenter</h4>
 <pre>public&nbsp;<a href="../../etomica/space/Vector.html" title="interface in etomica.space">Vector</a> poreCenter</pre>
+</li>
+</ul>
+<a name="p2MM">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>p2MM</h4>
+<pre>public&nbsp;<a href="../../etomica/potential/P2LennardJones.html" title="class in etomica.potential">P2LennardJones</a> p2MM</pre>
+</li>
+</ul>
+<a name="sigma">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>sigma</h4>
+<pre>public&nbsp;double sigma</pre>
 </li>
 </ul>
 </li>
