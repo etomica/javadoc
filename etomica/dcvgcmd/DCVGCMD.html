@@ -246,18 +246,38 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a></code></td>
+<td class="colFirst"><code><a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile1pump">profile1pump</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile1TemperaturePump">profile1TemperaturePump</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../etomica/data/meter/MeterProfileByVolume.html" title="class in etomica.data.meter">MeterProfileByVolume</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile2">profile2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a></code></td>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile2pump">profile2pump</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profile2TemperaturePump">profile2TemperaturePump</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/meter/MeterProfileByAtoms.html" title="class in etomica.data.meter">MeterProfileByAtoms</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profileTemperature1">profileTemperature1</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/meter/MeterProfileByAtoms.html" title="class in etomica.data.meter">MeterProfileByAtoms</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#profileTemperature2">profileTemperature2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -273,6 +293,16 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#sigma">sigma</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../etomica/data/meter/MeterMoleculeTemperature.html" title="class in etomica.data.meter">MeterMoleculeTemperature</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#temperature1">temperature1</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../etomica/data/meter/MeterMoleculeTemperature.html" title="class in etomica.data.meter">MeterMoleculeTemperature</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/dcvgcmd/DCVGCMD.html#temperature2">temperature2</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -533,7 +563,7 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>profile1pump</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a> profile1pump</pre>
+<pre>public&nbsp;<a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a> profile1pump</pre>
 </li>
 </ul>
 <a name="profile2pump">
@@ -542,7 +572,61 @@ extends <a href="../../etomica/simulation/Simulation.html" title="class in etomi
 <ul class="blockList">
 <li class="blockList">
 <h4>profile2pump</h4>
-<pre>public&nbsp;<a href="../../etomica/data/DataPump.html" title="class in etomica.data">DataPump</a> profile2pump</pre>
+<pre>public&nbsp;<a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a> profile2pump</pre>
+</li>
+</ul>
+<a name="temperature1">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperature1</h4>
+<pre>public&nbsp;<a href="../../etomica/data/meter/MeterMoleculeTemperature.html" title="class in etomica.data.meter">MeterMoleculeTemperature</a> temperature1</pre>
+</li>
+</ul>
+<a name="temperature2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temperature2</h4>
+<pre>public&nbsp;<a href="../../etomica/data/meter/MeterMoleculeTemperature.html" title="class in etomica.data.meter">MeterMoleculeTemperature</a> temperature2</pre>
+</li>
+</ul>
+<a name="profileTemperature1">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>profileTemperature1</h4>
+<pre>public&nbsp;<a href="../../etomica/data/meter/MeterProfileByAtoms.html" title="class in etomica.data.meter">MeterProfileByAtoms</a> profileTemperature1</pre>
+</li>
+</ul>
+<a name="profileTemperature2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>profileTemperature2</h4>
+<pre>public&nbsp;<a href="../../etomica/data/meter/MeterProfileByAtoms.html" title="class in etomica.data.meter">MeterProfileByAtoms</a> profileTemperature2</pre>
+</li>
+</ul>
+<a name="profile1TemperaturePump">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>profile1TemperaturePump</h4>
+<pre>public&nbsp;<a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a> profile1TemperaturePump</pre>
+</li>
+</ul>
+<a name="profile2TemperaturePump">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>profile2TemperaturePump</h4>
+<pre>public&nbsp;<a href="../../etomica/data/DataPumpListener.html" title="class in etomica.data">DataPumpListener</a> profile2TemperaturePump</pre>
 </li>
 </ul>
 <a name="poreCenter">
