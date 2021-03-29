@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -184,11 +184,16 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#forceInBox">forceInBox</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#seq">seq</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#sigma">sigma</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -294,6 +299,11 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
  move is rejected.</div>
 </td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../etomica/virial/MCMoveClusterAtomHSChain.html#setForceInBox-boolean-">setForceInBox</a></span>&#8203;(boolean&nbsp;forceInBox)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.etomica.integrator.mcmove.MCMove">
@@ -356,10 +366,19 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <a name="seq">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>seq</h4>
 <pre>protected&nbsp;int[] seq</pre>
+</li>
+</ul>
+<a name="forceInBox">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>forceInBox</h4>
+<pre>protected&nbsp;boolean forceInBox</pre>
 </li>
 </ul>
 </li>
@@ -389,6 +408,15 @@ extends <a href="../../etomica/integrator/mcmove/MCMoveAtom.html" title="class i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setForceInBox-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setForceInBox</h4>
+<pre>public&nbsp;void&nbsp;setForceInBox&#8203;(boolean&nbsp;forceInBox)</pre>
+</li>
+</ul>
 <a name="doTrial--">
 <!--   -->
 </a>
